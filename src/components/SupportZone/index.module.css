@@ -14,6 +14,6 @@
 .SupportItem {
   width: 180px;
   height: 200px;
-  background-color: chocolate;
   margin: 10px;
+  overflow: hidden;
 }

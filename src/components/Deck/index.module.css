@@ -4,6 +4,5 @@
 	height: 100vh;
 	left: 0;
 	bottom: 0;
-	/* background-image: url("../../assets/images/Genius_Invokation_TCG_Game_Areas.webp"); */
-	/* background-size: cover; */
+	overflow: hidden;
 }
