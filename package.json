@@ -1,9 +1,9 @@
 {
-  "name": "react-ts-vite-template",
-  "version": "0.0.0",
+  "name": "invokation",
+  "version": "0.0.1",
   "author": {
-    "name": "Fabien MARIE-LOUISE",
-    "url": "https://github.com/fabien-ml"
+    "name": "xieQin",
+    "url": "https://github.com/xieQin/invokation"
   },
   "scripts": {
     "build": "npm run typecheck && vite build",
