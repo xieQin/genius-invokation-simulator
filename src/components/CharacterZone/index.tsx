@@ -1,6 +1,13 @@
+import { FC } from "react";
+
 import styles from "./index.module.css";
 
-export const CharacterItem = () => {
+export interface CharacterItemProps {
+  character: string;
+}
+
+export const CharacterItem: FC<CharacterItemProps> = props => {
+  const { character } = props;
   return (
     <div className={styles.CharacterItem}>
       <div className={styles.CharacterHealth}>10</div>
@@ -9,18 +16,23 @@ export const CharacterItem = () => {
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEnergyItem}></div>
       </div>
-      <img src="public/images/yoimiya-card.png" alt="" />
+      <img src={`/images/${character}-card.png`} alt="" />
     </div>
   );
 };
 
-export default function CharacterZone() {
+export interface CharacterZoneProps {
+  characters: string[];
+}
+
+export default function CharacterZone(props: CharacterZoneProps) {
+  const { characters } = props;
   return (
     <div className={styles.CharacterZone}>
       <div className={styles.CharacterList}>
-        <CharacterItem />
-        <CharacterItem />
-        <CharacterItem />
+        {characters.map((character, index) => (
+          <CharacterItem key={index} character={character} />
+        ))}
       </div>
     </div>
   );

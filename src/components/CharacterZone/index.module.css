@@ -21,7 +21,7 @@
 .CharacterHealth {
   width: 60px;
   height: 75px;
-  background-image: url(/public/images/hp-icon.png);
+  background-image: url(/images/hp-icon.png);
   background-size: cover;
   position: absolute;
   left: -25px;
@@ -42,7 +42,7 @@
 }
 
 .CharacterEnergy .CharacterEnergyItem {
-  background-image: url(/public/images/energy-card-icon.png);
+  background-image: url(/images/energy-card-icon.png);
   background-size: cover;
   width: 50px;
   margin-bottom: -15px;
