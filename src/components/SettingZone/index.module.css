@@ -1,0 +1,12 @@
+.Settings {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  z-index: 99;
+}

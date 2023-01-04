@@ -1,0 +1,35 @@
+.SkillZone {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	background-color: beige;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-between;
+}
+
+.SkillZoneItem {
+	width: 80px;
+	margin: 10px;
+}
+
+.SkillIcon {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: aquamarine;
+}
+
+.SkillPayItems {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-content: space-between;
+}
+
+.SkillPayItem {
+	width: 30px;
+	height: 30px;
+	flex: 1;
+}

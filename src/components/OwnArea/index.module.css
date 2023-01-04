@@ -1,0 +1,8 @@
+.Own {
+	background-color:cornflowerblue;
+	top: 50%;
+}
+
+.Own > div:first-child {
+	bottom: 30px;
+}

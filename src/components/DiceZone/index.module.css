@@ -1,0 +1,34 @@
+.Dice {
+  position: absolute;
+  top: 100px;
+  right: 30px;
+  padding-top: 10px;
+  width: 60px;
+  height: 600px;
+  background-color: aquamarine;
+  z-index: 99;
+}
+
+.DiceNum {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: chocolate;
+  text-align: center;
+  line-height: 40px;
+  margin: auto;
+}
+
+.DiceList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DiceListItem {
+  width: 30px;
+  height: 30px;
+  background-color: #484d9f;
+  border-radius: 50%;
+  margin: 5px 0;
+}

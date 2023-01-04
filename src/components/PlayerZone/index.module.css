@@ -1,0 +1,26 @@
+.PlayerZone {
+  position: absolute;
+  left: 30px;
+}
+
+.PlayerContent {
+  display: inline-flex;
+}
+
+.PlayerAvatar {
+  width: 100px;
+  height: 80px;
+  background-color: brown;
+}
+
+.PlayerName {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.PlayerStatus {
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+}

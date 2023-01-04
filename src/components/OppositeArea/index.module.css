@@ -1,0 +1,11 @@
+.Opposite {
+	background-color: burlywood;
+}
+
+.Opposite > div {
+	top: 100px;
+}
+
+.Opposite > div:first-child {
+	top: 20px;
+}

@@ -1,0 +1,19 @@
+.SupportZone {
+  position: absolute;
+  left: 200px;
+  top: 40px;
+  width: 500px;
+}
+
+.SupportList {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.SupportItem {
+  width: 180px;
+  height: 200px;
+  background-color: chocolate;
+  margin: 10px;
+}
