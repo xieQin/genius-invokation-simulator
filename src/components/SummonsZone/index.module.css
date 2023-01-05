@@ -1,8 +1,8 @@
 .SummonsZone {
   position: absolute;
-  right: 40px;
+  right: 330px;
   top: 40px;
-  width: 500px;
+  width: 280px;
 }
 
 .SummonsList {
@@ -12,8 +12,8 @@
 }
 
 .SummonsItem {
-  width: 180px;
-  height: 200px;
+  width: 120px;
+  height: 130px;
   margin: 10px;
   overflow: hidden;
   border-radius: 10px;

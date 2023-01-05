@@ -1,6 +1,7 @@
 import areaStyles from "@/assets/styles/area.module.css";
 
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
+import HandCardZone from "../HandCardZone";
 import PlayerZone from "../PlayerZone";
 import SkillZone from "../SkillZone";
 import SummonsZone from "../SummonsZone";
@@ -19,6 +20,7 @@ export default function OwnArea() {
       <SupportZone />
       <CharacterZone {...characterProps} />
       <SummonsZone />
+      <HandCardZone player="own" />
     </div>
   );
 }

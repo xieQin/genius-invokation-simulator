@@ -1,3 +1,16 @@
 .HandCardZone {
   position: absolute;
+  bottom: 40px;
+  left: 50%;
+  /* max-width: 300px; */
+  margin-bottom: -155px;
+  transform: translateX(-50%);
+}
+.HandCardList {
+  display: flex;
+}
+.HandCard {
+  width: 140px;
+  height: 240px;
+  margin-left: -55px;
 }

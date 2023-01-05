@@ -24,9 +24,15 @@ export default function DiceZone() {
         <div className={styles.DiceListItem}>
           <img src="/images/hydro-icon.png" alt="" />
         </div>
-        <div className={styles.DiceListItem}></div>
-        <div className={styles.DiceListItem}></div>
-        <div className={styles.DiceListItem}></div>
+        <div className={styles.DiceListItem}>
+          <img src="/images/hydro-icon.png" alt="" />
+        </div>
+        <div className={styles.DiceListItem}>
+          <img src="/images/hydro-icon.png" alt="" />
+        </div>
+        <div className={styles.DiceListItem}>
+          <img src="/images/hydro-icon.png" alt="" />
+        </div>
         <div className={styles.DiceListItem}></div>
         <div className={styles.DiceListItem}></div>
         <div className={styles.DiceListItem}></div>

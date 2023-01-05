@@ -1,8 +1,8 @@
 .SupportZone {
   position: absolute;
-  left: 200px;
+  left: 325px;
   top: 40px;
-  width: 500px;
+  width: 280px;
 }
 
 .SupportList {
@@ -12,8 +12,8 @@
 }
 
 .SupportItem {
-  width: 180px;
-  height: 200px;
+  width: 120px;
+  height: 130px;
   margin: 10px;
   overflow: hidden;
   border-radius: 10px;

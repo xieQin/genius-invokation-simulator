@@ -2,9 +2,9 @@
 }
 
 .Opposite > div {
-	top: 100px;
+	top: 200px;
 }
 
 .Opposite > div:first-child {
-	top: 20px;
+	top: 200px;
 }
