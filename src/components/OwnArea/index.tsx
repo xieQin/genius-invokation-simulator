@@ -11,6 +11,7 @@ import styles from "./index.module.css";
 export default function OwnArea() {
   const characterProps: CharacterZoneProps = {
     characters: ["yoimiya", "xiangling", "razor"],
+    player: "own",
   };
 
   return (

@@ -16,6 +16,7 @@
   width: 140px;
   height: 240px;
   margin: 10px 20px;
+  cursor: pointer;
 }
 
 .CharacterHealth {
