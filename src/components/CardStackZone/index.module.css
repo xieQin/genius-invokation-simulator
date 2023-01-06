@@ -1,0 +1,23 @@
+.CardStackZone {
+  position: absolute;
+  top: 80px;
+  left: 0;
+}
+
+.CardStackItem {
+  position: absolute;
+  width: 140px;
+  height: 240px;
+  background-image: url(/images/card-back-normal.png);
+  background-size: cover;
+  transform: rotate(90deg);
+  z-index: 3;
+}
+.CardStackItem.Deg80 {
+  transform: rotate(80deg);
+  z-index: 2;
+}
+.CardStackItem.Deg100 {
+  transform: rotate(100deg);
+  z-index: 2;
+}

@@ -11,10 +11,54 @@
   align-content: space-between;
 }
 
+.SupportItemLayout {
+  position: relative;
+}
+
 .SupportItem {
+  position: relative;
   width: 120px;
   height: 130px;
   margin: 10px;
   overflow: hidden;
   border-radius: 10px;
+  border: 3px solid #f5e9e9;
+}
+
+.SupportItem > img {
+  margin-top: -35px;
+}
+
+.SupportCountIcon {
+  position: absolute;
+  right: -9px;
+  top: -12px;
+  width: 42px;
+}
+
+.SupportHealIcon {
+  position: absolute;
+  left: 11px;
+  bottom: 12px;
+  width: 42px;
+}
+.SupportHealIcon .SupportText {
+  top: 0;
+}
+.SupportClockIcon {
+  position: absolute;
+  right: -13px;
+  top: -12px;
+  width: 51px;
+}
+
+.SupportText {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  top: 9px;
+  font-size: 30px;
+  -webkit-text-stroke: #000 1px;
 }

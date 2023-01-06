@@ -9,13 +9,20 @@
 }
 
 .DiceNum {
-  width: 45px;
-  height: 45px;
+  position: relative;
+  left: -3px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
-  background-color: chocolate;
-  text-align: center;
-  line-height: 45px;
   margin: auto;
+  background-image: url(/images/dice-number-icon.png);
+  background-size: cover;
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  text-indent: -2px;
 }
 
 .DiceList {
@@ -25,7 +32,18 @@
   margin-top: 2px;
 }
 
+.DiceListItemElement {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 6px;
+  top: 6px;
+  opacity: 0.5;
+}
+
 .DiceListItem {
-  width: 42px;
-  height: 42px;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-top: -2px;
 }

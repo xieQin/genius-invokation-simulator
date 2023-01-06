@@ -1,13 +1,9 @@
 .main {
-  text-align: center;
-  color: #2c3e50;
-}
-
-.main p {
-  margin: 16px 0;
-}
-
-.logo {
-  margin: 0 auto;
-  padding-top: 60px;
+  display: inline-block;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 0 0;
+  left: 50%;
 }

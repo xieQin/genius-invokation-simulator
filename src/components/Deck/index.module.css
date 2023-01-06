@@ -1,11 +1,7 @@
 .Deck {
-	position: absolute;
-	width: 1920px;
-	height: 1080px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	background-image: url(/images/anemo-deck.png);
-	background-size: cover;
-	overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-image: url(/images/anemo-deck.png);
+  background-size: cover;
+  overflow: hidden;
 }

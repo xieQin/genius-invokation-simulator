@@ -1,16 +1,65 @@
 .HandCardZone {
   position: absolute;
-  bottom: 40px;
+  bottom: 95px;
   left: 50%;
-  /* max-width: 300px; */
   margin-bottom: -155px;
   transform: translateX(-50%);
 }
 .HandCardList {
   display: flex;
+  height: 185px;
 }
 .HandCard {
+  cursor: pointer;
   width: 140px;
-  height: 240px;
+  height: 236px;
   margin-left: -55px;
+}
+
+.HandCardBorder {
+  border: 4px solid gold;
+  border-radius: 12px;
+  z-index: 2;
+}
+
+.ExpandHandCardList {
+  margin: 0;
+  transform: translate(-50%, 20px);
+  transition: 0.5s ease-in-out;
+}
+
+.ExpandHandCardList .HandCard {
+  margin-left: 10px;
+}
+
+.ExpandHandCardList .HandCard.Selected {
+  margin-left: 10px;
+  transform: translate(0, -35px);
+  transition: 0.5s;
+}
+
+.ExpandHandCardList .HandCard.UnSelect {
+  margin-left: 10px;
+  transform: translate(0, 35px);
+  /* transition: 0.5s; */
+}
+
+.HandCardLayout {
+  position: relative;
+}
+
+.HandCardPay {
+  width: 52px;
+  background-image: url(/images/same-icon.png);
+  background-size: cover;
+  height: 52px;
+  position: absolute;
+  text-align: center;
+  left: -18px;
+  top: -9px;
+  color: #fff;
+  line-height: 50px;
+  font-weight: bold;
+  font-size: 28px;
+  -webkit-text-stroke: #000 1px;
 }

@@ -2,7 +2,7 @@ import { FC, useState } from "react";
 
 import styles from "./index.module.css";
 
-type stateType = "ready" | "battle";
+export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
   character: string;
@@ -22,7 +22,7 @@ export const useTransformControl = () => {
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character, player } = props;
   const { state, toggleControl } = useTransformControl();
-  const _Y = player === "own" ? 20 : -20;
+  const _Y = player === "own" ? 40 : -40;
 
   const defaultStyle = {
     transition: "500ms",
@@ -51,7 +51,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       <div className={styles.CharacterEnergy}>
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEnergyItem}></div>
-        <div className={styles.CharacterEnergyItem}></div>
+        <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
       <img src={`/images/${character}-card.png`} alt="" />
     </div>

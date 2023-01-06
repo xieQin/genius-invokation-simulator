@@ -1,5 +1,6 @@
 import areaStyles from "@/assets/styles/area.module.css";
 
+import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
 import HandCardZone from "../HandCardZone";
 import PlayerZone from "../PlayerZone";
@@ -13,15 +14,22 @@ export default function OwnArea() {
     characters: ["yoimiya", "xiangling", "razor"],
     player: "own",
   };
+  const supports = [
+    "timaeus-card",
+    "parametric-transformer-card",
+    "liyue-harbor-wharf-card",
+    "jade-chamber-card",
+  ];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
-      <PlayerZone />
+      <PlayerZone player="own" />
       <SkillZone />
-      <SupportZone />
+      <SupportZone supports={supports} player="own" />
       <CharacterZone {...characterProps} />
       <SummonsZone />
       <HandCardZone player="own" />
+      <CardStackZone />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-export enum Element {
+export enum GIElement {
   Anemo = "anemo",
   Cryo = "cryo",
   Dendro = "dendro",

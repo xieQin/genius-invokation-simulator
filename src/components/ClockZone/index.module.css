@@ -3,9 +3,21 @@
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background-color: blue;
   left: 20px;
   top: 50%;
   z-index: 11;
   transform: translate(0, -50%);
+}
+
+.OppositeDices {
+  position: absolute;
+}
+
+.ClockTime {
+  position: relative;
+  left: -22px;
+}
+
+.OwnDices {
+  position: absolute;
 }

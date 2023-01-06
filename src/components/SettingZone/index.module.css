@@ -1,12 +1,13 @@
 .Settings {
   position: absolute;
-  right: 32px;
-  top: 40px;
-  width: 55px;
-  height: 55px;
-  background-color: aquamarine;
+  right: 14px;
+  top: 14px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   text-align: center;
   line-height: 55px;
   z-index: 99;
+  background-image: url(/images/setting-icon.png);
+  background-size: cover;
 }
