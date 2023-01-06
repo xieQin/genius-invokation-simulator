@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./App.module.css";
 import Deck from "./components/Deck";
+import Notice from "./components/Notice";
 
 export default function App() {
   const defaultWidth = 1920;
@@ -29,8 +30,13 @@ export default function App() {
     return () => (window.onresize = null);
   });
 
+  const message = () => {
+    return <div>Your Turn Now !</div>;
+  };
+
   return (
     <main className={styles.main} id="screen">
+      <Notice message={message()} />
       <Deck />
     </main>
   );
