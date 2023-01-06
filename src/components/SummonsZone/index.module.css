@@ -23,3 +23,32 @@
 .SummonsItem > img {
   margin-top: -28px;
 }
+
+.SummonsItemLayout {
+  position: relative;
+}
+
+.SummonDamageItem {
+  position: absolute;
+  left: 14px;
+  bottom: 10px;
+  width: 55px;
+}
+
+.SummonTurnItem {
+  position: absolute;
+  right: -9px;
+  top: -12px;
+  width: 42px;
+}
+
+.SummonText {
+  width: 100%;
+  color: #fff;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+  top: 9px;
+  font-size: 30px;
+  -webkit-text-stroke: #000 1px;
+}

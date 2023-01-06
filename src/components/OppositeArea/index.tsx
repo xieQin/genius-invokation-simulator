@@ -20,6 +20,7 @@ export default function OppositeArea() {
     "chang-the-ninth-card",
     "timmie-card",
   ];
+  const summons = ["oceanid-mimic-card", "reflection-card"];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Opposite}`}>
@@ -30,7 +31,7 @@ export default function OppositeArea() {
         player="opposite"
       />
       <CharacterZone {...characterProps} />
-      <SummonsZone style={{ top: "180px" }} />
+      <SummonsZone style={{ top: "180px" }} summons={summons} player="own" />
       <CardStackZone />
       <HandCardZone
         player="opposite"

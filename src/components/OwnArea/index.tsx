@@ -20,6 +20,7 @@ export default function OwnArea() {
     "liyue-harbor-wharf-card",
     "jade-chamber-card",
   ];
+  const summons = ["oceanid-mimic-card", "reflection-card"];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
@@ -27,7 +28,7 @@ export default function OwnArea() {
       <SkillZone />
       <SupportZone supports={supports} player="own" />
       <CharacterZone {...characterProps} />
-      <SummonsZone />
+      <SummonsZone summons={summons} player="own" />
       <HandCardZone player="own" />
       <CardStackZone />
     </div>
