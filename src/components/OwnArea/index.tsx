@@ -1,5 +1,5 @@
 import areaStyles from "@/assets/styles/area.module.css";
-import { PlayerPosition } from "@/models";
+import { IPlayer, PlayerPosition } from "@/models";
 import { SummonsName } from "@/models/summons";
 import { SupportName } from "@/models/support";
 
@@ -12,10 +12,10 @@ import SummonsZone from "../SummonsZone";
 import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
-export default function OwnArea() {
-  const position = PlayerPosition.Own;
+export default function OwnArea(props: IPlayer) {
+  const { position, characters } = props;
   const characterProps: CharacterZoneProps = {
-    characters: ["Barbara", "Bennett", "Collei"],
+    characters,
     player: position,
   };
   const supports: SupportName[] = ["Ellin", "ChefOfMao", "NRE", "Liben"];

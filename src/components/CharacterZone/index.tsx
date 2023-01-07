@@ -1,13 +1,13 @@
 import { FC, useState } from "react";
 
-import { Character, PlayerPosition } from "@/models";
+import { ICharacter, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
 
 export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
-  character: keyof typeof Character;
+  character: ICharacter;
   player: PlayerPosition;
 }
 
@@ -55,13 +55,13 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
-      <img src={`/cards/character/${character}.png`} alt="" />
+      <img src={`/cards/character/${character.name}.png`} alt="" />
     </div>
   );
 };
 
 export interface CharacterZoneProps {
-  characters: (keyof typeof Character)[];
+  characters: ICharacter[];
   player: PlayerPosition;
 }
 

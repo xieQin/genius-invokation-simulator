@@ -1,5 +1,5 @@
 import areaStyles from "@/assets/styles/area.module.css";
-import { PlayerPosition } from "@/models";
+import { IPlayer } from "@/models";
 import { SummonsName } from "@/models/summons";
 import { SupportName } from "@/models/support";
 
@@ -11,10 +11,10 @@ import SummonsZone from "../SummonsZone";
 import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
-export default function OppositeArea() {
-  const position = PlayerPosition.Opposite;
+export default function OppositeArea(props: IPlayer) {
+  const { position, characters } = props;
   const characterProps: CharacterZoneProps = {
-    characters: ["Diluc", "Fischl", "JadeplumeTerrorshroom"],
+    characters,
     player: position,
   };
 
