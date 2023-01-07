@@ -1,21 +1,23 @@
 import { useState } from "react";
 
 import { GIElement } from "@/models";
+import { IGIDice } from "@/models/die";
 
 import styles from "./index.module.css";
 
 export interface DiceItemProps {
-  element: GIElement;
+  dice: IGIDice;
 }
 
 export const DiceItem = (props: DiceItemProps) => {
-  const { element } = props;
+  const { dice } = props;
+
   return (
     <div className={styles.DiceListItem}>
       <div className={styles.DiceListItemElement}>
-        <img src={`/images/${element}-elementicon.png`} alt="" />
+        <img src={`/images/${dice.name}-elementicon.png`} alt="" />
       </div>
-      <img src={`/images/${element}-icon.png`} alt="" />
+      <img src={`/images/${dice.name}-icon.png`} alt="" />
     </div>
   );
 };
@@ -26,12 +28,10 @@ export interface DiceZoneProps {
 
 export default function DiceZone(props: DiceZoneProps) {
   const [dice, setDice] = useState(4);
-  const dices = [
-    GIElement.Anemo,
-    GIElement.Anemo,
-    GIElement.Cryo,
-    GIElement.Dendro,
-    GIElement.Geo,
+  const dices: IGIDice[] = [
+    { name: "Anemo" },
+    { name: "Cryo" },
+    { name: "Dendro" },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function DiceZone(props: DiceZoneProps) {
       <div className={styles.DiceNum}>{dice}</div>
       <div className={styles.DiceList}>
         {dices.map((dice, index) => (
-          <DiceItem key={index} element={dice} />
+          <DiceItem key={index} dice={dice} />
         ))}
       </div>
     </div>

@@ -21,7 +21,7 @@ export const SummonDamageItem = (props: {
   return (
     <div className={styles.SummonDamageItem}>
       <div className={styles.SummonText}>{damage}</div>
-      <img src={`images/${giElement}-elementicon.png`} alt="" />
+      <img src={`images/pyro-elementicon.png`} alt="" />
     </div>
   );
 };
