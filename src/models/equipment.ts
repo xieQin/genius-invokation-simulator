@@ -1,7 +1,7 @@
 import { GIElement } from "./element";
 
 export interface IEquipment {
-  name: keyof typeof EqiupmentArtifact | EquipmentWeapon | EqiupmentTalent;
+  name: EquipmentName;
   type: EquipmentMainType;
   items?: IEquipmentWeapon | IEquipmentArtifact;
 }
@@ -28,6 +28,7 @@ export enum EquipmentMainType {
   Weapon,
   Artifact,
   Talent,
+  Other,
 }
 
 export enum EqiupmentWeaponType {
@@ -36,6 +37,7 @@ export enum EqiupmentWeaponType {
   Polearm,
   Catalyst,
   Sword,
+  Other,
 }
 
 export enum EqiupmentArtifact {
@@ -142,7 +144,7 @@ export enum EquipmentWeaponBow {
 }
 
 export const EquipmentWeapons = {
-  ...EquipmentWeaponBow,
+  EquipmentWeaponBow,
   ...EquipmentWeaponClaymore,
   ...EquipmentWeaponPolearm,
   ...EquipmentWeaponCatalyst,
@@ -150,3 +152,10 @@ export const EquipmentWeapons = {
 };
 
 export type EquipmentWeapon = typeof EquipmentWeapons;
+export type EquipmentWeaponName = keyof EquipmentWeapon;
+export type EquipmentArtifactName = keyof typeof EqiupmentArtifact;
+export type EquipmentTalentName = keyof typeof EqiupmentTalent;
+export type EquipmentName =
+  | EquipmentWeaponName
+  | EquipmentArtifactName
+  | EquipmentTalentName;

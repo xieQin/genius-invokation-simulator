@@ -1,5 +1,7 @@
 import { CSSProperties, useState } from "react";
 
+import { CardName, PlayerPosition } from "@/models";
+
 import styles from "./index.module.css";
 
 export const HandCardItem = () => {
@@ -11,8 +13,8 @@ export const HandCardItem = () => {
 };
 
 export const HandCardList = (props: {
-  cards: string[] | [];
-  player: "own" | "opposite";
+  cards: CardName[];
+  player: PlayerPosition;
   toggle?: (v: boolean) => void;
 }) => {
   const { player, cards, toggle } = props;
@@ -28,7 +30,7 @@ export const HandCardList = (props: {
     setState(!state);
   };
 
-  if (player === "opposite") {
+  if (player === PlayerPosition.Opposite) {
     return (
       <div className={styles.HandCardList}>
         {cards.map((_, index) => (
@@ -65,19 +67,15 @@ export const HandCardList = (props: {
 
 export default function HandCardZone(props: {
   style?: CSSProperties;
-  player: "own" | "opposite";
+  player: PlayerPosition;
 }) {
-  const cards = [
-    "master-of-weaponry-card",
-    "katheryne-card",
-    "i-havent-lost-yet!-card",
-    "paimon-card",
-    "chang-the-ninth-card",
-    "abyssal-summons-card",
-    "adventurers-bandana-card",
-    "paimon-card",
-    "paimon-card",
-    "paimon-card",
+  const cards: CardName[] = [
+    "AbyssalSummons",
+    "BrokenRimesEcho",
+    "ChangingShifts",
+    "ChefOfMao",
+    "CalxsArts",
+    "GloriousSeason",
   ];
   const [isExpand, setIsExpand] = useState(false);
 

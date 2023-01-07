@@ -8,15 +8,17 @@ import { GIRegion } from "./region";
 import { ITalentCombat, ITalentPassive } from "./talent";
 
 export interface ICharacter {
-  name: keyof typeof Character;
+  name: CharacterName;
   element: GIElement;
   weaponType: EqiupmentWeaponType;
   region: GIRegion;
-  equipments: ICharacterEquipment;
-  talents: ICharacterTalent;
-  profile: ICharacterProfile;
-  elementStatus: GIElement;
+  equipments: ICharacterEquipment | null;
+  talents: ICharacterTalent | null;
+  profile: ICharacterProfile | null;
+  elementStatus: GIElement | null;
 }
+
+export type CharacterName = keyof typeof Character;
 
 export interface ICharacterTalent {
   attack: ITalentCombat;

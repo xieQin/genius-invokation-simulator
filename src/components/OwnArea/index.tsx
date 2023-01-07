@@ -1,4 +1,7 @@
 import areaStyles from "@/assets/styles/area.module.css";
+import { PlayerPosition } from "@/models";
+import { SummonsName } from "@/models/summons";
+import { SupportName } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -10,26 +13,27 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea() {
+  const position = PlayerPosition.Own;
   const characterProps: CharacterZoneProps = {
-    characters: ["yoimiya", "xiangling", "razor"],
-    player: "own",
+    characters: ["Barbara", "Bennett", "Collei"],
+    player: position,
   };
-  const supports = [
-    "timaeus-card",
-    "parametric-transformer-card",
-    "liyue-harbor-wharf-card",
-    "jade-chamber-card",
+  const supports: SupportName[] = ["Ellin", "ChefOfMao", "NRE", "Liben"];
+  const summons: SummonsName[] = [
+    "CuileinAnbar",
+    "Guoba",
+    "DrunkenMist",
+    "DandelionField",
   ];
-  const summons = ["oceanid-mimic-card", "reflection-card"];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
-      <PlayerZone player="own" />
+      <PlayerZone player={position} />
       <SkillZone />
-      <SupportZone supports={supports} player="own" />
+      <SupportZone supports={supports} player={position} />
       <CharacterZone {...characterProps} />
-      <SummonsZone summons={summons} player="own" />
-      <HandCardZone player="own" />
+      <SummonsZone summons={summons} player={position} />
+      <HandCardZone player={position} />
       <CardStackZone />
     </div>
   );

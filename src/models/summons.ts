@@ -1,3 +1,7 @@
+export interface ISummon {
+  name: SummonsName;
+}
+
 export enum Summons {
   CuileinAnbar,
 
@@ -28,3 +32,5 @@ export enum Summons {
 
   DandelionField,
 }
+
+export type SummonsName = keyof typeof Summons;

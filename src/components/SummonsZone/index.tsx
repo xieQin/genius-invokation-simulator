@@ -1,6 +1,7 @@
 import { CSSProperties } from "react";
 
-import { GIElement } from "@/models";
+import { GIElement, PlayerPosition } from "@/models";
+import { SummonsName } from "@/models/summons";
 
 import styles from "./index.module.css";
 
@@ -40,8 +41,8 @@ export const SummonItem = (props: { card: string }) => {
 
 export default function SummonsZone(props: {
   style?: CSSProperties;
-  summons: string[];
-  player: "own" | "opposite";
+  summons: SummonsName[];
+  player: PlayerPosition;
 }) {
   const { summons } = props;
 

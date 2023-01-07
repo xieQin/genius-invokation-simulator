@@ -1,12 +1,14 @@
 import { FC, useState } from "react";
 
+import { Character, PlayerPosition } from "@/models";
+
 import styles from "./index.module.css";
 
 export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
-  character: string;
-  player: "own" | "opposite";
+  character: keyof typeof Character;
+  player: PlayerPosition;
 }
 
 export const useTransformControl = () => {
@@ -22,7 +24,7 @@ export const useTransformControl = () => {
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character, player } = props;
   const { state, toggleControl } = useTransformControl();
-  const _Y = player === "own" ? 40 : -40;
+  const _Y = player === PlayerPosition.Own ? 40 : -40;
 
   const defaultStyle = {
     transition: "500ms",
@@ -53,14 +55,14 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
-      <img src={`/images/${character}-card.png`} alt="" />
+      <img src={`/cards/character/${character}.png`} alt="" />
     </div>
   );
 };
 
 export interface CharacterZoneProps {
-  characters: string[];
-  player: "own" | "opposite";
+  characters: (keyof typeof Character)[];
+  player: PlayerPosition;
 }
 
 export default function CharacterZone(props: CharacterZoneProps) {

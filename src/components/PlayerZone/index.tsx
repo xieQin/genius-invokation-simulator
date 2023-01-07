@@ -1,16 +1,17 @@
+import { PlayerPosition } from "@/models";
 import { CSSProperties } from "react";
 
 import styles from "./index.module.css";
 
 export default function PlayerZone(props: {
   style?: CSSProperties;
-  player: "own" | "opposite";
+  player: PlayerPosition;
 }) {
   const { player } = props;
   return (
     <div
       className={`${styles.PlayerZone} ${
-        player === "opposite" ? styles.Opposite : ""
+        player === PlayerPosition.Opposite ? styles.Opposite : ""
       }`}
       {...props}
     >

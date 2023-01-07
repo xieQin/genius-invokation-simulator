@@ -23,12 +23,13 @@ export const DiceItem = (props: DiceItemProps) => {
 };
 
 export interface DiceZoneProps {
-  diceList: GIElement[];
+  diceList?: GIElement[];
 }
 
 export default function DiceZone(props: DiceZoneProps) {
   const [dice, setDice] = useState(4);
   const dices: IGIDice[] = [
+    { name: "Omni" },
     { name: "Anemo" },
     { name: "Cryo" },
     { name: "Dendro" },

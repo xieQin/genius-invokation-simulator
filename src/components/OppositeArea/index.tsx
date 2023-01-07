@@ -1,4 +1,7 @@
 import areaStyles from "@/assets/styles/area.module.css";
+import { PlayerPosition } from "@/models";
+import { SummonsName } from "@/models/summons";
+import { SupportName } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -9,32 +12,42 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OppositeArea() {
+  const position = PlayerPosition.Opposite;
   const characterProps: CharacterZoneProps = {
-    characters: ["diluc", "barbara", "xingqiu"],
-    player: "opposite",
+    characters: ["Diluc", "Fischl", "JadeplumeTerrorshroom"],
+    player: position,
   };
 
-  const supports = [
-    "liben-card",
-    "paimon-card",
-    "chang-the-ninth-card",
-    "timmie-card",
+  const supports: SupportName[] = [
+    "LiuSu",
+    "KnightsOfFavoniusLiabrary",
+    "ParametricTransformer",
+    "Paimon",
   ];
-  const summons = ["oceanid-mimic-card", "reflection-card"];
+  const summons: SummonsName[] = [
+    "MelodyLoop",
+    "Oz",
+    "OceanidMimicFrog",
+    "OceanidMimicFerret",
+  ];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Opposite}`}>
-      <PlayerZone style={{ top: "40px" }} player="opposite" />
+      <PlayerZone style={{ top: "40px" }} player={position} />
       <SupportZone
         style={{ top: "180px" }}
         supports={supports}
-        player="opposite"
+        player={position}
       />
       <CharacterZone {...characterProps} />
-      <SummonsZone style={{ top: "180px" }} summons={summons} player="own" />
+      <SummonsZone
+        style={{ top: "180px" }}
+        summons={summons}
+        player={position}
+      />
       <CardStackZone />
       <HandCardZone
-        player="opposite"
+        player={position}
         style={{ top: "-150px", marginBottom: 0, left: "60%" }}
       />
     </div>

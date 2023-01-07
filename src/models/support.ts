@@ -1,5 +1,12 @@
 export interface ISupport {
-  name: keyof typeof SupportItem | SupportLocation | SupportCompanion;
+  name: SupportName;
+  type: SupportType;
+}
+
+export enum SupportType {
+  Item,
+  Location,
+  Companion,
 }
 
 export enum SupportItem {
@@ -30,3 +37,11 @@ export enum SupportCompanion {
   ChangeTheNinth,
   Paimon,
 }
+
+export type SupportItemName = keyof typeof SupportItem;
+export type SupportLocationName = keyof typeof SupportLocation;
+export type SupportCompanionName = keyof typeof SupportCompanion;
+export type SupportName =
+  | SupportItemName
+  | SupportLocationName
+  | SupportCompanionName;

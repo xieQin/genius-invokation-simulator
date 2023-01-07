@@ -1,5 +1,5 @@
 export interface IPlayer {
-  name: string;
+  name: PlayerName;
   status: string;
 }
 
@@ -7,3 +7,5 @@ export enum PlayerPosition {
   Own,
   Opposite,
 }
+
+export type PlayerName = keyof typeof PlayerPosition;

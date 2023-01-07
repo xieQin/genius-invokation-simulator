@@ -1,9 +1,16 @@
 export interface IEvent {
-  name: keyof typeof Event | EventFood | EventElementalResonance;
-  effect: Event | EventFood | EventElementalResonance;
+  name: EventName;
+  type: EventEvent;
+  effect: EventEvent | EventFood | EventElementalResonance;
 }
 
-export enum Event {
+export enum EventType {
+  Event,
+  Food,
+  ElementalResonance,
+}
+
+export enum EventEvent {
   TossUp,
   TheBestestTravelCompanion,
   ChangingShifts,
@@ -48,3 +55,11 @@ export enum EventElementalResonance {
   WovenStone,
   EnduringRock,
 }
+
+export type EventEventName = keyof typeof EventEvent;
+export type EventFoodName = keyof typeof EventFood;
+export type EventElementalResonanceName = keyof typeof EventElementalResonance;
+export type EventName =
+  | EventEventName
+  | EventFoodName
+  | EventElementalResonanceName;

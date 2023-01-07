@@ -7,3 +7,5 @@ export enum GIElement {
   Pyro,
   Hydro,
 }
+
+export type GIElementName = keyof typeof GIElement;
