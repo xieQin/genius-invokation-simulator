@@ -5,7 +5,7 @@ export interface IGIDice {
 }
 
 export enum GIDiceExtra {
-  Omini,
+  Omni,
 }
 
 export const GIDices = {

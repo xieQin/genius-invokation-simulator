@@ -21,6 +21,7 @@ export enum CardMainType {
   Event,
   Support,
   Equipment,
+  Summon,
 }
 
 export enum CardSubType {

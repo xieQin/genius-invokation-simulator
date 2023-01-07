@@ -1,7 +1,7 @@
 import { GIElement } from "./element";
 
 export interface IEquipment {
-  name: keyof typeof EqiupmentArtifact | EquipmentWeapon;
+  name: keyof typeof EqiupmentArtifact | EquipmentWeapon | EqiupmentTalent;
   type: EquipmentMainType;
   items?: IEquipmentWeapon | IEquipmentArtifact;
 }
@@ -27,6 +27,7 @@ export interface IEquipmentArtifact extends IEquipment {
 export enum EquipmentMainType {
   Weapon,
   Artifact,
+  Talent,
 }
 
 export enum EqiupmentWeaponType {
@@ -41,6 +42,7 @@ export enum EqiupmentArtifact {
   AdventurersBandana,
   LuckyDogsSilverCirclet,
   TranvelingDoctersHandChief,
+  GamblersEarrings,
   InstructorsCap,
   ExilesCirclet,
   BrokenRimesEcho,
@@ -53,11 +55,40 @@ export enum EqiupmentArtifact {
   ThunderingFury,
   ViridescentVenergersDiadem,
   ViridescentVenerer,
-  LaurelCoronet,
-  DeepwoodMemories,
-  GamblersEarrings,
   MaskOfSolitudeBasalt,
   ArchaicPetra,
+  LaurelCoronet,
+  DeepwoodMemories,
+}
+
+export enum EqiupmentTalent {
+  UndividedHeart,
+  ShakenNotPurred,
+  ColdBloodedStrike,
+  SteadyBreathing,
+  KantenSenmyouBlessing,
+  GloriousSeason,
+  TheScentRemained,
+  ProphecyOfSubmersion,
+  FlowingFlame,
+  Crossfire,
+  GrandExpectation,
+  NaganoharaMeteorSwarm,
+  StellarPredator,
+  Awakening,
+  ThunderingPenance,
+  FeatherfallJudgement,
+  ChaoticEntropy,
+  LandsOfDandelion,
+  StrategicReserve,
+  IGotYourBack,
+  FloralSidewinder,
+  StreamingSurge,
+  MirrorCage,
+  PaidInFull,
+  TranscentdentAutomaton,
+  StonehideReforged,
+  ProliferatingSpores,
 }
 
 export enum EquipmentWeaponEffect {
@@ -82,7 +113,7 @@ export enum EquipmentArtifactEffect {
 
 export enum EquipmentWeaponClaymore {
   WhiteIronGreatsword,
-  SacrificalGreatsword,
+  SacrificialGreatsword,
   WolfsGraveStone,
 }
 
@@ -94,19 +125,19 @@ export enum EquipmentWeaponPolearm {
 
 export enum EquipmentWeaponCatalyst {
   MagicGuide,
-  SacrificalFragments,
+  SacrificialFragments,
   SkywardAtlas,
 }
 
 export enum EquipmentWeaponSword {
   TravelersHandySword,
-  SacrificalSword,
+  SacrificialSword,
   AquilaFavonia,
 }
 
 export enum EquipmentWeaponBow {
   RavenBow,
-  SacrificalBow,
+  SacrificialBow,
   SkywardHarp,
 }
 

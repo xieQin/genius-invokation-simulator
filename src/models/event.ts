@@ -4,6 +4,8 @@ export interface IEvent {
 }
 
 export enum Event {
+  TossUp,
+  TheBestestTravelCompanion,
   ChangingShifts,
   IHaventLostYet,
   WhenTheCraneReturned,
@@ -27,6 +29,7 @@ export enum EventFood {
   LotusFlowerCrisp,
   MushroomPizza,
   MintyMeatRolls,
+  MondstadtHashBrown,
 }
 
 export enum EventElementalResonance {
