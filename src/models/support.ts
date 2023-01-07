@@ -23,9 +23,10 @@ export enum SupportCompanion {
   ChefOfMao,
   Tubby,
   Timmie,
-  ELlin,
+  Ellin,
   IronTongueTian,
   LiuSu,
   Liben,
   ChangeTheNinth,
+  Paimon,
 }
