@@ -13,11 +13,20 @@
 }
 
 .SkillIcon {
+  position: relative;
   width: 125px;
   height: 125px;
   border-radius: 50%;
   background-image: url(/images/skill-bg.png);
   background-size: cover;
+}
+
+.SkillIcon > img {
+  width: 55px;
+  position: absolute;
+  left: 36px;
+  top: 38px;
+  opacity: 0.8;
 }
 
 .SkillPayItems {

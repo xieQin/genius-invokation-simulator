@@ -1,7 +1,6 @@
 import areaStyles from "@/assets/styles/area.module.css";
-import { IPlayer, PlayerPosition } from "@/models";
+import { IPlayer } from "@/models";
 import { SummonsID } from "@/models/summons";
-import { SupportID } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -24,11 +23,12 @@ export default function OwnArea(props: IPlayer) {
     "DrunkenMist",
     "DandelionField",
   ];
+  const skills = characters[0].skills;
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
-      <PlayerZone player={position} />
-      <SkillZone />
+      <PlayerZone player={props} />
+      <SkillZone skills={skills} />
       <SupportZone supports={supports} player={position} />
       <CharacterZone {...characterProps} />
       <SummonsZone summons={summons} player={position} />

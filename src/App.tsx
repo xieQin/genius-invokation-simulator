@@ -4,7 +4,7 @@ import styles from "./App.module.css";
 import Deck from "./components/Deck";
 import Notice from "./components/Notice";
 import CardData from "./data/cards.json";
-import CharacterData from "./data/character.json";
+import CharacterData from "./data/characters.json";
 import { ICard, ICharacter, IPlayer, PlayerPosition } from "./models";
 import { getRandom } from "./utils";
 
@@ -51,7 +51,7 @@ export default function App() {
   const [scale, setScale] = useState(getScale());
 
   const own: IPlayer = {
-    name: "Own",
+    name: "Lumin",
     position: PlayerPosition.Own,
     status: null,
     characters: initCharacters[0],
@@ -61,7 +61,7 @@ export default function App() {
     cardStack: initCards[0],
   };
   const opposite: IPlayer = {
-    name: "Opposite",
+    name: "Ellin",
     position: PlayerPosition.Opposite,
     status: null,
     characters: initCharacters[1],

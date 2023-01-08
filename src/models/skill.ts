@@ -10,6 +10,7 @@ export interface ISkill {
   text: string;
   costs: ICost[];
   img: string;
+  imgID: string;
 }
 
 export enum SkillType {

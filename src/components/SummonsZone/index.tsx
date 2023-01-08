@@ -18,7 +18,7 @@ export const SummonDamageItem = (props: {
   giElement: GIElement;
   damage: number;
 }) => {
-  const { giElement, damage } = props;
+  const { damage } = props;
   return (
     <div className={styles.SummonDamageItem}>
       <div className={styles.SummonText}>{damage}</div>
@@ -31,7 +31,7 @@ export const SummonItem = (props: { card: string }) => {
   return (
     <div className={styles.SummonsItemLayout}>
       <div className={styles.SummonsItem}>
-        <img src={`images/${props.card}.png`} alt="" />
+        <img src={`summons/${props.card}.png`} alt="" />
       </div>
       <SummonTurnItem />
       <SummonDamageItem damage={2} giElement={GIElement.Pyro} />

@@ -55,7 +55,7 @@ export const HandCardList = (props: {
             onClick={() => toggleControl(index)}
           >
             <div className={styles.HandCardLayout}>
-              <div className={styles.HandCardPay}>2</div>
+              <div className={styles.HandCardPay}>{card.cost[0].costNum}</div>
               <img src={`/cards/${card.imgID}.png`} alt="" />
             </div>
           </div>

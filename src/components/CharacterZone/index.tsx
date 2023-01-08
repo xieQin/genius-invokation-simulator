@@ -48,7 +48,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       onKeyDown={toggleControl}
       onClick={toggleControl}
     >
-      <div className={styles.CharacterHealth}>10</div>
+      <div className={styles.CharacterHealth}>{character.hp}</div>
       <div className={styles.CharacterEnergy}>
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEnergyItem}></div>

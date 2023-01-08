@@ -1,9 +1,14 @@
+import { ISkill } from "@/models";
+
 import styles from "./index.module.css";
 
-export const SkillZoneItem = () => {
+export const SkillZoneItem = (props: { skill: ISkill }) => {
+  const { skill } = props;
   return (
     <div className={styles.SkillZoneItem}>
-      <div className={styles.SkillIcon}></div>
+      <div className={styles.SkillIcon}>
+        <img src={`skills/${skill.imgID}.png`} alt="" />
+      </div>
       <div className={styles.SkillPayItems}>
         <div className={styles.SkillPayItem}>2</div>
         <div className={styles.SkillPayItem}>3</div>
@@ -12,12 +17,14 @@ export const SkillZoneItem = () => {
   );
 };
 
-export default function SkillZone() {
+export default function SkillZone(props: { skills: ISkill[] }) {
+  const { skills } = props;
+
   return (
     <div className={styles.SkillZone}>
-      <SkillZoneItem />
-      <SkillZoneItem />
-      <SkillZoneItem />
+      {skills.map((skill, index) => (
+        <SkillZoneItem key={index} skill={skill} />
+      ))}
     </div>
   );
 }

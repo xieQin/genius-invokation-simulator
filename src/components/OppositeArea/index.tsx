@@ -26,7 +26,7 @@ export default function OppositeArea(props: IPlayer) {
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Opposite}`}>
-      <PlayerZone style={{ top: "40px" }} player={position} />
+      <PlayerZone style={{ top: "40px" }} player={props} />
       <SupportZone
         style={{ top: "180px" }}
         supports={supports}
