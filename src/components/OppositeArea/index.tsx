@@ -42,7 +42,7 @@ export default function OppositeArea(props: IPlayer) {
         summons={summons}
         player={position}
       />
-      <CardStackZone />
+      <CardStackZone style={{ top: "160px" }} />
       <HandCardZone
         cards={cards}
         player={position}

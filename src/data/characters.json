@@ -10,10 +10,10 @@
     "name": "Liutian Archery",
     "costs": [{
       "costNum": 1,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -24,10 +24,7 @@
     "name": "Trail of the Qilin",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/80d61bdb70eef0d57ca877bb39dbb0d9.png",
@@ -38,10 +35,7 @@
     "name": "Frostflake Arrow",
     "costs": [{
       "costNum": 5,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -52,10 +46,10 @@
     "name": "Celestial Shower",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/fcda5c89f7d783e8bff69719c0d30692.png",
@@ -79,10 +73,10 @@
     "name": "Kätzlein Style",
     "costs": [{
       "costNum": 1,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -93,10 +87,7 @@
     "name": "Icy Paws",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/90c513d6b26cc20a6ce30fb82750f2e7.png",
@@ -107,10 +98,10 @@
     "name": "Signature Mix",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6ab5e0c2e95117950515b23a875006c0.png",
@@ -134,10 +125,10 @@
     "name": "Ceremonial Bladework",
     "costs": [{
       "costNum": 1,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -148,10 +139,7 @@
     "name": "Frostgnaw",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/de0abe0fb5f2904c8695d4207f472cdb.png",
@@ -162,10 +150,10 @@
     "name": "Glacial Waltz",
     "costs": [{
       "costNum": 4,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f9e5cb46ba3bf6d4ec2f9e4455dc6238.png",
@@ -189,10 +177,10 @@
     "name": "Demonbane",
     "costs": [{
       "costNum": 1,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
@@ -203,10 +191,7 @@
     "name": "Chonghua's Layered Frost",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e023be3e82b38b50202ecf4d4fb0fa81.png",
@@ -217,10 +202,10 @@
     "name": "Cloud-Parting Star",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/153a77400dc95c9b51733d0d0d9a4ac0.png",
@@ -244,10 +229,10 @@
     "name": "Kamisato Art: Kabuki",
     "costs": [{
       "costNum": 1,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -258,10 +243,7 @@
     "name": "Kamisato Art: Hyouka",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/7b59308313512c3c7350eb6a92b3ea27.png",
@@ -272,10 +254,10 @@
     "name": "Kamisato Art: Soumetsu",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
+      "costType": "Cryo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3668bb20f0b7fb4cfb1fb4162d6fa28f.png",
@@ -284,13 +266,7 @@
     "id": "11054",
     "text": "(Passive) When switched to be the active character, this character gains <color=#FFFFFFFF>Cryo Elemental Infusion</color>.",
     "name": "Kamisato Art: Senho",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/959584488f20484942c1403df073f954.png",
     "imgID": "KamisatoArtSenho"
@@ -313,10 +289,10 @@
     "name": "Whisper of Water",
     "costs": [{
       "costNum": 1,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -327,10 +303,7 @@
     "name": "Let the Show Begin♪",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/63c2345902423b25788f104985348cfd.png",
@@ -341,10 +314,10 @@
     "name": "Shining Miracle♪",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/8da9eff0a67380b83cb6c3360e509695.png",
@@ -368,10 +341,10 @@
     "name": "Guhua Style",
     "costs": [{
       "costNum": 1,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -382,10 +355,7 @@
     "name": "Fatal Rainscreen",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5578cdac2dd8187149544e0898ddf1fd.png",
@@ -396,10 +366,10 @@
     "name": "Raincutter",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/41d0bb68b4558ff4583b48268b5ecb1b.png",
@@ -423,10 +393,10 @@
     "name": "Ripple of Fate",
     "costs": [{
       "costNum": 1,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -437,10 +407,7 @@
     "name": "Mirror Reflection of Doom",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/c821ff150eb08b2512e3bfa39c19b20d.png",
@@ -451,10 +418,10 @@
     "name": "Stellaris Phantasm",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/bd9c6c5db4f7cfd3ce555aaa00a4a1dd.png",
@@ -463,13 +430,7 @@
     "id": "12034",
     "text": "(Passive) <color=#FFFFFFFF>When you perform \"Switch Character\" while Mona is your active character:</color> This switch is considered a <color=#FFFFFFFF>Fast Action</color> instead of a <color=#FFFFFFFF>Combat Action</color>. (Once per Round)",
     "name": "Illusory Torrent",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6c924aed33d3b0cbdcd6b280c2b52631.png",
     "imgID": "IllusoryTorrent"
@@ -492,10 +453,10 @@
     "name": "Tempered Sword",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
@@ -506,10 +467,7 @@
     "name": "Searing Onslaught",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Pyro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/31863c524d54277f038d60c77c8a85ef.png",
@@ -520,10 +478,10 @@
     "name": "Dawn",
     "costs": [{
       "costNum": 4,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/441499b2202e58aa6df0ebbd21bb4f67.png",
@@ -547,10 +505,10 @@
     "name": "Dough-Fu",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eff1794fed54da5f9132873f84b6f41c.png",
@@ -561,10 +519,7 @@
     "name": "Guoba Attack",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Pyro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5a6d6002064487f449b61a96300a79b8.png",
@@ -575,10 +530,10 @@
     "name": "Pyronado",
     "costs": [{
       "costNum": 4,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4a5ced0f3db7bd4a0553f837544ecb99.png",
@@ -602,10 +557,10 @@
     "name": "Strike of Fortune",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -616,10 +571,7 @@
     "name": "Passion Overload",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Pyro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3b102a63444d271b250d9b199568bd79.png",
@@ -630,10 +582,10 @@
     "name": "Fantastic Voyage",
     "costs": [{
       "costNum": 4,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a0063dea821a2e70e3ad6d8731e65c44.png",
@@ -657,10 +609,10 @@
     "name": "Firework Flare-Up",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -671,10 +623,7 @@
     "name": "Niwabi Fire-Dance",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Pyro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/bd53cae9bde22c0efae9e696adf58b3b.png",
@@ -685,10 +634,10 @@
     "name": "Ryuukin Saxifrage",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a7ce012f5ae1e409862e6b98c3367391.png",
@@ -712,10 +661,10 @@
     "name": "Bolts of Downfall",
     "costs": [{
       "costNum": 1,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -726,10 +675,7 @@
     "name": "Nightrider",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Electro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4b4b654a14e8ca726e105af1666f4fc4.png",
@@ -740,10 +686,10 @@
     "name": "Midnight Phantasmagoria",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51f354b2f813bfc1de68460be40d435.png",
@@ -767,10 +713,10 @@
     "name": "Steel Fang",
     "costs": [{
       "costNum": 1,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
@@ -781,10 +727,7 @@
     "name": "Claw and Thunder",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Electro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/efb029187262b0892b0a85a7be3c81c6.png",
@@ -795,10 +738,10 @@
     "name": "Lightning Fang",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/43720b9540661d37f397adddc08f984d.png",
@@ -822,10 +765,10 @@
     "name": "Yunlai Swordsmanship",
     "costs": [{
       "costNum": 1,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -836,10 +779,7 @@
     "name": "Stellar Restoration",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Electro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eb94518489d930ab5fa02434b64b206e.png",
@@ -850,10 +790,10 @@
     "name": "Starward Sword",
     "costs": [{
       "costNum": 4,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4caa9b938cb1e72fa2cf4dca79b51fb8.png",
@@ -877,10 +817,10 @@
     "name": "Invoker's Spear",
     "costs": [{
       "costNum": 1,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eff1794fed54da5f9132873f84b6f41c.png",
@@ -891,10 +831,7 @@
     "name": "Secret Rite: Chasmic Soulfarer",
     "costs": [{
       "costNum": 3,
-      "costType": "14"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Electro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/70d35fde5a93ea9706b5c82e223ed57c.png",
@@ -905,10 +842,10 @@
     "name": "Sacred Rite: Wolf's Swiftness",
     "costs": [{
       "costNum": 4,
-      "costType": "14"
+      "costType": "Electro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/df77d411c3039ab4c7455f62aa0fe43c.png",
@@ -917,13 +854,7 @@
     "id": "14044",
     "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Pactsworn Pathclearer</color>.",
     "name": "Lawful Enforcer",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3fee355d6f0090f9079b6a8bd15dd839.png",
     "imgID": "LawfulEnforcer"
@@ -946,10 +877,10 @@
     "name": "Wind Spirit Creation",
     "costs": [{
       "costNum": 1,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -960,10 +891,7 @@
     "name": "Astable Anemohypostasis Creation - 6308",
     "costs": [{
       "costNum": 3,
-      "costType": "17"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Anemo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6c091fa8a5b6e71ad8b876dd1e45e407.png",
@@ -974,10 +902,10 @@
     "name": "Forbidden Creation - Isomer 75 / Type II",
     "costs": [{
       "costNum": 3,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/38cc0d7de9627cf89d3f19c326d2e890.png",
@@ -1001,10 +929,10 @@
     "name": "Favonius Bladework",
     "costs": [{
       "costNum": 1,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
@@ -1015,10 +943,7 @@
     "name": "Gale Blade",
     "costs": [{
       "costNum": 3,
-      "costType": "17"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Anemo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/906be849304f62b87b34122e050333b8.png",
@@ -1029,10 +954,10 @@
     "name": "Dandelion Breeze",
     "costs": [{
       "costNum": 4,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/dfc823559c0cfa4f6febda9d9ea32d60.png",
@@ -1056,10 +981,10 @@
     "name": "Sparkling Scatter",
     "costs": [{
       "costNum": 1,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -1070,10 +995,7 @@
     "name": "Jade Screen",
     "costs": [{
       "costNum": 3,
-      "costType": "15"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Geo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/2bd0da27a460a5cd1b552c13180ecb5e.png",
@@ -1084,10 +1006,10 @@
     "name": "Starshatter",
     "costs": [{
       "costNum": 3,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e7fcd17292e0f2c5c3aa10434f454f0a.png",
@@ -1111,10 +1033,10 @@
     "name": "Favonius Bladework - Maid",
     "costs": [{
       "costNum": 1,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
@@ -1125,10 +1047,7 @@
     "name": "Breastplate",
     "costs": [{
       "costNum": 3,
-      "costType": "15"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Geo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/46096c958f0cce3073cac75e540eec9d.png",
@@ -1139,10 +1058,10 @@
     "name": "Sweeping Time",
     "costs": [{
       "costNum": 4,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/2a78695dc2147234a2bb70c6fa13543c.png",
@@ -1166,10 +1085,10 @@
     "name": "Supplicant's Bowmanship",
     "costs": [{
       "costNum": 1,
-      "costType": "16"
+      "costType": "Dendro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
@@ -1180,10 +1099,7 @@
     "name": "Floral Brush",
     "costs": [{
       "costNum": 3,
-      "costType": "16"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Dendro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/31c6bae6d30b2389e9717f5aa00bb617.png",
@@ -1194,10 +1110,10 @@
     "name": "Trump-Card Kitty",
     "costs": [{
       "costNum": 3,
-      "costType": "16"
+      "costType": "Dendro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/aeb8db26f8f3fe637353801bdf1407c7.png",
@@ -1221,10 +1137,10 @@
     "name": "Surge",
     "costs": [{
       "costNum": 1,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -1235,10 +1151,7 @@
     "name": "Oceanid Mimic Summoning",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f25ce524e9fb01340a45dcf85c72b6f2.png",
@@ -1249,10 +1162,7 @@
     "name": "The Myriad Wilds",
     "costs": [{
       "costNum": 5,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/62bc1e938e36a78b18a85f7b2f7ed3b0.png",
@@ -1263,10 +1173,10 @@
     "name": "Tide and Torrent",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/0f148384285f60cf949d5d9b34f8fa92.png",
@@ -1290,10 +1200,10 @@
     "name": "Water Ball",
     "costs": [{
       "costNum": 1,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
@@ -1304,10 +1214,7 @@
     "name": "Influx Blast",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Hydro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/02e8a759adb9dd6f7862f18a638cefcb.png",
@@ -1318,10 +1225,10 @@
     "name": "Rippled Reflection",
     "costs": [{
       "costNum": 3,
-      "costType": "12"
+      "costType": "Hydro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e968bcf122be55187bd11a6bc3ce8c7f.png",
@@ -1345,10 +1252,10 @@
     "name": "Thrust",
     "costs": [{
       "costNum": 1,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
@@ -1359,10 +1266,7 @@
     "name": "Prowl",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Pyro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4b3d7470c2443c3438fcc7e86ff69dcc.png",
@@ -1373,10 +1277,10 @@
     "name": "Blade Ablaze",
     "costs": [{
       "costNum": 3,
-      "costType": "13"
+      "costType": "Pyro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f58850c0fa15b11271c164ae7e249785.png",
@@ -1385,13 +1289,7 @@
     "id": "23014",
     "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Stealth</color>.",
     "name": "Stealth Master",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/52db57120e52fb2584a696c34b38aac9.png",
     "imgID": "StealthMaster"
@@ -1414,10 +1312,10 @@
     "name": "Ichimonji",
     "costs": [{
       "costNum": 1,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
@@ -1428,10 +1326,7 @@
     "name": "Blustering Blade",
     "costs": [{
       "costNum": 3,
-      "costType": "17"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Anemo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/697861409887f41bf4b5c90f2f3815ff.png",
@@ -1442,10 +1337,7 @@
     "name": "Frosty Assault",
     "costs": [{
       "costNum": 3,
-      "costType": "11"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Cryo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/95c0d647c78c6058bfbd352a44fd4911.png",
@@ -1456,10 +1348,10 @@
     "name": "Pseudo Tengu Sweeper",
     "costs": [{
       "costNum": 3,
-      "costType": "17"
+      "costType": "Anemo"
     }, {
       "costNum": 3,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/51a851b66792a160e211ff84020d3610.png",
@@ -1483,10 +1375,10 @@
     "name": "Plama Lawa",
     "costs": [{
       "costNum": 1,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
@@ -1497,10 +1389,7 @@
     "name": "Movo Lawa",
     "costs": [{
       "costNum": 3,
-      "costType": "15"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Geo"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/dba642d3d9f4dc42820168db15b95de2.png",
@@ -1511,10 +1400,10 @@
     "name": "Upa Shato",
     "costs": [{
       "costNum": 3,
-      "costType": "15"
+      "costType": "Geo"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/418ae77cc4622a67d6286b4be44ff910.png",
@@ -1523,13 +1412,7 @@
     "id": "26014",
     "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Stonehide</color> and <color=#FFFFFFFF>Stone Force</color>.",
     "name": "Infused Stonehide",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/058b86d139526b2518ce20e3badbb4ef.png",
     "imgID": "InfusedStonehide"
@@ -1552,10 +1435,10 @@
     "name": "Majestic Dance",
     "costs": [{
       "costNum": 1,
-      "costType": "16"
+      "costType": "Dendro"
     }, {
       "costNum": 2,
-      "costType": "10"
+      "costType": "Void"
     }],
     "type": ["Normal Attack", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
@@ -1566,10 +1449,7 @@
     "name": "Volatile Spore Cloud",
     "costs": [{
       "costNum": 3,
-      "costType": "16"
-    }, {
-      "costNum": 0,
-      "costType": ""
+      "costType": "Dendro"
     }],
     "type": ["Elemental Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/121e09032218105e54a51cbd1c2ce731.png",
@@ -1580,10 +1460,10 @@
     "name": "Feather Spreading",
     "costs": [{
       "costNum": 3,
-      "costType": "16"
+      "costType": "Dendro"
     }, {
       "costNum": 2,
-      "costType": "1"
+      "costType": "Energy"
     }],
     "type": ["Elemental Burst", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f7843567c0056ab7fe1132d9875d2c26.png",
@@ -1592,13 +1472,7 @@
     "id": "27014",
     "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Radical Vitality</color>.",
     "name": "Radical Vitality",
-    "costs": [{
-      "costNum": 0,
-      "costType": ""
-    }, {
-      "costNum": 0,
-      "costType": ""
-    }],
+    "costs": [],
     "type": ["Passive Skill", ""],
     "img": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/fc3e95c05191996151a572a15b3a99fb.png",
     "imgID": "RadicalVitality"

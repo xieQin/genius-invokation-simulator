@@ -11,6 +11,19 @@
 
 .OppositeDices {
   position: absolute;
+  width: 60px;
+  bottom: 150px;
+  left: 23px;
+  height: 60px;
+  background-image: url(/images/oppo-dice-icon.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  line-height: 60px;
+  text-indent: 10px;
+  font-weight: bold;
+  -webkit-text-stroke: #000 1px;
 }
 
 .ClockTime {
@@ -20,4 +33,16 @@
 
 .OwnDices {
   position: absolute;
+  width: 60px;
+  top: 160px;
+  left: 28px;
+  height: 60px;
+  background-image: url(/images/own-dice-icon.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 60px;
+  -webkit-text-stroke: #000 1px;
 }

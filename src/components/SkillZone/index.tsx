@@ -10,8 +10,16 @@ export const SkillZoneItem = (props: { skill: ISkill }) => {
         <img src={`skills/${skill.imgID}.png`} alt="" />
       </div>
       <div className={styles.SkillPayItems}>
-        <div className={styles.SkillPayItem}>2</div>
-        <div className={styles.SkillPayItem}>3</div>
+        {skill.costs
+          .filter(cost => cost.costNum > 0)
+          .map((cost, i) => (
+            <div
+              key={i}
+              className={`${styles.SkillPayItem} ${styles[cost.costType]}`}
+            >
+              {cost.costNum}
+            </div>
+          ))}
       </div>
     </div>
   );

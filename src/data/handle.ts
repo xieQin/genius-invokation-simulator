@@ -26,6 +26,23 @@ const ImageIDTrans = (s: string) => {
     .replace(/♪*/g, "");
 };
 
+type costType = "1" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17";
+
+const CostTypeTrans = (c: costType) => {
+  const CostType = {
+    "1": "Energy",
+    "10": "Void",
+    "11": "Cryo",
+    "12": "Hydro",
+    "13": "Pyro",
+    "14": "Electro",
+    "15": "Geo",
+    "16": "Dendro",
+    "17": "Anemo",
+  };
+  return CostType[c] || "";
+};
+
 export const transCharacters = () => {
   const roles = GIData.role_card_infos;
   const res = roles.map(
@@ -40,10 +57,12 @@ export const transCharacters = () => {
           id: skill.id,
           text: skill.skill_text,
           name: skill.name,
-          costs: skill.skill_costs.map(c => ({
-            costNum: Number(c.cost_num),
-            costType: c.cost_icon,
-          })),
+          costs: skill.skill_costs
+            .filter(c => c.cost_icon != "")
+            .map(c => ({
+              costNum: Number(c.cost_num),
+              costType: CostTypeTrans(c.cost_icon as costType),
+            })),
           type: skill.type as SkillSubType[],
           img: skill.resource,
           imgID: ImageIDTrans(skill.name),
@@ -73,11 +92,11 @@ export const transCards = () => {
         cost: [
           {
             costNum: Number(card.cost_num1),
-            costType: card.cost_type1_icon,
+            costType: CostTypeTrans(card.cost_type1_icon as costType),
           },
           {
             costNum: Number(card.cost_num2),
-            costType: card.cost_type2_icon,
+            costType: CostTypeTrans(card.cost_type2_icon as costType),
           },
         ],
         img: card.resource,

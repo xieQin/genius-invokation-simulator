@@ -1,7 +1,7 @@
 .CardStackZone {
   position: absolute;
-  top: 80px;
-  left: 0;
+  top: 160px;
+  left: 20px;
 }
 
 .CardStackItem {

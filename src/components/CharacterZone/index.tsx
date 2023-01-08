@@ -32,6 +32,10 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
+      <div className={styles.CharacterEquipment}>
+        <div className={styles.CharacterWeapon}></div>
+        <div className={styles.CharacterArtifact}></div>
+      </div>
       <img src={`/characters/${character.imgID}.png`} alt="" />
     </div>
   );
