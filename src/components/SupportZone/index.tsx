@@ -1,7 +1,6 @@
 import { CSSProperties } from "react";
 
-import { PlayerPosition } from "@/models";
-import { SupportName } from "@/models/support";
+import { ICard, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
 
@@ -32,11 +31,11 @@ export const SupportHealItem = () => {
   );
 };
 
-export const SupportItem = (props: { card: SupportName }) => {
+export const SupportItem = (props: { card: ICard }) => {
   return (
     <div className={styles.SupportItemLayout}>
       <div className={styles.SupportItem}>
-        <img src={`cards/support/${props.card}.png`} alt="" />
+        <img src={`/cards/${props.card.imgID}.png`} alt="" />
       </div>
       <SupportClockItem />
       <SupportHealItem />
@@ -47,7 +46,7 @@ export const SupportItem = (props: { card: SupportName }) => {
 export default function SupportZone(props: {
   style?: CSSProperties;
   player: PlayerPosition;
-  supports: SupportName[];
+  supports: ICard[];
 }) {
   const { supports } = props;
   return (

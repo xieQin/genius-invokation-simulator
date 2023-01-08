@@ -1,5 +1,6 @@
 export interface IEvent {
-  name: EventName;
+  id: EventID;
+  name: string;
   type: EventEvent;
   effect: EventEvent | EventFood | EventElementalResonance;
 }
@@ -15,15 +16,15 @@ export enum EventEvent {
   TheBestestTravelCompanion,
   ChangingShifts,
   IHaventLostYet,
-  WhenTheCraneReturned,
+  WhentheCraneReturned,
   Starsigns,
   CalxsArts,
-  MasterOfWeaponry,
-  BlessingOfTheDivineRelicsInstallation,
+  MasterofWeaponry,
+  BlessingoftheDivineRelicsInstallation,
   SendOff,
   GuardiansOath,
   Strategize,
-  LeaveItToMe,
+  LeaveIttoMe,
   QuickKnit,
   AbyssalSummons,
 }
@@ -31,7 +32,7 @@ export enum EventEvent {
 export enum EventFood {
   JueyunGuoba,
   AdeptusTemptation,
-  NorthernSmokeChicken,
+  NorthernSmokedChicken,
   SweetMadame,
   LotusFlowerCrisp,
   MushroomPizza,
@@ -40,26 +41,23 @@ export enum EventFood {
 }
 
 export enum EventElementalResonance {
-  WovenIce,
-  ShatteringIce,
-  WovenWaters,
-  SoothingWater,
-  WovenFlames,
-  FerventFlames,
-  WovenThunder,
-  HighVoltage,
-  WovenWinds,
-  ImpetuousWinds,
-  WovenWeeds,
-  SprawlingGreenery,
-  WovenStone,
-  EnduringRock,
+  ElementalResonanceWovenIce,
+  ElementalResonanceShatteringIce,
+  ElementalResonanceWovenWaters,
+  ElementalResonanceSoothingWater,
+  ElementalResonanceWovenFlames,
+  ElementalResonanceFerventFlames,
+  ElementalResonanceWovenThunder,
+  ElementalResonanceHighVoltage,
+  ElementalResonanceWovenWinds,
+  ElementalResonanceImpetuousWinds,
+  ElementalResonanceWovenWeeds,
+  ElementalResonanceSprawlingGreenery,
+  ElementalResonanceWovenStone,
+  ElementalResonanceEnduringRock,
 }
 
-export type EventEventName = keyof typeof EventEvent;
-export type EventFoodName = keyof typeof EventFood;
-export type EventElementalResonanceName = keyof typeof EventElementalResonance;
-export type EventName =
-  | EventEventName
-  | EventFoodName
-  | EventElementalResonanceName;
+export type EventEventID = keyof typeof EventEvent;
+export type EventFoodID = keyof typeof EventFood;
+export type EventElementalResonanceID = keyof typeof EventElementalResonance;
+export type EventID = EventEventID | EventFoodID | EventElementalResonanceID;

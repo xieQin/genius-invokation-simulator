@@ -1,6 +1,6 @@
 import { CSSProperties, useState } from "react";
 
-import { CardName, PlayerPosition } from "@/models";
+import { ICard, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
 
@@ -13,7 +13,7 @@ export const HandCardItem = () => {
 };
 
 export const HandCardList = (props: {
-  cards: CardName[];
+  cards: ICard[];
   player: PlayerPosition;
   toggle?: (v: boolean) => void;
 }) => {
@@ -35,7 +35,7 @@ export const HandCardList = (props: {
       <div className={styles.HandCardList}>
         {cards.map((_, index) => (
           <div key={index} className={styles.HandCard}>
-            <img src={`/images/card-back-normal.png`} alt="" />
+            <img src={`/back/card-back-normal.png`} alt="" />
           </div>
         ))}
       </div>
@@ -56,7 +56,7 @@ export const HandCardList = (props: {
           >
             <div className={styles.HandCardLayout}>
               <div className={styles.HandCardPay}>2</div>
-              <img src={`/images/${card}.png`} alt="" />
+              <img src={`/cards/${card.imgID}.png`} alt="" />
             </div>
           </div>
         ))}
@@ -68,15 +68,9 @@ export const HandCardList = (props: {
 export default function HandCardZone(props: {
   style?: CSSProperties;
   player: PlayerPosition;
+  cards: ICard[];
 }) {
-  const cards: CardName[] = [
-    "AbyssalSummons",
-    "BrokenRimesEcho",
-    "ChangingShifts",
-    "ChefOfMao",
-    "CalxsArts",
-    "GloriousSeason",
-  ];
+  const { cards, ...rest } = props;
   const [isExpand, setIsExpand] = useState(false);
 
   return (
@@ -86,7 +80,7 @@ export default function HandCardZone(props: {
       }`}
       {...props}
     >
-      <HandCardList cards={cards} toggle={v => setIsExpand(v)} {...props} />
+      <HandCardList cards={cards} toggle={v => setIsExpand(v)} {...rest} />
     </div>
   );
 }

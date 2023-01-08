@@ -1,35 +1,32 @@
-import { EquipmentName, IEquipment } from "./equipment";
-import { EventName, IEvent } from "./event";
-import { ISupport, SupportName } from "./support";
+import {
+  EqiupmentWeaponType,
+  EquipmentID,
+  EquipmentMainType,
+  IEquipment,
+} from "./equipment";
+import { EventID, IEvent } from "./event";
+import { ICost } from "./skill";
+import { ISupport, SupportID, SupportType } from "./support";
 
-export interface ICardBase {
-  id?: string;
-  baseType: CardMainType;
-  subType: CardSubType;
-  cost: number;
-  mustSameDie: boolean;
+export interface ICard {
+  name: string;
+  content: string;
+  mainType: CardMainType;
+  subType: CardSubType[];
+  cost: ICost[];
+  img: string;
+  imgID: string;
 }
 
-export interface ICardEquipment extends ICardBase, IEquipment {}
-export interface ICardSupport extends ICardBase, ISupport {}
-export interface ICardEvent extends ICardBase, IEvent {}
-export type CardName = EquipmentName | SupportName | EventName;
+export interface ICardEquipment extends ICard, IEquipment {}
+export interface ICardSupport extends ICard, ISupport {}
+export interface ICardEvent extends ICard, IEvent {}
+export type CardID = EquipmentID | SupportID | EventID;
 
 export enum CardMainType {
-  Event,
-  Support,
-  Equipment,
-  Summon,
+  Event = "AcEvent",
+  Support = "AcSupport",
+  Equipment = "AcEquip",
 }
 
-export enum CardSubType {
-  Weapon,
-  Artifact,
-  Talent,
-  Food,
-  Item,
-  Companion,
-  Location,
-  ElementResonance,
-  Other,
-}
+export type CardSubType = EquipmentMainType | EqiupmentWeaponType | SupportType;

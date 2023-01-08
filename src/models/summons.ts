@@ -1,5 +1,6 @@
 export interface ISummon {
-  name: SummonsName;
+  id: SummonsID;
+  name: string;
 }
 
 export enum Summons {
@@ -33,4 +34,4 @@ export enum Summons {
   DandelionField,
 }
 
-export type SummonsName = keyof typeof Summons;
+export type SummonsID = keyof typeof Summons;

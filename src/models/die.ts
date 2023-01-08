@@ -1,7 +1,7 @@
-import { GIElement, GIElementName } from "./element";
+import { GIElement, GIElementID } from "./element";
 
 export interface IGIDice {
-  name: GIDiceName;
+  id: GIDiceID;
 }
 
 export enum GIDiceExtra {
@@ -14,4 +14,4 @@ export const GIDices = {
 };
 
 export type GIDice = GIElement | GIDiceExtra;
-export type GIDiceName = GIElementName | keyof typeof GIDiceExtra;
+export type GIDiceID = GIElementID | keyof typeof GIDiceExtra;

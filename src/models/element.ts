@@ -1,11 +1,11 @@
 export enum GIElement {
-  Anemo,
-  Cryo,
-  Dendro,
-  Electro,
-  Geo,
-  Pyro,
-  Hydro,
+  Anemo = "ETWind",
+  Cryo = "ETIce",
+  Dendro = "ETGrass",
+  Electro = "ETThunder",
+  Geo = "ETRock",
+  Pyro = "ETFire",
+  Hydro = "ETWater",
 }
 
-export type GIElementName = keyof typeof GIElement;
+export type GIElementID = keyof typeof GIElement;

@@ -1,7 +1,8 @@
 import { GIElement } from "./element";
 
 export interface IEquipment {
-  name: EquipmentName;
+  id: EquipmentID;
+  name: string;
   type: EquipmentMainType;
   items?: IEquipmentWeapon | IEquipmentArtifact;
 }
@@ -25,39 +26,39 @@ export interface IEquipmentArtifact extends IEquipment {
 }
 
 export enum EquipmentMainType {
-  Weapon,
-  Artifact,
-  Talent,
-  Other,
+  Weapon = "Weapon",
+  Artifact = "Artifact",
+  Talent = "Talent",
+  Other = "Other",
 }
 
 export enum EqiupmentWeaponType {
-  Bow,
-  Claymore,
-  Polearm,
-  Catalyst,
-  Sword,
-  Other,
+  Bow = "Bow",
+  Claymore = "Claymore",
+  Polearm = "Polearm",
+  Catalyst = "Catalyst",
+  Sword = "Sword",
+  Other = "Other Weapons",
 }
 
 export enum EqiupmentArtifact {
   AdventurersBandana,
   LuckyDogsSilverCirclet,
-  TranvelingDoctersHandChief,
+  TravelingDoctorsHandkerchief,
   GamblersEarrings,
   InstructorsCap,
   ExilesCirclet,
   BrokenRimesEcho,
   BlizzardStrayer,
-  WinStainedTricorne,
-  HeartOfDepth,
+  WineStainedTricorne,
+  HeartofDepth,
   WitchsScorchingHat,
-  CrimsonWitchOfFlames,
+  CrimsonWitchofFlames,
   ThunderSummonersCrown,
   ThunderingFury,
-  ViridescentVenergersDiadem,
+  ViridescentVenerersDiadem,
   ViridescentVenerer,
-  MaskOfSolitudeBasalt,
+  MaskofSolitudeBasalt,
   ArchaicPetra,
   LaurelCoronet,
   DeepwoodMemories,
@@ -71,7 +72,7 @@ export enum EqiupmentTalent {
   KantenSenmyouBlessing,
   GloriousSeason,
   TheScentRemained,
-  ProphecyOfSubmersion,
+  ProphecyofSubmersion,
   FlowingFlame,
   Crossfire,
   GrandExpectation,
@@ -79,16 +80,16 @@ export enum EqiupmentTalent {
   StellarPredator,
   Awakening,
   ThunderingPenance,
-  FeatherfallJudgement,
+  FeatherfallJudgment,
   ChaoticEntropy,
-  LandsOfDandelion,
+  LandsofDandelion,
   StrategicReserve,
   IGotYourBack,
   FloralSidewinder,
   StreamingSurge,
   MirrorCage,
-  PaidInFull,
-  TranscentdentAutomaton,
+  PaidinFull,
+  TranscendentAutomaton,
   StonehideReforged,
   ProliferatingSpores,
 }
@@ -116,7 +117,7 @@ export enum EquipmentArtifactEffect {
 export enum EquipmentWeaponClaymore {
   WhiteIronGreatsword,
   SacrificialGreatsword,
-  WolfsGraveStone,
+  WolfsGravestone,
 }
 
 export enum EquipmentWeaponPolearm {
@@ -152,10 +153,10 @@ export const EquipmentWeapons = {
 };
 
 export type EquipmentWeapon = typeof EquipmentWeapons;
-export type EquipmentWeaponName = keyof EquipmentWeapon;
-export type EquipmentArtifactName = keyof typeof EqiupmentArtifact;
-export type EquipmentTalentName = keyof typeof EqiupmentTalent;
-export type EquipmentName =
-  | EquipmentWeaponName
-  | EquipmentArtifactName
-  | EquipmentTalentName;
+export type EquipmentWeaponID = keyof EquipmentWeapon;
+export type EquipmentArtifactID = keyof typeof EqiupmentArtifact;
+export type EquipmentTalentID = keyof typeof EqiupmentTalent;
+export type EquipmentID =
+  | EquipmentWeaponID
+  | EquipmentArtifactID
+  | EquipmentTalentID;

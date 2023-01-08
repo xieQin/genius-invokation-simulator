@@ -1,9 +1,9 @@
 export enum GIRegion {
-  Mondstadt,
-  Liyue,
-  Inazuma,
-  Sumeru,
-  Fatui,
-  Monster,
+  Mondstadt = "Mondstadt",
+  Liyue = "Liyue",
+  Inazuma = "Inazuma",
+  Sumeru = "Sumeru",
+  Fatui = "Fatui",
+  Monster = "Monster",
 }
-export type GIRegionName = keyof typeof GIRegion;
+export type GIRegionID = keyof typeof GIRegion;

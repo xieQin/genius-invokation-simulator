@@ -1,7 +1,7 @@
 import areaStyles from "@/assets/styles/area.module.css";
 import { IPlayer, PlayerPosition } from "@/models";
-import { SummonsName } from "@/models/summons";
-import { SupportName } from "@/models/support";
+import { SummonsID } from "@/models/summons";
+import { SupportID } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -13,13 +13,12 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea(props: IPlayer) {
-  const { position, characters } = props;
+  const { position, characters, supports, cards } = props;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
   };
-  const supports: SupportName[] = ["Ellin", "ChefOfMao", "NRE", "Liben"];
-  const summons: SummonsName[] = [
+  const summons: SummonsID[] = [
     "CuileinAnbar",
     "Guoba",
     "DrunkenMist",
@@ -33,7 +32,7 @@ export default function OwnArea(props: IPlayer) {
       <SupportZone supports={supports} player={position} />
       <CharacterZone {...characterProps} />
       <SummonsZone summons={summons} player={position} />
-      <HandCardZone player={position} />
+      <HandCardZone player={position} cards={cards} />
       <CardStackZone />
     </div>
   );

@@ -39,7 +39,6 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
     ...defaultStyle,
     ...(transformStyles[state as stateType] ?? {}),
   };
-
   return (
     <div
       className={styles.CharacterItem}
@@ -55,7 +54,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterEnergyItem}></div>
         <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
-      <img src={`/cards/character/${character.name}.png`} alt="" />
+      <img src={`/characters/${character.imgID}.png`} alt="" />
     </div>
   );
 };

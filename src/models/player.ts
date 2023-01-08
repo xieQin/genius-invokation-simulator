@@ -1,15 +1,15 @@
-import { ICardBase } from "./card";
+import { ICard } from "./card";
 import { ICharacter } from "./character";
 
 export interface IPlayer {
-  name: PlayerName;
+  name: string;
   position: PlayerPosition;
   status: string | null;
   characters: ICharacter[];
   summons: null;
-  supports: null;
-  cards: ICardBase[];
-  cardStack: ICardBase[];
+  supports: ICard[];
+  cards: ICard[];
+  cardStack: ICard[];
 }
 
 export enum PlayerPosition {
@@ -17,4 +17,4 @@ export enum PlayerPosition {
   Opposite,
 }
 
-export type PlayerName = keyof typeof PlayerPosition;
+export type PlayerID = keyof typeof PlayerPosition;

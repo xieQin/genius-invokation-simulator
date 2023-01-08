@@ -22,5 +22,10 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "jest.setup.ts", "vite.config.ts"]
+  "include": ["src", "jest.setup.ts", "vite.config.ts"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    },
+  }
 }

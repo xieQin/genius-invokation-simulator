@@ -4,27 +4,22 @@ import {
   IEquipmentArtifact,
   IEquipmentWeapon,
 } from "./equipment";
-import { GIRegion } from "./region";
-import { ISkillCombat, ISkillPassive } from "./skill";
+import { GIRegionID } from "./region";
+import { ISkill } from "./skill";
 
 export interface ICharacter {
-  name: CharacterName;
+  id: number;
+  name: string;
   element: GIElement;
   weaponType: EqiupmentWeaponType;
-  region: GIRegion;
+  region: GIRegionID[];
   equipments: ICharacterEquipment | null;
-  skills: ICharacterSkill | null;
+  skills: ISkill[];
   profile: ICharacterProfile | null;
   elementStatus: GIElement | null;
-}
-
-export type CharacterName = keyof typeof Character;
-
-export interface ICharacterSkill {
-  attack: ISkillCombat;
-  skill: ISkillCombat[];
-  burst: ISkillCombat;
-  passive: ISkillPassive;
+  hp: number;
+  img: string;
+  imgID: string;
 }
 
 export interface ICharacterProfile {
@@ -45,32 +40,32 @@ export interface ICharacterEquipment {
 }
 
 export enum Character {
-  Ganyu,
-  Diona,
-  kaeya,
-  Chongyun,
-  KamisatoAyaka,
-  Barbara,
-  Xingqiu,
-  Mona,
-  Diluc,
-  Xiangling,
-  Bennett,
-  Yoimiya,
-  Fischl,
-  Razor,
-  Keqing,
-  Cyno,
-  Sucrose,
-  Jean,
-  Ningguang,
-  Noelle,
-  Collei,
+  Ganyu = "Ganyu",
+  Diona = "Diona",
+  Kaeya = "Kaeya",
+  Chongyun = "Chongyun",
+  KamisatoAyaka = "Kamisato Ayaka",
+  Barbara = "Barbara",
+  Xingqiu = "Xingqiu",
+  Mona = "Mona",
+  Diluc = "Diluc",
+  Xiangling = "Xiangling",
+  Bennett = "Bennett",
+  Yoimiya = "Yoimiya",
+  Fischl = "Fischl",
+  Razor = "Razor",
+  Keqing = "Keqing",
+  Cyno = "Cyno",
+  Sucrose = "Sucrose",
+  Jean = "Jean",
+  Ningguang = "Ningguang",
+  Noelle = "Noelle",
+  Collei = "Collei",
 
-  RhodeiaOfLoch,
-  MirrorMaiden,
-  FatuiPyroAgent,
-  MaguuKenki,
-  StonehideLawachurl,
-  JadeplumeTerrorshroom,
+  RhodeiaOfLoch = "Rhodeia of Loch",
+  MirrorMaiden = "Mirror Maiden",
+  FatuiPyroAgent = "Fatui Pyro Agent",
+  MaguuKenki = "Maguu Kenki",
+  StonehideLawachurl = "Stonehide Lawachurl",
+  JadeplumeTerrorshroom = "Jadeplume Terrorshroom",
 }

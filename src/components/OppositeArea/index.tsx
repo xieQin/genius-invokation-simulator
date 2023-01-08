@@ -1,7 +1,7 @@
 import areaStyles from "@/assets/styles/area.module.css";
 import { IPlayer } from "@/models";
-import { SummonsName } from "@/models/summons";
-import { SupportName } from "@/models/support";
+import { SummonsID } from "@/models/summons";
+import { SupportID } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -12,19 +12,12 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OppositeArea(props: IPlayer) {
-  const { position, characters } = props;
+  const { position, characters, cards, supports } = props;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
   };
-
-  const supports: SupportName[] = [
-    "LiuSu",
-    "KnightsOfFavoniusLiabrary",
-    "ParametricTransformer",
-    "Paimon",
-  ];
-  const summons: SummonsName[] = [
+  const summons: SummonsID[] = [
     "MelodyLoop",
     "Oz",
     "OceanidMimicFrog",
@@ -47,6 +40,7 @@ export default function OppositeArea(props: IPlayer) {
       />
       <CardStackZone />
       <HandCardZone
+        cards={cards}
         player={position}
         style={{ top: "-150px", marginBottom: 0, left: "60%" }}
       />

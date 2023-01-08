@@ -1,36 +1,33 @@
-import { GIElement } from "./element";
+export interface ICost {
+  costNum: number;
+  costType: string;
+}
 
 export interface ISkill {
+  id: string;
   name: string;
-  type: SkillType;
-  info: string;
-  attrs: string;
-  level: number;
-  cost: number;
-}
-
-export interface ISkillCombat extends ISkill {
-  subType: SkillCombatType;
-  cost: number;
-  costElement: GIElement;
-}
-
-export interface ISkillPassive extends ISkill {
-  subType: SkillPassiveType;
+  type: SkillSubType[];
+  text: string;
+  costs: ICost[];
+  img: string;
 }
 
 export enum SkillType {
-  Combat,
-  Passive,
-  Other,
+  Combat = "Combat",
+  Passive = "Passive",
+  Other = "Other",
 }
 
+export type SkillTypeID = keyof typeof SkillType;
+
 export enum SkillCombatType {
-  NormalAttack,
-  ElementalSkill,
-  ElementalBurst,
+  NormalAttack = "Normal Attack",
+  ElementalSkill = "Elemental Skill",
+  ElementalBurst = "Elemental Burst",
 }
 
 export enum SkillPassiveType {
-  Passive,
+  Passive = "Passive Skill",
 }
+
+export type SkillSubType = SkillCombatType | SkillPassiveType | "";

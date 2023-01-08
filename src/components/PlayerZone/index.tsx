@@ -1,5 +1,6 @@
-import { PlayerPosition } from "@/models";
 import { CSSProperties } from "react";
+
+import { PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
 

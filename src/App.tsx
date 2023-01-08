@@ -3,16 +3,39 @@ import { useEffect, useState } from "react";
 import styles from "./App.module.css";
 import Deck from "./components/Deck";
 import Notice from "./components/Notice";
-import { CharacterData } from "./data";
-import { ICharacter, IPlayer, PlayerPosition } from "./models";
+import CardData from "./data/cards.json";
+import CharacterData from "./data/character.json";
+import { ICard, ICharacter, IPlayer, PlayerPosition } from "./models";
 import { getRandom } from "./utils";
 
 const initPlayer = () => {
-  const ownCharacters = getRandom<ICharacter>(3, CharacterData);
-  const oppositeCharacters = getRandom<ICharacter>(3, CharacterData);
+  const ownCharacters = getRandom<ICharacter>(3, CharacterData as ICharacter[]);
+  const oppositeCharacters = getRandom<ICharacter>(
+    3,
+    CharacterData as ICharacter[]
+  );
   return [ownCharacters, oppositeCharacters];
 };
 const initCharacters = initPlayer();
+
+const initCardStack = () => {
+  const ownStack = getRandom<ICard>(30, CardData as ICard[]);
+  const oppositeStack = getRandom<ICard>(30, CardData as ICard[]);
+  return [ownStack, oppositeStack];
+};
+const initCards = initCardStack();
+
+const draftHandCard = (num: number, cardStack: ICard[]) => {
+  return getRandom<ICard>(num, cardStack);
+};
+
+const initSupport = () => {
+  const ownSupports = getRandom<ICard>(4, CardData as ICard[]);
+  const oppositeSupports = getRandom<ICard>(4, CardData as ICard[]);
+  return [ownSupports, oppositeSupports];
+};
+
+const initSupports = initSupport();
 
 const defaultWidth = 1920;
 const defaultHeight = 1080;
@@ -33,9 +56,9 @@ export default function App() {
     status: null,
     characters: initCharacters[0],
     summons: null,
-    supports: null,
-    cards: [],
-    cardStack: [],
+    supports: initSupports[0],
+    cards: draftHandCard(10, initCards[0]),
+    cardStack: initCards[0],
   };
   const opposite: IPlayer = {
     name: "Opposite",
@@ -43,9 +66,9 @@ export default function App() {
     status: null,
     characters: initCharacters[1],
     summons: null,
-    supports: null,
-    cards: [],
-    cardStack: [],
+    supports: initSupports[1],
+    cards: draftHandCard(10, initCards[1]),
+    cardStack: initCards[1],
   };
 
   const autoScale = () => {

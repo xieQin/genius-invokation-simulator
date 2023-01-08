@@ -1,12 +1,13 @@
 export interface ISupport {
-  name: SupportName;
+  id: SupportID;
+  name: string;
   type: SupportType;
 }
 
 export enum SupportType {
-  Item,
-  Location,
-  Companion,
+  Item = "Item",
+  Location = "Location",
+  Companion = "Companion",
 }
 
 export enum SupportItem {
@@ -15,11 +16,11 @@ export enum SupportItem {
 }
 
 export enum SupportLocation {
-  KnightsOfFavoniusLiabrary,
+  KnightsofFavoniusLibrary,
   JadeChamber,
   DawnWinery,
   LiyueHarborWharf,
-  WangsuInn,
+  WangshuInn,
   FavoniusCathedral,
 }
 
@@ -27,21 +28,18 @@ export enum SupportCompanion {
   Katheryne,
   Timaeus,
   Wagner,
-  ChefOfMao,
+  ChefMao,
   Tubby,
   Timmie,
   Ellin,
   IronTongueTian,
   LiuSu,
   Liben,
-  ChangeTheNinth,
+  ChangtheNinth,
   Paimon,
 }
 
-export type SupportItemName = keyof typeof SupportItem;
-export type SupportLocationName = keyof typeof SupportLocation;
-export type SupportCompanionName = keyof typeof SupportCompanion;
-export type SupportName =
-  | SupportItemName
-  | SupportLocationName
-  | SupportCompanionName;
+export type SupportItemID = keyof typeof SupportItem;
+export type SupportLocationID = keyof typeof SupportLocation;
+export type SupportCompanionID = keyof typeof SupportCompanion;
+export type SupportID = SupportItemID | SupportLocationID | SupportCompanionID;

@@ -15,9 +15,9 @@ export const DiceItem = (props: DiceItemProps) => {
   return (
     <div className={styles.DiceListItem}>
       <div className={styles.DiceListItemElement}>
-        <img src={`/images/${dice.name}-elementicon.png`} alt="" />
+        <img src={`/images/${dice.id}-elementicon.png`} alt="" />
       </div>
-      <img src={`/images/${dice.name}-icon.png`} alt="" />
+      <img src={`/images/${dice.id}-icon.png`} alt="" />
     </div>
   );
 };
@@ -29,10 +29,10 @@ export interface DiceZoneProps {
 export default function DiceZone(props: DiceZoneProps) {
   const [dice, setDice] = useState(4);
   const dices: IGIDice[] = [
-    { name: "Omni" },
-    { name: "Anemo" },
-    { name: "Cryo" },
-    { name: "Dendro" },
+    { id: "Omni" },
+    { id: "Anemo" },
+    { id: "Cryo" },
+    { id: "Dendro" },
   ];
 
   return (
