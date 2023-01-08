@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import areaStyles from "@/assets/styles/area.module.css";
 import { IPlayer } from "@/models";
 import { SummonsID } from "@/models/summons";
@@ -12,10 +14,13 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea(props: IPlayer) {
+  const [active, setActive] = useState(-1);
   const { position, characters, supports, cards } = props;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
+    active,
+    setActive,
   };
   const summons: SummonsID[] = [
     "CuileinAnbar",
@@ -23,7 +28,7 @@ export default function OwnArea(props: IPlayer) {
     "DrunkenMist",
     "DandelionField",
   ];
-  const skills = characters[0].skills;
+  const skills = active >= 0 ? characters[active].skills : [];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>

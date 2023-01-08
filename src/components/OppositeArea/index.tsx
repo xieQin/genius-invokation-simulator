@@ -1,7 +1,8 @@
+import { useState } from "react";
+
 import areaStyles from "@/assets/styles/area.module.css";
 import { IPlayer } from "@/models";
 import { SummonsID } from "@/models/summons";
-import { SupportID } from "@/models/support";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -12,10 +13,13 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OppositeArea(props: IPlayer) {
+  const [active, setActive] = useState(-1);
   const { position, characters, cards, supports } = props;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
+    active,
+    setActive,
   };
   const summons: SummonsID[] = [
     "MelodyLoop",
