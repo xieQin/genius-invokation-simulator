@@ -7,7 +7,7 @@ export default function ClockZone() {
       <div className={styles.ClockTime}>
         <img src="images/time-clock-icon.png" alt="" />
       </div>
-      <div className={styles.OwnDices}>5</div>
+      <div className={styles.OwnDices}>4</div>
     </div>
   );
 }

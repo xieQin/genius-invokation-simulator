@@ -1,3 +1,4 @@
+import { useAutoScale } from "@/hooks";
 import { IPlayer } from "@/models";
 
 import ClockZone from "../ClockZone";
@@ -8,6 +9,7 @@ import SettingZone from "../SettingZone";
 import styles from "./index.module.css";
 
 export default function Deck(props: { own: IPlayer; opposite: IPlayer }) {
+  useAutoScale();
   return (
     <div className={styles.Deck}>
       <SettingZone />

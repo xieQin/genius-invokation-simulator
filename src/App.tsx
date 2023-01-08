@@ -1,10 +1,11 @@
-import { useEffect, useState } from "react";
-
 import styles from "./App.module.css";
 import Deck from "./components/Deck";
+import Loading from "./components/Loading";
 import Notice from "./components/Notice";
 import CardData from "./data/cards.json";
 import CharacterData from "./data/characters.json";
+import { useNotice } from "./hooks";
+import { usePreload } from "./hooks/preload";
 import { ICard, ICharacter, IPlayer, PlayerPosition } from "./models";
 import { getRandom } from "./utils";
 
@@ -37,18 +38,9 @@ const initSupport = () => {
 
 const initSupports = initSupport();
 
-const defaultWidth = 1920;
-const defaultHeight = 1080;
-const getScale = (): number => {
-  const documentWidth = document.documentElement.clientWidth;
-  const documentHeight = document.documentElement.clientHeight;
-  return documentWidth / documentHeight < defaultWidth / defaultHeight
-    ? documentWidth / defaultWidth
-    : documentHeight / defaultHeight;
-};
-
 export default function App() {
-  const [scale, setScale] = useState(getScale());
+  const { message } = useNotice();
+  const { loading } = usePreload();
 
   const own: IPlayer = {
     name: "Lumin",
@@ -71,27 +63,19 @@ export default function App() {
     cardStack: initCards[1],
   };
 
-  const autoScale = () => {
-    setScale(getScale());
-    (
-      document.querySelector("#screen") as HTMLElement
-    ).style.transform = `scale(${scale}) translate(-50%)`;
-  };
-
-  useEffect((): any => {
-    autoScale();
-    window.onresize = () => autoScale();
-    return () => (window.onresize = null);
-  });
-
-  const message = () => {
-    return <div>Your Turn Now !</div>;
-  };
+  console.log(loading, new Date());
 
   return (
-    <main className={styles.main} id="screen">
-      <Notice message={message()} />
-      <Deck own={own} opposite={opposite} />
-    </main>
+    <>
+      {loading && <Loading />}
+      <main className={styles.main} id="screen">
+        {!loading && (
+          <>
+            <Notice message={<div>{message}</div>} />
+            <Deck own={own} opposite={opposite} />
+          </>
+        )}
+      </main>
+    </>
   );
 }

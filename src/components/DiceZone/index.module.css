@@ -34,10 +34,10 @@
 
 .DiceListItemElement {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 9px;
-  top: 9px;
+  width: 28px;
+  height: 28px;
+  left: 10px;
+  top: 10px;
   opacity: 0.5;
 }
 

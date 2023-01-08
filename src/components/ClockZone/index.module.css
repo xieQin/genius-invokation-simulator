@@ -43,6 +43,7 @@
   color: #fff;
   font-size: 26px;
   font-weight: bold;
+  text-indent: -3px;
   line-height: 60px;
   -webkit-text-stroke: #000 1px;
 }

@@ -1,0 +1,10 @@
+.Loading {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  /* background-image: url(/back/mondstadt-bg.png); */
+  background-size: cover;
+  z-index: 1000;
+  text-align: center;
+  line-height: 100vh;
+}
