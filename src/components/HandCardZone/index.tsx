@@ -5,11 +5,7 @@ import { ICard, PlayerPosition } from "@/models";
 import styles from "./index.module.css";
 
 export const HandCardItem = () => {
-  return (
-    <div className={styles.HandCard}>
-      <img src={`/images/card-back-normal.png`} alt="" />
-    </div>
-  );
+  return <div className={`${styles.HandCard} ${styles.NormalBack}`}></div>;
 };
 
 export const HandCardList = (props: {
@@ -34,9 +30,7 @@ export const HandCardList = (props: {
     return (
       <div className={styles.HandCardList}>
         {cards.map((_, index) => (
-          <div key={index} className={styles.HandCard}>
-            <img src={`/back/card-back-normal.png`} alt="" />
-          </div>
+          <HandCardItem key={index} />
         ))}
       </div>
     );

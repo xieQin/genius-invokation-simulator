@@ -12,8 +12,12 @@
 .HandCard {
   cursor: pointer;
   width: 140px;
-  height: 236px;
+  height: 240px;
   margin-left: -55px;
+}
+.HandCard.NormalBack {
+  background-image: url(/back/card-back-normal.png);
+  background-size: cover;
 }
 
 .HandCardBorder {

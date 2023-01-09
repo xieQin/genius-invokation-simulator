@@ -1,14 +1,15 @@
 import { useState } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
 
 export const usePreload = () => {
   const [loading, setLoading] = useState(true);
 
-  const cardImgs = cards.map(card => `/cards/${card.imgID}.png`);
+  const cardImgs = cards.map(card => `${PUBLIC_PATH}cards/${card.imgID}.png`);
   const characterImgs = characters.map(
-    character => `/characters/${character.imgID}.png`
+    character => `${PUBLIC_PATH}characters/${character.imgID}.png`
   );
   // const cardImgs = cards.map(card => card.img);
   // const characterImgs = characters.map(character => character.img);

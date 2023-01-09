@@ -12,6 +12,11 @@ import { GIRegion } from "@/models/region";
 
 import GIData from "./cards_20221205_en-us.json";
 
+const PUBLIC_PATH =
+  process.env.NODE_ENV === "development"
+    ? ""
+    : "https://xieqin.github.io/invokation";
+
 const ImageIDTrans = (s: string) => {
   return s
     .replace(/\s*/g, "")
@@ -64,14 +69,14 @@ export const transCharacters = () => {
               costType: CostTypeTrans(c.cost_icon as costType),
             })),
           type: skill.type as SkillSubType[],
-          img: skill.resource,
+          img: `${PUBLIC_PATH}/skill/${ImageIDTrans(skill.name)}.png`,
           imgID: ImageIDTrans(skill.name),
         })),
         equipments: null,
         profile: null,
         elementStatus: null,
         hp: Number(role.hp),
-        img: role.resource,
+        img: `${PUBLIC_PATH}/characters/${ImageIDTrans(role.name)}.png`,
         imgID: ImageIDTrans(role.name),
       } as ICharacter)
   );
@@ -99,7 +104,7 @@ export const transCards = () => {
             costType: CostTypeTrans(card.cost_type2_icon as costType),
           },
         ],
-        img: card.resource,
+        img: `${PUBLIC_PATH}/characters/${ImageIDTrans(card.name)}.png`,
         imgID: ImageIDTrans(card.name),
       } as unknown as ICard)
   );
