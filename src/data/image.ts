@@ -1,8 +1,5 @@
-import { createWriteStream, writeFileSync } from "fs";
-import { request } from "https";
-
 import cards from "./cards.json";
-import characters from "./character.json";
+import characters from "./characters.json";
 
 const downloadImg = () => {
   const cardImgs = cards.map(card => ({
@@ -13,6 +10,7 @@ const downloadImg = () => {
     id: character.imgID,
     img: character.img,
   }));
+  console.log(cardImgs.concat(characterImgs));
   // writeFileSync(
   //   "./src/data/img.json",
   //   JSON.stringify(cardImgs.concat(characterImgs))
