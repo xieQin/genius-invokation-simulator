@@ -1,3 +1,5 @@
+import { writeFileSync } from "fs";
+
 import cards from "./cards.json";
 import characters from "./characters.json";
 
@@ -10,11 +12,21 @@ const downloadImg = () => {
     id: character.imgID,
     img: character.img,
   }));
-  console.log(cardImgs.concat(characterImgs));
-  // writeFileSync(
-  //   "./src/data/img.json",
-  //   JSON.stringify(cardImgs.concat(characterImgs))
-  // );
+  const skillImgs = characters.map(character => {
+    return character.skills.map(skill => ({
+      id: skill.imgID,
+      img: skill.img,
+    }));
+  });
+  writeFileSync("./src/data/card-imgs.json", JSON.stringify(cardImgs));
+  writeFileSync(
+    "./src/data/character-imgs.json",
+    JSON.stringify(characterImgs)
+  );
+  writeFileSync(
+    "./src/data/skill-imgs.json",
+    JSON.stringify(skillImgs.flat().sort())
+  );
 
   // const downloadImg = (item: { id: string; img: string }) => {
   //   console.log(item);

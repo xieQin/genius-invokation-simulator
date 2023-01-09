@@ -1,0 +1,362 @@
+[
+  {
+    "id": "LiutianArchery",
+    "img": "https://xieqin.github.io/invokation/skill/LiutianArchery.png"
+  },
+  {
+    "id": "TrailoftheQilin",
+    "img": "https://xieqin.github.io/invokation/skill/TrailoftheQilin.png"
+  },
+  {
+    "id": "FrostflakeArrow",
+    "img": "https://xieqin.github.io/invokation/skill/FrostflakeArrow.png"
+  },
+  {
+    "id": "CelestialShower",
+    "img": "https://xieqin.github.io/invokation/skill/CelestialShower.png"
+  },
+  {
+    "id": "KätzleinStyle",
+    "img": "https://xieqin.github.io/invokation/skill/KätzleinStyle.png"
+  },
+  {
+    "id": "IcyPaws",
+    "img": "https://xieqin.github.io/invokation/skill/IcyPaws.png"
+  },
+  {
+    "id": "SignatureMix",
+    "img": "https://xieqin.github.io/invokation/skill/SignatureMix.png"
+  },
+  {
+    "id": "CeremonialBladework",
+    "img": "https://xieqin.github.io/invokation/skill/CeremonialBladework.png"
+  },
+  {
+    "id": "Frostgnaw",
+    "img": "https://xieqin.github.io/invokation/skill/Frostgnaw.png"
+  },
+  {
+    "id": "GlacialWaltz",
+    "img": "https://xieqin.github.io/invokation/skill/GlacialWaltz.png"
+  },
+  {
+    "id": "Demonbane",
+    "img": "https://xieqin.github.io/invokation/skill/Demonbane.png"
+  },
+  {
+    "id": "ChonghuasLayeredFrost",
+    "img": "https://xieqin.github.io/invokation/skill/ChonghuasLayeredFrost.png"
+  },
+  {
+    "id": "CloudPartingStar",
+    "img": "https://xieqin.github.io/invokation/skill/CloudPartingStar.png"
+  },
+  {
+    "id": "KamisatoArtKabuki",
+    "img": "https://xieqin.github.io/invokation/skill/KamisatoArtKabuki.png"
+  },
+  {
+    "id": "KamisatoArtHyouka",
+    "img": "https://xieqin.github.io/invokation/skill/KamisatoArtHyouka.png"
+  },
+  {
+    "id": "KamisatoArtSoumetsu",
+    "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSoumetsu.png"
+  },
+  {
+    "id": "KamisatoArtSenho",
+    "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSenho.png"
+  },
+  {
+    "id": "WhisperofWater",
+    "img": "https://xieqin.github.io/invokation/skill/WhisperofWater.png"
+  },
+  {
+    "id": "LettheShowBegin",
+    "img": "https://xieqin.github.io/invokation/skill/LettheShowBegin.png"
+  },
+  {
+    "id": "ShiningMiracle",
+    "img": "https://xieqin.github.io/invokation/skill/ShiningMiracle.png"
+  },
+  {
+    "id": "GuhuaStyle",
+    "img": "https://xieqin.github.io/invokation/skill/GuhuaStyle.png"
+  },
+  {
+    "id": "FatalRainscreen",
+    "img": "https://xieqin.github.io/invokation/skill/FatalRainscreen.png"
+  },
+  {
+    "id": "Raincutter",
+    "img": "https://xieqin.github.io/invokation/skill/Raincutter.png"
+  },
+  {
+    "id": "RippleofFate",
+    "img": "https://xieqin.github.io/invokation/skill/RippleofFate.png"
+  },
+  {
+    "id": "MirrorReflectionofDoom",
+    "img": "https://xieqin.github.io/invokation/skill/MirrorReflectionofDoom.png"
+  },
+  {
+    "id": "StellarisPhantasm",
+    "img": "https://xieqin.github.io/invokation/skill/StellarisPhantasm.png"
+  },
+  {
+    "id": "IllusoryTorrent",
+    "img": "https://xieqin.github.io/invokation/skill/IllusoryTorrent.png"
+  },
+  {
+    "id": "TemperedSword",
+    "img": "https://xieqin.github.io/invokation/skill/TemperedSword.png"
+  },
+  {
+    "id": "SearingOnslaught",
+    "img": "https://xieqin.github.io/invokation/skill/SearingOnslaught.png"
+  },
+  {
+    "id": "Dawn",
+    "img": "https://xieqin.github.io/invokation/skill/Dawn.png"
+  },
+  {
+    "id": "DoughFu",
+    "img": "https://xieqin.github.io/invokation/skill/DoughFu.png"
+  },
+  {
+    "id": "GuobaAttack",
+    "img": "https://xieqin.github.io/invokation/skill/GuobaAttack.png"
+  },
+  {
+    "id": "Pyronado",
+    "img": "https://xieqin.github.io/invokation/skill/Pyronado.png"
+  },
+  {
+    "id": "StrikeofFortune",
+    "img": "https://xieqin.github.io/invokation/skill/StrikeofFortune.png"
+  },
+  {
+    "id": "PassionOverload",
+    "img": "https://xieqin.github.io/invokation/skill/PassionOverload.png"
+  },
+  {
+    "id": "FantasticVoyage",
+    "img": "https://xieqin.github.io/invokation/skill/FantasticVoyage.png"
+  },
+  {
+    "id": "FireworkFlareUp",
+    "img": "https://xieqin.github.io/invokation/skill/FireworkFlareUp.png"
+  },
+  {
+    "id": "NiwabiFireDance",
+    "img": "https://xieqin.github.io/invokation/skill/NiwabiFireDance.png"
+  },
+  {
+    "id": "RyuukinSaxifrage",
+    "img": "https://xieqin.github.io/invokation/skill/RyuukinSaxifrage.png"
+  },
+  {
+    "id": "BoltsofDownfall",
+    "img": "https://xieqin.github.io/invokation/skill/BoltsofDownfall.png"
+  },
+  {
+    "id": "Nightrider",
+    "img": "https://xieqin.github.io/invokation/skill/Nightrider.png"
+  },
+  {
+    "id": "MidnightPhantasmagoria",
+    "img": "https://xieqin.github.io/invokation/skill/MidnightPhantasmagoria.png"
+  },
+  {
+    "id": "SteelFang",
+    "img": "https://xieqin.github.io/invokation/skill/SteelFang.png"
+  },
+  {
+    "id": "ClawandThunder",
+    "img": "https://xieqin.github.io/invokation/skill/ClawandThunder.png"
+  },
+  {
+    "id": "LightningFang",
+    "img": "https://xieqin.github.io/invokation/skill/LightningFang.png"
+  },
+  {
+    "id": "YunlaiSwordsmanship",
+    "img": "https://xieqin.github.io/invokation/skill/YunlaiSwordsmanship.png"
+  },
+  {
+    "id": "StellarRestoration",
+    "img": "https://xieqin.github.io/invokation/skill/StellarRestoration.png"
+  },
+  {
+    "id": "StarwardSword",
+    "img": "https://xieqin.github.io/invokation/skill/StarwardSword.png"
+  },
+  {
+    "id": "InvokersSpear",
+    "img": "https://xieqin.github.io/invokation/skill/InvokersSpear.png"
+  },
+  {
+    "id": "SecretRiteChasmicSoulfarer",
+    "img": "https://xieqin.github.io/invokation/skill/SecretRiteChasmicSoulfarer.png"
+  },
+  {
+    "id": "SacredRiteWolfsSwiftness",
+    "img": "https://xieqin.github.io/invokation/skill/SacredRiteWolfsSwiftness.png"
+  },
+  {
+    "id": "LawfulEnforcer",
+    "img": "https://xieqin.github.io/invokation/skill/LawfulEnforcer.png"
+  },
+  {
+    "id": "WindSpiritCreation",
+    "img": "https://xieqin.github.io/invokation/skill/WindSpiritCreation.png"
+  },
+  {
+    "id": "AstableAnemohypostasisCreation6308",
+    "img": "https://xieqin.github.io/invokation/skill/AstableAnemohypostasisCreation6308.png"
+  },
+  {
+    "id": "ForbiddenCreationIsomer75TypeII",
+    "img": "https://xieqin.github.io/invokation/skill/ForbiddenCreationIsomer75TypeII.png"
+  },
+  {
+    "id": "FavoniusBladework",
+    "img": "https://xieqin.github.io/invokation/skill/FavoniusBladework.png"
+  },
+  {
+    "id": "GaleBlade",
+    "img": "https://xieqin.github.io/invokation/skill/GaleBlade.png"
+  },
+  {
+    "id": "DandelionBreeze",
+    "img": "https://xieqin.github.io/invokation/skill/DandelionBreeze.png"
+  },
+  {
+    "id": "SparklingScatter",
+    "img": "https://xieqin.github.io/invokation/skill/SparklingScatter.png"
+  },
+  {
+    "id": "JadeScreen",
+    "img": "https://xieqin.github.io/invokation/skill/JadeScreen.png"
+  },
+  {
+    "id": "Starshatter",
+    "img": "https://xieqin.github.io/invokation/skill/Starshatter.png"
+  },
+  {
+    "id": "FavoniusBladeworkMaid",
+    "img": "https://xieqin.github.io/invokation/skill/FavoniusBladeworkMaid.png"
+  },
+  {
+    "id": "Breastplate",
+    "img": "https://xieqin.github.io/invokation/skill/Breastplate.png"
+  },
+  {
+    "id": "SweepingTime",
+    "img": "https://xieqin.github.io/invokation/skill/SweepingTime.png"
+  },
+  {
+    "id": "SupplicantsBowmanship",
+    "img": "https://xieqin.github.io/invokation/skill/SupplicantsBowmanship.png"
+  },
+  {
+    "id": "FloralBrush",
+    "img": "https://xieqin.github.io/invokation/skill/FloralBrush.png"
+  },
+  {
+    "id": "TrumpCardKitty",
+    "img": "https://xieqin.github.io/invokation/skill/TrumpCardKitty.png"
+  },
+  {
+    "id": "Surge",
+    "img": "https://xieqin.github.io/invokation/skill/Surge.png"
+  },
+  {
+    "id": "OceanidMimicSummoning",
+    "img": "https://xieqin.github.io/invokation/skill/OceanidMimicSummoning.png"
+  },
+  {
+    "id": "TheMyriadWilds",
+    "img": "https://xieqin.github.io/invokation/skill/TheMyriadWilds.png"
+  },
+  {
+    "id": "TideandTorrent",
+    "img": "https://xieqin.github.io/invokation/skill/TideandTorrent.png"
+  },
+  {
+    "id": "WaterBall",
+    "img": "https://xieqin.github.io/invokation/skill/WaterBall.png"
+  },
+  {
+    "id": "InfluxBlast",
+    "img": "https://xieqin.github.io/invokation/skill/InfluxBlast.png"
+  },
+  {
+    "id": "RippledReflection",
+    "img": "https://xieqin.github.io/invokation/skill/RippledReflection.png"
+  },
+  {
+    "id": "Thrust",
+    "img": "https://xieqin.github.io/invokation/skill/Thrust.png"
+  },
+  {
+    "id": "Prowl",
+    "img": "https://xieqin.github.io/invokation/skill/Prowl.png"
+  },
+  {
+    "id": "BladeAblaze",
+    "img": "https://xieqin.github.io/invokation/skill/BladeAblaze.png"
+  },
+  {
+    "id": "StealthMaster",
+    "img": "https://xieqin.github.io/invokation/skill/StealthMaster.png"
+  },
+  {
+    "id": "Ichimonji",
+    "img": "https://xieqin.github.io/invokation/skill/Ichimonji.png"
+  },
+  {
+    "id": "BlusteringBlade",
+    "img": "https://xieqin.github.io/invokation/skill/BlusteringBlade.png"
+  },
+  {
+    "id": "FrostyAssault",
+    "img": "https://xieqin.github.io/invokation/skill/FrostyAssault.png"
+  },
+  {
+    "id": "PseudoTenguSweeper",
+    "img": "https://xieqin.github.io/invokation/skill/PseudoTenguSweeper.png"
+  },
+  {
+    "id": "PlamaLawa",
+    "img": "https://xieqin.github.io/invokation/skill/PlamaLawa.png"
+  },
+  {
+    "id": "MovoLawa",
+    "img": "https://xieqin.github.io/invokation/skill/MovoLawa.png"
+  },
+  {
+    "id": "UpaShato",
+    "img": "https://xieqin.github.io/invokation/skill/UpaShato.png"
+  },
+  {
+    "id": "InfusedStonehide",
+    "img": "https://xieqin.github.io/invokation/skill/InfusedStonehide.png"
+  },
+  {
+    "id": "MajesticDance",
+    "img": "https://xieqin.github.io/invokation/skill/MajesticDance.png"
+  },
+  {
+    "id": "VolatileSporeCloud",
+    "img": "https://xieqin.github.io/invokation/skill/VolatileSporeCloud.png"
+  },
+  {
+    "id": "FeatherSpreading",
+    "img": "https://xieqin.github.io/invokation/skill/FeatherSpreading.png"
+  },
+  {
+    "id": "RadicalVitality",
+    "img": "https://xieqin.github.io/invokation/skill/RadicalVitality.png"
+  }
+]
