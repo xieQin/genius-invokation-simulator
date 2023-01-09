@@ -1,5 +1,6 @@
 import { CSSProperties, useState } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
@@ -50,7 +51,7 @@ export const HandCardList = (props: {
           >
             <div className={styles.HandCardLayout}>
               <div className={styles.HandCardPay}>{card.cost[0].costNum}</div>
-              <img src={`/cards/${card.imgID}.png`} alt="" />
+              <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
             </div>
           </div>
         ))}

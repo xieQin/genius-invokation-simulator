@@ -1,3 +1,4 @@
+import { PUBLIC_PATH } from "@/configs";
 import { ISkill } from "@/models";
 
 import styles from "./index.module.css";
@@ -7,7 +8,7 @@ export const SkillZoneItem = (props: { skill: ISkill }) => {
   return (
     <div className={styles.SkillZoneItem}>
       <div className={styles.SkillIcon}>
-        <img src={`skills/${skill.imgID}.png`} alt="" />
+        <img src={`${PUBLIC_PATH}/skills/${skill.imgID}.png`} alt="" />
       </div>
       <div className={styles.SkillPayItems}>
         {skill.costs

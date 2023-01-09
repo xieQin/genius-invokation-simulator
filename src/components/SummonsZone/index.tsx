@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import { GIElement, PlayerPosition } from "@/models";
 import { SummonsID } from "@/models/summons";
 
@@ -9,7 +10,7 @@ export const SummonTurnItem = () => {
   return (
     <div className={styles.SummonTurnItem}>
       <div className={styles.SummonText}>2</div>
-      <img src="images/count-number-card-icon.png" alt="" />
+      <img src={`${PUBLIC_PATH}/images/count-number-card-icon.png`} alt="" />
     </div>
   );
 };
@@ -22,7 +23,7 @@ export const SummonDamageItem = (props: {
   return (
     <div className={styles.SummonDamageItem}>
       <div className={styles.SummonText}>{damage}</div>
-      <img src={`images/pyro-elementicon.png`} alt="" />
+      <img src={`${PUBLIC_PATH}/mages/pyro-elementicon.png`} alt="" />
     </div>
   );
 };
@@ -31,7 +32,7 @@ export const SummonItem = (props: { card: string }) => {
   return (
     <div className={styles.SummonsItemLayout}>
       <div className={styles.SummonsItem}>
-        <img src={`summons/${props.card}.png`} alt="" />
+        <img src={`${PUBLIC_PATH}/summons/${props.card}.png`} alt="" />
       </div>
       <SummonTurnItem />
       <SummonDamageItem damage={2} giElement={GIElement.Pyro} />

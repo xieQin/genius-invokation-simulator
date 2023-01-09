@@ -18,10 +18,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Liutian Archery",
           "id": "11011"
@@ -38,10 +35,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/80d61bdb70eef0d57ca877bb39dbb0d9.png",
           "name": "Trail of the Qilin",
           "id": "11012"
@@ -58,10 +52,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Frostflake Arrow",
           "id": "11013"
@@ -78,21 +69,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/fcda5c89f7d783e8bff69719c0d30692.png",
           "name": "Celestial Shower",
           "id": "11014"
         }
       ],
       "weapon": "Bow",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/dec5ba575fc5720ec15b8964a826f2b5.png"
     },
@@ -114,10 +98,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Kätzlein Style",
           "id": "11021"
@@ -134,10 +115,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/90c513d6b26cc20a6ce30fb82750f2e7.png",
           "name": "Icy Paws",
           "id": "11022"
@@ -154,21 +132,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6ab5e0c2e95117950515b23a875006c0.png",
           "name": "Signature Mix",
           "id": "11023"
         }
       ],
       "weapon": "Bow",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/7c8b166b3254b11d33a5bc1b78fb3034.png"
     },
@@ -190,10 +161,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Ceremonial Bladework",
           "id": "11031"
@@ -210,10 +178,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/de0abe0fb5f2904c8695d4207f472cdb.png",
           "name": "Frostgnaw",
           "id": "11032"
@@ -230,21 +195,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f9e5cb46ba3bf6d4ec2f9e4455dc6238.png",
           "name": "Glacial Waltz",
           "id": "11033"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/877beb9d2fa9201737f43b12b68a7c41.png"
     },
@@ -266,10 +224,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
           "name": "Demonbane",
           "id": "11041"
@@ -286,10 +241,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e023be3e82b38b50202ecf4d4fb0fa81.png",
           "name": "Chonghua's Layered Frost",
           "id": "11042"
@@ -306,21 +258,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/153a77400dc95c9b51733d0d0d9a4ac0.png",
           "name": "Cloud-Parting Star",
           "id": "11043"
         }
       ],
       "weapon": "Claymore",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5e61c140b9a2e5bed18c09c8d1115150.png"
     },
@@ -342,10 +287,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Kamisato Art: Kabuki",
           "id": "11051"
@@ -362,10 +304,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/7b59308313512c3c7350eb6a92b3ea27.png",
           "name": "Kamisato Art: Hyouka",
           "id": "11052"
@@ -382,10 +321,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3668bb20f0b7fb4cfb1fb4162d6fa28f.png",
           "name": "Kamisato Art: Soumetsu",
           "id": "11053"
@@ -402,21 +338,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/959584488f20484942c1403df073f954.png",
           "name": "Kamisato Art: Senho",
           "id": "11054"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Inazuma",
-        "",
-        ""
-      ],
+      "belong_to": ["Inazuma", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3c864f3a914d0de0a416e25f0234fe89.png"
     },
@@ -438,10 +367,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Whisper of Water",
           "id": "12011"
@@ -458,10 +384,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/63c2345902423b25788f104985348cfd.png",
           "name": "Let the Show Begin♪",
           "id": "12012"
@@ -478,21 +401,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/8da9eff0a67380b83cb6c3360e509695.png",
           "name": "Shining Miracle♪",
           "id": "12013"
         }
       ],
       "weapon": "Catalyst",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/9e4098dbdaac941957fb3af0e34bac6e.png"
     },
@@ -514,10 +430,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Guhua Style",
           "id": "12021"
@@ -534,10 +447,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5578cdac2dd8187149544e0898ddf1fd.png",
           "name": "Fatal Rainscreen",
           "id": "12022"
@@ -554,21 +464,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/41d0bb68b4558ff4583b48268b5ecb1b.png",
           "name": "Raincutter",
           "id": "12023"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4fed2d8054aa757b8081d5cfc8dbc5e5.png"
     },
@@ -590,10 +493,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Ripple of Fate",
           "id": "12031"
@@ -610,10 +510,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/c821ff150eb08b2512e3bfa39c19b20d.png",
           "name": "Mirror Reflection of Doom",
           "id": "12032"
@@ -630,10 +527,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/bd9c6c5db4f7cfd3ce555aaa00a4a1dd.png",
           "name": "Stellaris Phantasm",
           "id": "12033"
@@ -650,21 +544,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6c924aed33d3b0cbdcd6b280c2b52631.png",
           "name": "Illusory Torrent",
           "id": "12034"
         }
       ],
       "weapon": "Catalyst",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e6031f667a1da4f83bc75ab5a5e868a0.png"
     },
@@ -686,10 +573,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
           "name": "Tempered Sword",
           "id": "13011"
@@ -706,10 +590,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/31863c524d54277f038d60c77c8a85ef.png",
           "name": "Searing Onslaught",
           "id": "13012"
@@ -726,21 +607,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/441499b2202e58aa6df0ebbd21bb4f67.png",
           "name": "Dawn",
           "id": "13013"
         }
       ],
       "weapon": "Claymore",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/c00f19ba52c4497b81f1654c705240b8.png"
     },
@@ -762,10 +636,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eff1794fed54da5f9132873f84b6f41c.png",
           "name": "Dough-Fu",
           "id": "13021"
@@ -782,10 +653,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5a6d6002064487f449b61a96300a79b8.png",
           "name": "Guoba Attack",
           "id": "13022"
@@ -802,21 +670,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4a5ced0f3db7bd4a0553f837544ecb99.png",
           "name": "Pyronado",
           "id": "13023"
         }
       ],
       "weapon": "Polearm",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f6f310d5276e6d7656eb5b42913ec8b0.png"
     },
@@ -838,10 +699,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Strike of Fortune",
           "id": "13031"
@@ -858,10 +716,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3b102a63444d271b250d9b199568bd79.png",
           "name": "Passion Overload",
           "id": "13032"
@@ -878,21 +733,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a0063dea821a2e70e3ad6d8731e65c44.png",
           "name": "Fantastic Voyage",
           "id": "13033"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6d539b8c4ec001cf0e651bf2af3b828d.png"
     },
@@ -914,10 +762,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Firework Flare-Up",
           "id": "13051"
@@ -934,10 +779,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/bd53cae9bde22c0efae9e696adf58b3b.png",
           "name": "Niwabi Fire-Dance",
           "id": "13052"
@@ -954,21 +796,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a7ce012f5ae1e409862e6b98c3367391.png",
           "name": "Ryuukin Saxifrage",
           "id": "13053"
         }
       ],
       "weapon": "Bow",
-      "belong_to": [
-        "Inazuma",
-        "",
-        ""
-      ],
+      "belong_to": ["Inazuma", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/55c408c3b086c396d35a734e0ac61691.png"
     },
@@ -990,10 +825,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Bolts of Downfall",
           "id": "14011"
@@ -1010,10 +842,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4b4b654a14e8ca726e105af1666f4fc4.png",
           "name": "Nightrider",
           "id": "14012"
@@ -1030,21 +859,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51f354b2f813bfc1de68460be40d435.png",
           "name": "Midnight Phantasmagoria",
           "id": "14013"
         }
       ],
       "weapon": "Bow",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/b9dbb5a2cf9c0ceb63443f7409d19fe7.png"
     },
@@ -1066,10 +888,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
           "name": "Steel Fang",
           "id": "14021"
@@ -1086,10 +905,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/efb029187262b0892b0a85a7be3c81c6.png",
           "name": "Claw and Thunder",
           "id": "14022"
@@ -1106,21 +922,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/43720b9540661d37f397adddc08f984d.png",
           "name": "Lightning Fang",
           "id": "14023"
         }
       ],
       "weapon": "Claymore",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/00e87c7e7518713e3bc65c12068c598a.png"
     },
@@ -1142,10 +951,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Yunlai Swordsmanship",
           "id": "14031"
@@ -1162,10 +968,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eb94518489d930ab5fa02434b64b206e.png",
           "name": "Stellar Restoration",
           "id": "14032"
@@ -1182,21 +985,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4caa9b938cb1e72fa2cf4dca79b51fb8.png",
           "name": "Starward Sword",
           "id": "14033"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f6f3d3d3b183e676f9912dfec572b237.png"
     },
@@ -1218,10 +1014,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/eff1794fed54da5f9132873f84b6f41c.png",
           "name": "Invoker's Spear",
           "id": "14041"
@@ -1238,10 +1031,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/70d35fde5a93ea9706b5c82e223ed57c.png",
           "name": "Secret Rite: Chasmic Soulfarer",
           "id": "14042"
@@ -1258,10 +1048,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/df77d411c3039ab4c7455f62aa0fe43c.png",
           "name": "Sacred Rite: Wolf's Swiftness",
           "id": "14043"
@@ -1278,21 +1065,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3fee355d6f0090f9079b6a8bd15dd839.png",
           "name": "Lawful Enforcer",
           "id": "14044"
         }
       ],
       "weapon": "Polearm",
-      "belong_to": [
-        "Sumeru",
-        "",
-        ""
-      ],
+      "belong_to": ["Sumeru", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1c0359bdc24635a0808ca2046f00793f.png"
     },
@@ -1314,10 +1094,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Wind Spirit Creation",
           "id": "15011"
@@ -1334,10 +1111,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/6c091fa8a5b6e71ad8b876dd1e45e407.png",
           "name": "Astable Anemohypostasis Creation - 6308",
           "id": "15012"
@@ -1354,21 +1128,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/38cc0d7de9627cf89d3f19c326d2e890.png",
           "name": "Forbidden Creation - Isomer 75 / Type II",
           "id": "15013"
         }
       ],
       "weapon": "Catalyst",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/0bef56ba7c462ad8c593096ba6e3af81.png"
     },
@@ -1390,10 +1157,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/3d73149ed08fc08529476d7f1b4a5db2.png",
           "name": "Favonius Bladework",
           "id": "15021"
@@ -1410,10 +1174,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/906be849304f62b87b34122e050333b8.png",
           "name": "Gale Blade",
           "id": "15022"
@@ -1430,21 +1191,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/dfc823559c0cfa4f6febda9d9ea32d60.png",
           "name": "Dandelion Breeze",
           "id": "15023"
         }
       ],
       "weapon": "Sword",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1a51029f206394310232b449839464be.png"
     },
@@ -1466,10 +1220,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Sparkling Scatter",
           "id": "16011"
@@ -1486,10 +1237,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/2bd0da27a460a5cd1b552c13180ecb5e.png",
           "name": "Jade Screen",
           "id": "16012"
@@ -1506,21 +1254,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e7fcd17292e0f2c5c3aa10434f454f0a.png",
           "name": "Starshatter",
           "id": "16013"
         }
       ],
       "weapon": "Catalyst",
-      "belong_to": [
-        "Liyue",
-        "",
-        ""
-      ],
+      "belong_to": ["Liyue", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/be2f95433c64c62c9788b081f8115ec5.png"
     },
@@ -1542,10 +1283,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1f2774a0570701e52f573952cd3436ce.png",
           "name": "Favonius Bladework - Maid",
           "id": "16021"
@@ -1562,10 +1300,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/46096c958f0cce3073cac75e540eec9d.png",
           "name": "Breastplate",
           "id": "16022"
@@ -1582,21 +1317,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/2a78695dc2147234a2bb70c6fa13543c.png",
           "name": "Sweeping Time",
           "id": "16023"
         }
       ],
       "weapon": "Claymore",
-      "belong_to": [
-        "Mondstadt",
-        "",
-        ""
-      ],
+      "belong_to": ["Mondstadt", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5f52fdb0a80066e8ba65578962fc305e.png"
     },
@@ -1618,10 +1346,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/5d510bb74d2c14e2fe53edbdfc955ba4.png",
           "name": "Supplicant's Bowmanship",
           "id": "17011"
@@ -1638,10 +1363,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/31c6bae6d30b2389e9717f5aa00bb617.png",
           "name": "Floral Brush",
           "id": "17012"
@@ -1658,21 +1380,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/aeb8db26f8f3fe637353801bdf1407c7.png",
           "name": "Trump-Card Kitty",
           "id": "17013"
         }
       ],
       "weapon": "Bow",
-      "belong_to": [
-        "Sumeru",
-        "",
-        ""
-      ],
+      "belong_to": ["Sumeru", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/efddc4c03c5f0997fbe5ef31ac70a505.png"
     },
@@ -1694,10 +1409,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Surge",
           "id": "22011"
@@ -1714,10 +1426,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f25ce524e9fb01340a45dcf85c72b6f2.png",
           "name": "Oceanid Mimic Summoning",
           "id": "22012"
@@ -1734,10 +1443,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/62bc1e938e36a78b18a85f7b2f7ed3b0.png",
           "name": "The Myriad Wilds",
           "id": "22013"
@@ -1754,21 +1460,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/0f148384285f60cf949d5d9b34f8fa92.png",
           "name": "Tide and Torrent",
           "id": "22014"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Monster",
-        "",
-        ""
-      ],
+      "belong_to": ["Monster", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/90422150d3267bdf9ec9a6535a7b001f.png"
     },
@@ -1790,10 +1489,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/a51c9140615f7682c79e6dd2af3366e4.png",
           "name": "Water Ball",
           "id": "22021"
@@ -1810,10 +1506,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/02e8a759adb9dd6f7862f18a638cefcb.png",
           "name": "Influx Blast",
           "id": "22022"
@@ -1830,21 +1523,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/e968bcf122be55187bd11a6bc3ce8c7f.png",
           "name": "Rippled Reflection",
           "id": "22023"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Fatui",
-        "",
-        ""
-      ],
+      "belong_to": ["Fatui", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/9ffdee8d345bec9dca1946902df5969a.png"
     },
@@ -1866,10 +1552,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
           "name": "Thrust",
           "id": "23011"
@@ -1886,10 +1569,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/4b3d7470c2443c3438fcc7e86ff69dcc.png",
           "name": "Prowl",
           "id": "23012"
@@ -1906,10 +1586,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f58850c0fa15b11271c164ae7e249785.png",
           "name": "Blade Ablaze",
           "id": "23013"
@@ -1926,21 +1603,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/52db57120e52fb2584a696c34b38aac9.png",
           "name": "Stealth Master",
           "id": "23014"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Fatui",
-        "",
-        ""
-      ],
+      "belong_to": ["Fatui", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/95bd6d63973f827cf93db1ca11886b44.png"
     },
@@ -1962,10 +1632,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
           "name": "Ichimonji",
           "id": "25011"
@@ -1982,10 +1649,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/697861409887f41bf4b5c90f2f3815ff.png",
           "name": "Blustering Blade",
           "id": "25012"
@@ -2002,10 +1666,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/95c0d647c78c6058bfbd352a44fd4911.png",
           "name": "Frosty Assault",
           "id": "25013"
@@ -2022,21 +1683,14 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/51a851b66792a160e211ff84020d3610.png",
           "name": "Pseudo Tengu Sweeper",
           "id": "25014"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Monster",
-        "",
-        ""
-      ],
+      "belong_to": ["Monster", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/efad8cd6d5bd6907341115e050f69b86.png"
     },
@@ -2058,10 +1712,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
           "name": "Plama Lawa",
           "id": "26011"
@@ -2078,10 +1729,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/dba642d3d9f4dc42820168db15b95de2.png",
           "name": "Movo Lawa",
           "id": "26012"
@@ -2098,10 +1746,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/418ae77cc4622a67d6286b4be44ff910.png",
           "name": "Upa Shato",
           "id": "26013"
@@ -2118,21 +1763,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/058b86d139526b2518ce20e3badbb4ef.png",
           "name": "Infused Stonehide",
           "id": "26014"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Monster",
-        "Hilichurl",
-        ""
-      ],
+      "belong_to": ["Monster", "Hilichurl", ""],
       "hp": "8",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/721a409699b498d66b64bdc212a21c74.png"
     },
@@ -2154,10 +1792,7 @@
               "cost_icon": "10"
             }
           ],
-          "type": [
-            "Normal Attack",
-            ""
-          ],
+          "type": ["Normal Attack", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f667af23ed9c0f26bd5b1cf676dae52c.png",
           "name": "Majestic Dance",
           "id": "27011"
@@ -2174,10 +1809,7 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Elemental Skill",
-            ""
-          ],
+          "type": ["Elemental Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/121e09032218105e54a51cbd1c2ce731.png",
           "name": "Volatile Spore Cloud",
           "id": "27012"
@@ -2194,10 +1826,7 @@
               "cost_icon": "1"
             }
           ],
-          "type": [
-            "Elemental Burst",
-            ""
-          ],
+          "type": ["Elemental Burst", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/f7843567c0056ab7fe1132d9875d2c26.png",
           "name": "Feather Spreading",
           "id": "27013"
@@ -2214,21 +1843,14 @@
               "cost_icon": ""
             }
           ],
-          "type": [
-            "Passive Skill",
-            ""
-          ],
+          "type": ["Passive Skill", ""],
           "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/fc3e95c05191996151a572a15b3a99fb.png",
           "name": "Radical Vitality",
           "id": "27014"
         }
       ],
       "weapon": "Other Weapons",
-      "belong_to": [
-        "Monster",
-        "",
-        ""
-      ],
+      "belong_to": ["Monster", "", ""],
       "hp": "10",
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/bd089cefb123e25131de1932395dde26.png"
     }

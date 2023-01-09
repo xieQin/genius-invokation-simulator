@@ -1,5 +1,6 @@
 import { CSSProperties } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
@@ -8,7 +9,7 @@ export const SupportCountItem = () => {
   return (
     <div className={styles.SupportCountIcon}>
       <div className={styles.SupportText}>2</div>
-      <img src="images/count-number-card-icon.png" alt="" />
+      <img src={`${PUBLIC_PATH}/images/count-number-card-icon.png`} alt="" />
     </div>
   );
 };
@@ -17,7 +18,7 @@ export const SupportClockItem = () => {
   return (
     <div className={styles.SupportClockIcon}>
       <div className={styles.SupportText}>2</div>
-      <img src="images/support-clock-card-icon.png" alt="" />
+      <img src={`${PUBLIC_PATH}/images/support-clock-card-icon.png`} alt="" />
     </div>
   );
 };
@@ -26,7 +27,7 @@ export const SupportHealItem = () => {
   return (
     <div className={styles.SupportHealIcon}>
       <div className={styles.SupportText}>0</div>
-      <img src="images/heal-icon.png" alt="" />
+      <img src={`${PUBLIC_PATH}/images/heal-icon.png`} alt="" />
     </div>
   );
 };
@@ -35,7 +36,7 @@ export const SupportItem = (props: { card: ICard }) => {
   return (
     <div className={styles.SupportItemLayout}>
       <div className={styles.SupportItem}>
-        <img src={`/cards/${props.card.imgID}.png`} alt="" />
+        <img src={`${PUBLIC_PATH}/cards/${props.card.imgID}.png`} alt="" />
       </div>
       <SupportClockItem />
       <SupportHealItem />
