@@ -10,14 +10,14 @@ export const usePreload = () => {
   const [loaded, setLoaded] = useState(0);
   const [err, setErr] = useState(0);
 
-  if (PUBLIC_PATH === "") {
-    return {
-      loading: false,
-      loaded: 0,
-      total: 0,
-      err: 0,
-    };
-  }
+  // if (PUBLIC_PATH === "") {
+  //   return {
+  //     loading: false,
+  //     loaded: 0,
+  //     total: 0,
+  //     err: 0,
+  //   };
+  // }
 
   const cardImgs = cards.map(card => `${PUBLIC_PATH}/cards/${card.imgID}.png`);
   const characterImgs = characters.map(

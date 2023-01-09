@@ -16,9 +16,15 @@ export const DiceItem = (props: DiceItemProps) => {
   return (
     <div className={styles.DiceListItem}>
       <div className={styles.DiceListItemElement}>
-        <img src={`${PUBLIC_PATH}/images/${dice.id}-elementicon.png`} alt="" />
+        <img
+          src={`${PUBLIC_PATH}/images/${dice.id.toLowerCase()}-elementicon.png`}
+          alt=""
+        />
       </div>
-      <img src={`${PUBLIC_PATH}/images/${dice.id}-icon.png`} alt="" />
+      <img
+        src={`${PUBLIC_PATH}/images/${dice.id.toLowerCase()}-icon.png`}
+        alt=""
+      />
     </div>
   );
 };

@@ -104,20 +104,20 @@ export const DraftHandCardZone = (props: CardListProps) => {
 };
 
 export const DraftHandCardList = (props: CardListProps) => {
-  const { player, cards, toggle } = props;
-  const [select, setSelect] = useState([]);
+  const { player, cards } = props;
+  const [select] = useState([]);
   const toggleControl = (index: number) => {
     if (player === PlayerPosition.Opposite) return;
     console.log(index);
-    if (index in select) {
-      setSelect(select.splice(index, 1));
-    } else {
-      if (select.length === 0) {
-        setSelect([...[index]]);
-      } else {
-        setSelect([...[index], ...select]);
-      }
-    }
+    // if (index in select) {
+    //   setSelect(select.splice(index, 1));
+    // } else {
+    //   if (select.length === 0) {
+    //     setSelect([...[index]]);
+    //   } else {
+    //     setSelect([...[index], ...select]);
+    //   }
+    // }
     // toggle(select);
   };
   return (
