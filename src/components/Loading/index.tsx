@@ -1,5 +1,6 @@
 import styles from "./index.module.css";
 
-export default function Loading() {
-  return <div className={styles.Loading}>loading assets...</div>;
+export default function Loading(props: { text?: string }) {
+  const { text } = props;
+  return <div className={styles.Loading}>{text}</div>;
 }

@@ -29,6 +29,10 @@ const initCards = initCardStack();
 const draftHandCard = (num: number, cardStack: ICard[]) => {
   return getRandom<ICard>(num, cardStack);
 };
+const initHandCards = [
+  draftHandCard(10, initCards[0]),
+  draftHandCard(10, initCards[1]),
+];
 
 const initSupport = () => {
   const ownSupports = getRandom<ICard>(4, CardData as ICard[]);
@@ -40,7 +44,7 @@ const initSupports = initSupport();
 
 export default function App() {
   const { message } = useNotice();
-  const { loading } = usePreload();
+  const { loading, total, count } = usePreload();
 
   const own: IPlayer = {
     name: "Lumin",
@@ -49,7 +53,7 @@ export default function App() {
     characters: initCharacters[0],
     summons: null,
     supports: initSupports[0],
-    cards: draftHandCard(10, initCards[0]),
+    cards: initHandCards[0],
     cardStack: initCards[0],
   };
   const opposite: IPlayer = {
@@ -59,7 +63,7 @@ export default function App() {
     characters: initCharacters[1],
     summons: null,
     supports: initSupports[1],
-    cards: draftHandCard(10, initCards[1]),
+    cards: initHandCards[1],
     cardStack: initCards[1],
   };
 
@@ -67,7 +71,7 @@ export default function App() {
 
   return (
     <>
-      {loading && <Loading />}
+      {loading && <Loading text={`loading assets ... ${count} / ${total}`} />}
       <main className={styles.main} id="screen">
         {!loading && (
           <>
