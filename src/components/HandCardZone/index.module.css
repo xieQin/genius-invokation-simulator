@@ -4,25 +4,28 @@
   left: 50%;
   margin-bottom: -155px;
   transform: translateX(-50%);
+  z-index: 11;
 }
 .HandCardList {
   display: flex;
   height: 185px;
 }
 .HandCard {
+  position: relative;
   cursor: pointer;
   width: 140px;
-  height: 240px;
-  margin-left: -55px;
+  height: 234px;
+  margin: 0 10px;
 }
 .HandCard.NormalBack {
+  height: 240px;
   background-image: url(/back/card-back-normal.png);
   background-size: cover;
 }
 
 .HandCardBorder {
   border: 4px solid gold;
-  border-radius: 12px;
+  border-radius: 17px;
   z-index: 2;
 }
 
@@ -36,8 +39,7 @@
   margin-left: 10px;
 }
 
-.ExpandHandCardList .HandCard.Selected {
-  margin-left: 10px;
+.ExpandHandCardList .Selected .HandCard {
   transform: translate(0, -35px);
   transition: 0.5s;
 }
@@ -45,7 +47,9 @@
 .ExpandHandCardList .HandCard.UnSelect {
   margin-left: 10px;
   transform: translate(0, 35px);
-  /* transition: 0.5s; */
+}
+.CollapseHandCardList .HandCard {
+  margin-left: -55px;
 }
 
 .HandCardLayout {
@@ -59,11 +63,27 @@
   height: 52px;
   position: absolute;
   text-align: center;
-  left: -18px;
-  top: -9px;
+  left: -20px;
+  top: -10px;
   color: #fff;
   line-height: 50px;
   font-weight: bold;
   font-size: 28px;
   -webkit-text-stroke: #000 1px;
+}
+
+.DraftHandCardZone {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 19;
+}
+
+.DraftHandCardZone .HandCard {
+  margin: 0 30px;
+}
+.DraftHandCardZone .HandCardList .Selected .HandCard {
+  transform: translate(0, -35px);
+  transition: 0.5s;
 }
