@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import { GIElement } from "@/models";
 import { IGIDice } from "@/models/die";
 
@@ -15,9 +16,9 @@ export const DiceItem = (props: DiceItemProps) => {
   return (
     <div className={styles.DiceListItem}>
       <div className={styles.DiceListItemElement}>
-        <img src={`/images/${dice.id}-elementicon.png`} alt="" />
+        <img src={`${PUBLIC_PATH}/images/${dice.id}-elementicon.png`} alt="" />
       </div>
-      <img src={`/images/${dice.id}-icon.png`} alt="" />
+      <img src={`${PUBLIC_PATH}/images/${dice.id}-icon.png`} alt="" />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import { FC, useState } from "react";
 
+import { PUBLIC_PATH } from "@/configs";
 import { ICharacter, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
@@ -36,7 +37,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterWeapon}></div>
         <div className={styles.CharacterArtifact}></div>
       </div>
-      <img src={`/characters/${character.imgID}.png`} alt="" />
+      <img src={`${PUBLIC_PATH}/characters/${character.imgID}.png`} alt="" />
     </div>
   );
 };
