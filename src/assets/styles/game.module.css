@@ -12,7 +12,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 200px;
-  z-index: 12;
+  z-index: 22;
 }
 
 .ConfirmIcon {
@@ -92,4 +92,132 @@
   width: 46px;
   margin: auto;
   padding-top: 35px;
+}
+
+.GameLayer > .HandAnimate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  animation-duration: .6s;
+  animation-fill-mode: both;
+}
+
+/* .GameLayer > .HandAnimate > div {
+  position: relative;
+  perspective: 1000px;
+}
+
+.GameLayer > .HandAnimate > div > div {
+  backface-visibility: hidden;
+  transition: .6s;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.GameLayer > .HandAnimate > div > div:first-child {
+  transform: rotateY(0deg);
+}
+
+.GameLayer > .HandAnimate > div > div:last-child {
+  transform: rotateY(180deg);
+}
+
+.GameLayer > .HandAnimate > div:hover > div:first-child {
+  transform: rotateY(180deg);
+}
+
+.GameLayer > .HandAnimate > div:hover > div:last-child {
+  transform: rotateY(0deg);
+} */
+
+.GameLayer > .HandAnimate.Animate1 {
+  animation-name: Animated1;
+}
+
+@keyframes Animated1 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  to {
+    bottom: 396px;
+    left: 478px;
+    transform: rotate(0deg);
+  }
+}
+
+.GameLayer > .HandAnimate.Animate2 {
+  animation-name: Animated2;
+}
+
+@keyframes Animated2 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  to {
+    bottom: 396px;
+    left: 678px;
+    transform: rotate(0deg);
+  }
+}
+
+.GameLayer > .HandAnimate.Animate3 {
+  animation-name: Animated3;
+}
+
+@keyframes Animated3 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  to {
+    bottom: 396px;
+    left: 878px;
+    transform: rotate(0deg);
+  }
+}
+
+.GameLayer > .HandAnimate.Animate4 {
+  animation-name: Animated4;
+}
+
+@keyframes Animated4 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  to {
+    bottom: 396px;
+    left: 1078px;
+    transform: rotate(0deg);
+  }
+}
+
+.GameLayer > .HandAnimate.Animate5 {
+  animation-name: Animated5;
+}
+
+@keyframes Animated5 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  to {
+    bottom: 396px;
+    left: 1278px;
+    transform: rotate(0deg);
+  }
 }

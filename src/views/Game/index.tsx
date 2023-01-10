@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import styles from "@/assets/styles/game.module.css";
 import Deck from "@/components/Deck";
-import { DraftHandCardZone } from "@/components/HandCardZone";
+import { DraftHandCardZone, HandCardItem } from "@/components/HandCardZone";
 import Notice from "@/components/Notice";
 import SettingZone from "@/components/SettingZone";
 import { PUBLIC_PATH } from "@/configs";
@@ -14,11 +14,12 @@ import { Phase } from "@/models/phase";
 import Roll from "../Roll";
 
 export default function Game() {
-  const [phase, setPhase] = useState(Phase.Start);
+  const [phase, setPhase] = useState(Phase.None);
   const [status, setStatus] = useState("hide");
   const [message, setMessage] = useState("");
   const [dices, setDices] = useState([] as GIDiceID[]);
   const { own, opposite } = useInitGame("Lumin", "Ellin");
+  const timer: any = useRef();
   const toggle = () => {
     setStatus(status === "hide" ? "" : "hide");
   };
@@ -41,8 +42,37 @@ export default function Game() {
     setStatus("hide");
     setPhase(Phase.Roll);
   };
+  useEffect(() => {
+    timer.current = window.setTimeout(() => {
+      if (phase === Phase.None) {
+        setPhase(Phase.Start);
+      }
+    }, 600);
+    return () => {
+      clearTimeout(timer.current);
+    };
+  });
   return (
     <>
+      {phase === Phase.None && (
+        <div className={styles.GameLayer}>
+          <div className={`${styles.HandAnimate} ${styles.Animate1}`}>
+            <HandCardItem card={own.cards[0]} player={opposite.position} />
+          </div>
+          <div className={`${styles.HandAnimate} ${styles.Animate2}`}>
+            <HandCardItem card={own.cards[0]} player={opposite.position} />
+          </div>
+          <div className={`${styles.HandAnimate} ${styles.Animate3}`}>
+            <HandCardItem card={own.cards[0]} player={opposite.position} />
+          </div>
+          <div className={`${styles.HandAnimate} ${styles.Animate4}`}>
+            <HandCardItem card={own.cards[0]} player={opposite.position} />
+          </div>
+          <div className={`${styles.HandAnimate} ${styles.Animate5}`}>
+            <HandCardItem card={own.cards[0]} player={opposite.position} />
+          </div>
+        </div>
+      )}
       <SettingZone toggle={toggle} />
       <Deck own={own} opposite={opposite} status={status} dices={dices} />
       {message && <Notice message={message} cb={messageCb} />}

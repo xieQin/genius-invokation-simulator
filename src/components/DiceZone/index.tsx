@@ -33,6 +33,8 @@ export interface DiceZoneProps {
 export default function DiceZone(props: DiceZoneProps) {
   const { dices } = props;
 
+  if (dices.length === 0) return <></>;
+
   return (
     <div className={styles.Dice}>
       <div className={styles.DiceNum}>{dices.length}</div>

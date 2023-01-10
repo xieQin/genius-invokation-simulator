@@ -19,18 +19,27 @@ export interface CardItemProps {
 
 export const HandCardItem = (props: CardItemProps) => {
   const { player, card } = props;
-  if (player === PlayerPosition.Opposite) {
-    return <div className={`${styles.HandCard} ${styles.NormalBack}`}></div>;
-  } else {
-    return (
-      <div className={styles.HandCardLayout}>
-        <div className={`${styles.HandCard} ${styles.HandCardBorder}`}>
-          <div className={styles.HandCardPay}>{card.cost[0].costNum}</div>
-          <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
-        </div>
+  return (
+    <div className={styles.HandCardLayout}>
+      <div
+        className={`${styles.HandCard} ${styles.HandCardBorder} ${
+          player === PlayerPosition.Own
+            ? styles.HandCardFront
+            : styles.HandCardBack
+        }`}
+      >
+        <div className={styles.HandCardPay}>{card.cost[0].costNum}</div>
+        <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
       </div>
-    );
-  }
+      <div
+        className={`${styles.HandCard} ${styles.NormalBack} ${
+          player === PlayerPosition.Opposite
+            ? styles.HandCardFront
+            : styles.HandCardBack
+        }`}
+      ></div>
+    </div>
+  );
 };
 
 export const HandCardList = (props: CardListProps) => {
@@ -53,9 +62,7 @@ export const HandCardList = (props: CardListProps) => {
         <div
           key={index}
           className={state && index === select ? styles.Selected : ""}
-          role="button"
-          tabIndex={0}
-          onKeyDown={() => toggleControl(index)}
+          aria-hidden="true"
           onClick={() => toggleControl(index)}
         >
           <HandCardItem player={player} card={card} />
@@ -126,9 +133,7 @@ export const DraftHandCardList = (props: CardListProps) => {
         <div
           key={index}
           className={index in select ? styles.Selected : ""}
-          role="button"
-          tabIndex={0}
-          onKeyDown={() => toggleControl(index)}
+          aria-hidden="true"
           onClick={() => toggleControl(index)}
         >
           <HandCardItem card={card} player={player} />
