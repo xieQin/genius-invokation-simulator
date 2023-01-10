@@ -16,10 +16,9 @@ import Roll from "../Roll";
 export default function Game() {
   const [phase, setPhase] = useState(Phase.Start);
   const [status, setStatus] = useState("hide");
-  const [message] = useState("");
+  const [message, setMessage] = useState("");
   const [dices, setDices] = useState([] as GIDiceID[]);
   const { own, opposite } = useInitGame("Lumin", "Ellin");
-  // setMessage("Roll Phase");
   const toggle = () => {
     setStatus(status === "hide" ? "" : "hide");
   };
@@ -35,13 +34,18 @@ export default function Game() {
 
   const onChooseCharacter = () => {
     if (phase === Phase.Choose) setPhase(Phase.Roll);
+    setMessage("Roll Phase");
+  };
+  const messageCb = () => {
+    setMessage("");
     setStatus("hide");
+    setPhase(Phase.Roll);
   };
   return (
     <>
       <SettingZone toggle={toggle} />
       <Deck own={own} opposite={opposite} status={status} dices={dices} />
-      {message && <Notice message={message} />}
+      {message && <Notice message={message} cb={messageCb} />}
       {phase === Phase.Choose && (
         <div
           className={styles.SetActiveCharacter}
