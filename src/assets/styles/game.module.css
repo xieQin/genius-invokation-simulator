@@ -76,3 +76,20 @@
 .RollDice > img {
   width: 100%;
 }
+
+.SetActiveCharacter {
+  position: absolute;
+  bottom: 100px;
+  right: 130px;
+  width: 125px;
+  height: 125px;
+  background-image: url(/images/skill-bg.png);
+  background-size: cover;
+  z-index: 9;
+  cursor: pointer;
+}
+.SetActiveCharacter > img {
+  width: 46px;
+  margin: auto;
+  padding-top: 35px;
+}

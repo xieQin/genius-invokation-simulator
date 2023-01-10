@@ -3,7 +3,7 @@ import { ISkill } from "@/models";
 
 import styles from "./index.module.css";
 
-export const SkillZoneItem = (props: { skill: ISkill }) => {
+export const SkillItem = (props: { skill: ISkill }) => {
   const { skill } = props;
   return (
     <div className={styles.SkillZoneItem}>
@@ -32,7 +32,7 @@ export default function SkillZone(props: { skills: ISkill[] }) {
   return (
     <div className={styles.SkillZone}>
       {skills.map((skill, index) => (
-        <SkillZoneItem key={index} skill={skill} />
+        <SkillItem key={index} skill={skill} />
       ))}
     </div>
   );

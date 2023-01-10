@@ -5,6 +5,7 @@ import Deck from "@/components/Deck";
 import { DraftHandCardZone } from "@/components/HandCardZone";
 import Notice from "@/components/Notice";
 import SettingZone from "@/components/SettingZone";
+import { PUBLIC_PATH } from "@/configs";
 import { useInitGame } from "@/hooks/game";
 import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
@@ -15,7 +16,7 @@ import Roll from "../Roll";
 export default function Game() {
   const [phase, setPhase] = useState(Phase.Start);
   const [status, setStatus] = useState("hide");
-  const [message, setMessage] = useState("");
+  const [message] = useState("");
   const [dices, setDices] = useState([] as GIDiceID[]);
   const { own, opposite } = useInitGame("Lumin", "Ellin");
   // setMessage("Roll Phase");
@@ -31,12 +32,28 @@ export default function Game() {
     setStatus("");
     setDices(dices);
   };
+
+  const onChooseCharacter = () => {
+    if (phase === Phase.Choose) setPhase(Phase.Roll);
+    setStatus("hide");
+  };
   return (
     <>
       <SettingZone toggle={toggle} />
       <Deck own={own} opposite={opposite} status={status} dices={dices} />
       {message && <Notice message={message} />}
-      {status === "hide" && phase === "start" && (
+      {phase === Phase.Choose && (
+        <div
+          className={styles.SetActiveCharacter}
+          aria-hidden="true"
+          onClick={() => {
+            onChooseCharacter();
+          }}
+        >
+          <img src={`${PUBLIC_PATH}/images/choose-character-icon.png`} alt="" />
+        </div>
+      )}
+      {status === "hide" && phase === Phase.Start && (
         <div className={styles.GameLayer}>
           <div className={styles.GameModalLayerText}>
             <p>Starting Hands</p>
@@ -63,7 +80,7 @@ export default function Game() {
           </div>
         </div>
       )}
-      {status === "hide" && phase === "roll" && (
+      {status === "hide" && phase === Phase.Roll && (
         <Roll onConfirm={onConfirmDice} />
       )}
     </>
