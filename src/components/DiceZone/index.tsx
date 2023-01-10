@@ -1,13 +1,10 @@
-import { useState } from "react";
-
 import { PUBLIC_PATH } from "@/configs";
-import { GIElement } from "@/models";
-import { IGIDice } from "@/models/die";
+import { GIDiceID } from "@/models/die";
 
 import styles from "./index.module.css";
 
 export interface DiceItemProps {
-  dice: IGIDice;
+  dice: GIDiceID;
 }
 
 export const DiceItem = (props: DiceItemProps) => {
@@ -17,12 +14,12 @@ export const DiceItem = (props: DiceItemProps) => {
     <div className={styles.DiceListItem}>
       <div className={styles.DiceListItemElement}>
         <img
-          src={`${PUBLIC_PATH}/images/${dice.id.toLowerCase()}-elementicon.png`}
+          src={`${PUBLIC_PATH}/images/${dice.toLowerCase()}-elementicon.png`}
           alt=""
         />
       </div>
       <img
-        src={`${PUBLIC_PATH}/images/${dice.id.toLowerCase()}-icon.png`}
+        src={`${PUBLIC_PATH}/images/${dice.toLowerCase()}-icon.png`}
         alt=""
       />
     </div>
@@ -30,21 +27,15 @@ export const DiceItem = (props: DiceItemProps) => {
 };
 
 export interface DiceZoneProps {
-  diceList?: GIElement[];
+  dices: GIDiceID[];
 }
 
 export default function DiceZone(props: DiceZoneProps) {
-  const [dice, setDice] = useState(4);
-  const dices: IGIDice[] = [
-    { id: "Omni" },
-    { id: "Anemo" },
-    { id: "Cryo" },
-    { id: "Dendro" },
-  ];
+  const { dices } = props;
 
   return (
     <div className={styles.Dice}>
-      <div className={styles.DiceNum}>{dice}</div>
+      <div className={styles.DiceNum}>{dices.length}</div>
       <div className={styles.DiceList}>
         {dices.map((dice, index) => (
           <DiceItem key={index} dice={dice} />

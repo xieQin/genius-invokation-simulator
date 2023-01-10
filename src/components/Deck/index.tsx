@@ -1,5 +1,6 @@
 import { useAutoScale } from "@/hooks";
 import { IPlayer } from "@/models";
+import { GIDiceID } from "@/models/die";
 
 import ClockZone from "../ClockZone";
 import DiceZone from "../DiceZone";
@@ -11,6 +12,7 @@ export default function Deck(props: {
   own: IPlayer;
   opposite: IPlayer;
   status: string;
+  dices: GIDiceID[];
 }) {
   useAutoScale();
   const shouldHide = props.status === "hide";
@@ -18,7 +20,7 @@ export default function Deck(props: {
     <div className={styles.Deck}>
       {!shouldHide && (
         <>
-          <DiceZone />
+          <DiceZone dices={props.dices} />
           <OwnArea {...props.own} />
           <OppositeArea {...props.opposite} />
           <ClockZone />

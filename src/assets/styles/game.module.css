@@ -1,0 +1,78 @@
+.GameLayer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.GameLayerBtns {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 200px;
+  z-index: 12;
+}
+
+.ConfirmIcon {
+  cursor: pointer;
+  width: 250px;
+  height: 70px;
+  margin: auto;
+  background-image: url(/images/confirm-icon.png);
+  background-size: cover;
+}
+
+.GameModalLayer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.6;
+  z-index: 12;
+}
+
+.GameModalLayerText {
+  position: absolute;
+  width: 500px;
+  height: 100px;
+  top: 230px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 13;
+}
+.GameModalLayerText > p {
+  color: #fff;
+  text-align: center;
+  font-size: 26px;
+}
+
+.GameModalLayerText > p:first-child {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.RollLayer {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 800px;
+  height: 400px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  z-index: 12;
+}
+
+.RollDice {
+  width: 160px;
+  height: 160px;
+  margin: 20px;
+}
+.RollDice > img {
+  width: 100%;
+}
