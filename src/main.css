@@ -56,6 +56,12 @@ h6 {
   overflow-wrap: break-word;
 }
 
+a,
+input,
+button {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 #root {
   position: absolute;
   width: 100%;
