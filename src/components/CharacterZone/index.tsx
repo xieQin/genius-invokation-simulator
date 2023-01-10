@@ -25,6 +25,9 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character } = props;
+  if (!character) {
+    return <></>;
+  }
   return (
     <div className={styles.CharacterItem}>
       <div className={styles.CharacterHealth}>{character.hp}</div>

@@ -23,7 +23,7 @@ export const SummonDamageItem = (props: {
   return (
     <div className={styles.SummonDamageItem}>
       <div className={styles.SummonText}>{damage}</div>
-      <img src={`${PUBLIC_PATH}/mages/pyro-elementicon.png`} alt="" />
+      <img src={`${PUBLIC_PATH}/images/pyro-elementicon.png`} alt="" />
     </div>
   );
 };

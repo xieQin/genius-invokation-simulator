@@ -7,7 +7,17 @@ import skills from "@/data/skill-imgs.json";
 
 export const usePreload = () => {
   const [loading, setLoading] = useState(true);
-  const [count, setCount] = useState(0);
+  const [loaded, setLoaded] = useState(0);
+  const [err, setErr] = useState(0);
+
+  // if (PUBLIC_PATH === "") {
+  //   return {
+  //     loading: false,
+  //     loaded: 0,
+  //     total: 0,
+  //     err: 0,
+  //   };
+  // }
 
   const cardImgs = cards.map(card => `${PUBLIC_PATH}/cards/${card.imgID}.png`);
   const characterImgs = characters.map(
@@ -27,14 +37,23 @@ export const usePreload = () => {
     });
 
   const preloadAll = async () => {
-    await Promise.all(
-      imgs.map(img => preload(img).then(() => setCount(count + 1)))
+    const promises = imgs.map(img =>
+      preload(img)
+        .then(() => {
+          setLoaded(loaded + 1 + err < total ? loaded + 1 : total);
+        })
+        .catch(err => {
+          setErr(err + 1);
+        })
     );
-    setLoading(false);
-    console.log("all loaded", new Date());
+    for (const promise of promises) {
+      await promise;
+    }
+    if (loaded + err >= total) {
+      setLoading(false);
+    }
   };
-  console.log("start load", new Date());
   preloadAll();
 
-  return { total, count, loading };
+  return { loading, total, err, loaded };
 };

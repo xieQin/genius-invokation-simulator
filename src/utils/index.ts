@@ -1,12 +1,10 @@
-export function getRandom<T>(num: number, data: T[]): T[] {
-  const res = [];
-  let count = num;
+export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
+  const res: T[] = [];
   const temp = Object.assign([], data);
-  while (count > 0) {
+  for (let i = 0; i < num; i++) {
     const _r = Math.floor(Math.random() * temp.length);
-    res.push(data[_r]);
-    temp.splice(_r, 1);
-    count -= 1;
+    res.push(temp[_r]);
+    if (!repeat) temp.splice(_r, 1);
   }
   return res;
 }
