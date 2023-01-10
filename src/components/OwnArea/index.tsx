@@ -22,12 +22,7 @@ export default function OwnArea(props: IPlayer) {
     active,
     setActive,
   };
-  const summons: SummonsID[] = [
-    "CuileinAnbar",
-    "Guoba",
-    "DrunkenMist",
-    "DandelionField",
-  ];
+  const summons: SummonsID[] = [];
   const skills = active >= 0 ? characters[active].skills : [];
 
   return (

@@ -21,12 +21,7 @@ export default function OppositeArea(props: IPlayer) {
     active,
     setActive,
   };
-  const summons: SummonsID[] = [
-    "MelodyLoop",
-    "Oz",
-    "OceanidMimicFrog",
-    "OceanidMimicFerret",
-  ];
+  const summons: SummonsID[] = [];
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Opposite}`}>
