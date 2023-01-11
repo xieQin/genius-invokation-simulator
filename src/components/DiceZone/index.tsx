@@ -1,5 +1,6 @@
 import { PUBLIC_PATH } from "@/configs";
 import { GIDiceID } from "@/models/die";
+import { Phase } from "@/models/phase";
 import { useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
@@ -28,9 +29,9 @@ export const DiceItem = (props: DiceItemProps) => {
 };
 
 export default function DiceZone() {
-  const { dices } = useGameStore();
+  const { dices, phase } = useGameStore();
 
-  if (dices.length === 0) return <></>;
+  if (dices.length === 0 || phase === Phase.Roll) return <></>;
 
   return (
     <div className={styles.Dice}>
