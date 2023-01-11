@@ -1,80 +1,54 @@
-import { useEffect, useRef, useState } from "react";
-
 import styles from "@/assets/styles/game.module.css";
 import Deck from "@/components/Deck";
-import { DraftHandCardZone, HandCardItem } from "@/components/HandCardZone";
+import { DraftHandCardZone } from "@/components/HandCardZone";
 import Notice from "@/components/Notice";
 import SettingZone from "@/components/SettingZone";
 import { PUBLIC_PATH } from "@/configs";
-import { useInitGame } from "@/hooks/game";
 import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 
-import Roll from "../Roll";
+import InitPhase from "./init";
+import RollPhase from "./roll";
+import { DeckStatus, useGameStore } from "./store";
 
 export default function Game() {
-  const [phase, setPhase] = useState(Phase.None);
-  const [status, setStatus] = useState("hide");
-  const [message, setMessage] = useState("");
-  const [dices, setDices] = useState([] as GIDiceID[]);
-  const { own, opposite } = useInitGame("Lumin", "Ellin");
-  const timer: any = useRef();
-  const toggle = () => {
-    setStatus(status === "hide" ? "" : "hide");
-  };
+  const store = useGameStore();
+  const {
+    phase,
+    setPhase,
+    setDices,
+    own,
+    opposite,
+    deckStatus,
+    toggleDeckStatus,
+    message,
+    showMessage,
+  } = store;
   const onConfirm = () => {
     if (phase === Phase.Start) setPhase(Phase.Choose);
-    setStatus("");
+    toggleDeckStatus();
   };
   const onConfirmDice = (dices: GIDiceID[]) => {
     if (phase === Phase.Roll) setPhase(Phase.Combat);
-    setStatus("");
+    toggleDeckStatus();
     setDices(dices);
   };
 
   const onChooseCharacter = () => {
     if (phase === Phase.Choose) setPhase(Phase.Roll);
-    setMessage("Roll Phase");
+    showMessage("Roll Phase");
   };
   const messageCb = () => {
-    setMessage("");
-    setStatus("hide");
+    showMessage("");
+    toggleDeckStatus();
     setPhase(Phase.Roll);
   };
-  useEffect(() => {
-    timer.current = window.setTimeout(() => {
-      if (phase === Phase.None) {
-        setPhase(Phase.Start);
-      }
-    }, 600);
-    return () => {
-      clearTimeout(timer.current);
-    };
-  });
   return (
     <>
-      {phase === Phase.None && (
-        <div className={styles.GameLayer}>
-          <div className={`${styles.HandAnimate} ${styles.Animate1}`}>
-            <HandCardItem card={own.cards[0]} player={opposite.position} />
-          </div>
-          <div className={`${styles.HandAnimate} ${styles.Animate2}`}>
-            <HandCardItem card={own.cards[0]} player={opposite.position} />
-          </div>
-          <div className={`${styles.HandAnimate} ${styles.Animate3}`}>
-            <HandCardItem card={own.cards[0]} player={opposite.position} />
-          </div>
-          <div className={`${styles.HandAnimate} ${styles.Animate4}`}>
-            <HandCardItem card={own.cards[0]} player={opposite.position} />
-          </div>
-          <div className={`${styles.HandAnimate} ${styles.Animate5}`}>
-            <HandCardItem card={own.cards[0]} player={opposite.position} />
-          </div>
-        </div>
-      )}
-      <SettingZone toggle={toggle} />
-      <Deck own={own} opposite={opposite} status={status} dices={dices} />
+      {phase === Phase.Init && <InitPhase />}
+      <SettingZone toggle={toggleDeckStatus} />
+      <Deck />
       {message && <Notice message={message} cb={messageCb} />}
       {phase === Phase.Choose && (
         <div
@@ -87,7 +61,7 @@ export default function Game() {
           <img src={`${PUBLIC_PATH}/images/choose-character-icon.png`} alt="" />
         </div>
       )}
-      {status === "hide" && phase === Phase.Start && (
+      {deckStatus === DeckStatus.Hide && phase === Phase.Start && (
         <div className={styles.GameLayer}>
           <div className={styles.GameModalLayerText}>
             <p>Starting Hands</p>
@@ -97,7 +71,7 @@ export default function Game() {
           <DraftHandCardZone
             cards={own.cards}
             player={PlayerPosition.Own}
-            toggle={toggle}
+            toggle={toggleDeckStatus}
           />
           <DraftHandCardZone
             cards={opposite.cards}
@@ -114,9 +88,7 @@ export default function Game() {
           </div>
         </div>
       )}
-      {status === "hide" && phase === Phase.Roll && (
-        <Roll onConfirm={onConfirmDice} />
-      )}
+      <RollPhase onConfirm={onConfirmDice} />
     </>
   );
 }

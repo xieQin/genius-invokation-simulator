@@ -1,8 +1,8 @@
 import { useState } from "react";
 
 import areaStyles from "@/assets/styles/area.module.css";
-import { IPlayer } from "@/models";
 import { SummonsID } from "@/models/summons";
+import { useGameStore } from "@/views/Game/store";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
@@ -13,9 +13,10 @@ import SummonsZone from "../SummonsZone";
 import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
-export default function OwnArea(props: IPlayer) {
+export default function OwnArea() {
   const [active, setActive] = useState(-1);
-  const { position, characters, supports, cards } = props;
+  const { own } = useGameStore();
+  const { position, characters, supports, cards } = own;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
@@ -27,7 +28,7 @@ export default function OwnArea(props: IPlayer) {
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
-      <PlayerZone player={props} />
+      <PlayerZone player={own} />
       <SkillZone skills={skills} />
       <SupportZone supports={supports} player={position} />
       <CharacterZone {...characterProps} />

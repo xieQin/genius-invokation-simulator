@@ -3,13 +3,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 800px;
-  height: 30px;
-  line-height: 30px;
-  font-size: 20px;
+  min-width: 80%;
+  height: 50px;
+  font-size: 28px;
   font-weight: bold;
   color: #fff;
   text-align: center;
-  line-height: 30px;
+  line-height: 50px;
   background: #b1621e6e;
+  background: linear-gradient(to right, rgba(205, 95, 1, 0.1) 0%, rgba(205, 95, 1, 0.6)  50%, rgba(205, 95, 1, 0.1)  100%);
 }

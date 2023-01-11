@@ -1,5 +1,6 @@
 import { PUBLIC_PATH } from "@/configs";
 import { GIDiceID } from "@/models/die";
+import { useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
 
@@ -26,12 +27,8 @@ export const DiceItem = (props: DiceItemProps) => {
   );
 };
 
-export interface DiceZoneProps {
-  dices: GIDiceID[];
-}
-
-export default function DiceZone(props: DiceZoneProps) {
-  const { dices } = props;
+export default function DiceZone() {
+  const { dices } = useGameStore();
 
   if (dices.length === 0) return <></>;
 

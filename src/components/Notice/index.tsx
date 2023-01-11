@@ -7,16 +7,15 @@ export default function Notice(props: {
   cb?: () => void;
 }) {
   const { message, cb } = props;
-  const timer: any = useRef();
+  const timeout: { current: number | null } = useRef(null);
   useEffect(() => {
-    timer.current = window.setTimeout(() => {
+    timeout.current = window.setTimeout(() => {
       cb && cb();
-      console.log("time out");
     }, 2000);
     return () => {
-      clearTimeout(timer.current);
+      clearTimeout(timeout.current as number);
     };
-  }, []);
+  });
 
   return <>{message && <div className={styles.Notice}>{message}</div>}</>;
 }

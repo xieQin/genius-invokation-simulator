@@ -1,5 +1,5 @@
 export enum Phase {
-  None = "none",
+  Init = "init",
   Start = "start",
   Choose = "choose",
   Roll = "roll",

@@ -1,31 +1,7 @@
-import { useState } from "react";
-
 import CardData from "@/data/cards.json";
 import CharacterData from "@/data/characters.json";
 import { ICard, ICharacter, IPlayer, PlayerPosition } from "@/models";
 import { getRandom } from "@/utils";
-
-export const useInitGame = (ownName: string, oppositeName: string) => {
-  const initOwnPlayer = () => InitPlayer(ownName, PlayerPosition.Own);
-  const initOppositePlayer = () =>
-    InitPlayer(oppositeName, PlayerPosition.Opposite);
-
-  const [own, setOwn] = useState(initOwnPlayer());
-  const [opposite, setOpposite] = useState(initOppositePlayer());
-
-  const initGame = () => {
-    setOwn(initOwnPlayer());
-    setOpposite(initOppositePlayer());
-  };
-
-  return {
-    own,
-    opposite,
-    initGame,
-    setOwn,
-    setOpposite,
-  };
-};
 
 export const InitPlayer = (name: string, position: PlayerPosition) => {
   const { cardStack } = InitCardStatck();

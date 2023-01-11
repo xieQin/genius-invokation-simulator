@@ -79,7 +79,9 @@ export default function HandCardZone(props: CardListProps) {
   return (
     <div
       className={`${styles.HandCardZone} ${
-        isExpand ? styles.ExpandHandCardList : styles.CollapseHandCardList
+        rest.player === PlayerPosition.Own
+          ? styles.ExpandHandCardList
+          : styles.CollapseHandCardList
       }`}
       {...props}
     >

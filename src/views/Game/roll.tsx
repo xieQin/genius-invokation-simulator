@@ -1,12 +1,21 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
 import { GIDice, GIDiceID } from "@/models/die";
+import { Phase } from "@/models/phase";
 import { getRandom } from "@/utils";
 
-export default function Roll(props: {
+import { useGameStore } from "./store";
+
+export default function RollPhase(props: {
   onConfirm: (dices: GIDiceID[]) => void;
 }) {
   const { onConfirm } = props;
+  const { phase, shouldHideDeck } = useGameStore();
+
+  if (!shouldHideDeck() || phase !== Phase.Roll) {
+    return <></>;
+  }
+
   const rollDice = () => {
     const diceMap = new Map();
     const dices = getRandom(8, [0, 1, 2, 3, 4, 5, 6, 7], true);

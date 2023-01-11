@@ -10,6 +10,7 @@
   display: flex;
   height: 185px;
 }
+
 .HandCard {
   position: relative;
   cursor: pointer;
@@ -62,26 +63,25 @@
   z-index: 2;
 }
 
-.ExpandHandCardList {
+.ExpandHandCardList:hover {
   margin: 0;
   transform: translate(-50%, 20px);
   transition: 0.5s ease-in-out;
 }
 
-.ExpandHandCardList .HandCard {
+.ExpandHandCardList:hover .HandCard {
   margin-left: 10px;
-}
-
-.ExpandHandCardList .Selected .HandCard {
-  transform: translate(0, -35px);
   transition: 0.5s;
 }
 
-.ExpandHandCardList .HandCard.UnSelect {
-  margin-left: 10px;
-  transform: translate(0, 35px);
+.ExpandHandCardList .Selected .HandCard {
+  transform: translate(0, -65px);
 }
-.CollapseHandCardList .HandCard {
+
+.ExpandHandCardList .HandCard.UnSelect {
+  transform: translate(0, 65px);
+}
+.ExpandHandCardList .HandCard, .CollapseHandCardList .HandCard {
   margin-left: -55px;
 }
 
