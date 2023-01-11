@@ -1,7 +1,9 @@
 import styles from "./App.module.css";
+import { useAutoScale } from "./hooks";
 import Game from "./views/Game";
 
 export default function App() {
+  useAutoScale();
   // const { message } = useNotice();
   // const { loading, err, total, loaded } = usePreload();
 

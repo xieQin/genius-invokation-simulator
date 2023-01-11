@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 import { InitPlayer } from "@/hooks/game";
-import { IPlayer, PlayerPosition } from "@/models";
+import { ICard, IPlayer, PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 
@@ -20,8 +20,11 @@ export interface GameStates {
   setDices: (dices: GIDiceID[]) => void;
   own: IPlayer;
   opposite: IPlayer;
+  addHandCard: (cards: ICard[], pos: PlayerPosition) => void;
+  updateOwnAndOpposite: (own: IPlayer, opposite: IPlayer) => void;
   message: string;
-  showMessage: (message: string) => void;
+  msgCallback: (() => void) | undefined;
+  showMessage: (message: string, callback?: () => void) => void;
 }
 
 export const useGameStore = create<GameStates>((set, get) => ({
@@ -53,11 +56,37 @@ export const useGameStore = create<GameStates>((set, get) => ({
 
   own: InitPlayer("Lumin", PlayerPosition.Own),
   opposite: InitPlayer("Ellin", PlayerPosition.Opposite),
+  addHandCard: (cards, pos) => {
+    let player = pos === PlayerPosition.Own ? get().own : get().opposite;
+    player = {
+      ...player,
+      cards: [...player.cards, ...cards],
+    };
+    if (pos === PlayerPosition.Own) {
+      return set(state => ({
+        ...state,
+        own: player,
+      }));
+    } else {
+      return set(state => ({
+        ...state,
+        opposite: player,
+      }));
+    }
+  },
+  updateOwnAndOpposite: (own, opposite) =>
+    set(state => ({
+      ...state,
+      own,
+      opposite,
+    })),
 
   message: "",
-  showMessage: (message: string) =>
+  msgCallback: undefined,
+  showMessage: (message: string, callback) =>
     set(state => ({
       ...state,
       message,
+      msgCallback: callback,
     })),
 }));

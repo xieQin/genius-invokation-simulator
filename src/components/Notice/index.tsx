@@ -4,13 +4,13 @@ import styles from "./index.module.css";
 
 export default function Notice(props: {
   message: React.ReactNode;
-  cb?: () => void;
+  callback?: () => void;
 }) {
-  const { message, cb } = props;
+  const { message, callback } = props;
   const timeout: { current: number | null } = useRef(null);
   useEffect(() => {
     timeout.current = window.setTimeout(() => {
-      cb && cb();
+      callback && callback();
     }, 2000);
     return () => {
       clearTimeout(timeout.current as number);

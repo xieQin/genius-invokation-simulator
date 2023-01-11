@@ -85,7 +85,7 @@
   height: 125px;
   background-image: url(/images/skill-bg.png);
   background-size: cover;
-  z-index: 9;
+  z-index: 12;
   cursor: pointer;
 }
 .SetActiveCharacter > img {
