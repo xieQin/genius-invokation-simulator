@@ -7,15 +7,17 @@ import { getRandom } from "@/utils";
 import { useGameStore } from "./store";
 
 export default function RollPhase() {
-  const { phase, setPhase, shouldHideDeck, toggleDeckStatus, dices, setDices } =
+  const { phase, setPhase, shouldHideDeck, toggleDeckStatus, setDices } =
     useGameStore();
+  console.log(phase);
 
   if (!shouldHideDeck() || phase !== Phase.Roll) {
     return <></>;
   }
 
-  const onConfirmDice = () => {
+  const onConfirmDice = (dices: GIDiceID[]) => {
     setPhase(Phase.Combat);
+    setDices(dices);
     toggleDeckStatus();
   };
 
@@ -44,9 +46,7 @@ export default function RollPhase() {
     });
     return res;
   };
-  if (dices.length === 0) {
-    setDices(rollDice());
-  }
+  const dices = rollDice();
   return (
     <div className={styles.GameLayer}>
       <div className={styles.GameModalLayerText}>
@@ -71,7 +71,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice();
+          onConfirmDice(dices);
         }}
       >
         <div className={styles.ConfirmIcon}></div>
