@@ -1,61 +1,44 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
-import { GIDice, GIDiceID } from "@/models/die";
+import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
-import { getRandom } from "@/utils";
+import { rollDice } from "@/utils";
 
 import { useGameStore } from "./store";
 
 export default function RollPhase() {
   const { phase, setPhase, shouldHideDeck, toggleDeckStatus, setDices } =
     useGameStore();
+
   console.log(phase);
 
-  if (!shouldHideDeck() || phase !== Phase.Roll) {
-    return <></>;
-  }
+  if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
 
   const onConfirmDice = (dices: GIDiceID[]) => {
     setPhase(Phase.Combat);
     setDices(dices);
     toggleDeckStatus();
+    localStorage.removeItem("cacheDices");
   };
+  const l = localStorage.getItem("cacheDices");
+  let cacheDices = l === null ? [] : l.split(",");
+  if (!cacheDices || l === null) {
+    cacheDices = rollDice();
+    localStorage.setItem("cacheDices", cacheDices.join(","));
+  }
 
-  const rollDice = () => {
-    const diceMap = new Map();
-    const dices = getRandom(8, [0, 1, 2, 3, 4, 5, 6, 7], true);
-    dices.map(d => {
-      diceMap.set(
-        GIDice[d],
-        diceMap.has(GIDice[d]) ? diceMap.get(GIDice[d]) + 1 : 1
-      );
-    });
-    const res: GIDiceID[] = [];
-    const omniDice = diceMap.get("Omni");
-    if (omniDice > 0) {
-      for (let j = 0; j < omniDice; j++) {
-        res.push("Omni");
-      }
-      diceMap.delete("Omni");
-    }
-    const _t = Array.from(diceMap).sort((a, b) => b[1] - a[1]);
-    _t.map(i => {
-      for (let j = 0; j < i[1]; j++) {
-        res.push(i[0]);
-      }
-    });
-    return res;
-  };
-  const dices = rollDice();
   return (
-    <div className={styles.GameLayer}>
+    <div
+      className={styles.GameLayer}
+      // style={{ opacity: !shouldHideDeck() || phase !== Phase.Roll ? 0 : 1 }}
+    >
       <div className={styles.GameModalLayerText}>
         <p>ReRoll</p>
         <p>select dice to reroll</p>
       </div>
       <div className={styles.GameModalLayer}></div>
       <div className={styles.RollLayer}>
-        {dices.map((dice, index) => (
+        {cacheDices.map((dice, index) => (
           <div key={index} className={styles.RollDice}>
             <img
               src={`${PUBLIC_PATH}/images/${dice.toLowerCase()}-${
@@ -71,7 +54,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice(dices);
+          onConfirmDice(cacheDices);
         }}
       >
         <div className={styles.ConfirmIcon}></div>
