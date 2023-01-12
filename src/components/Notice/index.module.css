@@ -12,4 +12,5 @@
   line-height: 50px;
   background: #b1621e6e;
   background: linear-gradient(to right, rgba(205, 95, 1, 0.1) 0%, rgba(205, 95, 1, 0.6)  50%, rgba(205, 95, 1, 0.1)  100%);
+  z-index: 13;
 }

@@ -2,18 +2,27 @@ import { useEffect, useRef } from "react";
 
 import styles from "./index.module.css";
 
+export const NoticeText = (props: { message: React.ReactNode | string }) => {
+  const { message } = props;
+  return <>{message && <div className={styles.Notice}>{message}</div>}</>;
+};
+
 export default function Notice(props: {
-  message: React.ReactNode;
+  message: React.ReactNode | string;
   callback?: () => void;
+  timeout?: number;
 }) {
-  const { message, callback } = props;
-  const timeout: { current: number | null } = useRef(null);
+  const { message, callback, timeout } = props;
+  const timer: { current: number | null } = useRef(null);
   useEffect(() => {
-    timeout.current = window.setTimeout(() => {
-      callback && callback();
-    }, 2000);
+    timer.current = window.setTimeout(
+      () => {
+        callback && callback();
+      },
+      timeout ? timeout : 2000
+    );
     return () => {
-      clearTimeout(timeout.current as number);
+      clearTimeout(timer.current as number);
     };
   });
 

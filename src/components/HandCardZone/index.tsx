@@ -58,7 +58,7 @@ export const HandCardList = (props: CardListProps) => {
       setSelect(index);
     }
     setState(!state);
-    if (phase === Phase.Combat && state) {
+    if (phase === Phase.Combat && state && index === select) {
       setPhase(Phase.PlayCard);
       updateActiveCards(index, PlayerPosition.Own);
     }

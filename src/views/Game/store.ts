@@ -21,6 +21,8 @@ export interface GameStates {
   own: IPlayer;
   opposite: IPlayer;
   addHandCard: (cards: ICard[], pos: PlayerPosition) => void;
+  removeHandCard: (idx: number, pos: PlayerPosition) => void;
+  addSupport: (cards: ICard, pos: PlayerPosition) => void;
   updateOwnAndOpposite: (own: IPlayer, opposite: IPlayer) => void;
   message: string;
   msgCallback: (() => void) | undefined;
@@ -64,6 +66,40 @@ export const useGameStore = create<GameStates>((set, get) => ({
     player = {
       ...player,
       cards: [...player.cards, ...cards],
+    };
+    if (pos === PlayerPosition.Own) {
+      return set(state => ({
+        ...state,
+        own: player,
+      }));
+    } else {
+      return set(state => ({
+        ...state,
+        opposite: player,
+      }));
+    }
+  },
+  removeHandCard: (idx, pos) => {
+    const player: IPlayer =
+      pos === PlayerPosition.Own ? get().own : get().opposite;
+    player.cards.splice(idx, 1);
+    if (pos === PlayerPosition.Own) {
+      return set(state => ({
+        ...state,
+        own: player,
+      }));
+    } else {
+      return set(state => ({
+        ...state,
+        opposite: player,
+      }));
+    }
+  },
+  addSupport: (card, pos) => {
+    let player = pos === PlayerPosition.Own ? get().own : get().opposite;
+    player = {
+      ...player,
+      supports: [...player.supports, card],
     };
     if (pos === PlayerPosition.Own) {
       return set(state => ({
