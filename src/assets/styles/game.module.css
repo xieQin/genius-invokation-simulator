@@ -139,6 +139,7 @@
   z-index: 12;
   animation-duration: 3s;
   animation-fill-mode: both;
+  opacity: 0;
 }
 
 .GameLayer > .DraftHandAnimate.DraftAnimate1 {
@@ -150,6 +151,7 @@
     bottom: 0;
     left: 0;
     transform: rotate(90deg);
+    opacity: 1;
   }
 
   20% {
@@ -157,6 +159,7 @@
     left: 678px;
     transform: rotate(0deg);
     scale: 1.2;
+    opacity: 1;
   }
 
   80% {
@@ -185,6 +188,7 @@
     bottom: 0;
     left: 0;
     transform: rotate(90deg);
+    opacity: 1;
   }
 
   20% {
@@ -192,6 +196,7 @@
     left: 1078px;
     transform: rotate(0deg);
     scale: 1.2;
+    opacity: 1;
   }
 
   80% {

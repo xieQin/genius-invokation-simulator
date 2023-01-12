@@ -13,6 +13,8 @@ export enum DeckStatus {
 export interface GameStates {
   phase: Phase;
   setPhase: (phase: Phase) => void;
+  turn: number;
+  setTurn: (turn: number) => void;
   deckStatus: DeckStatus;
   toggleDeckStatus: () => void;
   shouldHideDeck: () => boolean;
@@ -38,6 +40,12 @@ export const useGameStore = create<GameStates>((set, get) => ({
     set(state => ({
       ...state,
       phase,
+    })),
+  turn: 1,
+  setTurn: (turn: number) =>
+    set(state => ({
+      ...state,
+      turn,
     })),
 
   deckStatus: DeckStatus.Hide,
