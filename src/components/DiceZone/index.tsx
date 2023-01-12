@@ -44,3 +44,28 @@ export default function DiceZone() {
     </div>
   );
 }
+
+export const CostDiceZone = (props: {
+  onSelectDice: (dice: GIDiceID, index: number) => void;
+}) => {
+  const { dices } = useGameStore();
+  return (
+    <>
+      <div className={styles.CostDiceZone}>
+        <div className={styles.DiceList}>
+          {dices.map((dice, index) => (
+            <div
+              key={index}
+              aria-hidden="true"
+              onClick={() => {
+                props.onSelectDice(dice, index);
+              }}
+            >
+              <DiceItem dice={dice} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};

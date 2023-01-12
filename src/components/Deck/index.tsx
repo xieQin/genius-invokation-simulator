@@ -11,14 +11,12 @@ export default function Deck() {
   console.log(phase);
   return (
     <div className={styles.Deck}>
-      {!shouldHideDeck() && (
-        <>
-          <DiceZone />
-          <OwnArea />
-          <OppositeArea />
-          <ClockZone />
-        </>
-      )}
+      <div style={{ opacity: shouldHideDeck() ? 0 : 1 }}>
+        <DiceZone />
+        <OwnArea />
+        <OppositeArea />
+        <ClockZone />
+      </div>
     </div>
   );
 }

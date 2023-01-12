@@ -36,9 +36,10 @@
   position: absolute;
   width: 28px;
   height: 28px;
-  left: 10px;
-  top: 10px;
+  left: 50%;
+  top: 50%;
   opacity: 0.5;
+  transform: translate(-50%,-50%);
 }
 
 .DiceListItem {
@@ -46,4 +47,34 @@
   width: 48px;
   height: 48px;
   margin-top: -2px;
+}
+
+.CostDiceZone {
+  display: flex;
+  position: absolute;
+  top: 120px;
+  bottom: 120px;
+  right: 0;
+  padding-top: 10px;
+  width: 250px;
+  z-index: 12;
+  background: linear-gradient(to top, rgba(133, 66, 20, 0) 0%, rgba(133, 66, 20, 0.1) 5%, rgba(90, 44, 4, 0.9)  20%, rgba(90, 44, 4, 0.9)  80%, rgba(205, 95, 1, 0.1)  95%, rgba(133, 66, 20, 0) 100%);
+}
+
+.CostDiceZone .DiceList {
+  width: 190px;
+  margin: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.CostDiceZone .DiceList .DiceListItem {
+  width: 85px;
+  height: 85px;
+  margin: 5px;
+}
+
+.CostDiceZone .DiceList .DiceListItemElement {
+  width: 48px;
+  height: 48px;
 }

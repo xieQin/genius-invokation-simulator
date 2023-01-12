@@ -25,6 +25,9 @@ export interface GameStates {
   message: string;
   msgCallback: (() => void) | undefined;
   showMessage: (message: string, callback?: () => void) => void;
+
+  activeCards: (number | null)[];
+  updateActiveCards: (card: number, pos: PlayerPosition) => void;
 }
 
 export const useGameStore = create<GameStates>((set, get) => ({
@@ -89,4 +92,14 @@ export const useGameStore = create<GameStates>((set, get) => ({
       message,
       msgCallback: callback,
     })),
+
+  activeCards: [null, null],
+  updateActiveCards: (card: number, pos: PlayerPosition) => {
+    const activeCards = [...get().activeCards];
+    activeCards[pos] = card;
+    return set(state => ({
+      ...state,
+      activeCards,
+    }));
+  },
 }));

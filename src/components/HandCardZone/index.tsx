@@ -4,6 +4,8 @@ import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
+import { useGameStore } from "@/views/Game/store";
+import { Phase } from "@/models/phase";
 
 export interface CardListProps {
   cards: ICard[];
@@ -43,6 +45,7 @@ export const HandCardItem = (props: CardItemProps) => {
 };
 
 export const HandCardList = (props: CardListProps) => {
+  const { updateActiveCards, phase, setPhase } = useGameStore();
   const { player, cards, toggle } = props;
   const [state, setState] = useState(false);
   const [select, setSelect] = useState(-1);
@@ -55,6 +58,10 @@ export const HandCardList = (props: CardListProps) => {
       setSelect(index);
     }
     setState(!state);
+    if (phase === Phase.Combat && state) {
+      setPhase(Phase.PlayCard);
+      updateActiveCards(index, PlayerPosition.Own);
+    }
   };
   return (
     <div className={`${styles.HandCardList}`}>
