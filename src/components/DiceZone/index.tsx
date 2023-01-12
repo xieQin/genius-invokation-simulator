@@ -31,10 +31,11 @@ export const DiceItem = (props: DiceItemProps) => {
 export default function DiceZone() {
   const { dices, phase } = useGameStore();
 
-  if (dices.length === 0 || phase === Phase.Roll) return <></>;
+  const shouldHide =
+    dices.length === 0 || phase === Phase.Roll || phase === Phase.PlayCard;
 
   return (
-    <div className={styles.Dice}>
+    <div className={styles.Dice} style={{ opacity: shouldHide ? 0 : 1 }}>
       <div className={styles.DiceNum}>{dices.length}</div>
       <div className={styles.DiceList}>
         {dices.map((dice, index) => (

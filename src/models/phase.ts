@@ -5,4 +5,5 @@ export enum Phase {
   Roll = "roll",
   Combat = "combat",
   PlayCard = "play-card",
+  DraftCard = "draft-card",
 }

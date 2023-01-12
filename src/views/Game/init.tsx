@@ -28,7 +28,7 @@ export default function InitPhase() {
     toggleDeckStatus();
     // console.log(deckStatus);
   };
-  // console.log(gameStates);
+  console.log(gameStates);
   return (
     <>
       {phase === Phase.Init && (

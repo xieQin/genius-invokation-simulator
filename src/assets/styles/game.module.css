@@ -132,6 +132,85 @@
   transform: rotateY(0deg);
 } */
 
+.GameLayer > .DraftHandAnimate {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+}
+
+.GameLayer > .DraftHandAnimate.DraftAnimate1 {
+  animation-name: DraftAnimated1;
+}
+
+@keyframes DraftAnimated1 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  20% {
+    bottom: 426px;
+    left: 678px;
+    transform: rotate(0deg);
+    scale: 1.2;
+  }
+
+  80% {
+    bottom: 426px;
+    left: 678px;
+    transform: rotate(0deg);
+    scale: 1.2;
+    opacity: 1;
+  }
+
+  to {
+    bottom: -100px;
+    left: 678px;
+    transform: rotate(0deg);
+    scale: 1;
+    opacity: 0;
+  }
+}
+
+.GameLayer > .DraftHandAnimate.DraftAnimate2 {
+  animation-name: DraftAnimated2;
+}
+
+@keyframes DraftAnimated2 {
+  from {
+    bottom: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+
+  20% {
+    bottom: 426px;
+    left: 1078px;
+    transform: rotate(0deg);
+    scale: 1.2;
+  }
+
+  80% {
+    bottom: 426px;
+    left: 1078px;
+    transform: rotate(0deg);
+    scale: 1.2;
+    opacity: 1;
+  }
+
+  to {
+    bottom: -100px;
+    left: 1078px;
+    transform: rotate(0deg);
+    scale: 1;
+    opacity: 0;
+  }
+}
+
 .GameLayer > .HandAnimate.Animate1 {
   animation-name: Animated1;
 }
