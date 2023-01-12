@@ -11,9 +11,9 @@ export default function Deck() {
   const { shouldHideDeck, phase, setPhase, showMessage, setTurn, turn } =
     useGameStore();
   const onNextRound = () => {
-    setTurn(turn + 1);
     showMessage("Round end", () => {
       showMessage("");
+      setTurn(turn + 1);
       setPhase(Phase.DraftCard);
     });
   };
