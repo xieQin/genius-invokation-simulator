@@ -1,6 +1,7 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
 import { NoticeText } from "@/components/Notice";
+import { useCostDice } from "@/hooks/dice";
 import { usePlayCard } from "@/hooks/playCard";
 import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
@@ -8,16 +9,22 @@ import { Phase } from "@/models/phase";
 import { useGameStore } from "./store";
 
 export default function PlayCardPhase() {
-  const { setPhase, activeCards, own } = useGameStore();
-  const { onPlayCard } = usePlayCard();
+  const { setPhase, activeCards, own, dices } = useGameStore();
+  const { onPlayCard, getMessage } = usePlayCard();
+  const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
 
   const card = own.cards[activeCards[0] as number];
 
-  const message = `Play Card: ${card.name}`;
+  const message = getMessage(card);
 
   const onConfirm = () => {
-    onPlayCard(card, PlayerPosition.Own);
-    setPhase(Phase.Combat);
+    if (isCostValid(card.cost)) {
+      costDices();
+      onPlayCard(card, PlayerPosition.Own);
+      setPhase(Phase.Combat);
+    } else {
+      console.log("error");
+    }
   };
 
   const onCancel = () => {
@@ -25,16 +32,16 @@ export default function PlayCardPhase() {
     console.log(111);
   };
 
-  const onSelectDice = () => {
-    console.log(111222);
-  };
-
-  console.log(activeCards, own.cards, message);
+  console.log(activeCards, own.cards);
   return (
     <>
       <NoticeText message={message} />
       <GameLayer onConfirm={onConfirm} onCancel={onCancel} />
-      <CostDiceZone onSelectDice={onSelectDice} />
+      <CostDiceZone
+        actives={actives}
+        dices={dices}
+        onSelectDice={onSelectDice}
+      />
     </>
   );
 }

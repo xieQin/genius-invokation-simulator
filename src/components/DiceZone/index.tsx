@@ -1,4 +1,5 @@
 import { PUBLIC_PATH } from "@/configs";
+import { useCostDice } from "@/hooks/dice";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/views/Game/store";
@@ -48,16 +49,18 @@ export default function DiceZone() {
 
 export const CostDiceZone = (props: {
   onSelectDice: (dice: GIDiceID, index: number) => void;
+  actives: number[];
+  dices: GIDiceID[];
 }) => {
-  const { dices } = useGameStore();
   return (
     <>
       <div className={styles.CostDiceZone}>
         <div className={styles.DiceList}>
-          {dices.map((dice, index) => (
+          {props.dices.map((dice, index) => (
             <div
               key={index}
               aria-hidden="true"
+              className={props.actives.includes(index) ? styles.Selected : ""}
               onClick={() => {
                 props.onSelectDice(dice, index);
               }}

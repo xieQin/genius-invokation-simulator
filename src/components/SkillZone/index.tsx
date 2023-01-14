@@ -1,10 +1,13 @@
 import { PUBLIC_PATH } from "@/configs";
-import { ISkill } from "@/models";
+import { ISkill, SkillPassiveType } from "@/models";
 
 import styles from "./index.module.css";
 
 export const SkillItem = (props: { skill: ISkill }) => {
   const { skill } = props;
+  if (skill.type.includes(SkillPassiveType.Passive)) {
+    return <></>;
+  }
   return (
     <div className={styles.SkillZoneItem}>
       <div className={styles.SkillIcon}>

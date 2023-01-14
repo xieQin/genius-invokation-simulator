@@ -68,7 +68,7 @@ export const transCharacters = () => {
               costNum: Number(c.cost_num),
               costType: CostTypeTrans(c.cost_icon as costType),
             })),
-          type: skill.type as SkillSubType[],
+          type: skill.type.filter(skill => skill != "") as SkillSubType[],
           img: `${PUBLIC_PATH}/skill/${ImageIDTrans(skill.name)}.png`,
           imgID: ImageIDTrans(skill.name),
         })),
@@ -93,7 +93,9 @@ export const transCards = () => {
         name: card.name,
         content: card.content,
         mainType: card.action_type as CardMainType,
-        subType: card.action_card_tags.map(tag => tag.text),
+        subType: card.action_card_tags
+          .filter(t => t.text != "")
+          .map(tag => tag.text),
         cost: [
           {
             costNum: Number(card.cost_num1),

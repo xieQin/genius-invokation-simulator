@@ -7,25 +7,32 @@ export default function GameLayer(props: {
 }) {
   const { element, onConfirm, onCancel } = props;
   return (
-    <div
-      aria-hidden="true"
-      className={styles.GameLayer}
-      onClick={() => {
-        onCancel && onCancel();
-      }}
-    >
-      <div className={styles.GameModalLayerText}>{element}</div>
-      <div className={styles.GameModalLayer}></div>
+    <div className={styles.GameLayer}>
+      <div
+        className={styles.GameModalLayerText}
+        aria-hidden="true"
+        onClick={() => {
+          onCancel && onCancel();
+        }}
+      >
+        {element}
+      </div>
+      <div
+        className={styles.GameModalLayer}
+        aria-hidden="true"
+        onClick={() => {
+          onCancel && onCancel();
+        }}
+      ></div>
       {onConfirm && (
-        <div
-          className={styles.GameLayerBtns}
-          aria-hidden="true"
-          style={{ bottom: 80 }}
-          onClick={() => {
-            onConfirm();
-          }}
-        >
-          <div className={styles.ConfirmIcon}></div>
+        <div className={styles.GameLayerBtns} style={{ bottom: 80 }}>
+          <div
+            className={styles.ConfirmIcon}
+            aria-hidden="true"
+            onClick={() => {
+              onConfirm();
+            }}
+          ></div>
         </div>
       )}
     </div>

@@ -22,6 +22,8 @@ export interface GameStates {
   setDices: (dices: GIDiceID[]) => void;
   own: IPlayer;
   opposite: IPlayer;
+  getPlayer: (pos: PlayerPosition) => IPlayer;
+  updataPlayer: (player: IPlayer, pos: PlayerPosition) => void;
   addHandCard: (cards: ICard[], pos: PlayerPosition) => void;
   removeHandCard: (idx: number, pos: PlayerPosition) => void;
   popCardStack: (num: number, pos: PlayerPosition) => void;
@@ -71,67 +73,49 @@ export const useGameStore = create<GameStates>((set, get) => ({
 
   own: InitPlayer("Lumin", PlayerPosition.Own),
   opposite: InitPlayer("Ellin", PlayerPosition.Opposite),
+  getPlayer: pos => {
+    return pos === PlayerPosition.Own ? get().own : get().opposite;
+  },
+  updataPlayer: (player, pos) => {
+    if (pos === PlayerPosition.Own) {
+      return set(state => ({
+        ...state,
+        own: player,
+      }));
+    } else {
+      return set(state => ({
+        ...state,
+        opposite: player,
+      }));
+    }
+  },
   addHandCard: (cards, pos) => {
-    let player = pos === PlayerPosition.Own ? get().own : get().opposite;
+    let player = get().getPlayer(pos);
     player = {
       ...player,
       cards: [...player.cards, ...cards],
     };
-    if (pos === PlayerPosition.Own) {
-      return set(state => ({
-        ...state,
-        own: player,
-      }));
-    } else {
-      return set(state => ({
-        ...state,
-        opposite: player,
-      }));
-    }
+    get().updataPlayer(player, pos);
   },
   popCardStack: (num, pos) => {
-    let player: IPlayer =
-      pos === PlayerPosition.Own ? get().own : get().opposite;
+    let player = get().getPlayer(pos);
     const cards = player.cardStack;
     for (let i = 0; i < num; i++) {
       cards.splice(0, 1);
     }
-    console.log(cards, "cards");
     player = {
       ...player,
       cardStack: cards,
     };
-    if (pos === PlayerPosition.Own) {
-      return set(state => ({
-        ...state,
-        own: player,
-      }));
-    } else {
-      return set(state => ({
-        ...state,
-        opposite: player,
-      }));
-    }
+    get().updataPlayer(player, pos);
   },
   removeHandCard: (idx, pos) => {
-    const player: IPlayer =
-      pos === PlayerPosition.Own ? get().own : get().opposite;
+    const player = get().getPlayer(pos);
     player.cards.splice(idx, 1);
-    if (pos === PlayerPosition.Own) {
-      return set(state => ({
-        ...state,
-        own: player,
-      }));
-    } else {
-      return set(state => ({
-        ...state,
-        opposite: player,
-      }));
-    }
+    get().updataPlayer(player, pos);
   },
   draftHandCard: (num = 2, pos) => {
-    const player: IPlayer =
-      pos === PlayerPosition.Own ? get().own : get().opposite;
+    const player = get().getPlayer(pos);
     const res = [],
       cards = player.cardStack;
     for (let i = 0; i < num; i++) {
@@ -140,22 +124,12 @@ export const useGameStore = create<GameStates>((set, get) => ({
     return res;
   },
   addSupport: (card, pos) => {
-    let player = pos === PlayerPosition.Own ? get().own : get().opposite;
+    let player = get().getPlayer(pos);
     player = {
       ...player,
       supports: [...player.supports, card],
     };
-    if (pos === PlayerPosition.Own) {
-      return set(state => ({
-        ...state,
-        own: player,
-      }));
-    } else {
-      return set(state => ({
-        ...state,
-        opposite: player,
-      }));
-    }
+    get().updataPlayer(player, pos);
   },
   updateOwnAndOpposite: (own, opposite) =>
     set(state => ({

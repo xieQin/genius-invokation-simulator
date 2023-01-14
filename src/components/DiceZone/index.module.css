@@ -72,9 +72,16 @@
   width: 85px;
   height: 85px;
   margin: 5px;
+  cursor: pointer;
+}
+
+.CostDiceZone .DiceList .Selected .DiceListItem {
+  border: 2px solid gold;
 }
 
 .CostDiceZone .DiceList .DiceListItemElement {
   width: 48px;
   height: 48px;
+  opacity: 1;
+  z-index: 13;
 }
