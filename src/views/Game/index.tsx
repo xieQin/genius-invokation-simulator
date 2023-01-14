@@ -1,5 +1,6 @@
 import Deck from "@/components/Deck";
 import Notice from "@/components/Notice";
+import PreviewZone from "@/components/PreviewZone";
 import SettingZone from "@/components/SettingZone";
 import { Phase } from "@/models/phase";
 
@@ -8,15 +9,24 @@ import DraftCardPhase from "./draft";
 import InitPhase from "./init";
 import PlayCardPhase from "./play";
 import RollPhase from "./roll";
-import { useGameStore } from "./store";
+import { PreviewStatus, useGameStore } from "./store";
 
 export default function Game() {
   const store = useGameStore();
-  const { toggleDeckStatus, message, msgCallback, own, phase } = store;
-  console.log(own);
+  const { toggleDeckStatus, message, msgCallback, phase, setPreview } = store;
+  console.log(phase);
 
   return (
-    <>
+    <div
+      aria-hidden="true"
+      onClick={() => {
+        if (localStorage.getItem("preview") !== PreviewStatus.Show) {
+          setPreview(null);
+          localStorage.setItem("preview", PreviewStatus.Hide);
+        }
+      }}
+    >
+      <PreviewZone />
       <InitPhase />
       <ChoosePhase />
       <RollPhase />
@@ -25,6 +35,6 @@ export default function Game() {
       <Deck />
       {message && <Notice message={message} callback={msgCallback} />}
       <SettingZone toggle={toggleDeckStatus} />
-    </>
+    </div>
   );
 }

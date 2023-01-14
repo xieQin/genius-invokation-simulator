@@ -1,3 +1,4 @@
+import { ICard, ICharacter } from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
 
 export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
@@ -35,4 +36,8 @@ export const rollDice = (): GIDiceID[] => {
     }
   });
   return res;
+};
+
+export const isCharacterCard = (card: ICard | ICharacter) => {
+  return (card as ICard).mainType != undefined;
 };

@@ -1,14 +1,13 @@
 import { writeFileSync } from "fs";
 
 import {
-  CardMainType,
   EqiupmentWeaponType,
   GIElement,
+  GIRegion,
   ICard,
   ICharacter,
   SkillSubType,
 } from "@/models";
-import { GIRegion } from "@/models/region";
 
 import GIData from "./cards_20221205_en-us.json";
 
@@ -46,6 +45,17 @@ const CostTypeTrans = (c: costType) => {
     "17": "Anemo",
   };
   return CostType[c] || "";
+};
+
+type cardType = "AcEquip" | "AcSupport" | "AcEvent";
+
+const CardTypeTrans = (c: cardType) => {
+  const CardType = {
+    AcEquip: "Equipment",
+    AcSupport: "Support",
+    AcEvent: "Event",
+  };
+  return CardType[c] || "";
 };
 
 export const transCharacters = () => {
@@ -92,7 +102,7 @@ export const transCards = () => {
         id: card.id,
         name: card.name,
         content: card.content,
-        mainType: card.action_type as CardMainType,
+        mainType: CardTypeTrans(card.action_type as cardType),
         subType: card.action_card_tags
           .filter(t => t.text != "")
           .map(tag => tag.text),

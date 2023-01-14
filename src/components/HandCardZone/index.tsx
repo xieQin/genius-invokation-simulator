@@ -1,9 +1,9 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICard, PlayerPosition } from "@/models";
+import { ICard, ICost, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
-import { useGameStore } from "@/views/Game/store";
+import { PreviewStatus, useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
 
@@ -19,10 +19,26 @@ export interface CardItemProps {
   player: PlayerPosition;
 }
 
+export const HandCardCost = (props: { cost: ICost[] }) => {
+  return (
+    <div className={`${styles.HandCardPay} ${styles[props.cost[0].costType]}`}>
+      {props.cost[0].costNum}
+    </div>
+  );
+};
+
 export const HandCardItem = (props: CardItemProps) => {
   const { player, card } = props;
+  const { setPreview } = useGameStore();
   return (
-    <div className={styles.HandCardLayout}>
+    <div
+      className={styles.HandCardLayout}
+      aria-hidden="true"
+      onClick={() => {
+        localStorage.setItem("preview", PreviewStatus.Show);
+        setPreview(card);
+      }}
+    >
       <div
         className={`${styles.HandCard} ${styles.HandCardBorder} ${
           player === PlayerPosition.Own
@@ -30,12 +46,8 @@ export const HandCardItem = (props: CardItemProps) => {
             : styles.HandCardBack
         }`}
       >
+        <HandCardCost cost={card.cost} />
         {/* <div className={styles.CardSelected}></div> */}
-        <div
-          className={`${styles.HandCardPay} ${styles[card.cost[0].costType]}`}
-        >
-          {card.cost[0].costNum}
-        </div>
         <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
       </div>
       <div

@@ -1,11 +1,16 @@
 import { create } from "zustand";
 
 import { InitPlayer } from "@/hooks/game";
-import { ICard, IPlayer, PlayerPosition } from "@/models";
+import { ICard, ICharacter, IPlayer, PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 
 export enum DeckStatus {
+  Hide = "hide",
+  Show = "show",
+}
+
+export enum PreviewStatus {
   Hide = "hide",
   Show = "show",
 }
@@ -36,6 +41,9 @@ export interface GameStates {
 
   activeCards: (number | null)[];
   updateActiveCards: (card: number, pos: PlayerPosition) => void;
+
+  preview: ICharacter | ICard | null;
+  setPreview: (preview: ICharacter | ICard | null) => void;
 }
 
 export const useGameStore = create<GameStates>((set, get) => ({
@@ -156,4 +164,11 @@ export const useGameStore = create<GameStates>((set, get) => ({
       activeCards,
     }));
   },
+
+  preview: null,
+  setPreview: (card: ICard | ICharacter | null) =>
+    set(state => ({
+      ...state,
+      preview: card,
+    })),
 }));

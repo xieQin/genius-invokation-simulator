@@ -15,10 +15,10 @@
   position: relative;
   width: 140px;
   height: 236px;
-  margin: 10px 20px;
+  margin: 0 20px;
   cursor: pointer;
   border: 3px solid gold;
-  border-radius: 12px;
+  border-radius: 20px;
   box-shadow: 0 0 20px #fbf801;
 }
 .CharacterSelected {

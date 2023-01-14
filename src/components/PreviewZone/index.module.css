@@ -1,3 +1,110 @@
 .PreviewZone {
+  position: absolute;
+  left: 50px;
+  top: 140px;
+  z-index: 20;
+}
+.PreviewZoneLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+}
+
+.PreviewZone .PreviewCard > div > div {
+  width: 205px;
+  height: 345px;
+}
+
+.PreviewZone .PreviewCharacter > div {
+  width: 205px;
+  height: 347px;
+}
+.PreviewSection {
   position: relative;
+  display: inline-flex;
+  margin: 10px 20px;
+}
+
+.PreviewZoneItem {
+  position: relative;
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  background: #2e3741;
+  padding: 16px;
+  border-radius: 20px;
+  outline: 1px solid #fff;
+  outline-offset: -8px;
+  max-height: 800px;
+  overflow: auto;
+}
+.PreviewItemName {
+  font-size: 30px;
+  color: #cad8ea;
+  font-weight: bold;
+}
+.PreviewItemCost {
+  position: relative;
+  height: 50px;
+  display: inline-flex;
+}
+.PreviewItemCost > div {
+  position: relative;
+  width: 52px;
+  height: 52px;
+  left: -9px;
+  top: 0;
+}
+.PreviewItemType {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d3bc8e;
+}
+.PreviewItemContent {
+  font-size: 18px;
+  font-weight: 700;
+  color: #aaa8a2;
+}
+.PrevewItemSkillSection {
+  display: flex;
+  flex-direction: column;
+}
+.PrevewItemSkillSection:hover .PreviewItemSkillDetail {
+  display: block;
+}
+
+.PrevewItemSkill {
+  display: flex;
+  border: 3px solid grey;
+  border-radius: 8px;
+  margin: 6px 0;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.PreviewItemSkillImg > img {
+  width: 80px;
+  height: 80px;
+}
+.PreviewItemSkillSection {
+  position: relative;
+  flex: 1;
+}
+.PreviewItemSkillName {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 35px;
+  color: #d3bc8e;
+}
+.PreviewItemSkillCost > div {
+  top: 0;
+  justify-content: left;
+}
+
+.PreviewItemSkillDetail {
+  display: none;
+  padding: 10px;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }

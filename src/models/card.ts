@@ -24,9 +24,9 @@ export interface ICardEvent extends ICard, IEvent {}
 export type CardID = EquipmentID | SupportID | EventID;
 
 export enum CardMainType {
-  Event = "AcEvent",
-  Support = "AcSupport",
-  Equipment = "AcEquip",
+  Event = "Event",
+  Support = "Support",
+  Equipment = "Equipment",
 }
 
 export type CardSubType = EquipmentMainType | EqiupmentWeaponType | SupportType;

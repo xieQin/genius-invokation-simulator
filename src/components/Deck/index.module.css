@@ -1,7 +1,5 @@
 .Deck {
   width: 100%;
   height: 100%;
-  background-image: url(/images/anemo-deck.png);
-  background-size: cover;
   overflow: hidden;
 }

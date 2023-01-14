@@ -2,6 +2,7 @@ import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { ICharacter, PlayerPosition } from "@/models";
+import { PreviewStatus, useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
 
@@ -25,12 +26,21 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character } = props;
+  const { setPreview } = useGameStore();
   if (!character) {
     return <></>;
   }
   return (
-    <div className={styles.CharacterItem}>
-      <div className={styles.CharacterSelected}></div>
+    <div
+      aria-hidden="true"
+      className={styles.CharacterItem}
+      onClick={() => {
+        console.log(111);
+        localStorage.setItem("preview", PreviewStatus.Show);
+        setPreview(character);
+      }}
+    >
+      {/* <div className={styles.CharacterSelected}></div> */}
       <div className={styles.CharacterElementStatus}>
         <div className={styles.CharacterElementStatusItem}>
           <img src="/images/dendro-elementicon.png" alt="" />
@@ -72,7 +82,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
       setActive(active === index ? -1 : index);
   };
 
-  const _Y = player === PlayerPosition.Own ? 40 : -40;
+  const _Y = player === PlayerPosition.Own ? 20 : -20;
 
   const defaultStyle = {
     transition: "500ms",
