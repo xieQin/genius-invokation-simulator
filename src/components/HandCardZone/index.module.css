@@ -78,6 +78,11 @@
   transform: translate(0, -65px);
 }
 
+.ExpandHandCardList .HandCard:hover {
+  transform: translate(0, -65px);
+  transition: 0.5s;
+}
+
 .ExpandHandCardList .HandCard.UnSelect {
   transform: translate(0, 65px);
 }

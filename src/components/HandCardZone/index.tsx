@@ -1,4 +1,4 @@
-import { CSSProperties, useState } from "react";
+import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
@@ -50,19 +50,10 @@ export const HandCardItem = (props: CardItemProps) => {
 
 export const HandCardList = (props: CardListProps) => {
   const { updateActiveCards, phase, setPhase } = useGameStore();
-  const { player, cards, toggle } = props;
-  const [state, setState] = useState(false);
-  const [select, setSelect] = useState(-1);
-  const toggleControl = (index: number) => {
+  const { player, cards } = props;
+  const playCard = (index: number) => {
     if (player === PlayerPosition.Opposite) return;
-    if (toggle && !state) {
-      toggle(true);
-    }
-    if (index > -1) {
-      setSelect(index);
-    }
-    setState(!state);
-    if (phase === Phase.Combat && state && index === select) {
+    if (phase === Phase.Combat) {
       setPhase(Phase.PlayCard);
       updateActiveCards(index, PlayerPosition.Own);
     }
@@ -70,12 +61,7 @@ export const HandCardList = (props: CardListProps) => {
   return (
     <div className={`${styles.HandCardList}`}>
       {cards.map((card, index) => (
-        <div
-          key={index}
-          className={state && index === select ? styles.Selected : ""}
-          aria-hidden="true"
-          onClick={() => toggleControl(index)}
-        >
+        <div key={index} aria-hidden="true" onDragEnd={() => playCard(index)}>
           <HandCardItem player={player} card={card} />
         </div>
       ))}
@@ -85,7 +71,6 @@ export const HandCardList = (props: CardListProps) => {
 
 export default function HandCardZone(props: CardListProps) {
   const { cards, ...rest } = props;
-  const [isExpand, setIsExpand] = useState(false);
 
   return (
     <div
@@ -96,7 +81,7 @@ export default function HandCardZone(props: CardListProps) {
       }`}
       {...props}
     >
-      <HandCardList cards={cards} toggle={v => setIsExpand(v)} {...rest} />
+      <HandCardList cards={cards} {...rest} />
     </div>
   );
 }
@@ -125,32 +110,10 @@ export const DraftHandCardZone = (props: CardListProps) => {
 
 export const DraftHandCardList = (props: CardListProps) => {
   const { player, cards } = props;
-  const [select] = useState([]);
-  const toggleControl = (index: number) => {
-    if (player === PlayerPosition.Opposite) return;
-    console.log(index);
-    // if (index in select) {
-    //   setSelect(select.splice(index, 1));
-    // } else {
-    //   if (select.length === 0) {
-    //     setSelect([...[index]]);
-    //   } else {
-    //     setSelect([...[index], ...select]);
-    //   }
-    // }
-    // toggle(select);
-  };
   return (
     <div className={styles.HandCardList}>
       {cards.map((card, index) => (
-        <div
-          key={index}
-          className={index in select ? styles.Selected : ""}
-          aria-hidden="true"
-          onClick={() => toggleControl(index)}
-        >
-          <HandCardItem card={card} player={player} />
-        </div>
+        <HandCardItem key={index} card={card} player={player} />
       ))}
     </div>
   );

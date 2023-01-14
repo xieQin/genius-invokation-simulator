@@ -23,7 +23,9 @@ export const useCostDice = () => {
     const isCostNumValid = actives.length === cost.costNum;
     let isCostTypeValid = false;
     if (cost.costType === "") {
-      isCostTypeValid = selectDices.every(d => d === selectDices[0]);
+      isCostTypeValid = selectDices.every(
+        d => d === selectDices[0] || d === GIDice[GIDice.Omni]
+      );
     } else if (cost.costType === "Void") {
       const set = new Set(selectDices);
       isCostTypeValid = selectDices.length === set.size;
