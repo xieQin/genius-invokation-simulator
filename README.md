@@ -3,7 +3,7 @@
 An unofficial simulator for Genius Invokation TCG in Genshin Impact.
 All materials used here belong to miHoYo/HoYoverse/COGNOSPHERE and their respective owners.
 
-![gi-simulator-snapshot.png](https://postimg.cc/7CvXGLSX)
+![gi-simulator-snapshot.png](https://i.postimg.cc/N0Fnn9Fh/gi-simulator-snapshot.png)
 
 ## Usage
 
