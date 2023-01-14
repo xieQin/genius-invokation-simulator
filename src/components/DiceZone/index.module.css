@@ -19,7 +19,7 @@
   background-size: cover;
   color: #fff;
   font-size: 35px;
-  font-weight: bold;
+
   line-height: 60px;
   text-align: center;
   text-indent: -2px;
@@ -39,7 +39,7 @@
   left: 50%;
   top: 50%;
   opacity: 0.5;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .DiceListItem {
@@ -58,7 +58,15 @@
   padding-top: 10px;
   width: 250px;
   z-index: 14;
-  background: linear-gradient(to top, rgba(133, 66, 20, 0) 0%, rgba(133, 66, 20, 0.1) 5%, rgba(90, 44, 4, 0.9)  20%, rgba(90, 44, 4, 0.9)  80%, rgba(205, 95, 1, 0.1)  95%, rgba(133, 66, 20, 0) 100%);
+  background: linear-gradient(
+    to top,
+    rgba(133, 66, 20, 0) 0%,
+    rgba(133, 66, 20, 0.1) 5%,
+    rgba(90, 44, 4, 0.9) 20%,
+    rgba(90, 44, 4, 0.9) 80%,
+    rgba(205, 95, 1, 0.1) 95%,
+    rgba(133, 66, 20, 0) 100%
+  );
 }
 
 .CostDiceZone .DiceList {

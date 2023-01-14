@@ -23,7 +23,7 @@
   font-size: 26px;
   line-height: 60px;
   text-indent: 10px;
-  font-weight: bold;
+
   -webkit-text-stroke: #000 1px;
 }
 
@@ -47,7 +47,7 @@
   text-align: center;
   color: #fff;
   font-size: 26px;
-  font-weight: bold;
+
   text-indent: -3px;
   line-height: 60px;
   -webkit-text-stroke: #000 1px;

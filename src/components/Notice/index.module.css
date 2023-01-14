@@ -6,11 +6,16 @@
   min-width: 80%;
   height: 50px;
   font-size: 28px;
-  font-weight: bold;
+
   color: #fff;
   text-align: center;
   line-height: 50px;
   background: #b1621e6e;
-  background: linear-gradient(to right, rgba(205, 95, 1, 0.1) 0%, rgba(205, 95, 1, 0.6)  50%, rgba(205, 95, 1, 0.1)  100%);
+  background: linear-gradient(
+    to right,
+    rgba(205, 95, 1, 0.1) 0%,
+    rgba(205, 95, 1, 0.6) 50%,
+    rgba(205, 95, 1, 0.1) 100%
+  );
   z-index: 13;
 }

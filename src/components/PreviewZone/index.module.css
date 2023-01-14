@@ -42,7 +42,6 @@
 .PreviewItemName {
   font-size: 30px;
   color: #cad8ea;
-  font-weight: bold;
 }
 .PreviewItemCost {
   position: relative;
@@ -58,12 +57,10 @@
 }
 .PreviewItemType {
   font-size: 24px;
-  font-weight: bold;
   color: #d3bc8e;
 }
 .PreviewItemContent {
   font-size: 18px;
-  font-weight: 700;
   color: #aaa8a2;
 }
 .PrevewItemSkillSection {
@@ -92,7 +89,6 @@
 }
 .PreviewItemSkillName {
   font-size: 24px;
-  font-weight: bold;
   line-height: 35px;
   color: #d3bc8e;
 }

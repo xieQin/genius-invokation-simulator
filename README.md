@@ -1,57 +1,38 @@
-# Invokation
+# Genius Invokation Simulator
 
-## Getting started
+An unofficial simulator for Genius Invokation TCG in Genshin Impact.
+All materials used here belong to miHoYo/HoYoverse/COGNOSPHERE and their respective owners.
 
-1. Install dependencies.
+![gi-simulator-snapshot.png](https://postimg.cc/7CvXGLSX)
 
-   ```bash
-   npm install
-   ```
-
-2. Start dev server with hot reload at http://localhost:3000.
-   ```bash
-   npm run dev
-   ```
-
-## Recommended VS Code extensions
-
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Other commands
-
-### Lint commands
+## Usage
 
 ```bash
-npm run lint
+yarn
 ```
 
-### Build commands
+```bash
+npm run dev
+```
 
 ```bash
 npm run build
 ```
 
-### Run the app in production mode at http://localhost:3000.
+## Roadmap
 
-```bash
-npm run serve
-```
-
-### Test commands
-
-- Run unit tests and watch
-  ```bash
-  npm run test:unit
-  ```
-- Run unit tests with coverage
-  ```bash
-  npm run test:unit:coverage
-  ```
-- Run e2e tests
-  ```bash
-  npm run test:e2e
-  ```
+- [x] Game Area
+- [x] Prepare to Duel
+  - [x] Draw 5 hand cards
+  - [ ] Set active character
+- [x] Round Flow
+  - [x] Roll Phase
+  - [ ] Action Phase
+  - [ ] End Phase
+- [ ] Elemental Reactions
+  - [ ] Rules
+  - [ ] Effects
+- [ ] Other Rules
 
 ## License
 

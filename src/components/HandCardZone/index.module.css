@@ -86,7 +86,8 @@
 .ExpandHandCardList .HandCard.UnSelect {
   transform: translate(0, 65px);
 }
-.ExpandHandCardList .HandCard, .CollapseHandCardList .HandCard {
+.ExpandHandCardList .HandCard,
+.CollapseHandCardList .HandCard {
   margin-left: -55px;
 }
 
@@ -106,7 +107,7 @@
   top: -10px;
   color: #fff;
   line-height: 52px;
-  font-weight: bold;
+
   font-size: 28px;
   -webkit-text-stroke: #000 1px;
 }
