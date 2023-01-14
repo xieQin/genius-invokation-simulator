@@ -1,26 +1,22 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
 import { NoticeText } from "@/components/Notice";
-import { CardMainType } from "@/models";
+import { usePlayCard } from "@/hooks/playCard";
+import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 
 import { useGameStore } from "./store";
 
 export default function PlayCardPhase() {
-  const { phase, setPhase, activeCards, own, addSupport, removeHandCard } =
-    useGameStore();
-
-  if (phase !== Phase.PlayCard) return <></>;
+  const { setPhase, activeCards, own } = useGameStore();
+  const { onPlayCard } = usePlayCard();
 
   const card = own.cards[activeCards[0] as number];
 
   const message = `Play Card: ${card.name}`;
 
   const onConfirm = () => {
-    if (card.mainType === CardMainType.Support) {
-      addSupport(card, own.position);
-      removeHandCard(activeCards[0] as number, own.position);
-    }
+    onPlayCard(card, PlayerPosition.Own);
     setPhase(Phase.Combat);
   };
 

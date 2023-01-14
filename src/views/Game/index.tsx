@@ -20,7 +20,7 @@ export default function Game() {
       <InitPhase />
       <ChoosePhase />
       <RollPhase />
-      <PlayCardPhase />
+      {phase === Phase.PlayCard && <PlayCardPhase />}
       {phase === Phase.DraftCard && <DraftCardPhase />}
       <Deck />
       {message && <Notice message={message} callback={msgCallback} />}
