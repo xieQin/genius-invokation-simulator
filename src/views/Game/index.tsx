@@ -1,6 +1,7 @@
 import Deck from "@/components/Deck";
 import Notice from "@/components/Notice";
 import SettingZone from "@/components/SettingZone";
+import { Phase } from "@/models/phase";
 
 import ChoosePhase from "./choose";
 import DraftCardPhase from "./draft";
@@ -11,7 +12,8 @@ import { useGameStore } from "./store";
 
 export default function Game() {
   const store = useGameStore();
-  const { toggleDeckStatus, message, msgCallback } = store;
+  const { toggleDeckStatus, message, msgCallback, own, phase } = store;
+  console.log(own);
 
   return (
     <>
@@ -19,7 +21,7 @@ export default function Game() {
       <ChoosePhase />
       <RollPhase />
       <PlayCardPhase />
-      <DraftCardPhase />
+      {phase === Phase.DraftCard && <DraftCardPhase />}
       <Deck />
       {message && <Notice message={message} callback={msgCallback} />}
       <SettingZone toggle={toggleDeckStatus} />

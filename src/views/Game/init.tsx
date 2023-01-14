@@ -9,8 +9,17 @@ import { useGameStore } from "./store";
 
 export default function InitPhase() {
   const gameStates = useGameStore();
-  const { phase, setPhase, toggleDeckStatus, own, opposite, shouldHideDeck } =
-    gameStates;
+  const {
+    phase,
+    setPhase,
+    toggleDeckStatus,
+    own,
+    opposite,
+    shouldHideDeck,
+    draftHandCard,
+    popCardStack,
+  } = gameStates;
+  const handCards = draftHandCard(5, PlayerPosition.Own);
   const timeout: { current: number | null } = useRef(null);
   const pos = PlayerPosition.Opposite;
   useEffect(() => {
@@ -25,6 +34,7 @@ export default function InitPhase() {
   });
   const onConfirm = () => {
     setPhase(Phase.Choose);
+    popCardStack(5, PlayerPosition.Own);
     toggleDeckStatus();
     // console.log(deckStatus);
   };
@@ -33,12 +43,12 @@ export default function InitPhase() {
     <>
       {phase === Phase.Init && (
         <div className={styles.GameLayer}>
-          {[1, 2, 3, 4, 5].map(n => (
+          {handCards.map((card, i) => (
             <div
-              key={n}
-              className={`${styles.HandAnimate} ${styles[`Animate${n}`]}`}
+              key={i}
+              className={`${styles.HandAnimate} ${styles[`Animate${i + 1}`]}`}
             >
-              <HandCardItem card={own.cards[0]} player={pos} />
+              <HandCardItem card={card} player={pos} />
             </div>
           ))}
         </div>

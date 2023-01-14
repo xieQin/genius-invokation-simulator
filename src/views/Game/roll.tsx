@@ -54,7 +54,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice(cacheDices);
+          onConfirmDice(cacheDices as GIDiceID[]);
         }}
       >
         <div className={styles.ConfirmIcon}></div>

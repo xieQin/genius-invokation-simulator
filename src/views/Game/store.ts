@@ -24,6 +24,8 @@ export interface GameStates {
   opposite: IPlayer;
   addHandCard: (cards: ICard[], pos: PlayerPosition) => void;
   removeHandCard: (idx: number, pos: PlayerPosition) => void;
+  popCardStack: (num: number, pos: PlayerPosition) => void;
+  draftHandCard: (num: number, pos: PlayerPosition) => ICard[];
   addSupport: (cards: ICard, pos: PlayerPosition) => void;
   updateOwnAndOpposite: (own: IPlayer, opposite: IPlayer) => void;
   message: string;
@@ -87,6 +89,30 @@ export const useGameStore = create<GameStates>((set, get) => ({
       }));
     }
   },
+  popCardStack: (num, pos) => {
+    let player: IPlayer =
+      pos === PlayerPosition.Own ? get().own : get().opposite;
+    const cards = player.cardStack;
+    for (let i = 0; i < num; i++) {
+      cards.splice(0, 1);
+    }
+    console.log(cards, "cards");
+    player = {
+      ...player,
+      cardStack: cards,
+    };
+    if (pos === PlayerPosition.Own) {
+      return set(state => ({
+        ...state,
+        own: player,
+      }));
+    } else {
+      return set(state => ({
+        ...state,
+        opposite: player,
+      }));
+    }
+  },
   removeHandCard: (idx, pos) => {
     const player: IPlayer =
       pos === PlayerPosition.Own ? get().own : get().opposite;
@@ -102,6 +128,16 @@ export const useGameStore = create<GameStates>((set, get) => ({
         opposite: player,
       }));
     }
+  },
+  draftHandCard: (num = 2, pos) => {
+    const player: IPlayer =
+      pos === PlayerPosition.Own ? get().own : get().opposite;
+    const res = [],
+      cards = player.cardStack;
+    for (let i = 0; i < num; i++) {
+      res.push(cards[i]);
+    }
+    return res;
   },
   addSupport: (card, pos) => {
     let player = pos === PlayerPosition.Own ? get().own : get().opposite;

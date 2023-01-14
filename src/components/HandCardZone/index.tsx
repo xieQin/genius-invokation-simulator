@@ -2,10 +2,10 @@ import { CSSProperties, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
+import { Phase } from "@/models/phase";
+import { useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
-import { useGameStore } from "@/views/Game/store";
-import { Phase } from "@/models/phase";
 
 export interface CardListProps {
   cards: ICard[];
