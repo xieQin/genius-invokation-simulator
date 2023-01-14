@@ -96,13 +96,50 @@
   height: 52px;
   position: absolute;
   text-align: center;
+  text-indent: -3px;
   left: -20px;
   top: -10px;
   color: #fff;
-  line-height: 50px;
+  line-height: 52px;
   font-weight: bold;
   font-size: 28px;
   -webkit-text-stroke: #000 1px;
+}
+.HandCardPay.Same {
+  background-image: url(/images/same-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Void {
+  background-image: url(/images/void-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Hydro {
+  background-image: url(/images/hydro-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Pyro {
+  background-image: url(/images/pyro-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Anemo {
+  background-image: url(/images/anemo-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Geo {
+  background-image: url(/images/geo-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Dendro {
+  background-image: url(/images/dendro-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Electro {
+  background-image: url(/images/electro-icon.png);
+  background-size: cover;
+}
+.HandCardPay.Cryo {
+  background-image: url(/images/cryo-icon.png);
+  background-size: cover;
 }
 
 .DraftHandCardZone {

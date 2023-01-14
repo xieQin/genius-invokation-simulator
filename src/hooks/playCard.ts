@@ -2,8 +2,7 @@ import { CardMainType, ICard, PlayerPosition } from "@/models";
 import { useGameStore } from "@/views/Game/store";
 
 export const usePlayCard = () => {
-  const { addSupport, removeHandCard, own, opposite, activeCards } =
-    useGameStore();
+  const { addSupport, removeHandCard, activeCards } = useGameStore();
   // const player: IPlayer = pos === PlayerPosition.Own ? own : opposite;
 
   const onPlayCard = (card: ICard, pos: PlayerPosition) => {

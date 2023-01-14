@@ -30,7 +30,11 @@ export const HandCardItem = (props: CardItemProps) => {
             : styles.HandCardBack
         }`}
       >
-        <div className={styles.HandCardPay}>{card.cost[0].costNum}</div>
+        <div
+          className={`${styles.HandCardPay} ${styles[card.cost[0].costType]}`}
+        >
+          {card.cost[0].costNum}
+        </div>
         <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
       </div>
       <div
