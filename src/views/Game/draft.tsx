@@ -21,7 +21,6 @@ export default function DraftCardPhase() {
   } = useGameStore();
   // const animates = [2 * turn - 2, 2 * turn - 1];
   const handCards = draftHandCard(2, PlayerPosition.Own);
-  console.log(handCards, " handCards");
 
   const timer: { current: number | null } = useRef(null);
   useEffect(() => {

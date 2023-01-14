@@ -41,7 +41,6 @@ export const useCostDice = () => {
   const costDices = () => {
     let temp = Object.assign([], dices);
     temp = temp.filter((_, i) => !actives.includes(i));
-    console.log(temp, actives, dices);
     setDices(temp);
   };
 

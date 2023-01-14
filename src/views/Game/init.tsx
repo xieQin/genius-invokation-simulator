@@ -36,7 +36,6 @@ export default function InitPhase() {
     setPhase(Phase.Choose);
     popCardStack(5, PlayerPosition.Own);
     toggleDeckStatus();
-    // console.log(deckStatus);
   };
   return (
     <>

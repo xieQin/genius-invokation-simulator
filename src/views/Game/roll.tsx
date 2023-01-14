@@ -10,8 +10,6 @@ export default function RollPhase() {
   const { phase, setPhase, shouldHideDeck, toggleDeckStatus, setDices } =
     useGameStore();
 
-  console.log(phase);
-
   if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
 
   const onConfirmDice = (dices: GIDiceID[]) => {

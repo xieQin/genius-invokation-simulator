@@ -19,13 +19,7 @@ export default function PreviewZone() {
   });
   return (
     preview && (
-      <div
-        className={styles.PreviewZone}
-        aria-hidden="true"
-        onClick={() => {
-          console.log("333");
-        }}
-      >
+      <div className={styles.PreviewZone} aria-hidden="true">
         {isCharacterCard(preview) ? (
           <PreviewCard preview={preview as ICard} />
         ) : (

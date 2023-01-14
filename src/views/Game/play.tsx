@@ -29,10 +29,8 @@ export default function PlayCardPhase() {
 
   const onCancel = () => {
     setPhase(Phase.Combat);
-    console.log(111);
   };
 
-  console.log(activeCards, own.cards);
   return (
     <>
       <NoticeText message={message} />

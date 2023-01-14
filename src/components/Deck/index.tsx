@@ -8,7 +8,7 @@ import OwnArea from "../OwnArea";
 import styles from "./index.module.css";
 
 export default function Deck() {
-  const { shouldHideDeck, phase, setPhase, showMessage, setTurn, turn } =
+  const { shouldHideDeck, setPhase, showMessage, setTurn, turn } =
     useGameStore();
   const onNextRound = () => {
     showMessage("Round end", () => {
@@ -17,7 +17,6 @@ export default function Deck() {
       setPhase(Phase.DraftCard);
     });
   };
-  console.log(phase);
   return (
     <div className={styles.Deck}>
       <div style={{ opacity: shouldHideDeck() ? 0 : 1 }}>

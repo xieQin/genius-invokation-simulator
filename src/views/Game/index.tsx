@@ -14,7 +14,6 @@ import { PreviewStatus, useGameStore } from "./store";
 export default function Game() {
   const store = useGameStore();
   const { toggleDeckStatus, message, msgCallback, phase, setPreview } = store;
-  console.log(phase);
 
   return (
     <div
