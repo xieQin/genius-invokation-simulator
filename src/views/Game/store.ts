@@ -79,7 +79,7 @@ export const useGameStore = create<GameStates>((set, get) => ({
       dices,
     })),
 
-  own: InitPlayer("Lumin", PlayerPosition.Own),
+  own: InitPlayer("Lumine", PlayerPosition.Own),
   opposite: InitPlayer("Ellin", PlayerPosition.Opposite),
   getPlayer: pos => {
     return pos === PlayerPosition.Own ? get().own : get().opposite;
