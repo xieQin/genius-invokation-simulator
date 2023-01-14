@@ -8,6 +8,8 @@
   "scripts": {
     "build": "npm run typecheck && vite build",
     "commit": "git-cz",
+    "data": "node --loader ts-node/esm ./src/data/handle.ts",
+    "data:img": "node --loader ts-node/esm ./src/data/image.ts",
     "dev": "vite",
     "format": "prettier . --write --ignore-path .gitignore && git update-index --again",
     "lint": "eslint . --ext .ts,.tsx --fix --ignore-path .gitignore",
@@ -18,9 +20,7 @@
     "test:unit": "jest --watch",
     "test:unit:ci": "jest",
     "test:unit:coverage": "jest --silent --watchAll=false --coverage",
-    "typecheck": "tsc --noEmit",
-    "data": "node --loader ts-node/esm ./src/data/handle.ts",
-    "data:img": "node --loader ts-node/esm ./src/data/image.ts"
+    "typecheck": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{css,md,json}": [
@@ -38,8 +38,11 @@
     }
   },
   "dependencies": {
+    "i18next": "^22.4.9",
+    "i18next-browser-languagedetector": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.4",
     "zustand": "^4.3.1"
   },
   "devDependencies": {

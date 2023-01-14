@@ -35,7 +35,6 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       aria-hidden="true"
       className={styles.CharacterItem}
       onClick={() => {
-        console.log(111);
         localStorage.setItem("preview", PreviewStatus.Show);
         setPreview(character);
       }}
