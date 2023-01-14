@@ -19,8 +19,26 @@
   cursor: pointer;
   border: 3px solid gold;
   border-radius: 12px;
+  box-shadow: 0 0 20px #fbf801;
 }
-
+.CharacterSelected {
+  position: absolute;
+  background-image: url(/images/select-card-icon.png);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  top: 50px;
+  z-index: 12;
+  animation: CharacterSelect 10s linear infinite;
+}
+@keyframes CharacterSelect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .CharacterHealth {
   width: 60px;
   height: 75px;
@@ -68,13 +86,36 @@
 }
 .CharacterEquipment .CharacterWeapon {
   position: relative;
-  background-image: url(/images/artifact-icon.png);
+  background-image: url(/images/equip-weapon-icon.png);
+  background-size: cover;
+  width: 49px;
+  height: 45px;
+}
+.CharacterEquipment .CharacterArtifact {
+  position: relative;
+  background-image: url(/images/equip-artifact-icon.png);
   background-size: cover;
   width: 50px;
   height: 50px;
 }
-.CharacterEquipment .CharacterArtifact {
+.CharacterEquipment .CharacterTalent {
   position: relative;
-  background-image: url(/images/artifact-icon.png);
+  background-image: url(/images/equip-talent-icon.png);
   background-size: cover;
+  width: 49px;
+  height: 45px;
+}
+
+.CharacterElementStatus {
+  position: absolute;
+  width: 200px;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.CharacterElementStatusItem {
+  width: 38px;
 }

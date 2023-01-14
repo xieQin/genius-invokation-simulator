@@ -162,3 +162,22 @@
   transform: translate(0, -35px);
   transition: 0.5s;
 }
+
+.CardSelected {
+  position: absolute;
+  background-image: url(/images/select-card-icon.png);
+  background-size: cover;
+  width: 130px;
+  height: 130px;
+  top: 50px;
+  z-index: 12;
+  animation: CardSelect 10s linear infinite;
+}
+@keyframes CardSelect {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

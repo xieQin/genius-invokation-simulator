@@ -30,6 +30,7 @@ export const HandCardItem = (props: CardItemProps) => {
             : styles.HandCardBack
         }`}
       >
+        {/* <div className={styles.CardSelected}></div> */}
         <div
           className={`${styles.HandCardPay} ${styles[card.cost[0].costType]}`}
         >

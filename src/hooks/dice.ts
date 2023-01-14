@@ -17,6 +17,7 @@ export const useCostDice = () => {
     }
   };
 
+  // todo fix cost valid bug
   const isCostValid = (costs: ICost[]): boolean => {
     const cost = costs[0];
     const selectDices = actives.map(i => dices[i]);

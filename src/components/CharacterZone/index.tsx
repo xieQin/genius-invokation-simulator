@@ -30,6 +30,15 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
   }
   return (
     <div className={styles.CharacterItem}>
+      <div className={styles.CharacterSelected}></div>
+      <div className={styles.CharacterElementStatus}>
+        <div className={styles.CharacterElementStatusItem}>
+          <img src="/images/dendro-elementicon.png" alt="" />
+        </div>
+        <div className={styles.CharacterElementStatusItem}>
+          <img src="/images/electro-elementicon.png" alt="" />
+        </div>
+      </div>
       <div className={styles.CharacterHealth}>{character.hp}</div>
       <div className={styles.CharacterEnergy}>
         <div className={styles.CharacterEnergyItem}></div>
@@ -39,6 +48,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       <div className={styles.CharacterEquipment}>
         <div className={styles.CharacterWeapon}></div>
         <div className={styles.CharacterArtifact}></div>
+        <div className={styles.CharacterTalent}></div>
       </div>
       <img src={`${PUBLIC_PATH}/characters/${character.imgID}.png`} alt="" />
     </div>
@@ -84,10 +94,8 @@ export default function CharacterZone(props: CharacterZoneProps) {
         {characters.map((character, index) => (
           <div
             key={index}
-            tabIndex={index}
-            role="button"
             style={style(index)}
-            onKeyDown={() => toggleControl(index)}
+            aria-hidden="true"
             onClick={() => toggleControl(index)}
           >
             <CharacterItem character={character} />
