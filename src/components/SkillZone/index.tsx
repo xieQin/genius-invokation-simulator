@@ -1,5 +1,7 @@
 import { PUBLIC_PATH } from "@/configs";
 import { ICost, ISkill, SkillPassiveType } from "@/models";
+import { Phase } from "@/models/phase";
+import { useGameStore } from "@/views/Game/store";
 
 import styles from "./index.module.css";
 
@@ -36,7 +38,9 @@ export const SkillItem = (props: { skill: ISkill }) => {
 };
 
 export default function SkillZone(props: { skills: ISkill[] }) {
+  const { phase } = useGameStore();
   const { skills } = props;
+  if (phase === Phase.Choose) return <></>;
 
   return (
     <div className={styles.SkillZone}>
