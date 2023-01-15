@@ -6,6 +6,7 @@ import { ICharacter, Phase, PlayerPosition, PreviewStatus } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
+import { usePreview } from "@/hooks";
 
 export type stateType = "ready" | "battle";
 
@@ -27,7 +28,7 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character } = props;
-  const { setGameStates } = useGameStore();
+  const { onPreview } = usePreview();
   if (!character) {
     return <></>;
   }
@@ -36,8 +37,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       aria-hidden="true"
       className={styles.CharacterItem}
       onClick={() => {
-        localStorage.setItem("preview", PreviewStatus.Show);
-        setGameStates("preview", character);
+        onPreview(character);
       }}
     >
       {/* <div className={styles.CharacterSelected}></div> */}

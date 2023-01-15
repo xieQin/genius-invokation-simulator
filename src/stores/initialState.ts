@@ -4,6 +4,7 @@ import {
   ICard,
   ICharacter,
   IPlayer,
+  ISkill,
   Phase,
   PlayerPosition,
 } from "@/models";
@@ -19,7 +20,7 @@ export interface GameState {
   message: string;
   activeCards: number[];
   activeCharacters: number[];
-  preview: ICharacter | ICard | null;
+  preview: unknown;
   msgCallback: (() => void) | undefined;
 }
 

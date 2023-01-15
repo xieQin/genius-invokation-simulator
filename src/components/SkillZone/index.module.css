@@ -10,6 +10,7 @@
 
 .SkillZoneItem {
   margin: -12px;
+  cursor: pointer;
 }
 
 .SkillIcon {

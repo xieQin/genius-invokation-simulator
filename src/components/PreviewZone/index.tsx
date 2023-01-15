@@ -2,9 +2,15 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICard, ICharacter, PlayerPosition, PreviewStatus } from "@/models";
+import {
+  ICard,
+  ICharacter,
+  ISkill,
+  PlayerPosition,
+  PreviewStatus,
+} from "@/models";
 import { useGameStore } from "@/stores";
-import { isCharacterCard } from "@/utils";
+import { isCardType, isCharacterType, isSkillType } from "@/utils";
 
 import { CharacterItem } from "../CharacterZone";
 import { HandCardCost, HandCardItem } from "../HandCardZone";
@@ -18,17 +24,58 @@ export default function PreviewZone() {
     localStorage.setItem("preview", PreviewStatus.Hide);
   });
   return (
-    preview && (
-      <div className={styles.PreviewZone} aria-hidden="true">
-        {isCharacterCard(preview) ? (
-          <PreviewCard preview={preview as ICard} />
-        ) : (
-          <PreviewCharacter preview={preview as ICharacter} />
-        )}
-      </div>
-    )
+    <div className={styles.PreviewZone} aria-hidden="true">
+      {isCardType(preview) ? (
+        <PreviewCard preview={preview as ICard} />
+      ) : isCharacterType(preview) ? (
+        <PreviewCharacter preview={preview as ICharacter} />
+      ) : isSkillType(preview) ? (
+        <div className={styles.PreviewSection}>
+          <div className={styles.PreviewZoneItem}>
+            <PreviewSkill preview={preview as ISkill} />
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
+    </div>
   );
 }
+
+export const PreviewSkill = (props: { preview: ISkill }) => {
+  const { t } = useTranslation();
+  const { preview } = props;
+  const skill = preview;
+  return (
+    <div key={skill.name} className={styles.PrevewItemSkillSection}>
+      <div className={styles.PrevewItemSkill}>
+        <div className={styles.PreviewItemSkillImg}>
+          <img src={`${PUBLIC_PATH}/skills/${skill.imgID}.png`} alt="" />
+        </div>
+        <div className={styles.PreviewItemSkillSection}>
+          <div className={styles.PreviewItemSkillName}>{t(skill.name)}</div>
+          <div className={styles.PreviewItemSkillCost}>
+            <SkillPayItems costs={skill.costs} />
+          </div>
+        </div>
+      </div>
+      <div className={styles.PreviewItemSkillDetail}>
+        {skill.type.map((s, i) => (
+          <div key={i} className={styles.PreviewItemType}>
+            {t(s)}
+          </div>
+        ))}
+        <div
+          className={styles.PreviewItemContent}
+          style={{ whiteSpace: "pre-wrap" }}
+          dangerouslySetInnerHTML={{
+            __html: t(skill.text).replace(/\\n*/g, "<br/>"),
+          }}
+        ></div>
+      </div>
+    </div>
+  );
+};
 
 export const PreviewCharacter = (props: { preview: ICharacter }) => {
   const { t } = useTranslation();
@@ -41,35 +88,7 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         {preview.skills.map(skill => (
-          <div key={skill.name} className={styles.PrevewItemSkillSection}>
-            <div className={styles.PrevewItemSkill}>
-              <div className={styles.PreviewItemSkillImg}>
-                <img src={`${PUBLIC_PATH}/skills/${skill.imgID}.png`} alt="" />
-              </div>
-              <div className={styles.PreviewItemSkillSection}>
-                <div className={styles.PreviewItemSkillName}>
-                  {t(skill.name)}
-                </div>
-                <div className={styles.PreviewItemSkillCost}>
-                  <SkillPayItems costs={skill.costs} />
-                </div>
-              </div>
-            </div>
-            <div className={styles.PreviewItemSkillDetail}>
-              {skill.type.map((s, i) => (
-                <div key={i} className={styles.PreviewItemType}>
-                  {t(s)}
-                </div>
-              ))}
-              <div
-                className={styles.PreviewItemContent}
-                style={{ whiteSpace: "pre-wrap" }}
-                dangerouslySetInnerHTML={{
-                  __html: t(skill.text).replace(/\\n*/g, "<br/>"),
-                }}
-              ></div>
-            </div>
-          </div>
+          <PreviewSkill key={skill.name} preview={skill} />
         ))}
       </div>
     </div>

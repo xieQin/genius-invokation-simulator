@@ -1,6 +1,6 @@
 import CardData from "@/data/cards.json";
 import CharacterData from "@/data/characters.json";
-import { ICard, ICharacter, IPlayer, PlayerPosition } from "@/models";
+import { ICard, ICharacter, IPlayer, ISkill, PlayerPosition } from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
 
 export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
@@ -40,8 +40,16 @@ export const rollDice = (): GIDiceID[] => {
   return res;
 };
 
-export const isCharacterCard = (card: ICard | ICharacter) => {
-  return (card as ICard).mainType != undefined;
+export const isCharacterType = (data: unknown) => {
+  return (data as ICharacter)?.element;
+};
+
+export const isCardType = (data: unknown) => {
+  return (data as ICard)?.mainType;
+};
+
+export const isSkillType = (data: unknown) => {
+  return (data as ISkill)?.costs;
 };
 
 export const InitPlayer = (name: string, position: PlayerPosition) => {

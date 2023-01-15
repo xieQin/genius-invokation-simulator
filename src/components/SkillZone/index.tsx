@@ -1,4 +1,5 @@
 import { PUBLIC_PATH } from "@/configs";
+import { usePreview } from "@/hooks";
 import { ICost, ISkill, PlayerPosition, SkillPassiveType } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
@@ -25,11 +26,18 @@ export const SkillPayItems = (props: { costs: ICost[] }) => {
 
 export const SkillItem = (props: { skill: ISkill }) => {
   const { skill } = props;
+  const { onPreview } = usePreview();
   if (skill.type.includes(SkillPassiveType.Passive)) {
     return <></>;
   }
   return (
-    <div className={styles.SkillZoneItem}>
+    <div
+      className={styles.SkillZoneItem}
+      aria-hidden="true"
+      onClick={() => {
+        onPreview(skill);
+      }}
+    >
       <div className={styles.SkillIcon}>
         <img src={`${PUBLIC_PATH}/skills/${skill.imgID}.png`} alt="" />
       </div>

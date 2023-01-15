@@ -2,7 +2,7 @@ import Deck from "@/components/Deck";
 import Notice from "@/components/Notice";
 import PreviewZone from "@/components/PreviewZone";
 import SettingZone from "@/components/SettingZone";
-import { PreviewStatus } from "@/models";
+import { usePreview } from "@/hooks";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
@@ -14,15 +14,13 @@ import RollPhase from "./roll";
 
 export default function Game() {
   const store = useGameStore();
-  const { setGameStates, message, msgCallback, phase } = store;
+  const { message, msgCallback, phase } = store;
+  const { onPreviewEnd } = usePreview();
   return (
     <div
       aria-hidden="true"
       onClick={() => {
-        if (localStorage.getItem("preview") !== PreviewStatus.Show) {
-          setGameStates("preview", null);
-          localStorage.setItem("preview", PreviewStatus.Hide);
-        }
+        onPreviewEnd();
       }}
     >
       <PreviewZone />

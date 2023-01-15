@@ -1,7 +1,8 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICard, ICost, PlayerPosition, PreviewStatus } from "@/models";
+import { usePreview } from "@/hooks";
+import { ICard, ICost, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
@@ -28,15 +29,14 @@ export const HandCardCost = (props: { cost: ICost[] }) => {
 
 export const HandCardItem = (props: CardItemProps) => {
   const { player, card } = props;
-  const { setGameStates } = useGameStore();
+  const { onPreview } = usePreview();
   return (
     <div
       className={styles.HandCardLayout}
       aria-hidden="true"
       onClick={() => {
         if (player === PlayerPosition.Opposite) return;
-        localStorage.setItem("preview", PreviewStatus.Show);
-        setGameStates("preview", card);
+        onPreview(card);
       }}
     >
       <div
