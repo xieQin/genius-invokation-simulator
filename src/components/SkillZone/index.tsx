@@ -1,5 +1,5 @@
 import { PUBLIC_PATH } from "@/configs";
-import { ICost, ISkill, SkillPassiveType } from "@/models";
+import { ICost, ISkill, PlayerPosition, SkillPassiveType } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
@@ -37,9 +37,10 @@ export const SkillItem = (props: { skill: ISkill }) => {
   );
 };
 
-export default function SkillZone(props: { skills: ISkill[] }) {
-  const { phase } = useGameStore();
-  const { skills } = props;
+export default function SkillZone() {
+  const { phase, activeCharacters, own } = useGameStore();
+  const active = activeCharacters[PlayerPosition.Own];
+  const skills = active >= 0 ? own.characters[active].skills : [];
   if (phase === Phase.Choose) return <></>;
 
   return (

@@ -12,7 +12,7 @@ export default function PlayCardPhase() {
   const { onPlayCard, getMessage } = usePlayCard();
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
 
-  const card = own.cards[activeCards[0] as number];
+  const card = own.cards[activeCards[0]];
 
   const message = getMessage(card);
 

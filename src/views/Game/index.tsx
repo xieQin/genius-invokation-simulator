@@ -15,7 +15,6 @@ import RollPhase from "./roll";
 export default function Game() {
   const store = useGameStore();
   const { setGameStates, message, msgCallback, phase } = store;
-
   return (
     <div
       aria-hidden="true"

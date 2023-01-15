@@ -24,7 +24,7 @@ npm run build
 - [x] Game Area
 - [x] Prepare to Duel
   - [x] Draw 5 hand cards
-  - [ ] Set active character
+  - [x] Set active character
 - [x] Round Flow
   - [x] Roll Phase
   - [ ] Action Phase

@@ -1,7 +1,8 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICharacter, PlayerPosition, PreviewStatus } from "@/models";
+import { useChoosePhase } from "@/hooks/phase";
+import { ICharacter, Phase, PlayerPosition, PreviewStatus } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
@@ -69,18 +70,23 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
 export interface CharacterZoneProps {
   characters: ICharacter[];
   player: PlayerPosition;
-  setActive?: (v: number) => void;
-  active: number;
 }
 
 export default function CharacterZone(props: CharacterZoneProps) {
-  const { characters, player, active, setActive } = props;
+  const { characters, player } = props;
+  const [active, setActive] = useState(-1);
+  const { phase } = useGameStore();
+  const { setActiveCharacter, endChoosePhase } = useChoosePhase();
   const { state, animationControl } = useTransformControl();
   const toggleControl = (index: number) => {
-    animationControl(index);
-    player === PlayerPosition.Own &&
-      setActive &&
-      setActive(active === index ? -1 : index);
+    if (player === PlayerPosition.Own && phase === Phase.Choose) {
+      if (index === active) {
+        animationControl(index);
+        setActiveCharacter(index);
+        endChoosePhase();
+      }
+      setActive(index);
+    }
   };
 
   const _Y = player === PlayerPosition.Own ? 20 : -20;

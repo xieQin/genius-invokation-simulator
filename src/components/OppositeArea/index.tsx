@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import areaStyles from "@/assets/styles/area.module.css";
 import { SummonsID } from "@/models/summons";
 import { useGameStore } from "@/stores";
@@ -13,14 +11,11 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OppositeArea() {
-  const [active, setActive] = useState(-1);
   const { opposite } = useGameStore();
   const { position, characters, cards, supports } = opposite;
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,
-    active,
-    setActive,
   };
   const summons: SummonsID[] = [];
 

@@ -17,8 +17,8 @@ export interface GameState {
   own: IPlayer;
   opposite: IPlayer;
   message: string;
-  activeCards: (number | null)[];
-  activeCharacters: (number | null)[];
+  activeCards: number[];
+  activeCharacters: number[];
   preview: ICharacter | ICard | null;
   msgCallback: (() => void) | undefined;
 }
@@ -32,7 +32,7 @@ export const initialState: GameState = {
   opposite: InitPlayer("Ellin", PlayerPosition.Opposite),
   message: "",
   msgCallback: undefined,
-  activeCards: [null, null],
-  activeCharacters: [null, null],
+  activeCards: [-1, -1],
+  activeCharacters: [-1, -1],
   preview: null,
 };
