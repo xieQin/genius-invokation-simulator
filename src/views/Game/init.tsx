@@ -57,11 +57,7 @@ export default function InitPhase() {
             <p>select card(s) to switch</p>
           </div>
           <div className={styles.GameModalLayer}></div>
-          <DraftHandCardZone
-            cards={own.cards}
-            player={PlayerPosition.Own}
-            toggle={toggleDeckStatus}
-          />
+          <DraftHandCardZone cards={own.cards} player={PlayerPosition.Own} />
           <DraftHandCardZone
             cards={opposite.cards}
             player={PlayerPosition.Opposite}

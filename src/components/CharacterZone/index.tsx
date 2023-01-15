@@ -11,7 +11,6 @@ export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
   character: ICharacter;
-  player: PlayerPosition;
 }
 
 export const useTransformControl = () => {
@@ -27,7 +26,7 @@ export const useTransformControl = () => {
 };
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
-  const { character, player } = props;
+  const { character } = props;
   const { setGameStates } = useGameStore();
   if (!character) {
     return <></>;
@@ -37,7 +36,6 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       aria-hidden="true"
       className={styles.CharacterItem}
       onClick={() => {
-        if (player === PlayerPosition.Opposite) return;
         localStorage.setItem("preview", PreviewStatus.Show);
         setGameStates("preview", character);
       }}
@@ -116,7 +114,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
             aria-hidden="true"
             onClick={() => toggleControl(index)}
           >
-            <CharacterItem character={character} player={player} />
+            <CharacterItem character={character} />
           </div>
         ))}
       </div>
