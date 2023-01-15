@@ -3,6 +3,7 @@ import { ICost, ISkill, PlayerPosition, SkillPassiveType } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
+import { ChooseBtn, ChooseZoneLayer } from "../ChooseZone";
 import styles from "./index.module.css";
 
 export const SkillPayItems = (props: { costs: ICost[] }) => {
@@ -37,11 +38,28 @@ export const SkillItem = (props: { skill: ISkill }) => {
   );
 };
 
-export default function SkillZone() {
+export default function SkillZone(props: { select: number }) {
+  const { select } = props;
   const { phase, activeCharacters, own } = useGameStore();
   const active = activeCharacters[PlayerPosition.Own];
   const skills = active >= 0 ? own.characters[active].skills : [];
   if (phase === Phase.Choose) return <></>;
+  if (select !== active) {
+    const costs: ICost[] = [
+      {
+        costNum: 1,
+        costType: "Void",
+      },
+    ];
+    return (
+      <ChooseZoneLayer>
+        <ChooseBtn
+          element={<SkillPayItems costs={costs} />}
+          onClick={() => ({})}
+        />
+      </ChooseZoneLayer>
+    );
+  }
 
   return (
     <div className={styles.SkillZone}>

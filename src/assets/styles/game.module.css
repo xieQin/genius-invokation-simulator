@@ -76,43 +76,6 @@
   width: 100%;
 }
 
-.ChooseZone {
-  position: absolute;
-  bottom: 73px;
-  right: 33px;
-  width: 125px;
-  height: 125px;
-  z-index: 12;
-}
-
-.SetActiveCharacter {
-  width: 125px;
-  height: 125px;
-  background-image: url(/images/skill-bg.png);
-  background-size: cover;
-  cursor: pointer;
-}
-
-.SetActiveCharacter > img {
-  position: relative;
-  width: 46px;
-  margin: auto;
-  top: 34px;
-}
-.SetActiveCharacterHint {
-  position: absolute;
-  width: 262px;
-  height: 62px;
-  left: -134px;
-  top: -34px;
-  line-height: 57px;
-  font-size: 20px;
-  color: #3b404f;
-  text-align: center;
-  background-image: url(/images/set-active-character-icon.png);
-  background-size: cover;
-}
-
 .GameLayer > .HandAnimate {
   position: absolute;
   bottom: 0;

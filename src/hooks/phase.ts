@@ -1,4 +1,4 @@
-import { Phase } from "@/models";
+import { Phase, PlayerPosition, PreviewStatus } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const useInitPhase = () => {
@@ -13,6 +13,8 @@ export const useChoosePhase = () => {
   const { showMessage, setGameStates, toggleDeckStatus, activeCharacters } =
     useGameStore();
 
+  const isEndValid = () => activeCharacters[PlayerPosition.Own] > -1;
+
   const setActiveCharacter = (index: number) => {
     setGameStates(
       "activeCharacters",
@@ -20,6 +22,8 @@ export const useChoosePhase = () => {
     );
   };
   const endChoosePhase = () => {
+    setGameStates("preview", null);
+    localStorage.setItem("preview", PreviewStatus.Hide);
     showMessage("Roll Phase", () => {
       showMessage("");
       setGameStates("phase", Phase.Roll);
@@ -27,6 +31,7 @@ export const useChoosePhase = () => {
     });
   };
   return {
+    isEndValid,
     setActiveCharacter,
     endChoosePhase,
   };

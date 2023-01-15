@@ -70,22 +70,23 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
 export interface CharacterZoneProps {
   characters: ICharacter[];
   player: PlayerPosition;
+  setSelect?: (v: number) => void;
+  select?: number;
 }
 
 export default function CharacterZone(props: CharacterZoneProps) {
-  const { characters, player } = props;
-  const [active, setActive] = useState(-1);
+  const { characters, player, setSelect, select } = props;
   const { phase } = useGameStore();
   const { setActiveCharacter, endChoosePhase } = useChoosePhase();
   const { state, animationControl } = useTransformControl();
   const toggleControl = (index: number) => {
-    if (player === PlayerPosition.Own && phase === Phase.Choose) {
-      if (index === active) {
+    if (player === PlayerPosition.Own) {
+      setSelect && setSelect(index);
+      if (index === select && phase === Phase.Choose) {
         animationControl(index);
         setActiveCharacter(index);
         endChoosePhase();
       }
-      setActive(index);
     }
   };
 
