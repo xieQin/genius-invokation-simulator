@@ -31,7 +31,7 @@ export default function PreviewZone() {
         <PreviewCharacter preview={preview as ICharacter} />
       ) : isSkillType(preview) ? (
         <div className={styles.PreviewSection}>
-          <div className={styles.PreviewZoneItem}>
+          <div className={`${styles.PreviewZoneItem} ${styles.Expand}`}>
             <PreviewSkill preview={preview as ISkill} />
           </div>
         </div>

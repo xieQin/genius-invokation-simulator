@@ -96,6 +96,9 @@
   top: 0;
   justify-content: left;
 }
+.Expand .PreviewItemSkillDetail {
+  display: block;
+}
 
 .PreviewItemSkillDetail {
   display: none;
