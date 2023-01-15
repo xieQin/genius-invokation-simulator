@@ -5,6 +5,20 @@ All materials used here belong to miHoYo/HoYoverse/COGNOSPHERE and their respect
 
 ![gi-simulator-snapshot.png](https://i.postimg.cc/N0Fnn9Fh/gi-simulator-snapshot.png)
 
+## ENV
+
+local env: add .env file
+
+```
+VITE_PUBLIC_PATH = ""
+```
+
+production env: add .env.production file
+
+```
+VITE_PUBLIC_PATH = {YOUR_PUBLIC_PATH}
+```
+
 ## Usage
 
 ```bash
