@@ -1,5 +1,5 @@
 import { CardMainType, ICard, PlayerPosition } from "@/models";
-import { useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 export const usePlayCard = () => {
   const { addSupport, removeHandCard, activeCards, showMessage } =

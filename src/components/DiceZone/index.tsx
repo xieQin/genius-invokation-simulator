@@ -1,8 +1,7 @@
 import { PUBLIC_PATH } from "@/configs";
-import { useCostDice } from "@/hooks/dice";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
-import { useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 

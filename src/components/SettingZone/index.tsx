@@ -1,14 +1,16 @@
+import { useGameStore } from "@/stores";
+
 import styles from "./index.module.css";
 
-export default function SettingZone(props: { toggle: () => void }) {
-  const { toggle } = props;
+export default function SettingZone() {
+  const { toggleDeckStatus } = useGameStore();
   return (
     <div
       role="button"
       tabIndex={0}
       className={styles.Settings}
-      onKeyDown={() => toggle()}
-      onClick={() => toggle()}
+      onKeyDown={() => toggleDeckStatus()}
+      onClick={() => toggleDeckStatus()}
     ></div>
   );
 }

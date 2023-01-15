@@ -5,11 +5,10 @@ import { useCostDice } from "@/hooks/dice";
 import { usePlayCard } from "@/hooks/playCard";
 import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
-
-import { useGameStore } from "./store";
+import { useGameStore } from "@/stores";
 
 export default function PlayCardPhase() {
-  const { setPhase, activeCards, own, dices } = useGameStore();
+  const { activeCards, own, dices, setGameStates } = useGameStore();
   const { onPlayCard, getMessage } = usePlayCard();
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
 
@@ -21,14 +20,14 @@ export default function PlayCardPhase() {
     if (isCostValid(card.cost)) {
       costDices();
       onPlayCard(card, PlayerPosition.Own);
-      setPhase(Phase.Combat);
+      setGameStates("phase", Phase.Combat);
     } else {
       console.log("error");
     }
   };
 
   const onCancel = () => {
-    setPhase(Phase.Combat);
+    setGameStates("phase", Phase.Combat);
   };
 
   return (

@@ -1,4 +1,4 @@
-import { useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 

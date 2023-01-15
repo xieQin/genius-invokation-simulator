@@ -2,9 +2,9 @@ import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICard, ICharacter, PlayerPosition } from "@/models";
+import { ICard, ICharacter, PlayerPosition, PreviewStatus } from "@/models";
+import { useGameStore } from "@/stores";
 import { isCharacterCard } from "@/utils";
-import { PreviewStatus, useGameStore } from "@/views/Game/store";
 
 import { CharacterItem } from "../CharacterZone";
 import { HandCardCost, HandCardItem } from "../HandCardZone";

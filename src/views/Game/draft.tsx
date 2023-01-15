@@ -4,20 +4,19 @@ import styles from "@/assets/styles/game.module.css";
 import { HandCardItem } from "@/components/HandCardZone";
 import { ICard, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
-
-import { useGameStore } from "./store";
+import { useGameStore } from "@/stores";
 
 export default function DraftCardPhase() {
   const {
     own,
     phase,
-    setPhase,
     // turn,
     showMessage,
-    toggleDeckStatus,
+    setGameStates,
     addHandCard,
     draftHandCard,
     popCardStack,
+    toggleDeckStatus,
   } = useGameStore();
   // const animates = [2 * turn - 2, 2 * turn - 1];
   const handCards = draftHandCard(2, PlayerPosition.Own);
@@ -30,7 +29,7 @@ export default function DraftCardPhase() {
         popCardStack(2, PlayerPosition.Own);
         showMessage("Roll Phase", () => {
           showMessage("");
-          setPhase(Phase.Roll);
+          setGameStates("phase", Phase.Roll);
           toggleDeckStatus();
         });
       }

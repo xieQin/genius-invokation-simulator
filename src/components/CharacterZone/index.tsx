@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICharacter, PlayerPosition } from "@/models";
-import { PreviewStatus, useGameStore } from "@/views/Game/store";
+import { ICharacter, PlayerPosition, PreviewStatus } from "@/models";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
@@ -10,6 +10,7 @@ export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
   character: ICharacter;
+  player: PlayerPosition;
 }
 
 export const useTransformControl = () => {
@@ -25,8 +26,8 @@ export const useTransformControl = () => {
 };
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
-  const { character } = props;
-  const { setPreview } = useGameStore();
+  const { character, player } = props;
+  const { setGameStates } = useGameStore();
   if (!character) {
     return <></>;
   }
@@ -35,17 +36,18 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       aria-hidden="true"
       className={styles.CharacterItem}
       onClick={() => {
+        if (player === PlayerPosition.Opposite) return;
         localStorage.setItem("preview", PreviewStatus.Show);
-        setPreview(character);
+        setGameStates("preview", character);
       }}
     >
       {/* <div className={styles.CharacterSelected}></div> */}
       <div className={styles.CharacterElementStatus}>
         <div className={styles.CharacterElementStatusItem}>
-          <img src="/images/dendro-elementicon.png" alt="" />
+          <img src={`${PUBLIC_PATH}/images/dendro-elementicon.png`} alt="" />
         </div>
         <div className={styles.CharacterElementStatusItem}>
-          <img src="/images/electro-elementicon.png" alt="" />
+          <img src={`${PUBLIC_PATH}/images/electro-elementicon.png`} alt="" />
         </div>
       </div>
       <div className={styles.CharacterHealth}>{character.hp}</div>
@@ -107,7 +109,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
             aria-hidden="true"
             onClick={() => toggleControl(index)}
           >
-            <CharacterItem character={character} />
+            <CharacterItem character={character} player={player} />
           </div>
         ))}
       </div>

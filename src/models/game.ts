@@ -16,3 +16,13 @@ export interface IGame {
   dices: GIDiceID[][];
   message: string;
 }
+
+export enum DeckStatus {
+  Hide = "hide",
+  Show = "show",
+}
+
+export enum PreviewStatus {
+  Hide = "hide",
+  Show = "show",
+}

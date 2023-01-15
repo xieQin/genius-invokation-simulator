@@ -1,16 +1,15 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { ICard, ICost, PlayerPosition } from "@/models";
+import { ICard, ICost, PlayerPosition, PreviewStatus } from "@/models";
 import { Phase } from "@/models/phase";
-import { PreviewStatus, useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
 export interface CardListProps {
   cards: ICard[];
   player: PlayerPosition;
-  toggle?: (v: any) => void;
   style?: CSSProperties;
 }
 
@@ -29,14 +28,15 @@ export const HandCardCost = (props: { cost: ICost[] }) => {
 
 export const HandCardItem = (props: CardItemProps) => {
   const { player, card } = props;
-  const { setPreview } = useGameStore();
+  const { setGameStates } = useGameStore();
   return (
     <div
       className={styles.HandCardLayout}
       aria-hidden="true"
       onClick={() => {
+        if (player === PlayerPosition.Opposite) return;
         localStorage.setItem("preview", PreviewStatus.Show);
-        setPreview(card);
+        setGameStates("preview", card);
       }}
     >
       <div
@@ -62,13 +62,16 @@ export const HandCardItem = (props: CardItemProps) => {
 };
 
 export const HandCardList = (props: CardListProps) => {
-  const { updateActiveCards, phase, setPhase } = useGameStore();
+  const { phase, setGameStates, activeCards } = useGameStore();
   const { player, cards } = props;
   const playCard = (index: number) => {
     if (player === PlayerPosition.Opposite) return;
     if (phase === Phase.Combat) {
-      setPhase(Phase.PlayCard);
-      updateActiveCards(index, PlayerPosition.Own);
+      setGameStates("phase", Phase.PlayCard);
+      setGameStates(
+        "activeCards",
+        Object.assign([], activeCards, [index, activeCards[1]])
+      );
     }
   };
   return (

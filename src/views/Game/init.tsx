@@ -4,17 +4,16 @@ import styles from "@/assets/styles/game.module.css";
 import { DraftHandCardZone, HandCardItem } from "@/components/HandCardZone";
 import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
-
-import { useGameStore } from "./store";
+import { useGameStore } from "@/stores";
 
 export default function InitPhase() {
   const gameStates = useGameStore();
   const {
     phase,
-    setPhase,
-    toggleDeckStatus,
     own,
     opposite,
+    setGameStates,
+    toggleDeckStatus,
     shouldHideDeck,
     draftHandCard,
     popCardStack,
@@ -25,7 +24,7 @@ export default function InitPhase() {
   useEffect(() => {
     timeout.current = window.setTimeout(() => {
       if (phase === Phase.Init) {
-        setPhase(Phase.Start);
+        setGameStates("phase", Phase.Start);
       }
     }, 600);
     return () => {
@@ -33,7 +32,7 @@ export default function InitPhase() {
     };
   });
   const onConfirm = () => {
-    setPhase(Phase.Choose);
+    setGameStates("phase", Phase.Choose);
     popCardStack(5, PlayerPosition.Own);
     toggleDeckStatus();
   };

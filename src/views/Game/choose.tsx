@@ -1,11 +1,11 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
 import { Phase } from "@/models/phase";
-
-import { useGameStore } from "./store";
+import { useGameStore } from "@/stores";
 
 export default function ChoosePhase() {
-  const { phase, setPhase, showMessage, toggleDeckStatus } = useGameStore();
+  const { phase, setGameStates, showMessage, toggleDeckStatus } =
+    useGameStore();
 
   if (phase !== Phase.Choose) {
     return <></>;
@@ -14,7 +14,7 @@ export default function ChoosePhase() {
   const onChooseCharacter = () => {
     showMessage("Roll Phase", () => {
       showMessage("");
-      setPhase(Phase.Roll);
+      setGameStates("phase", Phase.Roll);
       toggleDeckStatus();
     });
   };

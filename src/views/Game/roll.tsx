@@ -2,19 +2,18 @@ import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
+import { useGameStore } from "@/stores";
 import { rollDice } from "@/utils";
 
-import { useGameStore } from "./store";
-
 export default function RollPhase() {
-  const { phase, setPhase, shouldHideDeck, toggleDeckStatus, setDices } =
+  const { phase, setGameStates, shouldHideDeck, toggleDeckStatus } =
     useGameStore();
 
   if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
 
   const onConfirmDice = (dices: GIDiceID[]) => {
-    setPhase(Phase.Combat);
-    setDices(dices);
+    setGameStates("phase", Phase.Combat);
+    setGameStates("dices", dices);
     toggleDeckStatus();
     localStorage.removeItem("cacheDices");
   };

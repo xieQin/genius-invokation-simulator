@@ -2,6 +2,7 @@ import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { ICard, PlayerPosition } from "@/models";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
@@ -33,8 +34,15 @@ export const SupportHealItem = () => {
 };
 
 export const SupportItem = (props: { card: ICard }) => {
+  const { setGameStates } = useGameStore();
   return (
-    <div className={styles.SupportItemLayout}>
+    <div
+      aria-hidden="true"
+      className={styles.SupportItemLayout}
+      onClick={() => {
+        setGameStates("preview", props.card);
+      }}
+    >
       <div className={styles.SupportItem}>
         <img src={`${PUBLIC_PATH}/cards/${props.card.imgID}.png`} alt="" />
       </div>

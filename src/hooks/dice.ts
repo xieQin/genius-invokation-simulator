@@ -2,10 +2,10 @@ import { useState } from "react";
 
 import { ICost } from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
-import { useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 export const useCostDice = () => {
-  const { dices, setDices } = useGameStore();
+  const { dices, setGameStates } = useGameStore();
   const [actives, setActives] = useState<number[]>([]);
   const onSelectDice = (dice: GIDiceID, index: number) => {
     if (!actives.includes(index)) {
@@ -41,7 +41,7 @@ export const useCostDice = () => {
   const costDices = () => {
     let temp = Object.assign([], dices);
     temp = temp.filter((_, i) => !actives.includes(i));
-    setDices(temp);
+    setGameStates("dices", temp);
   };
 
   return {

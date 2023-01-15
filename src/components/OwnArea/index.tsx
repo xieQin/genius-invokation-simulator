@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import areaStyles from "@/assets/styles/area.module.css";
 import { SummonsID } from "@/models/summons";
-import { useGameStore } from "@/views/Game/store";
+import { useGameStore } from "@/stores";
 
 import CardStackZone from "../CardStackZone";
 import CharacterZone, { CharacterZoneProps } from "../CharacterZone";
