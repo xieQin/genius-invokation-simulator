@@ -55,7 +55,7 @@ i18n
     resources,
     fallbackLng: "en",
     lng: navigator.language,
-    debug: true,
+    debug: false,
     interpolation: {
       escapeValue: false,
     },

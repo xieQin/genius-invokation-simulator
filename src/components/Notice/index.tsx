@@ -19,7 +19,7 @@ export default function Notice(props: {
       () => {
         callback && callback();
       },
-      timeout ? timeout : 2000
+      timeout ? timeout : 1200
     );
     return () => {
       clearTimeout(timer.current as number);

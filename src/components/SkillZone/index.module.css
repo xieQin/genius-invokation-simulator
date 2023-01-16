@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.SkillZoneItem.NotValid {
+  opacity: 0.4;
+}
+
 .SkillIcon {
   position: relative;
   width: 125px;
@@ -27,7 +31,6 @@
   width: 65px;
   top: 34px;
   left: 30px;
-  opacity: 0.8;
 }
 
 .SkillPayItems {

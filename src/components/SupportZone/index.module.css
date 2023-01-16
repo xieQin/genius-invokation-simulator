@@ -23,6 +23,7 @@
   overflow: hidden;
   border-radius: 10px;
   border: 3px solid #f5e9e9;
+  cursor: pointer;
 }
 
 .SupportItem > img {
