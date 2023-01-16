@@ -1,8 +1,8 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
+import { usePreview } from "@/hooks";
 import { ICard, PlayerPosition } from "@/models";
-import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
@@ -34,13 +34,13 @@ export const SupportHealItem = () => {
 };
 
 export const SupportItem = (props: { card: ICard }) => {
-  const { setGameStates } = useGameStore();
+  const { onPreview } = usePreview();
   return (
     <div
       aria-hidden="true"
       className={styles.SupportItemLayout}
       onClick={() => {
-        setGameStates("preview", props.card);
+        onPreview(props.card);
       }}
     >
       <div className={styles.SupportItem}>

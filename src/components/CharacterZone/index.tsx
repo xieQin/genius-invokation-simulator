@@ -1,12 +1,12 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
+import { usePreview } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
-import { ICharacter, Phase, PlayerPosition, PreviewStatus } from "@/models";
+import { ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
-import { usePreview } from "@/hooks";
 
 export type stateType = "ready" | "battle";
 
