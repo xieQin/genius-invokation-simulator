@@ -12,6 +12,8 @@ export type stateType = "ready" | "battle";
 
 export interface CharacterItemProps {
   character: ICharacter;
+  i?: number;
+  select?: number;
 }
 
 export const useTransformControl = () => {
@@ -27,7 +29,7 @@ export const useTransformControl = () => {
 };
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
-  const { character } = props;
+  const { character, i, select } = props;
   const { onPreview } = usePreview();
   if (!character) {
     return <></>;
@@ -40,7 +42,6 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         onPreview(character);
       }}
     >
-      {/* <div className={styles.CharacterSelected}></div> */}
       <div className={styles.CharacterElementStatus}>
         <div className={styles.CharacterElementStatusItem}>
           <img src={`${PUBLIC_PATH}/images/dendro-elementicon.png`} alt="" />
@@ -49,6 +50,9 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
           <img src={`${PUBLIC_PATH}/images/electro-elementicon.png`} alt="" />
         </div>
       </div>
+      {i !== undefined && i === select && (
+        <div className={styles.CharacterSelected}></div>
+      )}
       <div className={styles.CharacterHealth}>{character.hp}</div>
       <div className={styles.CharacterEnergy}>
         <div className={styles.CharacterEnergyItem}></div>
@@ -115,7 +119,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
             aria-hidden="true"
             onClick={() => toggleControl(index)}
           >
-            <CharacterItem character={character} />
+            <CharacterItem character={character} i={index} select={select} />
           </div>
         ))}
       </div>

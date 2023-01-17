@@ -1,8 +1,8 @@
 .CharacterZone {
-  position: absolute;
+  position: relative;
   top: 60px;
-  left: 50%;
-  transform: translate(-50%);
+  width: 540px;
+  margin: auto;
 }
 
 .CharacterList {
@@ -29,7 +29,8 @@
   height: 130px;
   top: 50px;
   z-index: 12;
-  animation: CharacterSelect 10s linear infinite;
+  animation: CharacterSelect 15s linear infinite;
+  cursor: pointer;
 }
 @keyframes CharacterSelect {
   0% {
@@ -117,4 +118,12 @@
 }
 .CharacterElementStatusItem {
   width: 38px;
+}
+.Hide {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background: #000;
+  opacity: 0.5;
 }

@@ -28,6 +28,7 @@ export const useChoosePhase = () => {
       showMessage("");
       setGameStates("phase", Phase.Roll);
       toggleDeckStatus();
+      setGameStates("selectedCharacters", [-1, -1]);
     });
   };
   return {

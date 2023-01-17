@@ -163,8 +163,7 @@
   transform: translate(0, -35px);
   transition: 0.5s;
 }
-
-.CardSelected {
+.ExpandHandCardList .HandCardLayout:hover .CardSelected {
   position: absolute;
   background-image: url(/images/select-card-icon.png);
   background-size: cover;
@@ -172,7 +171,7 @@
   height: 130px;
   top: 50px;
   z-index: 12;
-  animation: CardSelect 10s linear infinite;
+  animation: CardSelect 15s linear infinite;
 }
 @keyframes CardSelect {
   0% {
