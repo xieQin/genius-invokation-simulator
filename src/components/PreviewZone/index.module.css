@@ -2,7 +2,6 @@
   position: absolute;
   left: 50px;
   top: 140px;
-  z-index: 12;
 }
 .PreviewZoneLayer {
   position: absolute;
@@ -19,6 +18,7 @@
 .PreviewZone .PreviewCharacter > div {
   width: 205px;
   height: 347px;
+  z-index: 12;
 }
 .PreviewSection {
   position: relative;
@@ -40,6 +40,7 @@
   max-height: 800px;
   margin-left: 5px;
   overflow: auto;
+  z-index: 12;
 }
 .PreviewItemName {
   font-size: 30px;

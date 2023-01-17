@@ -69,7 +69,8 @@ export const usePlayCard = () => {
         if (subType !== character.weaponType) return false;
       }
       if (type === EquipmentMainType.Artifact) {
-        if (character.equipments.artifact !== null) return false;
+        return true;
+        // if (character.equipments.artifact !== null) return false;
       }
       if (type === EquipmentMainType.Talent) {
         return false;

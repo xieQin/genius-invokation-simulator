@@ -113,7 +113,6 @@ export const PreviewEquipment = (props: { equipment: ICard | null }) => {
 export const PreviewCharacter = (props: { preview: ICharacter }) => {
   const { t } = useTranslation();
   const { preview } = props;
-  console.log(!preview.equipments.weapon, !preview.equipments.artifact);
   return (
     <div className={styles.PreviewSection}>
       <div className={styles.PreviewCharacter}>

@@ -3,6 +3,7 @@ import { CSSProperties } from "react";
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview } from "@/hooks";
 import { ICard, PlayerPosition } from "@/models";
+import { SupportType } from "@/models/support";
 
 import styles from "./index.module.css";
 
@@ -18,7 +19,7 @@ export const SupportCountItem = () => {
 export const SupportClockItem = () => {
   return (
     <div className={styles.SupportClockIcon}>
-      <div className={styles.SupportText}>2</div>
+      <div className={styles.SupportText}>0</div>
       <img src={`${PUBLIC_PATH}/images/support-clock-card-icon.png`} alt="" />
     </div>
   );
@@ -35,6 +36,10 @@ export const SupportHealItem = () => {
 
 export const SupportItem = (props: { card: ICard }) => {
   const { onPreview } = usePreview();
+  const { card } = props;
+  const isLocation = card.subType.includes(SupportType.Location);
+  const isItem = card.subType.includes(SupportType.Item);
+  const isCompanion = card.subType.includes(SupportType.Companion);
   return (
     <div
       aria-hidden="true"
@@ -46,7 +51,8 @@ export const SupportItem = (props: { card: ICard }) => {
       <div className={styles.SupportItem}>
         <img src={`${PUBLIC_PATH}/cards/${props.card.imgID}.png`} alt="" />
       </div>
-      <SupportClockItem />
+      {(isCompanion || isItem) && <SupportClockItem />}
+      {isLocation && <SupportCountItem />}
       <SupportHealItem />
     </div>
   );
