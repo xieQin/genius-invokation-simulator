@@ -71,7 +71,19 @@ export const InitPlayer = (name: string, position: PlayerPosition) => {
 
 export const InitCharacters = () => {
   const initCharacters = () =>
-    getRandom<ICharacter>(3, CharacterData as ICharacter[], false);
+    getRandom<ICharacter>(
+      3,
+      CharacterData.map(c =>
+        Object.assign({}, c, {
+          equipments: {
+            weapon: null,
+            artifact: null,
+            talent: null,
+          },
+        })
+      ) as ICharacter[],
+      false
+    );
   const characters = initCharacters();
 
   return {

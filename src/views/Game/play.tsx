@@ -9,7 +9,7 @@ import { useGameStore } from "@/stores";
 
 export default function PlayCardPhase() {
   const { activeCards, getPlayer, dices, setGameStates } = useGameStore();
-  const { onPlayCard, getMessage } = usePlayCard();
+  const { onPlayCard, getMessage, isCardValid } = usePlayCard();
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
 
   const card = getPlayer(PlayerPosition.Own).cards[activeCards[0]];
@@ -17,7 +17,7 @@ export default function PlayCardPhase() {
   const message = getMessage(card);
 
   const onConfirm = () => {
-    if (isCostValid(card.cost)) {
+    if (isCardValid(card, PlayerPosition.Own) && isCostValid(card.cost)) {
       costDices();
       onPlayCard(card, PlayerPosition.Own);
       setGameStates("phase", Phase.Combat);

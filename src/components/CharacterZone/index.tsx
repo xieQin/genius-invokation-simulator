@@ -60,9 +60,15 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         <div className={styles.CharacterEmptyEnergyItem}></div>
       </div>
       <div className={styles.CharacterEquipment}>
-        <div className={styles.CharacterWeapon}></div>
-        <div className={styles.CharacterArtifact}></div>
-        <div className={styles.CharacterTalent}></div>
+        {character.equipments.weapon && (
+          <div className={styles.CharacterWeapon}></div>
+        )}
+        {character.equipments.artifact && (
+          <div className={styles.CharacterArtifact}></div>
+        )}
+        {character.equipments.talent && (
+          <div className={styles.CharacterTalent}></div>
+        )}
       </div>
       <img src={`${PUBLIC_PATH}/characters/${character.imgID}.png`} alt="" />
     </div>

@@ -1,3 +1,4 @@
+import { ICard } from "./card";
 import { GIElement } from "./element";
 import {
   EqiupmentWeaponType,
@@ -13,7 +14,7 @@ export interface ICharacter {
   element: GIElement;
   weaponType: EqiupmentWeaponType;
   region: GIRegionID[];
-  equipments: ICharacterEquipment | null;
+  equipments: ICharacterEquipment;
   skills: ISkill[];
   profile: ICharacterProfile | null;
   elementStatus: GIElement | null;
@@ -35,8 +36,9 @@ export interface ICharacterProfile {
 }
 
 export interface ICharacterEquipment {
-  weapon: IEquipmentWeapon;
-  artifact: IEquipmentArtifact;
+  weapon: ICard | null;
+  artifact: ICard | null;
+  talent: ICard | null;
 }
 
 export enum Character {

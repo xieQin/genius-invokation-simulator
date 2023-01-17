@@ -77,6 +77,39 @@ export const PreviewSkill = (props: { preview: ISkill }) => {
   );
 };
 
+export const PreviewEquipment = (props: { equipment: ICard | null }) => {
+  const { t } = useTranslation();
+  const { equipment } = props;
+  return (
+    equipment && (
+      <div className={styles.PreviewEquipments}>
+        <div className={styles.PreviewEquipment}>
+          <div className={styles.PreviewEquipmentIcon}>
+            <img
+              src={`${PUBLIC_PATH}/images/equip-${equipment.subType[0].toLocaleLowerCase()}-icon.png`}
+              alt=""
+            />
+          </div>
+          <div className={styles.PreviewEquipmentSection}>
+            <div className={styles.PreviewEquipmentName}>
+              {t(equipment.name)}
+            </div>
+          </div>
+        </div>
+        <div className={styles.PreviewEquipmentDetail}>
+          <div
+            className={styles.PreviewEquipmentContent}
+            style={{ whiteSpace: "pre-wrap" }}
+            dangerouslySetInnerHTML={{
+              __html: t(equipment.content).replace(/\\n*/g, "<br/>"),
+            }}
+          ></div>
+        </div>
+      </div>
+    )
+  );
+};
+
 export const PreviewCharacter = (props: { preview: ICharacter }) => {
   const { t } = useTranslation();
   const { preview } = props;
@@ -91,6 +124,16 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
           <PreviewSkill key={skill.name} preview={skill} />
         ))}
       </div>
+      {!preview.equipments.weapon ||
+        (!preview.equipments.artifact && (
+          <div className={styles.PreviewZoneItem}>
+            <div className={styles.PreviewEquipmentTitle}>
+              Character Equipment
+            </div>
+            <PreviewEquipment equipment={preview.equipments.weapon} />
+            <PreviewEquipment equipment={preview.equipments.artifact} />
+          </div>
+        ))}
     </div>
   );
 };
