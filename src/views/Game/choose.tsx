@@ -7,14 +7,13 @@ export default function ChoosePhase() {
   const { phase } = useGameStore();
   const { endChoosePhase, isEndValid } = useChoosePhase();
 
-  if (phase !== Phase.Choose) {
-    return <></>;
+  if (phase === Phase.Choose) {
+    return (
+      <ChooseZone
+        element={<SetActiveCharacterHint />}
+        onClick={isEndValid() ? endChoosePhase : () => ({})}
+      />
+    );
   }
-
-  return (
-    <ChooseZone
-      element={<SetActiveCharacterHint />}
-      onClick={isEndValid() ? endChoosePhase : () => ({})}
-    />
-  );
+  return <></>;
 }

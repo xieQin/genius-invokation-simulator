@@ -1,6 +1,5 @@
-import { useState } from "react";
-
 import areaStyles from "@/assets/styles/area.module.css";
+import { PlayerPosition } from "@/models";
 import { SummonsID } from "@/models/summons";
 import { useGameStore } from "@/stores";
 
@@ -14,9 +13,15 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea() {
-  const { own } = useGameStore();
+  const { own, selectedCharacters, setGameStates } = useGameStore();
   const { position, characters, supports, cards } = own;
-  const [select, setSelect] = useState(-1);
+  const select = selectedCharacters[PlayerPosition.Own];
+  const setSelect = (i: number) => {
+    setGameStates(
+      "selectedCharacters",
+      Object.assign([], selectedCharacters, [i, selectedCharacters[1]])
+    );
+  };
   const characterProps: CharacterZoneProps = {
     characters,
     player: position,

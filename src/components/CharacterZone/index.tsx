@@ -74,9 +74,10 @@ export interface CharacterZoneProps {
 
 export default function CharacterZone(props: CharacterZoneProps) {
   const { characters, player, setSelect, select } = props;
-  const { phase } = useGameStore();
+  const { phase, activeCharacters } = useGameStore();
+  const active = activeCharacters[player];
   const { setActiveCharacter, endChoosePhase } = useChoosePhase();
-  const { state, animationControl } = useTransformControl();
+  const { animationControl } = useTransformControl();
   const toggleControl = (index: number) => {
     if (player === PlayerPosition.Own) {
       setSelect && setSelect(index);
@@ -101,7 +102,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
 
   const style = (index: number) => ({
     ...defaultStyle,
-    ...(transformStyles[state[index] as stateType] ?? {}),
+    ...(transformStyles[index === active ? "battle" : "ready"] ?? {}),
   });
 
   return (

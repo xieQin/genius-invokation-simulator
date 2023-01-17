@@ -49,6 +49,26 @@ export const SkillItem = (props: { skill: ISkill }) => {
   );
 };
 
+export const SkillChangeCharacter = () => {
+  const { setGameStates } = useGameStore();
+  const costs: ICost[] = [
+    {
+      costNum: 1,
+      costType: "Void",
+    },
+  ];
+  return (
+    <ChooseZoneLayer>
+      <ChooseBtn
+        element={<SkillPayItems costs={costs} />}
+        onClick={() => {
+          setGameStates("phase", Phase.ChangeCharacter);
+        }}
+      />
+    </ChooseZoneLayer>
+  );
+};
+
 export default function SkillZone(props: { select: number }) {
   const { select } = props;
   const { phase, activeCharacters, own } = useGameStore();
@@ -56,20 +76,7 @@ export default function SkillZone(props: { select: number }) {
   const skills = active >= 0 ? own.characters[active].skills : [];
   if (phase === Phase.Choose) return <></>;
   if (select !== active) {
-    const costs: ICost[] = [
-      {
-        costNum: 1,
-        costType: "Void",
-      },
-    ];
-    return (
-      <ChooseZoneLayer>
-        <ChooseBtn
-          element={<SkillPayItems costs={costs} />}
-          onClick={() => ({})}
-        />
-      </ChooseZoneLayer>
-    );
+    return <SkillChangeCharacter />;
   }
 
   return (

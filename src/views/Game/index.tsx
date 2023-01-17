@@ -6,6 +6,7 @@ import { usePreview } from "@/hooks";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
+import ChangeCharacterPhase from "./change";
 import ChoosePhase from "./choose";
 import DraftCardPhase from "./draft";
 import InitPhase from "./init";
@@ -29,6 +30,7 @@ export default function Game() {
       <RollPhase />
       {phase === Phase.PlayCard && <PlayCardPhase />}
       {phase === Phase.DraftCard && <DraftCardPhase />}
+      {phase === Phase.ChangeCharacter && <ChangeCharacterPhase />}
       <Deck />
       {message && <Notice message={message} callback={msgCallback} />}
       <SettingZone />

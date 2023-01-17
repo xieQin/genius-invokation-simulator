@@ -1,13 +1,4 @@
-import {
-  DeckStatus,
-  GIDiceID,
-  ICard,
-  ICharacter,
-  IPlayer,
-  ISkill,
-  Phase,
-  PlayerPosition,
-} from "@/models";
+import { DeckStatus, GIDiceID, IPlayer, Phase, PlayerPosition } from "@/models";
 import { InitPlayer } from "@/utils";
 
 export interface GameState {
@@ -20,6 +11,7 @@ export interface GameState {
   message: string;
   activeCards: number[];
   activeCharacters: number[];
+  selectedCharacters: number[];
   preview: unknown;
   msgCallback: (() => void) | undefined;
 }
@@ -35,5 +27,6 @@ export const initialState: GameState = {
   msgCallback: undefined,
   activeCards: [-1, -1],
   activeCharacters: [-1, -1],
+  selectedCharacters: [-1, -1],
   preview: null,
 };
