@@ -13,6 +13,7 @@
 .PreviewZone .PreviewCard > div > div {
   width: 205px;
   height: 345px;
+  z-index: 12;
 }
 
 .PreviewZone .PreviewCharacter > div {

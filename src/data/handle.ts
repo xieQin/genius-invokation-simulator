@@ -82,7 +82,11 @@ export const transCharacters = () => {
           img: `${PUBLIC_PATH}/skill/${ImageIDTrans(skill.name)}.png`,
           imgID: ImageIDTrans(skill.name),
         })),
-        equipments: null,
+        equipments: {
+          weapon: null,
+          artifact: null,
+          talent: null,
+        },
         profile: null,
         elementStatus: null,
         hp: Number(role.hp),
