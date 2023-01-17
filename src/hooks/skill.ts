@@ -1,8 +1,9 @@
 import { GIDice, ISkill, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
-export const useSkill = () => {
-  const { showMessage, dices } = useGameStore();
+export const useSkill = (pos: PlayerPosition) => {
+  const { showMessage, dices: playerDices } = useGameStore();
+  const dices = playerDices[pos];
 
   const onCastSkill = (skill: ISkill, pos: PlayerPosition) => {
     showMessage("");
@@ -13,7 +14,7 @@ export const useSkill = () => {
   };
 
   // todo fix bugs
-  const isSkillValid = (skill: ISkill, pos?: PlayerPosition) => {
+  const isSkillValid = (skill: ISkill) => {
     const diceMap = new Map();
     dices.map(d => {
       diceMap.set(d, diceMap.has(d) ? diceMap.get(d) + 1 : 1);

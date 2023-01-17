@@ -31,9 +31,13 @@ export const usePlayCard = () => {
     }
     if (card.mainType === CardMainType.Equipment) {
       const type = card.subType[0];
+      const player = Object.assign({}, players[pos]);
       if (type === EquipmentMainType.Weapon) {
-        const player = Object.assign({}, players[pos]);
         player.characters[selectedCharacters[pos]].equipments.weapon = card;
+        updataPlayer(player, pos);
+      }
+      if (type === EquipmentMainType.Artifact) {
+        player.characters[selectedCharacters[pos]].equipments.artifact = card;
         updataPlayer(player, pos);
       }
     }
@@ -65,7 +69,7 @@ export const usePlayCard = () => {
         if (subType !== character.weaponType) return false;
       }
       if (type === EquipmentMainType.Artifact) {
-        return false;
+        if (character.equipments.artifact !== null) return false;
       }
       if (type === EquipmentMainType.Talent) {
         return false;
