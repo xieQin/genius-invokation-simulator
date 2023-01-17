@@ -10,14 +10,15 @@ export default function InitPhase() {
   const gameStates = useGameStore();
   const {
     phase,
-    own,
-    opposite,
+    players,
     setGameStates,
     toggleDeckStatus,
     shouldHideDeck,
     draftHandCard,
     popCardStack,
   } = gameStates;
+  const own = players[PlayerPosition.Own];
+  const opposite = players[PlayerPosition.Opposite];
   const handCards = draftHandCard(5, PlayerPosition.Own);
   const timeout: { current: number | null } = useRef(null);
   const pos = PlayerPosition.Opposite;

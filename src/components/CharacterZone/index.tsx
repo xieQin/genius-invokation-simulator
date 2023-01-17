@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
-import { ICharacter, Phase, PlayerPosition } from "@/models";
+import { CardMainType, ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
@@ -78,7 +78,7 @@ export interface CharacterZoneProps {
 
 export default function CharacterZone(props: CharacterZoneProps) {
   const { characters, player, setSelect, select } = props;
-  const { phase, activeCharacters } = useGameStore();
+  const { phase, activeCharacters, activeCards, getPlayer } = useGameStore();
   const active = activeCharacters[player];
   const { setActiveCharacter, endChoosePhase } = useChoosePhase();
   const { animationControl } = useTransformControl();
@@ -108,14 +108,21 @@ export default function CharacterZone(props: CharacterZoneProps) {
     ...defaultStyle,
     ...(transformStyles[index === active ? "battle" : "ready"] ?? {}),
   });
-
+  const isCharacterHighlight =
+    player === PlayerPosition.Own &&
+    phase === Phase.PlayCard &&
+    getPlayer(PlayerPosition.Own).cards[activeCards[player]]?.mainType ===
+      CardMainType.Equipment;
   return (
     <div className={styles.CharacterZone}>
       <div className={styles.CharacterList}>
         {characters.map((character, index) => (
           <div
             key={index}
-            style={style(index)}
+            style={{
+              zIndex: isCharacterHighlight ? 22 : 9,
+              ...style(index),
+            }}
             aria-hidden="true"
             onClick={() => toggleControl(index)}
           >

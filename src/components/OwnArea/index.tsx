@@ -13,7 +13,8 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea() {
-  const { own, selectedCharacters, setGameStates } = useGameStore();
+  const { getPlayer, selectedCharacters, setGameStates } = useGameStore();
+  const own = getPlayer(PlayerPosition.Own);
   const { position, characters, supports, cards } = own;
   const select = selectedCharacters[PlayerPosition.Own];
   const setSelect = (i: number) => {

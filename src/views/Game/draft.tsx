@@ -8,7 +8,6 @@ import { useGameStore } from "@/stores";
 
 export default function DraftCardPhase() {
   const {
-    own,
     phase,
     // turn,
     showMessage,
@@ -55,7 +54,10 @@ export default function DraftCardPhase() {
                   styles[`DraftAnimate${index + 1}`]
                 }`}
               >
-                <HandCardItem card={card as ICard} player={own.position} />
+                <HandCardItem
+                  card={card as ICard}
+                  player={PlayerPosition.Own}
+                />
               </div>
             ))}
         </div>

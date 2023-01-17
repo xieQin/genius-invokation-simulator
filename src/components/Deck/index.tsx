@@ -18,10 +18,13 @@ export default function Deck() {
   };
   return (
     <div className={styles.Deck}>
-      <div style={{ opacity: shouldHideDeck() ? 0 : 1 }}>
+      <div
+        className={styles.Deck}
+        style={{ opacity: shouldHideDeck() ? 0 : 1 }}
+      >
         <DiceZone />
-        <OwnArea />
         <OppositeArea />
+        <OwnArea />
         <ClockZone onNextRound={onNextRound} />
       </div>
     </div>

@@ -16,6 +16,5 @@ export interface GameAction {
   popCardStack: (num: number, pos: PlayerPosition) => void;
   draftHandCard: (num: number, pos: PlayerPosition) => ICard[];
   addSupport: (cards: ICard, pos: PlayerPosition) => void;
-  updateOwnAndOpposite: (own: IPlayer, opposite: IPlayer) => void;
   showMessage: (message: string, callback?: () => void) => void;
 }

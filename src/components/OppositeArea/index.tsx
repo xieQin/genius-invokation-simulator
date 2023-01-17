@@ -1,4 +1,5 @@
 import areaStyles from "@/assets/styles/area.module.css";
+import { PlayerPosition } from "@/models";
 import { SummonsID } from "@/models/summons";
 import { useGameStore } from "@/stores";
 
@@ -11,7 +12,8 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OppositeArea() {
-  const { opposite } = useGameStore();
+  const { getPlayer } = useGameStore();
+  const opposite = getPlayer(PlayerPosition.Opposite);
   const { position, characters, cards, supports } = opposite;
   const characterProps: CharacterZoneProps = {
     characters,

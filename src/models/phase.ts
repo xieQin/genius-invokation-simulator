@@ -7,4 +7,5 @@ export enum Phase {
   PlayCard = "play-card",
   DraftCard = "draft-card",
   ChangeCharacter = "change-characater",
+  Equipment = "equipment",
 }

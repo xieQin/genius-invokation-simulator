@@ -1,9 +1,14 @@
-import { CardMainType, ICard, PlayerPosition } from "@/models";
+import { CardMainType, ICard, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const usePlayCard = () => {
-  const { addSupport, removeHandCard, activeCards, showMessage } =
-    useGameStore();
+  const {
+    addSupport,
+    removeHandCard,
+    activeCards,
+    showMessage,
+    setGameStates,
+  } = useGameStore();
   // const player: IPlayer = pos === PlayerPosition.Own ? own : opposite;
 
   const onPlayCard = (card: ICard, pos: PlayerPosition) => {
@@ -13,8 +18,12 @@ export const usePlayCard = () => {
     if (card.mainType === CardMainType.Event) {
       console.log(card, "Event Card");
     }
-    showMessage("");
-    removeHandCard(activeCards[0] as number, pos);
+    if (card.mainType === CardMainType.Equipment) {
+      setGameStates("phase", Phase.Equipment);
+      console.log(card);
+    }
+    // showMessage("");
+    // removeHandCard(activeCards[0] as number, pos);
   };
 
   const getMessage = (card: ICard) => {

@@ -6,8 +6,7 @@ export interface GameState {
   turn: number;
   deckStatus: DeckStatus;
   dices: GIDiceID[];
-  own: IPlayer;
-  opposite: IPlayer;
+  players: IPlayer[];
   message: string;
   activeCards: number[];
   activeCharacters: number[];
@@ -21,8 +20,10 @@ export const initialState: GameState = {
   turn: 1,
   deckStatus: DeckStatus.Hide,
   dices: [] as GIDiceID[],
-  own: InitPlayer("Lumine", PlayerPosition.Own),
-  opposite: InitPlayer("Ellin", PlayerPosition.Opposite),
+  players: [
+    InitPlayer("Lumine", PlayerPosition.Own),
+    InitPlayer("Ellin", PlayerPosition.Opposite),
+  ],
   message: "",
   msgCallback: undefined,
   activeCards: [-1, -1],

@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-import { DeckStatus, PlayerPosition } from "@/models";
+import { DeckStatus, IPlayer } from "@/models";
 
 import { GameAction } from "./action";
 import { GameState, initialState } from "./initialState";
@@ -23,21 +23,14 @@ export const useGameStore = create<GameStore>((set, get) => ({
           ? DeckStatus.Show
           : DeckStatus.Hide,
     })),
-  getPlayer: pos => {
-    return pos === PlayerPosition.Own ? get().own : get().opposite;
-  },
+  getPlayer: pos => get().players[pos],
   updataPlayer: (player, pos) => {
-    if (pos === PlayerPosition.Own) {
-      return set(state => ({
-        ...state,
-        own: player,
-      }));
-    } else {
-      return set(state => ({
-        ...state,
-        opposite: player,
-      }));
-    }
+    const players = Object.assign([], get().players) as IPlayer[];
+    players[pos] = player;
+    set(state => ({
+      ...state,
+      players: players,
+    }));
   },
   addHandCard: (cards, pos) => {
     let player = get().getPlayer(pos);
@@ -81,12 +74,6 @@ export const useGameStore = create<GameStore>((set, get) => ({
     };
     get().updataPlayer(player, pos);
   },
-  updateOwnAndOpposite: (own, opposite) =>
-    set(state => ({
-      ...state,
-      own,
-      opposite,
-    })),
 
   showMessage: (message: string, callback) =>
     set(state => ({
