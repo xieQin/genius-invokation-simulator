@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePreview } from "@/hooks";
+import { usePlayCard, usePreview } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
 import { CardMainType, ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
@@ -84,9 +84,10 @@ export interface CharacterZoneProps {
 
 export default function CharacterZone(props: CharacterZoneProps) {
   const { characters, player, setSelect, select } = props;
-  const { phase, activeCharacters, activeCards, getPlayer } = useGameStore();
+  const { phase, activeCharacters } = useGameStore();
   const active = activeCharacters[player];
   const { setActiveCharacter, endChoosePhase } = useChoosePhase();
+  const { shouldCharacterHighlight } = usePlayCard();
   const { animationControl } = useTransformControl();
   const toggleControl = (index: number) => {
     if (player === PlayerPosition.Own) {
@@ -114,11 +115,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
     ...defaultStyle,
     ...(transformStyles[index === active ? "battle" : "ready"] ?? {}),
   });
-  const isCharacterHighlight =
-    player === PlayerPosition.Own &&
-    phase === Phase.PlayCard &&
-    getPlayer(PlayerPosition.Own).cards[activeCards[player]]?.mainType ===
-      CardMainType.Equipment;
+  const isCharacterHighlight = shouldCharacterHighlight(player);
   return (
     <div className={styles.CharacterZone}>
       <div className={styles.CharacterList}>

@@ -2,12 +2,14 @@ import {
   CardMainType,
   EquipmentMainType,
   ICard,
+  Phase,
   PlayerPosition,
 } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const usePlayCard = () => {
   const {
+    phase,
     addSupport,
     removeHandCard,
     activeCards,
@@ -34,7 +36,6 @@ export const usePlayCard = () => {
         player.characters[selectedCharacters[pos]].equipments.weapon = card;
         updataPlayer(player, pos);
       }
-      console.log(card);
     }
     showMessage("");
     removeHandCard(activeCards[0] as number, pos);
@@ -56,7 +57,6 @@ export const usePlayCard = () => {
 
   const isCardValid = (card: ICard, pos: PlayerPosition) => {
     const character = players[pos].characters[selectedCharacters[pos]];
-    console.log(character, card);
     if (card.mainType === CardMainType.Equipment) {
       const type = card.subType[0];
       if (type === EquipmentMainType.Weapon) {
@@ -74,9 +74,16 @@ export const usePlayCard = () => {
     return true;
   };
 
+  const shouldCharacterHighlight = (pos: PlayerPosition) =>
+    pos === PlayerPosition.Own &&
+    phase === Phase.PlayCard &&
+    players[PlayerPosition.Own].cards[activeCards[pos]]?.mainType ===
+      CardMainType.Equipment;
+
   return {
     getMessage,
     onPlayCard,
     isCardValid,
+    shouldCharacterHighlight,
   };
 };

@@ -35,9 +35,17 @@ export default function OwnArea() {
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
       <PlayerZone player={own} />
       <SkillZone select={select} />
-      <SupportZone supports={supports} player={position} />
+      <SupportZone
+        supports={supports}
+        player={position}
+        style={{ top: "580px" }}
+      />
       <CharacterZone {...characterProps} />
-      <SummonsZone summons={summons} player={position} />
+      <SummonsZone
+        summons={summons}
+        player={position}
+        style={{ top: "580px" }}
+      />
       <HandCardZone player={position} cards={cards} />
       <CardStackZone />
     </div>
