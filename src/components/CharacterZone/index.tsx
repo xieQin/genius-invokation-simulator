@@ -86,7 +86,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
   const { characters, player, setSelect, select } = props;
   const { phase, activeCharacters } = useGameStore();
   const active = activeCharacters[player];
-  const { setActiveCharacter, endChoosePhase } = useChoosePhase();
+  const { setActiveCharacter, onChoosePhaseEnd } = useChoosePhase();
   const { shouldCharacterHighlight } = usePlayCard();
   const { animationControl } = useTransformControl();
   const toggleControl = (index: number) => {
@@ -95,7 +95,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
       if (index === select && phase === Phase.Choose) {
         animationControl(index);
         setActiveCharacter(index);
-        endChoosePhase();
+        onChoosePhaseEnd();
       }
     }
   };

@@ -30,7 +30,12 @@ export const useChoosePhase = () => {
       ])
     );
   };
-  const endChoosePhase = () => {
+  const onChoosePhaseStart = () => {
+    showMessage("Choose your first character", () => {
+      showMessage("");
+    });
+  };
+  const onChoosePhaseEnd = () => {
     setGameStates("preview", null);
     localStorage.setItem("preview", PreviewStatus.Hide);
     showMessage("Roll Phase", () => {
@@ -43,7 +48,8 @@ export const useChoosePhase = () => {
   return {
     isEndValid,
     setActiveCharacter,
-    endChoosePhase,
+    onChoosePhaseStart,
+    onChoosePhaseEnd,
   };
 };
 

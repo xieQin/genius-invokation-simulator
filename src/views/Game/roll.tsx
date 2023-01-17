@@ -24,7 +24,9 @@ export default function RollPhase() {
     updataDices(rollDice(), PlayerPosition.Opposite);
     toggleDeckStatus();
     localStorage.removeItem("cacheDices");
-    showMessage("Action Phase");
+    showMessage("Action Phase", () => {
+      showMessage("");
+    });
   };
   const l = localStorage.getItem("cacheDices");
   let cacheDices = l === null ? [] : l.split(",");
