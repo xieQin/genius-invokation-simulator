@@ -10,17 +10,23 @@ export const useStartPhase = () => {
 };
 
 export const useChoosePhase = () => {
-  const { showMessage, setGameStates, toggleDeckStatus, activeCharacters } =
-    useGameStore();
+  const {
+    showMessage,
+    setGameStates,
+    toggleDeckStatus,
+    activeCharacters,
+    phase,
+  } = useGameStore();
 
   const isEndValid = () => activeCharacters[PlayerPosition.Own] > -1;
 
   const setActiveCharacter = (index: number) => {
+    const isChoosePhase = phase === Phase.Choose;
     setGameStates(
       "activeCharacters",
       Object.assign([], activeCharacters, [
         index,
-        Math.ceil(Math.random() * 3) - 1,
+        isChoosePhase ? Math.ceil(Math.random() * 3) - 1 : activeCharacters[1],
       ])
     );
   };

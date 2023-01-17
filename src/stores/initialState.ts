@@ -7,6 +7,7 @@ export interface GameState {
   deckStatus: DeckStatus;
   dices: GIDiceID[][];
   players: IPlayer[];
+  current: PlayerPosition;
   message: string;
   activeCards: number[];
   activeCharacters: number[];
@@ -24,6 +25,7 @@ export const initialState: GameState = {
     InitPlayer("Lumine", PlayerPosition.Own),
     InitPlayer("Ellin", PlayerPosition.Opposite),
   ],
+  current: PlayerPosition.Own,
   message: "",
   msgCallback: undefined,
   activeCards: [-1, -1],
