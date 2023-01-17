@@ -8,9 +8,16 @@ import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 export default function PlayCardPhase() {
-  const { activeCards, getPlayer, dices, setGameStates } = useGameStore();
+  const {
+    activeCards,
+    getPlayer,
+    dices: playDices,
+    setGameStates,
+  } = useGameStore();
+  const pos = PlayerPosition.Own;
+  const dices = playDices[pos];
   const { onPlayCard, getMessage, isCardValid } = usePlayCard();
-  const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
+  const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
 
   const card = getPlayer(PlayerPosition.Own).cards[activeCards[0]];
 

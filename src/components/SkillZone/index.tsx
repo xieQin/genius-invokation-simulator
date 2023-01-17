@@ -27,7 +27,7 @@ export const SkillPayItems = (props: { costs: ICost[] }) => {
 export const SkillItem = (props: { skill: ISkill }) => {
   const { skill } = props;
   const { onPreview } = usePreview();
-  const { isSkillValid } = useSkill();
+  const { isSkillValid } = useSkill(PlayerPosition.Own);
   if (skill.type.includes(SkillPassiveType.Passive)) {
     return <></>;
   }
@@ -76,7 +76,7 @@ export default function SkillZone(props: { select: number }) {
   const active = activeCharacters[PlayerPosition.Own];
   const skills = active >= 0 ? own.characters[active].skills : [];
   if (phase === Phase.Choose) return <></>;
-  if (select !== active) {
+  if (select !== -1 && select !== active) {
     return <SkillChangeCharacter />;
   }
 

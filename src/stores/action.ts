@@ -1,4 +1,4 @@
-import { ICard, IPlayer, PlayerPosition } from "@/models";
+import { GIDiceID, ICard, IPlayer, PlayerPosition } from "@/models";
 
 import { GameState } from "./initialState";
 
@@ -10,6 +10,7 @@ export interface GameAction {
   toggleDeckStatus: () => void;
   shouldHideDeck: () => boolean;
   getPlayer: (pos: PlayerPosition) => IPlayer;
+  updataDices: (dice: GIDiceID[], pos: PlayerPosition) => void;
   updataPlayer: (player: IPlayer, pos: PlayerPosition) => void;
   addHandCard: (cards: ICard[], pos: PlayerPosition) => void;
   removeHandCard: (idx: number, pos: PlayerPosition) => void;

@@ -1,4 +1,5 @@
 import { PUBLIC_PATH } from "@/configs";
+import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
@@ -30,15 +31,15 @@ export const DiceItem = (props: DiceItemProps) => {
 
 export default function DiceZone() {
   const { dices, phase } = useGameStore();
-
+  const ownDices = dices[PlayerPosition.Own];
   const shouldHide =
-    dices.length === 0 || phase === Phase.Roll || phase === Phase.PlayCard;
+    ownDices.length === 0 || phase === Phase.Roll || phase === Phase.PlayCard;
 
   return (
     <div className={styles.Dice} style={{ opacity: shouldHide ? 0 : 1 }}>
-      <div className={styles.DiceNum}>{dices.length}</div>
+      <div className={styles.DiceNum}>{ownDices.length}</div>
       <div className={styles.DiceList}>
-        {dices.map((dice, index) => (
+        {ownDices.map((dice, index) => (
           <DiceItem key={index} dice={dice} />
         ))}
       </div>

@@ -1,19 +1,25 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
+import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 import { rollDice } from "@/utils";
 
 export default function RollPhase() {
-  const { phase, setGameStates, shouldHideDeck, toggleDeckStatus } =
-    useGameStore();
+  const {
+    phase,
+    setGameStates,
+    shouldHideDeck,
+    toggleDeckStatus,
+    updataDices,
+  } = useGameStore();
 
   if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
 
-  const onConfirmDice = (dices: GIDiceID[]) => {
+  const onConfirmDice = (dices: GIDiceID[], pos: PlayerPosition) => {
     setGameStates("phase", Phase.Combat);
-    setGameStates("dices", dices);
+    updataDices(dices, pos);
     toggleDeckStatus();
     localStorage.removeItem("cacheDices");
   };
@@ -51,7 +57,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice(cacheDices as GIDiceID[]);
+          onConfirmDice(cacheDices as GIDiceID[], PlayerPosition.Own);
         }}
       >
         <div className={styles.ConfirmIcon}></div>

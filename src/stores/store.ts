@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-import { DeckStatus, IPlayer } from "@/models";
+import { DeckStatus, GIDiceID, IPlayer } from "@/models";
 
 import { GameAction } from "./action";
 import { GameState, initialState } from "./initialState";
@@ -14,6 +14,14 @@ export const useGameStore = create<GameStore>((set, get) => ({
       ...state,
       [key]: update,
     })),
+  updataDices: (dice, pos) => {
+    const dices = Object.assign([], get().dices) as GIDiceID[][];
+    dices[pos] = dice;
+    set(state => ({
+      ...state,
+      dices,
+    }));
+  },
   shouldHideDeck: () => get().deckStatus === DeckStatus.Hide,
   toggleDeckStatus: () =>
     set(state => ({
@@ -29,7 +37,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     players[pos] = player;
     set(state => ({
       ...state,
-      players: players,
+      players,
     }));
   },
   addHandCard: (cards, pos) => {

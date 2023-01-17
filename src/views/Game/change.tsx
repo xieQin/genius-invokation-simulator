@@ -7,9 +7,15 @@ import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 export default function ChangeCharacterPhase() {
-  const { dices, setGameStates, selectedCharacters } = useGameStore();
-  const { onSelectDice, actives, isCostValid, costDices } = useCostDice();
+  const {
+    dices: playerDices,
+    setGameStates,
+    selectedCharacters,
+  } = useGameStore();
+  const pos = PlayerPosition.Own;
+  const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
   const { setActiveCharacter } = useChoosePhase();
+  const dices = playerDices[pos];
 
   const costs: ICost[] = [
     {
@@ -22,7 +28,7 @@ export default function ChangeCharacterPhase() {
     if (isCostValid(costs)) {
       costDices();
       setGameStates("phase", Phase.Combat);
-      setActiveCharacter(selectedCharacters[PlayerPosition.Own]);
+      setActiveCharacter(selectedCharacters[pos]);
     } else {
       console.log("error");
     }
