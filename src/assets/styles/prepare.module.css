@@ -1,0 +1,47 @@
+.PrepareArea {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url(/back/mondstadt-bg.png);
+  background-size: cover;
+}
+.PrepareAreaVS {
+  position: absolute;
+  top: 470px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  color: #fff;
+  font-size: 120px;
+  text-align: center;
+}
+.PrepareAreaPlayer {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.PrepareAreaPlayerName {
+  position: absolute;
+  top: 260px;
+  left: 250px;
+}
+.PrepareAreaPlayerSection {
+  position: relative;
+  top: 420px;
+  display: flex;
+  justify-content: center;
+  height: 240px;
+}
+.PrepareAreaHint {
+  position: absolute;
+  width: 400px;
+  font-size: 26px;
+  bottom: 180px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}

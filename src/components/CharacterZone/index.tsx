@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { PUBLIC_PATH } from "@/configs";
 import { usePlayCard, usePreview } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
-import { CardMainType, ICharacter, Phase, PlayerPosition } from "@/models";
+import { ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
@@ -30,6 +30,7 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character, i, select } = props;
+  const { phase } = useGameStore();
   const { onPreview } = usePreview();
   if (!character) {
     return <></>;
@@ -42,34 +43,44 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         onPreview(character);
       }}
     >
-      <div className={styles.CharacterElementStatus}>
-        <div className={styles.CharacterElementStatusItem}>
-          <img src={`${PUBLIC_PATH}/images/dendro-elementicon.png`} alt="" />
-        </div>
-        <div className={styles.CharacterElementStatusItem}>
-          <img src={`${PUBLIC_PATH}/images/electro-elementicon.png`} alt="" />
-        </div>
-      </div>
-      {i !== undefined && i === select && (
-        <div className={styles.CharacterSelected}></div>
+      {phase !== Phase.Init && (
+        <>
+          <div className={styles.CharacterElementStatus}>
+            <div className={styles.CharacterElementStatusItem}>
+              <img
+                src={`${PUBLIC_PATH}/images/dendro-elementicon.png`}
+                alt=""
+              />
+            </div>
+            <div className={styles.CharacterElementStatusItem}>
+              <img
+                src={`${PUBLIC_PATH}/images/electro-elementicon.png`}
+                alt=""
+              />
+            </div>
+          </div>
+          {i !== undefined && i === select && (
+            <div className={styles.CharacterSelected}></div>
+          )}
+          <div className={styles.CharacterHealth}>{character.hp}</div>
+          <div className={styles.CharacterEnergy}>
+            <div className={styles.CharacterEnergyItem}></div>
+            <div className={styles.CharacterEnergyItem}></div>
+            <div className={styles.CharacterEmptyEnergyItem}></div>
+          </div>
+          <div className={styles.CharacterEquipment}>
+            {character.equipments.weapon && (
+              <div className={styles.CharacterWeapon}></div>
+            )}
+            {character.equipments.artifact && (
+              <div className={styles.CharacterArtifact}></div>
+            )}
+            {character.equipments.talent && (
+              <div className={styles.CharacterTalent}></div>
+            )}
+          </div>
+        </>
       )}
-      <div className={styles.CharacterHealth}>{character.hp}</div>
-      <div className={styles.CharacterEnergy}>
-        <div className={styles.CharacterEnergyItem}></div>
-        <div className={styles.CharacterEnergyItem}></div>
-        <div className={styles.CharacterEmptyEnergyItem}></div>
-      </div>
-      <div className={styles.CharacterEquipment}>
-        {character.equipments.weapon && (
-          <div className={styles.CharacterWeapon}></div>
-        )}
-        {character.equipments.artifact && (
-          <div className={styles.CharacterArtifact}></div>
-        )}
-        {character.equipments.talent && (
-          <div className={styles.CharacterTalent}></div>
-        )}
-      </div>
       <img src={`${PUBLIC_PATH}/characters/${character.imgID}.png`} alt="" />
     </div>
   );

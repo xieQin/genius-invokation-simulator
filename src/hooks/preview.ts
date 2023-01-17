@@ -1,9 +1,10 @@
-import { PreviewStatus } from "@/models";
+import { Phase, PreviewStatus } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const usePreview = () => {
-  const { setGameStates } = useGameStore();
+  const { phase, setGameStates } = useGameStore();
   const onPreview = (preview: unknown) => {
+    if (phase === Phase.Init) return;
     localStorage.setItem("preview", PreviewStatus.Show);
     setGameStates("preview", preview);
   };
