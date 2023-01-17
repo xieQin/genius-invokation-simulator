@@ -1,19 +1,19 @@
 import ChooseZone, { SetActiveCharacterHint } from "@/components/ChooseZone";
+import Notice from "@/components/Notice";
 import { useChoosePhase } from "@/hooks/phase";
-import { Phase } from "@/models/phase";
-import { useGameStore } from "@/stores";
 
 export default function ChoosePhase() {
-  const { phase } = useGameStore();
   const { endChoosePhase, isEndValid } = useChoosePhase();
 
-  if (phase === Phase.Choose) {
-    return (
+  const message = "Choose your first character";
+
+  return (
+    <>
+      <Notice message={message} timeout={800} />
       <ChooseZone
         element={<SetActiveCharacterHint />}
         onClick={isEndValid() ? endChoosePhase : () => ({})}
       />
-    );
-  }
-  return <></>;
+    </>
+  );
 }

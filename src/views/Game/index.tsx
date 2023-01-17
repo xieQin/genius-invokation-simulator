@@ -30,7 +30,7 @@ export default function Game() {
     >
       <PreviewZone />
       <InitPhase />
-      <ChoosePhase />
+      {phase === Phase.Choose && <ChoosePhase />}
       <RollPhase />
       {phase === Phase.PlayCard && <PlayCardPhase />}
       {phase === Phase.DraftCard && <DraftCardPhase />}

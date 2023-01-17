@@ -18,7 +18,10 @@ export const useChoosePhase = () => {
   const setActiveCharacter = (index: number) => {
     setGameStates(
       "activeCharacters",
-      Object.assign([], activeCharacters, [index, activeCharacters[1]])
+      Object.assign([], activeCharacters, [
+        index,
+        Math.ceil(Math.random() * 3) - 1,
+      ])
     );
   };
   const endChoosePhase = () => {

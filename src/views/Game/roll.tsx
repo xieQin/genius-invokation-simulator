@@ -13,15 +13,18 @@ export default function RollPhase() {
     shouldHideDeck,
     toggleDeckStatus,
     updataDices,
+    showMessage,
   } = useGameStore();
 
   if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
 
-  const onConfirmDice = (dices: GIDiceID[], pos: PlayerPosition) => {
+  const onConfirmDice = (dices: GIDiceID[]) => {
     setGameStates("phase", Phase.Combat);
-    updataDices(dices, pos);
+    updataDices(dices, PlayerPosition.Own);
+    updataDices(rollDice(), PlayerPosition.Opposite);
     toggleDeckStatus();
     localStorage.removeItem("cacheDices");
+    showMessage("Action Phase");
   };
   const l = localStorage.getItem("cacheDices");
   let cacheDices = l === null ? [] : l.split(",");
@@ -57,7 +60,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice(cacheDices as GIDiceID[], PlayerPosition.Own);
+          onConfirmDice(cacheDices as GIDiceID[]);
         }}
       >
         <div className={styles.ConfirmIcon}></div>
