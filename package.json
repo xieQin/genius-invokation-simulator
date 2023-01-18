@@ -90,7 +90,7 @@
     "ts-jest": "^28.0.5",
     "typescript": "^4.7.4",
     "vite": "^2.9.12",
-    "vite-plugin-pwa": "^0.14.1",
+    "vite-plugin-pwa": "^0.12.8",
     "workbox-window": "^6.5.4"
   }
 }
