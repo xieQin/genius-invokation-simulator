@@ -28,11 +28,11 @@ yarn
 ```
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ```bash
-npm run build
+yarn build
 ```
 
 ## Roadmap

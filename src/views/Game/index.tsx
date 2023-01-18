@@ -1,10 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 
+import styles from "@/assets/styles/area.module.css";
 import Deck from "@/components/Deck";
 import Notice from "@/components/Notice";
 import PreviewZone from "@/components/PreviewZone";
 import SettingZone from "@/components/SettingZone";
-import { usePreview } from "@/hooks";
+import { useAutoScale, usePreview } from "@/hooks";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
@@ -16,7 +17,35 @@ import PlayCardPhase from "./play";
 import PrepareGame from "./prepare";
 import RollPhase from "./roll";
 
-export default function Game() {
+export default function GamePage() {
+  const { isLandscape } = useAutoScale();
+
+  return (
+    <div className={styles.screen}>
+      {/* {loading && (
+        <Loading
+          text={`loading assets ${loaded} / ${total} ${
+            err > 0 ? ", " + err + " errors" : ""
+          } `}
+        />
+      )} */}
+      {!isLandscape ? (
+        <div className={styles.AlertText}>
+          Please rotate your screen to landscape mode <br />
+        </div>
+      ) : (
+        <main className={styles.main} id="screen">
+          <Game />
+          {/* {!loading && ( */}
+          {/* <Notice message={<div>{message}</div>} /> */}
+          {/* <Deck own={own} opposite={opposite} /> */}
+        </main>
+      )}
+    </div>
+  );
+}
+
+export const Game = () => {
   const store = useGameStore();
   const { message, msgCallback, phase } = store;
   const { onPreviewEnd } = usePreview();
@@ -60,4 +89,4 @@ export default function Game() {
       )}
     </div>
   );
-}
+};

@@ -10,12 +10,21 @@ export const useAutoScale = () => {
       ? documentWidth / defaultWidth
       : documentHeight / defaultHeight;
   };
+  const [isLandscape, setIsLandscape] = useState(false);
   const [scale, setScale] = useState(getScale());
+  const handleResize = () => {
+    setIsLandscape(window.innerWidth > window.innerHeight * 0.9);
+  };
   const autoScale = () => {
-    setScale(getScale());
-    (
-      document.querySelector("#screen") as HTMLElement
-    ).style.transform = `scale(${scale}) translate(-50%)`;
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    console.log(isLandscape);
+    if (isLandscape) {
+      setScale(getScale());
+      (
+        document.querySelector("#screen") as HTMLElement
+      ).style.transform = `scale(${scale}) translate(-50%)`;
+    }
   };
 
   useEffect((): (() => void) => {
@@ -26,5 +35,6 @@ export const useAutoScale = () => {
 
   return {
     scale,
+    isLandscape,
   };
 };
