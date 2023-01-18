@@ -11,10 +11,7 @@ import {
 
 import GIData from "./cards_20221205_en-us.json";
 
-const PUBLIC_PATH =
-  process.env.NODE_ENV === "development"
-    ? ""
-    : "https://xieqin.github.io/invokation";
+const PUBLIC_PATH = process.env.NODE_ENV === "development" ? "" : "";
 
 const ImageIDTrans = (s: string) => {
   return s

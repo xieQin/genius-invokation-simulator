@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext", "scripthost"],
+    "lib": ["dom", "dom.iterable", "esnext", "scripthost", "webWorker"],
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
@@ -16,7 +16,14 @@
     "skipLibCheck": true,
     "strict": true,
     "sourceMap": true,
-    "types": ["vite/client", "node", "jest", "@testing-library/jest-dom"],
+    "types": [
+      "vite/client",
+      "node",
+      "jest",
+      "@testing-library/jest-dom",
+      "vite-plugin-pwa",
+      "vite-plugin-pwa/client"
+    ],
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]

@@ -18,6 +18,9 @@ const downloadImg = () => {
       img: skill.img,
     }));
   });
+  const imgs = [...cardImgs, ...characterImgs, ...skillImgs]
+    .flat()
+    .map(i => i.img);
   writeFileSync("./src/data/card-imgs.json", JSON.stringify(cardImgs));
   writeFileSync(
     "./src/data/character-imgs.json",
@@ -27,6 +30,7 @@ const downloadImg = () => {
     "./src/data/skill-imgs.json",
     JSON.stringify(skillImgs.flat().sort())
   );
+  writeFileSync("./src/data/imgs.json", JSON.stringify(imgs.flat().sort()));
 
   // const downloadImg = (item: { id: string; img: string }) => {
   //   console.log(item);

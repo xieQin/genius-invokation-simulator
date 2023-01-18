@@ -11,45 +11,29 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Liutian Archery",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/LiutianArchery.png",
+        "img": "/skill/LiutianArchery.png",
         "imgID": "LiutianArchery"
       },
       {
         "id": "11012",
         "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Ice Lotus</color>.",
         "name": "Trail of the Qilin",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/TrailoftheQilin.png",
+        "img": "/skill/TrailoftheQilin.png",
         "imgID": "TrailoftheQilin"
       },
       {
         "id": "11013",
         "text": "Deals 2 <color=#99FFFFFF>Cryo DMG</color>, deals <color=#FFFFFFFF>2 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
         "name": "Frostflake Arrow",
-        "costs": [
-          {
-            "costNum": 5,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 5, "costType": "Cryo" }],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FrostflakeArrow.png",
+        "img": "/skill/FrostflakeArrow.png",
         "imgID": "FrostflakeArrow"
       },
       {
@@ -57,25 +41,19 @@
         "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, deals <color=#FFFFFFFF>1 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby, summons 1 <color=#FFFFFFFF>Sacred Cryo Pearl</color>.",
         "name": "Celestial Shower",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/CelestialShower.png",
+        "img": "/skill/CelestialShower.png",
         "imgID": "CelestialShower"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Ganyu.png",
+    "img": "/characters/Ganyu.png",
     "imgID": "Ganyu"
   },
   {
@@ -90,31 +68,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Kätzlein Style",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/KätzleinStyle.png",
+        "img": "/skill/KätzleinStyle.png",
         "imgID": "KätzleinStyle"
       },
       {
         "id": "11022",
         "text": "Deals 2 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Cat-Claw Shield</color>.",
         "name": "Icy Paws",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/IcyPaws.png",
+        "img": "/skill/IcyPaws.png",
         "imgID": "IcyPaws"
       },
       {
@@ -122,25 +89,19 @@
         "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, heals this character for 2 HP, summons 1 <color=#FFFFFFFF>Drunken Mist</color>.",
         "name": "Signature Mix",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Cryo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SignatureMix.png",
+        "img": "/skill/SignatureMix.png",
         "imgID": "SignatureMix"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Diona.png",
+    "img": "/characters/Diona.png",
     "imgID": "Diona"
   },
   {
@@ -155,31 +116,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Ceremonial Bladework",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/CeremonialBladework.png",
+        "img": "/skill/CeremonialBladework.png",
         "imgID": "CeremonialBladework"
       },
       {
         "id": "11032",
         "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>.",
         "name": "Frostgnaw",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Frostgnaw.png",
+        "img": "/skill/Frostgnaw.png",
         "imgID": "Frostgnaw"
       },
       {
@@ -187,25 +137,19 @@
         "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Icicle</color>.",
         "name": "Glacial Waltz",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/GlacialWaltz.png",
+        "img": "/skill/GlacialWaltz.png",
         "imgID": "GlacialWaltz"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Kaeya.png",
+    "img": "/characters/Kaeya.png",
     "imgID": "Kaeya"
   },
   {
@@ -220,31 +164,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Demonbane",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Demonbane.png",
+        "img": "/skill/Demonbane.png",
         "imgID": "Demonbane"
       },
       {
         "id": "11042",
         "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Chonghua Frost Field</color>.",
         "name": "Chonghua's Layered Frost",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/ChonghuasLayeredFrost.png",
+        "img": "/skill/ChonghuasLayeredFrost.png",
         "imgID": "ChonghuasLayeredFrost"
       },
       {
@@ -252,25 +185,19 @@
         "text": "Deals 7 <color=#99FFFFFF>Cryo DMG</color>.",
         "name": "Cloud-Parting Star",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Cryo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/CloudPartingStar.png",
+        "img": "/skill/CloudPartingStar.png",
         "imgID": "CloudPartingStar"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Chongyun.png",
+    "img": "/characters/Chongyun.png",
     "imgID": "Chongyun"
   },
   {
@@ -285,31 +212,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Kamisato Art: Kabuki",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Cryo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtKabuki.png",
+        "img": "/skill/KamisatoArtKabuki.png",
         "imgID": "KamisatoArtKabuki"
       },
       {
         "id": "11052",
         "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>.",
         "name": "Kamisato Art: Hyouka",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtHyouka.png",
+        "img": "/skill/KamisatoArtHyouka.png",
         "imgID": "KamisatoArtHyouka"
       },
       {
@@ -317,17 +233,11 @@
         "text": "Deals 4 <color=#99FFFFFF>Cryo DMG</color>, summons 1 <color=#FFFFFFFF>Frostflake Seki no To</color>.",
         "name": "Kamisato Art: Soumetsu",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Cryo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSoumetsu.png",
+        "img": "/skill/KamisatoArtSoumetsu.png",
         "imgID": "KamisatoArtSoumetsu"
       },
       {
@@ -336,15 +246,15 @@
         "name": "Kamisato Art: Senho",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSenho.png",
+        "img": "/skill/KamisatoArtSenho.png",
         "imgID": "KamisatoArtSenho"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/KamisatoAyaka.png",
+    "img": "/characters/KamisatoAyaka.png",
     "imgID": "KamisatoAyaka"
   },
   {
@@ -359,31 +269,20 @@
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
         "name": "Whisper of Water",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WhisperofWater.png",
+        "img": "/skill/WhisperofWater.png",
         "imgID": "WhisperofWater"
       },
       {
         "id": "12012",
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, summons 1 <color=#FFFFFFFF>Melody Loop</color>.",
         "name": "Let the Show Begin♪",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/LettheShowBegin.png",
+        "img": "/skill/LettheShowBegin.png",
         "imgID": "LettheShowBegin"
       },
       {
@@ -391,25 +290,19 @@
         "text": "Heals all of your characters for 4 HP.",
         "name": "Shining Miracle♪",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Hydro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/ShiningMiracle.png",
+        "img": "/skill/ShiningMiracle.png",
         "imgID": "ShiningMiracle"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Barbara.png",
+    "img": "/characters/Barbara.png",
     "imgID": "Barbara"
   },
   {
@@ -424,31 +317,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Guhua Style",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/GuhuaStyle.png",
+        "img": "/skill/GuhuaStyle.png",
         "imgID": "GuhuaStyle"
       },
       {
         "id": "12022",
         "text": "Deals 2 <color=#80C0FFFF>Hydro DMG</color>, grants this character <color=#80C0FFFF>Hydro Application</color>, creates 1 <color=#FFFFFFFF>Rain Sword</color>.",
         "name": "Fatal Rainscreen",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FatalRainscreen.png",
+        "img": "/skill/FatalRainscreen.png",
         "imgID": "FatalRainscreen"
       },
       {
@@ -456,25 +338,19 @@
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, grants this character <color=#80C0FFFF>Hydro Application</color>, creates 1 <color=#FFFFFFFF>Rainbow Bladework</color>.",
         "name": "Raincutter",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Raincutter.png",
+        "img": "/skill/Raincutter.png",
         "imgID": "Raincutter"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Xingqiu.png",
+    "img": "/characters/Xingqiu.png",
     "imgID": "Xingqiu"
   },
   {
@@ -489,31 +365,20 @@
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
         "name": "Ripple of Fate",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/RippleofFate.png",
+        "img": "/skill/RippleofFate.png",
         "imgID": "RippleofFate"
       },
       {
         "id": "12032",
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, summons 1 <color=#FFFFFFFF>Reflection</color>.",
         "name": "Mirror Reflection of Doom",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/MirrorReflectionofDoom.png",
+        "img": "/skill/MirrorReflectionofDoom.png",
         "imgID": "MirrorReflectionofDoom"
       },
       {
@@ -521,17 +386,11 @@
         "text": "Deals 4 <color=#80C0FFFF>Hydro DMG</color>, creates 1 <color=#FFFFFFFF>Illusory Bubble</color>.",
         "name": "Stellaris Phantasm",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Hydro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/StellarisPhantasm.png",
+        "img": "/skill/StellarisPhantasm.png",
         "imgID": "StellarisPhantasm"
       },
       {
@@ -540,15 +399,15 @@
         "name": "Illusory Torrent",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/IllusoryTorrent.png",
+        "img": "/skill/IllusoryTorrent.png",
         "imgID": "IllusoryTorrent"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Mona.png",
+    "img": "/characters/Mona.png",
     "imgID": "Mona"
   },
   {
@@ -563,31 +422,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Tempered Sword",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/TemperedSword.png",
+        "img": "/skill/TemperedSword.png",
         "imgID": "TemperedSword"
       },
       {
         "id": "13012",
         "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>. For the third use of this Skill each Round, deals +2 DMG.",
         "name": "Searing Onslaught",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/SearingOnslaught.png",
+        "img": "/skill/SearingOnslaught.png",
         "imgID": "SearingOnslaught"
       },
       {
@@ -595,25 +443,19 @@
         "text": "Deals 8 <color=#FF9999FF>Pyro DMG</color>. This character gains <color=#FFFFFFFF>Pyro Infusion</color>.",
         "name": "Dawn",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Pyro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Dawn.png",
+        "img": "/skill/Dawn.png",
         "imgID": "Dawn"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Diluc.png",
+    "img": "/characters/Diluc.png",
     "imgID": "Diluc"
   },
   {
@@ -628,31 +470,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Dough-Fu",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/DoughFu.png",
+        "img": "/skill/DoughFu.png",
         "imgID": "DoughFu"
       },
       {
         "id": "13022",
         "text": "Summons 1 <color=#FFFFFFFF>Guoba</color>.",
         "name": "Guoba Attack",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/GuobaAttack.png",
+        "img": "/skill/GuobaAttack.png",
         "imgID": "GuobaAttack"
       },
       {
@@ -660,25 +491,19 @@
         "text": "Deals 2 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Pyronado</color>.",
         "name": "Pyronado",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Pyronado.png",
+        "img": "/skill/Pyronado.png",
         "imgID": "Pyronado"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Xiangling.png",
+    "img": "/characters/Xiangling.png",
     "imgID": "Xiangling"
   },
   {
@@ -693,31 +518,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Strike of Fortune",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/StrikeofFortune.png",
+        "img": "/skill/StrikeofFortune.png",
         "imgID": "StrikeofFortune"
       },
       {
         "id": "13032",
         "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>.",
         "name": "Passion Overload",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/PassionOverload.png",
+        "img": "/skill/PassionOverload.png",
         "imgID": "PassionOverload"
       },
       {
@@ -725,25 +539,19 @@
         "text": "Deals 2 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Inspiration Field</color>.",
         "name": "Fantastic Voyage",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/FantasticVoyage.png",
+        "img": "/skill/FantasticVoyage.png",
         "imgID": "FantasticVoyage"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Bennett.png",
+    "img": "/characters/Bennett.png",
     "imgID": "Bennett"
   },
   {
@@ -758,31 +566,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Firework Flare-Up",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FireworkFlareUp.png",
+        "img": "/skill/FireworkFlareUp.png",
         "imgID": "FireworkFlareUp"
       },
       {
         "id": "13052",
         "text": "This character gains <color=#FFFFFFFF>Niwabi Enshou</color>. (This Skill does not grant Energy)",
         "name": "Niwabi Fire-Dance",
-        "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          }
-        ],
+        "costs": [{ "costNum": 1, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/NiwabiFireDance.png",
+        "img": "/skill/NiwabiFireDance.png",
         "imgID": "NiwabiFireDance"
       },
       {
@@ -790,25 +587,19 @@
         "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Aurous Blaze</color>.",
         "name": "Ryuukin Saxifrage",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/RyuukinSaxifrage.png",
+        "img": "/skill/RyuukinSaxifrage.png",
         "imgID": "RyuukinSaxifrage"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Yoimiya.png",
+    "img": "/characters/Yoimiya.png",
     "imgID": "Yoimiya"
   },
   {
@@ -823,31 +614,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Bolts of Downfall",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Electro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/BoltsofDownfall.png",
+        "img": "/skill/BoltsofDownfall.png",
         "imgID": "BoltsofDownfall"
       },
       {
         "id": "14012",
         "text": "Deals 1 <color=#FFACFFFF>Electro DMG</color>, summons 1 <color=#FFFFFFFF>Oz</color>.",
         "name": "Nightrider",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Nightrider.png",
+        "img": "/skill/Nightrider.png",
         "imgID": "Nightrider"
       },
       {
@@ -855,25 +635,19 @@
         "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>, deals 2 <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
         "name": "Midnight Phantasmagoria",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Electro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/MidnightPhantasmagoria.png",
+        "img": "/skill/MidnightPhantasmagoria.png",
         "imgID": "MidnightPhantasmagoria"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Fischl.png",
+    "img": "/characters/Fischl.png",
     "imgID": "Fischl"
   },
   {
@@ -888,31 +662,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Steel Fang",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Electro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SteelFang.png",
+        "img": "/skill/SteelFang.png",
         "imgID": "SteelFang"
       },
       {
         "id": "14022",
         "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>.",
         "name": "Claw and Thunder",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/ClawandThunder.png",
+        "img": "/skill/ClawandThunder.png",
         "imgID": "ClawandThunder"
       },
       {
@@ -920,25 +683,19 @@
         "text": "Deals 5 <color=#FFACFFFF>Electro DMG</color>. This character gains <color=#FFFFFFFF>The Wolf Within</color>.",
         "name": "Lightning Fang",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Electro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/LightningFang.png",
+        "img": "/skill/LightningFang.png",
         "imgID": "LightningFang"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Razor.png",
+    "img": "/characters/Razor.png",
     "imgID": "Razor"
   },
   {
@@ -953,31 +710,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Yunlai Swordsmanship",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Electro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/YunlaiSwordsmanship.png",
+        "img": "/skill/YunlaiSwordsmanship.png",
         "imgID": "YunlaiSwordsmanship"
       },
       {
         "id": "14032",
         "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>, creates 1 <color=#FFFFFFFF>Lightning Stiletto</color>.",
         "name": "Stellar Restoration",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/StellarRestoration.png",
+        "img": "/skill/StellarRestoration.png",
         "imgID": "StellarRestoration"
       },
       {
@@ -985,25 +731,19 @@
         "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>, deals <color=#FFFFFFFF>3 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
         "name": "Starward Sword",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Electro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/StarwardSword.png",
+        "img": "/skill/StarwardSword.png",
         "imgID": "StarwardSword"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Keqing.png",
+    "img": "/characters/Keqing.png",
     "imgID": "Keqing"
   },
   {
@@ -1018,31 +758,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Invoker's Spear",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Electro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/InvokersSpear.png",
+        "img": "/skill/InvokersSpear.png",
         "imgID": "InvokersSpear"
       },
       {
         "id": "14042",
         "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>.",
         "name": "Secret Rite: Chasmic Soulfarer",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Electro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/SecretRiteChasmicSoulfarer.png",
+        "img": "/skill/SecretRiteChasmicSoulfarer.png",
         "imgID": "SecretRiteChasmicSoulfarer"
       },
       {
@@ -1050,17 +779,11 @@
         "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>.\\n<color=#FFFFFFFF>Pactsworn Pathclearer</color>'s Indwelling Level +2.",
         "name": "Sacred Rite: Wolf's Swiftness",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Electro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Electro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SacredRiteWolfsSwiftness.png",
+        "img": "/skill/SacredRiteWolfsSwiftness.png",
         "imgID": "SacredRiteWolfsSwiftness"
       },
       {
@@ -1069,15 +792,15 @@
         "name": "Lawful Enforcer",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/LawfulEnforcer.png",
+        "img": "/skill/LawfulEnforcer.png",
         "imgID": "LawfulEnforcer"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Cyno.png",
+    "img": "/characters/Cyno.png",
     "imgID": "Cyno"
   },
   {
@@ -1092,31 +815,20 @@
         "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>.",
         "name": "Wind Spirit Creation",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Anemo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WindSpiritCreation.png",
+        "img": "/skill/WindSpiritCreation.png",
         "imgID": "WindSpiritCreation"
       },
       {
         "id": "15012",
         "text": "Deals 3 <color=#80FFD7FF>Anemo DMG</color>, the target is forcibly switched to the previous character.",
         "name": "Astable Anemohypostasis Creation - 6308",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Anemo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/AstableAnemohypostasisCreation6308.png",
+        "img": "/skill/AstableAnemohypostasisCreation6308.png",
         "imgID": "AstableAnemohypostasisCreation6308"
       },
       {
@@ -1124,25 +836,19 @@
         "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>, summons 1 <color=#FFFFFFFF>Large Wind Spirit</color>.",
         "name": "Forbidden Creation - Isomer 75 / Type II",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Anemo" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/ForbiddenCreationIsomer75TypeII.png",
+        "img": "/skill/ForbiddenCreationIsomer75TypeII.png",
         "imgID": "ForbiddenCreationIsomer75TypeII"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Sucrose.png",
+    "img": "/characters/Sucrose.png",
     "imgID": "Sucrose"
   },
   {
@@ -1157,31 +863,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Favonius Bladework",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Anemo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FavoniusBladework.png",
+        "img": "/skill/FavoniusBladework.png",
         "imgID": "FavoniusBladework"
       },
       {
         "id": "15022",
         "text": "Deals 3 <color=#80FFD7FF>Anemo DMG</color>, the target is forcibly switched to the next character.",
         "name": "Gale Blade",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Anemo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/GaleBlade.png",
+        "img": "/skill/GaleBlade.png",
         "imgID": "GaleBlade"
       },
       {
@@ -1189,25 +884,19 @@
         "text": "Heals all your characters for 2 HP, summons 1 <color=#FFFFFFFF>Dandelion Field</color>.",
         "name": "Dandelion Breeze",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Anemo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/DandelionBreeze.png",
+        "img": "/skill/DandelionBreeze.png",
         "imgID": "DandelionBreeze"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Jean.png",
+    "img": "/characters/Jean.png",
     "imgID": "Jean"
   },
   {
@@ -1222,31 +911,20 @@
         "text": "Deals 1 <color=#FFE699FF>Geo DMG</color>.",
         "name": "Sparkling Scatter",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Geo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SparklingScatter.png",
+        "img": "/skill/SparklingScatter.png",
         "imgID": "SparklingScatter"
       },
       {
         "id": "16012",
         "text": "Deals 2 <color=#FFE699FF>Geo DMG</color>, creates 1 <color=#FFFFFFFF>Jade Screen</color>.",
         "name": "Jade Screen",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Geo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/JadeScreen.png",
+        "img": "/skill/JadeScreen.png",
         "imgID": "JadeScreen"
       },
       {
@@ -1254,25 +932,19 @@
         "text": "Deals 6 <color=#FFE699FF>Geo DMG</color>. If <color=#FFFFFFFF>Jade Screen</color> is on the field, deals +2 DMG.",
         "name": "Starshatter",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Geo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Starshatter.png",
+        "img": "/skill/Starshatter.png",
         "imgID": "Starshatter"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Ningguang.png",
+    "img": "/characters/Ningguang.png",
     "imgID": "Ningguang"
   },
   {
@@ -1287,31 +959,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Favonius Bladework - Maid",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Geo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FavoniusBladeworkMaid.png",
+        "img": "/skill/FavoniusBladeworkMaid.png",
         "imgID": "FavoniusBladeworkMaid"
       },
       {
         "id": "16022",
         "text": "Deals 1 <color=#FFE699FF>Geo DMG</color>, creates 1 <color=#FFFFFFFF>Full Plate</color>.",
         "name": "Breastplate",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Geo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Breastplate.png",
+        "img": "/skill/Breastplate.png",
         "imgID": "Breastplate"
       },
       {
@@ -1319,25 +980,19 @@
         "text": "Deals 4 <color=#FFE699FF>Geo DMG</color>. This character gains <color=#FFFFFFFF>Sweeping Time</color>.",
         "name": "Sweeping Time",
         "costs": [
-          {
-            "costNum": 4,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 4, "costType": "Geo" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SweepingTime.png",
+        "img": "/skill/SweepingTime.png",
         "imgID": "SweepingTime"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Noelle.png",
+    "img": "/characters/Noelle.png",
     "imgID": "Noelle"
   },
   {
@@ -1352,31 +1007,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Supplicant's Bowmanship",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Dendro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Dendro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SupplicantsBowmanship.png",
+        "img": "/skill/SupplicantsBowmanship.png",
         "imgID": "SupplicantsBowmanship"
       },
       {
         "id": "17012",
         "text": "Deals 3 <color=#7EC236FF>Dendro DMG</color>.",
         "name": "Floral Brush",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Dendro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FloralBrush.png",
+        "img": "/skill/FloralBrush.png",
         "imgID": "FloralBrush"
       },
       {
@@ -1384,25 +1028,19 @@
         "text": "Deals 2 <color=#7EC236FF>Dendro DMG</color>, summons 1 <color=#FFFFFFFF>Cuilein-Anbar</color>.",
         "name": "Trump-Card Kitty",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Dendro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Dendro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/TrumpCardKitty.png",
+        "img": "/skill/TrumpCardKitty.png",
         "imgID": "TrumpCardKitty"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Collei.png",
+    "img": "/characters/Collei.png",
     "imgID": "Collei"
   },
   {
@@ -1417,45 +1055,29 @@
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
         "name": "Surge",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Surge.png",
+        "img": "/skill/Surge.png",
         "imgID": "Surge"
       },
       {
         "id": "22012",
         "text": "Randomly summons 1 <color=#FFFFFFFF>Oceanid Mimic</color> (Prioritizes summoning a different type from preexisting ones).",
         "name": "Oceanid Mimic Summoning",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/OceanidMimicSummoning.png",
+        "img": "/skill/OceanidMimicSummoning.png",
         "imgID": "OceanidMimicSummoning"
       },
       {
         "id": "22013",
         "text": "Randomly summons 2 <color=#FFFFFFFF>Oceanid Mimic</color> (Prioritizes summoning different types).",
         "name": "The Myriad Wilds",
-        "costs": [
-          {
-            "costNum": 5,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 5, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/TheMyriadWilds.png",
+        "img": "/skill/TheMyriadWilds.png",
         "imgID": "TheMyriadWilds"
       },
       {
@@ -1463,25 +1085,19 @@
         "text": "Deals 2 <color=#80C0FFFF>Hydro DMG</color>. For each friendly Summon on the field, deals +2 additional DMG.",
         "name": "Tide and Torrent",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Hydro" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/TideandTorrent.png",
+        "img": "/skill/TideandTorrent.png",
         "imgID": "TideandTorrent"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/RhodeiaofLoch.png",
+    "img": "/characters/RhodeiaofLoch.png",
     "imgID": "RhodeiaofLoch"
   },
   {
@@ -1496,31 +1112,20 @@
         "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
         "name": "Water Ball",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WaterBall.png",
+        "img": "/skill/WaterBall.png",
         "imgID": "WaterBall"
       },
       {
         "id": "22022",
         "text": "Deals 3 <color=#80C0FFFF>Hydro DMG</color>. The target character receives <color=#FFFFFFFF>Refraction</color>.",
         "name": "Influx Blast",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/InfluxBlast.png",
+        "img": "/skill/InfluxBlast.png",
         "imgID": "InfluxBlast"
       },
       {
@@ -1528,25 +1133,19 @@
         "text": "Deals 5 <color=#80C0FFFF>Hydro DMG</color>.",
         "name": "Rippled Reflection",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Hydro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Hydro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/RippledReflection.png",
+        "img": "/skill/RippledReflection.png",
         "imgID": "RippledReflection"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/MirrorMaiden.png",
+    "img": "/characters/MirrorMaiden.png",
     "imgID": "MirrorMaiden"
   },
   {
@@ -1561,31 +1160,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Thrust",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Thrust.png",
+        "img": "/skill/Thrust.png",
         "imgID": "Thrust"
       },
       {
         "id": "23012",
         "text": "Deals 1 <color=#FF9999FF>Pyro DMG</color>. This character gains <color=#FFFFFFFF>Stealth</color>.",
         "name": "Prowl",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Prowl.png",
+        "img": "/skill/Prowl.png",
         "imgID": "Prowl"
       },
       {
@@ -1593,17 +1181,11 @@
         "text": "Deals 5 <color=#FF9999FF>Pyro DMG</color>.",
         "name": "Blade Ablaze",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Pyro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/BladeAblaze.png",
+        "img": "/skill/BladeAblaze.png",
         "imgID": "BladeAblaze"
       },
       {
@@ -1612,15 +1194,15 @@
         "name": "Stealth Master",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/StealthMaster.png",
+        "img": "/skill/StealthMaster.png",
         "imgID": "StealthMaster"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/FatuiPyroAgent.png",
+    "img": "/characters/FatuiPyroAgent.png",
     "imgID": "FatuiPyroAgent"
   },
   {
@@ -1635,45 +1217,29 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Ichimonji",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Anemo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Ichimonji.png",
+        "img": "/skill/Ichimonji.png",
         "imgID": "Ichimonji"
       },
       {
         "id": "25012",
         "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>, summons 1 <color=#FFFFFFFF>Shadowsword: Lone Gale</color>.",
         "name": "Blustering Blade",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Anemo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/BlusteringBlade.png",
+        "img": "/skill/BlusteringBlade.png",
         "imgID": "BlusteringBlade"
       },
       {
         "id": "25013",
         "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, summons 1 <color=#FFFFFFFF>Shadowsword: Galloping Frost</color>.",
         "name": "Frosty Assault",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Cryo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FrostyAssault.png",
+        "img": "/skill/FrostyAssault.png",
         "imgID": "FrostyAssault"
       },
       {
@@ -1681,25 +1247,19 @@
         "text": "Deals 4 <color=#80FFD7FF>Anemo DMG</color>, triggers the effect(s) of all your <color=#FFFFFFFF>Shadowsword</color> Summon(s). (Does not consume their Usages)",
         "name": "Pseudo Tengu Sweeper",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Anemo"
-          },
-          {
-            "costNum": 3,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Anemo" },
+          { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/PseudoTenguSweeper.png",
+        "img": "/skill/PseudoTenguSweeper.png",
         "imgID": "PseudoTenguSweeper"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/MaguuKenki.png",
+    "img": "/characters/MaguuKenki.png",
     "imgID": "MaguuKenki"
   },
   {
@@ -1714,31 +1274,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Plama Lawa",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Geo" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/PlamaLawa.png",
+        "img": "/skill/PlamaLawa.png",
         "imgID": "PlamaLawa"
       },
       {
         "id": "26012",
         "text": "Deals 3 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Movo Lawa",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Geo"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/MovoLawa.png",
+        "img": "/skill/MovoLawa.png",
         "imgID": "MovoLawa"
       },
       {
@@ -1746,17 +1295,11 @@
         "text": "Deals 5 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Upa Shato",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Geo"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Geo" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/UpaShato.png",
+        "img": "/skill/UpaShato.png",
         "imgID": "UpaShato"
       },
       {
@@ -1765,15 +1308,15 @@
         "name": "Infused Stonehide",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/InfusedStonehide.png",
+        "img": "/skill/InfusedStonehide.png",
         "imgID": "InfusedStonehide"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 8,
-    "img": "https://xieqin.github.io/invokation/characters/StonehideLawachurl.png",
+    "img": "/characters/StonehideLawachurl.png",
     "imgID": "StonehideLawachurl"
   },
   {
@@ -1788,31 +1331,20 @@
         "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
         "name": "Majestic Dance",
         "costs": [
-          {
-            "costNum": 1,
-            "costType": "Dendro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Void"
-          }
+          { "costNum": 1, "costType": "Dendro" },
+          { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/MajesticDance.png",
+        "img": "/skill/MajesticDance.png",
         "imgID": "MajesticDance"
       },
       {
         "id": "27012",
         "text": "Deals 3 <color=#7EC236FF>Dendro DMG</color>.",
         "name": "Volatile Spore Cloud",
-        "costs": [
-          {
-            "costNum": 3,
-            "costType": "Dendro"
-          }
-        ],
+        "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/VolatileSporeCloud.png",
+        "img": "/skill/VolatileSporeCloud.png",
         "imgID": "VolatileSporeCloud"
       },
       {
@@ -1820,17 +1352,11 @@
         "text": "Deals 4 <color=#7EC236FF>Dendro DMG</color>, then consumes all <color=#FFFFFFFF>Radical Vitality</color> stacks. For each stack consumed, this instance deals +1 DMG.",
         "name": "Feather Spreading",
         "costs": [
-          {
-            "costNum": 3,
-            "costType": "Dendro"
-          },
-          {
-            "costNum": 2,
-            "costType": "Energy"
-          }
+          { "costNum": 3, "costType": "Dendro" },
+          { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/FeatherSpreading.png",
+        "img": "/skill/FeatherSpreading.png",
         "imgID": "FeatherSpreading"
       },
       {
@@ -1839,15 +1365,15 @@
         "name": "Radical Vitality",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/RadicalVitality.png",
+        "img": "/skill/RadicalVitality.png",
         "imgID": "RadicalVitality"
       }
     ],
-    "equipments": null,
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/JadeplumeTerrorshroom.png",
+    "img": "/characters/JadeplumeTerrorshroom.png",
     "imgID": "JadeplumeTerrorshroom"
   }
 ]
