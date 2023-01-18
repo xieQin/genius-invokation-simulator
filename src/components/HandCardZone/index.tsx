@@ -77,7 +77,12 @@ export const HandCardList = (props: CardListProps) => {
   return (
     <div className={`${styles.HandCardList}`}>
       {cards.map((card, index) => (
-        <div key={index} aria-hidden="true" onDragEnd={() => playCard(index)}>
+        <div
+          key={index}
+          aria-hidden="true"
+          draggable="true"
+          onDragEnd={() => playCard(index)}
+        >
           <HandCardItem player={player} card={card} />
         </div>
       ))}

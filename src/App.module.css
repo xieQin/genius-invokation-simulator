@@ -1,3 +1,7 @@
+.screen {
+  width: 100%;
+  height: 100vh;
+}
 .main {
   position: fixed;
   display: inline-block;
@@ -8,4 +12,15 @@
   background-size: cover;
   transform-origin: 0 0;
   left: 50%;
+}
+
+.AlertText {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }

@@ -3,12 +3,10 @@ import { useAutoScale } from "./hooks";
 import Game from "./views/Game";
 
 export default function App() {
-  useAutoScale();
-  // const { message } = useNotice();
-  // const { loading, err, total, loaded } = usePreload();
+  const { isLandscape } = useAutoScale();
 
   return (
-    <>
+    <div className={styles.screen}>
       {/* {loading && (
         <Loading
           text={`loading assets ${loaded} / ${total} ${
@@ -16,15 +14,18 @@ export default function App() {
           } `}
         />
       )} */}
-      <main className={styles.main} id="screen">
-        {/* {!loading && ( */}
-        <>
+      {!isLandscape ? (
+        <div className={styles.AlertText}>
+          Please rotate your screen to landscape mode <br />
+        </div>
+      ) : (
+        <main className={styles.main} id="screen">
           <Game />
+          {/* {!loading && ( */}
           {/* <Notice message={<div>{message}</div>} /> */}
           {/* <Deck own={own} opposite={opposite} /> */}
-        </>
-        {/* )} */}
-      </main>
-    </>
+        </main>
+      )}
+    </div>
   );
 }
