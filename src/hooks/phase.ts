@@ -9,23 +9,28 @@ export const useStartPhase = () => {
   return {};
 };
 
-export const useChoosePhase = () => {
+export const useChoosePhase = (pos: PlayerPosition) => {
   const {
     showMessage,
     setGameStates,
     toggleDeckStatus,
     activeCharacters,
+    selectedCharacters,
     phase,
   } = useGameStore();
 
-  const isEndValid = () => activeCharacters[PlayerPosition.Own] > -1;
+  const isEndValid = () => activeCharacters[pos] > -1;
 
-  const setActiveCharacter = (index: number) => {
+  const isSelected = () =>
+    (pos === PlayerPosition.Own && selectedCharacters[pos] > -1) ||
+    pos === PlayerPosition.Opponent;
+
+  const setActiveCharacter = () => {
     const isChoosePhase = phase === Phase.Choose;
     setGameStates(
       "activeCharacters",
       Object.assign([], activeCharacters, [
-        index,
+        selectedCharacters[0],
         isChoosePhase ? Math.ceil(Math.random() * 3) - 1 : activeCharacters[1],
       ])
     );
@@ -46,6 +51,7 @@ export const useChoosePhase = () => {
     });
   };
   return {
+    isSelected,
     isEndValid,
     setActiveCharacter,
     onChoosePhaseStart,

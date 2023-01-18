@@ -1,30 +1,30 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
-import { useChoosePhase } from "@/hooks";
-import { useCostDice } from "@/hooks/dice";
-import { ICost, PlayerPosition } from "@/models";
-import { Phase } from "@/models/phase";
+import { useCostDice, useSkill } from "@/hooks";
+import { Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
-export default function ChangeCharacterPhase() {
-  const { dices: playerDices, setGameStates } = useGameStore();
+export default function SkillPhase() {
+  const {
+    activeCharacters,
+    getPlayer,
+    dices: playDices,
+    setGameStates,
+    activeSkills,
+  } = useGameStore();
   const pos = PlayerPosition.Own;
+  const dices = playDices[pos];
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
-  const { setActiveCharacter } = useChoosePhase(pos);
-  const dices = playerDices[pos];
+  const { onCastSkill } = useSkill(pos);
 
-  const costs: ICost[] = [
-    {
-      costNum: 1,
-      costType: "Void",
-    },
-  ];
+  const character = getPlayer(pos).characters[activeCharacters[pos]];
 
   const onConfirm = () => {
+    const costs = character.skills[activeSkills[pos]].costs;
     if (isCostValid(costs)) {
       costDices();
+      onCastSkill();
       setGameStates("phase", Phase.Combat);
-      setActiveCharacter();
     } else {
       console.log("error");
     }

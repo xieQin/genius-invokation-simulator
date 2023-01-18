@@ -18,10 +18,10 @@ export default function InitPhase() {
     popCardStack,
   } = gameStates;
   const own = players[PlayerPosition.Own];
-  const opposite = players[PlayerPosition.Opposite];
+  const opponent = players[PlayerPosition.Opponent];
   const handCards = draftHandCard(5, PlayerPosition.Own);
   const timeout: { current: number | null } = useRef(null);
-  const pos = PlayerPosition.Opposite;
+  const pos = PlayerPosition.Opponent;
   useEffect(() => {
     timeout.current = window.setTimeout(() => {
       if (phase === Phase.Init) {
@@ -60,8 +60,8 @@ export default function InitPhase() {
           <div className={styles.GameModalLayer}></div>
           <DraftHandCardZone cards={own.cards} player={PlayerPosition.Own} />
           <DraftHandCardZone
-            cards={opposite.cards}
-            player={PlayerPosition.Opposite}
+            cards={opponent.cards}
+            player={PlayerPosition.Opponent}
           />
           <div
             className={styles.GameLayerBtns}

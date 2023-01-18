@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePlayCard, usePreview } from "@/hooks";
+import { usePlayCard, usePreview, useSkill } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
 import { ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
@@ -14,6 +14,7 @@ export interface CharacterItemProps {
   character: ICharacter;
   i?: number;
   select?: number;
+  pos: PlayerPosition;
 }
 
 export const useTransformControl = () => {
@@ -29,9 +30,10 @@ export const useTransformControl = () => {
 };
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
-  const { character, i, select } = props;
-  const { phase } = useGameStore();
+  const { character, i, select, pos } = props;
+  const { phase, activeCharacters } = useGameStore();
   const { onPreview } = usePreview();
+  const { calDamage } = useSkill(pos);
   if (!character) {
     return <></>;
   }
@@ -62,6 +64,13 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
           {i !== undefined && i === select && (
             <div className={styles.CharacterSelected}></div>
           )}
+          {phase === Phase.Skill &&
+            i === activeCharacters[pos] &&
+            pos === PlayerPosition.Opponent && (
+              <div className={styles.CharacterDamage}>
+                -{calDamage().damage}
+              </div>
+            )}
           <div className={styles.CharacterHealth}>{character.hp}</div>
           <div className={styles.CharacterEnergy}>
             <div className={styles.CharacterEnergyItem}></div>
@@ -88,30 +97,31 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
 
 export interface CharacterZoneProps {
   characters: ICharacter[];
-  player: PlayerPosition;
+  pos: PlayerPosition;
   setSelect?: (v: number) => void;
   select?: number;
 }
 
 export default function CharacterZone(props: CharacterZoneProps) {
-  const { characters, player, setSelect, select } = props;
+  const { characters, pos, setSelect, select } = props;
   const { phase, activeCharacters } = useGameStore();
-  const active = activeCharacters[player];
-  const { setActiveCharacter, onChoosePhaseEnd } = useChoosePhase();
+  const active = activeCharacters[pos];
+  const { setActiveCharacter, onChoosePhaseEnd } = useChoosePhase(pos);
   const { shouldCharacterHighlight } = usePlayCard();
   const { animationControl } = useTransformControl();
+  const { shouldCharacterHignlight } = useSkill(pos);
   const toggleControl = (index: number) => {
-    if (player === PlayerPosition.Own) {
+    if (pos === PlayerPosition.Own) {
       setSelect && setSelect(index);
       if (index === select && phase === Phase.Choose) {
         animationControl(index);
-        setActiveCharacter(index);
+        setActiveCharacter();
         onChoosePhaseEnd();
       }
     }
   };
 
-  const _Y = player === PlayerPosition.Own ? 20 : -20;
+  const _Y = pos === PlayerPosition.Own ? 20 : -20;
 
   const defaultStyle = {
     transition: "500ms",
@@ -126,7 +136,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
     ...defaultStyle,
     ...(transformStyles[index === active ? "battle" : "ready"] ?? {}),
   });
-  const isCharacterHighlight = shouldCharacterHighlight(player);
+  const isCharacterHighlight = shouldCharacterHighlight(pos);
   return (
     <div className={styles.CharacterZone}>
       <div className={styles.CharacterList}>
@@ -134,13 +144,21 @@ export default function CharacterZone(props: CharacterZoneProps) {
           <div
             key={index}
             style={{
-              zIndex: isCharacterHighlight ? 22 : 9,
+              zIndex:
+                isCharacterHighlight || shouldCharacterHignlight(index)
+                  ? 22
+                  : 9,
               ...style(index),
             }}
             aria-hidden="true"
             onClick={() => toggleControl(index)}
           >
-            <CharacterItem character={character} i={index} select={select} />
+            <CharacterItem
+              character={character}
+              i={index}
+              select={select}
+              pos={pos}
+            />
           </div>
         ))}
       </div>

@@ -127,3 +127,19 @@
   background: #000;
   opacity: 0.5;
 }
+
+.CharacterDamage {
+  position: absolute;
+  background-image: url(/images/damage-icon.png);
+  background-size: cover;
+  width: 55px;
+  height: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  line-height: 40px;
+  -webkit-text-stroke: #000 1px;
+}
