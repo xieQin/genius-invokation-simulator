@@ -35,7 +35,7 @@ export const HandCardItem = (props: CardItemProps) => {
       className={styles.HandCardLayout}
       aria-hidden="true"
       onClick={() => {
-        if (player === PlayerPosition.Opposite) return;
+        if (player === PlayerPosition.Opponent) return;
         onPreview(card);
       }}
     >
@@ -52,7 +52,7 @@ export const HandCardItem = (props: CardItemProps) => {
       </div>
       <div
         className={`${styles.HandCard} ${styles.NormalBack} ${
-          player === PlayerPosition.Opposite
+          player === PlayerPosition.Opponent
             ? styles.HandCardFront
             : styles.HandCardBack
         }`}
@@ -65,7 +65,7 @@ export const HandCardList = (props: CardListProps) => {
   const { phase, setGameStates, activeCards } = useGameStore();
   const { player, cards } = props;
   const playCard = (index: number) => {
-    if (player === PlayerPosition.Opposite) return;
+    if (player === PlayerPosition.Opponent) return;
     if (phase === Phase.Combat) {
       setGameStates("phase", Phase.PlayCard);
       setGameStates(

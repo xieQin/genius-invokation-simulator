@@ -1,0 +1,10 @@
+.Opponent {
+}
+
+.Opponent > div {
+  top: 220px;
+}
+
+.Opponent > div:last-child {
+  height: 240px;
+}

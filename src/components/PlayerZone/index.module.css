@@ -7,8 +7,8 @@
   background-size: cover;
 }
 
-.PlayerZone.Opposite {
-  background-image: url(/images/opposite-player-icon.png);
+.PlayerZone.Opponent {
+  background-image: url(/images/opponent-player-icon.png);
 }
 
 .PlayerContent {

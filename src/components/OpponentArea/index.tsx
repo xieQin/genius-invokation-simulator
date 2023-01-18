@@ -11,10 +11,10 @@ import SummonsZone from "../SummonsZone";
 import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
-export default function OppositeArea() {
+export default function OpponentArea() {
   const { getPlayer } = useGameStore();
-  const opposite = getPlayer(PlayerPosition.Opposite);
-  const { position, characters, cards, supports } = opposite;
+  const opponent = getPlayer(PlayerPosition.Opponent);
+  const { position, characters, cards, supports } = opponent;
   const characterProps: CharacterZoneProps = {
     characters,
     pos: position,
@@ -22,8 +22,8 @@ export default function OppositeArea() {
   const summons: SummonsID[] = [];
 
   return (
-    <div className={`${areaStyles.PlayerArea} ${styles.Opposite}`}>
-      <PlayerZone style={{ top: "40px" }} player={opposite} />
+    <div className={`${areaStyles.PlayerArea} ${styles.Opponent}`}>
+      <PlayerZone style={{ top: "40px" }} player={opponent} />
       <SupportZone
         style={{ top: "180px" }}
         supports={supports}

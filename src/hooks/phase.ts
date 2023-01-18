@@ -23,7 +23,7 @@ export const useChoosePhase = (pos: PlayerPosition) => {
 
   const isSelected = () =>
     (pos === PlayerPosition.Own && selectedCharacters[pos] > -1) ||
-    pos === PlayerPosition.Opposite;
+    pos === PlayerPosition.Opponent;
 
   const setActiveCharacter = () => {
     const isChoosePhase = phase === Phase.Choose;

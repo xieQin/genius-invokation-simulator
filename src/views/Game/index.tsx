@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import styles from "@/assets/styles/area.module.css";
 import Deck from "@/components/Deck";
 import Notice from "@/components/Notice";
 import PreviewZone from "@/components/PreviewZone";
 import SettingZone from "@/components/SettingZone";
-import { useAutoScale, usePreview } from "@/hooks";
+import { useAutoScale, usePreview, useTimeout } from "@/hooks";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
@@ -39,7 +39,7 @@ export default function GamePage() {
           <Game />
           {/* {!loading && ( */}
           {/* <Notice message={<div>{message}</div>} /> */}
-          {/* <Deck own={own} opposite={opposite} /> */}
+          {/* <Deck own={own} opponent={opponent} /> */}
         </main>
       )}
     </div>
@@ -51,16 +51,11 @@ export const Game = () => {
   const { message, msgCallback, phase } = store;
   const { onPreviewEnd } = usePreview();
   const [isPrepared, setIsPrepared] = useState(false);
-  const timer: { current: number | null } = useRef(null);
 
-  useEffect(() => {
-    timer.current = window.setTimeout(() => {
-      setIsPrepared(true);
-    }, 2500);
-    return () => {
-      clearTimeout(timer.current as number);
-    };
-  });
+  useTimeout(() => {
+    setIsPrepared(true);
+  }, 2500);
+
   return (
     <div
       aria-hidden="true"

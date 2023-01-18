@@ -126,7 +126,7 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
       <div className={styles.PreviewCharacter}>
         <CharacterItem
           character={props.preview}
-          pos={PlayerPosition.Opposite}
+          pos={PlayerPosition.Opponent}
         />
       </div>
       <div className={styles.PreviewZoneItem}>

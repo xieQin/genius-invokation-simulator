@@ -12,7 +12,7 @@ export default function PlayerZone(props: {
   return (
     <div
       className={`${styles.PlayerZone} ${
-        player.position === PlayerPosition.Opposite ? styles.Opposite : ""
+        player.position === PlayerPosition.Opponent ? styles.Opponent : ""
       }`}
       {...props}
     >

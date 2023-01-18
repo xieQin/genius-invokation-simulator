@@ -26,7 +26,7 @@ export default function PrepareGame() {
     <div className={styles.PrepareArea}>
       <PreparePlayer pos={PlayerPosition.Own} />
       <div className={styles.PrepareAreaVS}>VS</div>
-      <PreparePlayer pos={PlayerPosition.Opposite} />
+      <PreparePlayer pos={PlayerPosition.Opponent} />
       <div className={styles.PrepareAreaHint}>Genius Invokation TCG</div>
     </div>
   );

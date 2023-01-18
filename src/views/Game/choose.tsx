@@ -11,7 +11,6 @@ export default function ChoosePhase() {
     useChoosePhase(pos);
   const [message, setMessage] = useState("Choose your first character");
 
-  // showMessage(message);
   return (
     <>
       <Notice message={message} timeout={800} callback={() => setMessage("")} />

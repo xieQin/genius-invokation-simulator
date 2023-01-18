@@ -24,7 +24,7 @@ export const initialState: GameState = {
   dices: [[], []] as GIDiceID[][],
   players: [
     InitPlayer("Lumine", PlayerPosition.Own),
-    InitPlayer("Ellin", PlayerPosition.Opposite),
+    InitPlayer("Ellin", PlayerPosition.Opponent),
   ],
   current: PlayerPosition.Own,
   message: "",

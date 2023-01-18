@@ -1,0 +1,34 @@
+.Round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.RoundLayer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 13;
+  background: rgba(0, 0, 0, 0.75);
+}
+.RoundContent {
+  position: absolute;
+  z-index: 14;
+  width: 500px;
+  height: 80px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  /* text-shadow: 0 0 120px #ec9728, 0 0 120px #ec9728, 0 0 100px #ec9728; */
+}
+.RoundContentTitle {
+  font-size: 40px;
+}
+.RoundContentText {
+  font-size: 24px;
+  color: #ec9728;
+  /* text-shadow: 0 0 120px #ec9728, 0 0 120px #ec9728, 0 0 100px #ec9728; */
+}

@@ -18,7 +18,7 @@ export const usePlayCard = () => {
     selectedCharacters,
     updataPlayer,
   } = useGameStore();
-  // const player: IPlayer = pos === PlayerPosition.Own ? own : opposite;
+  // const player: IPlayer = pos === PlayerPosition.Own ? own : opponent;
 
   // const updataPlayerEquipment
 

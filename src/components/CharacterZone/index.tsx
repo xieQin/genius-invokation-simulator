@@ -66,7 +66,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
           )}
           {phase === Phase.Skill &&
             i === activeCharacters[pos] &&
-            pos === PlayerPosition.Opposite && (
+            pos === PlayerPosition.Opponent && (
               <div className={styles.CharacterDamage}>
                 -{calDamage().damage}
               </div>

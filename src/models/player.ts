@@ -14,7 +14,12 @@ export interface IPlayer {
 
 export enum PlayerPosition {
   Own,
-  Opposite,
+  Opponent,
 }
+
+export const PlayerPositionMap = {
+  [PlayerPosition.Own]: "You",
+  [PlayerPosition.Opponent]: "Opponent",
+};
 
 export type PlayerID = keyof typeof PlayerPosition;

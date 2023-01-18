@@ -1,6 +1,6 @@
 import { ICard } from "./card";
 import { ICharacter } from "./character";
-import { GIDice, GIDiceID } from "./die";
+import { GIDiceID } from "./die";
 import { Phase } from "./phase";
 import { IPlayer } from "./player";
 

@@ -3,7 +3,7 @@ import { useGameStore } from "@/stores";
 
 import ClockZone from "../ClockZone";
 import DiceZone from "../DiceZone";
-import OppositeArea from "../OppositeArea";
+import OpponentArea from "../OpponentArea";
 import OwnArea from "../OwnArea";
 import styles from "./index.module.css";
 
@@ -23,7 +23,7 @@ export default function Deck() {
         style={{ opacity: shouldHideDeck() ? 0 : 1 }}
       >
         <DiceZone />
-        <OppositeArea />
+        <OpponentArea />
         <OwnArea />
         <ClockZone onNextRound={onNextRound} />
       </div>
