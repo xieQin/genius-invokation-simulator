@@ -8,4 +8,5 @@ export enum Phase {
   DraftCard = "draft-card",
   ChangeCharacter = "change-characater",
   Equipment = "equipment",
+  Skill = "skill",
 }

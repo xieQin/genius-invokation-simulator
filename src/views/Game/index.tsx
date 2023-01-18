@@ -16,6 +16,7 @@ import InitPhase from "./init";
 import PlayCardPhase from "./play";
 import PrepareGame from "./prepare";
 import RollPhase from "./roll";
+import SkillPhase from "./skill";
 
 export default function GamePage() {
   const { isLandscape } = useAutoScale();
@@ -80,6 +81,7 @@ export const Game = () => {
           <InitPhase />
           {phase === Phase.Choose && <ChoosePhase />}
           <RollPhase />
+          {phase === Phase.Skill && <SkillPhase />}
           {phase === Phase.PlayCard && <PlayCardPhase />}
           {phase === Phase.DraftCard && <DraftCardPhase />}
           {phase === Phase.ChangeCharacter && <ChangeCharacterPhase />}

@@ -3,9 +3,12 @@ import { useState } from "react";
 import ChooseZone, { SetActiveCharacterHint } from "@/components/ChooseZone";
 import Notice from "@/components/Notice";
 import { useChoosePhase } from "@/hooks/phase";
+import { PlayerPosition } from "@/models";
 
 export default function ChoosePhase() {
-  const { onChoosePhaseEnd, isEndValid } = useChoosePhase();
+  const pos = PlayerPosition.Own;
+  const { onChoosePhaseEnd, isEndValid, isSelected, setActiveCharacter } =
+    useChoosePhase(pos);
   const [message, setMessage] = useState("Choose your first character");
 
   // showMessage(message);
@@ -14,7 +17,18 @@ export default function ChoosePhase() {
       <Notice message={message} timeout={800} callback={() => setMessage("")} />
       <ChooseZone
         element={<SetActiveCharacterHint />}
-        onClick={isEndValid() ? onChoosePhaseEnd : () => ({})}
+        onClick={
+          isEndValid()
+            ? onChoosePhaseEnd
+            : isSelected()
+            ? () => {
+                setActiveCharacter();
+                onChoosePhaseEnd();
+              }
+            : () => {
+                console.log("err");
+              }
+        }
       />
     </>
   );

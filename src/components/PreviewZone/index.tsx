@@ -6,6 +6,7 @@ import {
   ICard,
   ICharacter,
   ISkill,
+  Phase,
   PlayerPosition,
   PreviewStatus,
 } from "@/models";
@@ -18,13 +19,20 @@ import { SkillPayItems } from "../SkillZone";
 import styles from "./index.module.css";
 
 export default function PreviewZone() {
-  const { preview } = useGameStore();
+  const { preview, phase } = useGameStore();
+  const shouldShowPreview = phase === Phase.Skill || phase === Phase.Start;
 
   useEffect(() => {
     localStorage.setItem("preview", PreviewStatus.Hide);
   });
   return (
-    <div className={styles.PreviewZone} aria-hidden="true">
+    <div
+      className={styles.PreviewZone}
+      aria-hidden="true"
+      style={{
+        zIndex: shouldShowPreview ? 22 : 12,
+      }}
+    >
       {isCardType(preview) ? (
         <PreviewCard preview={preview as ICard} />
       ) : isCharacterType(preview) ? (
@@ -116,7 +124,10 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
   return (
     <div className={styles.PreviewSection}>
       <div className={styles.PreviewCharacter}>
-        <CharacterItem character={props.preview} />
+        <CharacterItem
+          character={props.preview}
+          pos={PlayerPosition.Opposite}
+        />
       </div>
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>

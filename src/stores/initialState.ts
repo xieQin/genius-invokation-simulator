@@ -11,6 +11,7 @@ export interface GameState {
   message: string;
   activeCards: number[];
   activeCharacters: number[];
+  activeSkills: number[];
   selectedCharacters: number[];
   preview: unknown;
   msgCallback: (() => void) | undefined;
@@ -31,5 +32,6 @@ export const initialState: GameState = {
   activeCards: [-1, -1],
   activeCharacters: [-1, -1],
   selectedCharacters: [-1, -1],
+  activeSkills: [-1, -1],
   preview: null,
 };

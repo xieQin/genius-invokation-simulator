@@ -25,7 +25,7 @@ export default function OwnArea() {
   };
   const characterProps: CharacterZoneProps = {
     characters,
-    player: position,
+    pos: position,
     select,
     setSelect,
   };

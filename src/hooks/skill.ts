@@ -1,16 +1,24 @@
-import { GIDice, ISkill, PlayerPosition } from "@/models";
+import { GIDice, ISkill, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const useSkill = (pos: PlayerPosition) => {
-  const { showMessage, dices: playerDices } = useGameStore();
+  const {
+    showMessage,
+    dices: playerDices,
+    activeCharacters,
+    phase,
+    players,
+    activeSkills,
+  } = useGameStore();
   const dices = playerDices[pos];
 
-  const onCastSkill = (skill: ISkill, pos: PlayerPosition) => {
+  const onCastSkill = () => {
     showMessage("");
-    return {
-      skill,
-      pos,
-    };
+    return {};
+  };
+
+  const shouldCharacterHignlight = (index: number) => {
+    return phase === Phase.Skill && index === activeCharacters[pos];
   };
 
   // todo fix bugs
@@ -42,6 +50,18 @@ export const useSkill = (pos: PlayerPosition) => {
     return true;
   };
 
+  // todo calculate skill damage
+  const calDamage = () => {
+    const enemy = Math.abs(pos - 1);
+    const activeSkill = activeSkills[enemy];
+    const skill =
+      players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
+    return {
+      damage: Math.ceil(Math.random() * 5) - 1,
+      type: skill.type,
+    };
+  };
+
   const getMessage = (skill: ISkill) => {
     return skill;
   };
@@ -50,5 +70,7 @@ export const useSkill = (pos: PlayerPosition) => {
     getMessage,
     isSkillValid,
     onCastSkill,
+    shouldCharacterHignlight,
+    calDamage,
   };
 };

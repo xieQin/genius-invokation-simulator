@@ -17,7 +17,7 @@ export default function OppositeArea() {
   const { position, characters, cards, supports } = opposite;
   const characterProps: CharacterZoneProps = {
     characters,
-    player: position,
+    pos: position,
   };
   const summons: SummonsID[] = [];
 
