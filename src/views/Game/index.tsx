@@ -54,7 +54,7 @@ export const Game = () => {
 
   useTimeout(() => {
     setIsPrepared(true);
-  }, 2500);
+  }, 3500);
 
   return (
     <div
