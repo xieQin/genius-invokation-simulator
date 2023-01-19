@@ -1,11 +1,8 @@
 import { Action, GIDice, ISkill, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
-import { useTimeout } from ".";
-
 export const useSkill = (pos: PlayerPosition) => {
   const {
-    showMessage,
     dices: playerDices,
     activeCharacters,
     phase,
