@@ -81,7 +81,6 @@
   bottom: 0;
   left: 0;
   z-index: 12;
-  animation-duration: 0.6s;
   animation-fill-mode: both;
 }
 
@@ -200,90 +199,95 @@
 
 .GameLayer > .HandAnimate.Animate1 {
   animation-name: Animated1;
+  animation-duration: 0.4s;
 }
 
 @keyframes Animated1 {
   from {
     bottom: 0;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 
   to {
     bottom: 396px;
     left: 478px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 .GameLayer > .HandAnimate.Animate2 {
   animation-name: Animated2;
+  animation-duration: 0.6s;
 }
 
 @keyframes Animated2 {
   from {
     bottom: 0;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 
   to {
     bottom: 396px;
     left: 678px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 .GameLayer > .HandAnimate.Animate3 {
   animation-name: Animated3;
+  animation-duration: 0.8s;
 }
 
 @keyframes Animated3 {
   from {
     bottom: 0;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 
   to {
     bottom: 396px;
     left: 878px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 .GameLayer > .HandAnimate.Animate4 {
   animation-name: Animated4;
+  animation-duration: 1s;
 }
 
 @keyframes Animated4 {
   from {
     bottom: 0;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 
   to {
     bottom: 396px;
     left: 1078px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 }
 
 .GameLayer > .HandAnimate.Animate5 {
   animation-name: Animated5;
+  animation-duration: 1.2s;
 }
 
 @keyframes Animated5 {
   from {
     bottom: 0;
     left: 0;
-    transform: rotate(90deg);
+    transform: rotateZ(90deg);
   }
 
   to {
     bottom: 396px;
     left: 1278px;
-    transform: rotate(0deg);
+    transform: rotateZ(0deg);
   }
 }

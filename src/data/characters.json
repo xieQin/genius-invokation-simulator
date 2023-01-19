@@ -71,7 +71,11 @@
         "imgID": "CelestialShower"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -136,7 +140,11 @@
         "imgID": "SignatureMix"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -201,7 +209,11 @@
         "imgID": "GlacialWaltz"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -266,7 +278,11 @@
         "imgID": "CloudPartingStar"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -340,7 +356,11 @@
         "imgID": "KamisatoArtSenho"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -405,7 +425,11 @@
         "imgID": "ShiningMiracle"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -470,7 +494,11 @@
         "imgID": "Raincutter"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -544,7 +572,11 @@
         "imgID": "IllusoryTorrent"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -609,7 +641,11 @@
         "imgID": "Dawn"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -674,7 +710,11 @@
         "imgID": "Pyronado"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -739,7 +779,11 @@
         "imgID": "FantasticVoyage"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -804,12 +848,85 @@
         "imgID": "RyuukinSaxifrage"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
     "img": "https://xieqin.github.io/invokation/characters/Yoimiya.png",
     "imgID": "Yoimiya"
+  },
+  {
+    "id": 1306,
+    "name": "Klee",
+    "element": "ETFire",
+    "weaponType": "Catalyst",
+    "region": ["Mondstadt", "", ""],
+    "skills": [
+      {
+        "id": "13061",
+        "text": "Deals 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.",
+        "name": "Kaboom!",
+        "costs": [
+          {
+            "costNum": 1,
+            "costType": "Pyro"
+          },
+          {
+            "costNum": 2,
+            "costType": "Void"
+          }
+        ],
+        "type": ["Normal Attack"],
+        "img": "https://xieqin.github.io/invokation/skill/Kaboom.png",
+        "imgID": "Kaboom"
+      },
+      {
+        "id": "13062",
+        "text": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>.",
+        "name": "Jumpy Dumpty",
+        "costs": [
+          {
+            "costNum": 3,
+            "costType": "Pyro"
+          }
+        ],
+        "type": ["Elemental Skill"],
+        "img": "https://xieqin.github.io/invokation/skill/JumpyDumpty.png",
+        "imgID": "JumpyDumpty"
+      },
+      {
+        "id": "13063",
+        "text": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Sparks 'n' Splash</span> at the opponent's play area.",
+        "name": "Sparks 'n' Splash",
+        "costs": [
+          {
+            "costNum": 3,
+            "costType": "Pyro"
+          },
+          {
+            "costNum": 3,
+            "costType": "Energy"
+          }
+        ],
+        "type": ["Elemental Burst"],
+        "img": "https://xieqin.github.io/invokation/skill/SparksnSplash.png",
+        "imgID": "SparksnSplash"
+      }
+    ],
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
+    "profile": null,
+    "elementStatus": null,
+    "hp": 10,
+    "img": "https://xieqin.github.io/invokation/characters/Klee.png",
+    "imgID": "Klee"
   },
   {
     "id": 1401,
@@ -869,7 +986,11 @@
         "imgID": "MidnightPhantasmagoria"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -934,7 +1055,11 @@
         "imgID": "LightningFang"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -999,7 +1124,11 @@
         "imgID": "StarwardSword"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1073,7 +1202,11 @@
         "imgID": "LawfulEnforcer"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1138,7 +1271,11 @@
         "imgID": "ForbiddenCreationIsomer75TypeII"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1203,7 +1340,11 @@
         "imgID": "DandelionBreeze"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1268,7 +1409,11 @@
         "imgID": "Starshatter"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1333,7 +1478,11 @@
         "imgID": "SweepingTime"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1398,7 +1547,11 @@
         "imgID": "TrumpCardKitty"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1477,7 +1630,11 @@
         "imgID": "TideandTorrent"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1542,7 +1699,11 @@
         "imgID": "RippledReflection"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1616,7 +1777,11 @@
         "imgID": "StealthMaster"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1695,7 +1860,11 @@
         "imgID": "PseudoTenguSweeper"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,
@@ -1769,7 +1938,11 @@
         "imgID": "InfusedStonehide"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 8,
@@ -1843,7 +2016,11 @@
         "imgID": "RadicalVitality"
       }
     ],
-    "equipments": null,
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null
+    },
     "profile": null,
     "elementStatus": null,
     "hp": 10,

@@ -1,19 +1,23 @@
-import { GIDice, ISkill, Phase, PlayerPosition } from "@/models";
+import { Action, GIDice, ISkill, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const useSkill = (pos: PlayerPosition) => {
   const {
-    showMessage,
     dices: playerDices,
     activeCharacters,
     phase,
     players,
     activeSkills,
+    actions,
+    setGameStates,
   } = useGameStore();
   const dices = playerDices[pos];
 
   const onCastSkill = () => {
-    showMessage("");
+    setGameStates("actions", [
+      Action.CastSkill,
+      actions[PlayerPosition.Opponent],
+    ]);
     return {};
   };
 
@@ -66,11 +70,23 @@ export const useSkill = (pos: PlayerPosition) => {
     return skill;
   };
 
+  const getSkillAnimation = () => {
+    const own = activeCharacters[PlayerPosition.Own];
+    const opponent = activeCharacters[PlayerPosition.Opponent];
+    if (own === opponent) return 1;
+    if (own - opponent === -1) return 2;
+    if (own - opponent === 1) return 3;
+    if (own - opponent === -2) return 4;
+    if (own - opponent === 2) return 5;
+    return "";
+  };
+
   return {
     getMessage,
     isSkillValid,
     onCastSkill,
     shouldCharacterHignlight,
     calDamage,
+    getSkillAnimation,
   };
 };

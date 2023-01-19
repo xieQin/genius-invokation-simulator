@@ -1,4 +1,11 @@
-import { DeckStatus, GIDiceID, IPlayer, Phase, PlayerPosition } from "@/models";
+import {
+  Action,
+  DeckStatus,
+  GIDiceID,
+  IPlayer,
+  Phase,
+  PlayerPosition,
+} from "@/models";
 import { InitPlayer } from "@/utils";
 
 export interface GameState {
@@ -14,6 +21,7 @@ export interface GameState {
   activeSkills: number[];
   selectedCharacters: number[];
   preview: unknown;
+  actions: Action[];
   msgCallback: (() => void) | undefined;
 }
 
@@ -29,6 +37,7 @@ export const initialState: GameState = {
   current: PlayerPosition.Own,
   message: "",
   msgCallback: undefined,
+  actions: [Action.None, Action.None],
   activeCards: [-1, -1],
   activeCharacters: [-1, -1],
   selectedCharacters: [-1, -1],
