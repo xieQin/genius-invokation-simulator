@@ -10,6 +10,7 @@ import {
 } from "@/models";
 
 import GIData from "./cards_20221205_en-us.json";
+import I18n from "./cards_20221205_i18n.json";
 
 const PUBLIC_PATH =
   process.env.NODE_ENV === "development"
@@ -28,6 +29,23 @@ const ImageIDTrans = (s: string) => {
     .replace(/>*/g, "")
     .replace(/\/*/g, "")
     .replace(/♪*/g, "");
+};
+
+const TextTrans = (s: string) => {
+  return s
+    .replace(/<color=#FFFFFFFF*/g, `<span style='color: #FFFFFFFF'`)
+    .replace(/<color=#99FFFFFF*/g, `<span style='color: #99FFFFFF'`)
+    .replace(/<color=#80C0FFFF*/g, `<span style='color: #80C0FFFF'`)
+    .replace(/<color=#FF9999FF*/g, `<span style='color: #FF9999FF'`)
+    .replace(/<color=#FFACFFFF*/g, `<span style='color: #FFACFFFF'`)
+    .replace(/<color=#80FFD7FF*/g, `<span style='color: #80FFD7FF'`)
+    .replace(/<color=#FFE699FF*/g, `<span style='color: #FFE699FF'`)
+    .replace(/<color=#7EC236FF*/g, `<span style='color: #7EC236FF'`)
+    .replace(/<color=#FFD780FF*/g, `<span style='color: #FFD780FF'`)
+    .replace(/<color=#99FF88FF*/g, `<span style='color: #99FF88FF'`)
+    .replace(/<color=#FFD780FF*/g, `<span style='color: #FFD780FF'`)
+    .replace(/<color=#FFD780FF*/g, `<span style='color: #FFD780FF'`)
+    .replace(/\/color>*/g, "/span>");
 };
 
 type costType = "1" | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17";
@@ -70,7 +88,7 @@ export const transCharacters = () => {
         region: role.belong_to as GIRegion[],
         skills: role.role_skill_infos.map(skill => ({
           id: skill.id,
-          text: skill.skill_text,
+          text: TextTrans(skill.skill_text),
           name: skill.name,
           costs: skill.skill_costs
             .filter(c => c.cost_icon != "")
@@ -105,7 +123,7 @@ export const transCards = () => {
       ({
         id: card.id,
         name: card.name,
-        content: card.content,
+        content: TextTrans(card.content),
         mainType: CardTypeTrans(card.action_type as cardType),
         subType: card.action_card_tags
           .filter(t => t.text != "")
@@ -128,5 +146,28 @@ export const transCards = () => {
   writeFileSync("./src/data/cards.json", JSON.stringify(res));
 };
 
+type I18NType = {
+  [k: string]: I18NContentType;
+};
+
+type I18NContentType = {
+  [k: string]: string;
+};
+
+export const transI18n = () => {
+  const _i18n = I18n as I18NType;
+  const i18n = I18n as I18NType;
+  for (const lng in _i18n) {
+    const _lng = {} as I18NContentType;
+    const trans = _i18n[lng] as I18NContentType;
+    for (const key in trans) {
+      _lng[TextTrans(key)] = TextTrans(trans[key]);
+    }
+    i18n[lng] = _lng;
+  }
+  writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
+};
+
 transCharacters();
 transCards();
+transI18n();

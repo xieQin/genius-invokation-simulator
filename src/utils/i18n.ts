@@ -3,7 +3,7 @@ import i18n from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
 
-import i18nResources from "@/data/cards_20221205_i18n.json";
+import i18nResources from "@/data/i18n.json";
 
 // https://www.i18next.com/how-to/faq#how-should-the-language-codes-be-formatted
 export const resources = {
