@@ -10,10 +10,10 @@ export default function HomePage() {
       </div>
       <div className={[styles.Container].join(" ")}>
         <div
-          className={[styles.Card, styles.Barbara, styles.Animate2].join(" ")}
+          className={[styles.Card, styles.Barbara, styles.Animate].join(" ")}
         ></div>
         <div
-          className={[styles.Card, styles.Barbara, styles.Animate].join(" ")}
+          className={[styles.Card, styles.Barbara, styles.Animate3].join(" ")}
         ></div>
         <div
           className={[styles.Card, styles.Barbara, styles.Animate].join(" ")}

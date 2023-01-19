@@ -1,4 +1,4 @@
-import { Phase } from "@/models/phase";
+import { Action, Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 import ClockZone from "../ClockZone";
@@ -14,6 +14,7 @@ export default function Deck() {
       showMessage("");
       setGameStates("turn", turn + 1);
       setGameStates("phase", Phase.DraftCard);
+      setGameStates("actions", [Action.None, Action.None]);
     });
   };
   return (

@@ -10,3 +10,8 @@ export enum Phase {
   Equipment = "equipment",
   Skill = "skill",
 }
+
+export enum Action {
+  None = "",
+  CastSkill = "cast-skill",
+}

@@ -18,7 +18,6 @@ export const useAutoScale = () => {
   const autoScale = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
-    console.log(isLandscape);
     if (isLandscape) {
       setScale(getScale());
       (

@@ -3,7 +3,7 @@ import { FC, useState } from "react";
 import { PUBLIC_PATH } from "@/configs";
 import { usePlayCard, usePreview, useSkill } from "@/hooks";
 import { useChoosePhase } from "@/hooks/phase";
-import { ICharacter, Phase, PlayerPosition } from "@/models";
+import { Action, ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
@@ -31,16 +31,22 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character, i, select, pos } = props;
-  const { phase, activeCharacters } = useGameStore();
+  const { phase, activeCharacters, actions } = useGameStore();
   const { onPreview } = usePreview();
-  const { calDamage } = useSkill(pos);
+  const { calDamage, getSkillAnimation } = useSkill(pos);
+  const isActive = i === activeCharacters[pos];
+  const isOwnActive = isActive && pos === PlayerPosition.Own;
+  const useSkillAnimation = actions[pos] === Action.CastSkill && isOwnActive;
   if (!character) {
     return <></>;
   }
   return (
     <div
       aria-hidden="true"
-      className={styles.CharacterItem}
+      className={[
+        styles.CharacterItem,
+        useSkillAnimation ? styles[`Animate${getSkillAnimation()}`] : "",
+      ].join(" ")}
       onClick={() => {
         onPreview(character);
       }}
