@@ -27,7 +27,7 @@ export default function InitPhase() {
       if (phase === Phase.Init) {
         setGameStates("phase", Phase.Start);
       }
-    }, 600);
+    }, 1200);
     return () => {
       clearTimeout(timeout.current as number);
     };
