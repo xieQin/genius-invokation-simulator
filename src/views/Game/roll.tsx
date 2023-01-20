@@ -5,11 +5,18 @@ import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
 
 export default function RollPhase() {
-  const { isRollValid, cacheDices, onRollPhaseEnd } = useRollPhase(
-    PlayerPosition.Own
-  );
+  const {
+    isRollValid,
+    onRollPhaseStart,
+    onRollPhaseEnd,
+    isRerollValid,
+    shouldReroll,
+    onRerollDice,
+  } = useRollPhase(PlayerPosition.Own);
 
   if (!isRollValid) return <></>;
+
+  const cacheDices = onRollPhaseStart();
 
   return (
     <div
@@ -18,7 +25,7 @@ export default function RollPhase() {
     >
       <div className={styles.GameModalLayerText}>
         <p>ReRoll</p>
-        <p>select dice to reroll</p>
+        {isRerollValid ? <p>select dice to reroll</p> : <p>reroll result</p>}
       </div>
       <div className={styles.GameModalLayer}></div>
       <div className={styles.RollLayer}>
@@ -26,9 +33,12 @@ export default function RollPhase() {
           <div
             key={index}
             aria-hidden="true"
-            className={[styles.RollDice].join(" ")}
+            className={[
+              styles.RollDice,
+              shouldReroll(index) ? styles.Selected : "",
+            ].join(" ")}
             onClick={() => {
-              console.log(index);
+              isRerollValid && onRerollDice(index);
             }}
           >
             <img
