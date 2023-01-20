@@ -71,6 +71,10 @@
   width: 160px;
   height: 160px;
   margin: 20px;
+  cursor: pointer;
+}
+.RollDice.Selected {
+  border: 3px solid gold;
 }
 .RollDice > img {
   width: 100%;

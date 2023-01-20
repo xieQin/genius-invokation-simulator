@@ -23,6 +23,7 @@ export interface GameState {
   preview: unknown;
   actions: Action[];
   switchCards: number[][];
+  rerollDices: number[][];
   msgCallback: (() => void) | undefined;
 }
 
@@ -45,4 +46,5 @@ export const initialState: GameState = {
   activeSkills: [-1, -1],
   preview: null,
   switchCards: [[], []],
+  rerollDices: [[], []],
 };

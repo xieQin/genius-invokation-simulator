@@ -15,5 +15,7 @@ export enum Action {
   None = "",
   SwitchCard = "switch-card",
   ConfirmSwitchCard = "confirm-switch-card",
+  RerollDice = "reroll-dice",
+  ConfirmRerollDice = "confirm-reroll-dice",
   CastSkill = "cast-skill",
 }

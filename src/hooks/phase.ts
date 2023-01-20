@@ -1,5 +1,13 @@
-import { Action, ICard, Phase, PlayerPosition, PreviewStatus } from "@/models";
+import {
+  Action,
+  GIDiceID,
+  ICard,
+  Phase,
+  PlayerPosition,
+  PreviewStatus,
+} from "@/models";
 import { useGameStore } from "@/stores";
+import { rollDice } from "@/utils";
 
 import { useTimeout } from "./utils";
 
@@ -58,12 +66,32 @@ export const useStartPhase = (pos: PlayerPosition) => {
   };
 
   const onStartPhaseEnd = () => {
-    onSwitchCardConfirm();
-    if (actions[pos] === Action.ConfirmSwitchCard) {
+    const switches = switchCards[pos];
+    if (switches.length === 0) {
       setGameStates("phase", Phase.Choose);
       popCardStack(5, PlayerPosition.Own);
       toggleDeckStatus();
+      return;
     }
+    setGameStates("actions", [
+      Action.ConfirmSwitchCard,
+      actions[PlayerPosition.Opponent],
+    ]);
+    const targethandCards = Object.assign([], players[pos].cards) as ICard[];
+    switches.forEach(i => {
+      delete targethandCards[i];
+      pushCardsStack([players[pos].cards[i]], pos);
+      targethandCards[i] = draftHandCard(1, pos)[0];
+      popCardStack(1, PlayerPosition.Own);
+    });
+    updatePlayer(
+      {
+        ...players[pos],
+        cards: targethandCards,
+      },
+      pos
+    );
+    setGameStates("switchCards", [[], switchCards[PlayerPosition.Opponent]]);
   };
 
   const onSwitchCard = (cardIdx: number) => {
@@ -137,8 +165,39 @@ export const useChoosePhase = (pos: PlayerPosition) => {
   };
 };
 
-export const useRollPhase = () => {
-  return {};
+export const useRollPhase = (pos: PlayerPosition) => {
+  const {
+    phase,
+    setGameStates,
+    shouldHideDeck,
+    toggleDeckStatus,
+    showMessage,
+    actions,
+  } = useGameStore();
+  const isRollValid = shouldHideDeck() && phase === Phase.Roll;
+  const isRerollValid = actions[pos] !== Action.ConfirmSwitchCard;
+  const l = localStorage.getItem("cacheDices");
+  let cacheDices = l === null ? [] : l.split(",");
+  if (!cacheDices || l === null) {
+    cacheDices = rollDice();
+    localStorage.setItem("cacheDices", cacheDices.join(","));
+  }
+
+  const onRollPhaseEnd = (dices: GIDiceID[]) => {
+    setGameStates("phase", Phase.Combat);
+    setGameStates("dices", [dices, rollDice()]);
+    toggleDeckStatus();
+    localStorage.removeItem("cacheDices");
+    showMessage("Action Phase", () => {
+      showMessage("");
+    });
+  };
+  return {
+    isRollValid,
+    isRerollValid,
+    cacheDices,
+    onRollPhaseEnd,
+  };
 };
 
 export const useCombatPhase = () => {

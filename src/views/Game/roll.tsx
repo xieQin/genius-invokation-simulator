@@ -1,39 +1,15 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
+import { useRollPhase } from "@/hooks";
 import { PlayerPosition } from "@/models";
 import { GIDiceID } from "@/models/die";
-import { Phase } from "@/models/phase";
-import { useGameStore } from "@/stores";
-import { rollDice } from "@/utils";
 
 export default function RollPhase() {
-  const {
-    phase,
-    setGameStates,
-    shouldHideDeck,
-    toggleDeckStatus,
-    updateDices,
-    showMessage,
-  } = useGameStore();
+  const { isRollValid, cacheDices, onRollPhaseEnd } = useRollPhase(
+    PlayerPosition.Own
+  );
 
-  if (!shouldHideDeck() || phase !== Phase.Roll) return <></>;
-
-  const onConfirmDice = (dices: GIDiceID[]) => {
-    setGameStates("phase", Phase.Combat);
-    updateDices(dices, PlayerPosition.Own);
-    updateDices(rollDice(), PlayerPosition.Opponent);
-    toggleDeckStatus();
-    localStorage.removeItem("cacheDices");
-    showMessage("Action Phase", () => {
-      showMessage("");
-    });
-  };
-  const l = localStorage.getItem("cacheDices");
-  let cacheDices = l === null ? [] : l.split(",");
-  if (!cacheDices || l === null) {
-    cacheDices = rollDice();
-    localStorage.setItem("cacheDices", cacheDices.join(","));
-  }
+  if (!isRollValid) return <></>;
 
   return (
     <div
@@ -47,10 +23,17 @@ export default function RollPhase() {
       <div className={styles.GameModalLayer}></div>
       <div className={styles.RollLayer}>
         {cacheDices.map((dice, index) => (
-          <div key={index} className={styles.RollDice}>
+          <div
+            key={index}
+            aria-hidden="true"
+            className={[styles.RollDice].join(" ")}
+            onClick={() => {
+              console.log(index);
+            }}
+          >
             <img
               src={`${PUBLIC_PATH}/images/${dice.toLowerCase()}-${
-                Math.ceil(index / (2 + index / 2)) + 1
+                Math.floor(index / 2) + 1
               }.png`}
               alt=""
             />
@@ -62,7 +45,7 @@ export default function RollPhase() {
         aria-hidden="true"
         style={{ bottom: 80 }}
         onClick={() => {
-          onConfirmDice(cacheDices as GIDiceID[]);
+          onRollPhaseEnd(cacheDices as GIDiceID[]);
         }}
       >
         <div className={styles.ConfirmIcon}></div>
