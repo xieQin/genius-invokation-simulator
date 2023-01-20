@@ -5,7 +5,7 @@ import { GIDice, GIDiceID } from "@/models/die";
 import { useGameStore } from "@/stores";
 
 export const useCostDice = (pos: PlayerPosition) => {
-  const { dices: playerDices, updataDices } = useGameStore();
+  const { dices: playerDices, updateDices } = useGameStore();
   const [actives, setActives] = useState<number[]>([]);
   const dices = playerDices[pos];
   const onSelectDice = (dice: GIDiceID, index: number) => {
@@ -42,7 +42,7 @@ export const useCostDice = (pos: PlayerPosition) => {
   const costDices = () => {
     let temp = Object.assign([], dices);
     temp = temp.filter((_, i) => !actives.includes(i));
-    updataDices(temp, pos);
+    updateDices(temp, pos);
   };
 
   return {

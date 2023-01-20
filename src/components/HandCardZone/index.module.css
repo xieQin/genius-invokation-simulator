@@ -168,13 +168,14 @@
   transform: translate(0, -35px);
   transition: 0.5s;
 }
-.ExpandHandCardList .HandCardLayout:hover .CardSelected {
+.CardSelected {
   position: absolute;
   background-image: url(/images/select-card-icon.png);
   background-size: cover;
   width: 130px;
   height: 130px;
-  top: 50px;
+  left: 35px;
+  top: -195px;
   z-index: 12;
   animation: CardSelect 15s linear infinite;
 }

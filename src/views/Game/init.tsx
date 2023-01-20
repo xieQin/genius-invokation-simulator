@@ -10,8 +10,8 @@ export default function InitPhase() {
   const { phase, players, setGameStates, shouldHideDeck } = gameStates;
   const own = players[PlayerPosition.Own];
   const opponent = players[PlayerPosition.Opponent];
-  const pos = PlayerPosition.Opponent;
-  const { onStartPhaseEnd, handCards, switchCards } = useStartPhase(
+  const opponentPos = PlayerPosition.Opponent;
+  const { onStartPhaseEnd, isSwitchCardValid } = useStartPhase(
     PlayerPosition.Own
   );
 
@@ -25,12 +25,12 @@ export default function InitPhase() {
     <>
       {phase === Phase.Init && (
         <div className={styles.GameLayer}>
-          {handCards.map((card, i) => (
+          {own.cards.map((card, i) => (
             <div
               key={i}
               className={`${styles.HandAnimate} ${styles[`Animate${i + 1}`]}`}
             >
-              <HandCardItem card={card} player={pos} />
+              <HandCardItem card={card} player={opponentPos} />
             </div>
           ))}
         </div>
@@ -39,7 +39,11 @@ export default function InitPhase() {
         <div className={styles.GameLayer}>
           <div className={styles.GameModalLayerText}>
             <p>Starting Hands</p>
-            <p>select card(s) to switch</p>
+            {isSwitchCardValid ? (
+              <p>select card(s) to switch</p>
+            ) : (
+              <p>switch result</p>
+            )}
           </div>
           <div className={styles.GameModalLayer}></div>
           <DraftHandCardZone cards={own.cards} player={PlayerPosition.Own} />

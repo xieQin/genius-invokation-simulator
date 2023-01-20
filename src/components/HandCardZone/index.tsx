@@ -131,7 +131,8 @@ export const DraftHandCardZone = (props: CardListProps) => {
 
 export const DraftHandCardList = (props: CardListProps) => {
   const { player, cards } = props;
-  const { onSwitchCard, shouldShowSwitchHint } = useStartPhase(player);
+  const { onSwitchCard, shouldShowSwitchHint, isSwitchCardValid } =
+    useStartPhase(player);
   return (
     <div className={styles.HandCardList}>
       {cards.map((card, index) => (
@@ -140,12 +141,15 @@ export const DraftHandCardList = (props: CardListProps) => {
           aria-hidden="true"
           draggable="true"
           onClick={() => {
-            onSwitchCard(index);
+            isSwitchCardValid && onSwitchCard(index);
           }}
         >
           <HandCardItem card={card} player={player} />
           {shouldShowSwitchHint(index) && (
-            <div className={styles.HandCardSwitch}>switch</div>
+            <div style={{ position: "relative" }}>
+              <div className={styles.HandCardSwitch}>switch</div>
+              <div className={styles.CardSelected}></div>
+            </div>
           )}
         </div>
       ))}

@@ -12,7 +12,7 @@ export default function RollPhase() {
     setGameStates,
     shouldHideDeck,
     toggleDeckStatus,
-    updataDices,
+    updateDices,
     showMessage,
   } = useGameStore();
 
@@ -20,8 +20,8 @@ export default function RollPhase() {
 
   const onConfirmDice = (dices: GIDiceID[]) => {
     setGameStates("phase", Phase.Combat);
-    updataDices(dices, PlayerPosition.Own);
-    updataDices(rollDice(), PlayerPosition.Opponent);
+    updateDices(dices, PlayerPosition.Own);
+    updateDices(rollDice(), PlayerPosition.Opponent);
     toggleDeckStatus();
     localStorage.removeItem("cacheDices");
     showMessage("Action Phase", () => {

@@ -1,4 +1,4 @@
-import { Phase, PlayerPosition, PreviewStatus } from "@/models";
+import { Action, ICard, Phase, PlayerPosition, PreviewStatus } from "@/models";
 import { useGameStore } from "@/stores";
 
 import { useTimeout } from "./utils";
@@ -10,11 +10,15 @@ export const useInitPhase = () => {
 export const useStartPhase = (pos: PlayerPosition) => {
   const {
     phase,
+    players,
+    actions,
     setGameStates,
     popCardStack,
     toggleDeckStatus,
-    draftHandCard,
     switchCards,
+    updatePlayer,
+    draftHandCard,
+    pushCardsStack,
   } = useGameStore();
 
   useTimeout(() => {
@@ -23,16 +27,39 @@ export const useStartPhase = (pos: PlayerPosition) => {
     }
   }, 1200);
 
-  const handCards = draftHandCard(5, PlayerPosition.Own);
-
   const shouldShowSwitchHint = (idx: number) =>
     pos === PlayerPosition.Own && switchCards[pos].includes(idx);
 
-  const onStartPhaseEnd = () => {
+  const isSwitchCardValid = actions[pos] !== Action.ConfirmSwitchCard;
+
+  // todo fix bug
+  const onSwitchCardConfirm = () => {
     const switches = switchCards[pos];
-    if (switches.length > 0) {
-      console.log(switches);
-    } else {
+    if (switches.length === 0) return;
+    setGameStates("actions", [
+      Action.ConfirmSwitchCard,
+      actions[PlayerPosition.Opponent],
+    ]);
+    const targethandCards = Object.assign([], players[pos].cards) as ICard[];
+    switches.forEach(i => {
+      delete targethandCards[i];
+      pushCardsStack([players[pos].cards[i]], pos);
+      targethandCards[i] = draftHandCard(1, pos)[0];
+      popCardStack(1, PlayerPosition.Own);
+    });
+    updatePlayer(
+      {
+        ...players[pos],
+        cards: targethandCards,
+      },
+      pos
+    );
+    setGameStates("switchCards", [[], switchCards[PlayerPosition.Opponent]]);
+  };
+
+  const onStartPhaseEnd = () => {
+    onSwitchCardConfirm();
+    if (actions[pos] === Action.ConfirmSwitchCard) {
       setGameStates("phase", Phase.Choose);
       popCardStack(5, PlayerPosition.Own);
       toggleDeckStatus();
@@ -49,14 +76,14 @@ export const useStartPhase = (pos: PlayerPosition) => {
     }
     setGameStates("switchCards", [targetCards, switchCards[1]]);
   };
-  console.log(switchCards);
 
   return {
     switchCards,
-    onSwitchCard,
+    isSwitchCardValid,
     shouldShowSwitchHint,
-    handCards,
+    onSwitchCard,
     onStartPhaseEnd,
+    onSwitchCardConfirm,
   };
 };
 
