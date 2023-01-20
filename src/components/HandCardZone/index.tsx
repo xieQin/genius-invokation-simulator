@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePreview } from "@/hooks";
+import { usePreview, useStartPhase } from "@/hooks";
 import { ICard, ICost, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
@@ -131,10 +131,23 @@ export const DraftHandCardZone = (props: CardListProps) => {
 
 export const DraftHandCardList = (props: CardListProps) => {
   const { player, cards } = props;
+  const { onSwitchCard, shouldShowSwitchHint } = useStartPhase(player);
   return (
     <div className={styles.HandCardList}>
       {cards.map((card, index) => (
-        <HandCardItem key={index} card={card} player={player} />
+        <div
+          key={index}
+          aria-hidden="true"
+          draggable="true"
+          onClick={() => {
+            onSwitchCard(index);
+          }}
+        >
+          <HandCardItem card={card} player={player} />
+          {shouldShowSwitchHint(index) && (
+            <div className={styles.HandCardSwitch}>switch</div>
+          )}
+        </div>
       ))}
     </div>
   );

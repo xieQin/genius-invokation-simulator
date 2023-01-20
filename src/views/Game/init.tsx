@@ -1,42 +1,26 @@
-import { useEffect, useRef } from "react";
-
 import styles from "@/assets/styles/game.module.css";
 import { DraftHandCardZone, HandCardItem } from "@/components/HandCardZone";
+import { useStartPhase, useTimeout } from "@/hooks";
 import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 export default function InitPhase() {
   const gameStates = useGameStore();
-  const {
-    phase,
-    players,
-    setGameStates,
-    toggleDeckStatus,
-    shouldHideDeck,
-    draftHandCard,
-    popCardStack,
-  } = gameStates;
+  const { phase, players, setGameStates, shouldHideDeck } = gameStates;
   const own = players[PlayerPosition.Own];
   const opponent = players[PlayerPosition.Opponent];
-  const handCards = draftHandCard(5, PlayerPosition.Own);
-  const timeout: { current: number | null } = useRef(null);
   const pos = PlayerPosition.Opponent;
-  useEffect(() => {
-    timeout.current = window.setTimeout(() => {
-      if (phase === Phase.Init) {
-        setGameStates("phase", Phase.Start);
-      }
-    }, 1200);
-    return () => {
-      clearTimeout(timeout.current as number);
-    };
-  });
-  const onConfirm = () => {
-    setGameStates("phase", Phase.Choose);
-    popCardStack(5, PlayerPosition.Own);
-    toggleDeckStatus();
-  };
+  const { onStartPhaseEnd, handCards, switchCards } = useStartPhase(
+    PlayerPosition.Own
+  );
+
+  useTimeout(() => {
+    if (phase === Phase.Init) {
+      setGameStates("phase", Phase.Start);
+    }
+  }, 1200);
+
   return (
     <>
       {phase === Phase.Init && (
@@ -67,7 +51,7 @@ export default function InitPhase() {
             className={styles.GameLayerBtns}
             aria-hidden="true"
             onClick={() => {
-              onConfirm();
+              onStartPhaseEnd();
             }}
           >
             <div className={styles.ConfirmIcon}></div>
