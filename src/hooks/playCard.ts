@@ -16,11 +16,11 @@ export const usePlayCard = () => {
     players,
     showMessage,
     selectedCharacters,
-    updataPlayer,
+    updatePlayer,
   } = useGameStore();
   // const player: IPlayer = pos === PlayerPosition.Own ? own : opponent;
 
-  // const updataPlayerEquipment
+  // const updatePlayerEquipment
 
   const onPlayCard = (card: ICard, pos: PlayerPosition) => {
     if (card.mainType === CardMainType.Support) {
@@ -34,11 +34,11 @@ export const usePlayCard = () => {
       const player = Object.assign({}, players[pos]);
       if (type === EquipmentMainType.Weapon) {
         player.characters[selectedCharacters[pos]].equipments.weapon = card;
-        updataPlayer(player, pos);
+        updatePlayer(player, pos);
       }
       if (type === EquipmentMainType.Artifact) {
         player.characters[selectedCharacters[pos]].equipments.artifact = card;
-        updataPlayer(player, pos);
+        updatePlayer(player, pos);
       }
     }
     showMessage("");

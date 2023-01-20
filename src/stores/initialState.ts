@@ -22,6 +22,8 @@ export interface GameState {
   selectedCharacters: number[];
   preview: unknown;
   actions: Action[];
+  switchCards: number[][];
+  rerollDices: number[][];
   msgCallback: (() => void) | undefined;
 }
 
@@ -43,4 +45,6 @@ export const initialState: GameState = {
   selectedCharacters: [-1, -1],
   activeSkills: [-1, -1],
   preview: null,
+  switchCards: [[], []],
+  rerollDices: [[], []],
 };

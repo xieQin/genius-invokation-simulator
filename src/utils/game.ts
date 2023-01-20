@@ -14,9 +14,9 @@ export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
   return res;
 }
 
-export const rollDice = (): GIDiceID[] => {
+export const rollDice = (num = 8): GIDiceID[] => {
   const diceMap = new Map();
-  const dices = getRandom(8, [0, 1, 2, 3, 4, 5, 6, 7], true);
+  const dices = getRandom(num, [0, 1, 2, 3, 4, 5, 6, 7], true);
   dices.map(d => {
     diceMap.set(
       GIDice[d],
