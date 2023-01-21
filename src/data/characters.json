@@ -2,7 +2,7 @@
   {
     "id": 1101,
     "name": "Ganyu",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -59,7 +59,7 @@
   {
     "id": 1102,
     "name": "Diona",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -107,7 +107,7 @@
   {
     "id": 1103,
     "name": "Kaeya",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -155,7 +155,7 @@
   {
     "id": 1104,
     "name": "Chongyun",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Claymore",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -203,7 +203,7 @@
   {
     "id": 1105,
     "name": "Kamisato Ayaka",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Inazuma", "", ""],
     "skills": [
@@ -260,7 +260,7 @@
   {
     "id": 1201,
     "name": "Barbara",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -308,7 +308,7 @@
   {
     "id": 1202,
     "name": "Xingqiu",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -356,7 +356,7 @@
   {
     "id": 1203,
     "name": "Mona",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -413,7 +413,7 @@
   {
     "id": 1301,
     "name": "Diluc",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -461,7 +461,7 @@
   {
     "id": 1302,
     "name": "Xiangling",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Polearm",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -509,7 +509,7 @@
   {
     "id": 1303,
     "name": "Bennett",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -557,7 +557,7 @@
   {
     "id": 1305,
     "name": "Yoimiya",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Bow",
     "region": ["Inazuma", "", ""],
     "skills": [
@@ -605,7 +605,7 @@
   {
     "id": 1306,
     "name": "Klee",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -653,7 +653,7 @@
   {
     "id": 1401,
     "name": "Fischl",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -701,7 +701,7 @@
   {
     "id": 1402,
     "name": "Razor",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -749,7 +749,7 @@
   {
     "id": 1403,
     "name": "Keqing",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -797,7 +797,7 @@
   {
     "id": 1404,
     "name": "Cyno",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Polearm",
     "region": ["Sumeru", "", ""],
     "skills": [
@@ -854,7 +854,7 @@
   {
     "id": 1501,
     "name": "Sucrose",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -902,7 +902,7 @@
   {
     "id": 1502,
     "name": "Jean",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -950,7 +950,7 @@
   {
     "id": 1601,
     "name": "Ningguang",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Catalyst",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -998,7 +998,7 @@
   {
     "id": 1602,
     "name": "Noelle",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -1046,7 +1046,7 @@
   {
     "id": 1701,
     "name": "Collei",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Bow",
     "region": ["Sumeru", "", ""],
     "skills": [
@@ -1094,7 +1094,7 @@
   {
     "id": 2201,
     "name": "Rhodeia of Loch",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
@@ -1151,7 +1151,7 @@
   {
     "id": 2202,
     "name": "Mirror Maiden",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
@@ -1199,7 +1199,7 @@
   {
     "id": 2301,
     "name": "Fatui Pyro Agent",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
@@ -1256,7 +1256,7 @@
   {
     "id": 2501,
     "name": "Maguu Kenki",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
@@ -1313,7 +1313,7 @@
   {
     "id": 2601,
     "name": "Stonehide Lawachurl",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "Hilichurl", ""],
     "skills": [
@@ -1370,7 +1370,7 @@
   {
     "id": 2701,
     "name": "Jadeplume Terrorshroom",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [

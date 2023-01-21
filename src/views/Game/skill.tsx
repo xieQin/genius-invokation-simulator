@@ -26,7 +26,6 @@ export default function SkillPhase() {
       costDices();
       setGameStates("phase", Phase.Combat);
       onCastSkill();
-      console.log(actions);
     } else {
       console.log("error");
     }
