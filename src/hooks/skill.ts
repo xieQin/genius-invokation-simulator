@@ -1,6 +1,6 @@
 import { Action, ICost, ISkill, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
-import { dicesToMap, diceToNumber } from "@/utils";
+import { isCostDiceValid } from "@/utils";
 
 export const useSkill = (pos: PlayerPosition) => {
   const {
@@ -26,22 +26,7 @@ export const useSkill = (pos: PlayerPosition) => {
     return phase === Phase.Skill && index === activeCharacters[pos];
   };
 
-  const isSkillValid = (costs: ICost[] = []) => {
-    const diceMap = dicesToMap(diceToNumber(dices));
-    const costMap = new Map();
-    costs.forEach(cost => {
-      costMap.set(cost.costType, cost.costNum);
-    });
-    for (const cost of costMap) {
-      const diceType = cost[0];
-      const diceNum = cost[1];
-      const omni = diceMap.get("Omni") ?? 0;
-      const _diceType = diceMap.get(diceType) ?? 0;
-      if (diceType === "Void" && diceMap.size < diceNum) return false;
-      if (diceType !== "Void" && diceNum > omni + _diceType) return false;
-    }
-    return true;
-  };
+  const isSkillValid = (costs: ICost[] = []) => isCostDiceValid(costs, dices);
 
   // todo calculate skill damage
   const calDamage = () => {

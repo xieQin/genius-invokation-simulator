@@ -1,6 +1,13 @@
 import CardData from "@/data/cards.json";
 import CharacterData from "@/data/characters.json";
-import { ICard, ICharacter, IPlayer, ISkill, PlayerPosition } from "@/models";
+import {
+  ICard,
+  ICharacter,
+  ICost,
+  IPlayer,
+  ISkill,
+  PlayerPosition,
+} from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
 
 export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
@@ -67,6 +74,24 @@ export const sortDice = (diceMap: Map<GIDiceID, number>) => {
     }
   });
   return res;
+};
+
+export const isCostDiceValid = (costs: ICost[], dices: GIDiceID[]) => {
+  const dicesMap = dicesToMap(diceToNumber(dices));
+  const costMap = new Map();
+  costs.forEach(cost => {
+    costMap.set(cost.costType, cost.costNum);
+  });
+  for (const cost of costMap) {
+    const diceType = cost[0];
+    const diceNum = cost[1];
+    const omni = dicesMap.get("Omni") ?? 0;
+    const _diceType = dicesMap.get(diceType) ?? 0;
+    if (omni > diceNum) continue;
+    if (diceType === "Void" && dicesMap.size < diceNum) return false;
+    if (diceType !== "Void" && diceNum > omni + _diceType) return false;
+  }
+  return true;
 };
 
 export const isCharacterType = (data: unknown) => {
