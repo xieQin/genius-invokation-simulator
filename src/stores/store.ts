@@ -98,4 +98,13 @@ export const useGameStore = create<GameStore>((set, get) => ({
       message,
       msgCallback: callback,
     })),
+
+  addSummon: (summon, pos) => {
+    let player = get().getPlayer(pos);
+    player = {
+      ...player,
+      summons: [...player.summons, summon],
+    };
+    get().updatePlayer(player, pos);
+  },
 }));

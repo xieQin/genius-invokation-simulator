@@ -10,16 +10,58 @@ export const useSkill = (pos: PlayerPosition) => {
     players,
     activeSkills,
     actions,
+    addSummon,
     setGameStates,
   } = useGameStore();
   const dices = playerDices[pos];
 
   const onCastSkill = () => {
+    const skill = activeSkills[pos];
+    const use_skill =
+      players[pos].characters[activeCharacters[pos]].skills[skill];
     setGameStates("actions", [
       Action.CastSkill,
       actions[PlayerPosition.Opponent],
     ]);
-    return {};
+    if (use_skill.name === "Mirror Reflection of Doom") {
+      addSummon("Reflection", pos);
+    }
+    if (use_skill.name === "Forbidden Creation - Isomer 75 / Type II") {
+      addSummon("LargeWindSpirit", pos);
+    }
+    if (use_skill.name === "Stellar Restoration") {
+      addSummon("LightningStiletto", pos);
+    }
+    if (use_skill.name === "Guoba Attack") {
+      addSummon("Guoba", pos);
+    }
+    if (use_skill.name === "Trump-Card Kitty") {
+      addSummon("CuileinAnbar", pos);
+    }
+    if (use_skill.name === "Celestial Shower") {
+      addSummon("SacredCryoPearl", pos);
+    }
+    if (use_skill.name === "Signature Mix") {
+      addSummon("DrunkenMist", pos);
+    }
+    if (use_skill.name === "Kamisato Art: Soumetsu") {
+      addSummon("FrostflakeSekiNoTo", pos);
+    }
+    if (use_skill.name === "Let the Show Begin♪") {
+      addSummon("MelodyLoop", pos);
+    }
+    if (use_skill.name === "Nightrider") {
+      addSummon("Oz", pos);
+    }
+    if (use_skill.name === "Dandelion Breeze") {
+      addSummon("DandelionField", pos);
+    }
+    if (use_skill.name === "Oceanid Mimic Summoning") {
+      addSummon("OceanidMimicFerret", pos);
+    }
+    if (use_skill.name === "Frosty Assault") {
+      addSummon("ShadowsordGallopingFrost", pos);
+    }
   };
 
   const shouldCharacterHignlight = (index: number) => {

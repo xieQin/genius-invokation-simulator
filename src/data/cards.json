@@ -9,7 +9,7 @@
       { "costNum": 5, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/UndividedHeart.png",
+    "img": "/characters/UndividedHeart.png",
     "imgID": "UndividedHeart"
   },
   {
@@ -22,7 +22,7 @@
       { "costNum": 4, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ShakenNotPurred.png",
+    "img": "/characters/ShakenNotPurred.png",
     "imgID": "ShakenNotPurred"
   },
   {
@@ -35,7 +35,7 @@
       { "costNum": 4, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ColdBloodedStrike.png",
+    "img": "/characters/ColdBloodedStrike.png",
     "imgID": "ColdBloodedStrike"
   },
   {
@@ -48,7 +48,7 @@
       { "costNum": 4, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SteadyBreathing.png",
+    "img": "/characters/SteadyBreathing.png",
     "imgID": "SteadyBreathing"
   },
   {
@@ -61,7 +61,7 @@
       { "costNum": 2, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/KantenSenmyouBlessing.png",
+    "img": "/characters/KantenSenmyouBlessing.png",
     "imgID": "KantenSenmyouBlessing"
   },
   {
@@ -74,7 +74,7 @@
       { "costNum": 4, "costType": "Hydro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/GloriousSeason.png",
+    "img": "/characters/GloriousSeason.png",
     "imgID": "GloriousSeason"
   },
   {
@@ -87,7 +87,7 @@
       { "costNum": 4, "costType": "Hydro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TheScentRemained.png",
+    "img": "/characters/TheScentRemained.png",
     "imgID": "TheScentRemained"
   },
   {
@@ -100,7 +100,7 @@
       { "costNum": 3, "costType": "Hydro" },
       { "costNum": 3, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ProphecyofSubmersion.png",
+    "img": "/characters/ProphecyofSubmersion.png",
     "imgID": "ProphecyofSubmersion"
   },
   {
@@ -113,7 +113,7 @@
       { "costNum": 3, "costType": "Pyro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/FlowingFlame.png",
+    "img": "/characters/FlowingFlame.png",
     "imgID": "FlowingFlame"
   },
   {
@@ -126,7 +126,7 @@
       { "costNum": 4, "costType": "Pyro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Crossfire.png",
+    "img": "/characters/Crossfire.png",
     "imgID": "Crossfire"
   },
   {
@@ -139,7 +139,7 @@
       { "costNum": 4, "costType": "Pyro" },
       { "costNum": 2, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/GrandExpectation.png",
+    "img": "/characters/GrandExpectation.png",
     "imgID": "GrandExpectation"
   },
   {
@@ -152,7 +152,7 @@
       { "costNum": 2, "costType": "Pyro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/NaganoharaMeteorSwarm.png",
+    "img": "/characters/NaganoharaMeteorSwarm.png",
     "imgID": "NaganoharaMeteorSwarm"
   },
   {
@@ -165,7 +165,7 @@
       { "costNum": 3, "costType": "Electro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/StellarPredator.png",
+    "img": "/characters/StellarPredator.png",
     "imgID": "StellarPredator"
   },
   {
@@ -178,7 +178,7 @@
       { "costNum": 4, "costType": "Electro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Awakening.png",
+    "img": "/characters/Awakening.png",
     "imgID": "Awakening"
   },
   {
@@ -191,7 +191,7 @@
       { "costNum": 3, "costType": "Electro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ThunderingPenance.png",
+    "img": "/characters/ThunderingPenance.png",
     "imgID": "ThunderingPenance"
   },
   {
@@ -204,7 +204,7 @@
       { "costNum": 3, "costType": "Electro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/FeatherfallJudgment.png",
+    "img": "/characters/FeatherfallJudgment.png",
     "imgID": "FeatherfallJudgment"
   },
   {
@@ -217,7 +217,7 @@
       { "costNum": 3, "costType": "Anemo" },
       { "costNum": 2, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ChaoticEntropy.png",
+    "img": "/characters/ChaoticEntropy.png",
     "imgID": "ChaoticEntropy"
   },
   {
@@ -230,7 +230,7 @@
       { "costNum": 4, "costType": "Anemo" },
       { "costNum": 3, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LandsofDandelion.png",
+    "img": "/characters/LandsofDandelion.png",
     "imgID": "LandsofDandelion"
   },
   {
@@ -243,7 +243,7 @@
       { "costNum": 4, "costType": "Geo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/StrategicReserve.png",
+    "img": "/characters/StrategicReserve.png",
     "imgID": "StrategicReserve"
   },
   {
@@ -256,7 +256,7 @@
       { "costNum": 3, "costType": "Geo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/IGotYourBack.png",
+    "img": "/characters/IGotYourBack.png",
     "imgID": "IGotYourBack"
   },
   {
@@ -269,7 +269,7 @@
       { "costNum": 3, "costType": "Dendro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/FloralSidewinder.png",
+    "img": "/characters/FloralSidewinder.png",
     "imgID": "FloralSidewinder"
   },
   {
@@ -282,7 +282,7 @@
       { "costNum": 4, "costType": "Hydro" },
       { "costNum": 3, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/StreamingSurge.png",
+    "img": "/characters/StreamingSurge.png",
     "imgID": "StreamingSurge"
   },
   {
@@ -295,7 +295,7 @@
       { "costNum": 4, "costType": "Hydro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MirrorCage.png",
+    "img": "/characters/MirrorCage.png",
     "imgID": "MirrorCage"
   },
   {
@@ -308,7 +308,7 @@
       { "costNum": 3, "costType": "Pyro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/PaidinFull.png",
+    "img": "/characters/PaidinFull.png",
     "imgID": "PaidinFull"
   },
   {
@@ -321,7 +321,7 @@
       { "costNum": 3, "costType": "Anemo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TranscendentAutomaton.png",
+    "img": "/characters/TranscendentAutomaton.png",
     "imgID": "TranscendentAutomaton"
   },
   {
@@ -334,7 +334,7 @@
       { "costNum": 4, "costType": "Geo" },
       { "costNum": 2, "costType": "Energy" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/StonehideReforged.png",
+    "img": "/characters/StonehideReforged.png",
     "imgID": "StonehideReforged"
   },
   {
@@ -347,7 +347,7 @@
       { "costNum": 3, "costType": "Dendro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ProliferatingSpores.png",
+    "img": "/characters/ProliferatingSpores.png",
     "imgID": "ProliferatingSpores"
   },
   {
@@ -360,7 +360,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MagicGuide.png",
+    "img": "/characters/MagicGuide.png",
     "imgID": "MagicGuide"
   },
   {
@@ -373,7 +373,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SacrificialFragments.png",
+    "img": "/characters/SacrificialFragments.png",
     "imgID": "SacrificialFragments"
   },
   {
@@ -386,7 +386,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SkywardAtlas.png",
+    "img": "/characters/SkywardAtlas.png",
     "imgID": "SkywardAtlas"
   },
   {
@@ -399,7 +399,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/RavenBow.png",
+    "img": "/characters/RavenBow.png",
     "imgID": "RavenBow"
   },
   {
@@ -412,7 +412,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SacrificialBow.png",
+    "img": "/characters/SacrificialBow.png",
     "imgID": "SacrificialBow"
   },
   {
@@ -425,7 +425,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SkywardHarp.png",
+    "img": "/characters/SkywardHarp.png",
     "imgID": "SkywardHarp"
   },
   {
@@ -438,7 +438,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WhiteIronGreatsword.png",
+    "img": "/characters/WhiteIronGreatsword.png",
     "imgID": "WhiteIronGreatsword"
   },
   {
@@ -451,7 +451,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SacrificialGreatsword.png",
+    "img": "/characters/SacrificialGreatsword.png",
     "imgID": "SacrificialGreatsword"
   },
   {
@@ -464,7 +464,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WolfsGravestone.png",
+    "img": "/characters/WolfsGravestone.png",
     "imgID": "WolfsGravestone"
   },
   {
@@ -477,7 +477,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WhiteTassel.png",
+    "img": "/characters/WhiteTassel.png",
     "imgID": "WhiteTassel"
   },
   {
@@ -490,7 +490,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LithicSpear.png",
+    "img": "/characters/LithicSpear.png",
     "imgID": "LithicSpear"
   },
   {
@@ -503,7 +503,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SkywardSpine.png",
+    "img": "/characters/SkywardSpine.png",
     "imgID": "SkywardSpine"
   },
   {
@@ -516,7 +516,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TravelersHandySword.png",
+    "img": "/characters/TravelersHandySword.png",
     "imgID": "TravelersHandySword"
   },
   {
@@ -529,7 +529,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SacrificialSword.png",
+    "img": "/characters/SacrificialSword.png",
     "imgID": "SacrificialSword"
   },
   {
@@ -542,7 +542,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/AquilaFavonia.png",
+    "img": "/characters/AquilaFavonia.png",
     "imgID": "AquilaFavonia"
   },
   {
@@ -555,7 +555,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/AdventurersBandana.png",
+    "img": "/characters/AdventurersBandana.png",
     "imgID": "AdventurersBandana"
   },
   {
@@ -568,7 +568,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LuckyDogsSilverCirclet.png",
+    "img": "/characters/LuckyDogsSilverCirclet.png",
     "imgID": "LuckyDogsSilverCirclet"
   },
   {
@@ -581,7 +581,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TravelingDoctorsHandkerchief.png",
+    "img": "/characters/TravelingDoctorsHandkerchief.png",
     "imgID": "TravelingDoctorsHandkerchief"
   },
   {
@@ -594,7 +594,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/GamblersEarrings.png",
+    "img": "/characters/GamblersEarrings.png",
     "imgID": "GamblersEarrings"
   },
   {
@@ -607,7 +607,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/InstructorsCap.png",
+    "img": "/characters/InstructorsCap.png",
     "imgID": "InstructorsCap"
   },
   {
@@ -620,7 +620,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ExilesCirclet.png",
+    "img": "/characters/ExilesCirclet.png",
     "imgID": "ExilesCirclet"
   },
   {
@@ -633,7 +633,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/BrokenRimesEcho.png",
+    "img": "/characters/BrokenRimesEcho.png",
     "imgID": "BrokenRimesEcho"
   },
   {
@@ -646,7 +646,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/BlizzardStrayer.png",
+    "img": "/characters/BlizzardStrayer.png",
     "imgID": "BlizzardStrayer"
   },
   {
@@ -659,7 +659,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WineStainedTricorne.png",
+    "img": "/characters/WineStainedTricorne.png",
     "imgID": "WineStainedTricorne"
   },
   {
@@ -672,7 +672,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/HeartofDepth.png",
+    "img": "/characters/HeartofDepth.png",
     "imgID": "HeartofDepth"
   },
   {
@@ -685,7 +685,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WitchsScorchingHat.png",
+    "img": "/characters/WitchsScorchingHat.png",
     "imgID": "WitchsScorchingHat"
   },
   {
@@ -698,7 +698,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/CrimsonWitchofFlames.png",
+    "img": "/characters/CrimsonWitchofFlames.png",
     "imgID": "CrimsonWitchofFlames"
   },
   {
@@ -711,7 +711,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ThunderSummonersCrown.png",
+    "img": "/characters/ThunderSummonersCrown.png",
     "imgID": "ThunderSummonersCrown"
   },
   {
@@ -724,7 +724,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ThunderingFury.png",
+    "img": "/characters/ThunderingFury.png",
     "imgID": "ThunderingFury"
   },
   {
@@ -737,7 +737,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ViridescentVenerersDiadem.png",
+    "img": "/characters/ViridescentVenerersDiadem.png",
     "imgID": "ViridescentVenerersDiadem"
   },
   {
@@ -750,7 +750,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ViridescentVenerer.png",
+    "img": "/characters/ViridescentVenerer.png",
     "imgID": "ViridescentVenerer"
   },
   {
@@ -763,7 +763,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MaskofSolitudeBasalt.png",
+    "img": "/characters/MaskofSolitudeBasalt.png",
     "imgID": "MaskofSolitudeBasalt"
   },
   {
@@ -776,7 +776,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ArchaicPetra.png",
+    "img": "/characters/ArchaicPetra.png",
     "imgID": "ArchaicPetra"
   },
   {
@@ -789,7 +789,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LaurelCoronet.png",
+    "img": "/characters/LaurelCoronet.png",
     "imgID": "LaurelCoronet"
   },
   {
@@ -802,7 +802,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/DeepwoodMemories.png",
+    "img": "/characters/DeepwoodMemories.png",
     "imgID": "DeepwoodMemories"
   },
   {
@@ -815,7 +815,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LiyueHarborWharf.png",
+    "img": "/characters/LiyueHarborWharf.png",
     "imgID": "LiyueHarborWharf"
   },
   {
@@ -828,7 +828,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/KnightsofFavoniusLibrary.png",
+    "img": "/characters/KnightsofFavoniusLibrary.png",
     "imgID": "KnightsofFavoniusLibrary"
   },
   {
@@ -841,7 +841,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/JadeChamber.png",
+    "img": "/characters/JadeChamber.png",
     "imgID": "JadeChamber"
   },
   {
@@ -854,7 +854,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/DawnWinery.png",
+    "img": "/characters/DawnWinery.png",
     "imgID": "DawnWinery"
   },
   {
@@ -867,7 +867,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WangshuInn.png",
+    "img": "/characters/WangshuInn.png",
     "imgID": "WangshuInn"
   },
   {
@@ -880,7 +880,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/FavoniusCathedral.png",
+    "img": "/characters/FavoniusCathedral.png",
     "imgID": "FavoniusCathedral"
   },
   {
@@ -893,7 +893,7 @@
       { "costNum": 3, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Paimon.png",
+    "img": "/characters/Paimon.png",
     "imgID": "Paimon"
   },
   {
@@ -906,7 +906,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Katheryne.png",
+    "img": "/characters/Katheryne.png",
     "imgID": "Katheryne"
   },
   {
@@ -919,7 +919,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Timaeus.png",
+    "img": "/characters/Timaeus.png",
     "imgID": "Timaeus"
   },
   {
@@ -932,7 +932,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Wagner.png",
+    "img": "/characters/Wagner.png",
     "imgID": "Wagner"
   },
   {
@@ -945,7 +945,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ChefMao.png",
+    "img": "/characters/ChefMao.png",
     "imgID": "ChefMao"
   },
   {
@@ -958,7 +958,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Tubby.png",
+    "img": "/characters/Tubby.png",
     "imgID": "Tubby"
   },
   {
@@ -971,7 +971,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Timmie.png",
+    "img": "/characters/Timmie.png",
     "imgID": "Timmie"
   },
   {
@@ -984,7 +984,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Liben.png",
+    "img": "/characters/Liben.png",
     "imgID": "Liben"
   },
   {
@@ -997,7 +997,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ChangtheNinth.png",
+    "img": "/characters/ChangtheNinth.png",
     "imgID": "ChangtheNinth"
   },
   {
@@ -1010,7 +1010,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Ellin.png",
+    "img": "/characters/Ellin.png",
     "imgID": "Ellin"
   },
   {
@@ -1023,7 +1023,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/IronTongueTian.png",
+    "img": "/characters/IronTongueTian.png",
     "imgID": "IronTongueTian"
   },
   {
@@ -1036,7 +1036,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LiuSu.png",
+    "img": "/characters/LiuSu.png",
     "imgID": "LiuSu"
   },
   {
@@ -1049,7 +1049,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ParametricTransformer.png",
+    "img": "/characters/ParametricTransformer.png",
     "imgID": "ParametricTransformer"
   },
   {
@@ -1062,7 +1062,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/NRE.png",
+    "img": "/characters/NRE.png",
     "imgID": "NRE"
   },
   {
@@ -1075,7 +1075,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenIce.png",
+    "img": "/characters/ElementalResonanceWovenIce.png",
     "imgID": "ElementalResonanceWovenIce"
   },
   {
@@ -1088,7 +1088,7 @@
       { "costNum": 1, "costType": "Cryo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceShatteringIce.png",
+    "img": "/characters/ElementalResonanceShatteringIce.png",
     "imgID": "ElementalResonanceShatteringIce"
   },
   {
@@ -1101,7 +1101,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenWaters.png",
+    "img": "/characters/ElementalResonanceWovenWaters.png",
     "imgID": "ElementalResonanceWovenWaters"
   },
   {
@@ -1114,7 +1114,7 @@
       { "costNum": 1, "costType": "Hydro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceSoothingWater.png",
+    "img": "/characters/ElementalResonanceSoothingWater.png",
     "imgID": "ElementalResonanceSoothingWater"
   },
   {
@@ -1127,7 +1127,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenFlames.png",
+    "img": "/characters/ElementalResonanceWovenFlames.png",
     "imgID": "ElementalResonanceWovenFlames"
   },
   {
@@ -1140,7 +1140,7 @@
       { "costNum": 1, "costType": "Pyro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceFerventFlames.png",
+    "img": "/characters/ElementalResonanceFerventFlames.png",
     "imgID": "ElementalResonanceFerventFlames"
   },
   {
@@ -1153,7 +1153,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenThunder.png",
+    "img": "/characters/ElementalResonanceWovenThunder.png",
     "imgID": "ElementalResonanceWovenThunder"
   },
   {
@@ -1166,7 +1166,7 @@
       { "costNum": 1, "costType": "Electro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceHighVoltage.png",
+    "img": "/characters/ElementalResonanceHighVoltage.png",
     "imgID": "ElementalResonanceHighVoltage"
   },
   {
@@ -1179,7 +1179,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenWinds.png",
+    "img": "/characters/ElementalResonanceWovenWinds.png",
     "imgID": "ElementalResonanceWovenWinds"
   },
   {
@@ -1192,7 +1192,7 @@
       { "costNum": 1, "costType": "Anemo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceImpetuousWinds.png",
+    "img": "/characters/ElementalResonanceImpetuousWinds.png",
     "imgID": "ElementalResonanceImpetuousWinds"
   },
   {
@@ -1205,7 +1205,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenStone.png",
+    "img": "/characters/ElementalResonanceWovenStone.png",
     "imgID": "ElementalResonanceWovenStone"
   },
   {
@@ -1218,7 +1218,7 @@
       { "costNum": 1, "costType": "Geo" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceEnduringRock.png",
+    "img": "/characters/ElementalResonanceEnduringRock.png",
     "imgID": "ElementalResonanceEnduringRock"
   },
   {
@@ -1231,7 +1231,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceWovenWeeds.png",
+    "img": "/characters/ElementalResonanceWovenWeeds.png",
     "imgID": "ElementalResonanceWovenWeeds"
   },
   {
@@ -1244,7 +1244,7 @@
       { "costNum": 1, "costType": "Dendro" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ElementalResonanceSprawlingGreenery.png",
+    "img": "/characters/ElementalResonanceSprawlingGreenery.png",
     "imgID": "ElementalResonanceSprawlingGreenery"
   },
   {
@@ -1257,7 +1257,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TheBestestTravelCompanion.png",
+    "img": "/characters/TheBestestTravelCompanion.png",
     "imgID": "TheBestestTravelCompanion"
   },
   {
@@ -1270,7 +1270,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/ChangingShifts.png",
+    "img": "/characters/ChangingShifts.png",
     "imgID": "ChangingShifts"
   },
   {
@@ -1283,7 +1283,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/TossUp.png",
+    "img": "/characters/TossUp.png",
     "imgID": "TossUp"
   },
   {
@@ -1296,7 +1296,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Strategize.png",
+    "img": "/characters/Strategize.png",
     "imgID": "Strategize"
   },
   {
@@ -1309,7 +1309,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/IHaventLostYet.png",
+    "img": "/characters/IHaventLostYet.png",
     "imgID": "IHaventLostYet"
   },
   {
@@ -1322,7 +1322,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LeaveIttoMe.png",
+    "img": "/characters/LeaveIttoMe.png",
     "imgID": "LeaveIttoMe"
   },
   {
@@ -1335,7 +1335,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/WhentheCraneReturned.png",
+    "img": "/characters/WhentheCraneReturned.png",
     "imgID": "WhentheCraneReturned"
   },
   {
@@ -1348,7 +1348,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/Starsigns.png",
+    "img": "/characters/Starsigns.png",
     "imgID": "Starsigns"
   },
   {
@@ -1361,7 +1361,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/CalxsArts.png",
+    "img": "/characters/CalxsArts.png",
     "imgID": "CalxsArts"
   },
   {
@@ -1374,7 +1374,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MasterofWeaponry.png",
+    "img": "/characters/MasterofWeaponry.png",
     "imgID": "MasterofWeaponry"
   },
   {
@@ -1387,7 +1387,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/BlessingoftheDivineRelicsInstallation.png",
+    "img": "/characters/BlessingoftheDivineRelicsInstallation.png",
     "imgID": "BlessingoftheDivineRelicsInstallation"
   },
   {
@@ -1400,7 +1400,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/QuickKnit.png",
+    "img": "/characters/QuickKnit.png",
     "imgID": "QuickKnit"
   },
   {
@@ -1413,7 +1413,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SendOff.png",
+    "img": "/characters/SendOff.png",
     "imgID": "SendOff"
   },
   {
@@ -1426,7 +1426,7 @@
       { "costNum": 4, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/GuardiansOath.png",
+    "img": "/characters/GuardiansOath.png",
     "imgID": "GuardiansOath"
   },
   {
@@ -1439,7 +1439,7 @@
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/AbyssalSummons.png",
+    "img": "/characters/AbyssalSummons.png",
     "imgID": "AbyssalSummons"
   },
   {
@@ -1452,7 +1452,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/JueyunGuoba.png",
+    "img": "/characters/JueyunGuoba.png",
     "imgID": "JueyunGuoba"
   },
   {
@@ -1465,7 +1465,7 @@
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/AdeptusTemptation.png",
+    "img": "/characters/AdeptusTemptation.png",
     "imgID": "AdeptusTemptation"
   },
   {
@@ -1478,7 +1478,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/LotusFlowerCrisp.png",
+    "img": "/characters/LotusFlowerCrisp.png",
     "imgID": "LotusFlowerCrisp"
   },
   {
@@ -1491,7 +1491,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/NorthernSmokedChicken.png",
+    "img": "/characters/NorthernSmokedChicken.png",
     "imgID": "NorthernSmokedChicken"
   },
   {
@@ -1504,7 +1504,7 @@
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/SweetMadame.png",
+    "img": "/characters/SweetMadame.png",
     "imgID": "SweetMadame"
   },
   {
@@ -1517,7 +1517,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MondstadtHashBrown.png",
+    "img": "/characters/MondstadtHashBrown.png",
     "imgID": "MondstadtHashBrown"
   },
   {
@@ -1530,7 +1530,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MushroomPizza.png",
+    "img": "/characters/MushroomPizza.png",
     "imgID": "MushroomPizza"
   },
   {
@@ -1543,7 +1543,7 @@
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
     ],
-    "img": "https://xieqin.github.io/invokation/characters/MintyMeatRolls.png",
+    "img": "/characters/MintyMeatRolls.png",
     "imgID": "MintyMeatRolls"
   }
 ]

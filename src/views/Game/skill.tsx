@@ -11,7 +11,6 @@ export default function SkillPhase() {
     dices: playDices,
     setGameStates,
     activeSkills,
-    actions,
   } = useGameStore();
   const pos = PlayerPosition.Own;
   const dices = playDices[pos];
@@ -26,7 +25,6 @@ export default function SkillPhase() {
       costDices();
       setGameStates("phase", Phase.Combat);
       onCastSkill();
-      console.log(actions);
     } else {
       console.log("error");
     }

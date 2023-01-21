@@ -87,7 +87,7 @@ export const isCostDiceValid = (costs: ICost[], dices: GIDiceID[]) => {
     const diceNum = cost[1];
     const omni = dicesMap.get("Omni") ?? 0;
     const _diceType = dicesMap.get(diceType) ?? 0;
-    if (omni > diceNum) continue;
+    if (omni >= diceNum) continue;
     if (diceType === "Void" && dicesMap.size < diceNum) return false;
     if (diceType !== "Void" && diceNum > omni + _diceType) return false;
   }
@@ -115,7 +115,7 @@ export const InitPlayer = (name: string, position: PlayerPosition) => {
     position,
     status: null,
     characters,
-    summons: null,
+    summons: [],
     supports: [],
     cards: DraftHandCard(5, cardStack),
     cardStack,

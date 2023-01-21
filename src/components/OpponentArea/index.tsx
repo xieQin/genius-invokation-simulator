@@ -19,7 +19,7 @@ export default function OpponentArea() {
     characters,
     pos: position,
   };
-  const summons: SummonsID[] = [];
+  const summons: SummonsID[] = opponent.summons;
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Opponent}`}>

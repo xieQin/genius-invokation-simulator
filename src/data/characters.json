@@ -2,7 +2,7 @@
   {
     "id": 1101,
     "name": "Ganyu",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -15,7 +15,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/LiutianArchery.png",
+        "img": "/skill/LiutianArchery.png",
         "imgID": "LiutianArchery"
       },
       {
@@ -24,7 +24,7 @@
         "name": "Trail of the Qilin",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/TrailoftheQilin.png",
+        "img": "/skill/TrailoftheQilin.png",
         "imgID": "TrailoftheQilin"
       },
       {
@@ -33,7 +33,7 @@
         "name": "Frostflake Arrow",
         "costs": [{ "costNum": 5, "costType": "Cryo" }],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FrostflakeArrow.png",
+        "img": "/skill/FrostflakeArrow.png",
         "imgID": "FrostflakeArrow"
       },
       {
@@ -45,7 +45,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/CelestialShower.png",
+        "img": "/skill/CelestialShower.png",
         "imgID": "CelestialShower"
       }
     ],
@@ -53,13 +53,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Ganyu.png",
+    "img": "/characters/Ganyu.png",
     "imgID": "Ganyu"
   },
   {
     "id": 1102,
     "name": "Diona",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -72,7 +72,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/KätzleinStyle.png",
+        "img": "/skill/KätzleinStyle.png",
         "imgID": "KätzleinStyle"
       },
       {
@@ -81,7 +81,7 @@
         "name": "Icy Paws",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/IcyPaws.png",
+        "img": "/skill/IcyPaws.png",
         "imgID": "IcyPaws"
       },
       {
@@ -93,7 +93,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SignatureMix.png",
+        "img": "/skill/SignatureMix.png",
         "imgID": "SignatureMix"
       }
     ],
@@ -101,13 +101,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Diona.png",
+    "img": "/characters/Diona.png",
     "imgID": "Diona"
   },
   {
     "id": 1103,
     "name": "Kaeya",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -120,7 +120,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/CeremonialBladework.png",
+        "img": "/skill/CeremonialBladework.png",
         "imgID": "CeremonialBladework"
       },
       {
@@ -129,7 +129,7 @@
         "name": "Frostgnaw",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Frostgnaw.png",
+        "img": "/skill/Frostgnaw.png",
         "imgID": "Frostgnaw"
       },
       {
@@ -141,7 +141,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/GlacialWaltz.png",
+        "img": "/skill/GlacialWaltz.png",
         "imgID": "GlacialWaltz"
       }
     ],
@@ -149,13 +149,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Kaeya.png",
+    "img": "/characters/Kaeya.png",
     "imgID": "Kaeya"
   },
   {
     "id": 1104,
     "name": "Chongyun",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Claymore",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -168,7 +168,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Demonbane.png",
+        "img": "/skill/Demonbane.png",
         "imgID": "Demonbane"
       },
       {
@@ -177,7 +177,7 @@
         "name": "Chonghua's Layered Frost",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/ChonghuasLayeredFrost.png",
+        "img": "/skill/ChonghuasLayeredFrost.png",
         "imgID": "ChonghuasLayeredFrost"
       },
       {
@@ -189,7 +189,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/CloudPartingStar.png",
+        "img": "/skill/CloudPartingStar.png",
         "imgID": "CloudPartingStar"
       }
     ],
@@ -197,13 +197,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Chongyun.png",
+    "img": "/characters/Chongyun.png",
     "imgID": "Chongyun"
   },
   {
     "id": 1105,
     "name": "Kamisato Ayaka",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Inazuma", "", ""],
     "skills": [
@@ -216,7 +216,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtKabuki.png",
+        "img": "/skill/KamisatoArtKabuki.png",
         "imgID": "KamisatoArtKabuki"
       },
       {
@@ -225,7 +225,7 @@
         "name": "Kamisato Art: Hyouka",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtHyouka.png",
+        "img": "/skill/KamisatoArtHyouka.png",
         "imgID": "KamisatoArtHyouka"
       },
       {
@@ -237,7 +237,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSoumetsu.png",
+        "img": "/skill/KamisatoArtSoumetsu.png",
         "imgID": "KamisatoArtSoumetsu"
       },
       {
@@ -246,7 +246,7 @@
         "name": "Kamisato Art: Senho",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/KamisatoArtSenho.png",
+        "img": "/skill/KamisatoArtSenho.png",
         "imgID": "KamisatoArtSenho"
       }
     ],
@@ -254,13 +254,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/KamisatoAyaka.png",
+    "img": "/characters/KamisatoAyaka.png",
     "imgID": "KamisatoAyaka"
   },
   {
     "id": 1201,
     "name": "Barbara",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -273,7 +273,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WhisperofWater.png",
+        "img": "/skill/WhisperofWater.png",
         "imgID": "WhisperofWater"
       },
       {
@@ -282,7 +282,7 @@
         "name": "Let the Show Begin♪",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/LettheShowBegin.png",
+        "img": "/skill/LettheShowBegin.png",
         "imgID": "LettheShowBegin"
       },
       {
@@ -294,7 +294,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/ShiningMiracle.png",
+        "img": "/skill/ShiningMiracle.png",
         "imgID": "ShiningMiracle"
       }
     ],
@@ -302,13 +302,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Barbara.png",
+    "img": "/characters/Barbara.png",
     "imgID": "Barbara"
   },
   {
     "id": 1202,
     "name": "Xingqiu",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -321,7 +321,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/GuhuaStyle.png",
+        "img": "/skill/GuhuaStyle.png",
         "imgID": "GuhuaStyle"
       },
       {
@@ -330,7 +330,7 @@
         "name": "Fatal Rainscreen",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FatalRainscreen.png",
+        "img": "/skill/FatalRainscreen.png",
         "imgID": "FatalRainscreen"
       },
       {
@@ -342,7 +342,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Raincutter.png",
+        "img": "/skill/Raincutter.png",
         "imgID": "Raincutter"
       }
     ],
@@ -350,13 +350,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Xingqiu.png",
+    "img": "/characters/Xingqiu.png",
     "imgID": "Xingqiu"
   },
   {
     "id": 1203,
     "name": "Mona",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -369,7 +369,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/RippleofFate.png",
+        "img": "/skill/RippleofFate.png",
         "imgID": "RippleofFate"
       },
       {
@@ -378,7 +378,7 @@
         "name": "Mirror Reflection of Doom",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/MirrorReflectionofDoom.png",
+        "img": "/skill/MirrorReflectionofDoom.png",
         "imgID": "MirrorReflectionofDoom"
       },
       {
@@ -390,7 +390,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/StellarisPhantasm.png",
+        "img": "/skill/StellarisPhantasm.png",
         "imgID": "StellarisPhantasm"
       },
       {
@@ -399,7 +399,7 @@
         "name": "Illusory Torrent",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/IllusoryTorrent.png",
+        "img": "/skill/IllusoryTorrent.png",
         "imgID": "IllusoryTorrent"
       }
     ],
@@ -407,13 +407,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Mona.png",
+    "img": "/characters/Mona.png",
     "imgID": "Mona"
   },
   {
     "id": 1301,
     "name": "Diluc",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -426,7 +426,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/TemperedSword.png",
+        "img": "/skill/TemperedSword.png",
         "imgID": "TemperedSword"
       },
       {
@@ -435,7 +435,7 @@
         "name": "Searing Onslaught",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/SearingOnslaught.png",
+        "img": "/skill/SearingOnslaught.png",
         "imgID": "SearingOnslaught"
       },
       {
@@ -447,7 +447,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Dawn.png",
+        "img": "/skill/Dawn.png",
         "imgID": "Dawn"
       }
     ],
@@ -455,13 +455,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Diluc.png",
+    "img": "/characters/Diluc.png",
     "imgID": "Diluc"
   },
   {
     "id": 1302,
     "name": "Xiangling",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Polearm",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -474,7 +474,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/DoughFu.png",
+        "img": "/skill/DoughFu.png",
         "imgID": "DoughFu"
       },
       {
@@ -483,7 +483,7 @@
         "name": "Guoba Attack",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/GuobaAttack.png",
+        "img": "/skill/GuobaAttack.png",
         "imgID": "GuobaAttack"
       },
       {
@@ -495,7 +495,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Pyronado.png",
+        "img": "/skill/Pyronado.png",
         "imgID": "Pyronado"
       }
     ],
@@ -503,13 +503,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Xiangling.png",
+    "img": "/characters/Xiangling.png",
     "imgID": "Xiangling"
   },
   {
     "id": 1303,
     "name": "Bennett",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -522,7 +522,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/StrikeofFortune.png",
+        "img": "/skill/StrikeofFortune.png",
         "imgID": "StrikeofFortune"
       },
       {
@@ -531,7 +531,7 @@
         "name": "Passion Overload",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/PassionOverload.png",
+        "img": "/skill/PassionOverload.png",
         "imgID": "PassionOverload"
       },
       {
@@ -543,7 +543,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/FantasticVoyage.png",
+        "img": "/skill/FantasticVoyage.png",
         "imgID": "FantasticVoyage"
       }
     ],
@@ -551,13 +551,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Bennett.png",
+    "img": "/characters/Bennett.png",
     "imgID": "Bennett"
   },
   {
     "id": 1305,
     "name": "Yoimiya",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Bow",
     "region": ["Inazuma", "", ""],
     "skills": [
@@ -570,7 +570,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FireworkFlareUp.png",
+        "img": "/skill/FireworkFlareUp.png",
         "imgID": "FireworkFlareUp"
       },
       {
@@ -579,7 +579,7 @@
         "name": "Niwabi Fire-Dance",
         "costs": [{ "costNum": 1, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/NiwabiFireDance.png",
+        "img": "/skill/NiwabiFireDance.png",
         "imgID": "NiwabiFireDance"
       },
       {
@@ -591,7 +591,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/RyuukinSaxifrage.png",
+        "img": "/skill/RyuukinSaxifrage.png",
         "imgID": "RyuukinSaxifrage"
       }
     ],
@@ -599,13 +599,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Yoimiya.png",
+    "img": "/characters/Yoimiya.png",
     "imgID": "Yoimiya"
   },
   {
     "id": 1306,
     "name": "Klee",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -653,7 +653,7 @@
   {
     "id": 1401,
     "name": "Fischl",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -666,7 +666,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/BoltsofDownfall.png",
+        "img": "/skill/BoltsofDownfall.png",
         "imgID": "BoltsofDownfall"
       },
       {
@@ -675,7 +675,7 @@
         "name": "Nightrider",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Nightrider.png",
+        "img": "/skill/Nightrider.png",
         "imgID": "Nightrider"
       },
       {
@@ -687,7 +687,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/MidnightPhantasmagoria.png",
+        "img": "/skill/MidnightPhantasmagoria.png",
         "imgID": "MidnightPhantasmagoria"
       }
     ],
@@ -695,13 +695,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Fischl.png",
+    "img": "/characters/Fischl.png",
     "imgID": "Fischl"
   },
   {
     "id": 1402,
     "name": "Razor",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -714,7 +714,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SteelFang.png",
+        "img": "/skill/SteelFang.png",
         "imgID": "SteelFang"
       },
       {
@@ -723,7 +723,7 @@
         "name": "Claw and Thunder",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/ClawandThunder.png",
+        "img": "/skill/ClawandThunder.png",
         "imgID": "ClawandThunder"
       },
       {
@@ -735,7 +735,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/LightningFang.png",
+        "img": "/skill/LightningFang.png",
         "imgID": "LightningFang"
       }
     ],
@@ -743,13 +743,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Razor.png",
+    "img": "/characters/Razor.png",
     "imgID": "Razor"
   },
   {
     "id": 1403,
     "name": "Keqing",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -762,7 +762,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/YunlaiSwordsmanship.png",
+        "img": "/skill/YunlaiSwordsmanship.png",
         "imgID": "YunlaiSwordsmanship"
       },
       {
@@ -771,7 +771,7 @@
         "name": "Stellar Restoration",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/StellarRestoration.png",
+        "img": "/skill/StellarRestoration.png",
         "imgID": "StellarRestoration"
       },
       {
@@ -783,7 +783,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/StarwardSword.png",
+        "img": "/skill/StarwardSword.png",
         "imgID": "StarwardSword"
       }
     ],
@@ -791,13 +791,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Keqing.png",
+    "img": "/characters/Keqing.png",
     "imgID": "Keqing"
   },
   {
     "id": 1404,
     "name": "Cyno",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Polearm",
     "region": ["Sumeru", "", ""],
     "skills": [
@@ -810,7 +810,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/InvokersSpear.png",
+        "img": "/skill/InvokersSpear.png",
         "imgID": "InvokersSpear"
       },
       {
@@ -819,7 +819,7 @@
         "name": "Secret Rite: Chasmic Soulfarer",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/SecretRiteChasmicSoulfarer.png",
+        "img": "/skill/SecretRiteChasmicSoulfarer.png",
         "imgID": "SecretRiteChasmicSoulfarer"
       },
       {
@@ -831,7 +831,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SacredRiteWolfsSwiftness.png",
+        "img": "/skill/SacredRiteWolfsSwiftness.png",
         "imgID": "SacredRiteWolfsSwiftness"
       },
       {
@@ -840,7 +840,7 @@
         "name": "Lawful Enforcer",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/LawfulEnforcer.png",
+        "img": "/skill/LawfulEnforcer.png",
         "imgID": "LawfulEnforcer"
       }
     ],
@@ -848,13 +848,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Cyno.png",
+    "img": "/characters/Cyno.png",
     "imgID": "Cyno"
   },
   {
     "id": 1501,
     "name": "Sucrose",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -867,7 +867,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WindSpiritCreation.png",
+        "img": "/skill/WindSpiritCreation.png",
         "imgID": "WindSpiritCreation"
       },
       {
@@ -876,7 +876,7 @@
         "name": "Astable Anemohypostasis Creation - 6308",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/AstableAnemohypostasisCreation6308.png",
+        "img": "/skill/AstableAnemohypostasisCreation6308.png",
         "imgID": "AstableAnemohypostasisCreation6308"
       },
       {
@@ -888,7 +888,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/ForbiddenCreationIsomer75TypeII.png",
+        "img": "/skill/ForbiddenCreationIsomer75TypeII.png",
         "imgID": "ForbiddenCreationIsomer75TypeII"
       }
     ],
@@ -896,13 +896,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Sucrose.png",
+    "img": "/characters/Sucrose.png",
     "imgID": "Sucrose"
   },
   {
     "id": 1502,
     "name": "Jean",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -915,7 +915,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FavoniusBladework.png",
+        "img": "/skill/FavoniusBladework.png",
         "imgID": "FavoniusBladework"
       },
       {
@@ -924,7 +924,7 @@
         "name": "Gale Blade",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/GaleBlade.png",
+        "img": "/skill/GaleBlade.png",
         "imgID": "GaleBlade"
       },
       {
@@ -936,7 +936,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/DandelionBreeze.png",
+        "img": "/skill/DandelionBreeze.png",
         "imgID": "DandelionBreeze"
       }
     ],
@@ -944,13 +944,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Jean.png",
+    "img": "/characters/Jean.png",
     "imgID": "Jean"
   },
   {
     "id": 1601,
     "name": "Ningguang",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Catalyst",
     "region": ["Liyue", "", ""],
     "skills": [
@@ -963,7 +963,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SparklingScatter.png",
+        "img": "/skill/SparklingScatter.png",
         "imgID": "SparklingScatter"
       },
       {
@@ -972,7 +972,7 @@
         "name": "Jade Screen",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/JadeScreen.png",
+        "img": "/skill/JadeScreen.png",
         "imgID": "JadeScreen"
       },
       {
@@ -984,7 +984,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/Starshatter.png",
+        "img": "/skill/Starshatter.png",
         "imgID": "Starshatter"
       }
     ],
@@ -992,13 +992,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Ningguang.png",
+    "img": "/characters/Ningguang.png",
     "imgID": "Ningguang"
   },
   {
     "id": 1602,
     "name": "Noelle",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
@@ -1011,7 +1011,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/FavoniusBladeworkMaid.png",
+        "img": "/skill/FavoniusBladeworkMaid.png",
         "imgID": "FavoniusBladeworkMaid"
       },
       {
@@ -1020,7 +1020,7 @@
         "name": "Breastplate",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Breastplate.png",
+        "img": "/skill/Breastplate.png",
         "imgID": "Breastplate"
       },
       {
@@ -1032,7 +1032,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SweepingTime.png",
+        "img": "/skill/SweepingTime.png",
         "imgID": "SweepingTime"
       }
     ],
@@ -1040,13 +1040,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Noelle.png",
+    "img": "/characters/Noelle.png",
     "imgID": "Noelle"
   },
   {
     "id": 1701,
     "name": "Collei",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Bow",
     "region": ["Sumeru", "", ""],
     "skills": [
@@ -1059,7 +1059,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/SupplicantsBowmanship.png",
+        "img": "/skill/SupplicantsBowmanship.png",
         "imgID": "SupplicantsBowmanship"
       },
       {
@@ -1068,7 +1068,7 @@
         "name": "Floral Brush",
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FloralBrush.png",
+        "img": "/skill/FloralBrush.png",
         "imgID": "FloralBrush"
       },
       {
@@ -1080,7 +1080,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/TrumpCardKitty.png",
+        "img": "/skill/TrumpCardKitty.png",
         "imgID": "TrumpCardKitty"
       }
     ],
@@ -1088,13 +1088,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Collei.png",
+    "img": "/characters/Collei.png",
     "imgID": "Collei"
   },
   {
     "id": 2201,
     "name": "Rhodeia of Loch",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
@@ -1107,7 +1107,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Surge.png",
+        "img": "/skill/Surge.png",
         "imgID": "Surge"
       },
       {
@@ -1116,7 +1116,7 @@
         "name": "Oceanid Mimic Summoning",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/OceanidMimicSummoning.png",
+        "img": "/skill/OceanidMimicSummoning.png",
         "imgID": "OceanidMimicSummoning"
       },
       {
@@ -1125,7 +1125,7 @@
         "name": "The Myriad Wilds",
         "costs": [{ "costNum": 5, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/TheMyriadWilds.png",
+        "img": "/skill/TheMyriadWilds.png",
         "imgID": "TheMyriadWilds"
       },
       {
@@ -1137,7 +1137,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/TideandTorrent.png",
+        "img": "/skill/TideandTorrent.png",
         "imgID": "TideandTorrent"
       }
     ],
@@ -1145,13 +1145,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/RhodeiaofLoch.png",
+    "img": "/characters/RhodeiaofLoch.png",
     "imgID": "RhodeiaofLoch"
   },
   {
     "id": 2202,
     "name": "Mirror Maiden",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
@@ -1164,7 +1164,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/WaterBall.png",
+        "img": "/skill/WaterBall.png",
         "imgID": "WaterBall"
       },
       {
@@ -1173,7 +1173,7 @@
         "name": "Influx Blast",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/InfluxBlast.png",
+        "img": "/skill/InfluxBlast.png",
         "imgID": "InfluxBlast"
       },
       {
@@ -1185,7 +1185,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/RippledReflection.png",
+        "img": "/skill/RippledReflection.png",
         "imgID": "RippledReflection"
       }
     ],
@@ -1193,13 +1193,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/MirrorMaiden.png",
+    "img": "/characters/MirrorMaiden.png",
     "imgID": "MirrorMaiden"
   },
   {
     "id": 2301,
     "name": "Fatui Pyro Agent",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
@@ -1212,7 +1212,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Thrust.png",
+        "img": "/skill/Thrust.png",
         "imgID": "Thrust"
       },
       {
@@ -1221,7 +1221,7 @@
         "name": "Prowl",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/Prowl.png",
+        "img": "/skill/Prowl.png",
         "imgID": "Prowl"
       },
       {
@@ -1233,7 +1233,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/BladeAblaze.png",
+        "img": "/skill/BladeAblaze.png",
         "imgID": "BladeAblaze"
       },
       {
@@ -1242,7 +1242,7 @@
         "name": "Stealth Master",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/StealthMaster.png",
+        "img": "/skill/StealthMaster.png",
         "imgID": "StealthMaster"
       }
     ],
@@ -1250,13 +1250,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/FatuiPyroAgent.png",
+    "img": "/characters/FatuiPyroAgent.png",
     "imgID": "FatuiPyroAgent"
   },
   {
     "id": 2501,
     "name": "Maguu Kenki",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
@@ -1269,7 +1269,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Ichimonji.png",
+        "img": "/skill/Ichimonji.png",
         "imgID": "Ichimonji"
       },
       {
@@ -1278,7 +1278,7 @@
         "name": "Blustering Blade",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/BlusteringBlade.png",
+        "img": "/skill/BlusteringBlade.png",
         "imgID": "BlusteringBlade"
       },
       {
@@ -1287,7 +1287,7 @@
         "name": "Frosty Assault",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/FrostyAssault.png",
+        "img": "/skill/FrostyAssault.png",
         "imgID": "FrostyAssault"
       },
       {
@@ -1299,7 +1299,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/PseudoTenguSweeper.png",
+        "img": "/skill/PseudoTenguSweeper.png",
         "imgID": "PseudoTenguSweeper"
       }
     ],
@@ -1307,13 +1307,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/MaguuKenki.png",
+    "img": "/characters/MaguuKenki.png",
     "imgID": "MaguuKenki"
   },
   {
     "id": 2601,
     "name": "Stonehide Lawachurl",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "Hilichurl", ""],
     "skills": [
@@ -1326,7 +1326,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/PlamaLawa.png",
+        "img": "/skill/PlamaLawa.png",
         "imgID": "PlamaLawa"
       },
       {
@@ -1335,7 +1335,7 @@
         "name": "Movo Lawa",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/MovoLawa.png",
+        "img": "/skill/MovoLawa.png",
         "imgID": "MovoLawa"
       },
       {
@@ -1347,7 +1347,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/UpaShato.png",
+        "img": "/skill/UpaShato.png",
         "imgID": "UpaShato"
       },
       {
@@ -1356,7 +1356,7 @@
         "name": "Infused Stonehide",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/InfusedStonehide.png",
+        "img": "/skill/InfusedStonehide.png",
         "imgID": "InfusedStonehide"
       }
     ],
@@ -1364,13 +1364,13 @@
     "profile": null,
     "elementStatus": null,
     "hp": 8,
-    "img": "https://xieqin.github.io/invokation/characters/StonehideLawachurl.png",
+    "img": "/characters/StonehideLawachurl.png",
     "imgID": "StonehideLawachurl"
   },
   {
     "id": 2701,
     "name": "Jadeplume Terrorshroom",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
@@ -1383,7 +1383,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/MajesticDance.png",
+        "img": "/skill/MajesticDance.png",
         "imgID": "MajesticDance"
       },
       {
@@ -1392,7 +1392,7 @@
         "name": "Volatile Spore Cloud",
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/VolatileSporeCloud.png",
+        "img": "/skill/VolatileSporeCloud.png",
         "imgID": "VolatileSporeCloud"
       },
       {
@@ -1404,7 +1404,7 @@
           { "costNum": 2, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/FeatherSpreading.png",
+        "img": "/skill/FeatherSpreading.png",
         "imgID": "FeatherSpreading"
       },
       {
@@ -1413,7 +1413,7 @@
         "name": "Radical Vitality",
         "costs": [],
         "type": ["Passive Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/RadicalVitality.png",
+        "img": "/skill/RadicalVitality.png",
         "imgID": "RadicalVitality"
       }
     ],
@@ -1421,7 +1421,7 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/JadeplumeTerrorshroom.png",
+    "img": "/characters/JadeplumeTerrorshroom.png",
     "imgID": "JadeplumeTerrorshroom"
   }
 ]

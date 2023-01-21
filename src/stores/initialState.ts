@@ -10,7 +10,7 @@ import { InitPlayer } from "@/utils";
 
 export interface GameState {
   phase: Phase;
-  turn: number;
+  round: number;
   deckStatus: DeckStatus;
   dices: GIDiceID[][];
   players: IPlayer[];
@@ -29,7 +29,7 @@ export interface GameState {
 
 export const initialState: GameState = {
   phase: Phase.Init,
-  turn: 1,
+  round: 1,
   deckStatus: DeckStatus.Hide,
   dices: [[], []] as GIDiceID[][],
   players: [

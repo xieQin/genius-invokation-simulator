@@ -29,7 +29,7 @@ export default function OwnArea() {
     select,
     setSelect,
   };
-  const summons: SummonsID[] = [];
+  const summons: SummonsID[] = own.summons;
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>

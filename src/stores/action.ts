@@ -1,4 +1,4 @@
-import { GIDiceID, ICard, IPlayer, PlayerPosition } from "@/models";
+import { GIDiceID, ICard, IPlayer, PlayerPosition, SummonsID } from "@/models";
 
 import { GameState } from "./initialState";
 
@@ -19,4 +19,5 @@ export interface GameAction {
   draftHandCard: (num: number, pos: PlayerPosition) => ICard[];
   addSupport: (cards: ICard, pos: PlayerPosition) => void;
   showMessage: (message: string, callback?: () => void) => void;
+  addSummon: (summon: SummonsID, pos: PlayerPosition) => void;
 }
