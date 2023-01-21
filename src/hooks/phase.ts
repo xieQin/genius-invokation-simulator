@@ -7,7 +7,7 @@ import {
   PreviewStatus,
 } from "@/models";
 import { useGameStore } from "@/stores";
-import { rollDice } from "@/utils";
+import { reRollDice, rollDice } from "@/utils";
 
 import { useTimeout } from "./utils";
 
@@ -148,7 +148,6 @@ export const useChoosePhase = (pos: PlayerPosition) => {
 export const useRollPhase = (pos: PlayerPosition) => {
   const {
     phase,
-    dices,
     rerollDices,
     setGameStates,
     shouldHideDeck,
@@ -167,7 +166,7 @@ export const useRollPhase = (pos: PlayerPosition) => {
     const l = localStorage.getItem("cacheDices");
     let cacheDices = l === null ? [] : l.split(",");
     if (!cacheDices || l === null) {
-      cacheDices = rollDice();
+      cacheDices = rollDice(8);
       localStorage.setItem("cacheDices", cacheDices.join(","));
     }
     return cacheDices;
@@ -189,15 +188,10 @@ export const useRollPhase = (pos: PlayerPosition) => {
       Action.ConfirmRerollDice,
       actions[PlayerPosition.Opponent],
     ]);
-    const targetDices = localStorage
+    let targetDices = localStorage
       .getItem("cacheDices")
       ?.split(",") as GIDiceID[];
-    rerolls.forEach(i => {
-      delete targetDices[i];
-      const reRollDice = rollDice(1);
-      console.log(reRollDice);
-      targetDices[i] = reRollDice[0];
-    });
+    targetDices = reRollDice(targetDices, rerolls);
     // todo fix dice render
     localStorage.setItem("cacheDices", targetDices.join(","));
     updateDices(targetDices, pos);
@@ -208,7 +202,7 @@ export const useRollPhase = (pos: PlayerPosition) => {
     if (rerolls.length === 0) {
       localStorage.removeItem("cacheDices");
       setGameStates("phase", Phase.Combat);
-      setGameStates("dices", [dices, rollDice()]);
+      setGameStates("dices", [dices, rollDice(8)]);
       toggleDeckStatus();
       showMessage("Action Phase", () => {
         showMessage("");

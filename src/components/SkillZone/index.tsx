@@ -37,7 +37,7 @@ export const SkillItem = (props: { skill: ISkill; i: number }) => {
   return (
     <div
       className={`${styles.SkillZoneItem} ${
-        isSkillValid(skill) ? "" : styles.NotValid
+        isSkillValid(skill.costs) ? "" : styles.NotValid
       }`}
       aria-hidden="true"
       style={{
