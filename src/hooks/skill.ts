@@ -56,6 +56,12 @@ export const useSkill = (pos: PlayerPosition) => {
     if (use_skill.name === "Dandelion Breeze") {
       addSummon("DandelionField", pos);
     }
+    if (use_skill.name === "Oceanid Mimic Summoning") {
+      addSummon("OceanidMimicFerret", pos);
+    }
+    if (use_skill.name === "Frosty Assault") {
+      addSummon("ShadowsordGallopingFrost", pos);
+    }
   };
 
   const shouldCharacterHignlight = (index: number) => {
