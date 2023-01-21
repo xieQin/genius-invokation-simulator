@@ -8,11 +8,11 @@ import OwnArea from "../OwnArea";
 import styles from "./index.module.css";
 
 export default function Deck() {
-  const { shouldHideDeck, showMessage, turn, setGameStates } = useGameStore();
+  const { shouldHideDeck, showMessage, round, setGameStates } = useGameStore();
   const onNextRound = () => {
     showMessage("Round end", () => {
       showMessage("");
-      setGameStates("turn", turn + 1);
+      setGameStates("round", round + 1);
       setGameStates("phase", Phase.DraftCard);
       setGameStates("actions", [Action.None, Action.None]);
     });

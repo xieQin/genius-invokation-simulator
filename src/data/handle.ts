@@ -12,10 +12,7 @@ import {
 import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
 
-const PUBLIC_PATH =
-  process.env.NODE_ENV === "development"
-    ? ""
-    : "https://xieqin.github.io/invokation";
+const PUBLIC_PATH = process.env.NODE_ENV === "development" ? "" : "";
 
 const ImageIDTrans = (s: string) => {
   return s
@@ -65,6 +62,27 @@ const CostTypeTrans = (c: costType) => {
   return CostType[c] || "";
 };
 
+type elementType =
+  | "ETWind"
+  | "ETIce"
+  | "ETWater"
+  | "ETFire"
+  | "ETGrass"
+  | "ETRock"
+  | "ETThunder";
+const ElementTypeTrans = (e: elementType) => {
+  const ElementType = {
+    ETWind: "Anemo",
+    ETIce: "Cryo",
+    ETWater: "Hydro",
+    ETGrass: "Dendro",
+    ETRock: "Geo",
+    ETThunder: "Electro",
+    ETFire: "Pyro",
+  };
+  return ElementType[e] || "";
+};
+
 type cardType = "AcEquip" | "AcSupport" | "AcEvent";
 
 const CardTypeTrans = (c: cardType) => {
@@ -83,7 +101,9 @@ export const transCharacters = () => {
       ({
         id: role.id,
         name: role.name,
-        element: role.element_type as GIElement,
+        element: ElementTypeTrans(
+          role.element_type as elementType
+        ) as GIElement,
         weaponType: role.weapon as EqiupmentWeaponType,
         region: role.belong_to as GIRegion[],
         skills: role.role_skill_infos.map(skill => ({

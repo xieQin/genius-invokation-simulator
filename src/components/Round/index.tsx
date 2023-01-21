@@ -7,7 +7,7 @@ import { useGameStore } from "@/stores";
 import styles from "./index.module.css";
 
 export default function Round(props: { callback: () => void }) {
-  const { turn, current } = useGameStore();
+  const { round, current } = useGameStore();
   const [show, setShow] = useState(true);
   const { callback } = props;
 
@@ -24,7 +24,7 @@ export default function Round(props: { callback: () => void }) {
         <div className={styles.RoundContentTitle}>
           {PlayerPositionMap[current]} attack first
         </div>
-        <div className={styles.RoundContentText}>Round {turn}</div>
+        <div className={styles.RoundContentText}>Round {round}</div>
       </div>
     </div>
   );
