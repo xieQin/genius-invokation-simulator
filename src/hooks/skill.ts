@@ -1,5 +1,6 @@
-import { Action, GIDice, ISkill, Phase, PlayerPosition } from "@/models";
+import { Action, ICost, ISkill, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
+import { dicesToMap, diceToNumber } from "@/utils";
 
 export const useSkill = (pos: PlayerPosition) => {
   const {
@@ -25,31 +26,19 @@ export const useSkill = (pos: PlayerPosition) => {
     return phase === Phase.Skill && index === activeCharacters[pos];
   };
 
-  // todo fix bugs
-  const isSkillValid = (skill: ISkill) => {
-    const diceMap = new Map();
-    dices.map(d => {
-      diceMap.set(d, diceMap.has(d) ? diceMap.get(d) + 1 : 1);
+  const isSkillValid = (costs: ICost[] = []) => {
+    const diceMap = dicesToMap(diceToNumber(dices));
+    const costMap = new Map();
+    costs.forEach(cost => {
+      costMap.set(cost.costType, cost.costNum);
     });
-    const costs = skill.costs;
-    for (let i = 0; i < costs.length; i++) {
-      const cost = costs[i];
-      if (cost.costType in GIDice) {
-        const _c = diceMap.get(cost.costType);
-        diceMap.set(cost.costType, _c - cost.costNum);
-        if (isNaN(_c) || _c < 0) {
-          return false;
-        }
-        if (_c === 0) {
-          diceMap.delete(cost.costType);
-        }
-      } else if (cost.costType === "Void") {
-        if (diceMap.size < cost.costNum) {
-          return false;
-        }
-      } else {
-        return false;
-      }
+    for (const cost of costMap) {
+      const diceType = cost[0];
+      const diceNum = cost[1];
+      const omni = diceMap.get("Omni") ?? 0;
+      const _diceType = diceMap.get(diceType) ?? 0;
+      if (diceType === "Void" && diceMap.size < diceNum) return false;
+      if (diceType !== "Void" && diceNum > omni + _diceType) return false;
     }
     return true;
   };

@@ -34,7 +34,7 @@ export const reRollDice = (dices: GIDiceID[], rerolls: number[]) => {
 
 export const diceToNumber = (dices: GIDiceID[]): number[] => {
   const res: number[] = [];
-  dices.map(d => {
+  dices.map((d: GIDiceID) => {
     res.push(GIDice[d]);
   });
   return res;
