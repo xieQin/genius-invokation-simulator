@@ -1,10 +1,6 @@
 import { ICard } from "./card";
 import { GIElement } from "./element";
-import {
-  EqiupmentWeaponType,
-  IEquipmentArtifact,
-  IEquipmentWeapon,
-} from "./equipment";
+import { EqiupmentWeaponType } from "./equipment";
 import { GIRegionID } from "./region";
 import { ISkill } from "./skill";
 

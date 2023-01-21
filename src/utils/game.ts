@@ -1,6 +1,13 @@
 import CardData from "@/data/cards.json";
 import CharacterData from "@/data/characters.json";
-import { ICard, ICharacter, IPlayer, ISkill, PlayerPosition } from "@/models";
+import {
+  ICard,
+  ICharacter,
+  ICost,
+  IPlayer,
+  ISkill,
+  PlayerPosition,
+} from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
 
 export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
@@ -14,17 +21,46 @@ export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
   return res;
 }
 
-export const rollDice = (): GIDiceID[] => {
+export const rollDice = (num: number): GIDiceID[] => {
+  const dices = getRandom(num, [0, 1, 2, 3, 4, 5, 6, 7], true);
+  const diceMap = dicesToMap(dices);
+  const res: GIDiceID[] = sortDice(diceMap);
+  return res;
+};
+
+export const reRollDice = (dices: GIDiceID[], rerolls: number[]) => {
+  const dicesNumber = diceToNumber(dices);
+  rerolls.forEach(i => {
+    delete dicesNumber[i];
+    dicesNumber[i] = diceToNumber(rollDice(1))[0];
+  });
+  const diceMap = dicesToMap(dicesNumber);
+  const res: GIDiceID[] = sortDice(diceMap);
+  return res;
+};
+
+export const diceToNumber = (dices: GIDiceID[]): number[] => {
+  const res: number[] = [];
+  dices.map((d: GIDiceID) => {
+    res.push(GIDice[d]);
+  });
+  return res;
+};
+
+export const dicesToMap = (dices: number[]): Map<GIDiceID, number> => {
   const diceMap = new Map();
-  const dices = getRandom(8, [0, 1, 2, 3, 4, 5, 6, 7], true);
   dices.map(d => {
     diceMap.set(
       GIDice[d],
       diceMap.has(GIDice[d]) ? diceMap.get(GIDice[d]) + 1 : 1
     );
   });
+  return diceMap;
+};
+
+export const sortDice = (diceMap: Map<GIDiceID, number>) => {
   const res: GIDiceID[] = [];
-  const omniDice = diceMap.get("Omni");
+  const omniDice = diceMap.get("Omni") || 0;
   if (omniDice > 0) {
     for (let j = 0; j < omniDice; j++) {
       res.push("Omni");
@@ -40,6 +76,24 @@ export const rollDice = (): GIDiceID[] => {
   return res;
 };
 
+export const isCostDiceValid = (costs: ICost[], dices: GIDiceID[]) => {
+  const dicesMap = dicesToMap(diceToNumber(dices));
+  const costMap = new Map();
+  costs.forEach(cost => {
+    costMap.set(cost.costType, cost.costNum);
+  });
+  for (const cost of costMap) {
+    const diceType = cost[0];
+    const diceNum = cost[1];
+    const omni = dicesMap.get("Omni") ?? 0;
+    const _diceType = dicesMap.get(diceType) ?? 0;
+    if (omni >= diceNum) continue;
+    if (diceType === "Void" && dicesMap.size < diceNum) return false;
+    if (diceType !== "Void" && diceNum > omni + _diceType) return false;
+  }
+  return true;
+};
+
 export const isCharacterType = (data: unknown) => {
   return (data as ICharacter)?.element;
 };
@@ -53,7 +107,7 @@ export const isSkillType = (data: unknown) => {
 };
 
 export const InitPlayer = (name: string, position: PlayerPosition) => {
-  const { cardStack } = InitCardStatck();
+  const { cardStack } = InitCardStack();
   const { characters } = InitCharacters();
 
   const player: IPlayer = {
@@ -61,7 +115,7 @@ export const InitPlayer = (name: string, position: PlayerPosition) => {
     position,
     status: null,
     characters,
-    summons: null,
+    summons: [],
     supports: [],
     cards: DraftHandCard(5, cardStack),
     cardStack,
@@ -92,7 +146,7 @@ export const InitCharacters = () => {
   };
 };
 
-export const InitCardStatck = () => {
+export const InitCardStack = () => {
   const initCardStack = () => getRandom<ICard>(30, CardData as ICard[]);
   const cardStack = initCardStack();
 

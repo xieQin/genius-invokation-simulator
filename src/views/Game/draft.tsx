@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
-
 import styles from "@/assets/styles/game.module.css";
 import { HandCardItem } from "@/components/HandCardZone";
+import { useTimeout } from "@/hooks";
 import { ICard, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
@@ -20,23 +19,18 @@ export default function DraftCardPhase() {
   // const animates = [2 * turn - 2, 2 * turn - 1];
   const handCards = draftHandCard(2, PlayerPosition.Own);
 
-  const timer: { current: number | null } = useRef(null);
-  useEffect(() => {
-    timer.current = window.setTimeout(() => {
-      if (phase === Phase.DraftCard) {
-        addHandCard(handCards, PlayerPosition.Own);
-        popCardStack(2, PlayerPosition.Own);
-        showMessage("Roll Phase", () => {
-          showMessage("");
-          setGameStates("phase", Phase.Roll);
-          toggleDeckStatus();
-        });
-      }
-    }, 3100);
-    return () => {
-      clearTimeout(timer.current as number);
-    };
-  });
+  useTimeout(() => {
+    if (phase === Phase.DraftCard) {
+      addHandCard(handCards, PlayerPosition.Own);
+      popCardStack(2, PlayerPosition.Own);
+      showMessage("Roll Phase", () => {
+        showMessage("");
+        setGameStates("phase", Phase.Roll);
+        toggleDeckStatus();
+      });
+    }
+  }, 3000);
+
   return (
     <>
       {phase === Phase.DraftCard && (

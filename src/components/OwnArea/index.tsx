@@ -25,11 +25,11 @@ export default function OwnArea() {
   };
   const characterProps: CharacterZoneProps = {
     characters,
-    player: position,
+    pos: position,
     select,
     setSelect,
   };
-  const summons: SummonsID[] = [];
+  const summons: SummonsID[] = own.summons;
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>

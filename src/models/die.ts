@@ -11,6 +11,7 @@ export enum GIDice {
   Pyro,
   Anemo,
   Hydro,
+  Void,
 }
 
 export type GIDiceID = keyof typeof GIDice;

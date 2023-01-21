@@ -2,13 +2,13 @@
   {
     "id": 1101,
     "name": "Ganyu",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "11011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Liutian Archery",
         "costs": [
           { "costNum": 1, "costType": "Cryo" },
@@ -20,7 +20,7 @@
       },
       {
         "id": "11012",
-        "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Ice Lotus</color>.",
+        "text": "Deals 1 <span style='color: #99FFFFFF'>Cryo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Ice Lotus</span>.",
         "name": "Trail of the Qilin",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -29,7 +29,7 @@
       },
       {
         "id": "11013",
-        "text": "Deals 2 <color=#99FFFFFF>Cryo DMG</color>, deals <color=#FFFFFFFF>2 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
+        "text": "Deals 2 <span style='color: #99FFFFFF'>Cryo DMG</span>, deals <span style='color: #FFFFFFFF'>2 <span style='color: #FFFFFFFF'>Piercing DMG</span></span> to all opposing characters on standby.",
         "name": "Frostflake Arrow",
         "costs": [{ "costNum": 5, "costType": "Cryo" }],
         "type": ["Normal Attack"],
@@ -38,7 +38,7 @@
       },
       {
         "id": "11014",
-        "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, deals <color=#FFFFFFFF>1 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby, summons 1 <color=#FFFFFFFF>Sacred Cryo Pearl</color>.",
+        "text": "Deals 1 <span style='color: #99FFFFFF'>Cryo DMG</span>, deals <span style='color: #FFFFFFFF'>1 <span style='color: #FFFFFFFF'>Piercing DMG</span></span> to all opposing characters on standby, summons 1 <span style='color: #FFFFFFFF'>Sacred Cryo Pearl</span>.",
         "name": "Celestial Shower",
         "costs": [
           { "costNum": 3, "costType": "Cryo" },
@@ -59,13 +59,13 @@
   {
     "id": 1102,
     "name": "Diona",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "11021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Kätzlein Style",
         "costs": [
           { "costNum": 1, "costType": "Cryo" },
@@ -77,7 +77,7 @@
       },
       {
         "id": "11022",
-        "text": "Deals 2 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Cat-Claw Shield</color>.",
+        "text": "Deals 2 <span style='color: #99FFFFFF'>Cryo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Cat-Claw Shield</span>.",
         "name": "Icy Paws",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -86,7 +86,7 @@
       },
       {
         "id": "11023",
-        "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, heals this character for 2 HP, summons 1 <color=#FFFFFFFF>Drunken Mist</color>.",
+        "text": "Deals 1 <span style='color: #99FFFFFF'>Cryo DMG</span>, heals this character for 2 HP, summons 1 <span style='color: #FFFFFFFF'>Drunken Mist</span>.",
         "name": "Signature Mix",
         "costs": [
           { "costNum": 3, "costType": "Cryo" },
@@ -107,13 +107,13 @@
   {
     "id": 1103,
     "name": "Kaeya",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "11031",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Ceremonial Bladework",
         "costs": [
           { "costNum": 1, "costType": "Cryo" },
@@ -125,7 +125,7 @@
       },
       {
         "id": "11032",
-        "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>.",
+        "text": "Deals 3 <span style='color: #99FFFFFF'>Cryo DMG</span>.",
         "name": "Frostgnaw",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -134,7 +134,7 @@
       },
       {
         "id": "11033",
-        "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Icicle</color>.",
+        "text": "Deals 1 <span style='color: #99FFFFFF'>Cryo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Icicle</span>.",
         "name": "Glacial Waltz",
         "costs": [
           { "costNum": 4, "costType": "Cryo" },
@@ -155,13 +155,13 @@
   {
     "id": 1104,
     "name": "Chongyun",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Claymore",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "11041",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Demonbane",
         "costs": [
           { "costNum": 1, "costType": "Cryo" },
@@ -173,7 +173,7 @@
       },
       {
         "id": "11042",
-        "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>, creates 1 <color=#FFFFFFFF>Chonghua Frost Field</color>.",
+        "text": "Deals 3 <span style='color: #99FFFFFF'>Cryo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Chonghua Frost Field</span>.",
         "name": "Chonghua's Layered Frost",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -182,7 +182,7 @@
       },
       {
         "id": "11043",
-        "text": "Deals 7 <color=#99FFFFFF>Cryo DMG</color>.",
+        "text": "Deals 7 <span style='color: #99FFFFFF'>Cryo DMG</span>.",
         "name": "Cloud-Parting Star",
         "costs": [
           { "costNum": 3, "costType": "Cryo" },
@@ -203,13 +203,13 @@
   {
     "id": 1105,
     "name": "Kamisato Ayaka",
-    "element": "ETIce",
+    "element": "Cryo",
     "weaponType": "Sword",
     "region": ["Inazuma", "", ""],
     "skills": [
       {
         "id": "11051",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Kamisato Art: Kabuki",
         "costs": [
           { "costNum": 1, "costType": "Cryo" },
@@ -221,7 +221,7 @@
       },
       {
         "id": "11052",
-        "text": "Deals 3 <color=#99FFFFFF>Cryo DMG</color>.",
+        "text": "Deals 3 <span style='color: #99FFFFFF'>Cryo DMG</span>.",
         "name": "Kamisato Art: Hyouka",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -230,7 +230,7 @@
       },
       {
         "id": "11053",
-        "text": "Deals 4 <color=#99FFFFFF>Cryo DMG</color>, summons 1 <color=#FFFFFFFF>Frostflake Seki no To</color>.",
+        "text": "Deals 4 <span style='color: #99FFFFFF'>Cryo DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Frostflake Seki no To</span>.",
         "name": "Kamisato Art: Soumetsu",
         "costs": [
           { "costNum": 3, "costType": "Cryo" },
@@ -242,7 +242,7 @@
       },
       {
         "id": "11054",
-        "text": "(Passive) When switched to be the active character, this character gains <color=#FFFFFFFF>Cryo Elemental Infusion</color>.",
+        "text": "(Passive) When switched to be the active character, this character gains <span style='color: #FFFFFFFF'>Cryo Elemental Infusion</span>.",
         "name": "Kamisato Art: Senho",
         "costs": [],
         "type": ["Passive Skill"],
@@ -260,13 +260,13 @@
   {
     "id": 1201,
     "name": "Barbara",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "12011",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>.",
         "name": "Whisper of Water",
         "costs": [
           { "costNum": 1, "costType": "Hydro" },
@@ -278,7 +278,7 @@
       },
       {
         "id": "12012",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, summons 1 <color=#FFFFFFFF>Melody Loop</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Melody Loop</span>.",
         "name": "Let the Show Begin♪",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -308,13 +308,13 @@
   {
     "id": 1202,
     "name": "Xingqiu",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "12021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Guhua Style",
         "costs": [
           { "costNum": 1, "costType": "Hydro" },
@@ -326,7 +326,7 @@
       },
       {
         "id": "12022",
-        "text": "Deals 2 <color=#80C0FFFF>Hydro DMG</color>, grants this character <color=#80C0FFFF>Hydro Application</color>, creates 1 <color=#FFFFFFFF>Rain Sword</color>.",
+        "text": "Deals 2 <span style='color: #80C0FFFF'>Hydro DMG</span>, grants this character <span style='color: #80C0FFFF'>Hydro Application</span>, creates 1 <span style='color: #FFFFFFFF'>Rain Sword</span>.",
         "name": "Fatal Rainscreen",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -335,7 +335,7 @@
       },
       {
         "id": "12023",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, grants this character <color=#80C0FFFF>Hydro Application</color>, creates 1 <color=#FFFFFFFF>Rainbow Bladework</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>, grants this character <span style='color: #80C0FFFF'>Hydro Application</span>, creates 1 <span style='color: #FFFFFFFF'>Rainbow Bladework</span>.",
         "name": "Raincutter",
         "costs": [
           { "costNum": 3, "costType": "Hydro" },
@@ -356,13 +356,13 @@
   {
     "id": 1203,
     "name": "Mona",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "12031",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>.",
         "name": "Ripple of Fate",
         "costs": [
           { "costNum": 1, "costType": "Hydro" },
@@ -374,7 +374,7 @@
       },
       {
         "id": "12032",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>, summons 1 <color=#FFFFFFFF>Reflection</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Reflection</span>.",
         "name": "Mirror Reflection of Doom",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -383,7 +383,7 @@
       },
       {
         "id": "12033",
-        "text": "Deals 4 <color=#80C0FFFF>Hydro DMG</color>, creates 1 <color=#FFFFFFFF>Illusory Bubble</color>.",
+        "text": "Deals 4 <span style='color: #80C0FFFF'>Hydro DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Illusory Bubble</span>.",
         "name": "Stellaris Phantasm",
         "costs": [
           { "costNum": 3, "costType": "Hydro" },
@@ -395,7 +395,7 @@
       },
       {
         "id": "12034",
-        "text": "(Passive) <color=#FFFFFFFF>When you perform \"Switch Character\" while Mona is your active character:</color> This switch is considered a <color=#FFFFFFFF>Fast Action</color> instead of a <color=#FFFFFFFF>Combat Action</color>. (Once per Round)",
+        "text": "(Passive) <span style='color: #FFFFFFFF'>When you perform \"Switch Character\" while Mona is your active character:</span> This switch is considered a <span style='color: #FFFFFFFF'>Fast Action</span> instead of a <span style='color: #FFFFFFFF'>Combat Action</span>. (Once per Round)",
         "name": "Illusory Torrent",
         "costs": [],
         "type": ["Passive Skill"],
@@ -413,13 +413,13 @@
   {
     "id": 1301,
     "name": "Diluc",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "13011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Tempered Sword",
         "costs": [
           { "costNum": 1, "costType": "Pyro" },
@@ -431,7 +431,7 @@
       },
       {
         "id": "13012",
-        "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>. For the third use of this Skill each Round, deals +2 DMG.",
+        "text": "Deals 3 <span style='color: #FF9999FF'>Pyro DMG</span>. For the third use of this Skill each Round, deals +2 DMG.",
         "name": "Searing Onslaught",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
@@ -440,7 +440,7 @@
       },
       {
         "id": "13013",
-        "text": "Deals 8 <color=#FF9999FF>Pyro DMG</color>. This character gains <color=#FFFFFFFF>Pyro Infusion</color>.",
+        "text": "Deals 8 <span style='color: #FF9999FF'>Pyro DMG</span>. This character gains <span style='color: #FFFFFFFF'>Pyro Infusion</span>.",
         "name": "Dawn",
         "costs": [
           { "costNum": 4, "costType": "Pyro" },
@@ -461,13 +461,13 @@
   {
     "id": 1302,
     "name": "Xiangling",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Polearm",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "13021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Dough-Fu",
         "costs": [
           { "costNum": 1, "costType": "Pyro" },
@@ -479,7 +479,7 @@
       },
       {
         "id": "13022",
-        "text": "Summons 1 <color=#FFFFFFFF>Guoba</color>.",
+        "text": "Summons 1 <span style='color: #FFFFFFFF'>Guoba</span>.",
         "name": "Guoba Attack",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
@@ -488,7 +488,7 @@
       },
       {
         "id": "13023",
-        "text": "Deals 2 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Pyronado</color>.",
+        "text": "Deals 2 <span style='color: #FF9999FF'>Pyro DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Pyronado</span>.",
         "name": "Pyronado",
         "costs": [
           { "costNum": 4, "costType": "Pyro" },
@@ -509,13 +509,13 @@
   {
     "id": 1303,
     "name": "Bennett",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "13031",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Strike of Fortune",
         "costs": [
           { "costNum": 1, "costType": "Pyro" },
@@ -527,7 +527,7 @@
       },
       {
         "id": "13032",
-        "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>.",
+        "text": "Deals 3 <span style='color: #FF9999FF'>Pyro DMG</span>.",
         "name": "Passion Overload",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
@@ -536,7 +536,7 @@
       },
       {
         "id": "13033",
-        "text": "Deals 2 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Inspiration Field</color>.",
+        "text": "Deals 2 <span style='color: #FF9999FF'>Pyro DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Inspiration Field</span>.",
         "name": "Fantastic Voyage",
         "costs": [
           { "costNum": 4, "costType": "Pyro" },
@@ -557,13 +557,13 @@
   {
     "id": 1305,
     "name": "Yoimiya",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Bow",
     "region": ["Inazuma", "", ""],
     "skills": [
       {
         "id": "13051",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Firework Flare-Up",
         "costs": [
           { "costNum": 1, "costType": "Pyro" },
@@ -575,7 +575,7 @@
       },
       {
         "id": "13052",
-        "text": "This character gains <color=#FFFFFFFF>Niwabi Enshou</color>. (This Skill does not grant Energy)",
+        "text": "This character gains <span style='color: #FFFFFFFF'>Niwabi Enshou</span>. (This Skill does not grant Energy)",
         "name": "Niwabi Fire-Dance",
         "costs": [{ "costNum": 1, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
@@ -584,7 +584,7 @@
       },
       {
         "id": "13053",
-        "text": "Deals 3 <color=#FF9999FF>Pyro DMG</color>, creates 1 <color=#FFFFFFFF>Aurous Blaze</color>.",
+        "text": "Deals 3 <span style='color: #FF9999FF'>Pyro DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Aurous Blaze</span>.",
         "name": "Ryuukin Saxifrage",
         "costs": [
           { "costNum": 3, "costType": "Pyro" },
@@ -603,15 +603,63 @@
     "imgID": "Yoimiya"
   },
   {
+    "id": 1306,
+    "name": "Klee",
+    "element": "Pyro",
+    "weaponType": "Catalyst",
+    "region": ["Mondstadt", "", ""],
+    "skills": [
+      {
+        "id": "13061",
+        "text": "Deals 1 <span style=\"color: #FF9999FF;\">Pyro DMG</span>.",
+        "name": "Kaboom!",
+        "costs": [
+          { "costNum": 1, "costType": "Pyro" },
+          { "costNum": 2, "costType": "Void" }
+        ],
+        "type": ["Normal Attack"],
+        "img": "https://xieqin.github.io/invokation/skill/Kaboom.png",
+        "imgID": "Kaboom"
+      },
+      {
+        "id": "13062",
+        "text": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>. This character gains <span style=\"color: #FFFFFFFF;\">Explosive Spark</span>.",
+        "name": "Jumpy Dumpty",
+        "costs": [{ "costNum": 3, "costType": "Pyro" }],
+        "type": ["Elemental Skill"],
+        "img": "https://xieqin.github.io/invokation/skill/JumpyDumpty.png",
+        "imgID": "JumpyDumpty"
+      },
+      {
+        "id": "13063",
+        "text": "Deals 3 <span style=\"color: #FF9999FF;\">Pyro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Sparks 'n' Splash</span> at the opponent's play area.",
+        "name": "Sparks 'n' Splash",
+        "costs": [
+          { "costNum": 3, "costType": "Pyro" },
+          { "costNum": 3, "costType": "Energy" }
+        ],
+        "type": ["Elemental Burst"],
+        "img": "https://xieqin.github.io/invokation/skill/SparksnSplash.png",
+        "imgID": "SparksnSplash"
+      }
+    ],
+    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "profile": null,
+    "elementStatus": null,
+    "hp": 10,
+    "img": "https://xieqin.github.io/invokation/characters/Klee.png",
+    "imgID": "Klee"
+  },
+  {
     "id": 1401,
     "name": "Fischl",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Bow",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "14011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Bolts of Downfall",
         "costs": [
           { "costNum": 1, "costType": "Electro" },
@@ -623,7 +671,7 @@
       },
       {
         "id": "14012",
-        "text": "Deals 1 <color=#FFACFFFF>Electro DMG</color>, summons 1 <color=#FFFFFFFF>Oz</color>.",
+        "text": "Deals 1 <span style='color: #FFACFFFF'>Electro DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Oz</span>.",
         "name": "Nightrider",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
@@ -632,7 +680,7 @@
       },
       {
         "id": "14013",
-        "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>, deals 2 <color=#FFFFFFFF><color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
+        "text": "Deals 4 <span style='color: #FFACFFFF'>Electro DMG</span>, deals 2 <span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Piercing DMG</span></span> to all opposing characters on standby.",
         "name": "Midnight Phantasmagoria",
         "costs": [
           { "costNum": 3, "costType": "Electro" },
@@ -653,13 +701,13 @@
   {
     "id": 1402,
     "name": "Razor",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "14021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Steel Fang",
         "costs": [
           { "costNum": 1, "costType": "Electro" },
@@ -671,7 +719,7 @@
       },
       {
         "id": "14022",
-        "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>.",
+        "text": "Deals 3 <span style='color: #FFACFFFF'>Electro DMG</span>.",
         "name": "Claw and Thunder",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
@@ -680,7 +728,7 @@
       },
       {
         "id": "14023",
-        "text": "Deals 5 <color=#FFACFFFF>Electro DMG</color>. This character gains <color=#FFFFFFFF>The Wolf Within</color>.",
+        "text": "Deals 5 <span style='color: #FFACFFFF'>Electro DMG</span>. This character gains <span style='color: #FFFFFFFF'>The Wolf Within</span>.",
         "name": "Lightning Fang",
         "costs": [
           { "costNum": 3, "costType": "Electro" },
@@ -701,13 +749,13 @@
   {
     "id": 1403,
     "name": "Keqing",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Sword",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "14031",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Yunlai Swordsmanship",
         "costs": [
           { "costNum": 1, "costType": "Electro" },
@@ -719,7 +767,7 @@
       },
       {
         "id": "14032",
-        "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>, creates 1 <color=#FFFFFFFF>Lightning Stiletto</color>.",
+        "text": "Deals 3 <span style='color: #FFACFFFF'>Electro DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Lightning Stiletto</span>.",
         "name": "Stellar Restoration",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
@@ -728,7 +776,7 @@
       },
       {
         "id": "14033",
-        "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>, deals <color=#FFFFFFFF>3 <color=#FFFFFFFF>Piercing DMG</color></color> to all opposing characters on standby.",
+        "text": "Deals 4 <span style='color: #FFACFFFF'>Electro DMG</span>, deals <span style='color: #FFFFFFFF'>3 <span style='color: #FFFFFFFF'>Piercing DMG</span></span> to all opposing characters on standby.",
         "name": "Starward Sword",
         "costs": [
           { "costNum": 4, "costType": "Electro" },
@@ -749,13 +797,13 @@
   {
     "id": 1404,
     "name": "Cyno",
-    "element": "ETThunder",
+    "element": "Electro",
     "weaponType": "Polearm",
     "region": ["Sumeru", "", ""],
     "skills": [
       {
         "id": "14041",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Invoker's Spear",
         "costs": [
           { "costNum": 1, "costType": "Electro" },
@@ -767,7 +815,7 @@
       },
       {
         "id": "14042",
-        "text": "Deals 3 <color=#FFACFFFF>Electro DMG</color>.",
+        "text": "Deals 3 <span style='color: #FFACFFFF'>Electro DMG</span>.",
         "name": "Secret Rite: Chasmic Soulfarer",
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
@@ -776,7 +824,7 @@
       },
       {
         "id": "14043",
-        "text": "Deals 4 <color=#FFACFFFF>Electro DMG</color>.\\n<color=#FFFFFFFF>Pactsworn Pathclearer</color>'s Indwelling Level +2.",
+        "text": "Deals 4 <span style='color: #FFACFFFF'>Electro DMG</span>.\\n<span style='color: #FFFFFFFF'>Pactsworn Pathclearer</span>'s Indwelling Level +2.",
         "name": "Sacred Rite: Wolf's Swiftness",
         "costs": [
           { "costNum": 4, "costType": "Electro" },
@@ -788,7 +836,7 @@
       },
       {
         "id": "14044",
-        "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Pactsworn Pathclearer</color>.",
+        "text": "(Passive) When the battle begins, this character gains <span style='color: #FFFFFFFF'>Pactsworn Pathclearer</span>.",
         "name": "Lawful Enforcer",
         "costs": [],
         "type": ["Passive Skill"],
@@ -806,13 +854,13 @@
   {
     "id": 1501,
     "name": "Sucrose",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Catalyst",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "15011",
-        "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>.",
+        "text": "Deals 1 <span style='color: #80FFD7FF'>Anemo DMG</span>.",
         "name": "Wind Spirit Creation",
         "costs": [
           { "costNum": 1, "costType": "Anemo" },
@@ -824,7 +872,7 @@
       },
       {
         "id": "15012",
-        "text": "Deals 3 <color=#80FFD7FF>Anemo DMG</color>, the target is forcibly switched to the previous character.",
+        "text": "Deals 3 <span style='color: #80FFD7FF'>Anemo DMG</span>, the target is forcibly switched to the previous character.",
         "name": "Astable Anemohypostasis Creation - 6308",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
@@ -833,7 +881,7 @@
       },
       {
         "id": "15013",
-        "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>, summons 1 <color=#FFFFFFFF>Large Wind Spirit</color>.",
+        "text": "Deals 1 <span style='color: #80FFD7FF'>Anemo DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Large Wind Spirit</span>.",
         "name": "Forbidden Creation - Isomer 75 / Type II",
         "costs": [
           { "costNum": 3, "costType": "Anemo" },
@@ -854,13 +902,13 @@
   {
     "id": 1502,
     "name": "Jean",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Sword",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "15021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Favonius Bladework",
         "costs": [
           { "costNum": 1, "costType": "Anemo" },
@@ -872,7 +920,7 @@
       },
       {
         "id": "15022",
-        "text": "Deals 3 <color=#80FFD7FF>Anemo DMG</color>, the target is forcibly switched to the next character.",
+        "text": "Deals 3 <span style='color: #80FFD7FF'>Anemo DMG</span>, the target is forcibly switched to the next character.",
         "name": "Gale Blade",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
@@ -881,7 +929,7 @@
       },
       {
         "id": "15023",
-        "text": "Heals all your characters for 2 HP, summons 1 <color=#FFFFFFFF>Dandelion Field</color>.",
+        "text": "Heals all your characters for 2 HP, summons 1 <span style='color: #FFFFFFFF'>Dandelion Field</span>.",
         "name": "Dandelion Breeze",
         "costs": [
           { "costNum": 4, "costType": "Anemo" },
@@ -902,13 +950,13 @@
   {
     "id": 1601,
     "name": "Ningguang",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Catalyst",
     "region": ["Liyue", "", ""],
     "skills": [
       {
         "id": "16011",
-        "text": "Deals 1 <color=#FFE699FF>Geo DMG</color>.",
+        "text": "Deals 1 <span style='color: #FFE699FF'>Geo DMG</span>.",
         "name": "Sparkling Scatter",
         "costs": [
           { "costNum": 1, "costType": "Geo" },
@@ -920,7 +968,7 @@
       },
       {
         "id": "16012",
-        "text": "Deals 2 <color=#FFE699FF>Geo DMG</color>, creates 1 <color=#FFFFFFFF>Jade Screen</color>.",
+        "text": "Deals 2 <span style='color: #FFE699FF'>Geo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Jade Screen</span>.",
         "name": "Jade Screen",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
@@ -929,7 +977,7 @@
       },
       {
         "id": "16013",
-        "text": "Deals 6 <color=#FFE699FF>Geo DMG</color>. If <color=#FFFFFFFF>Jade Screen</color> is on the field, deals +2 DMG.",
+        "text": "Deals 6 <span style='color: #FFE699FF'>Geo DMG</span>. If <span style='color: #FFFFFFFF'>Jade Screen</span> is on the field, deals +2 DMG.",
         "name": "Starshatter",
         "costs": [
           { "costNum": 3, "costType": "Geo" },
@@ -950,13 +998,13 @@
   {
     "id": 1602,
     "name": "Noelle",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Claymore",
     "region": ["Mondstadt", "", ""],
     "skills": [
       {
         "id": "16021",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Favonius Bladework - Maid",
         "costs": [
           { "costNum": 1, "costType": "Geo" },
@@ -968,7 +1016,7 @@
       },
       {
         "id": "16022",
-        "text": "Deals 1 <color=#FFE699FF>Geo DMG</color>, creates 1 <color=#FFFFFFFF>Full Plate</color>.",
+        "text": "Deals 1 <span style='color: #FFE699FF'>Geo DMG</span>, creates 1 <span style='color: #FFFFFFFF'>Full Plate</span>.",
         "name": "Breastplate",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
@@ -977,7 +1025,7 @@
       },
       {
         "id": "16023",
-        "text": "Deals 4 <color=#FFE699FF>Geo DMG</color>. This character gains <color=#FFFFFFFF>Sweeping Time</color>.",
+        "text": "Deals 4 <span style='color: #FFE699FF'>Geo DMG</span>. This character gains <span style='color: #FFFFFFFF'>Sweeping Time</span>.",
         "name": "Sweeping Time",
         "costs": [
           { "costNum": 4, "costType": "Geo" },
@@ -998,13 +1046,13 @@
   {
     "id": 1701,
     "name": "Collei",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Bow",
     "region": ["Sumeru", "", ""],
     "skills": [
       {
         "id": "17011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Supplicant's Bowmanship",
         "costs": [
           { "costNum": 1, "costType": "Dendro" },
@@ -1016,7 +1064,7 @@
       },
       {
         "id": "17012",
-        "text": "Deals 3 <color=#7EC236FF>Dendro DMG</color>.",
+        "text": "Deals 3 <span style='color: #7EC236FF'>Dendro DMG</span>.",
         "name": "Floral Brush",
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
@@ -1025,7 +1073,7 @@
       },
       {
         "id": "17013",
-        "text": "Deals 2 <color=#7EC236FF>Dendro DMG</color>, summons 1 <color=#FFFFFFFF>Cuilein-Anbar</color>.",
+        "text": "Deals 2 <span style='color: #7EC236FF'>Dendro DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Cuilein-Anbar</span>.",
         "name": "Trump-Card Kitty",
         "costs": [
           { "costNum": 3, "costType": "Dendro" },
@@ -1046,13 +1094,13 @@
   {
     "id": 2201,
     "name": "Rhodeia of Loch",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
       {
         "id": "22011",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>.",
         "name": "Surge",
         "costs": [
           { "costNum": 1, "costType": "Hydro" },
@@ -1064,7 +1112,7 @@
       },
       {
         "id": "22012",
-        "text": "Randomly summons 1 <color=#FFFFFFFF>Oceanid Mimic</color> (Prioritizes summoning a different type from preexisting ones).",
+        "text": "Randomly summons 1 <span style='color: #FFFFFFFF'>Oceanid Mimic</span> (Prioritizes summoning a different type from preexisting ones).",
         "name": "Oceanid Mimic Summoning",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -1073,7 +1121,7 @@
       },
       {
         "id": "22013",
-        "text": "Randomly summons 2 <color=#FFFFFFFF>Oceanid Mimic</color> (Prioritizes summoning different types).",
+        "text": "Randomly summons 2 <span style='color: #FFFFFFFF'>Oceanid Mimic</span> (Prioritizes summoning different types).",
         "name": "The Myriad Wilds",
         "costs": [{ "costNum": 5, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -1082,7 +1130,7 @@
       },
       {
         "id": "22014",
-        "text": "Deals 2 <color=#80C0FFFF>Hydro DMG</color>. For each friendly Summon on the field, deals +2 additional DMG.",
+        "text": "Deals 2 <span style='color: #80C0FFFF'>Hydro DMG</span>. For each friendly Summon on the field, deals +2 additional DMG.",
         "name": "Tide and Torrent",
         "costs": [
           { "costNum": 3, "costType": "Hydro" },
@@ -1103,13 +1151,13 @@
   {
     "id": 2202,
     "name": "Mirror Maiden",
-    "element": "ETWater",
+    "element": "Hydro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
       {
         "id": "22021",
-        "text": "Deals 1 <color=#80C0FFFF>Hydro DMG</color>.",
+        "text": "Deals 1 <span style='color: #80C0FFFF'>Hydro DMG</span>.",
         "name": "Water Ball",
         "costs": [
           { "costNum": 1, "costType": "Hydro" },
@@ -1121,7 +1169,7 @@
       },
       {
         "id": "22022",
-        "text": "Deals 3 <color=#80C0FFFF>Hydro DMG</color>. The target character receives <color=#FFFFFFFF>Refraction</color>.",
+        "text": "Deals 3 <span style='color: #80C0FFFF'>Hydro DMG</span>. The target character receives <span style='color: #FFFFFFFF'>Refraction</span>.",
         "name": "Influx Blast",
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
@@ -1130,7 +1178,7 @@
       },
       {
         "id": "22023",
-        "text": "Deals 5 <color=#80C0FFFF>Hydro DMG</color>.",
+        "text": "Deals 5 <span style='color: #80C0FFFF'>Hydro DMG</span>.",
         "name": "Rippled Reflection",
         "costs": [
           { "costNum": 3, "costType": "Hydro" },
@@ -1151,13 +1199,13 @@
   {
     "id": 2301,
     "name": "Fatui Pyro Agent",
-    "element": "ETFire",
+    "element": "Pyro",
     "weaponType": "Other Weapons",
     "region": ["Fatui", "", ""],
     "skills": [
       {
         "id": "23011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Thrust",
         "costs": [
           { "costNum": 1, "costType": "Pyro" },
@@ -1169,7 +1217,7 @@
       },
       {
         "id": "23012",
-        "text": "Deals 1 <color=#FF9999FF>Pyro DMG</color>. This character gains <color=#FFFFFFFF>Stealth</color>.",
+        "text": "Deals 1 <span style='color: #FF9999FF'>Pyro DMG</span>. This character gains <span style='color: #FFFFFFFF'>Stealth</span>.",
         "name": "Prowl",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
@@ -1178,7 +1226,7 @@
       },
       {
         "id": "23013",
-        "text": "Deals 5 <color=#FF9999FF>Pyro DMG</color>.",
+        "text": "Deals 5 <span style='color: #FF9999FF'>Pyro DMG</span>.",
         "name": "Blade Ablaze",
         "costs": [
           { "costNum": 3, "costType": "Pyro" },
@@ -1190,7 +1238,7 @@
       },
       {
         "id": "23014",
-        "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Stealth</color>.",
+        "text": "(Passive) When the battle begins, this character gains <span style='color: #FFFFFFFF'>Stealth</span>.",
         "name": "Stealth Master",
         "costs": [],
         "type": ["Passive Skill"],
@@ -1208,13 +1256,13 @@
   {
     "id": 2501,
     "name": "Maguu Kenki",
-    "element": "ETWind",
+    "element": "Anemo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
       {
         "id": "25011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Ichimonji",
         "costs": [
           { "costNum": 1, "costType": "Anemo" },
@@ -1226,7 +1274,7 @@
       },
       {
         "id": "25012",
-        "text": "Deals 1 <color=#80FFD7FF>Anemo DMG</color>, summons 1 <color=#FFFFFFFF>Shadowsword: Lone Gale</color>.",
+        "text": "Deals 1 <span style='color: #80FFD7FF'>Anemo DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Shadowsword: Lone Gale</span>.",
         "name": "Blustering Blade",
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
@@ -1235,7 +1283,7 @@
       },
       {
         "id": "25013",
-        "text": "Deals 1 <color=#99FFFFFF>Cryo DMG</color>, summons 1 <color=#FFFFFFFF>Shadowsword: Galloping Frost</color>.",
+        "text": "Deals 1 <span style='color: #99FFFFFF'>Cryo DMG</span>, summons 1 <span style='color: #FFFFFFFF'>Shadowsword: Galloping Frost</span>.",
         "name": "Frosty Assault",
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
@@ -1244,7 +1292,7 @@
       },
       {
         "id": "25014",
-        "text": "Deals 4 <color=#80FFD7FF>Anemo DMG</color>, triggers the effect(s) of all your <color=#FFFFFFFF>Shadowsword</color> Summon(s). (Does not consume their Usages)",
+        "text": "Deals 4 <span style='color: #80FFD7FF'>Anemo DMG</span>, triggers the effect(s) of all your <span style='color: #FFFFFFFF'>Shadowsword</span> Summon(s). (Does not consume their Usages)",
         "name": "Pseudo Tengu Sweeper",
         "costs": [
           { "costNum": 3, "costType": "Anemo" },
@@ -1265,13 +1313,13 @@
   {
     "id": 2601,
     "name": "Stonehide Lawachurl",
-    "element": "ETRock",
+    "element": "Geo",
     "weaponType": "Other Weapons",
     "region": ["Monster", "Hilichurl", ""],
     "skills": [
       {
         "id": "26011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Plama Lawa",
         "costs": [
           { "costNum": 1, "costType": "Geo" },
@@ -1283,7 +1331,7 @@
       },
       {
         "id": "26012",
-        "text": "Deals 3 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 3 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Movo Lawa",
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
@@ -1292,7 +1340,7 @@
       },
       {
         "id": "26013",
-        "text": "Deals 5 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 5 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Upa Shato",
         "costs": [
           { "costNum": 3, "costType": "Geo" },
@@ -1304,7 +1352,7 @@
       },
       {
         "id": "26014",
-        "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Stonehide</color> and <color=#FFFFFFFF>Stone Force</color>.",
+        "text": "(Passive) When the battle begins, this character gains <span style='color: #FFFFFFFF'>Stonehide</span> and <span style='color: #FFFFFFFF'>Stone Force</span>.",
         "name": "Infused Stonehide",
         "costs": [],
         "type": ["Passive Skill"],
@@ -1322,13 +1370,13 @@
   {
     "id": 2701,
     "name": "Jadeplume Terrorshroom",
-    "element": "ETGrass",
+    "element": "Dendro",
     "weaponType": "Other Weapons",
     "region": ["Monster", "", ""],
     "skills": [
       {
         "id": "27011",
-        "text": "Deals 2 <color=#FFFFFFFF>Physical DMG</color>.",
+        "text": "Deals 2 <span style='color: #FFFFFFFF'>Physical DMG</span>.",
         "name": "Majestic Dance",
         "costs": [
           { "costNum": 1, "costType": "Dendro" },
@@ -1340,7 +1388,7 @@
       },
       {
         "id": "27012",
-        "text": "Deals 3 <color=#7EC236FF>Dendro DMG</color>.",
+        "text": "Deals 3 <span style='color: #7EC236FF'>Dendro DMG</span>.",
         "name": "Volatile Spore Cloud",
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
@@ -1349,7 +1397,7 @@
       },
       {
         "id": "27013",
-        "text": "Deals 4 <color=#7EC236FF>Dendro DMG</color>, then consumes all <color=#FFFFFFFF>Radical Vitality</color> stacks. For each stack consumed, this instance deals +1 DMG.",
+        "text": "Deals 4 <span style='color: #7EC236FF'>Dendro DMG</span>, then consumes all <span style='color: #FFFFFFFF'>Radical Vitality</span> stacks. For each stack consumed, this instance deals +1 DMG.",
         "name": "Feather Spreading",
         "costs": [
           { "costNum": 3, "costType": "Dendro" },
@@ -1361,7 +1409,7 @@
       },
       {
         "id": "27014",
-        "text": "(Passive) When the battle begins, this character gains <color=#FFFFFFFF>Radical Vitality</color>.",
+        "text": "(Passive) When the battle begins, this character gains <span style='color: #FFFFFFFF'>Radical Vitality</span>.",
         "name": "Radical Vitality",
         "costs": [],
         "type": ["Passive Skill"],

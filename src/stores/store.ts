@@ -14,7 +14,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       ...state,
       [key]: update,
     })),
-  updataDices: (dice, pos) => {
+  updateDices: (dice, pos) => {
     const dices = Object.assign([], get().dices) as GIDiceID[][];
     dices[pos] = dice;
     set(state => ({
@@ -32,7 +32,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
           : DeckStatus.Hide,
     })),
   getPlayer: pos => get().players[pos],
-  updataPlayer: (player, pos) => {
+  updatePlayer: (player, pos) => {
     const players = Object.assign([], get().players) as IPlayer[];
     players[pos] = player;
     set(state => ({
@@ -46,7 +46,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       ...player,
       cards: [...player.cards, ...cards],
     };
-    get().updataPlayer(player, pos);
+    get().updatePlayer(player, pos);
   },
   popCardStack: (num, pos) => {
     let player = get().getPlayer(pos);
@@ -58,12 +58,21 @@ export const useGameStore = create<GameStore>((set, get) => ({
       ...player,
       cardStack: cards,
     };
-    get().updataPlayer(player, pos);
+    get().updatePlayer(player, pos);
+  },
+  pushCardsStack: (cards, pos) => {
+    let player = get().getPlayer(pos);
+    const cardStack = player.cardStack;
+    player = {
+      ...player,
+      cardStack: [...cardStack, ...cards],
+    };
+    get().updatePlayer(player, pos);
   },
   removeHandCard: (idx, pos) => {
     const player = get().getPlayer(pos);
     player.cards.splice(idx, 1);
-    get().updataPlayer(player, pos);
+    get().updatePlayer(player, pos);
   },
   draftHandCard: (num = 2, pos) => {
     const player = get().getPlayer(pos);
@@ -80,7 +89,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
       ...player,
       supports: [...player.supports, card],
     };
-    get().updataPlayer(player, pos);
+    get().updatePlayer(player, pos);
   },
 
   showMessage: (message: string, callback) =>
@@ -89,4 +98,13 @@ export const useGameStore = create<GameStore>((set, get) => ({
       message,
       msgCallback: callback,
     })),
+
+  addSummon: (summon, pos) => {
+    let player = get().getPlayer(pos);
+    player = {
+      ...player,
+      summons: [...player.summons, summon],
+    };
+    get().updatePlayer(player, pos);
+  },
 }));

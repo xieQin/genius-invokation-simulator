@@ -5,3 +5,5 @@ export * from "./preload";
 export * from "./preview";
 export * from "./scale";
 export * from "./skill";
+export * from "./skills";
+export * from "./utils";

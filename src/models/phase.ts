@@ -6,6 +6,16 @@ export enum Phase {
   Combat = "combat",
   PlayCard = "play-card",
   DraftCard = "draft-card",
-  ChangeCharacter = "change-characater",
+  ChangeCharacter = "change-character",
   Equipment = "equipment",
+  Skill = "skill",
+}
+
+export enum Action {
+  None = "",
+  SwitchCard = "switch-card",
+  ConfirmSwitchCard = "confirm-switch-card",
+  RerollDice = "reroll-dice",
+  ConfirmRerollDice = "confirm-reroll-dice",
+  CastSkill = "cast-skill",
 }

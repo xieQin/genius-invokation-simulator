@@ -8,8 +8,8 @@ export default function ClockZone(props: { onNextRound: () => void }) {
   const { onNextRound } = props;
   return (
     <div className={styles.ClockZone}>
-      <div className={styles.OppositeDices}>
-        {dices[PlayerPosition.Opposite].length}
+      <div className={styles.OpponentDices}>
+        {dices[PlayerPosition.Opponent].length}
       </div>
       <div
         className={styles.ClockTime}

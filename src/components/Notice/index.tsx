@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useTimeout } from "@/hooks";
 
 import styles from "./index.module.css";
 
@@ -12,19 +12,10 @@ export default function Notice(props: {
   callback?: () => void;
   timeout?: number;
 }) {
-  const { message, callback, timeout } = props;
-  const timer: { current: number | null } = useRef(null);
-  useEffect(() => {
-    timer.current = window.setTimeout(
-      () => {
-        callback && callback();
-      },
-      timeout ? timeout : 1200
-    );
-    return () => {
-      clearTimeout(timer.current as number);
-    };
-  });
+  const { message, callback, timeout = 1200 } = props;
+  useTimeout(() => {
+    callback && callback();
+  }, timeout);
 
   return <>{message && <div className={styles.Notice}>{message}</div>}</>;
 }

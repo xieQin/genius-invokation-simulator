@@ -1,52 +1,36 @@
-import { useEffect, useRef } from "react";
-
 import styles from "@/assets/styles/game.module.css";
 import { DraftHandCardZone, HandCardItem } from "@/components/HandCardZone";
+import { useStartPhase, useTimeout } from "@/hooks";
 import { PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 export default function InitPhase() {
   const gameStates = useGameStore();
-  const {
-    phase,
-    players,
-    setGameStates,
-    toggleDeckStatus,
-    shouldHideDeck,
-    draftHandCard,
-    popCardStack,
-  } = gameStates;
+  const { phase, players, setGameStates, shouldHideDeck } = gameStates;
   const own = players[PlayerPosition.Own];
-  const opposite = players[PlayerPosition.Opposite];
-  const handCards = draftHandCard(5, PlayerPosition.Own);
-  const timeout: { current: number | null } = useRef(null);
-  const pos = PlayerPosition.Opposite;
-  useEffect(() => {
-    timeout.current = window.setTimeout(() => {
-      if (phase === Phase.Init) {
-        setGameStates("phase", Phase.Start);
-      }
-    }, 600);
-    return () => {
-      clearTimeout(timeout.current as number);
-    };
-  });
-  const onConfirm = () => {
-    setGameStates("phase", Phase.Choose);
-    popCardStack(5, PlayerPosition.Own);
-    toggleDeckStatus();
-  };
+  const opponent = players[PlayerPosition.Opponent];
+  const opponentPos = PlayerPosition.Opponent;
+  const { onStartPhaseEnd, isSwitchCardValid } = useStartPhase(
+    PlayerPosition.Own
+  );
+
+  useTimeout(() => {
+    if (phase === Phase.Init) {
+      setGameStates("phase", Phase.Start);
+    }
+  }, 1200);
+
   return (
     <>
       {phase === Phase.Init && (
         <div className={styles.GameLayer}>
-          {handCards.map((card, i) => (
+          {own.cards.map((card, i) => (
             <div
               key={i}
               className={`${styles.HandAnimate} ${styles[`Animate${i + 1}`]}`}
             >
-              <HandCardItem card={card} player={pos} />
+              <HandCardItem card={card} player={opponentPos} />
             </div>
           ))}
         </div>
@@ -55,19 +39,23 @@ export default function InitPhase() {
         <div className={styles.GameLayer}>
           <div className={styles.GameModalLayerText}>
             <p>Starting Hands</p>
-            <p>select card(s) to switch</p>
+            {isSwitchCardValid ? (
+              <p>select card(s) to switch</p>
+            ) : (
+              <p>switch result</p>
+            )}
           </div>
           <div className={styles.GameModalLayer}></div>
           <DraftHandCardZone cards={own.cards} player={PlayerPosition.Own} />
           <DraftHandCardZone
-            cards={opposite.cards}
-            player={PlayerPosition.Opposite}
+            cards={opponent.cards}
+            player={PlayerPosition.Opponent}
           />
           <div
             className={styles.GameLayerBtns}
             aria-hidden="true"
             onClick={() => {
-              onConfirm();
+              onStartPhaseEnd();
             }}
           >
             <div className={styles.ConfirmIcon}></div>

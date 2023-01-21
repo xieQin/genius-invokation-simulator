@@ -24,21 +24,32 @@ export const SkillPayItems = (props: { costs: ICost[] }) => {
   );
 };
 
-export const SkillItem = (props: { skill: ISkill }) => {
-  const { skill } = props;
+export const SkillItem = (props: { skill: ISkill; i: number }) => {
+  const { skill, i } = props;
   const { onPreview } = usePreview();
+  const { setGameStates, phase, activeSkills } = useGameStore();
   const { isSkillValid } = useSkill(PlayerPosition.Own);
   if (skill.type.includes(SkillPassiveType.Passive)) {
     return <></>;
   }
+  const shouldShowPreview = phase === Phase.Skill;
+
   return (
     <div
       className={`${styles.SkillZoneItem} ${
-        isSkillValid(skill) ? "" : styles.NotValid
+        isSkillValid(skill.costs) ? "" : styles.NotValid
       }`}
       aria-hidden="true"
+      style={{
+        zIndex: shouldShowPreview ? 22 : 12,
+      }}
       onClick={() => {
         onPreview(skill);
+        setGameStates("phase", Phase.Skill);
+        setGameStates(
+          "activeSkills",
+          Object.assign([], activeSkills, [i, activeSkills[1]])
+        );
       }}
     >
       <div className={styles.SkillIcon}>
@@ -83,7 +94,7 @@ export default function SkillZone(props: { select: number }) {
   return (
     <div className={styles.SkillZone}>
       {skills.map((skill, index) => (
-        <SkillItem key={index} skill={skill} />
+        <SkillItem key={index} skill={skill} i={index} />
       ))}
     </div>
   );

@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePreview } from "@/hooks";
+import { usePreview, useStartPhase } from "@/hooks";
 import { ICard, ICost, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
@@ -35,7 +35,7 @@ export const HandCardItem = (props: CardItemProps) => {
       className={styles.HandCardLayout}
       aria-hidden="true"
       onClick={() => {
-        if (player === PlayerPosition.Opposite) return;
+        if (player === PlayerPosition.Opponent) return;
         onPreview(card);
       }}
     >
@@ -52,7 +52,7 @@ export const HandCardItem = (props: CardItemProps) => {
       </div>
       <div
         className={`${styles.HandCard} ${styles.NormalBack} ${
-          player === PlayerPosition.Opposite
+          player === PlayerPosition.Opponent
             ? styles.HandCardFront
             : styles.HandCardBack
         }`}
@@ -65,7 +65,7 @@ export const HandCardList = (props: CardListProps) => {
   const { phase, setGameStates, activeCards } = useGameStore();
   const { player, cards } = props;
   const playCard = (index: number) => {
-    if (player === PlayerPosition.Opposite) return;
+    if (player === PlayerPosition.Opponent) return;
     if (phase === Phase.Combat) {
       setGameStates("phase", Phase.PlayCard);
       setGameStates(
@@ -131,10 +131,27 @@ export const DraftHandCardZone = (props: CardListProps) => {
 
 export const DraftHandCardList = (props: CardListProps) => {
   const { player, cards } = props;
+  const { onSwitchCard, shouldShowSwitchHint, isSwitchCardValid } =
+    useStartPhase(player);
   return (
     <div className={styles.HandCardList}>
       {cards.map((card, index) => (
-        <HandCardItem key={index} card={card} player={player} />
+        <div
+          key={index}
+          aria-hidden="true"
+          draggable="true"
+          onClick={() => {
+            isSwitchCardValid && onSwitchCard(index);
+          }}
+        >
+          <HandCardItem card={card} player={player} />
+          {shouldShowSwitchHint(index) && (
+            <div style={{ position: "relative" }}>
+              <div className={styles.HandCardSwitch}>switch</div>
+              <div className={styles.CardSelected}></div>
+            </div>
+          )}
+        </div>
       ))}
     </div>
   );
