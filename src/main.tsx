@@ -4,8 +4,9 @@ import "@/utils/i18n";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
+import ReloadPrompt from "@/components/ReloadPromt";
+
 import App from "./App";
-import ReloadPrompt from "./ReloadPrompt";
 
 const container = document.getElementById("root");
 const root = createRoot(container as HTMLDivElement);

@@ -1,4 +1,4 @@
-import "./ReloadPrompt.css";
+import "./index.module.css";
 
 // eslint-disable-next-line import/no-unresolved
 import { pwaInfo } from "virtual:pwa-info";
@@ -8,7 +8,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 // eslint-disable-next-line no-console
 console.log(pwaInfo);
 
-function ReloadPrompt() {
+export default function ReloadPrompt() {
   const buildDate = new Date().toLocaleDateString();
   const reloadSW = new Date().toLocaleDateString() + "_" + Math.random() * 100;
 
@@ -73,5 +73,3 @@ function ReloadPrompt() {
     </div>
   );
 }
-
-export default ReloadPrompt;
