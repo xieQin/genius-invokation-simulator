@@ -1,4 +1,5 @@
 import { Action, ICost, ISkill, Phase, PlayerPosition } from "@/models";
+import { DamageTarget } from "@/models/damage";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid } from "@/utils";
 
@@ -64,22 +65,39 @@ export const useSkill = (pos: PlayerPosition) => {
     }
   };
 
-  const shouldCharacterHignlight = (index: number) => {
-    return phase === Phase.Skill && index === activeCharacters[pos];
+  const shouldTargetHighlight = (index: number) => {
+    if (phase !== Phase.Skill) return false;
+    if (pos === PlayerPosition.Own) return index === activeCharacters[pos];
+    const enemy = Math.abs(pos - 1);
+    const activeSkill = activeSkills[enemy];
+    const skill =
+      players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
+    const damage = skill.damage;
+    for (const d of damage) {
+      if (d.target === DamageTarget.Active && index === activeCharacters[pos]) {
+        return true;
+      }
+      if (d.target === DamageTarget.All && d.damage > 0) {
+        return true;
+      }
+      if (d.target === DamageTarget.Back && d.damage > 0) {
+        return true;
+      }
+    }
+    return false;
   };
 
   const isSkillValid = (costs: ICost[] = []) => isCostDiceValid(costs, dices);
 
   // todo calculate skill damage
-  const calDamage = () => {
+  const calDamage = (idx: number) => {
+    console.log(idx, activeCharacters);
     const enemy = Math.abs(pos - 1);
     const activeSkill = activeSkills[enemy];
     const skill =
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
-    return {
-      damage: Math.ceil(Math.random() * 5) - 1,
-      type: skill.type,
-    };
+    if (idx === activeCharacters[pos]) return skill.damage[0].damage;
+    return skill.damage[1].damage;
   };
 
   const getMessage = (skill: ISkill) => {
@@ -101,7 +119,7 @@ export const useSkill = (pos: PlayerPosition) => {
     getMessage,
     isSkillValid,
     onCastSkill,
-    shouldCharacterHignlight,
+    shouldTargetHighlight,
     calDamage,
     getSkillAnimation,
   };

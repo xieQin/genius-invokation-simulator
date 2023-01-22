@@ -71,11 +71,10 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
             <div className={styles.CharacterSelected}></div>
           )}
           {phase === Phase.Skill &&
-            i === activeCharacters[pos] &&
-            pos === PlayerPosition.Opponent && (
-              <div className={styles.CharacterDamage}>
-                -{calDamage().damage}
-              </div>
+            pos === PlayerPosition.Opponent &&
+            i !== undefined &&
+            calDamage(i) > 0 && (
+              <div className={styles.CharacterDamage}>-{calDamage(i)}</div>
             )}
           <div className={styles.CharacterHealth}>{character.hp}</div>
           <div className={styles.CharacterEnergy}>
@@ -124,7 +123,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
   const { setActiveCharacter, onChoosePhaseEnd } = useChoosePhase(pos);
   const { shouldCharacterHighlight } = usePlayCard();
   const { animationControl } = useTransformControl();
-  const { shouldCharacterHignlight } = useSkill(pos);
+  const { shouldTargetHighlight } = useSkill(pos);
   const toggleControl = (index: number) => {
     if (pos === PlayerPosition.Own) {
       setSelect && setSelect(index);
@@ -160,9 +159,7 @@ export default function CharacterZone(props: CharacterZoneProps) {
             key={index}
             style={{
               zIndex:
-                isCharacterHighlight || shouldCharacterHignlight(index)
-                  ? 22
-                  : 9,
+                isCharacterHighlight || shouldTargetHighlight(index) ? 22 : 9,
               ...style(index),
             }}
             aria-hidden="true"
