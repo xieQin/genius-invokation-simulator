@@ -66,9 +66,11 @@ export const PWAConfig: Partial<VitePWAOptions> = {
   },
   devOptions: {
     enabled: true,
+    type: "module",
   },
   workbox: {
     sourcemap: true,
+    globPatterns: ["**/*.{js,css,html}", "**/*.{svg,png,jpg,gif}"],
   },
 };
 
