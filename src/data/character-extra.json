@@ -1,0 +1,110 @@
+{
+  "Ganyu": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Diona": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Kaeya": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Chongyun": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Kamisato Ayaka": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Barbara": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Xingqiu": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Mona": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Diluc": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Xiangling": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Bennett": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Yoimiya": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Fischl": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Razor": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Keqing": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Cyno": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Sucrose": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Jean": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Ningguang": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Noelle": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Collei": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Rhodeia of Loch": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Mirror Maiden": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Fatui Pyro Agent": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Maguu Kenki": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Stonehide Lawachurl": {
+    "energy": 2,
+    "currentEnergy": 0
+  },
+  "Jadeplume Terrorshroom": {
+    "energy": 2,
+    "currentEnergy": 0
+  }
+}

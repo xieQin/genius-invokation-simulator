@@ -10,13 +10,13 @@ import styles from "./index.module.css";
 
 export interface CardListProps {
   cards: ICard[];
-  player: PlayerPosition;
+  pos: PlayerPosition;
   style?: CSSProperties;
 }
 
 export interface CardItemProps {
   card: ICard;
-  player: PlayerPosition;
+  pos: PlayerPosition;
 }
 
 export const HandCardCost = (props: { cost: ICost[] }) => {
@@ -28,31 +28,30 @@ export const HandCardCost = (props: { cost: ICost[] }) => {
 };
 
 export const HandCardItem = (props: CardItemProps) => {
-  const { player, card } = props;
+  const { pos, card } = props;
   const { onPreview } = usePreview();
   return (
     <div
       className={styles.HandCardLayout}
       aria-hidden="true"
       onClick={() => {
-        if (player === PlayerPosition.Opponent) return;
+        if (pos === PlayerPosition.Opponent) return;
         onPreview(card);
       }}
     >
       <div
         className={`${styles.HandCard} ${styles.HandCardBorder} ${
-          player === PlayerPosition.Own
+          pos === PlayerPosition.Own
             ? styles.HandCardFront
             : styles.HandCardBack
         }`}
       >
         <HandCardCost cost={card.cost} />
-        {/* <div className={styles.CardSelected}></div> */}
         <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
       </div>
       <div
         className={`${styles.HandCard} ${styles.NormalBack} ${
-          player === PlayerPosition.Opponent
+          pos === PlayerPosition.Opponent
             ? styles.HandCardFront
             : styles.HandCardBack
         }`}
@@ -63,11 +62,14 @@ export const HandCardItem = (props: CardItemProps) => {
 
 export const HandCardList = (props: CardListProps) => {
   const { phase, setGameStates, activeCards } = useGameStore();
-  const { player, cards } = props;
+  const { pos, cards } = props;
+  const activeCard = activeCards[pos];
   const playCard = (index: number) => {
-    if (player === PlayerPosition.Opponent) return;
+    if (pos === PlayerPosition.Opponent) return;
     if (phase === Phase.Combat) {
-      setGameStates("phase", Phase.PlayCard);
+      if (activeCard === index) {
+        setGameStates("phase", Phase.PlayCard);
+      }
       setGameStates(
         "activeCards",
         Object.assign([], activeCards, [index, activeCards[1]])
@@ -81,9 +83,12 @@ export const HandCardList = (props: CardListProps) => {
           key={index}
           aria-hidden="true"
           draggable="true"
+          style={{ position: "relative" }}
+          onClick={() => playCard(index)}
           onDragEnd={() => playCard(index)}
         >
-          <HandCardItem player={player} card={card} />
+          <HandCardItem pos={pos} card={card} />
+          {/* {activeCard === index && <div className={styles.CardSelected}></div>} */}
         </div>
       ))}
     </div>
@@ -96,7 +101,7 @@ export default function HandCardZone(props: CardListProps) {
   return (
     <div
       className={`${styles.HandCardZone} ${
-        rest.player === PlayerPosition.Own
+        rest.pos === PlayerPosition.Own
           ? styles.ExpandHandCardList
           : styles.CollapseHandCardList
       }`}
@@ -110,7 +115,7 @@ export default function HandCardZone(props: CardListProps) {
 export const DraftHandCardZone = (props: CardListProps) => {
   const { cards, ...rest } = props;
 
-  if (props.player === PlayerPosition.Own) {
+  if (props.pos === PlayerPosition.Own) {
     return (
       <div className={styles.DraftHandCardZone}>
         <DraftHandCardList cards={cards} {...rest} />
@@ -130,9 +135,9 @@ export const DraftHandCardZone = (props: CardListProps) => {
 };
 
 export const DraftHandCardList = (props: CardListProps) => {
-  const { player, cards } = props;
+  const { pos, cards } = props;
   const { onSwitchCard, shouldShowSwitchHint, isSwitchCardValid } =
-    useStartPhase(player);
+    useStartPhase(pos);
   return (
     <div className={styles.HandCardList}>
       {cards.map((card, index) => (
@@ -144,7 +149,7 @@ export const DraftHandCardList = (props: CardListProps) => {
             isSwitchCardValid && onSwitchCard(index);
           }}
         >
-          <HandCardItem card={card} player={player} />
+          <HandCardItem card={card} pos={pos} />
           {shouldShowSwitchHint(index) && (
             <div style={{ position: "relative" }}>
               <div className={styles.HandCardSwitch}>switch</div>

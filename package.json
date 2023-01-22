@@ -10,7 +10,7 @@
     "build": "cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true vite build",
     "commit": "git-cz",
     "data": "node --loader ts-node/esm ./src/data/handle.ts",
-    "data:img": "node --loader ts-node/esm ./src/data/image.ts",
+    "data:assets": "node --loader ts-node/esm ./src/data/assets.ts",
     "dev": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DEV=true vite --force",
     "dev-claims": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DEV=true CLAIMS=true SW=true vite --force",
     "dev-claims-destroy": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DESTROY=true SW_DEV=true CLAIMS=true SW=true vite --force",

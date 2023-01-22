@@ -103,7 +103,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     let player = get().getPlayer(pos);
     player = {
       ...player,
-      summons: [...player.summons, summon],
+      summons: [...player.summons, ...summon],
     };
     get().updatePlayer(player, pos);
   },

@@ -1,9 +1,9 @@
 import type { RollupReplaceOptions } from "@rollup/plugin-replace";
 import type { ManifestOptions, VitePWAOptions } from "vite-plugin-pwa";
 
-import imgAssets from "./assets.json";
+import assets from "./assets.json";
 
-const includeAssets = imgAssets;
+const includeAssets = assets;
 
 export const PWAConfig: Partial<VitePWAOptions> = {
   includeAssets,

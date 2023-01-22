@@ -30,7 +30,7 @@ export default function InitPhase() {
               key={i}
               className={`${styles.HandAnimate} ${styles[`Animate${i + 1}`]}`}
             >
-              <HandCardItem card={card} player={opponentPos} />
+              <HandCardItem card={card} pos={opponentPos} />
             </div>
           ))}
         </div>
@@ -46,10 +46,10 @@ export default function InitPhase() {
             )}
           </div>
           <div className={styles.GameModalLayer}></div>
-          <DraftHandCardZone cards={own.cards} player={PlayerPosition.Own} />
+          <DraftHandCardZone cards={own.cards} pos={PlayerPosition.Own} />
           <DraftHandCardZone
             cards={opponent.cards}
-            player={PlayerPosition.Opponent}
+            pos={PlayerPosition.Opponent}
           />
           <div
             className={styles.GameLayerBtns}

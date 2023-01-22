@@ -38,7 +38,7 @@ export default function OpponentArea() {
       <CardStackZone style={{ top: "160px" }} />
       <HandCardZone
         cards={cards}
-        player={position}
+        pos={position}
         style={{ top: "-150px", marginBottom: 0, left: "60%" }}
       />
     </div>
