@@ -178,4 +178,4 @@ export const formatSkillExtras = () => {
   );
 };
 
-// formatSkillExtras();
+formatSkillExtras();
