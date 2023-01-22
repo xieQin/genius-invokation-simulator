@@ -170,7 +170,9 @@ export const useGameStore = create<GameStore>((set, get) => ({
     }
     activeCharacter.forEach(c => {
       const character = player.characters[c];
-      character.elementStatus.push(element);
+      if (!character.elementStatus.includes(element)) {
+        character.elementStatus.push(element);
+      }
       characters[c] = character;
     });
     player = {
