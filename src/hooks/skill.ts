@@ -20,21 +20,31 @@ export const useSkill = (pos: PlayerPosition) => {
     activeSkills,
     actions,
     addSummon,
+    updateEnergy,
     setGameStates,
   } = useGameStore();
   const dices = playerDices[pos];
 
   const onCastSkill = () => {
-    const skill = activeSkills[pos];
-    const use_skill =
-      players[pos].characters[activeCharacters[pos]].skills[skill];
+    const activeSkill = activeSkills[pos];
+    const skill =
+      players[pos].characters[activeCharacters[pos]].skills[activeSkill];
     setGameStates("actions", [
       Action.CastSkill,
       actions[PlayerPosition.Opponent],
     ]);
-    if (use_skill.summons.length > 0) {
-      const summons = use_skill.summons;
+    if (skill.summons.length > 0) {
+      const summons = skill.summons;
       addSummon(summons.map(s => NameIDTrans(s)) as SummonsID[], pos);
+    }
+    if (
+      skill.type.includes(SkillCombatType.ElementalSkill) ||
+      skill.type.includes(SkillCombatType.NormalAttack)
+    ) {
+      updateEnergy(1, pos);
+    }
+    if (skill.type.includes(SkillCombatType.ElementalBurst)) {
+      updateEnergy(-10, pos);
     }
   };
 

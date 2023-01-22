@@ -20,4 +20,5 @@ export interface GameAction {
   addSupport: (cards: ICard, pos: PlayerPosition) => void;
   showMessage: (message: string, callback?: () => void) => void;
   addSummon: (summon: SummonsID[], pos: PlayerPosition) => void;
+  updateEnergy: (energy: number, pos: PlayerPosition) => void;
 }
