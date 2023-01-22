@@ -61,6 +61,8 @@ export const PWAConfig: Partial<VitePWAOptions> = {
         type: "image/png",
       },
     ],
+    display: "standalone",
+    orientation: "landscape",
   },
   devOptions: {
     enabled: true,

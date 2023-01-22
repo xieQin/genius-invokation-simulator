@@ -5,9 +5,10 @@ import {
   Phase,
   PlayerPosition,
   SkillCombatType,
+  SkillTarget,
   SummonsID,
+  TransDamageTypeToGIElement,
 } from "@/models";
-import { DamageTarget } from "@/models/damage";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid, NameIDTrans } from "@/utils";
 
@@ -20,21 +21,56 @@ export const useSkill = (pos: PlayerPosition) => {
     activeSkills,
     actions,
     addSummon,
+    updateEnergy,
+    updateHp,
+    updateElementStatus,
     setGameStates,
   } = useGameStore();
   const dices = playerDices[pos];
 
   const onCastSkill = () => {
-    const skill = activeSkills[pos];
-    const use_skill =
-      players[pos].characters[activeCharacters[pos]].skills[skill];
+    const activeSkill = activeSkills[pos];
+    const skill =
+      players[pos].characters[activeCharacters[pos]].skills[activeSkill];
     setGameStates("actions", [
       Action.CastSkill,
       actions[PlayerPosition.Opponent],
     ]);
-    if (use_skill.summons.length > 0) {
-      const summons = use_skill.summons;
+    if (skill.summons.length > 0) {
+      const summons = skill.summons;
       addSummon(summons.map(s => NameIDTrans(s)) as SummonsID[], pos);
+    }
+    // todo handle skill shield
+    if (skill.shield.length > 0) {
+      console.log(skill.shield);
+    }
+    if (
+      skill.type.includes(SkillCombatType.ElementalSkill) ||
+      skill.type.includes(SkillCombatType.NormalAttack)
+    ) {
+      updateEnergy(1, pos);
+    }
+    if (skill.type.includes(SkillCombatType.ElementalBurst)) {
+      updateEnergy(-10, pos);
+    }
+    for (const damage of skill.damage) {
+      if (damage.damage > 0) {
+        updateHp(-damage.damage, Math.abs(pos - 1), damage.target);
+        if (damage.damageType in TransDamageTypeToGIElement) {
+          const _element =
+            damage.damageType as keyof typeof TransDamageTypeToGIElement;
+          updateElementStatus(
+            TransDamageTypeToGIElement[_element],
+            Math.abs(pos - 1),
+            damage.target
+          );
+        }
+      }
+    }
+    for (const heal of skill.heal) {
+      if (heal.heal > 0) {
+        updateHp(heal.heal, pos, heal.target);
+      }
     }
   };
 
@@ -47,13 +83,13 @@ export const useSkill = (pos: PlayerPosition) => {
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
     const damage = skill.damage;
     for (const d of damage) {
-      if (d.target === DamageTarget.Active && index === activeCharacters[pos]) {
+      if (d.target === SkillTarget.Active && index === activeCharacters[pos]) {
         return true;
       }
-      if (d.target === DamageTarget.All && d.damage > 0) {
+      if (d.target === SkillTarget.All && d.damage > 0) {
         return true;
       }
-      if (d.target === DamageTarget.Back && d.damage > 0) {
+      if (d.target === SkillTarget.Back && d.damage > 0) {
         return true;
       }
     }
@@ -71,7 +107,6 @@ export const useSkill = (pos: PlayerPosition) => {
     return true;
   };
 
-  // todo calculate skill damage
   const calDamage = (idx: number) => {
     const enemy = Math.abs(pos - 1);
     const activeSkill = activeSkills[enemy];

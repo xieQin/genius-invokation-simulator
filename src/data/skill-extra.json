@@ -835,5 +835,41 @@
     "summons": [],
     "shield": ["Radical Vitality"],
     "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Oceanborne": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Tidecaller": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Tidecaller: Surf Embrace"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Stormbreaker": {
+    "damage": [
+      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Thunderbeast's Targe"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Wavestrider": {
+    "damage": [
+      { "damage": 2, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
   }
 }

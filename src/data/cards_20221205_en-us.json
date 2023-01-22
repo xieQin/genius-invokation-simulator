@@ -1142,6 +1142,73 @@
       "resource": "https://webstatic-sea.hoyoverse.com/hk4e/e20221205drawcard/picture/1c0359bdc24635a0808ca2046f00793f.png"
     },
     {
+      "id": 1405,
+      "name": "Beidou",
+      "element_type": "ETThunder",
+      "rank_id": 1405,
+      "role_skill_infos": [
+        {
+          "skill_text": "Deals 2 <span style=\"color: #FFFFFFFF;\">Physical DMG</span>.",
+          "skill_costs": [
+            {
+              "cost_icon": "14",
+              "cost_num": "1"
+            },
+            {
+              "cost_icon": "10",
+              "cost_num": "2"
+            }
+          ],
+          "type": ["Normal Attack"],
+          "name": "Oceanborne",
+          "id": "14051"
+        },
+        {
+          "skill_text": "This character gains a <span style=\"color: #FFFFFFFF;\">Tidecaller: Surf Embrace</span>. <span style=\"color: #FFFFFFFF; text-decoration: underline;\">Prepare Skill</span>: <span style=\"color: #FFFFFFFF;\">Wavestrider</span>.",
+          "skill_costs": [
+            {
+              "cost_icon": "14",
+              "cost_num": "3"
+            }
+          ],
+          "type": ["Elemental Skill"],
+          "name": "Tidecaller",
+          "id": "14052"
+        },
+        {
+          "skill_text": "Deals 3 <span style=\"color: #FFACFFFF;\">Electro DMG</span>, creates 1 <span style=\"color: #FFFFFFFF;\">Thunderbeast's Targe</span>.",
+          "skill_costs": [
+            {
+              "cost_icon": "14",
+              "cost_num": "4"
+            },
+            {
+              "cost_icon": "1",
+              "cost_num": "3"
+            }
+          ],
+          "type": ["Elemental Burst"],
+          "name": "Stormbreaker",
+          "id": "14053"
+        },
+        {
+          "skill_text": "(Prepare for 1 turn)\\nDeals 2 <span style=\"color: #FFACFFFF;\">Electro DMG</span>.",
+          "skill_costs": [
+            {
+              "cost_icon": "10",
+              "cost_num": "0"
+            }
+          ],
+          "type": ["Elemental Skill"],
+          "name": "Wavestrider",
+          "id": "14054"
+        }
+      ],
+      "weapon": "Claymore",
+      "belong_to": ["Liyue", "", ""],
+      "hp": "10"
+    },
+    {
       "id": 1501,
       "name": "Sucrose",
       "element_type": "ETWind",

@@ -43,10 +43,10 @@ yarn build
   - [x] Set active character
 - [x] Round Flow
   - [x] Roll Phase
-  - [ ] Action Phase
+  - [x] Action Phase
   - [ ] End Phase
 - [ ] Elemental Reactions
-  - [ ] Rules
+  - [x] Rules
   - [ ] Effects
 - [ ] Other Rules
 

@@ -1,6 +1,13 @@
 import { create } from "zustand";
 
-import { DeckStatus, GIDiceID, IPlayer } from "@/models";
+import {
+  DeckStatus,
+  GIDiceID,
+  GIElement,
+  ICharacter,
+  IPlayer,
+  SkillTarget,
+} from "@/models";
 
 import { GameAction } from "./action";
 import { GameState, initialState } from "./initialState";
@@ -104,6 +111,73 @@ export const useGameStore = create<GameStore>((set, get) => ({
     player = {
       ...player,
       summons: [...player.summons, ...summon],
+    };
+    get().updatePlayer(player, pos);
+  },
+
+  updateEnergy: (energy, pos) => {
+    let player = get().getPlayer(pos);
+    const characters = Object.assign([], player.characters) as ICharacter[];
+    const activeCharacter = get().activeCharacters[pos];
+    const character = player.characters[activeCharacter];
+    character.currentEnergy =
+      character.currentEnergy + energy > 0
+        ? character.currentEnergy + energy
+        : 0;
+    characters[activeCharacter] = character;
+    player = {
+      ...player,
+      characters,
+    };
+    get().updatePlayer(player, pos);
+  },
+
+  updateHp: (hp, pos, target) => {
+    let player = get().getPlayer(pos);
+    let activeCharacter = [];
+    const characters = Object.assign([], player.characters) as ICharacter[];
+    if (target === SkillTarget.Active) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    if (target === SkillTarget.All) {
+      activeCharacter = [0, 1, 2];
+    }
+    if (target === SkillTarget.Back) {
+      activeCharacter = [0, 1, 2].filter(i => i != get().activeCharacters[pos]);
+    }
+    if (target === SkillTarget.Own) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    activeCharacter.forEach(c => {
+      const character = player.characters[c];
+      character.currentHp =
+        character.currentHp + hp > 0 ? character.currentHp + hp : 0;
+      characters[c] = character;
+    });
+    player = {
+      ...player,
+      characters,
+    };
+    get().updatePlayer(player, pos);
+  },
+
+  updateElementStatus: (element, pos, target) => {
+    let player = get().getPlayer(pos);
+    const activeCharacter = [];
+    const characters = Object.assign([], player.characters) as ICharacter[];
+    if (target === SkillTarget.Active) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    activeCharacter.forEach(c => {
+      const character = player.characters[c];
+      if (!character.elementStatus.includes(element)) {
+        character.elementStatus.push(element);
+      }
+      characters[c] = character;
+    });
+    player = {
+      ...player,
+      characters,
     };
     get().updatePlayer(player, pos);
   },

@@ -106,5 +106,13 @@
   "Jadeplume Terrorshroom": {
     "energy": 2,
     "currentEnergy": 0
+  },
+  "Klee": {
+    "energy": 3,
+    "currentEnergy": 0
+  },
+  "Beidou": {
+    "energy": 3,
+    "currentEnergy": 0
   }
 }
