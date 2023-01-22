@@ -31,6 +31,8 @@ export enum Summons {
 
   Oz,
 
+  IceLotus,
+
   DandelionField,
 }
 

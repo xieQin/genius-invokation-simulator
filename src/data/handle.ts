@@ -13,6 +13,7 @@ import {
 import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
 import CharactersExtra from "./character-extra.json";
+import SkillExtra from "./skill-extra.json";
 
 const PUBLIC_PATH = process.env.NODE_ENV === "development" ? "" : "";
 
@@ -121,6 +122,7 @@ export const transCharacters = () => {
           type: skill.type.filter(skill => skill != "") as SkillSubType[],
           img: `${PUBLIC_PATH}/skill/${ImageIDTrans(skill.name)}.png`,
           imgID: ImageIDTrans(skill.name),
+          ...SkillExtra[skill.name as keyof typeof SkillExtra],
         })),
         equipments: {
           weapon: null,
@@ -193,5 +195,57 @@ export const transI18n = () => {
 };
 
 transCharacters();
-transCards();
-transI18n();
+// transCards();
+// transI18n();
+
+const defaultSkillExtra = {
+  damage: [
+    {
+      damage: 0,
+      damageType: "",
+      target: "Active",
+    },
+    {
+      damage: 0,
+      damageType: "",
+      target: "Background",
+    },
+  ],
+  summons: [],
+  shield: [],
+  heal: [
+    {
+      heal: 0,
+      target: "All",
+    },
+  ],
+};
+
+export const generateSkill = () => {
+  const roles = GIData.role_card_infos;
+  const res = new Map();
+  roles.map(role => {
+    role.role_skill_infos.map(skill => res.set(skill.name, defaultSkillExtra));
+  });
+  writeFileSync(
+    "./src/data/skill-extra.json",
+    JSON.stringify(Object.fromEntries(res))
+  );
+};
+
+export const formatSkillExtras = () => {
+  const res = new Map();
+  for (const key in SkillExtra) {
+    if (key in SkillExtra) {
+      const _k = key as keyof typeof SkillExtra;
+      const item = SkillExtra[_k];
+      res.set(_k, Object.assign({}, defaultSkillExtra, item));
+    }
+  }
+  writeFileSync(
+    "./src/data/skill-extra.json",
+    JSON.stringify(Object.fromEntries(res))
+  );
+};
+
+// formatSkillExtras();

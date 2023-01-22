@@ -1,0 +1,839 @@
+{
+  "Liutian Archery": {
+    "damage": [
+      { "damage": 2, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Trail of the Qilin": {
+    "damage": [
+      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Ice Lotus"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Frostflake Arrow": {
+    "damage": [
+      { "damage": 3, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Celestial Shower": {
+    "damage": [
+      { "damage": 1, "damageType": "Physical", "target": "Active" },
+      { "damage": 1, "damageType": "Physical", "target": "Background" }
+    ],
+    "summons": ["Sacred Cryo Pearl"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kätzlein Style": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Icy Paws": {
+    "damage": [
+      { "damage": 2, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Cat-Claw"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Signature Mix": {
+    "damage": [
+      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Drunken Mist"],
+    "shield": [],
+    "heal": [{ "heal": 2, "target": "Own" }]
+  },
+  "Ceremonial Bladework": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Frostgnaw": {
+    "damage": [
+      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Glacial Waltz": {
+    "damage": [
+      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Icicle"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Demonbane": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Chonghua's Layered Frost": {
+    "damage": [
+      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Chonghua Frost Field"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Cloud-Parting Star": {
+    "damage": [
+      { "damage": 7, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kamisato Art: Kabuki": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kamisato Art: Hyouka": {
+    "damage": [
+      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kamisato Art: Soumetsu": {
+    "damage": [
+      { "damage": 4, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Frostflake Seki no To"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kamisato Art: Senho": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Cryo Elemental Infusion"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Whisper of Water": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Let the Show Begin♪": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Melody Loop"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Shining Miracle♪": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 4, "target": "All" }]
+  },
+  "Guhua Style": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Fatal Rainscreen": {
+    "damage": [
+      { "damage": 2, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Rain Sword"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Raincutter": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Rainbow Bladework"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Ripple of Fate": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Mirror Reflection of Doom": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Reflection"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Stellaris Phantasm": {
+    "damage": [
+      { "damage": 4, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Illusory Bubble"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Illusory Torrent": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Illusory Torrent"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Tempered Sword": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Searing Onslaught": {
+    "damage": [
+      { "damage": 5, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Dawn": {
+    "damage": [
+      { "damage": 8, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Pyro Infusion"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Dough-Fu": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Guoba Attack": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Guoba"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Pyronado": {
+    "damage": [
+      { "damage": 2, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Pyronado"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Strike of Fortune": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Passion Overload": {
+    "damage": [
+      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Fantastic Voyage": {
+    "damage": [
+      { "damage": 2, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Inspiration Field"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Firework Flare-Up": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Niwabi Fire-Dance": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Niwabi Enshou"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Ryuukin Saxifrage": {
+    "damage": [
+      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Aurous Blaze"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Kaboom!": {
+    "damage": [
+      { "damage": 1, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Jumpy Dumpty": {
+    "damage": [
+      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Sparks 'n' Splash": {
+    "damage": [
+      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Bolts of Downfall": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Nightrider": {
+    "damage": [
+      { "damage": 1, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Oz"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Midnight Phantasmagoria": {
+    "damage": [
+      { "damage": 4, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Steel Fang": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Claw and Thunder": {
+    "damage": [
+      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Lightning Fang": {
+    "damage": [
+      { "damage": 5, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["The Wolf Within"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Yunlai Swordsmanship": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Stellar Restoration": {
+    "damage": [
+      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Lightning Stiletto"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Starward Sword": {
+    "damage": [
+      { "damage": 4, "damageType": "Physical", "target": "Active" },
+      { "damage": 3, "damageType": "Physical", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Invoker's Spear": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Secret Rite: Chasmic Soulfarer": {
+    "damage": [
+      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Sacred Rite: Wolf's Swiftness": {
+    "damage": [
+      { "damage": 4, "damageType": "Electro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Pactsworn Pathclearer"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Lawful Enforcer": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Pactsworn Pathclearer"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Wind Spirit Creation": {
+    "damage": [
+      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Astable Anemohypostasis Creation - 6308": {
+    "damage": [
+      { "damage": 3, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Forbidden Creation - Isomer 75 / Type II": {
+    "damage": [
+      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Large Wind Spirit"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Favonius Bladework": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Gale Blade": {
+    "damage": [
+      { "damage": 3, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Dandelion Breeze": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Dandelion Field"],
+    "shield": [],
+    "heal": [{ "heal": 2, "target": "All" }]
+  },
+  "Sparkling Scatter": {
+    "damage": [
+      { "damage": 1, "damageType": "Geo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Jade Screen": {
+    "damage": [
+      { "damage": 2, "damageType": "Geo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Jade Screen"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Starshatter": {
+    "damage": [
+      { "damage": 6, "damageType": "Geo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Jade Screen"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Favonius Bladework - Maid": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Breastplate": {
+    "damage": [
+      { "damage": 1, "damageType": "Geo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Full Plate"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Sweeping Time": {
+    "damage": [
+      { "damage": 4, "damageType": "Geo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Sweeping Time"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Supplicant's Bowmanship": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Floral Brush": {
+    "damage": [
+      { "damage": 3, "damageType": "Dendro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Trump-Card Kitty": {
+    "damage": [
+      { "damage": 2, "damageType": "Dendro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Cuilein-Anbar"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Surge": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Oceanid Mimic Summoning": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Oceanid Mimic"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "The Myriad Wilds": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Oceanid Mimic"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Tide and Torrent": {
+    "damage": [
+      { "damage": 2, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Water Ball": {
+    "damage": [
+      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Influx Blast": {
+    "damage": [
+      { "damage": 3, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Refraction"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Rippled Reflection": {
+    "damage": [
+      { "damage": 5, "damageType": "Hydro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Thrust": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Prowl": {
+    "damage": [
+      { "damage": 1, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Stealth"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Blade Ablaze": {
+    "damage": [
+      { "damage": 5, "damageType": "Pyro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Stealth Master": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Stealth"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Ichimonji": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Blustering Blade": {
+    "damage": [
+      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Shadowsword: Lone Gale"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Frosty Assault": {
+    "damage": [
+      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": ["Shadowsword: Galloping Frost"],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Pseudo Tengu Sweeper": {
+    "damage": [
+      { "damage": 4, "damageType": "Anemo", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Plama Lawa": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Movo Lawa": {
+    "damage": [
+      { "damage": 3, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Upa Shato": {
+    "damage": [
+      { "damage": 5, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Infused Stonehide": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Stonehide"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Majestic Dance": {
+    "damage": [
+      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Volatile Spore Cloud": {
+    "damage": [
+      { "damage": 3, "damageType": "Dendro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": [],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Feather Spreading": {
+    "damage": [
+      { "damage": 4, "damageType": "Dendro", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Radical Vitality"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  },
+  "Radical Vitality": {
+    "damage": [
+      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Background" }
+    ],
+    "summons": [],
+    "shield": ["Radical Vitality"],
+    "heal": [{ "heal": 0, "target": "All" }]
+  }
+}

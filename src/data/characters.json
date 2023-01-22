@@ -16,7 +16,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/LiutianArchery.png",
-        "imgID": "LiutianArchery"
+        "imgID": "LiutianArchery",
+        "damage": [
+          { "damage": 2, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11012",
@@ -25,7 +32,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/TrailoftheQilin.png",
-        "imgID": "TrailoftheQilin"
+        "imgID": "TrailoftheQilin",
+        "damage": [
+          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Ice Lotus"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11013",
@@ -34,7 +48,14 @@
         "costs": [{ "costNum": 5, "costType": "Cryo" }],
         "type": ["Normal Attack"],
         "img": "/skill/FrostflakeArrow.png",
-        "imgID": "FrostflakeArrow"
+        "imgID": "FrostflakeArrow",
+        "damage": [
+          { "damage": 3, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11014",
@@ -46,7 +67,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/CelestialShower.png",
-        "imgID": "CelestialShower"
+        "imgID": "CelestialShower",
+        "damage": [
+          { "damage": 1, "damageType": "Physical", "target": "Active" },
+          { "damage": 1, "damageType": "Physical", "target": "Background" }
+        ],
+        "summons": ["Sacred Cryo Pearl"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -76,7 +104,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/KätzleinStyle.png",
-        "imgID": "KätzleinStyle"
+        "imgID": "KätzleinStyle",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11022",
@@ -85,7 +120,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/IcyPaws.png",
-        "imgID": "IcyPaws"
+        "imgID": "IcyPaws",
+        "damage": [
+          { "damage": 2, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Cat-Claw"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11023",
@@ -97,7 +139,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/SignatureMix.png",
-        "imgID": "SignatureMix"
+        "imgID": "SignatureMix",
+        "damage": [
+          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Drunken Mist"],
+        "shield": [],
+        "heal": [{ "heal": 2, "target": "Own" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -127,7 +176,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/CeremonialBladework.png",
-        "imgID": "CeremonialBladework"
+        "imgID": "CeremonialBladework",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11032",
@@ -136,7 +192,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/Frostgnaw.png",
-        "imgID": "Frostgnaw"
+        "imgID": "Frostgnaw",
+        "damage": [
+          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11033",
@@ -148,7 +211,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/GlacialWaltz.png",
-        "imgID": "GlacialWaltz"
+        "imgID": "GlacialWaltz",
+        "damage": [
+          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Icicle"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -178,7 +248,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/Demonbane.png",
-        "imgID": "Demonbane"
+        "imgID": "Demonbane",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11042",
@@ -187,7 +264,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/ChonghuasLayeredFrost.png",
-        "imgID": "ChonghuasLayeredFrost"
+        "imgID": "ChonghuasLayeredFrost",
+        "damage": [
+          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Chonghua Frost Field"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11043",
@@ -199,7 +283,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/CloudPartingStar.png",
-        "imgID": "CloudPartingStar"
+        "imgID": "CloudPartingStar",
+        "damage": [
+          { "damage": 7, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -229,7 +320,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/KamisatoArtKabuki.png",
-        "imgID": "KamisatoArtKabuki"
+        "imgID": "KamisatoArtKabuki",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11052",
@@ -238,7 +336,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/KamisatoArtHyouka.png",
-        "imgID": "KamisatoArtHyouka"
+        "imgID": "KamisatoArtHyouka",
+        "damage": [
+          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11053",
@@ -250,7 +355,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/KamisatoArtSoumetsu.png",
-        "imgID": "KamisatoArtSoumetsu"
+        "imgID": "KamisatoArtSoumetsu",
+        "damage": [
+          { "damage": 4, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Frostflake Seki no To"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "11054",
@@ -259,7 +371,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/KamisatoArtSenho.png",
-        "imgID": "KamisatoArtSenho"
+        "imgID": "KamisatoArtSenho",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Cryo Elemental Infusion"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -289,7 +408,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/WhisperofWater.png",
-        "imgID": "WhisperofWater"
+        "imgID": "WhisperofWater",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12012",
@@ -298,7 +424,14 @@
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/LettheShowBegin.png",
-        "imgID": "LettheShowBegin"
+        "imgID": "LettheShowBegin",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Melody Loop"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12013",
@@ -310,7 +443,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/ShiningMiracle.png",
-        "imgID": "ShiningMiracle"
+        "imgID": "ShiningMiracle",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 4, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -340,7 +480,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/GuhuaStyle.png",
-        "imgID": "GuhuaStyle"
+        "imgID": "GuhuaStyle",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12022",
@@ -349,7 +496,14 @@
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/FatalRainscreen.png",
-        "imgID": "FatalRainscreen"
+        "imgID": "FatalRainscreen",
+        "damage": [
+          { "damage": 2, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Rain Sword"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12023",
@@ -361,7 +515,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/Raincutter.png",
-        "imgID": "Raincutter"
+        "imgID": "Raincutter",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Rainbow Bladework"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -391,7 +552,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/RippleofFate.png",
-        "imgID": "RippleofFate"
+        "imgID": "RippleofFate",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12032",
@@ -400,7 +568,14 @@
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/MirrorReflectionofDoom.png",
-        "imgID": "MirrorReflectionofDoom"
+        "imgID": "MirrorReflectionofDoom",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Reflection"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12033",
@@ -412,7 +587,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/StellarisPhantasm.png",
-        "imgID": "StellarisPhantasm"
+        "imgID": "StellarisPhantasm",
+        "damage": [
+          { "damage": 4, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Illusory Bubble"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "12034",
@@ -421,7 +603,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/IllusoryTorrent.png",
-        "imgID": "IllusoryTorrent"
+        "imgID": "IllusoryTorrent",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Illusory Torrent"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -451,7 +640,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/TemperedSword.png",
-        "imgID": "TemperedSword"
+        "imgID": "TemperedSword",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13012",
@@ -460,7 +656,14 @@
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/SearingOnslaught.png",
-        "imgID": "SearingOnslaught"
+        "imgID": "SearingOnslaught",
+        "damage": [
+          { "damage": 5, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13013",
@@ -472,7 +675,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/Dawn.png",
-        "imgID": "Dawn"
+        "imgID": "Dawn",
+        "damage": [
+          { "damage": 8, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Pyro Infusion"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -502,7 +712,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/DoughFu.png",
-        "imgID": "DoughFu"
+        "imgID": "DoughFu",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13022",
@@ -511,7 +728,14 @@
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/GuobaAttack.png",
-        "imgID": "GuobaAttack"
+        "imgID": "GuobaAttack",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Guoba"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13023",
@@ -523,7 +747,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/Pyronado.png",
-        "imgID": "Pyronado"
+        "imgID": "Pyronado",
+        "damage": [
+          { "damage": 2, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Pyronado"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -553,7 +784,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/StrikeofFortune.png",
-        "imgID": "StrikeofFortune"
+        "imgID": "StrikeofFortune",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13032",
@@ -562,7 +800,14 @@
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/PassionOverload.png",
-        "imgID": "PassionOverload"
+        "imgID": "PassionOverload",
+        "damage": [
+          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13033",
@@ -574,7 +819,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/FantasticVoyage.png",
-        "imgID": "FantasticVoyage"
+        "imgID": "FantasticVoyage",
+        "damage": [
+          { "damage": 2, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Inspiration Field"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -604,7 +856,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/FireworkFlareUp.png",
-        "imgID": "FireworkFlareUp"
+        "imgID": "FireworkFlareUp",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13052",
@@ -613,7 +872,14 @@
         "costs": [{ "costNum": 1, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/NiwabiFireDance.png",
-        "imgID": "NiwabiFireDance"
+        "imgID": "NiwabiFireDance",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Niwabi Enshou"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13053",
@@ -625,7 +891,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/RyuukinSaxifrage.png",
-        "imgID": "RyuukinSaxifrage"
+        "imgID": "RyuukinSaxifrage",
+        "damage": [
+          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Aurous Blaze"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -655,7 +928,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/Kaboom.png",
-        "imgID": "Kaboom"
+        "imgID": "Kaboom",
+        "damage": [
+          { "damage": 1, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13062",
@@ -664,7 +944,14 @@
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/JumpyDumpty.png",
-        "imgID": "JumpyDumpty"
+        "imgID": "JumpyDumpty",
+        "damage": [
+          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "13063",
@@ -676,7 +963,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/SparksnSplash.png",
-        "imgID": "SparksnSplash"
+        "imgID": "SparksnSplash",
+        "damage": [
+          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -704,7 +998,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/BoltsofDownfall.png",
-        "imgID": "BoltsofDownfall"
+        "imgID": "BoltsofDownfall",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14012",
@@ -713,7 +1014,14 @@
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/Nightrider.png",
-        "imgID": "Nightrider"
+        "imgID": "Nightrider",
+        "damage": [
+          { "damage": 1, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Oz"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14013",
@@ -725,7 +1033,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/MidnightPhantasmagoria.png",
-        "imgID": "MidnightPhantasmagoria"
+        "imgID": "MidnightPhantasmagoria",
+        "damage": [
+          { "damage": 4, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -755,7 +1070,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/SteelFang.png",
-        "imgID": "SteelFang"
+        "imgID": "SteelFang",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14022",
@@ -764,7 +1086,14 @@
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/ClawandThunder.png",
-        "imgID": "ClawandThunder"
+        "imgID": "ClawandThunder",
+        "damage": [
+          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14023",
@@ -776,7 +1105,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/LightningFang.png",
-        "imgID": "LightningFang"
+        "imgID": "LightningFang",
+        "damage": [
+          { "damage": 5, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["The Wolf Within"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -806,7 +1142,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/YunlaiSwordsmanship.png",
-        "imgID": "YunlaiSwordsmanship"
+        "imgID": "YunlaiSwordsmanship",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14032",
@@ -815,7 +1158,14 @@
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/StellarRestoration.png",
-        "imgID": "StellarRestoration"
+        "imgID": "StellarRestoration",
+        "damage": [
+          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Lightning Stiletto"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14033",
@@ -827,7 +1177,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/StarwardSword.png",
-        "imgID": "StarwardSword"
+        "imgID": "StarwardSword",
+        "damage": [
+          { "damage": 4, "damageType": "Physical", "target": "Active" },
+          { "damage": 3, "damageType": "Physical", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -857,7 +1214,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/InvokersSpear.png",
-        "imgID": "InvokersSpear"
+        "imgID": "InvokersSpear",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14042",
@@ -866,7 +1230,14 @@
         "costs": [{ "costNum": 3, "costType": "Electro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/SecretRiteChasmicSoulfarer.png",
-        "imgID": "SecretRiteChasmicSoulfarer"
+        "imgID": "SecretRiteChasmicSoulfarer",
+        "damage": [
+          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14043",
@@ -878,7 +1249,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/SacredRiteWolfsSwiftness.png",
-        "imgID": "SacredRiteWolfsSwiftness"
+        "imgID": "SacredRiteWolfsSwiftness",
+        "damage": [
+          { "damage": 4, "damageType": "Electro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Pactsworn Pathclearer"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "14044",
@@ -887,7 +1265,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/LawfulEnforcer.png",
-        "imgID": "LawfulEnforcer"
+        "imgID": "LawfulEnforcer",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Pactsworn Pathclearer"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -917,7 +1302,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/WindSpiritCreation.png",
-        "imgID": "WindSpiritCreation"
+        "imgID": "WindSpiritCreation",
+        "damage": [
+          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "15012",
@@ -926,7 +1318,14 @@
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/AstableAnemohypostasisCreation6308.png",
-        "imgID": "AstableAnemohypostasisCreation6308"
+        "imgID": "AstableAnemohypostasisCreation6308",
+        "damage": [
+          { "damage": 3, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "15013",
@@ -938,7 +1337,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/ForbiddenCreationIsomer75TypeII.png",
-        "imgID": "ForbiddenCreationIsomer75TypeII"
+        "imgID": "ForbiddenCreationIsomer75TypeII",
+        "damage": [
+          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Large Wind Spirit"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -968,7 +1374,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/FavoniusBladework.png",
-        "imgID": "FavoniusBladework"
+        "imgID": "FavoniusBladework",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "15022",
@@ -977,7 +1390,14 @@
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/GaleBlade.png",
-        "imgID": "GaleBlade"
+        "imgID": "GaleBlade",
+        "damage": [
+          { "damage": 3, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "15023",
@@ -989,7 +1409,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/DandelionBreeze.png",
-        "imgID": "DandelionBreeze"
+        "imgID": "DandelionBreeze",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Dandelion Field"],
+        "shield": [],
+        "heal": [{ "heal": 2, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1019,7 +1446,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/SparklingScatter.png",
-        "imgID": "SparklingScatter"
+        "imgID": "SparklingScatter",
+        "damage": [
+          { "damage": 1, "damageType": "Geo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "16012",
@@ -1028,7 +1462,14 @@
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/JadeScreen.png",
-        "imgID": "JadeScreen"
+        "imgID": "JadeScreen",
+        "damage": [
+          { "damage": 2, "damageType": "Geo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Jade Screen"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "16013",
@@ -1040,7 +1481,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/Starshatter.png",
-        "imgID": "Starshatter"
+        "imgID": "Starshatter",
+        "damage": [
+          { "damage": 6, "damageType": "Geo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Jade Screen"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1070,7 +1518,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/FavoniusBladeworkMaid.png",
-        "imgID": "FavoniusBladeworkMaid"
+        "imgID": "FavoniusBladeworkMaid",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "16022",
@@ -1079,7 +1534,14 @@
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/Breastplate.png",
-        "imgID": "Breastplate"
+        "imgID": "Breastplate",
+        "damage": [
+          { "damage": 1, "damageType": "Geo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Full Plate"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "16023",
@@ -1091,7 +1553,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/SweepingTime.png",
-        "imgID": "SweepingTime"
+        "imgID": "SweepingTime",
+        "damage": [
+          { "damage": 4, "damageType": "Geo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Sweeping Time"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1121,7 +1590,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/SupplicantsBowmanship.png",
-        "imgID": "SupplicantsBowmanship"
+        "imgID": "SupplicantsBowmanship",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "17012",
@@ -1130,7 +1606,14 @@
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/FloralBrush.png",
-        "imgID": "FloralBrush"
+        "imgID": "FloralBrush",
+        "damage": [
+          { "damage": 3, "damageType": "Dendro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "17013",
@@ -1142,7 +1625,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/TrumpCardKitty.png",
-        "imgID": "TrumpCardKitty"
+        "imgID": "TrumpCardKitty",
+        "damage": [
+          { "damage": 2, "damageType": "Dendro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Cuilein-Anbar"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1172,7 +1662,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/Surge.png",
-        "imgID": "Surge"
+        "imgID": "Surge",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "22012",
@@ -1181,7 +1678,14 @@
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/OceanidMimicSummoning.png",
-        "imgID": "OceanidMimicSummoning"
+        "imgID": "OceanidMimicSummoning",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Oceanid Mimic"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "22013",
@@ -1190,7 +1694,14 @@
         "costs": [{ "costNum": 5, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/TheMyriadWilds.png",
-        "imgID": "TheMyriadWilds"
+        "imgID": "TheMyriadWilds",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Oceanid Mimic"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "22014",
@@ -1202,7 +1713,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/TideandTorrent.png",
-        "imgID": "TideandTorrent"
+        "imgID": "TideandTorrent",
+        "damage": [
+          { "damage": 2, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1232,7 +1750,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/WaterBall.png",
-        "imgID": "WaterBall"
+        "imgID": "WaterBall",
+        "damage": [
+          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "22022",
@@ -1241,7 +1766,14 @@
         "costs": [{ "costNum": 3, "costType": "Hydro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/InfluxBlast.png",
-        "imgID": "InfluxBlast"
+        "imgID": "InfluxBlast",
+        "damage": [
+          { "damage": 3, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Refraction"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "22023",
@@ -1253,7 +1785,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/RippledReflection.png",
-        "imgID": "RippledReflection"
+        "imgID": "RippledReflection",
+        "damage": [
+          { "damage": 5, "damageType": "Hydro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1283,7 +1822,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/Thrust.png",
-        "imgID": "Thrust"
+        "imgID": "Thrust",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "23012",
@@ -1292,7 +1838,14 @@
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/Prowl.png",
-        "imgID": "Prowl"
+        "imgID": "Prowl",
+        "damage": [
+          { "damage": 1, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Stealth"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "23013",
@@ -1304,7 +1857,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/BladeAblaze.png",
-        "imgID": "BladeAblaze"
+        "imgID": "BladeAblaze",
+        "damage": [
+          { "damage": 5, "damageType": "Pyro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "23014",
@@ -1313,7 +1873,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/StealthMaster.png",
-        "imgID": "StealthMaster"
+        "imgID": "StealthMaster",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Stealth"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1343,7 +1910,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/Ichimonji.png",
-        "imgID": "Ichimonji"
+        "imgID": "Ichimonji",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "25012",
@@ -1352,7 +1926,14 @@
         "costs": [{ "costNum": 3, "costType": "Anemo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/BlusteringBlade.png",
-        "imgID": "BlusteringBlade"
+        "imgID": "BlusteringBlade",
+        "damage": [
+          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Shadowsword: Lone Gale"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "25013",
@@ -1361,7 +1942,14 @@
         "costs": [{ "costNum": 3, "costType": "Cryo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/FrostyAssault.png",
-        "imgID": "FrostyAssault"
+        "imgID": "FrostyAssault",
+        "damage": [
+          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": ["Shadowsword: Galloping Frost"],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "25014",
@@ -1373,7 +1961,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/PseudoTenguSweeper.png",
-        "imgID": "PseudoTenguSweeper"
+        "imgID": "PseudoTenguSweeper",
+        "damage": [
+          { "damage": 4, "damageType": "Anemo", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1403,7 +1998,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/PlamaLawa.png",
-        "imgID": "PlamaLawa"
+        "imgID": "PlamaLawa",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "26012",
@@ -1412,7 +2014,14 @@
         "costs": [{ "costNum": 3, "costType": "Geo" }],
         "type": ["Elemental Skill"],
         "img": "/skill/MovoLawa.png",
-        "imgID": "MovoLawa"
+        "imgID": "MovoLawa",
+        "damage": [
+          { "damage": 3, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "26013",
@@ -1424,7 +2033,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/UpaShato.png",
-        "imgID": "UpaShato"
+        "imgID": "UpaShato",
+        "damage": [
+          { "damage": 5, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "26014",
@@ -1433,7 +2049,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/InfusedStonehide.png",
-        "imgID": "InfusedStonehide"
+        "imgID": "InfusedStonehide",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Stonehide"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1463,7 +2086,14 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/MajesticDance.png",
-        "imgID": "MajesticDance"
+        "imgID": "MajesticDance",
+        "damage": [
+          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "27012",
@@ -1472,7 +2102,14 @@
         "costs": [{ "costNum": 3, "costType": "Dendro" }],
         "type": ["Elemental Skill"],
         "img": "/skill/VolatileSporeCloud.png",
-        "imgID": "VolatileSporeCloud"
+        "imgID": "VolatileSporeCloud",
+        "damage": [
+          { "damage": 3, "damageType": "Dendro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": [],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "27013",
@@ -1484,7 +2121,14 @@
         ],
         "type": ["Elemental Burst"],
         "img": "/skill/FeatherSpreading.png",
-        "imgID": "FeatherSpreading"
+        "imgID": "FeatherSpreading",
+        "damage": [
+          { "damage": 4, "damageType": "Dendro", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Radical Vitality"],
+        "heal": [{ "heal": 0, "target": "All" }]
       },
       {
         "id": "27014",
@@ -1493,7 +2137,14 @@
         "costs": [],
         "type": ["Passive Skill"],
         "img": "/skill/RadicalVitality.png",
-        "imgID": "RadicalVitality"
+        "imgID": "RadicalVitality",
+        "damage": [
+          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Background" }
+        ],
+        "summons": [],
+        "shield": ["Radical Vitality"],
+        "heal": [{ "heal": 0, "target": "All" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
