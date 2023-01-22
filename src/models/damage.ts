@@ -1,4 +1,7 @@
+import { GIElement } from "./element";
+
 export enum DamageType {
+  None = "",
   Geo = "Geo",
   Cryo = "Cryo",
   Dendro = "Dendro",
@@ -8,6 +11,16 @@ export enum DamageType {
   Hydro = "Hydro",
   Physical = "Physical",
 }
+
+export const TransDamageTypeToGIElement = {
+  [DamageType.Anemo]: GIElement.Anemo,
+  [DamageType.Cryo]: GIElement.Cryo,
+  [DamageType.Dendro]: GIElement.Dendro,
+  [DamageType.Electro]: GIElement.Electro,
+  [DamageType.Geo]: GIElement.Geo,
+  [DamageType.Hydro]: GIElement.Hydro,
+  [DamageType.Pyro]: GIElement.Pyro,
+};
 
 export enum SkillTarget {
   Active = "Active",
@@ -25,6 +38,7 @@ export const DamageColortype = {
   [DamageType.Anemo]: "#80FFD7FF",
   [DamageType.Hydro]: "#80C0FFFF",
   [DamageType.Physical]: "#FFFFFFFFF",
+  [DamageType.None]: "#FFFFFFFFF",
 };
 
 export interface IDamage {

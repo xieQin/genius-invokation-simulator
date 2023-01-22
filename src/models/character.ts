@@ -13,7 +13,7 @@ export interface ICharacter {
   equipments: ICharacterEquipment;
   skills: ISkill[];
   profile: ICharacterProfile | null;
-  elementStatus: GIElement | null;
+  elementStatus: GIElement[];
   hp: number;
   currentHp: number;
   energy: number;

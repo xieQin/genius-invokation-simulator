@@ -1,5 +1,6 @@
 import {
   Action,
+  DamageType,
   ICost,
   ISkill,
   Phase,
@@ -7,6 +8,7 @@ import {
   SkillCombatType,
   SkillTarget,
   SummonsID,
+  TransDamageTypeToGIElement,
 } from "@/models";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid, NameIDTrans } from "@/utils";
@@ -22,6 +24,7 @@ export const useSkill = (pos: PlayerPosition) => {
     addSummon,
     updateEnergy,
     updateHp,
+    updateElementStatus,
     setGameStates,
   } = useGameStore();
   const dices = playerDices[pos];
@@ -54,6 +57,15 @@ export const useSkill = (pos: PlayerPosition) => {
     for (const damage of skill.damage) {
       if (damage.damage > 0) {
         updateHp(-damage.damage, Math.abs(pos - 1), damage.target);
+        if (damage.damageType in TransDamageTypeToGIElement) {
+          const _element =
+            damage.damageType as keyof typeof TransDamageTypeToGIElement;
+          updateElementStatus(
+            TransDamageTypeToGIElement[_element],
+            Math.abs(pos - 1),
+            damage.target
+          );
+        }
       }
     }
     for (const heal of skill.heal) {

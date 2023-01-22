@@ -9,6 +9,11 @@ import {
   ICharacter,
   SkillSubType,
 } from "@/models";
+
+import GIData from "./cards_20221205_en-us.json";
+import I18n from "./cards_20221205_i18n.json";
+import CharactersExtra from "./character-extra.json";
+import SkillExtra from "./skill-extra.json";
 import {
   cardType,
   CardTypeTrans,
@@ -18,12 +23,7 @@ import {
   ElementTypeTrans,
   NameIDTrans,
   TextTrans,
-} from "@/utils";
-
-import GIData from "./cards_20221205_en-us.json";
-import I18n from "./cards_20221205_i18n.json";
-import CharactersExtra from "./character-extra.json";
-import SkillExtra from "./skill-extra.json";
+} from "./trans";
 
 const PUBLIC_PATH = process.env.NODE_ENV === "development" ? "" : "";
 
@@ -60,7 +60,7 @@ export const transCharacters = () => {
           talent: null,
         },
         profile: null,
-        elementStatus: null,
+        elementStatus: [],
         hp: Number(role.hp),
         currentHp: Number(role.hp),
         img: `${PUBLIC_PATH}/characters/${NameIDTrans(role.name)}.png`,

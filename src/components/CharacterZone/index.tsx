@@ -54,18 +54,15 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
       {phase !== Phase.Init && (
         <>
           <div className={styles.CharacterElementStatus}>
-            <div className={styles.CharacterElementStatusItem}>
-              <img
-                src={`${PUBLIC_PATH}/images/dendro-elementicon.png`}
-                alt=""
-              />
-            </div>
-            <div className={styles.CharacterElementStatusItem}>
-              <img
-                src={`${PUBLIC_PATH}/images/electro-elementicon.png`}
-                alt=""
-              />
-            </div>
+            {character.elementStatus.length > 0 &&
+              character.elementStatus.map((element, index) => (
+                <div key={index} className={styles.CharacterElementStatusItem}>
+                  <img
+                    src={`${PUBLIC_PATH}/images/${element.toLocaleLowerCase()}-elementicon.png`}
+                    alt=""
+                  />
+                </div>
+              ))}
           </div>
           {i !== undefined && i === select && (
             <div className={styles.CharacterSelected}></div>

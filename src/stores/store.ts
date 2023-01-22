@@ -3,6 +3,7 @@ import { create } from "zustand";
 import {
   DeckStatus,
   GIDiceID,
+  GIElement,
   ICharacter,
   IPlayer,
   SkillTarget,
@@ -151,6 +152,25 @@ export const useGameStore = create<GameStore>((set, get) => ({
       const character = player.characters[c];
       character.currentHp =
         character.currentHp + hp > 0 ? character.currentHp + hp : 0;
+      characters[c] = character;
+    });
+    player = {
+      ...player,
+      characters,
+    };
+    get().updatePlayer(player, pos);
+  },
+
+  updateElementStatus: (element, pos, target) => {
+    let player = get().getPlayer(pos);
+    const activeCharacter = [];
+    const characters = Object.assign([], player.characters) as ICharacter[];
+    if (target === SkillTarget.Active) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    activeCharacter.forEach(c => {
+      const character = player.characters[c];
+      character.elementStatus.push(element);
       characters[c] = character;
     });
     player = {
