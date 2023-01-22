@@ -28,7 +28,7 @@ export const SkillItem = (props: { skill: ISkill; i: number }) => {
   const { skill, i } = props;
   const { onPreview } = usePreview();
   const { setGameStates, phase, activeSkills } = useGameStore();
-  const { isSkillValid } = useSkill(PlayerPosition.Own);
+  const { isSkillValid, isEnergyValid } = useSkill(PlayerPosition.Own);
   if (skill.type.includes(SkillPassiveType.Passive)) {
     return <></>;
   }
@@ -37,7 +37,7 @@ export const SkillItem = (props: { skill: ISkill; i: number }) => {
   return (
     <div
       className={`${styles.SkillZoneItem} ${
-        isSkillValid(skill.costs) ? "" : styles.NotValid
+        isSkillValid(skill.costs) && isEnergyValid(skill) ? "" : styles.NotValid
       }`}
       aria-hidden="true"
       style={{

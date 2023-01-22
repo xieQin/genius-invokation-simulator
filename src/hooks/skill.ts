@@ -1,4 +1,11 @@
-import { Action, ICost, ISkill, Phase, PlayerPosition } from "@/models";
+import {
+  Action,
+  ICost,
+  ISkill,
+  Phase,
+  PlayerPosition,
+  SkillCombatType,
+} from "@/models";
 import { DamageTarget } from "@/models/damage";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid } from "@/utils";
@@ -89,9 +96,17 @@ export const useSkill = (pos: PlayerPosition) => {
 
   const isSkillValid = (costs: ICost[] = []) => isCostDiceValid(costs, dices);
 
+  const isEnergyValid = (skill: ISkill) => {
+    if (pos === PlayerPosition.Opponent) return false;
+    if (skill.type.includes(SkillCombatType.ElementalBurst)) {
+      const character = players[pos].characters[activeCharacters[pos]];
+      return character.currentEnergy === character.energy;
+    }
+    return true;
+  };
+
   // todo calculate skill damage
   const calDamage = (idx: number) => {
-    console.log(idx, activeCharacters);
     const enemy = Math.abs(pos - 1);
     const activeSkill = activeSkills[enemy];
     const skill =
@@ -118,6 +133,7 @@ export const useSkill = (pos: PlayerPosition) => {
   return {
     getMessage,
     isSkillValid,
+    isEnergyValid,
     onCastSkill,
     shouldTargetHighlight,
     calDamage,
