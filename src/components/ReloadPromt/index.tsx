@@ -9,8 +9,10 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 console.log(pwaInfo);
 
 export default function ReloadPrompt() {
-  const buildDate = new Date().toLocaleDateString();
-  const reloadSW = new Date().toLocaleDateString() + "_" + Math.random() * 100;
+  const buildDate =
+    new Date().toISOString() + "__buildDate__" + Math.random() * 10000;
+  const reloadSW =
+    new Date().toISOString() + "_reloadSW_" + Math.random() * 10000;
 
   const {
     offlineReady: [offlineReady, setOfflineReady],
