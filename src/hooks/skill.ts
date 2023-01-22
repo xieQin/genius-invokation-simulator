@@ -5,10 +5,11 @@ import {
   Phase,
   PlayerPosition,
   SkillCombatType,
+  SummonsID,
 } from "@/models";
 import { DamageTarget } from "@/models/damage";
 import { useGameStore } from "@/stores";
-import { isCostDiceValid } from "@/utils";
+import { isCostDiceValid, NameIDTrans } from "@/utils";
 
 export const useSkill = (pos: PlayerPosition) => {
   const {
@@ -31,44 +32,9 @@ export const useSkill = (pos: PlayerPosition) => {
       Action.CastSkill,
       actions[PlayerPosition.Opponent],
     ]);
-    if (use_skill.name === "Mirror Reflection of Doom") {
-      addSummon("Reflection", pos);
-    }
-    if (use_skill.name === "Forbidden Creation - Isomer 75 / Type II") {
-      addSummon("LargeWindSpirit", pos);
-    }
-    if (use_skill.name === "Stellar Restoration") {
-      addSummon("LightningStiletto", pos);
-    }
-    if (use_skill.name === "Guoba Attack") {
-      addSummon("Guoba", pos);
-    }
-    if (use_skill.name === "Trump-Card Kitty") {
-      addSummon("CuileinAnbar", pos);
-    }
-    if (use_skill.name === "Celestial Shower") {
-      addSummon("SacredCryoPearl", pos);
-    }
-    if (use_skill.name === "Signature Mix") {
-      addSummon("DrunkenMist", pos);
-    }
-    if (use_skill.name === "Kamisato Art: Soumetsu") {
-      addSummon("FrostflakeSekiNoTo", pos);
-    }
-    if (use_skill.name === "Let the Show Begin♪") {
-      addSummon("MelodyLoop", pos);
-    }
-    if (use_skill.name === "Nightrider") {
-      addSummon("Oz", pos);
-    }
-    if (use_skill.name === "Dandelion Breeze") {
-      addSummon("DandelionField", pos);
-    }
-    if (use_skill.name === "Oceanid Mimic Summoning") {
-      addSummon("OceanidMimicFerret", pos);
-    }
-    if (use_skill.name === "Frosty Assault") {
-      addSummon("ShadowsordGallopingFrost", pos);
+    if (use_skill.summons.length > 0) {
+      const summons = use_skill.summons;
+      addSummon(summons.map(s => NameIDTrans(s)) as SummonsID[], pos);
     }
   };
 
