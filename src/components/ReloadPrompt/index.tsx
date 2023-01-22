@@ -8,11 +8,11 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 // eslint-disable-next-line no-console
 console.log(pwaInfo);
 
-export default function ReloadPrompt() {
-  const buildDate =
-    new Date().toISOString() + "__buildDate__" + Math.random() * 10000;
-  const reloadSW =
-    new Date().toISOString() + "_reloadSW_" + Math.random() * 10000;
+function ReloadPrompt() {
+  // replaced dynamically
+  const buildDate = new Date().toISOString();
+  // replaced dyanmicaly
+  const reloadSW = "__RELOAD_SW__";
 
   const {
     offlineReady: [offlineReady, setOfflineReady],
@@ -22,6 +22,7 @@ export default function ReloadPrompt() {
     onRegisteredSW(swUrl, r) {
       // eslint-disable-next-line no-console
       console.log(`Service Worker at: ${swUrl}`);
+      // @ts-expect-error just ignore
       if (reloadSW === "true") {
         r &&
           setInterval(() => {
@@ -75,3 +76,5 @@ export default function ReloadPrompt() {
     </div>
   );
 }
+
+export default ReloadPrompt;

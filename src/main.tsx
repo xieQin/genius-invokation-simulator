@@ -4,7 +4,7 @@ import "@/utils/i18n";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 
-import ReloadPrompt from "@/components/ReloadPromt";
+import ReloadPrompt from "@/components/ReloadPrompt";
 
 import App from "./App";
 
