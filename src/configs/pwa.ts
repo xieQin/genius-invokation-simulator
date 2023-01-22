@@ -65,8 +65,10 @@ export const PWAConfig: Partial<VitePWAOptions> = {
     orientation: "landscape",
   },
   devOptions: {
-    enabled: true,
+    enabled: process.env.SW_DEV === "true",
+    /* when using generateSW the PWA plugin will switch to classic */
     type: "module",
+    navigateFallback: "index.html",
   },
   workbox: {
     sourcemap: true,
