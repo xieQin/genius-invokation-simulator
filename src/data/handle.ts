@@ -1,6 +1,7 @@
 import { writeFileSync } from "fs";
 
 import {
+  Character,
   EqiupmentWeaponType,
   GIElement,
   GIRegion,
@@ -11,6 +12,7 @@ import {
 
 import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
+import CharactersExtra from "./character-extra.json";
 
 const PUBLIC_PATH = process.env.NODE_ENV === "development" ? "" : "";
 
@@ -128,8 +130,10 @@ export const transCharacters = () => {
         profile: null,
         elementStatus: null,
         hp: Number(role.hp),
+        currentHp: Number(role.hp),
         img: `${PUBLIC_PATH}/characters/${ImageIDTrans(role.name)}.png`,
         imgID: ImageIDTrans(role.name),
+        ...CharactersExtra[role.name as Character],
       } as ICharacter)
   );
 

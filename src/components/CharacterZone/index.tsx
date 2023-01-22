@@ -79,9 +79,18 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
             )}
           <div className={styles.CharacterHealth}>{character.hp}</div>
           <div className={styles.CharacterEnergy}>
-            <div className={styles.CharacterEnergyItem}></div>
-            <div className={styles.CharacterEnergyItem}></div>
-            <div className={styles.CharacterEmptyEnergyItem}></div>
+            {Array(character.energy)
+              .fill(0)
+              .map((_, i) => (
+                <div
+                  key={i}
+                  className={
+                    i < character.currentEnergy
+                      ? styles.CharacterEnergyItem
+                      : styles.CharacterEmptyEnergyItem
+                  }
+                ></div>
+              ))}
           </div>
           <div className={styles.CharacterEquipment}>
             {character.equipments.weapon && (

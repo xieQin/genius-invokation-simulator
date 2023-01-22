@@ -53,8 +53,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Ganyu.png",
-    "imgID": "Ganyu"
+    "imgID": "Ganyu",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1102,
@@ -101,8 +104,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Diona.png",
-    "imgID": "Diona"
+    "imgID": "Diona",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1103,
@@ -149,8 +155,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Kaeya.png",
-    "imgID": "Kaeya"
+    "imgID": "Kaeya",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1104,
@@ -197,8 +206,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Chongyun.png",
-    "imgID": "Chongyun"
+    "imgID": "Chongyun",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1105,
@@ -254,8 +266,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/KamisatoAyaka.png",
-    "imgID": "KamisatoAyaka"
+    "imgID": "KamisatoAyaka",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1201,
@@ -302,8 +317,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Barbara.png",
-    "imgID": "Barbara"
+    "imgID": "Barbara",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1202,
@@ -350,8 +368,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Xingqiu.png",
-    "imgID": "Xingqiu"
+    "imgID": "Xingqiu",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1203,
@@ -407,8 +428,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Mona.png",
-    "imgID": "Mona"
+    "imgID": "Mona",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1301,
@@ -455,8 +479,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Diluc.png",
-    "imgID": "Diluc"
+    "imgID": "Diluc",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1302,
@@ -503,8 +530,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Xiangling.png",
-    "imgID": "Xiangling"
+    "imgID": "Xiangling",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1303,
@@ -551,8 +581,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Bennett.png",
-    "imgID": "Bennett"
+    "imgID": "Bennett",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1305,
@@ -599,8 +632,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Yoimiya.png",
-    "imgID": "Yoimiya"
+    "imgID": "Yoimiya",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1306,
@@ -618,7 +654,7 @@
           { "costNum": 2, "costType": "Void" }
         ],
         "type": ["Normal Attack"],
-        "img": "https://xieqin.github.io/invokation/skill/Kaboom.png",
+        "img": "/skill/Kaboom.png",
         "imgID": "Kaboom"
       },
       {
@@ -627,7 +663,7 @@
         "name": "Jumpy Dumpty",
         "costs": [{ "costNum": 3, "costType": "Pyro" }],
         "type": ["Elemental Skill"],
-        "img": "https://xieqin.github.io/invokation/skill/JumpyDumpty.png",
+        "img": "/skill/JumpyDumpty.png",
         "imgID": "JumpyDumpty"
       },
       {
@@ -639,7 +675,7 @@
           { "costNum": 3, "costType": "Energy" }
         ],
         "type": ["Elemental Burst"],
-        "img": "https://xieqin.github.io/invokation/skill/SparksnSplash.png",
+        "img": "/skill/SparksnSplash.png",
         "imgID": "SparksnSplash"
       }
     ],
@@ -647,7 +683,8 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
-    "img": "https://xieqin.github.io/invokation/characters/Klee.png",
+    "currentHp": 10,
+    "img": "/characters/Klee.png",
     "imgID": "Klee"
   },
   {
@@ -695,8 +732,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Fischl.png",
-    "imgID": "Fischl"
+    "imgID": "Fischl",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1402,
@@ -743,8 +783,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Razor.png",
-    "imgID": "Razor"
+    "imgID": "Razor",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1403,
@@ -791,8 +834,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Keqing.png",
-    "imgID": "Keqing"
+    "imgID": "Keqing",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1404,
@@ -848,8 +894,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Cyno.png",
-    "imgID": "Cyno"
+    "imgID": "Cyno",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1501,
@@ -896,8 +945,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Sucrose.png",
-    "imgID": "Sucrose"
+    "imgID": "Sucrose",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1502,
@@ -944,8 +996,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Jean.png",
-    "imgID": "Jean"
+    "imgID": "Jean",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1601,
@@ -992,8 +1047,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Ningguang.png",
-    "imgID": "Ningguang"
+    "imgID": "Ningguang",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 1602,
@@ -1040,8 +1098,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Noelle.png",
-    "imgID": "Noelle"
+    "imgID": "Noelle",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 1701,
@@ -1088,8 +1149,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/Collei.png",
-    "imgID": "Collei"
+    "imgID": "Collei",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 2201,
@@ -1145,8 +1209,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/RhodeiaofLoch.png",
-    "imgID": "RhodeiaofLoch"
+    "imgID": "RhodeiaofLoch",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 2202,
@@ -1193,8 +1260,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/MirrorMaiden.png",
-    "imgID": "MirrorMaiden"
+    "imgID": "MirrorMaiden",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 2301,
@@ -1250,8 +1320,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/FatuiPyroAgent.png",
-    "imgID": "FatuiPyroAgent"
+    "imgID": "FatuiPyroAgent",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 2501,
@@ -1307,8 +1380,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/MaguuKenki.png",
-    "imgID": "MaguuKenki"
+    "imgID": "MaguuKenki",
+    "energy": 3,
+    "currentEnergy": 0
   },
   {
     "id": 2601,
@@ -1364,8 +1440,11 @@
     "profile": null,
     "elementStatus": null,
     "hp": 8,
+    "currentHp": 8,
     "img": "/characters/StonehideLawachurl.png",
-    "imgID": "StonehideLawachurl"
+    "imgID": "StonehideLawachurl",
+    "energy": 2,
+    "currentEnergy": 0
   },
   {
     "id": 2701,
@@ -1421,7 +1500,10 @@
     "profile": null,
     "elementStatus": null,
     "hp": 10,
+    "currentHp": 10,
     "img": "/characters/JadeplumeTerrorshroom.png",
-    "imgID": "JadeplumeTerrorshroom"
+    "imgID": "JadeplumeTerrorshroom",
+    "energy": 2,
+    "currentEnergy": 0
   }
 ]

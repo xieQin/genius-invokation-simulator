@@ -15,6 +15,9 @@ export interface ICharacter {
   profile: ICharacterProfile | null;
   elementStatus: GIElement | null;
   hp: number;
+  currentHp: number;
+  energy: number;
+  currentEnergy: number;
   img: string;
   imgID: string;
 }
