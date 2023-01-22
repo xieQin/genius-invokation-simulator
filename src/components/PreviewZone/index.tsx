@@ -155,7 +155,7 @@ export const PreviewCard = (props: { preview: ICard }) => {
   return (
     <div className={styles.PreviewSection}>
       <div className={styles.PreviewCard}>
-        <HandCardItem card={preview} player={PlayerPosition.Own} />;
+        <HandCardItem card={preview} pos={PlayerPosition.Own} />;
       </div>
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>

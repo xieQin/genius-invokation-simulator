@@ -46,7 +46,7 @@ export default function OwnArea() {
         player={position}
         style={{ top: "580px" }}
       />
-      <HandCardZone player={position} cards={cards} />
+      <HandCardZone pos={position} cards={cards} />
       <CardStackZone />
     </div>
   );

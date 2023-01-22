@@ -48,10 +48,7 @@ export default function DraftCardPhase() {
                   styles[`DraftAnimate${index + 1}`]
                 }`}
               >
-                <HandCardItem
-                  card={card as ICard}
-                  player={PlayerPosition.Own}
-                />
+                <HandCardItem card={card as ICard} pos={PlayerPosition.Own} />
               </div>
             ))}
         </div>

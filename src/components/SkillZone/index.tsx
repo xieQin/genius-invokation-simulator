@@ -41,7 +41,7 @@ export const SkillItem = (props: { skill: ISkill; i: number }) => {
       }`}
       aria-hidden="true"
       style={{
-        zIndex: shouldShowPreview ? 22 : 12,
+        zIndex: shouldShowPreview ? 22 : 9,
       }}
       onClick={() => {
         onPreview(skill);

@@ -19,7 +19,7 @@ export default function PlayCardPhase() {
   const { onPlayCard, getMessage, isCardValid } = usePlayCard();
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
 
-  const card = getPlayer(PlayerPosition.Own).cards[activeCards[0]];
+  const card = getPlayer(PlayerPosition.Own).cards[activeCards[pos]];
 
   const message = getMessage(card);
 
@@ -35,6 +35,10 @@ export default function PlayCardPhase() {
 
   const onCancel = () => {
     setGameStates("phase", Phase.Combat);
+    setGameStates(
+      "activeCards",
+      Object.assign([], activeCards, [-1, activeCards[1]])
+    );
   };
 
   return (
