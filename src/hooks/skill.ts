@@ -1,6 +1,5 @@
 import {
   Action,
-  DamageType,
   ICost,
   ISkill,
   Phase,

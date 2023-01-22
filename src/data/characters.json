@@ -658,7 +658,7 @@
         "img": "/skill/SearingOnslaught.png",
         "imgID": "SearingOnslaught",
         "damage": [
-          { "damage": 5, "damageType": "Pyro", "target": "Active" },
+          { "damage": 3, "damageType": "Pyro", "target": "Active" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
