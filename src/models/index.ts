@@ -1,5 +1,6 @@
 export * from "./card";
 export * from "./character";
+export * from "./damage";
 export * from "./die";
 export * from "./element";
 export * from "./equipment";

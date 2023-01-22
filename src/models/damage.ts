@@ -9,16 +9,11 @@ export enum DamageType {
   Physical = "Physical",
 }
 
-export enum DamageTarget {
+export enum SkillTarget {
   Active = "Active",
   Back = "Background",
   All = "All",
-}
-
-export enum HealTarget {
   Own = "Own",
-  Back = "Background",
-  All = "All",
 }
 
 export const DamageColortype = {
@@ -35,10 +30,10 @@ export const DamageColortype = {
 export interface IDamage {
   damage: number;
   damageType: DamageType;
-  target: DamageTarget;
+  target: SkillTarget;
 }
 
 export interface IHeal {
   heal: number;
-  target: HealTarget;
+  target: SkillTarget;
 }

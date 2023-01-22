@@ -76,7 +76,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
             calDamage(i) > 0 && (
               <div className={styles.CharacterDamage}>-{calDamage(i)}</div>
             )}
-          <div className={styles.CharacterHealth}>{character.hp}</div>
+          <div className={styles.CharacterHealth}>{character.currentHp}</div>
           <div className={styles.CharacterEnergy}>
             {Array(character.energy)
               .fill(0)

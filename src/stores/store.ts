@@ -1,6 +1,12 @@
 import { create } from "zustand";
 
-import { DeckStatus, GIDiceID, ICharacter, IPlayer } from "@/models";
+import {
+  DeckStatus,
+  GIDiceID,
+  ICharacter,
+  IPlayer,
+  SkillTarget,
+} from "@/models";
 
 import { GameAction } from "./action";
 import { GameState, initialState } from "./initialState";
@@ -118,6 +124,35 @@ export const useGameStore = create<GameStore>((set, get) => ({
         ? character.currentEnergy + energy
         : 0;
     characters[activeCharacter] = character;
+    player = {
+      ...player,
+      characters,
+    };
+    get().updatePlayer(player, pos);
+  },
+
+  updateHp: (hp, pos, target) => {
+    let player = get().getPlayer(pos);
+    let activeCharacter = [];
+    const characters = Object.assign([], player.characters) as ICharacter[];
+    if (target === SkillTarget.Active) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    if (target === SkillTarget.All) {
+      activeCharacter = [0, 1, 2];
+    }
+    if (target === SkillTarget.Back) {
+      activeCharacter = [0, 1, 2].filter(i => i != get().activeCharacters[pos]);
+    }
+    if (target === SkillTarget.Own) {
+      activeCharacter.push(get().activeCharacters[pos]);
+    }
+    activeCharacter.forEach(c => {
+      const character = player.characters[c];
+      character.currentHp =
+        character.currentHp + hp > 0 ? character.currentHp + hp : 0;
+      characters[c] = character;
+    });
     player = {
       ...player,
       characters,

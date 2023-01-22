@@ -1,4 +1,5 @@
 import { GIDiceID, ICard, IPlayer, PlayerPosition, SummonsID } from "@/models";
+import { SkillTarget } from "@/models/damage";
 
 import { GameState } from "./initialState";
 
@@ -21,4 +22,5 @@ export interface GameAction {
   showMessage: (message: string, callback?: () => void) => void;
   addSummon: (summon: SummonsID[], pos: PlayerPosition) => void;
   updateEnergy: (energy: number, pos: PlayerPosition) => void;
+  updateHp: (hp: number, pos: PlayerPosition, target: SkillTarget) => void;
 }
