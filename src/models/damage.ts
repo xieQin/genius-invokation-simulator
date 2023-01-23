@@ -23,10 +23,10 @@ export const TransDamageTypeToGIElement = {
 };
 
 export enum SkillTarget {
-  Active = "Active",
+  Opponent = "Opponent",
   Back = "Background",
   All = "All",
-  Own = "Own",
+  Active = "Active",
 }
 
 export const DamageColortype = {

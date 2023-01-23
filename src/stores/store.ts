@@ -136,7 +136,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     let player = get().getPlayer(pos);
     let activeCharacter = [];
     const characters = Object.assign([], player.characters) as ICharacter[];
-    if (target === SkillTarget.Active) {
+    if (target === SkillTarget.Opponent) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
     if (target === SkillTarget.All) {
@@ -145,7 +145,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     if (target === SkillTarget.Back) {
       activeCharacter = [0, 1, 2].filter(i => i != get().activeCharacters[pos]);
     }
-    if (target === SkillTarget.Own) {
+    if (target === SkillTarget.Active) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
     activeCharacter.forEach(c => {
@@ -165,7 +165,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     let player = get().getPlayer(pos);
     const activeCharacter = [];
     const characters = Object.assign([], player.characters) as ICharacter[];
-    if (target === SkillTarget.Active) {
+    if (target === SkillTarget.Opponent) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
     activeCharacter.forEach(c => {

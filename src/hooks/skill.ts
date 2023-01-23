@@ -83,7 +83,10 @@ export const useSkill = (pos: PlayerPosition) => {
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
     const damage = skill.damage;
     for (const d of damage) {
-      if (d.target === SkillTarget.Active && index === activeCharacters[pos]) {
+      if (
+        d.target === SkillTarget.Opponent &&
+        index === activeCharacters[pos]
+      ) {
         return true;
       }
       if (d.target === SkillTarget.All && d.damage > 0) {

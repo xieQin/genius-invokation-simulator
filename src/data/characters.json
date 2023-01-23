@@ -18,7 +18,7 @@
         "img": "/skill/LiutianArchery.png",
         "imgID": "LiutianArchery",
         "damage": [
-          { "damage": 2, "damageType": "", "target": "Active" },
+          { "damage": 2, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -34,7 +34,7 @@
         "img": "/skill/TrailoftheQilin.png",
         "imgID": "TrailoftheQilin",
         "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Ice Lotus"],
@@ -50,7 +50,7 @@
         "img": "/skill/FrostflakeArrow.png",
         "imgID": "FrostflakeArrow",
         "damage": [
-          { "damage": 3, "damageType": "Physical", "target": "Active" },
+          { "damage": 3, "damageType": "Physical", "target": "Opponent" },
           { "damage": 2, "damageType": "Physical", "target": "Background" }
         ],
         "summons": [],
@@ -69,7 +69,7 @@
         "img": "/skill/CelestialShower.png",
         "imgID": "CelestialShower",
         "damage": [
-          { "damage": 1, "damageType": "Physical", "target": "Active" },
+          { "damage": 1, "damageType": "Physical", "target": "Opponent" },
           { "damage": 1, "damageType": "Physical", "target": "Background" }
         ],
         "summons": ["Sacred Cryo Pearl"],
@@ -106,7 +106,7 @@
         "img": "/skill/KätzleinStyle.png",
         "imgID": "KätzleinStyle",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -122,7 +122,7 @@
         "img": "/skill/IcyPaws.png",
         "imgID": "IcyPaws",
         "damage": [
-          { "damage": 2, "damageType": "Cryo", "target": "Active" },
+          { "damage": 2, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -141,12 +141,12 @@
         "img": "/skill/SignatureMix.png",
         "imgID": "SignatureMix",
         "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Drunken Mist"],
         "shield": [],
-        "heal": [{ "heal": 2, "target": "Own" }]
+        "heal": [{ "heal": 2, "target": "Active" }]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -178,7 +178,7 @@
         "img": "/skill/CeremonialBladework.png",
         "imgID": "CeremonialBladework",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -194,7 +194,7 @@
         "img": "/skill/Frostgnaw.png",
         "imgID": "Frostgnaw",
         "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -213,7 +213,7 @@
         "img": "/skill/GlacialWaltz.png",
         "imgID": "GlacialWaltz",
         "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -250,7 +250,7 @@
         "img": "/skill/Demonbane.png",
         "imgID": "Demonbane",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -266,7 +266,7 @@
         "img": "/skill/ChonghuasLayeredFrost.png",
         "imgID": "ChonghuasLayeredFrost",
         "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -285,7 +285,7 @@
         "img": "/skill/CloudPartingStar.png",
         "imgID": "CloudPartingStar",
         "damage": [
-          { "damage": 7, "damageType": "Cryo", "target": "Active" },
+          { "damage": 7, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -322,7 +322,7 @@
         "img": "/skill/KamisatoArtKabuki.png",
         "imgID": "KamisatoArtKabuki",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -338,7 +338,7 @@
         "img": "/skill/KamisatoArtHyouka.png",
         "imgID": "KamisatoArtHyouka",
         "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Active" },
+          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -357,7 +357,7 @@
         "img": "/skill/KamisatoArtSoumetsu.png",
         "imgID": "KamisatoArtSoumetsu",
         "damage": [
-          { "damage": 4, "damageType": "Cryo", "target": "Active" },
+          { "damage": 4, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Frostflake Seki no To"],
@@ -373,7 +373,7 @@
         "img": "/skill/KamisatoArtSenho.png",
         "imgID": "KamisatoArtSenho",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -410,7 +410,7 @@
         "img": "/skill/WhisperofWater.png",
         "imgID": "WhisperofWater",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -426,7 +426,7 @@
         "img": "/skill/LettheShowBegin.png",
         "imgID": "LettheShowBegin",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Melody Loop"],
@@ -445,7 +445,7 @@
         "img": "/skill/ShiningMiracle.png",
         "imgID": "ShiningMiracle",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -482,7 +482,7 @@
         "img": "/skill/GuhuaStyle.png",
         "imgID": "GuhuaStyle",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -498,7 +498,7 @@
         "img": "/skill/FatalRainscreen.png",
         "imgID": "FatalRainscreen",
         "damage": [
-          { "damage": 2, "damageType": "Hydro", "target": "Active" },
+          { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -517,7 +517,7 @@
         "img": "/skill/Raincutter.png",
         "imgID": "Raincutter",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -554,7 +554,7 @@
         "img": "/skill/RippleofFate.png",
         "imgID": "RippleofFate",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -570,7 +570,7 @@
         "img": "/skill/MirrorReflectionofDoom.png",
         "imgID": "MirrorReflectionofDoom",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Reflection"],
@@ -589,7 +589,7 @@
         "img": "/skill/StellarisPhantasm.png",
         "imgID": "StellarisPhantasm",
         "damage": [
-          { "damage": 4, "damageType": "Hydro", "target": "Active" },
+          { "damage": 4, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Illusory Bubble"],
@@ -605,7 +605,7 @@
         "img": "/skill/IllusoryTorrent.png",
         "imgID": "IllusoryTorrent",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -642,7 +642,7 @@
         "img": "/skill/TemperedSword.png",
         "imgID": "TemperedSword",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -658,7 +658,7 @@
         "img": "/skill/SearingOnslaught.png",
         "imgID": "SearingOnslaught",
         "damage": [
-          { "damage": 5, "damageType": "Pyro", "target": "Active" },
+          { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -677,7 +677,7 @@
         "img": "/skill/Dawn.png",
         "imgID": "Dawn",
         "damage": [
-          { "damage": 8, "damageType": "Pyro", "target": "Active" },
+          { "damage": 8, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -714,7 +714,7 @@
         "img": "/skill/DoughFu.png",
         "imgID": "DoughFu",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -730,7 +730,7 @@
         "img": "/skill/GuobaAttack.png",
         "imgID": "GuobaAttack",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Guoba"],
@@ -749,7 +749,7 @@
         "img": "/skill/Pyronado.png",
         "imgID": "Pyronado",
         "damage": [
-          { "damage": 2, "damageType": "Pyro", "target": "Active" },
+          { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -786,7 +786,7 @@
         "img": "/skill/StrikeofFortune.png",
         "imgID": "StrikeofFortune",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -802,7 +802,7 @@
         "img": "/skill/PassionOverload.png",
         "imgID": "PassionOverload",
         "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -821,7 +821,7 @@
         "img": "/skill/FantasticVoyage.png",
         "imgID": "FantasticVoyage",
         "damage": [
-          { "damage": 2, "damageType": "Pyro", "target": "Active" },
+          { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -858,7 +858,7 @@
         "img": "/skill/FireworkFlareUp.png",
         "imgID": "FireworkFlareUp",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -874,7 +874,7 @@
         "img": "/skill/NiwabiFireDance.png",
         "imgID": "NiwabiFireDance",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -893,7 +893,7 @@
         "img": "/skill/RyuukinSaxifrage.png",
         "imgID": "RyuukinSaxifrage",
         "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -930,7 +930,7 @@
         "img": "/skill/Kaboom.png",
         "imgID": "Kaboom",
         "damage": [
-          { "damage": 1, "damageType": "Pyro", "target": "Active" },
+          { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -946,7 +946,7 @@
         "img": "/skill/JumpyDumpty.png",
         "imgID": "JumpyDumpty",
         "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -965,7 +965,7 @@
         "img": "/skill/SparksnSplash.png",
         "imgID": "SparksnSplash",
         "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Active" },
+          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1000,14 +1000,7 @@
         ],
         "type": ["Normal Attack"],
         "img": "/skill/BoltsofDownfall.png",
-        "imgID": "BoltsofDownfall",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
-        "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "imgID": "BoltsofDownfall"
       },
       {
         "id": "14012",
@@ -1018,7 +1011,7 @@
         "img": "/skill/Nightrider.png",
         "imgID": "Nightrider",
         "damage": [
-          { "damage": 1, "damageType": "Electro", "target": "Active" },
+          { "damage": 1, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Oz"],
@@ -1037,7 +1030,7 @@
         "img": "/skill/MidnightPhantasmagoria.png",
         "imgID": "MidnightPhantasmagoria",
         "damage": [
-          { "damage": 4, "damageType": "Physical", "target": "Active" },
+          { "damage": 4, "damageType": "Physical", "target": "Opponent" },
           { "damage": 2, "damageType": "Physical", "target": "Background" }
         ],
         "summons": [],
@@ -1074,7 +1067,7 @@
         "img": "/skill/SteelFang.png",
         "imgID": "SteelFang",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1090,7 +1083,7 @@
         "img": "/skill/ClawandThunder.png",
         "imgID": "ClawandThunder",
         "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1109,7 +1102,7 @@
         "img": "/skill/LightningFang.png",
         "imgID": "LightningFang",
         "damage": [
-          { "damage": 5, "damageType": "Electro", "target": "Active" },
+          { "damage": 5, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1146,7 +1139,7 @@
         "img": "/skill/YunlaiSwordsmanship.png",
         "imgID": "YunlaiSwordsmanship",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1162,7 +1155,7 @@
         "img": "/skill/StellarRestoration.png",
         "imgID": "StellarRestoration",
         "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1181,7 +1174,7 @@
         "img": "/skill/StarwardSword.png",
         "imgID": "StarwardSword",
         "damage": [
-          { "damage": 4, "damageType": "Physical", "target": "Active" },
+          { "damage": 4, "damageType": "Physical", "target": "Opponent" },
           { "damage": 3, "damageType": "Physical", "target": "Background" }
         ],
         "summons": [],
@@ -1218,7 +1211,7 @@
         "img": "/skill/InvokersSpear.png",
         "imgID": "InvokersSpear",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1234,7 +1227,7 @@
         "img": "/skill/SecretRiteChasmicSoulfarer.png",
         "imgID": "SecretRiteChasmicSoulfarer",
         "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1253,7 +1246,7 @@
         "img": "/skill/SacredRiteWolfsSwiftness.png",
         "imgID": "SacredRiteWolfsSwiftness",
         "damage": [
-          { "damage": 4, "damageType": "Electro", "target": "Active" },
+          { "damage": 4, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1269,7 +1262,7 @@
         "img": "/skill/LawfulEnforcer.png",
         "imgID": "LawfulEnforcer",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1306,7 +1299,7 @@
         "img": "/skill/Oceanborne.png",
         "imgID": "Oceanborne",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1322,7 +1315,7 @@
         "img": "/skill/Tidecaller.png",
         "imgID": "Tidecaller",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1341,7 +1334,7 @@
         "img": "/skill/Stormbreaker.png",
         "imgID": "Stormbreaker",
         "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Active" },
+          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1357,7 +1350,7 @@
         "img": "/skill/Wavestrider.png",
         "imgID": "Wavestrider",
         "damage": [
-          { "damage": 2, "damageType": "Electro", "target": "Active" },
+          { "damage": 2, "damageType": "Electro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1394,7 +1387,7 @@
         "img": "/skill/WindSpiritCreation.png",
         "imgID": "WindSpiritCreation",
         "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1410,7 +1403,7 @@
         "img": "/skill/AstableAnemohypostasisCreation6308.png",
         "imgID": "AstableAnemohypostasisCreation6308",
         "damage": [
-          { "damage": 3, "damageType": "Anemo", "target": "Active" },
+          { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1429,7 +1422,7 @@
         "img": "/skill/ForbiddenCreationIsomer75TypeII.png",
         "imgID": "ForbiddenCreationIsomer75TypeII",
         "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Large Wind Spirit"],
@@ -1466,7 +1459,7 @@
         "img": "/skill/FavoniusBladework.png",
         "imgID": "FavoniusBladework",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1482,7 +1475,7 @@
         "img": "/skill/GaleBlade.png",
         "imgID": "GaleBlade",
         "damage": [
-          { "damage": 3, "damageType": "Anemo", "target": "Active" },
+          { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1501,7 +1494,7 @@
         "img": "/skill/DandelionBreeze.png",
         "imgID": "DandelionBreeze",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Dandelion Field"],
@@ -1538,7 +1531,7 @@
         "img": "/skill/SparklingScatter.png",
         "imgID": "SparklingScatter",
         "damage": [
-          { "damage": 1, "damageType": "Geo", "target": "Active" },
+          { "damage": 1, "damageType": "Geo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1554,7 +1547,7 @@
         "img": "/skill/JadeScreen.png",
         "imgID": "JadeScreen",
         "damage": [
-          { "damage": 2, "damageType": "Geo", "target": "Active" },
+          { "damage": 2, "damageType": "Geo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1573,7 +1566,7 @@
         "img": "/skill/Starshatter.png",
         "imgID": "Starshatter",
         "damage": [
-          { "damage": 6, "damageType": "Geo", "target": "Active" },
+          { "damage": 6, "damageType": "Geo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1610,7 +1603,7 @@
         "img": "/skill/FavoniusBladeworkMaid.png",
         "imgID": "FavoniusBladeworkMaid",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1626,7 +1619,7 @@
         "img": "/skill/Breastplate.png",
         "imgID": "Breastplate",
         "damage": [
-          { "damage": 1, "damageType": "Geo", "target": "Active" },
+          { "damage": 1, "damageType": "Geo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1645,7 +1638,7 @@
         "img": "/skill/SweepingTime.png",
         "imgID": "SweepingTime",
         "damage": [
-          { "damage": 4, "damageType": "Geo", "target": "Active" },
+          { "damage": 4, "damageType": "Geo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1682,7 +1675,7 @@
         "img": "/skill/SupplicantsBowmanship.png",
         "imgID": "SupplicantsBowmanship",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1698,7 +1691,7 @@
         "img": "/skill/FloralBrush.png",
         "imgID": "FloralBrush",
         "damage": [
-          { "damage": 3, "damageType": "Dendro", "target": "Active" },
+          { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1717,7 +1710,7 @@
         "img": "/skill/TrumpCardKitty.png",
         "imgID": "TrumpCardKitty",
         "damage": [
-          { "damage": 2, "damageType": "Dendro", "target": "Active" },
+          { "damage": 2, "damageType": "Dendro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Cuilein-Anbar"],
@@ -1754,7 +1747,7 @@
         "img": "/skill/Surge.png",
         "imgID": "Surge",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1770,7 +1763,7 @@
         "img": "/skill/OceanidMimicSummoning.png",
         "imgID": "OceanidMimicSummoning",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Oceanid Mimic"],
@@ -1786,7 +1779,7 @@
         "img": "/skill/TheMyriadWilds.png",
         "imgID": "TheMyriadWilds",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Oceanid Mimic"],
@@ -1805,7 +1798,7 @@
         "img": "/skill/TideandTorrent.png",
         "imgID": "TideandTorrent",
         "damage": [
-          { "damage": 2, "damageType": "Hydro", "target": "Active" },
+          { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1842,7 +1835,7 @@
         "img": "/skill/WaterBall.png",
         "imgID": "WaterBall",
         "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Active" },
+          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1858,7 +1851,7 @@
         "img": "/skill/InfluxBlast.png",
         "imgID": "InfluxBlast",
         "damage": [
-          { "damage": 3, "damageType": "Hydro", "target": "Active" },
+          { "damage": 3, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1877,7 +1870,7 @@
         "img": "/skill/RippledReflection.png",
         "imgID": "RippledReflection",
         "damage": [
-          { "damage": 5, "damageType": "Hydro", "target": "Active" },
+          { "damage": 5, "damageType": "Hydro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1914,7 +1907,7 @@
         "img": "/skill/Thrust.png",
         "imgID": "Thrust",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1930,7 +1923,7 @@
         "img": "/skill/Prowl.png",
         "imgID": "Prowl",
         "damage": [
-          { "damage": 1, "damageType": "Pyro", "target": "Active" },
+          { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1949,7 +1942,7 @@
         "img": "/skill/BladeAblaze.png",
         "imgID": "BladeAblaze",
         "damage": [
-          { "damage": 5, "damageType": "Pyro", "target": "Active" },
+          { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -1965,7 +1958,7 @@
         "img": "/skill/StealthMaster.png",
         "imgID": "StealthMaster",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2002,7 +1995,7 @@
         "img": "/skill/Ichimonji.png",
         "imgID": "Ichimonji",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2018,7 +2011,7 @@
         "img": "/skill/BlusteringBlade.png",
         "imgID": "BlusteringBlade",
         "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Active" },
+          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Shadowsword: Lone Gale"],
@@ -2034,7 +2027,7 @@
         "img": "/skill/FrostyAssault.png",
         "imgID": "FrostyAssault",
         "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Active" },
+          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": ["Shadowsword: Galloping Frost"],
@@ -2053,7 +2046,7 @@
         "img": "/skill/PseudoTenguSweeper.png",
         "imgID": "PseudoTenguSweeper",
         "damage": [
-          { "damage": 4, "damageType": "Anemo", "target": "Active" },
+          { "damage": 4, "damageType": "Anemo", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2090,7 +2083,7 @@
         "img": "/skill/PlamaLawa.png",
         "imgID": "PlamaLawa",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2106,7 +2099,7 @@
         "img": "/skill/MovoLawa.png",
         "imgID": "MovoLawa",
         "damage": [
-          { "damage": 3, "damageType": "Physical", "target": "Active" },
+          { "damage": 3, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2125,7 +2118,7 @@
         "img": "/skill/UpaShato.png",
         "imgID": "UpaShato",
         "damage": [
-          { "damage": 5, "damageType": "Physical", "target": "Active" },
+          { "damage": 5, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2141,7 +2134,7 @@
         "img": "/skill/InfusedStonehide.png",
         "imgID": "InfusedStonehide",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2178,7 +2171,7 @@
         "img": "/skill/MajesticDance.png",
         "imgID": "MajesticDance",
         "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Active" },
+          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2194,7 +2187,7 @@
         "img": "/skill/VolatileSporeCloud.png",
         "imgID": "VolatileSporeCloud",
         "damage": [
-          { "damage": 3, "damageType": "Dendro", "target": "Active" },
+          { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2213,7 +2206,7 @@
         "img": "/skill/FeatherSpreading.png",
         "imgID": "FeatherSpreading",
         "damage": [
-          { "damage": 4, "damageType": "Dendro", "target": "Active" },
+          { "damage": 4, "damageType": "Dendro", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
@@ -2229,7 +2222,7 @@
         "img": "/skill/RadicalVitality.png",
         "imgID": "RadicalVitality",
         "damage": [
-          { "damage": 0, "damageType": "", "target": "Active" },
+          { "damage": 0, "damageType": "", "target": "Opponent" },
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "summons": [],
