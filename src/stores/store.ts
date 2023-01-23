@@ -3,7 +3,6 @@ import { create } from "zustand";
 import {
   DeckStatus,
   GIDiceID,
-  GIElement,
   ICharacter,
   IPlayer,
   SkillTarget,

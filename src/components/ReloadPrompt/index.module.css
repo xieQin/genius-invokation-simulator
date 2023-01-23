@@ -3,6 +3,9 @@
   margin: 0;
   width: 0;
   height: 0;
+  position: fixed;
+  bottom: 0;
+  z-index: 22;
 }
 .ReloadPrompt-date {
   visibility: hidden;

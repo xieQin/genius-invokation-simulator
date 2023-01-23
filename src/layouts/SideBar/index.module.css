@@ -1,0 +1,51 @@
+.SideBar {
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+  background-color: #912f83;
+}
+.SideBarLayout {
+  padding: 10px 16px;
+}
+.SideBarItem.Main {
+  font-size: 30px;
+}
+.SideBarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.SideBarItem.Active {
+  background-color: rgb(78 124 255 / var(--tw-bg-opacity));
+  --tw-bg-opacity: 0.75;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 0.15s;
+  border-radius: 12px;
+  width: 100%;
+}
+.SideBarItemIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.SideBarItemLabel {
+  flex: 1;
+  margin: 10px 0;
+  line-height: 40px;
+  color: #fff;
+  font-size: 24px;
+}
+.Home {
+  background-image: url(/images/home-icon.png);
+  background-size: cover;
+}
+.Deck {
+  background-image: url(/images/tcg-icon.png);
+  background-size: cover;
+}
+.Settings {
+  background-image: url(/images/settings-icon.png);
+  background-size: cover;
+}
