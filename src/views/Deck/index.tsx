@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import { CharacterItem } from "@/components/CharacterZone";
 import { HandCardItem } from "@/components/HandCardZone";
 import cards from "@/data/cards.json";
@@ -7,6 +9,7 @@ import { ICard, ICharacter, PlayerPosition } from "@/models";
 import styles from "./index.module.css";
 
 export default function DeckPage() {
+  const { t } = useTranslation();
   return (
     <div className={styles.Deck}>
       <div className={styles.DeckFilter}></div>
@@ -18,7 +21,7 @@ export default function DeckPage() {
               pos={PlayerPosition.Own}
               isDeck={true}
             />
-            <div className={styles.DeckLabel}>{character.name}</div>
+            <div className={styles.DeckLabel}>{t(character.name)}</div>
           </div>
         ))}
       </div>
@@ -26,7 +29,7 @@ export default function DeckPage() {
         {cards.map(card => (
           <div key={card.name} className={styles.DeckItem}>
             <HandCardItem card={card as ICard} pos={PlayerPosition.Own} />
-            <div className={styles.DeckLabel}>{card.name}</div>
+            <div className={styles.DeckLabel}>{t(card.name)}</div>
           </div>
         ))}
       </div>
