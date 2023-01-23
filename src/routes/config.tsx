@@ -1,8 +1,8 @@
 import { lazy } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
-import SettingsPage from "@/views/Settings";
 import Layout from "@/layouts";
+import SettingsPage from "@/views/Settings";
 
 const HomePage = lazy(() => import("@/views/Home"));
 const GamePage = lazy(() => import("@/views/Game"));
@@ -14,6 +14,10 @@ export const useRoutesConfig = () => {
       path: "",
       element: <Layout />,
       children: [
+        {
+          path: "",
+          element: <Navigate to="home" />,
+        },
         {
           path: "home",
           element: <HomePage />,

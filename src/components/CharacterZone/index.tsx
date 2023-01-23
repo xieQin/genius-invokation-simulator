@@ -15,6 +15,7 @@ export interface CharacterItemProps {
   i?: number;
   select?: number;
   pos: PlayerPosition;
+  isDeck?: boolean;
 }
 
 export const useTransformControl = () => {
@@ -30,7 +31,7 @@ export const useTransformControl = () => {
 };
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
-  const { character, i, select, pos } = props;
+  const { character, i, select, pos, isDeck } = props;
   const { phase, activeCharacters, actions } = useGameStore();
   const { onPreview } = usePreview();
   const { calDamage, getSkillAnimation } = useSkill(pos);
@@ -51,7 +52,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
         onPreview(character);
       }}
     >
-      {phase !== Phase.Init && (
+      {(phase !== Phase.Init || isDeck) && (
         <>
           <div className={styles.CharacterElementStatus}>
             {character.elementStatus.length > 0 &&

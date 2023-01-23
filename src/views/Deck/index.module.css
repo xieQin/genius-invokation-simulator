@@ -1,6 +1,7 @@
 .Deck {
   position: absolute;
-  height: 100vh;
+  top: 0;
+  bottom: 40px;
   overflow: auto;
   z-index: 22;
   padding: 16px;

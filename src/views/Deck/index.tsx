@@ -16,6 +16,7 @@ export default function DeckPage() {
             <CharacterItem
               character={character as ICharacter}
               pos={PlayerPosition.Own}
+              isDeck={true}
             />
             <div className={styles.DeckLabel}>{character.name}</div>
           </div>

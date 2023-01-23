@@ -1,3 +1,14 @@
 export default function SettingsPage() {
-  return <>Settings</>;
+  return (
+    <>
+      <p
+        style={{
+          textAlign: "center",
+          margin: "10px",
+        }}
+      >
+        Settings [WIP]
+      </p>
+    </>
+  );
 }

@@ -4,11 +4,28 @@
   z-index: 10;
   background-color: #912f83;
 }
+.SideBar:after {
+  content: "";
+  top: 10px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url(/images/diona-bg.png) no-repeat top;
+  background-size: contain;
+}
 .SideBarLayout {
   padding: 10px 16px;
 }
 .SideBarItem.Main {
+  padding-top: 150px;
+}
+.SideBarItem.Main > .SideBarItemLabel {
   font-size: 30px;
+  padding-top: 150px;
+  color: #ff5a5a;
+  font-weight: bold;
 }
 .SideBarItem {
   display: flex;
@@ -18,8 +35,7 @@
   cursor: pointer;
 }
 .SideBarItem.Active {
-  background-color: rgb(78 124 255 / var(--tw-bg-opacity));
-  --tw-bg-opacity: 0.75;
+  background-color: #4e7cff;
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   transition-duration: 0.15s;
   border-radius: 12px;
