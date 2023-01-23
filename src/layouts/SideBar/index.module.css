@@ -35,7 +35,7 @@
   margin: 10px 0;
   line-height: 40px;
   color: #fff;
-  font-size: 24px;
+  font-size: 20px;
 }
 .Home {
   background-image: url(/images/home-icon.png);
@@ -43,6 +43,10 @@
 }
 .Deck {
   background-image: url(/images/tcg-icon.png);
+  background-size: cover;
+}
+.Game {
+  background-image: url(/images/game-icon.png);
   background-size: cover;
 }
 .Settings {

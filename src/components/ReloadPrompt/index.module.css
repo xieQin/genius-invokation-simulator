@@ -1,9 +1,7 @@
 .ReloadPrompt-container {
+  position: fixed;
   padding: 0;
   margin: 0;
-  width: 0;
-  height: 0;
-  position: fixed;
   bottom: 0;
   z-index: 22;
 }

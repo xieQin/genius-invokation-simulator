@@ -9,6 +9,7 @@ import styles from "./index.module.css";
 export default function DeckPage() {
   return (
     <div className={styles.Deck}>
+      <div className={styles.DeckFilter}></div>
       <div className={styles.DeckList}>
         {characters.map(character => (
           <div key={character.name} className={styles.DeckItem}>
