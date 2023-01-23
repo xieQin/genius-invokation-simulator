@@ -13,6 +13,7 @@
 
 * {
   margin: 0;
+  cursor: url(/images/mouse-icon.ico), auto;
 }
 
 @font-face {
