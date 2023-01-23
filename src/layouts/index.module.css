@@ -7,5 +7,5 @@
 .Container {
   position: relative;
   flex: 1 0 auto;
-  padding-left: 236px;
+  margin-left: 236px;
 }
