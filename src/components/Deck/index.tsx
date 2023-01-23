@@ -1,4 +1,3 @@
-import { Action, Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
 
 import ClockZone from "../ClockZone";
@@ -8,15 +7,7 @@ import OwnArea from "../OwnArea";
 import styles from "./index.module.css";
 
 export default function Deck() {
-  const { shouldHideDeck, showMessage, round, setGameStates } = useGameStore();
-  const onNextRound = () => {
-    showMessage("Round end", () => {
-      showMessage("");
-      setGameStates("round", round + 1);
-      setGameStates("phase", Phase.DraftCard);
-      setGameStates("actions", [Action.None, Action.None]);
-    });
-  };
+  const { shouldHideDeck } = useGameStore();
   return (
     <div className={styles.Deck}>
       <div
@@ -26,7 +17,7 @@ export default function Deck() {
         <DiceZone />
         <OpponentArea />
         <OwnArea />
-        <ClockZone onNextRound={onNextRound} />
+        <ClockZone />
       </div>
     </div>
   );

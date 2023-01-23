@@ -1,0 +1,71 @@
+.SideBar {
+  position: fixed;
+  height: 100vh;
+  z-index: 10;
+  background-color: #912f83;
+}
+.SideBar:after {
+  content: "";
+  top: 10px;
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  background: url(/images/diona-bg.png) no-repeat top;
+  background-size: contain;
+}
+.SideBarLayout {
+  padding: 10px 16px;
+}
+.SideBarItem.Main {
+  padding-top: 150px;
+}
+.SideBarItem.Main > .SideBarItemLabel {
+  font-size: 30px;
+  padding-top: 150px;
+  color: #ff5a5a;
+  font-weight: bold;
+}
+.SideBarItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.SideBarItem.Active {
+  background-color: #4e7cff;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 0.15s;
+  border-radius: 12px;
+  width: 100%;
+}
+.SideBarItemIcon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+.SideBarItemLabel {
+  flex: 1;
+  margin: 10px 0;
+  line-height: 40px;
+  color: #fff;
+  font-size: 20px;
+}
+.Home {
+  background-image: url(/images/home-icon.png);
+  background-size: cover;
+}
+.Deck {
+  background-image: url(/images/tcg-icon.png);
+  background-size: cover;
+}
+.Game {
+  background-image: url(/images/game-icon.png);
+  background-size: cover;
+}
+.Settings {
+  background-image: url(/images/settings-icon.png);
+  background-size: cover;
+}

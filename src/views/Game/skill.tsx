@@ -10,6 +10,7 @@ export default function SkillPhase() {
     getPlayer,
     dices: playDices,
     setGameStates,
+    current,
     activeSkills,
   } = useGameStore();
   const pos = PlayerPosition.Own;
@@ -20,6 +21,7 @@ export default function SkillPhase() {
   const character = getPlayer(pos).characters[activeCharacters[pos]];
 
   const onConfirm = () => {
+    if (pos !== current) return;
     const costs = character.skills[activeSkills[pos]].costs;
     if (isCostValid(costs)) {
       costDices();

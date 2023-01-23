@@ -1,0 +1,33 @@
+.Deck {
+  position: absolute;
+  top: 0;
+  bottom: 40px;
+  overflow: auto;
+  z-index: 22;
+  padding: 16px;
+}
+.DeckFilter {
+}
+.DeckList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+.DeckItem {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.DeckItem > div {
+  border: none;
+}
+.DeckItem > div > div {
+  border: none;
+}
+.DeckLabel {
+  width: 180px;
+  margin: 10px 0;
+  text-align: center;
+}

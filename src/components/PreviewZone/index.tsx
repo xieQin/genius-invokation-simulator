@@ -131,6 +131,18 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
       </div>
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
+        <div className={styles.PreviewZoneType}>
+          <img
+            src={`${PUBLIC_PATH}/images/${preview.element}-elementicon.png`}
+            alt=""
+          />
+          <img
+            src={`${PUBLIC_PATH}/images/${preview.weaponType
+              .toLocaleLowerCase()
+              .replaceAll(" ", "")}-weaponicon.png`}
+            alt=""
+          />
+        </div>
         {preview.skills.map(skill => (
           <PreviewSkill key={skill.name} preview={skill} />
         ))}

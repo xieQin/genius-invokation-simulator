@@ -1,7 +1,7 @@
 {
   "Liutian Archery": {
     "damage": [
-      { "damage": 2, "damageType": "", "target": "Active" },
+      { "damage": 2, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -10,7 +10,7 @@
   },
   "Trail of the Qilin": {
     "damage": [
-      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Ice Lotus"],
@@ -19,7 +19,7 @@
   },
   "Frostflake Arrow": {
     "damage": [
-      { "damage": 3, "damageType": "Physical", "target": "Active" },
+      { "damage": 3, "damageType": "Physical", "target": "Opponent" },
       { "damage": 2, "damageType": "Physical", "target": "Background" }
     ],
     "summons": [],
@@ -28,7 +28,7 @@
   },
   "Celestial Shower": {
     "damage": [
-      { "damage": 1, "damageType": "Physical", "target": "Active" },
+      { "damage": 1, "damageType": "Physical", "target": "Opponent" },
       { "damage": 1, "damageType": "Physical", "target": "Background" }
     ],
     "summons": ["Sacred Cryo Pearl"],
@@ -37,7 +37,7 @@
   },
   "Kätzlein Style": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -46,7 +46,7 @@
   },
   "Icy Paws": {
     "damage": [
-      { "damage": 2, "damageType": "Cryo", "target": "Active" },
+      { "damage": 2, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -55,16 +55,16 @@
   },
   "Signature Mix": {
     "damage": [
-      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Drunken Mist"],
     "shield": [],
-    "heal": [{ "heal": 2, "target": "Own" }]
+    "heal": [{ "heal": 2, "target": "Active" }]
   },
   "Ceremonial Bladework": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -73,7 +73,7 @@
   },
   "Frostgnaw": {
     "damage": [
-      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -82,7 +82,7 @@
   },
   "Glacial Waltz": {
     "damage": [
-      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -91,7 +91,7 @@
   },
   "Demonbane": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -100,7 +100,7 @@
   },
   "Chonghua's Layered Frost": {
     "damage": [
-      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -109,7 +109,7 @@
   },
   "Cloud-Parting Star": {
     "damage": [
-      { "damage": 7, "damageType": "Cryo", "target": "Active" },
+      { "damage": 7, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -118,7 +118,7 @@
   },
   "Kamisato Art: Kabuki": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -127,7 +127,7 @@
   },
   "Kamisato Art: Hyouka": {
     "damage": [
-      { "damage": 3, "damageType": "Cryo", "target": "Active" },
+      { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -136,7 +136,7 @@
   },
   "Kamisato Art: Soumetsu": {
     "damage": [
-      { "damage": 4, "damageType": "Cryo", "target": "Active" },
+      { "damage": 4, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Frostflake Seki no To"],
@@ -145,7 +145,7 @@
   },
   "Kamisato Art: Senho": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -154,7 +154,7 @@
   },
   "Whisper of Water": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -163,7 +163,7 @@
   },
   "Let the Show Begin♪": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Melody Loop"],
@@ -172,7 +172,7 @@
   },
   "Shining Miracle♪": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -181,7 +181,7 @@
   },
   "Guhua Style": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -190,7 +190,7 @@
   },
   "Fatal Rainscreen": {
     "damage": [
-      { "damage": 2, "damageType": "Hydro", "target": "Active" },
+      { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -199,7 +199,7 @@
   },
   "Raincutter": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -208,7 +208,7 @@
   },
   "Ripple of Fate": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -217,7 +217,7 @@
   },
   "Mirror Reflection of Doom": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Reflection"],
@@ -226,7 +226,7 @@
   },
   "Stellaris Phantasm": {
     "damage": [
-      { "damage": 4, "damageType": "Hydro", "target": "Active" },
+      { "damage": 4, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Illusory Bubble"],
@@ -235,7 +235,7 @@
   },
   "Illusory Torrent": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -244,7 +244,7 @@
   },
   "Tempered Sword": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -253,7 +253,7 @@
   },
   "Searing Onslaught": {
     "damage": [
-      { "damage": 5, "damageType": "Pyro", "target": "Active" },
+      { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -262,7 +262,7 @@
   },
   "Dawn": {
     "damage": [
-      { "damage": 8, "damageType": "Pyro", "target": "Active" },
+      { "damage": 8, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -271,7 +271,7 @@
   },
   "Dough-Fu": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -280,7 +280,7 @@
   },
   "Guoba Attack": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Guoba"],
@@ -289,7 +289,7 @@
   },
   "Pyronado": {
     "damage": [
-      { "damage": 2, "damageType": "Pyro", "target": "Active" },
+      { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -298,7 +298,7 @@
   },
   "Strike of Fortune": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -307,7 +307,7 @@
   },
   "Passion Overload": {
     "damage": [
-      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -316,7 +316,7 @@
   },
   "Fantastic Voyage": {
     "damage": [
-      { "damage": 2, "damageType": "Pyro", "target": "Active" },
+      { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -325,7 +325,7 @@
   },
   "Firework Flare-Up": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -334,7 +334,7 @@
   },
   "Niwabi Fire-Dance": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -343,7 +343,7 @@
   },
   "Ryuukin Saxifrage": {
     "damage": [
-      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -352,7 +352,7 @@
   },
   "Kaboom!": {
     "damage": [
-      { "damage": 1, "damageType": "Pyro", "target": "Active" },
+      { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -361,7 +361,7 @@
   },
   "Jumpy Dumpty": {
     "damage": [
-      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -370,16 +370,16 @@
   },
   "Sparks 'n' Splash": {
     "damage": [
-      { "damage": 3, "damageType": "Pyro", "target": "Active" },
+      { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
     "shield": [],
     "heal": [{ "heal": 0, "target": "All" }]
   },
-  "Bolts of Downfall": {
+  "Bolts of DActivefall": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -388,7 +388,7 @@
   },
   "Nightrider": {
     "damage": [
-      { "damage": 1, "damageType": "Electro", "target": "Active" },
+      { "damage": 1, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Oz"],
@@ -397,7 +397,7 @@
   },
   "Midnight Phantasmagoria": {
     "damage": [
-      { "damage": 4, "damageType": "Physical", "target": "Active" },
+      { "damage": 4, "damageType": "Physical", "target": "Opponent" },
       { "damage": 2, "damageType": "Physical", "target": "Background" }
     ],
     "summons": [],
@@ -406,7 +406,7 @@
   },
   "Steel Fang": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -415,7 +415,7 @@
   },
   "Claw and Thunder": {
     "damage": [
-      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 3, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -424,7 +424,7 @@
   },
   "Lightning Fang": {
     "damage": [
-      { "damage": 5, "damageType": "Electro", "target": "Active" },
+      { "damage": 5, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -433,7 +433,7 @@
   },
   "Yunlai Swordsmanship": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -442,7 +442,7 @@
   },
   "Stellar Restoration": {
     "damage": [
-      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 3, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -451,7 +451,7 @@
   },
   "Starward Sword": {
     "damage": [
-      { "damage": 4, "damageType": "Physical", "target": "Active" },
+      { "damage": 4, "damageType": "Physical", "target": "Opponent" },
       { "damage": 3, "damageType": "Physical", "target": "Background" }
     ],
     "summons": [],
@@ -460,7 +460,7 @@
   },
   "Invoker's Spear": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -469,7 +469,7 @@
   },
   "Secret Rite: Chasmic Soulfarer": {
     "damage": [
-      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 3, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -478,7 +478,7 @@
   },
   "Sacred Rite: Wolf's Swiftness": {
     "damage": [
-      { "damage": 4, "damageType": "Electro", "target": "Active" },
+      { "damage": 4, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -487,7 +487,7 @@
   },
   "Lawful Enforcer": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -496,7 +496,7 @@
   },
   "Wind Spirit Creation": {
     "damage": [
-      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -505,7 +505,7 @@
   },
   "Astable Anemohypostasis Creation - 6308": {
     "damage": [
-      { "damage": 3, "damageType": "Anemo", "target": "Active" },
+      { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -514,7 +514,7 @@
   },
   "Forbidden Creation - Isomer 75 / Type II": {
     "damage": [
-      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Large Wind Spirit"],
@@ -523,7 +523,7 @@
   },
   "Favonius Bladework": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -532,7 +532,7 @@
   },
   "Gale Blade": {
     "damage": [
-      { "damage": 3, "damageType": "Anemo", "target": "Active" },
+      { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -541,7 +541,7 @@
   },
   "Dandelion Breeze": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Dandelion Field"],
@@ -550,7 +550,7 @@
   },
   "Sparkling Scatter": {
     "damage": [
-      { "damage": 1, "damageType": "Geo", "target": "Active" },
+      { "damage": 1, "damageType": "Geo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -559,7 +559,7 @@
   },
   "Jade Screen": {
     "damage": [
-      { "damage": 2, "damageType": "Geo", "target": "Active" },
+      { "damage": 2, "damageType": "Geo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -568,7 +568,7 @@
   },
   "Starshatter": {
     "damage": [
-      { "damage": 6, "damageType": "Geo", "target": "Active" },
+      { "damage": 6, "damageType": "Geo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -577,7 +577,7 @@
   },
   "Favonius Bladework - Maid": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -586,7 +586,7 @@
   },
   "Breastplate": {
     "damage": [
-      { "damage": 1, "damageType": "Geo", "target": "Active" },
+      { "damage": 1, "damageType": "Geo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -595,7 +595,7 @@
   },
   "Sweeping Time": {
     "damage": [
-      { "damage": 4, "damageType": "Geo", "target": "Active" },
+      { "damage": 4, "damageType": "Geo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -604,7 +604,7 @@
   },
   "Supplicant's Bowmanship": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -613,7 +613,7 @@
   },
   "Floral Brush": {
     "damage": [
-      { "damage": 3, "damageType": "Dendro", "target": "Active" },
+      { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -622,7 +622,7 @@
   },
   "Trump-Card Kitty": {
     "damage": [
-      { "damage": 2, "damageType": "Dendro", "target": "Active" },
+      { "damage": 2, "damageType": "Dendro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Cuilein-Anbar"],
@@ -631,7 +631,7 @@
   },
   "Surge": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -640,7 +640,7 @@
   },
   "Oceanid Mimic Summoning": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Oceanid Mimic"],
@@ -649,7 +649,7 @@
   },
   "The Myriad Wilds": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Oceanid Mimic"],
@@ -658,7 +658,7 @@
   },
   "Tide and Torrent": {
     "damage": [
-      { "damage": 2, "damageType": "Hydro", "target": "Active" },
+      { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -667,7 +667,7 @@
   },
   "Water Ball": {
     "damage": [
-      { "damage": 1, "damageType": "Hydro", "target": "Active" },
+      { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -676,7 +676,7 @@
   },
   "Influx Blast": {
     "damage": [
-      { "damage": 3, "damageType": "Hydro", "target": "Active" },
+      { "damage": 3, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -685,7 +685,7 @@
   },
   "Rippled Reflection": {
     "damage": [
-      { "damage": 5, "damageType": "Hydro", "target": "Active" },
+      { "damage": 5, "damageType": "Hydro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -694,7 +694,7 @@
   },
   "Thrust": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -703,7 +703,7 @@
   },
   "Prowl": {
     "damage": [
-      { "damage": 1, "damageType": "Pyro", "target": "Active" },
+      { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -712,7 +712,7 @@
   },
   "Blade Ablaze": {
     "damage": [
-      { "damage": 5, "damageType": "Pyro", "target": "Active" },
+      { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -721,7 +721,7 @@
   },
   "Stealth Master": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -730,7 +730,7 @@
   },
   "Ichimonji": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -739,7 +739,7 @@
   },
   "Blustering Blade": {
     "damage": [
-      { "damage": 1, "damageType": "Anemo", "target": "Active" },
+      { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Shadowsword: Lone Gale"],
@@ -748,7 +748,7 @@
   },
   "Frosty Assault": {
     "damage": [
-      { "damage": 1, "damageType": "Cryo", "target": "Active" },
+      { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": ["Shadowsword: Galloping Frost"],
@@ -757,7 +757,7 @@
   },
   "Pseudo Tengu Sweeper": {
     "damage": [
-      { "damage": 4, "damageType": "Anemo", "target": "Active" },
+      { "damage": 4, "damageType": "Anemo", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -766,7 +766,7 @@
   },
   "Plama Lawa": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -775,7 +775,7 @@
   },
   "Movo Lawa": {
     "damage": [
-      { "damage": 3, "damageType": "Physical", "target": "Active" },
+      { "damage": 3, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -784,7 +784,7 @@
   },
   "Upa Shato": {
     "damage": [
-      { "damage": 5, "damageType": "Physical", "target": "Active" },
+      { "damage": 5, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -793,7 +793,7 @@
   },
   "Infused Stonehide": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -802,7 +802,7 @@
   },
   "Majestic Dance": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -811,7 +811,7 @@
   },
   "Volatile Spore Cloud": {
     "damage": [
-      { "damage": 3, "damageType": "Dendro", "target": "Active" },
+      { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -820,7 +820,7 @@
   },
   "Feather Spreading": {
     "damage": [
-      { "damage": 4, "damageType": "Dendro", "target": "Active" },
+      { "damage": 4, "damageType": "Dendro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -829,7 +829,7 @@
   },
   "Radical Vitality": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -838,7 +838,7 @@
   },
   "Oceanborne": {
     "damage": [
-      { "damage": 2, "damageType": "Physical", "target": "Active" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -847,7 +847,7 @@
   },
   "Tidecaller": {
     "damage": [
-      { "damage": 0, "damageType": "", "target": "Active" },
+      { "damage": 0, "damageType": "", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -856,7 +856,7 @@
   },
   "Stormbreaker": {
     "damage": [
-      { "damage": 3, "damageType": "Electro", "target": "Active" },
+      { "damage": 3, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],
@@ -865,7 +865,7 @@
   },
   "Wavestrider": {
     "damage": [
-      { "damage": 2, "damageType": "Electro", "target": "Active" },
+      { "damage": 2, "damageType": "Electro", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],

@@ -1,0 +1,11 @@
+.Layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+.Container {
+  position: relative;
+  flex: 1 0 auto;
+  margin-left: 236px;
+}

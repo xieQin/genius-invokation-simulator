@@ -1,9 +1,9 @@
-import "./index.module.css";
-
 // eslint-disable-next-line import/no-unresolved
 import { pwaInfo } from "virtual:pwa-info";
 // eslint-disable-next-line import/no-unresolved
 import { useRegisterSW } from "virtual:pwa-register/react";
+
+import styles from "./index.module.css";
 
 // eslint-disable-next-line no-console
 console.log(pwaInfo);
@@ -47,10 +47,10 @@ function ReloadPrompt() {
   };
 
   return (
-    <div className="ReloadPrompt-container">
+    <div className={styles["ReloadPrompt-container"]}>
       {(offlineReady || needRefresh) && (
-        <div className="ReloadPrompt-toast">
-          <div className="ReloadPrompt-message">
+        <div className={styles["ReloadPrompt-toast"]}>
+          <div className={styles["ReloadPrompt-message"]}>
             {offlineReady ? (
               <span>App ready to work offline</span>
             ) : (
@@ -61,18 +61,21 @@ function ReloadPrompt() {
           </div>
           {needRefresh && (
             <button
-              className="ReloadPrompt-toast-button"
+              className={styles["ReloadPrompt-toast-button"]}
               onClick={() => updateServiceWorker(true)}
             >
               Reload
             </button>
           )}
-          <button className="ReloadPrompt-toast-button" onClick={() => close()}>
+          <button
+            className={styles["ReloadPrompt-toast-button"]}
+            onClick={() => close()}
+          >
             Close
           </button>
         </div>
       )}
-      <div className="ReloadPrompt-date">{buildDate}</div>
+      <div className={styles["ReloadPrompt-date"]}>{buildDate}</div>
     </div>
   );
 }

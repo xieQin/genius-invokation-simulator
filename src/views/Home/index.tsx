@@ -1,24 +1,11 @@
-import styles from "./home.module.css";
+import styles from "./index.module.css";
 
 export default function HomePage() {
   return (
-    <>
-      <div className={styles.Container}>
-        <div className={[styles.Card, styles.Collei].join(" ")}></div>
-        <div className={[styles.Card, styles.Cyno].join(" ")}></div>
-        <div className={[styles.Card, styles.Fischl].join(" ")}></div>
+    <div>
+      <div className={styles.Home}>
+        An unofficial simulator for Genius Invokation TCG in Genshin Impact
       </div>
-      <div className={[styles.Container].join(" ")}>
-        <div
-          className={[styles.Card, styles.Barbara, styles.Animate].join(" ")}
-        ></div>
-        <div
-          className={[styles.Card, styles.Barbara, styles.Animate3].join(" ")}
-        ></div>
-        <div
-          className={[styles.Card, styles.Barbara, styles.Animate].join(" ")}
-        ></div>
-      </div>
-    </>
+    </div>
   );
 }
