@@ -1,0 +1,35 @@
+.Language {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  z-index: 33;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0;
+}
+.Language:hover .LanguageList {
+  visibility: visible;
+}
+.LanguageList {
+  visibility: hidden;
+  position: absolute;
+  bottom: 25px;
+  left: -8px;
+  width: 240px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1b1d24;
+  border-radius: 10px;
+}
+.LanguageListItem {
+  width: 100px;
+  text-align: center;
+  color: #fff;
+  margin: 15px 10px;
+}
