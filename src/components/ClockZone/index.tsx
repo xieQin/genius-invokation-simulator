@@ -1,11 +1,12 @@
+import { useRound } from "@/hooks";
 import { PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
-export default function ClockZone(props: { onNextRound: () => void }) {
+export default function ClockZone() {
   const { dices } = useGameStore();
-  const { onNextRound } = props;
+  const { onRoundEnd } = useRound();
   return (
     <div className={styles.ClockZone}>
       <div className={styles.OpponentDices}>
@@ -15,7 +16,7 @@ export default function ClockZone(props: { onNextRound: () => void }) {
         className={styles.ClockTime}
         aria-hidden="true"
         onClick={() => {
-          onNextRound();
+          onRoundEnd();
         }}
       ></div>
       <div className={styles.OwnDices}>{dices[PlayerPosition.Own].length}</div>

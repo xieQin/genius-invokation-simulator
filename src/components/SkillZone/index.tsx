@@ -82,12 +82,12 @@ export const SkillChangeCharacter = () => {
 
 export default function SkillZone(props: { select: number }) {
   const { select } = props;
-  const { phase, activeCharacters, getPlayer } = useGameStore();
+  const { phase, activeCharacters, getPlayer, current } = useGameStore();
   const own = getPlayer(PlayerPosition.Own);
   const active = activeCharacters[PlayerPosition.Own];
   const skills = active >= 0 ? own.characters[active].skills : [];
   if (phase === Phase.Choose) return <></>;
-  if (select !== -1 && select !== active) {
+  if (select !== -1 && select !== active && current === PlayerPosition.Own) {
     return <SkillChangeCharacter />;
   }
 
