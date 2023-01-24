@@ -59,7 +59,7 @@ export const CharacterItem: FC<CharacterItemProps> = props => {
               character.elementStatus.map((element, index) => (
                 <div key={index} className={styles.CharacterElementStatusItem}>
                   <img
-                    src={`${PUBLIC_PATH}/images/${element.toLocaleLowerCase()}-elementicon.png`}
+                    src={`${PUBLIC_PATH}/images/${element.toLowerCase()}-elementicon.png`}
                     alt=""
                   />
                 </div>
