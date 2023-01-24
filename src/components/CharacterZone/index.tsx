@@ -32,12 +32,13 @@ export const useTransformControl = () => {
 
 export const CharacterItem: FC<CharacterItemProps> = props => {
   const { character, i, select, pos, isDeck } = props;
-  const { phase, activeCharacters, actions } = useGameStore();
+  const { phase, activeCharacters, actions, current } = useGameStore();
   const { onPreview } = usePreview();
   const { calDamage, getSkillAnimation } = useSkill(pos);
   const isActive = i === activeCharacters[pos];
   const isOwnActive = isActive && pos === PlayerPosition.Own;
-  const useSkillAnimation = actions[pos] === Action.CastSkill && isOwnActive;
+  const useSkillAnimation =
+    current === pos && actions[pos] === Action.CastSkill && isOwnActive;
   if (!character) {
     return <></>;
   }
