@@ -138,7 +138,7 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
           />
           <img
             src={`${PUBLIC_PATH}/images/${preview.weaponType
-              .toLocaleLowerCase()
+              .toLowerCase()
               .replaceAll(" ", "")}-weaponicon.png`}
             alt=""
           />
