@@ -2,7 +2,7 @@ import { Action, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export const useRound = () => {
-  const { showMessage, phase, round, current, setGameStates } = useGameStore();
+  const { showMessage, phase, round, setGameStates } = useGameStore();
 
   const onRoundEnd = () => {
     if (phase !== Phase.Combat) return;
@@ -15,10 +15,11 @@ export const useRound = () => {
     });
   };
 
-  const onTurnEnd = () => {
+  const onTurnEnd = (pos: PlayerPosition) => {
     showMessage("Turn end", () => {
+      setGameStates("actions", [Action.None, Action.None]);
       showMessage("");
-      setGameStates("current", Math.abs(current - 1));
+      setGameStates("current", pos);
     });
   };
 

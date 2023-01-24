@@ -1,6 +1,6 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
-import { useChoosePhase, useRound } from "@/hooks";
+import { useAi, useChoosePhase, useRound } from "@/hooks";
 import { useCostDice } from "@/hooks/dice";
 import { ICost, PlayerPosition } from "@/models";
 import { Phase } from "@/models/phase";
@@ -12,6 +12,7 @@ export default function ChangeCharacterPhase() {
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
   const { setActiveCharacter } = useChoosePhase(pos);
   const { onTurnEnd } = useRound();
+  const { aiAction } = useAi();
   const dices = playerDices[pos];
 
   const costs: ICost[] = [
@@ -26,7 +27,8 @@ export default function ChangeCharacterPhase() {
       costDices();
       setGameStates("phase", Phase.Combat);
       setActiveCharacter();
-      onTurnEnd();
+      onTurnEnd(PlayerPosition.Opponent);
+      aiAction();
     } else {
       console.log("error");
     }

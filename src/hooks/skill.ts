@@ -12,8 +12,6 @@ import {
 import { useGameStore } from "@/stores";
 import { isCostDiceValid, NameIDTrans } from "@/utils";
 
-import { useRound } from "./round";
-
 export const useSkill = (pos: PlayerPosition) => {
   const {
     dices: playerDices,
@@ -29,12 +27,12 @@ export const useSkill = (pos: PlayerPosition) => {
     setGameStates,
     current,
   } = useGameStore();
-  const { onTurnEnd } = useRound();
   const dices = playerDices[pos];
 
   const onCastSkill = () => {
     if (pos !== current) return;
     const activeSkill = activeSkills[pos];
+    if (activeSkill < 0) return;
     const skill =
       players[pos].characters[activeCharacters[pos]].skills[activeSkill];
     setGameStates("actions", [
@@ -77,7 +75,6 @@ export const useSkill = (pos: PlayerPosition) => {
         updateHp(heal.heal, pos, heal.target);
       }
     }
-    onTurnEnd();
   };
 
   const shouldTargetHighlight = (index: number) => {
@@ -105,8 +102,10 @@ export const useSkill = (pos: PlayerPosition) => {
     return false;
   };
 
-  const isSkillValid = (costs: ICost[] = []) =>
-    pos === current && isCostDiceValid(costs, dices);
+  const isSkillValid = (costs: ICost[] = []) => {
+    console.log(current);
+    return pos === current && isCostDiceValid(costs, dices);
+  };
 
   const isEnergyValid = (skill: ISkill) => {
     if (pos === PlayerPosition.Opponent) return false;

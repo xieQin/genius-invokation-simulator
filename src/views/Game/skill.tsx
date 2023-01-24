@@ -1,6 +1,6 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
-import { useCostDice, useSkill } from "@/hooks";
+import { useAi, useCostDice, useRound, useSkill } from "@/hooks";
 import { Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
@@ -17,6 +17,8 @@ export default function SkillPhase() {
   const dices = playDices[pos];
   const { onSelectDice, actives, isCostValid, costDices } = useCostDice(pos);
   const { onCastSkill } = useSkill(pos);
+  const { onTurnEnd } = useRound();
+  const { aiAction } = useAi();
 
   const character = getPlayer(pos).characters[activeCharacters[pos]];
 
@@ -27,6 +29,8 @@ export default function SkillPhase() {
       costDices();
       setGameStates("phase", Phase.Combat);
       onCastSkill();
+      onTurnEnd(PlayerPosition.Opponent);
+      aiAction();
     } else {
       console.log("error");
     }

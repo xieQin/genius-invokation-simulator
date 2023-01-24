@@ -7,6 +7,26 @@
   padding: 16px;
 }
 .DeckFilter {
+  padding: 5px 10px;
+}
+.DeckFilterMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+}
+.DeckFilterItem {
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 5px;
+  background: #fff;
+  color: #ff5a5a;
+  border: 2px solid #ff5a5a;
+}
+.DeckFilterItem.Active {
+  background: #ff5a5a;
+  color: #fff;
 }
 .DeckList {
   display: flex;
@@ -15,7 +35,7 @@
   justify-content: start;
 }
 .DeckItem {
-  margin: 10px 0;
+  margin: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;

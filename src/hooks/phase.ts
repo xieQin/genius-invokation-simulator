@@ -9,6 +9,7 @@ import {
 import { useGameStore } from "@/stores";
 import { reRollDice, rollDice } from "@/utils";
 
+import { useAi } from "./ai";
 import { useTimeout } from "./utils";
 
 export const useInitPhase = () => {
@@ -102,8 +103,8 @@ export const useChoosePhase = (pos: PlayerPosition) => {
     toggleDeckStatus,
     activeCharacters,
     selectedCharacters,
-    phase,
   } = useGameStore();
+  const { aiSetActiveCharacter } = useAi();
 
   const isEndValid = () => activeCharacters[pos] > -1;
 
@@ -112,12 +113,11 @@ export const useChoosePhase = (pos: PlayerPosition) => {
     pos === PlayerPosition.Opponent;
 
   const setActiveCharacter = () => {
-    const isChoosePhase = phase === Phase.Choose;
     setGameStates(
       "activeCharacters",
       Object.assign([], activeCharacters, [
         selectedCharacters[0],
-        isChoosePhase ? Math.ceil(Math.random() * 3) - 1 : activeCharacters[1],
+        aiSetActiveCharacter(),
       ])
     );
   };

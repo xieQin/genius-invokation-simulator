@@ -6,9 +6,9 @@ export interface IEvent {
 }
 
 export enum EventType {
-  Event,
-  Food,
-  ElementalResonance,
+  Event = "Event",
+  Food = "Food",
+  ElementalResonance = "Elemental Resonance",
 }
 
 export enum EventEvent {
