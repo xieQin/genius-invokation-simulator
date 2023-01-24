@@ -13,6 +13,7 @@ import {
   PlayerPosition,
   SupportType,
 } from "@/models";
+import { isCardType, isCharacterType } from "@/utils";
 
 import styles from "./index.module.css";
 
@@ -21,13 +22,34 @@ enum CardType {
   Card = "Card",
 }
 
-export default function DeckPage() {
+export const DeckItem = (item: ICard | ICharacter) => {
   const { t } = useTranslation();
+  return (
+    <div key={item.name} className={styles.DeckItem}>
+      {isCharacterType(item) ? (
+        <CharacterItem
+          character={item as ICharacter}
+          pos={PlayerPosition.Own}
+          isDeck={true}
+        />
+      ) : isCardType(item) ? (
+        <HandCardItem card={item as ICard} pos={PlayerPosition.Own} />
+      ) : (
+        <></>
+      )}
+      <div className={styles.DeckLabel}>{t(item.name)}</div>
+    </div>
+  );
+};
+
+export default function DeckPage() {
   const type = { ...CardType };
   const tags = { ...EquipmentMainType, ...EventType, ...SupportType };
+  const { t } = useTranslation();
   const [active, setActive] = useState(CardType.Character);
   const defaultTag = Object.keys(tags).map(t => tags[t as keyof typeof tags]);
   const [tag, setTag] = useState<string[]>(defaultTag);
+
   return (
     <div className={styles.Deck}>
       <div className={styles.DeckFilter}>
@@ -68,7 +90,7 @@ export default function DeckPage() {
                   setTag(newTag);
                 }}
               >
-                {_t[1]}
+                {t(_t[1])}
               </div>
             ))}
           </div>
@@ -77,14 +99,7 @@ export default function DeckPage() {
       <div className={styles.DeckList}>
         {active === CardType.Character &&
           characters.map(character => (
-            <div key={character.name} className={styles.DeckItem}>
-              <CharacterItem
-                character={character as ICharacter}
-                pos={PlayerPosition.Own}
-                isDeck={true}
-              />
-              <div className={styles.DeckLabel}>{t(character.name)}</div>
-            </div>
+            <DeckItem key={character.name} {...(character as ICharacter)} />
           ))}
       </div>
       <div className={styles.DeckList}>
@@ -93,12 +108,7 @@ export default function DeckPage() {
             .filter(
               card => card.subType.filter(_t => tag.includes(_t)).length > 0
             )
-            .map(card => (
-              <div key={card.name} className={styles.DeckItem}>
-                <HandCardItem card={card as ICard} pos={PlayerPosition.Own} />
-                <div className={styles.DeckLabel}>{t(card.name)}</div>
-              </div>
-            ))}
+            .map(card => <DeckItem key={card.name} {...(card as ICard)} />)}
       </div>
     </div>
   );
