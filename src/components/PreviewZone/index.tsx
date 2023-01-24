@@ -94,7 +94,7 @@ export const PreviewEquipment = (props: { equipment: ICard | null }) => {
         <div className={styles.PreviewEquipment}>
           <div className={styles.PreviewEquipmentIcon}>
             <img
-              src={`${PUBLIC_PATH}/images/equip-${equipment.subType[0].toLocaleLowerCase()}-icon.png`}
+              src={`${PUBLIC_PATH}/images/equip-${equipment.subType[0].toLowerCase()}-icon.png`}
               alt=""
             />
           </div>
@@ -133,7 +133,7 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         <div className={styles.PreviewZoneType}>
           <img
-            src={`${PUBLIC_PATH}/images/${preview.element}-elementicon.png`}
+            src={`${PUBLIC_PATH}/images/${preview.element.toLowerCase()}-elementicon.png`}
             alt=""
           />
           <img
