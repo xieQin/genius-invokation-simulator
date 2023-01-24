@@ -24,7 +24,6 @@ export const useAi = () => {
   const aiChangeCharacter = () => {
     const active = Math.ceil(Math.random() * 3) - 1;
     if (active === activeCharacters[aiPos]) return;
-    console.log(activeCharacters, "activeCharacters");
     setGameStates(
       "activeCharacters",
       Object.assign([], [activeCharacters[playerPos], active])
@@ -57,7 +56,6 @@ export const useAi = () => {
       const castSkill = aiRandom(0.2);
       const changeCharacter = aiRandom();
       castSkill && aiCastSkill();
-      console.log(activeCharacters, " ----");
       changeCharacter && aiChangeCharacter();
       !castSkill && !changeCharacter && onTurnEnd(playerPos);
     }, 2000);

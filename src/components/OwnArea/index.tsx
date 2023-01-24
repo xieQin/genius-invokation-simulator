@@ -13,8 +13,7 @@ import SupportZone from "../SupportZone";
 import styles from "./index.module.css";
 
 export default function OwnArea() {
-  const { getPlayer, selectedCharacters, setGameStates, players } =
-    useGameStore();
+  const { getPlayer, selectedCharacters, setGameStates } = useGameStore();
   const own = getPlayer(PlayerPosition.Own);
   const { position, characters, supports, cards } = own;
   const select = selectedCharacters[PlayerPosition.Own];
@@ -31,7 +30,6 @@ export default function OwnArea() {
     setSelect,
   };
   const summons: SummonsID[] = own.summons;
-  console.log(players);
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>
