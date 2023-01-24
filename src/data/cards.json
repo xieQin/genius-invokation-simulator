@@ -1252,7 +1252,7 @@
     "name": "The Bestest Travel Companion!",
     "content": "Convert the Elemental Dice spent to <span style='color: #FFFFFFFF'>Omni Element</span> ×2.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
@@ -1265,7 +1265,7 @@
     "name": "Changing Shifts",
     "content": "<span style='color: #FFFFFFFF'>The next time you perform \"Switch Character\":</span> Spend 1 less Elemental Die.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1278,7 +1278,7 @@
     "name": "Toss-Up",
     "content": "Select any Elemental Die to <span style='color: #FFFFFFFF'>reroll</span>. Can reroll 2 times.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1291,7 +1291,7 @@
     "name": "Strategize",
     "content": "Draw 2 cards.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1304,7 +1304,7 @@
     "name": "I Haven't Lost Yet!",
     "content": "Only playable if one of your characters is defeated this Round:\\nCreate <span style='color: #FFFFFFFF'>Omni Element</span> ×1 and your current active character gains 1 <span style='color: #FFFFFFFF'>Energy</span>.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1317,7 +1317,7 @@
     "name": "Leave It to Me!",
     "content": "<span style='color: #FFFFFFFF'>The next time you perform \"Switch Character\":</span> This switch will be considered a <span style='color: #FFFFFFFF'>Fast Action</span> instead of a <span style='color: #FFFFFFFF'>Combat Action</span>.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1330,7 +1330,7 @@
     "name": "When the Crane Returned",
     "content": "<span style='color: #FFFFFFFF'>The next time you use a Skill:</span> Switch your next character in to be the active character.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1343,7 +1343,7 @@
     "name": "Starsigns",
     "content": "Your current Active Character <span style='color: #FFFFFFFF'>gains 1 <span style='color: #FFFFFFFF'>Energy</span></span>.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
@@ -1356,7 +1356,7 @@
     "name": "Calx's Arts",
     "content": "Shift 1 <span style='color: #FFFFFFFF'>Energy</span> from at most 2 of your characters on standby to your active character.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1369,7 +1369,7 @@
     "name": "Master of Weaponry",
     "content": "Shift 1 Weapon Equipment Card that has been equipped to one of your characters to another one of your characters of the same Weapon Type.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1382,7 +1382,7 @@
     "name": "Blessing of the Divine Relic's Installation",
     "content": "Shift 1 Artifact Equipment Card that has been equipped to one of your characters to another one of your characters.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 0, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1395,7 +1395,7 @@
     "name": "Quick Knit",
     "content": "Choose one Summon on your side and grant it +1 <span style='color: #FFFFFFFF'>Usage(s)</span>.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 1, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1408,7 +1408,7 @@
     "name": "Send Off",
     "content": "Choose one Summon on the opposing side and destroy it.",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 2, "costType": "Void" },
       { "costNum": 0, "costType": "" }
@@ -1421,7 +1421,7 @@
     "name": "Guardian's Oath",
     "content": "Destroy all Summons. (Affects both you and your opponent!)",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 4, "costType": "" },
       { "costNum": 0, "costType": "" }
@@ -1434,7 +1434,7 @@
     "name": "Abyssal Summons",
     "content": "Summon 1 <span style='color: #FFFFFFFF'>Random Hilichurl Summon</span>!\\n(You must have at least 2 Monster characters in your deck to add this card to your deck.)",
     "mainType": "Event",
-    "subType": [],
+    "subType": ["Event"],
     "cost": [
       { "costNum": 2, "costType": "" },
       { "costNum": 0, "costType": "" }

@@ -81,9 +81,13 @@ export const transCards = () => {
         name: card.name,
         content: TextTrans(card.content),
         mainType: CardTypeTrans(card.action_type as cardType),
-        subType: card.action_card_tags
-          .filter(t => t.text != "")
-          .map(tag => tag.text),
+        subType:
+          card.action_card_tags.filter(t => t.text != "").map(tag => tag.text)
+            .length !== 0
+            ? card.action_card_tags
+                .filter(t => t.text != "")
+                .map(tag => tag.text)
+            : ["Event"],
         cost: [
           {
             costNum: Number(card.cost_num1),
@@ -125,7 +129,7 @@ export const transI18n = () => {
 };
 
 transCharacters();
-// transCards();
+transCards();
 // transI18n();
 
 const defaultSkillExtra = {

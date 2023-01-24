@@ -7,6 +7,25 @@
   padding: 16px;
 }
 .DeckFilter {
+  padding: 5px 10px;
+}
+.DeckFilterMain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px 16px;
+}
+.DeckFilterItem {
+  text-align: center;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin: 5px;
+  background: #fff;
+  color: #ff5a5a;
+}
+.DeckFilterItem.Active {
+  background: #ff5a5a;
+  color: #fff;
 }
 .DeckList {
   display: flex;
