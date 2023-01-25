@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import { CharacterItem } from "@/components/CharacterZone";
 import { HandCardItem } from "@/components/HandCardZone";
+import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
 import {
@@ -13,7 +14,8 @@ import {
   PlayerPosition,
   SupportType,
 } from "@/models";
-import { isCardType, isCharacterType } from "@/utils";
+import { DeckDBUpdateType, IDeckDB, useDeckStore } from "@/services";
+import { isCardType, isCharacterType, NameIDTrans } from "@/utils";
 
 import styles from "./index.module.css";
 
@@ -24,6 +26,7 @@ enum CardType {
 
 export const DeckItem = (item: ICard | ICharacter) => {
   const { t } = useTranslation();
+  const { updateDeckItem } = useDeckStore();
   return (
     <div key={item.name} className={styles.DeckItem}>
       {isCharacterType(item) ? (
@@ -37,7 +40,69 @@ export const DeckItem = (item: ICard | ICharacter) => {
       ) : (
         <></>
       )}
+      <div className={styles.DeckItemBtns}>
+        <div
+          aria-hidden="true"
+          className={styles.DeckItemBtn}
+          onClick={() => {
+            updateDeckItem("deck-1", item, DeckDBUpdateType.Remove);
+          }}
+        >
+          Remove
+        </div>
+        <div
+          aria-hidden="true"
+          className={styles.DeckItemBtn}
+          onClick={() => {
+            updateDeckItem("deck-1", item, DeckDBUpdateType.Add);
+          }}
+        >
+          Add to deck
+        </div>
+        <div className={styles.DeckCount}>1</div>
+      </div>
       <div className={styles.DeckLabel}>{t(item.name)}</div>
+    </div>
+  );
+};
+
+export const PlayerDeck = () => {
+  const [deckList, setDeckList] = useState<IDeckDB[]>([]);
+  const { listDeck } = useDeckStore();
+  useEffect(() => {
+    listDeck().then(res => setDeckList(res));
+  });
+
+  return (
+    <div className={styles.Decks}>
+      {deckList.map(deck => (
+        <div key={deck._id}>
+          <div>
+            {Object.entries(deck.characters).map(c => (
+              <div key={c[0]} style={{ display: "inline-flex" }}>
+                <img
+                  width={80}
+                  src={`${PUBLIC_PATH}/characters/${NameIDTrans(c[0])}.png`}
+                  alt=""
+                />
+                {c[1]}
+              </div>
+            ))}
+          </div>
+          <div>
+            {Object.entries(deck.cards).map(c => (
+              <div key={c[0]} style={{ display: "inline-flex" }}>
+                <img
+                  width={80}
+                  src={`${PUBLIC_PATH}/cards/${NameIDTrans(c[0])}.png`}
+                  alt=""
+                />
+                {c[0]} - {c[1]}
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
@@ -52,6 +117,10 @@ export default function DeckPage() {
 
   return (
     <div className={styles.Deck}>
+      <div>
+        <div></div>
+        <PlayerDeck />
+      </div>
       <div className={styles.DeckFilter}>
         <div className={styles.DeckFilterMain}>
           {Object.entries(type).map(_t => (
