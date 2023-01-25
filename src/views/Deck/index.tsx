@@ -5,11 +5,25 @@ import { PreviewCard, PreviewCharacter } from "@/components/PreviewZone";
 import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
-import { CardType, EquipmentMainType, EventType, SupportType } from "@/models";
+import {
+  CardType,
+  EquipmentMainType,
+  EventType,
+  ICard,
+  ICharacter,
+  SupportType,
+} from "@/models";
 import { DeckDBUpdateType, IDeckDB, useDeckStore } from "@/services";
-import { getCardByName, getCharacterByName, NameIDTrans } from "@/utils";
+import {
+  getCardByName,
+  getCharacterByName,
+  isCardType,
+  isCharacterType,
+  NameIDTrans,
+} from "@/utils";
 
 import styles from "./index.module.css";
+import { HandCardCost } from "@/components/HandCardZone";
 
 export const DeckItem = (props: { name: string; type: CardType }) => {
   const { name, type } = props;
@@ -19,9 +33,32 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
   useEffect(() => {
     getCountByName("deck-1", name).then(c => setCount(c));
   });
+  const item =
+    type === CardType.Card
+      ? getCardByName(name)
+      : type === CardType.Character
+      ? getCharacterByName(name)
+      : null;
   return (
     <div key={name} className={styles.DeckItem}>
       <div className={styles.DeckItemImg}>
+        {isCharacterType(item) && (
+          <div className={styles.DeckItemHP}>{(item as ICharacter).hp}</div>
+        )}
+        {isCharacterType(item) && (
+          <div className={styles.DeckItemEnergy}>
+            {Array((item as ICharacter).energy)
+              .fill(0)
+              .map((_, i) => (
+                <div key={i} className={styles.DeckItemEnergyItem}></div>
+              ))}
+          </div>
+        )}
+        {isCardType(item) && (
+          <div className={styles.DeckItemCost}>
+            <HandCardCost cost={(item as ICard).cost} />
+          </div>
+        )}
         <img
           src={`${PUBLIC_PATH}/${type.toLowerCase()}s/${NameIDTrans(name)}.png`}
           alt={name}
@@ -49,9 +86,9 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
         </div>
         <div className={styles.DeckPreview}>
           {type === CardType.Card ? (
-            <PreviewCard preview={getCardByName(name)} noImg={true} />
+            <PreviewCard preview={item as ICard} noImg={true} />
           ) : type === CardType.Character ? (
-            <PreviewCharacter preview={getCharacterByName(name)} noImg={true} />
+            <PreviewCharacter preview={item as ICharacter} noImg={true} />
           ) : (
             <></>
           )}

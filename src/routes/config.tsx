@@ -38,7 +38,7 @@ export const useRoutesConfig = () => {
     },
     {
       path: "404",
-      element: <GamePage />,
+      element: <HomePage />,
     },
     {
       path: "*",
