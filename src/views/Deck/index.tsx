@@ -62,10 +62,10 @@ export const PlayerDeck = (props: { deckList: IDeckDB[] }) => {
   const { deckList } = props;
   return (
     <div className={styles.PlayerDeck}>
-      <div className={styles.PlayerDeckName}>deck-1</div>
       <div className={styles.Decks}>
         {deckList.map((deck, i) => (
           <div key={i}>
+            <div className={styles.PlayerDeckName}>{deck.name}</div>
             <div key={CardType.Character}>
               {Object.entries(deck.characters).map((c, i) => (
                 <DeckItem key={i} name={c[0]} type={CardType.Character} />
