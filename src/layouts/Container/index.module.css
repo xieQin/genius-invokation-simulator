@@ -7,6 +7,9 @@
     width: 100%;
     top: 60px;
   }
+  .Container.HideTop {
+    top: 0;
+  }
 }
 @media (min-width: 1024px) {
   .Layout {
@@ -14,6 +17,7 @@
   }
   .Container {
     position: relative;
+    top: 0;
     flex: 1 0 auto;
     padding-left: 265px;
   }

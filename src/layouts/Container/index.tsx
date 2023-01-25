@@ -6,8 +6,10 @@ export default function Container() {
   const { pathname } = useLocation();
   return (
     <div
-      className={styles.Container}
-      style={{ top: pathname === "/game" ? 0 : "60px" }}
+      className={[
+        styles.Container,
+        pathname === "/game" ? styles.HideTop : "",
+      ].join(" ")}
     >
       <Outlet />
     </div>
