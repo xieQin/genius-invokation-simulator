@@ -1,67 +1,59 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { CharacterItem } from "@/components/CharacterZone";
-import { HandCardItem } from "@/components/HandCardZone";
 import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
-import {
-  EquipmentMainType,
-  EventType,
-  ICard,
-  ICharacter,
-  PlayerPosition,
-  SupportType,
-} from "@/models";
+import { CardType, EquipmentMainType, EventType, SupportType } from "@/models";
 import { DeckDBUpdateType, IDeckDB, useDeckStore } from "@/services";
-import { isCardType, isCharacterType, NameIDTrans } from "@/utils";
+import { NameIDTrans } from "@/utils";
 
 import styles from "./index.module.css";
 
-enum CardType {
-  Character = "Character",
-  Card = "Card",
-}
-
-export const DeckItem = (item: ICard | ICharacter) => {
+export const DeckItem = (props: { name: string; type: CardType }) => {
+  const { name, type } = props;
+  const [count, setCount] = useState(0);
   const { t } = useTranslation();
-  const { updateDeckItem } = useDeckStore();
+  const { updateDeckItem, getCountByName } = useDeckStore();
+  useEffect(() => {
+    getCountByName("deck-1", name).then(c => setCount(c));
+  });
   return (
-    <div key={item.name} className={styles.DeckItem}>
-      {isCharacterType(item) ? (
-        <CharacterItem
-          character={item as ICharacter}
-          pos={PlayerPosition.Own}
-          isDeck={true}
+    <div key={name} className={styles.DeckItem}>
+      <div className={styles.DeckItemImg}>
+        <img
+          src={`${PUBLIC_PATH}/${
+            type === CardType.Character
+              ? "characters"
+              : type === CardType.Card
+              ? "cards"
+              : ""
+          }/${NameIDTrans(name)}.png`}
+          alt={name}
         />
-      ) : isCardType(item) ? (
-        <HandCardItem card={item as ICard} pos={PlayerPosition.Own} />
-      ) : (
-        <></>
-      )}
-      <div className={styles.DeckItemBtns}>
-        <div
-          aria-hidden="true"
-          className={styles.DeckItemBtn}
-          onClick={() => {
-            updateDeckItem("deck-1", item, DeckDBUpdateType.Remove);
-          }}
-        >
-          Remove
+        {count > 0 && <span className={styles.DeckCount}>{count}</span>}
+        <div className={styles.DeckItemBtns}>
+          <div
+            aria-hidden="true"
+            className={styles.DeckItemBtn}
+            onClick={() => {
+              updateDeckItem("deck-1", name, type, DeckDBUpdateType.Remove);
+            }}
+          >
+            -
+          </div>
+          <div
+            aria-hidden="true"
+            className={styles.DeckItemBtn}
+            onClick={() => {
+              updateDeckItem("deck-1", name, type, DeckDBUpdateType.Add);
+            }}
+          >
+            +
+          </div>
         </div>
-        <div
-          aria-hidden="true"
-          className={styles.DeckItemBtn}
-          onClick={() => {
-            updateDeckItem("deck-1", item, DeckDBUpdateType.Add);
-          }}
-        >
-          Add to deck
-        </div>
-        <div className={styles.DeckCount}>1</div>
       </div>
-      <div className={styles.DeckLabel}>{t(item.name)}</div>
+      <div className={styles.DeckLabel}>{t(name)}</div>
     </div>
   );
 };
@@ -78,31 +70,13 @@ export const PlayerDeck = () => {
       {deckList.map(deck => (
         <div key={deck._id}>
           <div>
-            {Object.entries(deck.characters).map(c => (
-              <div key={c[0]} style={{ display: "inline-flex" }}>
-                <div style={{ margin: "5px" }}>
-                  <img
-                    width={80}
-                    src={`${PUBLIC_PATH}/characters/${NameIDTrans(c[0])}.png`}
-                    alt=""
-                  />
-                </div>
-                {/* <span>{c[1]}</span> */}
-              </div>
+            {Object.entries(deck.characters).map((c, i) => (
+              <DeckItem key={i} name={c[0]} type={CardType.Character} />
             ))}
           </div>
           <div>
             {Object.entries(deck.cards).map(c => (
-              <div key={c[0]} style={{ display: "inline-flex" }}>
-                <div style={{ margin: "5px" }}>
-                  <img
-                    width={80}
-                    src={`${PUBLIC_PATH}/cards/${NameIDTrans(c[0])}.png`}
-                    alt=""
-                  />
-                </div>
-                {/* <span>{c[0]}</span> */}
-              </div>
+              <DeckItem key={c[0]} name={c[0]} type={CardType.Card} />
             ))}
           </div>
         </div>
@@ -172,7 +146,11 @@ export default function DeckPage() {
       <div className={styles.DeckList}>
         {active === CardType.Character &&
           characters.map(character => (
-            <DeckItem key={character.name} {...(character as ICharacter)} />
+            <DeckItem
+              key={character.name}
+              name={character.name}
+              type={CardType.Character}
+            />
           ))}
       </div>
       <div className={styles.DeckList}>
@@ -181,7 +159,9 @@ export default function DeckPage() {
             .filter(
               card => card.subType.filter(_t => tag.includes(_t)).length > 0
             )
-            .map(card => <DeckItem key={card.name} {...(card as ICard)} />)}
+            .map(card => (
+              <DeckItem key={card.name} name={card.name} type={CardType.Card} />
+            ))}
       </div>
     </div>
   );

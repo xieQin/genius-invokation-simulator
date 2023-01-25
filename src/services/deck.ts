@@ -1,7 +1,7 @@
+import { count } from "console";
 import { useIndexedDBStore } from "use-indexeddb";
 
-import { ICard, ICharacter } from "@/models";
-import { isCardType, isCharacterType } from "@/utils";
+import { CardType } from "@/models";
 
 export interface IDeckDB {
   _id: number;
@@ -126,23 +126,24 @@ export const useDeckStore = () => {
 
   const updateDeckItem = async (
     deck: string,
-    item: ICard | ICharacter,
-    type: DeckDBUpdateType
+    name: string,
+    type: CardType,
+    action: DeckDBUpdateType
   ) => {
-    if (isCardType(item)) {
-      if (type === DeckDBUpdateType.Add) {
-        await addCard(deck, item.name);
+    if (type === CardType.Card) {
+      if (action === DeckDBUpdateType.Add) {
+        await addCard(deck, name);
       }
-      if (type === DeckDBUpdateType.Remove) {
-        await removeCard(deck, item.name);
+      if (action === DeckDBUpdateType.Remove) {
+        await removeCard(deck, name);
       }
     }
-    if (isCharacterType(item)) {
-      if (type === DeckDBUpdateType.Add) {
-        await addCharacter(deck, item.name);
+    if (type === CardType.Character) {
+      if (action === DeckDBUpdateType.Add) {
+        await addCharacter(deck, name);
       }
-      if (type === DeckDBUpdateType.Remove) {
-        await removeCharacter(deck, item.name);
+      if (action === DeckDBUpdateType.Remove) {
+        await removeCharacter(deck, name);
       }
     }
   };
@@ -150,6 +151,18 @@ export const useDeckStore = () => {
   const listDeck = async (): Promise<IDeckDB[]> => {
     const res = (await getAll()) as IDeckDB[];
     return res;
+  };
+
+  const getCountByName = async (deck: string, name: string) => {
+    const _deck = await getDeck(deck);
+    let count = 0;
+    Object.entries(_deck.cards).forEach(card => {
+      if (name === card[0]) count = card[1];
+    });
+    Object.entries(_deck.characters).forEach(character => {
+      if (name === character[0]) count = character[1];
+    });
+    return count;
   };
   return {
     addDeck,
@@ -161,5 +174,6 @@ export const useDeckStore = () => {
     addCharacter,
     removeCharacter,
     updateDeckItem,
+    getCountByName,
   };
 };

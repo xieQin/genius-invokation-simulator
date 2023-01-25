@@ -37,27 +37,25 @@
 }
 .DeckItem {
   position: relative;
-  margin: 10px;
-  display: flex;
+  display: inline-flex;
+  margin: 5px;
   flex-direction: column;
   align-items: center;
 }
 .DeckItem > div {
-  border: none;
-}
-.DeckItem > div > div {
+  position: relative;
   border: none;
 }
 .DeckLabel {
-  width: 180px;
+  width: 90px;
+  font-size: 12px;
   margin: 10px 0;
   text-align: center;
 }
 .DeckItemBtns {
   position: absolute;
-  left: 20px;
-  top: 160px;
-  height: 100px;
+  left: 0;
+  bottom: -8px;
   z-index: 12;
 }
 .DeckItemBtn {
@@ -65,21 +63,24 @@
   color: #fff;
   text-align: center;
   font-size: 14px;
-  padding: 5px;
+  padding: 5px 16px;
   border-radius: 8px;
   background-color: black;
 }
 .DeckCount {
   position: absolute;
-  top: 40px;
-  right: -42px;
-  width: 40px;
-  height: 40px;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
   background-image: url(/images/counter-icon.png);
   background-size: cover;
   text-align: center;
   color: #fff;
-  line-height: 40px;
-  font-size: 24px;
+  line-height: 30px;
+  font-size: 16px;
   -webkit-text-stroke: #000 1px;
+}
+.DeckItemImg {
+  width: 90px;
 }

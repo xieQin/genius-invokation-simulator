@@ -18,6 +18,11 @@ export interface ICard {
   imgID: string;
 }
 
+export enum CardType {
+  Character = "Character",
+  Card = "Card",
+}
+
 export interface ICardEquipment extends ICard, IEquipment {}
 export interface ICardSupport extends ICard, ISupport {}
 export interface ICardEvent extends ICard, IEvent {}
