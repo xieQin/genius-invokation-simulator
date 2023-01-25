@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import isMobile from "@/utils/is-mobile";
+
 export const useAutoScale = () => {
   const defaultWidth = 1920;
   const defaultHeight = 1080;
@@ -18,7 +20,7 @@ export const useAutoScale = () => {
   const autoScale = () => {
     window.addEventListener("resize", handleResize);
     handleResize();
-    if (isLandscape) {
+    if (isLandscape && isMobile) {
       setScale(getScale());
       (
         document.querySelector("#screen") as HTMLElement

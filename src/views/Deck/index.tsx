@@ -58,29 +58,27 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
   );
 };
 
-export const PlayerDeck = () => {
-  const [deckList, setDeckList] = useState<IDeckDB[]>([]);
-  const { listDeck } = useDeckStore();
-  useEffect(() => {
-    listDeck().then(res => setDeckList(res));
-  });
-
+export const PlayerDeck = (props: { deckList: IDeckDB[] }) => {
+  const { deckList } = props;
   return (
-    <div className={styles.Decks}>
-      {deckList.map(deck => (
-        <div key={deck._id}>
-          <div>
-            {Object.entries(deck.characters).map((c, i) => (
-              <DeckItem key={i} name={c[0]} type={CardType.Character} />
-            ))}
+    <div className={styles.PlayerDeck}>
+      <div className={styles.PlayerDeckName}>deck-1</div>
+      <div className={styles.Decks}>
+        {deckList.map((deck, i) => (
+          <div key={i}>
+            <div key={CardType.Character}>
+              {Object.entries(deck.characters).map((c, i) => (
+                <DeckItem key={i} name={c[0]} type={CardType.Character} />
+              ))}
+            </div>
+            <div key={CardType.Card}>
+              {Object.entries(deck.cards).map(c => (
+                <DeckItem key={c[0]} name={c[0]} type={CardType.Card} />
+              ))}
+            </div>
           </div>
-          <div>
-            {Object.entries(deck.cards).map(c => (
-              <DeckItem key={c[0]} name={c[0]} type={CardType.Card} />
-            ))}
-          </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
@@ -92,13 +90,15 @@ export default function DeckPage() {
   const [active, setActive] = useState(CardType.Character);
   const defaultTag = Object.keys(tags).map(t => tags[t as keyof typeof tags]);
   const [tag, setTag] = useState<string[]>(defaultTag);
+  const { addDeck, listDeck } = useDeckStore();
+  const [deckList, setDeckList] = useState<IDeckDB[]>([]);
+  useEffect(() => {
+    listDeck().then(res => setDeckList(res));
+  });
 
   return (
     <div className={styles.Deck}>
-      <div>
-        <div></div>
-        <PlayerDeck />
-      </div>
+      <PlayerDeck deckList={deckList} />
       <div className={styles.DeckFilter}>
         <div className={styles.DeckFilterMain}>
           {Object.entries(type).map(_t => (
@@ -142,6 +142,15 @@ export default function DeckPage() {
             ))}
           </div>
         )}
+        <div
+          aria-hidden="true"
+          className={styles.AddDeck}
+          onClick={() => {
+            addDeck("deck-1");
+          }}
+        >
+          Add Deck
+        </div>
       </div>
       <div className={styles.DeckList}>
         {active === CardType.Character &&

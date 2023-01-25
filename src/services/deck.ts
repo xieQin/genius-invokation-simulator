@@ -1,4 +1,3 @@
-import { count } from "console";
 import { useIndexedDBStore } from "use-indexeddb";
 
 import { CardType } from "@/models";
@@ -28,7 +27,7 @@ export const useDeckStore = () => {
   //   characters: {},
   // });
 
-  const addDeck = async (deck: string, name: string) => {
+  const addDeck = async (name: string) => {
     await add({
       name,
       cards: {},
@@ -155,6 +154,7 @@ export const useDeckStore = () => {
 
   const getCountByName = async (deck: string, name: string) => {
     const _deck = await getDeck(deck);
+    if (_deck === undefined) return 0;
     let count = 0;
     Object.entries(_deck.cards).forEach(card => {
       if (name === card[0]) count = card[1];
