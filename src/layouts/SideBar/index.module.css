@@ -1,7 +1,43 @@
+@media (max-width: 1024px) {
+  .SideBar {
+    position: fixed;
+    width: 100%;
+    display: none;
+    z-index: 33;
+  }
+  .TopBar {
+    position: fixed;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background-color: #912f83;
+  }
+}
+@media (min-width: 1024px) {
+  .SideBar {
+    position: fixed;
+    z-index: 10;
+  }
+  .TopBar {
+    display: none;
+  }
+}
+.TopBarLabel {
+  line-height: 60px;
+  color: #ff5a5a;
+  font-size: 30px;
+  margin-left: 50px;
+  font-weight: bold;
+}
+.TopBarBtns {
+  color: #fff;
+  padding: 20px 25px;
+}
 .SideBar {
-  position: fixed;
   height: 100vh;
-  z-index: 10;
   background-color: #912f83;
 }
 .SideBar:after {

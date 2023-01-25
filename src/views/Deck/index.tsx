@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { HandCardCost } from "@/components/HandCardZone";
 import { PreviewCard, PreviewCharacter } from "@/components/PreviewZone";
 import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
@@ -23,7 +24,6 @@ import {
 } from "@/utils";
 
 import styles from "./index.module.css";
-import { HandCardCost } from "@/components/HandCardZone";
 
 export const DeckItem = (props: { name: string; type: CardType }) => {
   const { name, type } = props;
