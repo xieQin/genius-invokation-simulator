@@ -80,24 +80,28 @@ export const PlayerDeck = () => {
           <div>
             {Object.entries(deck.characters).map(c => (
               <div key={c[0]} style={{ display: "inline-flex" }}>
-                <img
-                  width={80}
-                  src={`${PUBLIC_PATH}/characters/${NameIDTrans(c[0])}.png`}
-                  alt=""
-                />
-                {c[1]}
+                <div style={{ margin: "5px" }}>
+                  <img
+                    width={80}
+                    src={`${PUBLIC_PATH}/characters/${NameIDTrans(c[0])}.png`}
+                    alt=""
+                  />
+                </div>
+                {/* <span>{c[1]}</span> */}
               </div>
             ))}
           </div>
           <div>
             {Object.entries(deck.cards).map(c => (
               <div key={c[0]} style={{ display: "inline-flex" }}>
-                <img
-                  width={80}
-                  src={`${PUBLIC_PATH}/cards/${NameIDTrans(c[0])}.png`}
-                  alt=""
-                />
-                {c[0]} - {c[1]}
+                <div style={{ margin: "5px" }}>
+                  <img
+                    width={80}
+                    src={`${PUBLIC_PATH}/cards/${NameIDTrans(c[0])}.png`}
+                    alt=""
+                  />
+                </div>
+                {/* <span>{c[0]}</span> */}
               </div>
             ))}
           </div>
