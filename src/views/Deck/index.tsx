@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
+import { PreviewCard, PreviewCharacter } from "@/components/PreviewZone";
 import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
 import { CardType, EquipmentMainType, EventType, SupportType } from "@/models";
 import { DeckDBUpdateType, IDeckDB, useDeckStore } from "@/services";
-import { NameIDTrans } from "@/utils";
+import { getCardByName, getCharacterByName, NameIDTrans } from "@/utils";
 
 import styles from "./index.module.css";
 
@@ -22,13 +23,7 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
     <div key={name} className={styles.DeckItem}>
       <div className={styles.DeckItemImg}>
         <img
-          src={`${PUBLIC_PATH}/${
-            type === CardType.Character
-              ? "characters"
-              : type === CardType.Card
-              ? "cards"
-              : ""
-          }/${NameIDTrans(name)}.png`}
+          src={`${PUBLIC_PATH}/${type.toLowerCase()}s/${NameIDTrans(name)}.png`}
           alt={name}
         />
         {count > 0 && <span className={styles.DeckCount}>{count}</span>}
@@ -51,6 +46,15 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
           >
             +
           </div>
+        </div>
+        <div className={styles.DeckPreview}>
+          {type === CardType.Card ? (
+            <PreviewCard preview={getCardByName(name)} noImg={true} />
+          ) : type === CardType.Character ? (
+            <PreviewCharacter preview={getCharacterByName(name)} noImg={true} />
+          ) : (
+            <></>
+          )}
         </div>
       </div>
       <div className={styles.DeckLabel}>{t(name)}</div>

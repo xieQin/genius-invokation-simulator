@@ -21,11 +21,6 @@ export enum DeckDBUpdateType {
 export const useDeckStore = () => {
   const { add, update, getAll, deleteByID, getOneByKey } =
     useIndexedDBStore("tcg-deck");
-  // add({
-  //   name: "deck-1",
-  //   cards: {},
-  //   characters: {},
-  // });
 
   const addDeck = async (name: string) => {
     await add({

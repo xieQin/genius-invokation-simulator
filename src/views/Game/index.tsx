@@ -8,6 +8,7 @@ import SettingZone from "@/components/SettingZone";
 import { useAutoScale, usePreview, useTimeout } from "@/hooks";
 import { Phase } from "@/models/phase";
 import { useGameStore } from "@/stores";
+import isMobile from "@/utils/is-mobile";
 
 import ChangeCharacterPhase from "./change";
 import ChoosePhase from "./choose";
@@ -30,7 +31,7 @@ export default function GamePage() {
           } `}
         />
       )} */}
-      {!isLandscape ? (
+      {!isLandscape && isMobile ? (
         <div className={styles.AlertText}>
           Please rotate your screen to landscape mode <br />
         </div>

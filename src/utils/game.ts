@@ -157,5 +157,16 @@ export const InitCardStack = () => {
 };
 
 export const DraftHandCard = (num = 2, cardStack: ICard[]) => {
+  if (cardStack.length < num) return cardStack;
   return getRandom<ICard>(num, cardStack);
+};
+
+export const getCardByName = (name: string): ICard => {
+  return CardData.filter(card => card.name === name)[0] as ICard;
+};
+
+export const getCharacterByName = (name: string): ICharacter => {
+  return CharacterData.filter(
+    character => character.name === name
+  )[0] as ICharacter;
 };

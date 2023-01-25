@@ -8,7 +8,7 @@
 }
 .DeckFilter {
   position: relative;
-  padding: 5px 10px;
+  padding: 5px 0;
 }
 .DeckFilterMain {
   display: flex;
@@ -43,9 +43,19 @@
   flex-direction: column;
   align-items: center;
 }
-.DeckItem > div {
-  position: relative;
-  border: none;
+.DeckPreview {
+  visibility: hidden;
+  position: absolute;
+  left: -10px;
+  top: -120px;
+  scale: 0.6;
+  z-index: 22;
+}
+.DeckItem:hover .DeckItemBtns {
+  visibility: visible;
+}
+.DeckItem:hover .DeckPreview {
+  visibility: visible;
 }
 .DeckLabel {
   width: 90px;
@@ -54,6 +64,7 @@
   text-align: center;
 }
 .DeckItemBtns {
+  visibility: hidden;
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -84,6 +95,7 @@
   -webkit-text-stroke: #000 1px;
 }
 .DeckItemImg {
+  position: relative;
   width: 90px;
 }
 .AddDeck {
