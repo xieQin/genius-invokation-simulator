@@ -1,5 +1,20 @@
-.Container {
-  position: relative;
-  flex: 1 0 auto;
-  padding-left: 262px;
+@media (max-width: 1024px) {
+  .Layout {
+    width: 100%;
+  }
+  .Container {
+    position: relative;
+    width: 100%;
+    top: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .Layout {
+    width: 100%;
+  }
+  .Container {
+    position: relative;
+    flex: 1 0 auto;
+    padding-left: 265px;
+  }
 }

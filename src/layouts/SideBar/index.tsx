@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 
 import styles from "./index.module.css";
@@ -47,17 +48,44 @@ export const SideBarItem = (item: SideBarProps) => {
 
 export default function SideBar() {
   const { pathname } = useLocation();
+  const [active, setActive] = useState(
+    document.documentElement.clientWidth >= 1024 ? true : false
+  );
+  useEffect((): (() => void) => {
+    window.onresize = () =>
+      setActive(document.documentElement.clientWidth >= 1024 ? true : false);
+    return () => (window.onresize = null);
+  });
+  useEffect(() => {
+    document.documentElement.clientWidth < 1024 && setActive(!active);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pathname]);
   if (pathname === "/game") return <></>;
   return (
-    <div className={styles.SideBar}>
-      <div className={styles.SideBarLayout}>
-        <div className={[styles.SideBarItem, styles.Main].join(" ")}>
-          <div className={styles.SideBarItemLabel}>Diona.World</div>
+    <>
+      <div className={styles.TopBar}>
+        <div className={styles.TopBarLabel}>Diona.World</div>
+        <div
+          aria-hidden="true"
+          className={styles.TopBarBtns}
+          onClick={() => setActive(!active)}
+        >
+          +
         </div>
-        {SideBarConfigs.map(item => (
-          <SideBarItem key={item.label} {...item} />
-        ))}
       </div>
-    </div>
+      <div
+        className={styles.SideBar}
+        style={{ display: active ? "block" : "none" }}
+      >
+        <div className={styles.SideBarLayout}>
+          <div className={[styles.SideBarItem, styles.Main].join(" ")}>
+            <div className={styles.SideBarItemLabel}>Diona.World</div>
+          </div>
+          {SideBarConfigs.map(item => (
+            <SideBarItem key={item.label} {...item} />
+          ))}
+        </div>
+      </div>
+    </>
   );
 }
