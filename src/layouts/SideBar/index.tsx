@@ -58,6 +58,7 @@ export default function SideBar() {
   });
   useEffect(() => {
     document.documentElement.clientWidth < 1024 && setActive(!active);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
   if (pathname === "/game") return <></>;
   return (
