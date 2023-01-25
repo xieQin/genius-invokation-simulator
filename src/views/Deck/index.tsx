@@ -1,43 +1,88 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import { CharacterItem } from "@/components/CharacterZone";
-import { HandCardItem } from "@/components/HandCardZone";
+import { PreviewCard, PreviewCharacter } from "@/components/PreviewZone";
+import { PUBLIC_PATH } from "@/configs";
 import cards from "@/data/cards.json";
 import characters from "@/data/characters.json";
-import {
-  EquipmentMainType,
-  EventType,
-  ICard,
-  ICharacter,
-  PlayerPosition,
-  SupportType,
-} from "@/models";
-import { isCardType, isCharacterType } from "@/utils";
+import { CardType, EquipmentMainType, EventType, SupportType } from "@/models";
+import { DeckDBUpdateType, IDeckDB, useDeckStore } from "@/services";
+import { getCardByName, getCharacterByName, NameIDTrans } from "@/utils";
 
 import styles from "./index.module.css";
 
-enum CardType {
-  Character = "Character",
-  Card = "Card",
-}
-
-export const DeckItem = (item: ICard | ICharacter) => {
+export const DeckItem = (props: { name: string; type: CardType }) => {
+  const { name, type } = props;
+  const [count, setCount] = useState(0);
   const { t } = useTranslation();
+  const { updateDeckItem, getCountByName } = useDeckStore();
+  useEffect(() => {
+    getCountByName("deck-1", name).then(c => setCount(c));
+  });
   return (
-    <div key={item.name} className={styles.DeckItem}>
-      {isCharacterType(item) ? (
-        <CharacterItem
-          character={item as ICharacter}
-          pos={PlayerPosition.Own}
-          isDeck={true}
+    <div key={name} className={styles.DeckItem}>
+      <div className={styles.DeckItemImg}>
+        <img
+          src={`${PUBLIC_PATH}/${type.toLowerCase()}s/${NameIDTrans(name)}.png`}
+          alt={name}
         />
-      ) : isCardType(item) ? (
-        <HandCardItem card={item as ICard} pos={PlayerPosition.Own} />
-      ) : (
-        <></>
-      )}
-      <div className={styles.DeckLabel}>{t(item.name)}</div>
+        {count > 0 && <span className={styles.DeckCount}>{count}</span>}
+        <div className={styles.DeckItemBtns}>
+          <div
+            aria-hidden="true"
+            className={styles.DeckItemBtn}
+            onClick={() => {
+              updateDeckItem("deck-1", name, type, DeckDBUpdateType.Remove);
+            }}
+          >
+            -
+          </div>
+          <div
+            aria-hidden="true"
+            className={styles.DeckItemBtn}
+            onClick={() => {
+              updateDeckItem("deck-1", name, type, DeckDBUpdateType.Add);
+            }}
+          >
+            +
+          </div>
+        </div>
+        <div className={styles.DeckPreview}>
+          {type === CardType.Card ? (
+            <PreviewCard preview={getCardByName(name)} noImg={true} />
+          ) : type === CardType.Character ? (
+            <PreviewCharacter preview={getCharacterByName(name)} noImg={true} />
+          ) : (
+            <></>
+          )}
+        </div>
+      </div>
+      <div className={styles.DeckLabel}>{t(name)}</div>
+    </div>
+  );
+};
+
+export const PlayerDeck = (props: { deckList: IDeckDB[] }) => {
+  const { deckList } = props;
+  return (
+    <div className={styles.PlayerDeck}>
+      <div className={styles.Decks}>
+        {deckList.map((deck, i) => (
+          <div key={i}>
+            <div className={styles.PlayerDeckName}>{deck.name}</div>
+            <div key={CardType.Character}>
+              {Object.entries(deck.characters).map((c, i) => (
+                <DeckItem key={i} name={c[0]} type={CardType.Character} />
+              ))}
+            </div>
+            <div key={CardType.Card}>
+              {Object.entries(deck.cards).map(c => (
+                <DeckItem key={c[0]} name={c[0]} type={CardType.Card} />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
@@ -49,9 +94,15 @@ export default function DeckPage() {
   const [active, setActive] = useState(CardType.Character);
   const defaultTag = Object.keys(tags).map(t => tags[t as keyof typeof tags]);
   const [tag, setTag] = useState<string[]>(defaultTag);
+  const { addDeck, listDeck } = useDeckStore();
+  const [deckList, setDeckList] = useState<IDeckDB[]>([]);
+  useEffect(() => {
+    listDeck().then(res => setDeckList(res));
+  });
 
   return (
     <div className={styles.Deck}>
+      <PlayerDeck deckList={deckList} />
       <div className={styles.DeckFilter}>
         <div className={styles.DeckFilterMain}>
           {Object.entries(type).map(_t => (
@@ -95,11 +146,24 @@ export default function DeckPage() {
             ))}
           </div>
         )}
+        <div
+          aria-hidden="true"
+          className={styles.AddDeck}
+          onClick={() => {
+            addDeck("deck-1");
+          }}
+        >
+          Add Deck
+        </div>
       </div>
       <div className={styles.DeckList}>
         {active === CardType.Character &&
           characters.map(character => (
-            <DeckItem key={character.name} {...(character as ICharacter)} />
+            <DeckItem
+              key={character.name}
+              name={character.name}
+              type={CardType.Character}
+            />
           ))}
       </div>
       <div className={styles.DeckList}>
@@ -108,7 +172,9 @@ export default function DeckPage() {
             .filter(
               card => card.subType.filter(_t => tag.includes(_t)).length > 0
             )
-            .map(card => <DeckItem key={card.name} {...(card as ICard)} />)}
+            .map(card => (
+              <DeckItem key={card.name} name={card.name} type={CardType.Card} />
+            ))}
       </div>
     </div>
   );

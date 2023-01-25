@@ -94,7 +94,7 @@ export const PreviewEquipment = (props: { equipment: ICard | null }) => {
         <div className={styles.PreviewEquipment}>
           <div className={styles.PreviewEquipmentIcon}>
             <img
-              src={`${PUBLIC_PATH}/images/equip-${equipment.subType[0].toLocaleLowerCase()}-icon.png`}
+              src={`${PUBLIC_PATH}/images/equip-${equipment.subType[0].toLowerCase()}-icon.png`}
               alt=""
             />
           </div>
@@ -118,22 +118,27 @@ export const PreviewEquipment = (props: { equipment: ICard | null }) => {
   );
 };
 
-export const PreviewCharacter = (props: { preview: ICharacter }) => {
+export const PreviewCharacter = (props: {
+  preview: ICharacter;
+  noImg?: boolean;
+}) => {
   const { t } = useTranslation();
-  const { preview } = props;
+  const { preview, noImg } = props;
   return (
     <div className={styles.PreviewSection}>
-      <div className={styles.PreviewCharacter}>
-        <CharacterItem
-          character={props.preview}
-          pos={PlayerPosition.Opponent}
-        />
-      </div>
+      {!noImg && (
+        <div className={styles.PreviewCharacter}>
+          <CharacterItem
+            character={props.preview}
+            pos={PlayerPosition.Opponent}
+          />
+        </div>
+      )}
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         <div className={styles.PreviewZoneType}>
           <img
-            src={`${PUBLIC_PATH}/images/${preview.element}-elementicon.png`}
+            src={`${PUBLIC_PATH}/images/${preview.element.toLowerCase()}-elementicon.png`}
             alt=""
           />
           <img
@@ -161,14 +166,16 @@ export const PreviewCharacter = (props: { preview: ICharacter }) => {
   );
 };
 
-export const PreviewCard = (props: { preview: ICard }) => {
+export const PreviewCard = (props: { preview: ICard; noImg?: boolean }) => {
   const { t } = useTranslation();
-  const { preview } = props;
+  const { preview, noImg } = props;
   return (
     <div className={styles.PreviewSection}>
-      <div className={styles.PreviewCard}>
-        <HandCardItem card={preview} pos={PlayerPosition.Own} />;
-      </div>
+      {!noImg && (
+        <div className={styles.PreviewCard}>
+          <HandCardItem card={preview} pos={PlayerPosition.Own} />;
+        </div>
+      )}
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         <div className={styles.PreviewItemCost}>

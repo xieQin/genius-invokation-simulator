@@ -1,13 +1,13 @@
 .Language {
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 50px;
   height: 30px;
   width: 100px;
   cursor: pointer;
   z-index: 33;
   text-align: center;
-  color: #fff;
+  color: #ff5a5a;
   padding: 10px 0;
 }
 .Language:hover .LanguageList {

@@ -7,7 +7,8 @@
   padding: 16px;
 }
 .DeckFilter {
-  padding: 5px 10px;
+  position: relative;
+  padding: 5px 0;
 }
 .DeckFilterMain {
   display: flex;
@@ -16,6 +17,7 @@
   padding: 8px 16px;
 }
 .DeckFilterItem {
+  position: relative;
   text-align: center;
   border-radius: 5px;
   padding: 8px 16px;
@@ -35,19 +37,74 @@
   justify-content: start;
 }
 .DeckItem {
-  margin: 10px;
-  display: flex;
+  position: relative;
+  display: inline-flex;
+  margin: 5px;
   flex-direction: column;
   align-items: center;
 }
-.DeckItem > div {
-  border: none;
+.DeckPreview {
+  visibility: hidden;
+  position: absolute;
+  left: -10px;
+  top: -120px;
+  scale: 0.6;
+  z-index: 22;
 }
-.DeckItem > div > div {
-  border: none;
+.DeckItem:hover .DeckItemBtns {
+  visibility: visible;
+}
+.DeckItem:hover .DeckPreview {
+  visibility: visible;
 }
 .DeckLabel {
-  width: 180px;
+  width: 90px;
+  font-size: 12px;
   margin: 10px 0;
   text-align: center;
+}
+.DeckItemBtns {
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  z-index: 12;
+}
+.DeckItemBtn {
+  margin: 8px 0;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px 16px;
+  border-radius: 8px;
+  background-color: black;
+  opacity: 0.8;
+}
+.DeckCount {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background-image: url(/images/counter-icon.png);
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  line-height: 30px;
+  font-size: 16px;
+  -webkit-text-stroke: #000 1px;
+}
+.DeckItemImg {
+  position: relative;
+  width: 90px;
+}
+.AddDeck {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  background-color: #5ab2ff;
+  color: #fff;
+  padding: 8px 16px;
+  text-align: center;
+  border-radius: 5px;
 }
