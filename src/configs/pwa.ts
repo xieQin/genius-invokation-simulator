@@ -12,7 +12,7 @@ export const PWAConfig: Partial<VitePWAOptions> = {
     short_name: "GI TCG",
     description: "Genius Invokation TCG Simulator",
     theme_color: "#fff",
-    start_url: "",
+    start_url: "/",
     scope: "/",
     icons: [
       {
@@ -61,8 +61,8 @@ export const PWAConfig: Partial<VitePWAOptions> = {
         type: "image/png",
       },
     ],
-    display: "standalone",
-    orientation: "landscape",
+    // display: "standalone",
+    // orientation: "landscape",
   },
   devOptions: {
     // enabled: process.env.SW_DEV === "true",
