@@ -18,7 +18,7 @@ export const PWAConfig: Partial<VitePWAOptions> = {
   workbox: {
     sourcemap: true,
     skipWaiting: true,
-    navigateFallback: "/",
+    navigateFallback: "/index.html",
     cleanupOutdatedCaches: true,
     globPatterns: ["**/*.{js,css,html}", "**/*.{svg,png,jpg,gif}"],
   },
