@@ -167,6 +167,20 @@ export const generateSkill = () => {
   );
 };
 
+const defaultActionExtra = {};
+
+export const generateCardExtra = () => {
+  const actions = GIData.action_card_infos;
+  const res = new Map();
+  actions.map(action => {
+    res.set(action.name, defaultActionExtra);
+  });
+  writeFileSync(
+    "./src/data/action-extra.json",
+    JSON.stringify(Object.fromEntries(res))
+  );
+};
+
 export const formatSkillExtras = () => {
   const res = new Map();
   for (const key in SkillExtra) {

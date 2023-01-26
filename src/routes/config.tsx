@@ -41,6 +41,16 @@ export const useRoutesConfig = () => {
       ],
     },
     {
+      path: "/index.html",
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <HomePage />,
+        },
+      ],
+    },
+    {
       path: "404",
       element: <Layout />,
       children: [
