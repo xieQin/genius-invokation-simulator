@@ -29,13 +29,14 @@ export const SideBarConfigs: SideBarProps[] = [
 
 export const SideBarItem = (item: SideBarProps) => {
   const { pathname } = useLocation();
+  const isActive =
+    pathname === item.to || (pathname === "/" && item.to === "/home");
   return (
     <NavLink to={item.to}>
       <div
-        className={[
-          styles.SideBarItem,
-          pathname === item.to ? styles.Active : "",
-        ].join(" ")}
+        className={[styles.SideBarItem, isActive ? styles.Active : ""].join(
+          " "
+        )}
       >
         <div
           className={[styles.SideBarItemIcon, styles[item.label]].join(" ")}

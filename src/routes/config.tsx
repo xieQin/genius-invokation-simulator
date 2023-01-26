@@ -16,7 +16,7 @@ export const useRoutesConfig = () => {
       children: [
         {
           path: "",
-          element: <Navigate to="home" />,
+          element: <HomePage />,
         },
         {
           path: "home",
