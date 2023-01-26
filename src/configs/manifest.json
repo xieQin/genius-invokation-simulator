@@ -3,7 +3,7 @@
   "short_name": "GI TCG",
   "description": "Genius Invokation TCG Simulator",
   "theme_color": "#fff",
-  "start_url": "index.html",
+  "start_url": ".",
   "scope": "/",
   "display": "standalone",
   "orientation": "landscape",
