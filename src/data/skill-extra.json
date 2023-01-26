@@ -1,7 +1,7 @@
 {
   "Liutian Archery": {
     "damage": [
-      { "damage": 2, "damageType": "", "target": "Opponent" },
+      { "damage": 2, "damageType": "Physical", "target": "Opponent" },
       { "damage": 0, "damageType": "", "target": "Background" }
     ],
     "summons": [],

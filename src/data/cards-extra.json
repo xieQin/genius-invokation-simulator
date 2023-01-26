@@ -1,0 +1,835 @@
+{
+  "Undivided Heart": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Shaken, Not Purred": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Cold-Blooded Strike": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Steady Breathing": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Kanten Senmyou Blessing": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Glorious Season": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "The Scent Remained": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Prophecy of Submersion": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Flowing Flame": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Crossfire": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Grand Expectation": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Naganohara Meteor Swarm": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Stellar Predator": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Awakening": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Thundering Penance": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Featherfall Judgment": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Chaotic Entropy": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lands of Dandelion": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Strategic Reserve": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "I Got Your Back": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Floral Sidewinder": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Streaming Surge": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mirror Cage": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Paid in Full": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Transcendent Automaton": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Stonehide Reforged": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Proliferating Spores": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Magic Guide": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sacrificial Fragments": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Skyward Atlas": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Raven Bow": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sacrificial Bow": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Skyward Harp": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "White Iron Greatsword": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sacrificial Greatsword": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wolf's Gravestone": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "White Tassel": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lithic Spear": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Skyward Spine": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Traveler's Handy Sword": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sacrificial Sword": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Aquila Favonia": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Adventurer's Bandana": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lucky Dog's Silver Circlet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Traveling Doctor's Handkerchief": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Gambler's Earrings": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Instructor's Cap": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Exile's Circlet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Broken Rime's Echo": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Blizzard Strayer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wine-Stained Tricorne": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Heart of Depth": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Witch's Scorching Hat": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Crimson Witch of Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Thunder Summoner's Crown": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Thundering Fury": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Viridescent Venerer's Diadem": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Viridescent Venerer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mask of Solitude Basalt": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Archaic Petra": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Laurel Coronet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Deepwood Memories": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liyue Harbor Wharf": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Knights of Favonius Library": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Jade Chamber": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Dawn Winery": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wangshu Inn": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Favonius Cathedral": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Paimon": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Katheryne": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Timaeus": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wagner": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Chef Mao": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Tubby": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Timmie": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liben": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Chang the Ninth": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Ellin": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Iron Tongue Tian": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liu Su": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Parametric Transformer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "NRE": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Ice": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Shattering Ice": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Waters": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Soothing Water": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Fervent Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Thunder": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: High Voltage": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Winds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Impetuous Winds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Stone": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Enduring Rock": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Weeds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Sprawling Greenery": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "The Bestest Travel Companion!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Changing Shifts": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Toss-Up": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Strategize": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "I Haven't Lost Yet!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Leave It to Me!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "When the Crane Returned": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Starsigns": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Calx's Arts": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Master of Weaponry": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Blessing of the Divine Relic's Installation": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Quick Knit": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Send Off": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Guardian's Oath": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Abyssal Summons": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Jueyun Guoba": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Adeptus' Temptation": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lotus Flower Crisp": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Northern Smoked Chicken": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sweet Madame": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mondstadt Hash Brown": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mushroom Pizza": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Minty Meat Rolls": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  }
+}

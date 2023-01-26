@@ -1,3 +1,6 @@
+import { Character } from "./character";
+import { IDamage, IHeal, SkillTarget } from "./damage";
+import { GIElement } from "./element";
 import {
   EqiupmentWeaponType,
   EquipmentID,
@@ -5,6 +8,7 @@ import {
   IEquipment,
 } from "./equipment";
 import { EventID, IEvent } from "./event";
+import { GIRegion } from "./region";
 import { ICost } from "./skill";
 import { ISupport, SupportID, SupportType } from "./support";
 
@@ -16,6 +20,61 @@ export interface ICard {
   cost: ICost[];
   img: string;
   imgID: string;
+  cardTarget: SkillTarget[];
+  deckLimit: CardLimit[];
+  combatLimit: CardLimit[];
+  cardEffect: CardEffect[];
+  cardModify: CardModify[];
+}
+
+export interface CardLimit {
+  limitType: "character" | "element" | "region" | "weapon";
+  limitNumber: number;
+  limit: Character | GIElement | GIRegion | EqiupmentWeaponType;
+}
+
+export enum CardEffectType {
+  CastSkill = "CastSkill",
+  PlayCard = "PlayCard",
+  Attack = "Attack",
+  Defense = "Defense",
+  Cost = "Cost",
+  StartPhase = "StartPhase",
+  EndPhase = "EndPhase",
+  RollPhase = "RollPhase",
+  ChangePhase = "ChangePhase",
+  CombatPhase = "CombatPhase",
+  Any = "Any",
+}
+
+export enum CardTimeType {
+  Turn = "Turn",
+  Round = "Round",
+  Infinite = "Infinite",
+}
+
+export interface CardTime {
+  type: CardTimeType;
+  time: number;
+}
+
+export interface CardEffect {
+  category: CardEffectType.CastSkill;
+  effect: string[];
+}
+
+export interface CardCondition {
+  type: string;
+}
+
+export interface CardModify {
+  category: CardEffectType;
+  effect: {
+    damage: IDamage[];
+    heal: IHeal[];
+    time: CardTime[];
+  };
+  condition: [];
 }
 
 export enum CardType {

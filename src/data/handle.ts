@@ -128,8 +128,8 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-transCharacters();
-transCards();
+// transCharacters();
+// transCards();
 // transI18n();
 
 const defaultSkillExtra = {
@@ -167,20 +167,6 @@ export const generateSkill = () => {
   );
 };
 
-const defaultActionExtra = {};
-
-export const generateCardExtra = () => {
-  const actions = GIData.action_card_infos;
-  const res = new Map();
-  actions.map(action => {
-    res.set(action.name, defaultActionExtra);
-  });
-  writeFileSync(
-    "./src/data/action-extra.json",
-    JSON.stringify(Object.fromEntries(res))
-  );
-};
-
 export const formatSkillExtras = () => {
   const res = new Map();
   for (const key in SkillExtra) {
@@ -196,4 +182,25 @@ export const formatSkillExtras = () => {
   );
 };
 
-formatSkillExtras();
+// formatSkillExtras();
+
+const defaultCardsExtra = {
+  cardTarget: [],
+  deckLimit: [],
+  combatLimit: [],
+  cardEffect: [],
+  cardModify: [],
+};
+
+export const generateCardExtra = () => {
+  const cards = GIData.action_card_infos;
+  const res = new Map();
+  cards.map(card => {
+    res.set(card.name, defaultCardsExtra);
+  });
+  writeFileSync(
+    "./src/data/cards-extra.json",
+    JSON.stringify(Object.fromEntries(res))
+  );
+};
+generateCardExtra();
