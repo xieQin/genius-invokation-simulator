@@ -11,7 +11,7 @@ const DeckPage = lazy(() => import("@/views/Deck"));
 export const useRoutesConfig = () => {
   const routes: RouteObject[] = [
     {
-      path: "",
+      path: "/",
       element: <Layout />,
       children: [
         {
@@ -33,6 +33,16 @@ export const useRoutesConfig = () => {
         {
           path: "settings",
           element: <SettingsPage />,
+        },
+      ],
+    },
+    {
+      path: "",
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <Navigate to="home" />,
         },
       ],
     },

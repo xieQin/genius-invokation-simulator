@@ -12,7 +12,7 @@ export const PWAConfig: Partial<VitePWAOptions> = {
     short_name: "GI TCG",
     description: "Genius Invokation TCG Simulator",
     theme_color: "#fff",
-    start_url: "/",
+    start_url: "",
     scope: "/",
     icons: [
       {
@@ -69,7 +69,6 @@ export const PWAConfig: Partial<VitePWAOptions> = {
     enabled: true,
     /* when using generateSW the PWA plugin will switch to classic */
     type: "module",
-    navigateFallback: "index.html",
   },
   workbox: {
     sourcemap: true,
