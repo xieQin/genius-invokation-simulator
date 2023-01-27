@@ -5,6 +5,19 @@ export enum EffectType {
   Heal = "Heal",
   Shield = "Shield",
   Talent = "Talent",
+  CastSkill = "Cast Skill",
+  PlayCard = "Play Card",
+  Attack = "Attack",
+  Defense = "Defense",
+  Cost = "Cost",
+  StartPhase = "Start Phase",
+  EndPhase = "End Phase",
+  RollPhase = "Roll Phase",
+  ChangePhase = "Change Phase",
+  CombatPhase = "Combat Phase",
+  Active = "Active",
+  Any = "Any",
+  Die = "Die",
 }
 
 export enum EffectSubType {
@@ -18,6 +31,9 @@ export enum EffectSubType {
   Hydro = "Hydro",
   Physical = "Physical",
   ChangeCost = "Change Cost",
+  All = "All",
+  Same = "Same",
+  Attack = "Attack",
 }
 
 export const TransEffectSubTypeToGIElement = {

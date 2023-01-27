@@ -71,11 +71,15 @@ export enum CardConditionType {
   Target = "Target",
   Element = "Element",
   NormalAttack = "Normal Attack",
+  ElementalSkill = "Elemental Skill",
+  HP = "HP",
+  Max = "Max",
+  Region = "Region",
 }
 
 export interface CardModifyCondition {
   category: CardConditionType;
-  value: string;
+  value: string | number;
 }
 
 export interface CardModify {
