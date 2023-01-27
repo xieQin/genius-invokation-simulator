@@ -1502,18 +1502,68 @@
     ]
   },
   "Adventurer's Bandana": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   },
   "Lucky Dog's Silver Circlet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          }
+        ]
+      }
+    ]
   },
   "Traveling Doctor's Handkerchief": {
     "cardTarget": [],
