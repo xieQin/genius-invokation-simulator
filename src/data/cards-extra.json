@@ -1,0 +1,2043 @@
+{
+  "Undivided Heart": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ganyu"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ganyu"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "value": "Frostflake Arrow"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Check",
+            "value": "Frostflake Arrow > 1"
+          },
+          {
+            "category": "Cast Skill",
+            "value": "Frostflake Arrow"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Shaken, Not Purred": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diona"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diona"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Icy Paws"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "Icy Paws"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Cold-Blooded Strike": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kaeya"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kaeya"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Frostgnaw"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "Physical",
+            "target": "Active",
+            "value": 2
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "Frostgnaw"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Steady Breathing": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Chongyun"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Chongyun"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Chonghua's Layered Frost"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "target": "Active",
+            "value": 1
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "Chonghua's Layered Frost"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Kanten Senmyou Blessing": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kamisato Ayaka"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kamisato Ayaka"
+      }
+    ],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "Active",
+            "value": -1
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
+        ],
+        "time": [],
+        "condition": []
+      }
+    ]
+  },
+  "Glorious Season": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Barbara"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Barbara"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Let the Show Begin♪"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "All",
+            "value": -1
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": []
+      }
+    ]
+  },
+  "The Scent Remained": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xingqiu"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xingqiu"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Fatal Rainscreen"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "target": "Active",
+            "value": 1
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": []
+      }
+    ]
+  },
+  "Prophecy of Submersion": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mona"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mona"
+      }
+    ],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 2
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Element",
+            "value": "Hydro"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Flowing Flame": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diluc"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diluc"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Searing Onslaught"
+      }
+    ],
+    "cardModify": []
+  },
+  "Crossfire": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xiangling"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xiangling"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Guoba Attack"
+      }
+    ],
+    "cardModify": []
+  },
+  "Grand Expectation": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Bennett"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Bennett"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Fantastic Voyage"
+      }
+    ],
+    "cardModify": []
+  },
+  "Naganohara Meteor Swarm": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Yoimiya"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Yoimiya"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Niwabi Fire-Dance"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "value": 1,
+            "target": "Opponent"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Shield",
+            "value": "Niwabi Enshou"
+          }
+        ]
+      }
+    ]
+  },
+  "Stellar Predator": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fischl"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fischl"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Nightrider"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Opponent"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
+  },
+  "Awakening": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Razor"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Razor"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Claw and Thunder"
+      }
+    ],
+    "cardModify": []
+  },
+  "Thundering Penance": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Keqing"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Keqing"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Stellar Restoration"
+      }
+    ],
+    "cardModify": []
+  },
+  "Featherfall Judgment": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Cyno"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Cyno"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Secret Rite: Chasmic Soulfarer"
+      }
+    ],
+    "cardModify": []
+  },
+  "Chaotic Entropy": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Sucrose"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Sucrose"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Forbidden Creation - Isomer 75 / Type II"
+      }
+    ],
+    "cardModify": []
+  },
+  "Lands of Dandelion": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Jean"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Jean"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Dandelion Breeze"
+      }
+    ],
+    "cardModify": []
+  },
+  "Strategic Reserve": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ningguang"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ningguang"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Jade Screen"
+      }
+    ],
+    "cardModify": []
+  },
+  "I Got Your Back": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Noelle"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Noelle"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Breastplate"
+      }
+    ],
+    "cardModify": []
+  },
+  "Floral Sidewinder": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Collei"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Collei"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Floral Brush"
+      }
+    ],
+    "cardModify": []
+  },
+  "Streaming Surge": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Rhodeia of Loch"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Rhodeia of Loch"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Tide and Torrent"
+      }
+    ],
+    "cardModify": []
+  },
+  "Mirror Cage": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mirror Maiden"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mirror Maiden"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Influx Blast"
+      }
+    ],
+    "cardModify": []
+  },
+  "Paid in Full": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fatui Pyro Agent"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fatui Pyro Agent"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Prowl"
+      }
+    ],
+    "cardModify": []
+  },
+  "Transcendent Automaton": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Maguu Kenki"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Maguu Kenki"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Blustering Blade"
+      }
+    ],
+    "cardModify": []
+  },
+  "Stonehide Reforged": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Stonehide Lawachurl"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Stonehide Lawachurl"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Upa Shato"
+      }
+    ],
+    "cardModify": []
+  },
+  "Proliferating Spores": {
+    "cardTarget": [],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Jadeplume Terrorshroom"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Jadeplume Terrorshroom"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Volatile Spore Cloud"
+      }
+    ],
+    "cardModify": []
+  },
+  "Pounding Surprise": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Klee"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Klee"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Jumpy Dumpty"
+      }
+    ],
+    "cardModify": []
+  },
+  "Lightning Storm": {
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Beidou"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Beidou"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Tidecaller"
+      }
+    ],
+    "cardModify": []
+  },
+  "Magic Guide": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "All",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      }
+    ]
+  },
+  "Sacrificial Fragments": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          }
+        ]
+      }
+    ]
+  },
+  "Skyward Atlas": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
+  },
+  "Raven Bow": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      }
+    ]
+  },
+  "Sacrificial Bow": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          }
+        ]
+      }
+    ]
+  },
+  "Skyward Harp": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
+  },
+  "White Iron Greatsword": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      }
+    ]
+  },
+  "Sacrificial Greatsword": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          }
+        ]
+      }
+    ]
+  },
+  "Wolf's Gravestone": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 2,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "HP",
+            "value": "HP <= 6"
+          }
+        ]
+      }
+    ]
+  },
+  "White Tassel": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      }
+    ]
+  },
+  "Lithic Spear": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Max",
+            "value": 3
+          },
+          {
+            "category": "Region",
+            "value": "Liyue"
+          }
+        ]
+      }
+    ]
+  },
+  "Skyward Spine": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
+  },
+  "Traveler's Handy Sword": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      }
+    ]
+  },
+  "Sacrificial Sword": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          }
+        ]
+      }
+    ]
+  },
+  "Aquila Favonia": {
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Attack",
+            "subType": "Attack",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "After Cast Skill"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          }
+        ]
+      }
+    ]
+  },
+  "Adventurer's Bandana": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lucky Dog's Silver Circlet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Traveling Doctor's Handkerchief": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Gambler's Earrings": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Instructor's Cap": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Exile's Circlet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Broken Rime's Echo": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Blizzard Strayer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wine-Stained Tricorne": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Heart of Depth": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Witch's Scorching Hat": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Crimson Witch of Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Thunder Summoner's Crown": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Thundering Fury": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Viridescent Venerer's Diadem": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Viridescent Venerer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mask of Solitude Basalt": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Archaic Petra": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Laurel Coronet": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Deepwood Memories": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liyue Harbor Wharf": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Knights of Favonius Library": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Jade Chamber": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Dawn Winery": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wangshu Inn": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Favonius Cathedral": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Paimon": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Katheryne": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Timaeus": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Wagner": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Chef Mao": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Tubby": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Timmie": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liben": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Chang the Ninth": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Ellin": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Iron Tongue Tian": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Liu Su": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Parametric Transformer": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "NRE": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Ice": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Shattering Ice": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Waters": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Soothing Water": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Fervent Flames": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Thunder": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: High Voltage": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Winds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Impetuous Winds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Stone": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Enduring Rock": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Weeds": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Elemental Resonance: Sprawling Greenery": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "The Bestest Travel Companion!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Changing Shifts": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Toss-Up": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Strategize": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "I Haven't Lost Yet!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Leave It to Me!": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "When the Crane Returned": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Starsigns": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Calx's Arts": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Master of Weaponry": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Blessing of the Divine Relic's Installation": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Quick Knit": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Send Off": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Guardian's Oath": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Abyssal Summons": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Jueyun Guoba": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Adeptus' Temptation": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Lotus Flower Crisp": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Northern Smoked Chicken": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Sweet Madame": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mondstadt Hash Brown": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Mushroom Pizza": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  },
+  "Minty Meat Rolls": {
+    "cardTarget": [],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": []
+  }
+}

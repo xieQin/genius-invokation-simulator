@@ -129,7 +129,7 @@ export const transI18n = () => {
 };
 
 transCharacters();
-transCards();
+// transCards();
 // transI18n();
 
 const defaultSkillExtra = {
@@ -182,4 +182,25 @@ export const formatSkillExtras = () => {
   );
 };
 
-formatSkillExtras();
+// formatSkillExtras();
+
+const defaultCardsExtra = {
+  cardTarget: [],
+  deckLimit: [],
+  combatLimit: [],
+  cardEffect: [],
+  cardModify: [],
+};
+
+export const generateCardExtra = () => {
+  const cards = GIData.action_card_infos;
+  const res = new Map();
+  cards.map(card => {
+    res.set(card.name, defaultCardsExtra);
+  });
+  writeFileSync(
+    "./src/data/cards-extra.json",
+    JSON.stringify(Object.fromEntries(res))
+  );
+};
+// generateCardExtra();

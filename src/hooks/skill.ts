@@ -1,13 +1,14 @@
 import {
   Action,
+  EffectTarget,
+  EffectType,
   ICost,
   ISkill,
   Phase,
   PlayerPosition,
   SkillCombatType,
-  SkillTarget,
   SummonsID,
-  TransDamageTypeToGIElement,
+  TransEffectSubTypeToGIElement,
 } from "@/models";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid, NameIDTrans } from "@/utils";
@@ -56,23 +57,21 @@ export const useSkill = (pos: PlayerPosition) => {
     if (skill.type.includes(SkillCombatType.ElementalBurst)) {
       updateEnergy(-10, pos);
     }
-    for (const damage of skill.damage) {
-      if (damage.damage > 0) {
-        updateHp(-damage.damage, Math.abs(pos - 1), damage.target);
-        if (damage.damageType in TransDamageTypeToGIElement) {
+    for (const effect of skill.effect) {
+      if (effect.value > 0 && effect.type === EffectType.Damage) {
+        updateHp(-effect.value, Math.abs(pos - 1), effect.target);
+        if (effect.subType in TransEffectSubTypeToGIElement) {
           const _element =
-            damage.damageType as keyof typeof TransDamageTypeToGIElement;
+            effect.subType as keyof typeof TransEffectSubTypeToGIElement;
           updateElementStatus(
-            TransDamageTypeToGIElement[_element],
+            TransEffectSubTypeToGIElement[_element],
             Math.abs(pos - 1),
-            damage.target
+            effect.target
           );
         }
       }
-    }
-    for (const heal of skill.heal) {
-      if (heal.heal > 0) {
-        updateHp(heal.heal, pos, heal.target);
+      if (effect.type === EffectType.Heal) {
+        updateHp(effect.value, pos, effect.target);
       }
     }
   };
@@ -84,18 +83,18 @@ export const useSkill = (pos: PlayerPosition) => {
     const activeSkill = activeSkills[enemy];
     const skill =
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
-    const damage = skill.damage;
-    for (const d of damage) {
+    const effect = skill.effect;
+    for (const d of effect) {
       if (
-        d.target === SkillTarget.Opponent &&
+        d.target === EffectTarget.Opponent &&
         index === activeCharacters[pos]
       ) {
         return true;
       }
-      if (d.target === SkillTarget.All && d.damage > 0) {
+      if (d.target === EffectTarget.All && d.value > 0) {
         return true;
       }
-      if (d.target === SkillTarget.Back && d.damage > 0) {
+      if (d.target === EffectTarget.Back && d.value > 0) {
         return true;
       }
     }
@@ -103,7 +102,6 @@ export const useSkill = (pos: PlayerPosition) => {
   };
 
   const isSkillValid = (costs: ICost[] = []) => {
-    console.log(current);
     return pos === current && isCostDiceValid(costs, dices);
   };
 
@@ -121,8 +119,8 @@ export const useSkill = (pos: PlayerPosition) => {
     const activeSkill = activeSkills[enemy];
     const skill =
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
-    if (idx === activeCharacters[pos]) return skill.damage[0].damage;
-    return skill.damage[1].damage;
+    if (idx === activeCharacters[pos]) return skill.effect[0].value;
+    return skill.effect[1]?.value || 0;
   };
 
   const getMessage = (skill: ISkill) => {

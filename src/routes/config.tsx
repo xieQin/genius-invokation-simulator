@@ -16,7 +16,11 @@ export const useRoutesConfig = () => {
       children: [
         {
           path: "",
-          element: <Navigate to="home" />,
+          element: <HomePage />,
+        },
+        {
+          path: "/",
+          element: <HomePage />,
         },
         {
           path: "home",
@@ -37,8 +41,24 @@ export const useRoutesConfig = () => {
       ],
     },
     {
+      path: "/index.html",
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <HomePage />,
+        },
+      ],
+    },
+    {
       path: "404",
-      element: <HomePage />,
+      element: <Layout />,
+      children: [
+        {
+          path: "",
+          element: <HomePage />,
+        },
+      ],
     },
     {
       path: "*",
