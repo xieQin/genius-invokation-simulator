@@ -72,6 +72,7 @@ export enum CardConditionType {
   Element = "Element",
   NormalAttack = "Normal Attack",
   ElementalSkill = "Elemental Skill",
+  ElementalBurst = "Elemental Burst",
   HP = "HP",
   Max = "Max",
   Region = "Region",

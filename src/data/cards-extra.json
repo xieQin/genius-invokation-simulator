@@ -1566,11 +1566,36 @@
     ]
   },
   "Traveling Doctor's Handkerchief": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          }
+        ]
+      }
+    ]
   },
   "Gambler's Earrings": {
     "cardTarget": [],
