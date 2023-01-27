@@ -17,13 +17,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/LiutianArchery.png",
         "imgID": "LiutianArchery",
-        "damage": [
-          { "damage": 2, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11012",
@@ -33,13 +36,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/TrailoftheQilin.png",
         "imgID": "TrailoftheQilin",
-        "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Ice Lotus"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11013",
@@ -49,13 +55,22 @@
         "type": ["Normal Attack"],
         "img": "/skill/FrostflakeArrow.png",
         "imgID": "FrostflakeArrow",
-        "damage": [
-          { "damage": 3, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 2, "damageType": "Physical", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 3
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11014",
@@ -68,13 +83,22 @@
         "type": ["Elemental Burst"],
         "img": "/skill/CelestialShower.png",
         "imgID": "CelestialShower",
-        "damage": [
-          { "damage": 1, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 1, "damageType": "Physical", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 1
+          }
         ],
         "summons": ["Sacred Cryo Pearl"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -105,13 +129,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/KätzleinStyle.png",
         "imgID": "KätzleinStyle",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11022",
@@ -121,13 +148,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/IcyPaws.png",
         "imgID": "IcyPaws",
-        "damage": [
-          { "damage": 2, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": ["Cat-Claw"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Cat-Claw"]
       },
       {
         "id": "11023",
@@ -140,13 +170,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/SignatureMix.png",
         "imgID": "SignatureMix",
-        "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Drunken Mist"],
-        "shield": [],
-        "heal": [{ "heal": 2, "target": "Active" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -177,13 +210,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/CeremonialBladework.png",
         "imgID": "CeremonialBladework",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11032",
@@ -193,13 +229,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Frostgnaw.png",
         "imgID": "Frostgnaw",
-        "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11033",
@@ -212,13 +251,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/GlacialWaltz.png",
         "imgID": "GlacialWaltz",
-        "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": ["Icicle"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Icicle"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -249,13 +291,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Demonbane.png",
         "imgID": "Demonbane",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11042",
@@ -265,13 +310,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/ChonghuasLayeredFrost.png",
         "imgID": "ChonghuasLayeredFrost",
-        "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": ["Chonghua Frost Field"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Chonghua Frost Field"]
       },
       {
         "id": "11043",
@@ -284,13 +332,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/CloudPartingStar.png",
         "imgID": "CloudPartingStar",
-        "damage": [
-          { "damage": 7, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 7
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -321,13 +372,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/KamisatoArtKabuki.png",
         "imgID": "KamisatoArtKabuki",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11052",
@@ -337,13 +391,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/KamisatoArtHyouka.png",
         "imgID": "KamisatoArtHyouka",
-        "damage": [
-          { "damage": 3, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11053",
@@ -356,13 +413,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/KamisatoArtSoumetsu.png",
         "imgID": "KamisatoArtSoumetsu",
-        "damage": [
-          { "damage": 4, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": ["Frostflake Seki no To"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "11054",
@@ -372,13 +432,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/KamisatoArtSenho.png",
         "imgID": "KamisatoArtSenho",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Cryo Elemental Infusion"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Cryo Elemental Infusion"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -409,13 +465,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/WhisperofWater.png",
         "imgID": "WhisperofWater",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12012",
@@ -425,13 +484,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/LettheShowBegin.png",
         "imgID": "LettheShowBegin",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Melody Loop"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12013",
@@ -444,13 +506,11 @@
         "type": ["Elemental Burst"],
         "img": "/skill/ShiningMiracle.png",
         "imgID": "ShiningMiracle",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          { "type": "Heal", "subType": "", "target": "All", "value": 4 }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 4, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -481,13 +541,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/GuhuaStyle.png",
         "imgID": "GuhuaStyle",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12022",
@@ -497,13 +560,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/FatalRainscreen.png",
         "imgID": "FatalRainscreen",
-        "damage": [
-          { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": ["Rain Sword"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Rain Sword"]
       },
       {
         "id": "12023",
@@ -516,13 +582,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/Raincutter.png",
         "imgID": "Raincutter",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": ["Rainbow Bladework"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Rainbow Bladework"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -553,13 +622,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/RippleofFate.png",
         "imgID": "RippleofFate",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12032",
@@ -569,13 +641,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/MirrorReflectionofDoom.png",
         "imgID": "MirrorReflectionofDoom",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Reflection"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12033",
@@ -588,13 +663,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/StellarisPhantasm.png",
         "imgID": "StellarisPhantasm",
-        "damage": [
-          { "damage": 4, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": ["Illusory Bubble"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "12034",
@@ -604,13 +682,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/IllusoryTorrent.png",
         "imgID": "IllusoryTorrent",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Illusory Torrent"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Illusory Torrent"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -641,13 +715,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/TemperedSword.png",
         "imgID": "TemperedSword",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13012",
@@ -657,13 +734,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/SearingOnslaught.png",
         "imgID": "SearingOnslaught",
-        "damage": [
-          { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 5
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13013",
@@ -676,13 +756,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/Dawn.png",
         "imgID": "Dawn",
-        "damage": [
-          { "damage": 8, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 8
+          }
         ],
         "summons": [],
-        "shield": ["Pyro Infusion"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Pyro Infusion"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -713,13 +796,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/DoughFu.png",
         "imgID": "DoughFu",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13022",
@@ -729,13 +815,9 @@
         "type": ["Elemental Skill"],
         "img": "/skill/GuobaAttack.png",
         "imgID": "GuobaAttack",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": ["Guoba"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13023",
@@ -748,13 +830,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/Pyronado.png",
         "imgID": "Pyronado",
-        "damage": [
-          { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": ["Pyronado"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Pyronado"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -785,13 +870,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/StrikeofFortune.png",
         "imgID": "StrikeofFortune",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13032",
@@ -801,13 +889,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/PassionOverload.png",
         "imgID": "PassionOverload",
-        "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13033",
@@ -820,13 +911,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/FantasticVoyage.png",
         "imgID": "FantasticVoyage",
-        "damage": [
-          { "damage": 2, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": ["Inspiration Field"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Inspiration Field"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -857,13 +951,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/FireworkFlareUp.png",
         "imgID": "FireworkFlareUp",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13052",
@@ -873,13 +970,9 @@
         "type": ["Elemental Skill"],
         "img": "/skill/NiwabiFireDance.png",
         "imgID": "NiwabiFireDance",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Niwabi Enshou"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Niwabi Enshou"]
       },
       {
         "id": "13053",
@@ -892,13 +985,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/RyuukinSaxifrage.png",
         "imgID": "RyuukinSaxifrage",
-        "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": ["Aurous Blaze"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Aurous Blaze"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -929,13 +1025,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Kaboom.png",
         "imgID": "Kaboom",
-        "damage": [
-          { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13062",
@@ -945,13 +1044,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/JumpyDumpty.png",
         "imgID": "JumpyDumpty",
-        "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "13063",
@@ -964,13 +1066,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/SparksnSplash.png",
         "imgID": "SparksnSplash",
-        "damage": [
-          { "damage": 3, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1010,13 +1115,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Nightrider.png",
         "imgID": "Nightrider",
-        "damage": [
-          { "damage": 1, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Oz"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14013",
@@ -1029,13 +1137,22 @@
         "type": ["Elemental Burst"],
         "img": "/skill/MidnightPhantasmagoria.png",
         "imgID": "MidnightPhantasmagoria",
-        "damage": [
-          { "damage": 4, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 2, "damageType": "Physical", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 4
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1066,13 +1183,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/SteelFang.png",
         "imgID": "SteelFang",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14022",
@@ -1082,13 +1202,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/ClawandThunder.png",
         "imgID": "ClawandThunder",
-        "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14023",
@@ -1101,13 +1224,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/LightningFang.png",
         "imgID": "LightningFang",
-        "damage": [
-          { "damage": 5, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 5
+          }
         ],
         "summons": [],
-        "shield": ["The Wolf Within"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["The Wolf Within"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1138,13 +1264,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/YunlaiSwordsmanship.png",
         "imgID": "YunlaiSwordsmanship",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14032",
@@ -1154,13 +1283,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/StellarRestoration.png",
         "imgID": "StellarRestoration",
-        "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": ["Lightning Stiletto"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Lightning Stiletto"]
       },
       {
         "id": "14033",
@@ -1173,13 +1305,22 @@
         "type": ["Elemental Burst"],
         "img": "/skill/StarwardSword.png",
         "imgID": "StarwardSword",
-        "damage": [
-          { "damage": 4, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 3, "damageType": "Physical", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 4
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1210,13 +1351,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/InvokersSpear.png",
         "imgID": "InvokersSpear",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14042",
@@ -1226,13 +1370,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/SecretRiteChasmicSoulfarer.png",
         "imgID": "SecretRiteChasmicSoulfarer",
-        "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14043",
@@ -1245,13 +1392,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/SacredRiteWolfsSwiftness.png",
         "imgID": "SacredRiteWolfsSwiftness",
-        "damage": [
-          { "damage": 4, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": [],
-        "shield": ["Pactsworn Pathclearer"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Pactsworn Pathclearer"]
       },
       {
         "id": "14044",
@@ -1261,13 +1411,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/LawfulEnforcer.png",
         "imgID": "LawfulEnforcer",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Pactsworn Pathclearer"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Pactsworn Pathclearer"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1298,13 +1444,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Oceanborne.png",
         "imgID": "Oceanborne",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "14052",
@@ -1314,13 +1463,9 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Tidecaller.png",
         "imgID": "Tidecaller",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Tidecaller: Surf Embrace"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Tidecaller: Surf Embrace"]
       },
       {
         "id": "14053",
@@ -1333,13 +1478,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/Stormbreaker.png",
         "imgID": "Stormbreaker",
-        "damage": [
-          { "damage": 3, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": ["Thunderbeast's Targe"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Thunderbeast's Targe"]
       },
       {
         "id": "14054",
@@ -1349,13 +1497,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Wavestrider.png",
         "imgID": "Wavestrider",
-        "damage": [
-          { "damage": 2, "damageType": "Electro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1386,13 +1537,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/WindSpiritCreation.png",
         "imgID": "WindSpiritCreation",
-        "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "15012",
@@ -1402,13 +1556,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/AstableAnemohypostasisCreation6308.png",
         "imgID": "AstableAnemohypostasisCreation6308",
-        "damage": [
-          { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "15013",
@@ -1421,13 +1578,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/ForbiddenCreationIsomer75TypeII.png",
         "imgID": "ForbiddenCreationIsomer75TypeII",
-        "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Large Wind Spirit"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1458,13 +1618,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/FavoniusBladework.png",
         "imgID": "FavoniusBladework",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "15022",
@@ -1474,13 +1637,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/GaleBlade.png",
         "imgID": "GaleBlade",
-        "damage": [
-          { "damage": 3, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "15023",
@@ -1493,13 +1659,11 @@
         "type": ["Elemental Burst"],
         "img": "/skill/DandelionBreeze.png",
         "imgID": "DandelionBreeze",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          { "type": "Heal", "subType": "", "target": "All", "value": 2 }
         ],
         "summons": ["Dandelion Field"],
-        "shield": [],
-        "heal": [{ "heal": 2, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1530,13 +1694,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/SparklingScatter.png",
         "imgID": "SparklingScatter",
-        "damage": [
-          { "damage": 1, "damageType": "Geo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Geo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "16012",
@@ -1546,13 +1713,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/JadeScreen.png",
         "imgID": "JadeScreen",
-        "damage": [
-          { "damage": 2, "damageType": "Geo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Geo",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": ["Jade Screen"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Jade Screen"]
       },
       {
         "id": "16013",
@@ -1565,13 +1735,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/Starshatter.png",
         "imgID": "Starshatter",
-        "damage": [
-          { "damage": 6, "damageType": "Geo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Geo",
+            "target": "Opponent",
+            "value": 6
+          }
         ],
         "summons": [],
-        "shield": ["Jade Screen"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Jade Screen"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1602,13 +1775,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/FavoniusBladeworkMaid.png",
         "imgID": "FavoniusBladeworkMaid",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "16022",
@@ -1618,13 +1794,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Breastplate.png",
         "imgID": "Breastplate",
-        "damage": [
-          { "damage": 1, "damageType": "Geo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Geo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": ["Full Plate"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Full Plate"]
       },
       {
         "id": "16023",
@@ -1637,13 +1816,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/SweepingTime.png",
         "imgID": "SweepingTime",
-        "damage": [
-          { "damage": 4, "damageType": "Geo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Geo",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": [],
-        "shield": ["Sweeping Time"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Sweeping Time"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1674,13 +1856,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/SupplicantsBowmanship.png",
         "imgID": "SupplicantsBowmanship",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "17012",
@@ -1690,13 +1875,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/FloralBrush.png",
         "imgID": "FloralBrush",
-        "damage": [
-          { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "17013",
@@ -1709,13 +1897,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/TrumpCardKitty.png",
         "imgID": "TrumpCardKitty",
-        "damage": [
-          { "damage": 2, "damageType": "Dendro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": ["Cuilein-Anbar"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1746,13 +1937,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Surge.png",
         "imgID": "Surge",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "22012",
@@ -1762,13 +1956,9 @@
         "type": ["Elemental Skill"],
         "img": "/skill/OceanidMimicSummoning.png",
         "imgID": "OceanidMimicSummoning",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": ["Oceanid Mimic"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "22013",
@@ -1778,13 +1968,9 @@
         "type": ["Elemental Skill"],
         "img": "/skill/TheMyriadWilds.png",
         "imgID": "TheMyriadWilds",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": ["Oceanid Mimic"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "22014",
@@ -1797,13 +1983,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/TideandTorrent.png",
         "imgID": "TideandTorrent",
-        "damage": [
-          { "damage": 2, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1834,13 +2023,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/WaterBall.png",
         "imgID": "WaterBall",
-        "damage": [
-          { "damage": 1, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "22022",
@@ -1850,13 +2042,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/InfluxBlast.png",
         "imgID": "InfluxBlast",
-        "damage": [
-          { "damage": 3, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": ["Refraction"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Refraction"]
       },
       {
         "id": "22023",
@@ -1869,13 +2064,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/RippledReflection.png",
         "imgID": "RippledReflection",
-        "damage": [
-          { "damage": 5, "damageType": "Hydro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 5
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1906,13 +2104,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Thrust.png",
         "imgID": "Thrust",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "23012",
@@ -1922,13 +2123,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/Prowl.png",
         "imgID": "Prowl",
-        "damage": [
-          { "damage": 1, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": [],
-        "shield": ["Stealth"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Stealth"]
       },
       {
         "id": "23013",
@@ -1941,13 +2145,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/BladeAblaze.png",
         "imgID": "BladeAblaze",
-        "damage": [
-          { "damage": 5, "damageType": "Pyro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "target": "Opponent",
+            "value": 5
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "23014",
@@ -1957,13 +2164,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/StealthMaster.png",
         "imgID": "StealthMaster",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Stealth"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Stealth"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -1994,13 +2197,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/Ichimonji.png",
         "imgID": "Ichimonji",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "25012",
@@ -2010,13 +2216,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/BlusteringBlade.png",
         "imgID": "BlusteringBlade",
-        "damage": [
-          { "damage": 1, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Shadowsword: Lone Gale"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "25013",
@@ -2026,13 +2235,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/FrostyAssault.png",
         "imgID": "FrostyAssault",
-        "damage": [
-          { "damage": 1, "damageType": "Cryo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
         ],
         "summons": ["Shadowsword: Galloping Frost"],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "25014",
@@ -2045,13 +2257,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/PseudoTenguSweeper.png",
         "imgID": "PseudoTenguSweeper",
-        "damage": [
-          { "damage": 4, "damageType": "Anemo", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Anemo",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -2082,13 +2297,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/PlamaLawa.png",
         "imgID": "PlamaLawa",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "26012",
@@ -2098,13 +2316,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/MovoLawa.png",
         "imgID": "MovoLawa",
-        "damage": [
-          { "damage": 3, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "26013",
@@ -2117,13 +2338,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/UpaShato.png",
         "imgID": "UpaShato",
-        "damage": [
-          { "damage": 5, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 5
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "26014",
@@ -2133,13 +2357,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/InfusedStonehide.png",
         "imgID": "InfusedStonehide",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Stonehide"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Stonehide"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },
@@ -2170,13 +2390,16 @@
         "type": ["Normal Attack"],
         "img": "/skill/MajesticDance.png",
         "imgID": "MajesticDance",
-        "damage": [
-          { "damage": 2, "damageType": "Physical", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Opponent",
+            "value": 2
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "27012",
@@ -2186,13 +2409,16 @@
         "type": ["Elemental Skill"],
         "img": "/skill/VolatileSporeCloud.png",
         "imgID": "VolatileSporeCloud",
-        "damage": [
-          { "damage": 3, "damageType": "Dendro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "target": "Opponent",
+            "value": 3
+          }
         ],
         "summons": [],
-        "shield": [],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": []
       },
       {
         "id": "27013",
@@ -2205,13 +2431,16 @@
         "type": ["Elemental Burst"],
         "img": "/skill/FeatherSpreading.png",
         "imgID": "FeatherSpreading",
-        "damage": [
-          { "damage": 4, "damageType": "Dendro", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "target": "Opponent",
+            "value": 4
+          }
         ],
         "summons": [],
-        "shield": ["Radical Vitality"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Radical Vitality"]
       },
       {
         "id": "27014",
@@ -2221,13 +2450,9 @@
         "type": ["Passive Skill"],
         "img": "/skill/RadicalVitality.png",
         "imgID": "RadicalVitality",
-        "damage": [
-          { "damage": 0, "damageType": "", "target": "Opponent" },
-          { "damage": 0, "damageType": "", "target": "Background" }
-        ],
+        "effect": [],
         "summons": [],
-        "shield": ["Radical Vitality"],
-        "heal": [{ "heal": 0, "target": "All" }]
+        "shield": ["Radical Vitality"]
       }
     ],
     "equipments": { "weapon": null, "artifact": null, "talent": null },

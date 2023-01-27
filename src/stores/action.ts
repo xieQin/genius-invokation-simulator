@@ -1,10 +1,10 @@
 import {
+  EffectTarget,
   GIDiceID,
   GIElement,
   ICard,
   IPlayer,
   PlayerPosition,
-  SkillTarget,
   SummonsID,
 } from "@/models";
 
@@ -29,10 +29,10 @@ export interface GameAction {
   showMessage: (message: string, callback?: () => void) => void;
   addSummon: (summon: SummonsID[], pos: PlayerPosition) => void;
   updateEnergy: (energy: number, pos: PlayerPosition) => void;
-  updateHp: (hp: number, pos: PlayerPosition, target: SkillTarget) => void;
+  updateHp: (hp: number, pos: PlayerPosition, target: EffectTarget) => void;
   updateElementStatus: (
     element: GIElement,
     pos: PlayerPosition,
-    target: SkillTarget
+    target: EffectTarget
   ) => void;
 }

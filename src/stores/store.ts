@@ -2,10 +2,10 @@ import { create } from "zustand";
 
 import {
   DeckStatus,
+  EffectTarget,
   GIDiceID,
   ICharacter,
   IPlayer,
-  SkillTarget,
 } from "@/models";
 
 import { GameAction } from "./action";
@@ -135,16 +135,16 @@ export const useGameStore = create<GameStore>((set, get) => ({
     let player = get().getPlayer(pos);
     let activeCharacter = [];
     const characters = Object.assign([], player.characters) as ICharacter[];
-    if (target === SkillTarget.Opponent) {
+    if (target === EffectTarget.Opponent) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
-    if (target === SkillTarget.All) {
+    if (target === EffectTarget.All) {
       activeCharacter = [0, 1, 2];
     }
-    if (target === SkillTarget.Back) {
+    if (target === EffectTarget.Back) {
       activeCharacter = [0, 1, 2].filter(i => i != get().activeCharacters[pos]);
     }
-    if (target === SkillTarget.Active) {
+    if (target === EffectTarget.Active) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
     activeCharacter.forEach(c => {
@@ -164,7 +164,7 @@ export const useGameStore = create<GameStore>((set, get) => ({
     let player = get().getPlayer(pos);
     const activeCharacter = [];
     const characters = Object.assign([], player.characters) as ICharacter[];
-    if (target === SkillTarget.Opponent) {
+    if (target === EffectTarget.Opponent) {
       activeCharacter.push(get().activeCharacters[pos]);
     }
     activeCharacter.forEach(c => {

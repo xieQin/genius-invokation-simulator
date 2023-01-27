@@ -1,17 +1,121 @@
 {
   "Undivided Heart": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ganyu"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Ganyu"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Frostflake Arrow"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": {
+          "damage": [
+            {
+              "damage": 1,
+              "damageType": "Cryo",
+              "target": "Active"
+            },
+            {
+              "damage": 3,
+              "damageType": "Physical",
+              "target": "Background"
+            }
+          ],
+          "time": [
+            {
+              "type": "Infinite",
+              "time": 1
+            }
+          ]
+        },
+        "condition": [
+          {
+            "category": "Check",
+            "value": "Frostflake Arrow > 1"
+          },
+          {
+            "category": "Cast Skill",
+            "value": "Frostflake Arrow"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Shaken, Not Purred": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diona"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diona"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Icy Paws"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": {
+          "damage": [
+            {
+              "damage": 1,
+              "damageType": "Cryo",
+              "target": "Active"
+            },
+            {
+              "damage": 3,
+              "damageType": "Physical",
+              "target": "Background"
+            }
+          ],
+          "time": [
+            {
+              "type": "Infinite",
+              "time": 1
+            }
+          ]
+        },
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "ICy Paws"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Cold-Blooded Strike": {
     "cardTarget": [],

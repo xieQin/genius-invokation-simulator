@@ -128,7 +128,7 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-// transCharacters();
+transCharacters();
 // transCards();
 // transI18n();
 
@@ -203,4 +203,4 @@ export const generateCardExtra = () => {
     JSON.stringify(Object.fromEntries(res))
   );
 };
-generateCardExtra();
+// generateCardExtra();

@@ -1,4 +1,4 @@
-import { IDamage, IHeal } from "./damage";
+import { IEffect } from "./effect";
 import { SummonsID } from "./summons";
 
 export interface ICost {
@@ -12,12 +12,11 @@ export interface ISkill {
   type: SkillSubType[];
   text: string;
   costs: ICost[];
-  damage: IDamage[];
   img: string;
   imgID: string;
   summons: SummonsID[];
+  effect: IEffect[];
   shield: string[];
-  heal: IHeal[];
 }
 
 export enum SkillType {
