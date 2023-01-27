@@ -44,6 +44,7 @@ export enum CardEffectType {
   RollPhase = "RollPhase",
   ChangePhase = "ChangePhase",
   CombatPhase = "CombatPhase",
+  Active = "Active",
   Any = "Any",
 }
 
@@ -59,12 +60,12 @@ export interface CardTime {
 }
 
 export interface CardEffect {
-  category: CardEffectType.CastSkill;
+  category: CardEffectType;
   effect: string[];
 }
 
-export interface CardCondition {
-  type: string;
+export interface CardModifyCondition {
+  category: CardEffectType;
 }
 
 export interface CardModify {
@@ -74,7 +75,7 @@ export interface CardModify {
     heal: IHeal[];
     time: CardTime[];
   };
-  condition: [];
+  condition: CardModifyCondition[];
 }
 
 export enum CardType {
