@@ -61,13 +61,16 @@ export interface CardTime {
 
 export interface CardEffect {
   category: CardEffectType;
-  effect: string[];
+  value: string | number;
 }
 
 export enum CardConditionType {
   CastSkill = "Cast Skill",
+  Shield = "Shield",
   Check = "Check",
   Target = "Target",
+  Element = "Element",
+  NormalAttack = "Normal Attack",
 }
 
 export interface CardModifyCondition {

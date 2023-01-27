@@ -18,31 +18,31 @@
     "cardEffect": [
       {
         "category": "Cast Skill",
-        "effect": "Frostflake Arrow"
+        "value": "Frostflake Arrow"
       }
     ],
     "cardModify": [
       {
-        "effect": {
-          "damage": [
-            {
-              "damage": 1,
-              "damageType": "Cryo",
-              "target": "Active"
-            },
-            {
-              "damage": 3,
-              "damageType": "Physical",
-              "target": "Background"
-            }
-          ],
-          "time": [
-            {
-              "type": "Infinite",
-              "time": 1
-            }
-          ]
-        },
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
         "condition": [
           {
             "category": "Check",
@@ -84,30 +84,30 @@
     ],
     "cardModify": [
       {
-        "effect": {
-          "damage": [
-            {
-              "damage": 1,
-              "damageType": "Cryo",
-              "target": "Active"
-            },
-            {
-              "damage": 3,
-              "damageType": "Physical",
-              "target": "Background"
-            }
-          ],
-          "time": [
-            {
-              "type": "Infinite",
-              "time": 1
-            }
-          ]
-        },
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill",
-            "value": "ICy Paws"
+            "value": "Icy Paws"
           },
           {
             "category": "Target",
@@ -118,81 +118,451 @@
     ]
   },
   "Cold-Blooded Strike": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kaeya"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kaeya"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Frostgnaw"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "Physical",
+            "target": "Active",
+            "value": 2
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "Frostgnaw"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Steady Breathing": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Chongyun"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Chongyun"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Chonghua's Layered Frost"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "target": "Active",
+            "value": 1
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "Chonghua's Layered Frost"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Kanten Senmyou Blessing": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kamisato Ayaka"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Kamisato Ayaka"
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "Active",
+            "value": -1
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
+        ],
+        "time": [],
+        "condition": []
+      }
+    ]
   },
   "Glorious Season": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Barbara"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Barbara"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Let the Show Begin♪"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "All",
+            "value": -1
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "time": 1
+          }
+        ],
+        "condition": []
+      }
+    ]
   },
   "The Scent Remained": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xingqiu"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xingqiu"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Fatal Rainscreen"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "target": "Active",
+            "value": 1
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": []
+      }
+    ]
   },
   "Prophecy of Submersion": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mona"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Mona"
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 2
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Element",
+            "value": "Hydro"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Flowing Flame": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diluc"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Diluc"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Searing Onslaught"
+      }
+    ],
     "cardModify": []
   },
   "Crossfire": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xiangling"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Xiangling"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Guoba Attack"
+      }
+    ],
     "cardModify": []
   },
   "Grand Expectation": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Bennett"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Bennett"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Fantastic Voyage"
+      }
+    ],
     "cardModify": []
   },
   "Naganohara Meteor Swarm": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Yoimiya"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Yoimiya"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Niwabi Fire-Dance"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "value": 1,
+            "target": "Opponent"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Shield",
+            "value": "Niwabi Enshou"
+          }
+        ]
+      }
+    ]
   },
   "Stellar Predator": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fischl"
+      }
+    ],
+    "combatLimit": [
+      {
+        "limitType": "character",
+        "limitNumber": 1,
+        "limit": "Fischl"
+      }
+    ],
+    "cardEffect": [
+      {
+        "category": "Cast Skill",
+        "effect": "Nightrider"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Opponent"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "time": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
   },
   "Awakening": {
     "cardTarget": [],

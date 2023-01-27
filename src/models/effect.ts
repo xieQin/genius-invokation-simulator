@@ -4,6 +4,7 @@ export enum EffectType {
   Damage = "Damage",
   Heal = "Heal",
   Shield = "Shield",
+  Talent = "Talent",
 }
 
 export enum EffectSubType {
@@ -16,6 +17,7 @@ export enum EffectSubType {
   Anemo = "Anemo",
   Hydro = "Hydro",
   Physical = "Physical",
+  ChangeCost = "Change Cost",
 }
 
 export const TransEffectSubTypeToGIElement = {
