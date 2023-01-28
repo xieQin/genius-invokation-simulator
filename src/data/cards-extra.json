@@ -2494,7 +2494,7 @@
     "cardEffect": [
       {
         "type": "ReRoll",
-        "subType": "reroll any",
+        "subType": "ReRoll Any",
         "value": 1,
         "target": "Active"
       }
@@ -3740,164 +3740,561 @@
     ]
   },
   "The Bestest Travel Companion!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Covert Die",
+        "subType": "Omni",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Changing Shifts": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": {
+          "type": "Change Phase",
+          "subType": "Change Cost",
+          "value": -1,
+          "target": "Active"
+        },
+        "time": {
+          "type": "Next",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          }
+        ]
+      }
+    ]
   },
   "Toss-Up": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "ReRoll",
+        "subType": "Any",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Strategize": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Draw Card",
+        "subType": "",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "I Haven't Lost Yet!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
+    "combatLimit": [
+      {
+        "type": "character",
+        "subType": "Character Defeated",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Omni",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Leave It to Me!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Next",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "When the Crane Returned": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Switch Character",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Next",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "After Cast Skill"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Starsigns": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Calx's Arts": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Shift",
+        "value": 1,
+        "target": "StandBy"
+      },
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Master of Weaponry": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Weapon",
+        "subType": "Shift",
+        "value": 1,
+        "target": "Select"
+      },
+      {
+        "type": "Weapon",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Blessing of the Divine Relic's Installation": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Artifact",
+        "subType": "Shift",
+        "value": 1,
+        "target": "Select"
+      },
+      {
+        "type": "Artifact",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Quick Knit": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Usage",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Send Off": {
-    "cardTarget": [],
+    "cardTarget": ["Opponent"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Destroy",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Guardian's Oath": {
-    "cardTarget": [],
+    "cardTarget": ["Opponent"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Destroy",
+        "value": 4,
+        "target": "All"
+      }
+    ],
     "cardModify": []
   },
   "Abyssal Summons": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "Region",
+        "subType": "Monster",
+        "value": 2
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Hilichurl",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Jueyun Guoba": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
   },
   "Adeptus' Temptation": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          }
+        ]
+      }
+    ]
   },
   "Lotus Flower Crisp": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": -3,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Next",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Defense",
+            "value": "After Received Damage"
+          }
+        ]
+      }
+    ]
   },
   "Northern Smoked Chicken": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
   },
   "Sweet Madame": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Mondstadt Hash Brown": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Mushroom Pizza": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Select"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "Select"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          }
+        ]
+      }
+    ]
   },
   "Minty Meat Rolls": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Select"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "Before End Phase"
+          },
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   }
 }

@@ -12,6 +12,7 @@ import {
 
 import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
+import CardsExtra from "./cards-extra.json";
 import CharactersExtra from "./character-extra.json";
 import SkillExtra from "./skill-extra.json";
 import {
@@ -100,6 +101,7 @@ export const transCards = () => {
         ],
         img: `${PUBLIC_PATH}/characters/${NameIDTrans(card.name)}.png`,
         imgID: NameIDTrans(card.name),
+        ...CardsExtra[card.name as keyof typeof CardsExtra],
       } as unknown as ICard)
   );
 
@@ -128,8 +130,8 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-transCharacters();
-// transCards();
+// transCharacters();
+transCards();
 // transI18n();
 
 const defaultSkillExtra = {

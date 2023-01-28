@@ -1,5 +1,5 @@
 import { Character } from "./character";
-import { EffectTarget, EffectType, IEffect } from "./effect";
+import { EffectTarget, IEffect } from "./effect";
 import { GIElement } from "./element";
 import {
   EqiupmentWeaponType,
@@ -28,7 +28,7 @@ export interface ICard {
 }
 
 export interface CardLimit {
-  type: "character" | "element" | "region" | "weapon";
+  type: "character" | "element" | "region" | "weapon" | "food";
   subType: Character | GIElement | GIRegion | EqiupmentWeaponType;
   value: number | string;
 }
@@ -37,6 +37,7 @@ export enum CardTimeType {
   Turn = "Turn",
   Round = "Round",
   Infinite = "Infinite",
+  Next = "Next",
 }
 
 export interface CardTime {
@@ -68,6 +69,7 @@ export enum CardConditionType {
   PlayCard = "Play Card",
   Icon = "Icon",
   Damage = "Damage",
+  Defense = "Defense",
 }
 
 export interface CardModifyCondition {

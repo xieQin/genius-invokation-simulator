@@ -26,6 +26,10 @@ export enum EffectType {
   ReRoll = "ReRoll",
   Icon = "Icon",
   Collect = "Collect",
+  CovertDie = "Covert Die",
+  Weapon = "Weapon",
+  Artifact = "Artifact",
+  Summon = "Summon",
 }
 
 export enum EffectSubType {
@@ -45,12 +49,20 @@ export enum EffectSubType {
   ChangeCost = "Change Cost",
   FastAction = "Fast Action",
   Add = "Add",
+  Shift = "Shift",
   All = "All",
   Attack = "Attack",
   Equip = "Equip",
   UnusedDie = "Unused Die",
   Food = "Food",
   Support = "Support",
+  ReRollAny = "ReRoll Any",
+  CharacterDefeated = "Character Defeated",
+  SwitchCharacter = "Switch Character",
+  Usage = "Usage",
+  Destroy = "Destroy",
+  Hilichurl = "Hilichurl",
+  Unaligned = "Unaligned",
 }
 
 export const TransEffectSubTypeToGIElement = {
