@@ -28,9 +28,9 @@ export interface ICard {
 }
 
 export interface CardLimit {
-  limitType: "character" | "element" | "region" | "weapon";
-  limitNumber: number;
-  limit: Character | GIElement | GIRegion | EqiupmentWeaponType;
+  type: "character" | "element" | "region" | "weapon";
+  subType: Character | GIElement | GIRegion | EqiupmentWeaponType;
+  value: number | string;
 }
 
 export enum CardTimeType {

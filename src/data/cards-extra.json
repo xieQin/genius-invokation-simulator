@@ -3,16 +3,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ganyu"
+        "type": "character",
+        "value": 1,
+        "subType": "Ganyu"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ganyu"
+        "type": "character",
+        "value": 1,
+        "subType": "Ganyu"
       }
     ],
     "cardEffect": [
@@ -66,16 +66,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diona"
+        "type": "character",
+        "value": 1,
+        "subType": "Diona"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diona"
+        "type": "character",
+        "value": 1,
+        "subType": "Diona"
       }
     ],
     "cardEffect": [
@@ -125,16 +125,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kaeya"
+        "type": "character",
+        "value": 1,
+        "subType": "Kaeya"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kaeya"
+        "type": "character",
+        "value": 1,
+        "subType": "Kaeya"
       }
     ],
     "cardEffect": [
@@ -178,16 +178,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Chongyun"
+        "type": "character",
+        "value": 1,
+        "subType": "Chongyun"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Chongyun"
+        "type": "character",
+        "value": 1,
+        "subType": "Chongyun"
       }
     ],
     "cardEffect": [
@@ -231,16 +231,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kamisato Ayaka"
+        "type": "character",
+        "value": 1,
+        "subType": "Kamisato Ayaka"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kamisato Ayaka"
+        "type": "character",
+        "value": 1,
+        "subType": "Kamisato Ayaka"
       }
     ],
     "cardEffect": [],
@@ -280,16 +280,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Barbara"
+        "type": "character",
+        "value": 1,
+        "subType": "Barbara"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Barbara"
+        "type": "character",
+        "value": 1,
+        "subType": "Barbara"
       }
     ],
     "cardEffect": [
@@ -324,16 +324,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xingqiu"
+        "type": "character",
+        "value": 1,
+        "subType": "Xingqiu"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xingqiu"
+        "type": "character",
+        "value": 1,
+        "subType": "Xingqiu"
       }
     ],
     "cardEffect": [
@@ -368,16 +368,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mona"
+        "type": "character",
+        "value": 1,
+        "subType": "Mona"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mona"
+        "type": "character",
+        "value": 1,
+        "subType": "Mona"
       }
     ],
     "cardEffect": [],
@@ -414,16 +414,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diluc"
+        "type": "character",
+        "value": 1,
+        "subType": "Diluc"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diluc"
+        "type": "character",
+        "value": 1,
+        "subType": "Diluc"
       }
     ],
     "cardEffect": [
@@ -440,16 +440,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xiangling"
+        "type": "character",
+        "value": 1,
+        "subType": "Xiangling"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xiangling"
+        "type": "character",
+        "value": 1,
+        "subType": "Xiangling"
       }
     ],
     "cardEffect": [
@@ -466,16 +466,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Bennett"
+        "type": "character",
+        "value": 1,
+        "subType": "Bennett"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Bennett"
+        "type": "character",
+        "value": 1,
+        "subType": "Bennett"
       }
     ],
     "cardEffect": [
@@ -492,16 +492,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Yoimiya"
+        "type": "character",
+        "value": 1,
+        "subType": "Yoimiya"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Yoimiya"
+        "type": "character",
+        "value": 1,
+        "subType": "Yoimiya"
       }
     ],
     "cardEffect": [
@@ -541,16 +541,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fischl"
+        "type": "character",
+        "value": 1,
+        "subType": "Fischl"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fischl"
+        "type": "character",
+        "value": 1,
+        "subType": "Fischl"
       }
     ],
     "cardEffect": [
@@ -590,16 +590,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Razor"
+        "type": "character",
+        "value": 1,
+        "subType": "Razor"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Razor"
+        "type": "character",
+        "value": 1,
+        "subType": "Razor"
       }
     ],
     "cardEffect": [
@@ -616,16 +616,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Keqing"
+        "type": "character",
+        "value": 1,
+        "subType": "Keqing"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Keqing"
+        "type": "character",
+        "value": 1,
+        "subType": "Keqing"
       }
     ],
     "cardEffect": [
@@ -642,16 +642,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Cyno"
+        "type": "character",
+        "value": 1,
+        "subType": "Cyno"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Cyno"
+        "type": "character",
+        "value": 1,
+        "subType": "Cyno"
       }
     ],
     "cardEffect": [
@@ -668,16 +668,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Sucrose"
+        "type": "character",
+        "value": 1,
+        "subType": "Sucrose"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Sucrose"
+        "type": "character",
+        "value": 1,
+        "subType": "Sucrose"
       }
     ],
     "cardEffect": [
@@ -694,16 +694,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jean"
+        "type": "character",
+        "value": 1,
+        "subType": "Jean"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jean"
+        "type": "character",
+        "value": 1,
+        "subType": "Jean"
       }
     ],
     "cardEffect": [
@@ -720,16 +720,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ningguang"
+        "type": "character",
+        "value": 1,
+        "subType": "Ningguang"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ningguang"
+        "type": "character",
+        "value": 1,
+        "subType": "Ningguang"
       }
     ],
     "cardEffect": [
@@ -746,16 +746,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Noelle"
+        "type": "character",
+        "value": 1,
+        "subType": "Noelle"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Noelle"
+        "type": "character",
+        "value": 1,
+        "subType": "Noelle"
       }
     ],
     "cardEffect": [
@@ -772,16 +772,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Collei"
+        "type": "character",
+        "value": 1,
+        "subType": "Collei"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Collei"
+        "type": "character",
+        "value": 1,
+        "subType": "Collei"
       }
     ],
     "cardEffect": [
@@ -798,16 +798,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Rhodeia of Loch"
+        "type": "character",
+        "value": 1,
+        "subType": "Rhodeia of Loch"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Rhodeia of Loch"
+        "type": "character",
+        "value": 1,
+        "subType": "Rhodeia of Loch"
       }
     ],
     "cardEffect": [
@@ -824,16 +824,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mirror Maiden"
+        "type": "character",
+        "value": 1,
+        "subType": "Mirror Maiden"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mirror Maiden"
+        "type": "character",
+        "value": 1,
+        "subType": "Mirror Maiden"
       }
     ],
     "cardEffect": [
@@ -850,16 +850,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fatui Pyro Agent"
+        "type": "character",
+        "value": 1,
+        "subType": "Fatui Pyro Agent"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fatui Pyro Agent"
+        "type": "character",
+        "value": 1,
+        "subType": "Fatui Pyro Agent"
       }
     ],
     "cardEffect": [
@@ -876,16 +876,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Maguu Kenki"
+        "type": "character",
+        "value": 1,
+        "subType": "Maguu Kenki"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Maguu Kenki"
+        "type": "character",
+        "value": 1,
+        "subType": "Maguu Kenki"
       }
     ],
     "cardEffect": [
@@ -902,16 +902,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Stonehide Lawachurl"
+        "type": "character",
+        "value": 1,
+        "subType": "Stonehide Lawachurl"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Stonehide Lawachurl"
+        "type": "character",
+        "value": 1,
+        "subType": "Stonehide Lawachurl"
       }
     ],
     "cardEffect": [
@@ -928,16 +928,16 @@
     "cardTarget": [],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jadeplume Terrorshroom"
+        "type": "character",
+        "value": 1,
+        "subType": "Jadeplume Terrorshroom"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jadeplume Terrorshroom"
+        "type": "character",
+        "value": 1,
+        "subType": "Jadeplume Terrorshroom"
       }
     ],
     "cardEffect": [
@@ -954,16 +954,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Klee"
+        "type": "character",
+        "value": 1,
+        "subType": "Klee"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Klee"
+        "type": "character",
+        "value": 1,
+        "subType": "Klee"
       }
     ],
     "cardEffect": [
@@ -980,16 +980,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Beidou"
+        "type": "character",
+        "value": 1,
+        "subType": "Beidou"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Beidou"
+        "type": "character",
+        "value": 1,
+        "subType": "Beidou"
       }
     ],
     "cardEffect": [
@@ -3348,9 +3348,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Cryo"
+        "type": "element",
+        "value": 2,
+        "subType": "Cryo"
       }
     ],
     "combatLimit": [],
@@ -3368,9 +3368,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Cryo"
+        "type": "element",
+        "value": 2,
+        "subType": "Cryo"
       }
     ],
     "combatLimit": [],
@@ -3410,9 +3410,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Hydro"
+        "type": "element",
+        "value": 2,
+        "subType": "Hydro"
       }
     ],
     "combatLimit": [],
@@ -3430,9 +3430,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Hydro"
+        "type": "element",
+        "value": 2,
+        "subType": "Hydro"
       }
     ],
     "combatLimit": [],
@@ -3456,9 +3456,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Pyro"
+        "type": "element",
+        "value": 2,
+        "subType": "Pyro"
       }
     ],
     "combatLimit": [],
@@ -3476,9 +3476,9 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Pyro"
+        "type": "element",
+        "value": 2,
+        "subType": "Pyro"
       }
     ],
     "combatLimit": [],
@@ -3518,63 +3518,226 @@
     "cardTarget": ["Active"],
     "deckLimit": [
       {
-        "limitType": "element",
-        "limitNumber": 2,
-        "limit": "Electro"
+        "type": "element",
+        "value": 2,
+        "subType": "Electro"
+      }
+    ],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Electro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
+  },
+  "Elemental Resonance: High Voltage": {
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Electro"
+      }
+    ],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Winds": {
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Anemo"
+      }
+    ],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Anemo",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
+  },
+  "Elemental Resonance: Impetuous Winds": {
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Anemo"
+      }
+    ],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Omni",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Change Phase",
+        "subType": "Fast Action",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
+  },
+  "Elemental Resonance: Woven Stone": {
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Geo"
+      }
+    ],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Geo",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
+  },
+  "Elemental Resonance: Enduring Rock": {
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Geo"
       }
     ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
-  },
-  "Elemental Resonance: High Voltage": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Elemental Resonance: Woven Winds": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Elemental Resonance: Impetuous Winds": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Elemental Resonance: Woven Stone": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Elemental Resonance: Enduring Rock": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Geo Related Damage"
+          },
+          {
+            "category": "Shield",
+            "value": "Exist Shield"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Weeds": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Dendro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Dendro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Sprawling Greenery": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Dendro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Shield",
+        "subType": "Burning Flame",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Dendro Core",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Catalyzing Field",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "The Bestest Travel Companion!": {
     "cardTarget": [],
