@@ -42,7 +42,7 @@ export enum CardTimeType {
 
 export interface CardTime {
   type: CardTimeType;
-  time: number;
+  value: number;
 }
 
 export enum CardConditionType {

@@ -1,6 +1,10 @@
+import { CardModify } from "./card";
+
 export interface ISummon {
-  id: SummonsID;
+  id: number;
   name: string;
+  content: string;
+  cardModify: CardModify[];
 }
 
 export enum Summons {

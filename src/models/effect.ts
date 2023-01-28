@@ -11,6 +11,7 @@ export enum EffectType {
   Attack = "Attack",
   Defense = "Defense",
   Cost = "Cost",
+  Elemental = "Elemental",
   StartPhase = "Start Phase",
   ActionPhase = "Action Phase",
   EndPhase = "End Phase",
