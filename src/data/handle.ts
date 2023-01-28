@@ -10,8 +10,9 @@ import {
   SkillSubType,
 } from "@/models";
 
-import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
+import GIData from "./cards_en-us.json";
+import CardsExtra from "./cards-extra.json";
 import CharactersExtra from "./character-extra.json";
 import SkillExtra from "./skill-extra.json";
 import {
@@ -100,6 +101,7 @@ export const transCards = () => {
         ],
         img: `${PUBLIC_PATH}/characters/${NameIDTrans(card.name)}.png`,
         imgID: NameIDTrans(card.name),
+        ...CardsExtra[card.name as keyof typeof CardsExtra],
       } as unknown as ICard)
   );
 
@@ -129,7 +131,7 @@ export const transI18n = () => {
 };
 
 transCharacters();
-// transCards();
+transCards();
 // transI18n();
 
 const defaultSkillExtra = {

@@ -23,45 +23,26 @@ export interface ICard {
   cardTarget: EffectTarget;
   deckLimit: CardLimit[];
   combatLimit: CardLimit[];
-  cardEffect: CardEffect[];
+  cardEffect: IEffect[];
   cardModify: CardModify[];
 }
 
 export interface CardLimit {
-  limitType: "character" | "element" | "region" | "weapon";
-  limitNumber: number;
-  limit: Character | GIElement | GIRegion | EqiupmentWeaponType;
-}
-
-export enum CardEffectType {
-  CastSkill = "Cast Skill",
-  PlayCard = "Play Card",
-  Attack = "Attack",
-  Defense = "Defense",
-  Cost = "Cost",
-  StartPhase = "Start Phase",
-  EndPhase = "End Phase",
-  RollPhase = "Roll Phase",
-  ChangePhase = "Change Phase",
-  CombatPhase = "Combat Phase",
-  Active = "Active",
-  Any = "Any",
+  type: "character" | "element" | "region" | "weapon" | "food";
+  subType: Character | GIElement | GIRegion | EqiupmentWeaponType;
+  value: number | string;
 }
 
 export enum CardTimeType {
   Turn = "Turn",
   Round = "Round",
   Infinite = "Infinite",
+  Next = "Next",
 }
 
 export interface CardTime {
   type: CardTimeType;
-  time: number;
-}
-
-export interface CardEffect {
-  category: CardEffectType;
-  value: string | number;
+  value: number;
 }
 
 export enum CardConditionType {
@@ -72,9 +53,23 @@ export enum CardConditionType {
   Element = "Element",
   NormalAttack = "Normal Attack",
   ElementalSkill = "Elemental Skill",
+  ElementalBurst = "Elemental Burst",
+  ElementalReaction = "Elemental Reaction",
+  EquipTalent = "Equip Talent",
+  StartPhase = "Start Phase",
+  ActionPhase = "Action Phase",
+  EndPhase = "End Phase",
+  RollPhase = "Roll Phase",
+  ChangePhase = "Change Phase",
+  CombatPhase = "Combat Phase",
   HP = "HP",
   Max = "Max",
   Region = "Region",
+  Opponent = "Opponent",
+  PlayCard = "Play Card",
+  Icon = "Icon",
+  Damage = "Damage",
+  Defense = "Defense",
 }
 
 export interface CardModifyCondition {

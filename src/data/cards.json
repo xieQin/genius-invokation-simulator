@@ -10,7 +10,42 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/UndividedHeart.png",
-    "imgID": "UndividedHeart"
+    "imgID": "UndividedHeart",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Ganyu" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Ganyu" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostflake Arrow",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Check", "value": "Frostflake Arrow > 1" },
+          { "category": "Cast Skill", "value": "Frostflake Arrow" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 211021,
@@ -23,7 +58,41 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ShakenNotPurred.png",
-    "imgID": "ShakenNotPurred"
+    "imgID": "ShakenNotPurred",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Diona" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Diona" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Icy Paws",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          },
+          {
+            "type": "Damage",
+            "subType": "Physical",
+            "target": "Background",
+            "value": 3
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "Icy Paws" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 211031,
@@ -36,7 +105,35 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ColdBloodedStrike.png",
-    "imgID": "ColdBloodedStrike"
+    "imgID": "ColdBloodedStrike",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Kaeya" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Kaeya" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostgnaw",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "Physical",
+            "target": "Active",
+            "value": 2
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "Frostgnaw" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 211041,
@@ -49,7 +146,30 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SteadyBreathing.png",
-    "imgID": "SteadyBreathing"
+    "imgID": "SteadyBreathing",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Chongyun" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Chongyun" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Chonghua's Layered Frost",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Shield", "subType": "", "target": "Active", "value": 1 }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "Chonghua's Layered Frost" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 211051,
@@ -62,7 +182,41 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/KantenSenmyouBlessing.png",
-    "imgID": "KantenSenmyouBlessing"
+    "imgID": "KantenSenmyouBlessing",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Kamisato Ayaka" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Kamisato Ayaka" }
+    ],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "Active",
+            "value": -1
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "target": "Opponent",
+            "value": 1
+          }
+        ],
+        "time": [],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 212011,
@@ -75,7 +229,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/GloriousSeason.png",
-    "imgID": "GloriousSeason"
+    "imgID": "GloriousSeason",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Barbara" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Barbara" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Let the Show Begin♪",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Talent",
+            "subType": "Change Cost",
+            "target": "All",
+            "value": -1
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 212021,
@@ -88,7 +267,27 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TheScentRemained.png",
-    "imgID": "TheScentRemained"
+    "imgID": "TheScentRemained",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Xingqiu" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Xingqiu" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fatal Rainscree",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Shield", "subType": "", "target": "Active", "value": 1 }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 212031,
@@ -101,7 +300,28 @@
       { "costNum": 3, "costType": "Energy" }
     ],
     "img": "/characters/ProphecyofSubmersion.png",
-    "imgID": "ProphecyofSubmersion"
+    "imgID": "ProphecyofSubmersion",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Mona" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Mona" }],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Hydro",
+            "target": "Opponent",
+            "value": 2
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Element", "value": "Hydro" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 213011,
@@ -114,7 +334,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/FlowingFlame.png",
-    "imgID": "FlowingFlame"
+    "imgID": "FlowingFlame",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Diluc" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Diluc" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Searing Onslaught",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 213021,
@@ -127,7 +359,21 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Crossfire.png",
-    "imgID": "Crossfire"
+    "imgID": "Crossfire",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Xiangling" }],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Xiangling" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Guoba Attack",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 213031,
@@ -140,7 +386,19 @@
       { "costNum": 2, "costType": "Energy" }
     ],
     "img": "/characters/GrandExpectation.png",
-    "imgID": "GrandExpectation"
+    "imgID": "GrandExpectation",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Bennett" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Bennett" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fantastic Voyage",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 213051,
@@ -153,7 +411,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/NaganoharaMeteorSwarm.png",
-    "imgID": "NaganoharaMeteorSwarm"
+    "imgID": "NaganoharaMeteorSwarm",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Yoimiya" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Yoimiya" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Niwabi Fire-Dance",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Cryo",
+            "value": 1,
+            "target": "Opponent"
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [{ "category": "Shield", "value": "Niwabi Enshou" }]
+      }
+    ]
   },
   {
     "id": 214011,
@@ -166,7 +449,34 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/StellarPredator.png",
-    "imgID": "StellarPredator"
+    "imgID": "StellarPredator",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Fischl" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Fischl" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Nightrider",
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Opponent"
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 214021,
@@ -179,7 +489,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Awakening.png",
-    "imgID": "Awakening"
+    "imgID": "Awakening",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Razor" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Razor" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Claw and Thunder",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 214031,
@@ -192,7 +514,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ThunderingPenance.png",
-    "imgID": "ThunderingPenance"
+    "imgID": "ThunderingPenance",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Keqing" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Keqing" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Stellar Restoration",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 214041,
@@ -205,7 +539,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/FeatherfallJudgment.png",
-    "imgID": "FeatherfallJudgment"
+    "imgID": "FeatherfallJudgment",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Cyno" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Cyno" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Secret Rite: Chasmic Soulfarer",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 215011,
@@ -218,7 +564,19 @@
       { "costNum": 2, "costType": "Energy" }
     ],
     "img": "/characters/ChaoticEntropy.png",
-    "imgID": "ChaoticEntropy"
+    "imgID": "ChaoticEntropy",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Sucrose" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Sucrose" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Forbidden Creation - Isomer 75 / Type II",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 215021,
@@ -231,7 +589,19 @@
       { "costNum": 3, "costType": "Energy" }
     ],
     "img": "/characters/LandsofDandelion.png",
-    "imgID": "LandsofDandelion"
+    "imgID": "LandsofDandelion",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Jean" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Jean" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Dandelion Breeze",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 216011,
@@ -244,7 +614,21 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/StrategicReserve.png",
-    "imgID": "StrategicReserve"
+    "imgID": "StrategicReserve",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Ningguang" }],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Ningguang" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Jade Screen",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 216021,
@@ -257,7 +641,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/IGotYourBack.png",
-    "imgID": "IGotYourBack"
+    "imgID": "IGotYourBack",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Noelle" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Noelle" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Breastplate",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 217011,
@@ -270,7 +666,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/FloralSidewinder.png",
-    "imgID": "FloralSidewinder"
+    "imgID": "FloralSidewinder",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "character", "value": 1, "subType": "Collei" }],
+    "combatLimit": [{ "type": "character", "value": 1, "subType": "Collei" }],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Floral Brush",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 222011,
@@ -283,7 +691,23 @@
       { "costNum": 3, "costType": "Energy" }
     ],
     "img": "/characters/StreamingSurge.png",
-    "imgID": "StreamingSurge"
+    "imgID": "StreamingSurge",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Rhodeia of Loch" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Rhodeia of Loch" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Tide and Torren",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 222021,
@@ -296,7 +720,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MirrorCage.png",
-    "imgID": "MirrorCage"
+    "imgID": "MirrorCage",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Mirror Maiden" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Mirror Maiden" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Influx Blast",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 223011,
@@ -309,7 +749,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/PaidinFull.png",
-    "imgID": "PaidinFull"
+    "imgID": "PaidinFull",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Fatui Pyro Agent" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Fatui Pyro Agent" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Prowl",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 225011,
@@ -322,7 +778,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TranscendentAutomaton.png",
-    "imgID": "TranscendentAutomaton"
+    "imgID": "TranscendentAutomaton",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Maguu Kenki" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Maguu Kenki" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Blustering Blade",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 226011,
@@ -335,7 +807,23 @@
       { "costNum": 2, "costType": "Energy" }
     ],
     "img": "/characters/StonehideReforged.png",
-    "imgID": "StonehideReforged"
+    "imgID": "StonehideReforged",
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Stonehide Lawachurl" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Stonehide Lawachurl" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Upa Shato",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 227011,
@@ -348,7 +836,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ProliferatingSpores.png",
-    "imgID": "ProliferatingSpores"
+    "imgID": "ProliferatingSpores",
+    "cardTarget": [],
+    "deckLimit": [
+      { "type": "character", "value": 1, "subType": "Jadeplume Terrorshroom" }
+    ],
+    "combatLimit": [
+      { "type": "character", "value": 1, "subType": "Jadeplume Terrorshroom" }
+    ],
+    "cardEffect": [
+      {
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Volatile Spore Cloud",
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 311101,
@@ -361,7 +865,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MagicGuide.png",
-    "imgID": "MagicGuide"
+    "imgID": "MagicGuide",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Damage", "subType": "All", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 311102,
@@ -374,7 +891,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SacrificialFragments.png",
-    "imgID": "SacrificialFragments"
+    "imgID": "SacrificialFragments",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Same", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Skill", "value": "After Elemental Skill" }
+        ]
+      }
+    ]
   },
   {
     "id": 311103,
@@ -387,7 +926,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SkywardAtlas.png",
-    "imgID": "SkywardAtlas"
+    "imgID": "SkywardAtlas",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 311201,
@@ -400,7 +961,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/RavenBow.png",
-    "imgID": "RavenBow"
+    "imgID": "RavenBow",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 311202,
@@ -413,7 +987,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SacrificialBow.png",
-    "imgID": "SacrificialBow"
+    "imgID": "SacrificialBow",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Same", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Skill", "value": "After Elemental Skill" }
+        ]
+      }
+    ]
   },
   {
     "id": 311203,
@@ -426,7 +1022,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SkywardHarp.png",
-    "imgID": "SkywardHarp"
+    "imgID": "SkywardHarp",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 311301,
@@ -439,7 +1057,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WhiteIronGreatsword.png",
-    "imgID": "WhiteIronGreatsword"
+    "imgID": "WhiteIronGreatsword",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 311302,
@@ -452,7 +1083,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SacrificialGreatsword.png",
-    "imgID": "SacrificialGreatsword"
+    "imgID": "SacrificialGreatsword",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Same", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Skill", "value": "After Elemental Skill" }
+        ]
+      }
+    ]
   },
   {
     "id": 311303,
@@ -465,7 +1118,27 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WolfsGravestone.png",
-    "imgID": "WolfsGravestone"
+    "imgID": "WolfsGravestone",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 2, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [{ "category": "HP", "value": "HP <= 6" }]
+      }
+    ]
   },
   {
     "id": 311401,
@@ -478,7 +1151,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WhiteTassel.png",
-    "imgID": "WhiteTassel"
+    "imgID": "WhiteTassel",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 311402,
@@ -491,7 +1177,30 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LithicSpear.png",
-    "imgID": "LithicSpear"
+    "imgID": "LithicSpear",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Shield", "subType": "", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Max", "value": 3 },
+          { "category": "Region", "value": "Liyue" }
+        ]
+      }
+    ]
   },
   {
     "id": 311403,
@@ -504,7 +1213,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SkywardSpine.png",
-    "imgID": "SkywardSpine"
+    "imgID": "SkywardSpine",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 311501,
@@ -517,7 +1248,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TravelersHandySword.png",
-    "imgID": "TravelersHandySword"
+    "imgID": "TravelersHandySword",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      }
+    ]
   },
   {
     "id": 311502,
@@ -530,7 +1274,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SacrificialSword.png",
-    "imgID": "SacrificialSword"
+    "imgID": "SacrificialSword",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Same", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Skill", "value": "After Elemental Skill" }
+        ]
+      }
+    ]
   },
   {
     "id": 311503,
@@ -543,7 +1309,30 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/AquilaFavonia.png",
-    "imgID": "AquilaFavonia"
+    "imgID": "AquilaFavonia",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Attack", "subType": "Attack", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": []
+      },
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "After Cast Skill" },
+          { "category": "Max", "value": 2 }
+        ]
+      }
+    ]
   },
   {
     "id": 312001,
@@ -556,7 +1345,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/AdventurersBandana.png",
-    "imgID": "AdventurersBandana"
+    "imgID": "AdventurersBandana",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" },
+          { "category": "Max", "value": 3 }
+        ]
+      }
+    ]
   },
   {
     "id": 312002,
@@ -569,7 +1374,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LuckyDogsSilverCirclet.png",
-    "imgID": "LuckyDogsSilverCirclet"
+    "imgID": "LuckyDogsSilverCirclet",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Skill", "value": "After Elemental Skill" },
+          { "category": "Max", "value": 1 }
+        ]
+      }
+    ]
   },
   {
     "id": 312003,
@@ -582,7 +1403,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TravelingDoctorsHandkerchief.png",
-    "imgID": "TravelingDoctorsHandkerchief"
+    "imgID": "TravelingDoctorsHandkerchief",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Burst", "value": "After Elemental Burst" },
+          { "category": "Max", "value": 1 }
+        ]
+      }
+    ]
   },
   {
     "id": 312004,
@@ -595,7 +1432,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/GamblersEarrings.png",
-    "imgID": "GamblersEarrings"
+    "imgID": "GamblersEarrings",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Die", "subType": "Omni", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Opponent", "value": "Die" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312005,
@@ -608,7 +1461,26 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/InstructorsCap.png",
-    "imgID": "InstructorsCap"
+    "imgID": "InstructorsCap",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Die", "subType": "Same", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          { "category": "Max", "value": 3 }
+        ]
+      }
+    ]
   },
   {
     "id": 312006,
@@ -621,7 +1493,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ExilesCirclet.png",
-    "imgID": "ExilesCirclet"
+    "imgID": "ExilesCirclet",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "StandBy"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Burst", "value": "After Elemental Burst" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312101,
@@ -634,7 +1528,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/BrokenRimesEcho.png",
-    "imgID": "BrokenRimesEcho"
+    "imgID": "BrokenRimesEcho",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312102,
@@ -647,7 +1566,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/BlizzardStrayer.png",
-    "imgID": "BlizzardStrayer"
+    "imgID": "BlizzardStrayer",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Cryo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312201,
@@ -660,7 +1620,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WineStainedTricorne.png",
-    "imgID": "WineStainedTricorne"
+    "imgID": "WineStainedTricorne",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312202,
@@ -673,7 +1658,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/HeartofDepth.png",
-    "imgID": "HeartofDepth"
+    "imgID": "HeartofDepth",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Hydro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312301,
@@ -686,7 +1712,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WitchsScorchingHat.png",
-    "imgID": "WitchsScorchingHat"
+    "imgID": "WitchsScorchingHat",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312302,
@@ -699,7 +1750,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/CrimsonWitchofFlames.png",
-    "imgID": "CrimsonWitchofFlames"
+    "imgID": "CrimsonWitchofFlames",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Pyro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312401,
@@ -712,7 +1804,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ThunderSummonersCrown.png",
-    "imgID": "ThunderSummonersCrown"
+    "imgID": "ThunderSummonersCrown",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312402,
@@ -725,7 +1842,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ThunderingFury.png",
-    "imgID": "ThunderingFury"
+    "imgID": "ThunderingFury",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312501,
@@ -738,7 +1896,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ViridescentVenerersDiadem.png",
-    "imgID": "ViridescentVenerersDiadem"
+    "imgID": "ViridescentVenerersDiadem",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312502,
@@ -751,7 +1934,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ViridescentVenerer.png",
-    "imgID": "ViridescentVenerer"
+    "imgID": "ViridescentVenerer",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Anemo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312601,
@@ -764,7 +1988,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MaskofSolitudeBasalt.png",
-    "imgID": "MaskofSolitudeBasalt"
+    "imgID": "MaskofSolitudeBasalt",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312602,
@@ -777,7 +2026,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ArchaicPetra.png",
-    "imgID": "ArchaicPetra"
+    "imgID": "ArchaicPetra",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Geo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312701,
@@ -790,7 +2080,32 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LaurelCoronet.png",
-    "imgID": "LaurelCoronet"
+    "imgID": "LaurelCoronet",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 312702,
@@ -803,7 +2118,48 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/DeepwoodMemories.png",
-    "imgID": "DeepwoodMemories"
+    "imgID": "DeepwoodMemories",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 321001,
@@ -816,7 +2172,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LiyueHarborWharf.png",
-    "imgID": "LiyueHarborWharf"
+    "imgID": "LiyueHarborWharf",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Draw Card", "subType": "", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 2 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 321002,
@@ -829,7 +2202,31 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/KnightsofFavoniusLibrary.png",
-    "imgID": "KnightsofFavoniusLibrary"
+    "imgID": "KnightsofFavoniusLibrary",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "ReRoll",
+        "subType": "ReRoll Any",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "ReRoll", "subType": "", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 321003,
@@ -842,7 +2239,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/JadeChamber.png",
-    "imgID": "JadeChamber"
+    "imgID": "JadeChamber",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Same",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Roll Phase", "value": "After Roll" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 321004,
@@ -855,7 +2274,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/DawnWinery.png",
-    "imgID": "DawnWinery"
+    "imgID": "DawnWinery",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Change Cost",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Change Phase", "value": "After Switch Character" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 321005,
@@ -868,7 +2309,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WangshuInn.png",
-    "imgID": "WangshuInn"
+    "imgID": "WangshuInn",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 2, "target": "StandBy" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "StandBy" }
+        ]
+      }
+    ]
   },
   {
     "id": 321006,
@@ -881,7 +2338,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/FavoniusCathedral.png",
-    "imgID": "FavoniusCathedral"
+    "imgID": "FavoniusCathedral",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322001,
@@ -894,7 +2367,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Paimon.png",
-    "imgID": "Paimon"
+    "imgID": "Paimon",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Die", "subType": "Omni", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Action Phase", "value": "Before Action Phase" },
+          { "category": "Max", "value": 2 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322002,
@@ -907,7 +2397,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Katheryne.png",
-    "imgID": "Katheryne"
+    "imgID": "Katheryne",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Change Phase", "value": "After Switch Character" },
+          { "category": "Max", "value": 2 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322003,
@@ -920,7 +2432,40 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Timaeus.png",
-    "imgID": "Timaeus"
+    "imgID": "Timaeus",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Icon", "subType": "Add", "value": 2, "target": "Active" }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Icon", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Play Card", "value": "After Play Card: Artifact" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322004,
@@ -933,7 +2478,40 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Wagner.png",
-    "imgID": "Wagner"
+    "imgID": "Wagner",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Icon", "subType": "Add", "value": 2, "target": "Active" }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Icon", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Play Card", "value": "After Play Card: Weapon" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322005,
@@ -946,7 +2524,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ChefMao.png",
-    "imgID": "ChefMao"
+    "imgID": "ChefMao",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Die", "subType": "Any", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Play Card", "value": "After Play Card: Food" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322006,
@@ -959,7 +2553,28 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Tubby.png",
-    "imgID": "Tubby"
+    "imgID": "Tubby",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Support",
+            "value": -2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Play Card", "value": "After Play Card: Support" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322007,
@@ -972,7 +2587,45 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Timmie.png",
-    "imgID": "Timmie"
+    "imgID": "Timmie",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Icon", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          { "type": "Draw Card", "subType": "", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Icon", "value": 3 },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Omni", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Icon", "value": 3 },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322008,
@@ -985,7 +2638,51 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Liben.png",
-    "imgID": "Liben"
+    "imgID": "Liben",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Collect",
+            "subType": "Unused Die",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Max", "value": 3 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          { "type": "Draw Card", "subType": "", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Action Phase", "value": "Before Action Phase" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          { "type": "Die", "subType": "Omni", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Action Phase", "value": "Before Action Phase" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322009,
@@ -998,7 +2695,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ChangtheNinth.png",
-    "imgID": "ChangtheNinth"
+    "imgID": "ChangtheNinth",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Icon", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Damage", "value": "Physical" },
+          { "category": "Max", "value": 3 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322010,
@@ -1011,7 +2725,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Ellin.png",
-    "imgID": "Ellin"
+    "imgID": "Ellin",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Die Cost", "subType": "", "value": -1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "After Cast Skill More" },
+          { "category": "Max", "value": 99 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322011,
@@ -1024,7 +2755,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/IronTongueTian.png",
-    "imgID": "IronTongueTian"
+    "imgID": "IronTongueTian",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Energy", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 2 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 322012,
@@ -1037,7 +2784,23 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LiuSu.png",
-    "imgID": "LiuSu"
+    "imgID": "LiuSu",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Energy", "subType": "Add", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 2 }],
+        "condition": [
+          { "category": "Change Phase", "value": "After Switch Character" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 323001,
@@ -1050,7 +2813,38 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ParametricTransformer.png",
-    "imgID": "ParametricTransformer"
+    "imgID": "ParametricTransformer",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Different",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Icon", "value": 3 },
+          { "category": "Target", "value": "Active" }
+        ]
+      },
+      {
+        "effect": [
+          { "type": "Icon", "subType": "Add", "value": 1, "target": "All" }
+        ],
+        "time": [{ "type": "Infinite", "value": 1 }],
+        "condition": [
+          { "category": "Damage", "value": "After Elemental Damage" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 323002,
@@ -1063,7 +2857,30 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/NRE.png",
-    "imgID": "NRE"
+    "imgID": "NRE",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Draw Card", "subType": "Food", "value": 1, "target": "Active" }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "Food",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Play Card", "value": "After Play Card: Food" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 331101,
@@ -1076,7 +2893,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenIce.png",
-    "imgID": "ElementalResonanceWovenIce"
+    "imgID": "ElementalResonanceWovenIce",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Cryo" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Cryo", "value": 2, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331102,
@@ -1089,7 +2913,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceShatteringIce.png",
-    "imgID": "ElementalResonanceShatteringIce"
+    "imgID": "ElementalResonanceShatteringIce",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Cryo" }],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Damage", "subType": "All", "value": 2, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Damage", "value": "Next Damage" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 331201,
@@ -1102,7 +2943,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenWaters.png",
-    "imgID": "ElementalResonanceWovenWaters"
+    "imgID": "ElementalResonanceWovenWaters",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Hydro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Hydro", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331202,
@@ -1115,7 +2963,15 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceSoothingWater.png",
-    "imgID": "ElementalResonanceSoothingWater"
+    "imgID": "ElementalResonanceSoothingWater",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Hydro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Heal", "subType": "", "value": 2, "target": "Active" },
+      { "type": "Heal", "subType": "", "value": 1, "target": "StandBy" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331301,
@@ -1128,7 +2984,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenFlames.png",
-    "imgID": "ElementalResonanceWovenFlames"
+    "imgID": "ElementalResonanceWovenFlames",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Pyro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Pyro", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331302,
@@ -1141,7 +3004,29 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceFerventFlames.png",
-    "imgID": "ElementalResonanceFerventFlames"
+    "imgID": "ElementalResonanceFerventFlames",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Pyro" }],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Damage", "value": "Next Pyro Related Damage" },
+          { "category": "Max", "value": 1 },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 331401,
@@ -1154,7 +3039,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenThunder.png",
-    "imgID": "ElementalResonanceWovenThunder"
+    "imgID": "ElementalResonanceWovenThunder",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Electro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Electro", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331402,
@@ -1167,7 +3059,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceHighVoltage.png",
-    "imgID": "ElementalResonanceHighVoltage"
+    "imgID": "ElementalResonanceHighVoltage",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Electro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Energy", "subType": "Add", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331501,
@@ -1180,7 +3079,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenWinds.png",
-    "imgID": "ElementalResonanceWovenWinds"
+    "imgID": "ElementalResonanceWovenWinds",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Anemo" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Anemo", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331502,
@@ -1193,7 +3099,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceImpetuousWinds.png",
-    "imgID": "ElementalResonanceImpetuousWinds"
+    "imgID": "ElementalResonanceImpetuousWinds",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Anemo" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Omni", "value": 1, "target": "Active" },
+      {
+        "type": "Change Phase",
+        "subType": "Fast Action",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 331601,
@@ -1206,7 +3125,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenStone.png",
-    "imgID": "ElementalResonanceWovenStone"
+    "imgID": "ElementalResonanceWovenStone",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Geo" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Geo", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331602,
@@ -1219,7 +3145,24 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceEnduringRock.png",
-    "imgID": "ElementalResonanceEnduringRock"
+    "imgID": "ElementalResonanceEnduringRock",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Geo" }],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Shield", "subType": "", "value": 3, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Damage", "value": "Next Geo Related Damage" },
+          { "category": "Shield", "value": "Exist Shield" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 331701,
@@ -1232,7 +3175,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceWovenWeeds.png",
-    "imgID": "ElementalResonanceWovenWeeds"
+    "imgID": "ElementalResonanceWovenWeeds",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Dendro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Die", "subType": "Dendro", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 331702,
@@ -1245,7 +3195,50 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ElementalResonanceSprawlingGreenery.png",
-    "imgID": "ElementalResonanceSprawlingGreenery"
+    "imgID": "ElementalResonanceSprawlingGreenery",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "element", "value": 2, "subType": "Dendro" }],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Shield",
+        "subType": "Burning Flame",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Dendro Core",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Catalyzing Field",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 332001,
@@ -1258,7 +3251,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TheBestestTravelCompanion.png",
-    "imgID": "TheBestestTravelCompanion"
+    "imgID": "TheBestestTravelCompanion",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Covert Die",
+        "subType": "Omni",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 332002,
@@ -1271,7 +3276,25 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/ChangingShifts.png",
-    "imgID": "ChangingShifts"
+    "imgID": "ChangingShifts",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": {
+          "type": "Change Phase",
+          "subType": "Change Cost",
+          "value": -1,
+          "target": "Active"
+        },
+        "time": [{ "type": "Next", "value": 1 }],
+        "condition": [
+          { "category": "Change Phase", "value": "After Switch Character" }
+        ]
+      }
+    ]
   },
   {
     "id": 332003,
@@ -1284,7 +3307,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/TossUp.png",
-    "imgID": "TossUp"
+    "imgID": "TossUp",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "ReRoll", "subType": "Any", "value": 2, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332004,
@@ -1297,7 +3327,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Strategize.png",
-    "imgID": "Strategize"
+    "imgID": "Strategize",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Draw Card", "subType": "", "value": 2, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332005,
@@ -1310,7 +3347,22 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/IHaventLostYet.png",
-    "imgID": "IHaventLostYet"
+    "imgID": "IHaventLostYet",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [
+      {
+        "type": "character",
+        "subType": "Character Defeated",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardEffect": [
+      { "type": "Die", "subType": "Omni", "value": 1, "target": "Active" },
+      { "type": "Energy", "subType": "Add", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332006,
@@ -1323,7 +3375,28 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LeaveIttoMe.png",
-    "imgID": "LeaveIttoMe"
+    "imgID": "LeaveIttoMe",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Next", "value": 1 }],
+        "condition": [
+          { "category": "Change Phase", "value": "After Switch Character" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 332007,
@@ -1336,7 +3409,28 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/WhentheCraneReturned.png",
-    "imgID": "WhentheCraneReturned"
+    "imgID": "WhentheCraneReturned",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Switch Character",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Next", "value": 1 }],
+        "condition": [
+          { "category": "Cast Skill", "value": "After Cast Skill" },
+          { "category": "Target", "value": "Active" }
+        ]
+      }
+    ]
   },
   {
     "id": 332008,
@@ -1349,7 +3443,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/Starsigns.png",
-    "imgID": "Starsigns"
+    "imgID": "Starsigns",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Energy", "subType": "Add", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332009,
@@ -1362,7 +3463,15 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/CalxsArts.png",
-    "imgID": "CalxsArts"
+    "imgID": "CalxsArts",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Energy", "subType": "Shift", "value": 1, "target": "StandBy" },
+      { "type": "Energy", "subType": "Add", "value": 2, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332010,
@@ -1375,7 +3484,15 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MasterofWeaponry.png",
-    "imgID": "MasterofWeaponry"
+    "imgID": "MasterofWeaponry",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Weapon", "subType": "Shift", "value": 1, "target": "Select" },
+      { "type": "Weapon", "subType": "Add", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332011,
@@ -1388,7 +3505,20 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/BlessingoftheDivineRelicsInstallation.png",
-    "imgID": "BlessingoftheDivineRelicsInstallation"
+    "imgID": "BlessingoftheDivineRelicsInstallation",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Artifact",
+        "subType": "Shift",
+        "value": 1,
+        "target": "Select"
+      },
+      { "type": "Artifact", "subType": "Add", "value": 1, "target": "Active" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332012,
@@ -1401,7 +3531,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/QuickKnit.png",
-    "imgID": "QuickKnit"
+    "imgID": "QuickKnit",
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Summon", "subType": "Usage", "value": 1, "target": "Select" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332013,
@@ -1414,7 +3551,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SendOff.png",
-    "imgID": "SendOff"
+    "imgID": "SendOff",
+    "cardTarget": ["Opponent"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Summon", "subType": "Destroy", "value": 1, "target": "Select" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332014,
@@ -1427,7 +3571,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/GuardiansOath.png",
-    "imgID": "GuardiansOath"
+    "imgID": "GuardiansOath",
+    "cardTarget": ["Opponent"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Summon", "subType": "Destroy", "value": 4, "target": "All" }
+    ],
+    "cardModify": []
   },
   {
     "id": 332015,
@@ -1440,7 +3591,19 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/AbyssalSummons.png",
-    "imgID": "AbyssalSummons"
+    "imgID": "AbyssalSummons",
+    "cardTarget": ["Active"],
+    "deckLimit": [{ "type": "Region", "subType": "Monster", "value": 2 }],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Hilichurl",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": []
   },
   {
     "id": 333001,
@@ -1453,7 +3616,22 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/JueyunGuoba.png",
-    "imgID": "JueyunGuoba"
+    "imgID": "JueyunGuoba",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Damage", "subType": "", "value": 1, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 333002,
@@ -1466,7 +3644,22 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/AdeptusTemptation.png",
-    "imgID": "AdeptusTemptation"
+    "imgID": "AdeptusTemptation",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Damage", "subType": "", "value": 3, "target": "Active" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Elemental Burst", "value": "After Elemental Burst" }
+        ]
+      }
+    ]
   },
   {
     "id": 333003,
@@ -1479,7 +3672,22 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/LotusFlowerCrisp.png",
-    "imgID": "LotusFlowerCrisp"
+    "imgID": "LotusFlowerCrisp",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Damage", "subType": "", "value": -3, "target": "Active" }
+        ],
+        "time": [{ "type": "Next", "value": 1 }],
+        "condition": [
+          { "category": "Defense", "value": "After Received Damage" }
+        ]
+      }
+    ]
   },
   {
     "id": 333004,
@@ -1492,7 +3700,27 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/NorthernSmokedChicken.png",
-    "imgID": "NorthernSmokedChicken"
+    "imgID": "NorthernSmokedChicken",
+    "cardTarget": ["Select"],
+    "deckLimit": [],
+    "combatLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "Normal Attack", "value": "After Normal Attack" }
+        ]
+      }
+    ]
   },
   {
     "id": 333005,
@@ -1505,7 +3733,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/SweetMadame.png",
-    "imgID": "SweetMadame"
+    "imgID": "SweetMadame",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Heal", "subType": "", "value": 1, "target": "Select" }
+    ],
+    "cardModify": []
   },
   {
     "id": 333006,
@@ -1518,7 +3753,14 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MondstadtHashBrown.png",
-    "imgID": "MondstadtHashBrown"
+    "imgID": "MondstadtHashBrown",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Heal", "subType": "", "value": 2, "target": "Select" }
+    ],
+    "cardModify": []
   },
   {
     "id": 333007,
@@ -1531,7 +3773,25 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MushroomPizza.png",
-    "imgID": "MushroomPizza"
+    "imgID": "MushroomPizza",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "combatLimit": [],
+    "cardEffect": [
+      { "type": "Heal", "subType": "", "value": 2, "target": "Select" }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          { "type": "Heal", "subType": "", "value": 1, "target": "Select" }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "After End Phase" },
+          { "category": "Max", "value": 2 }
+        ]
+      }
+    ]
   },
   {
     "id": 333008,
@@ -1544,6 +3804,28 @@
       { "costNum": 0, "costType": "" }
     ],
     "img": "/characters/MintyMeatRolls.png",
-    "imgID": "MintyMeatRolls"
+    "imgID": "MintyMeatRolls",
+    "cardTarget": ["Select"],
+    "deckLimit": [{ "type": "Food", "subType": "", "value": 1 }],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Select"
+          }
+        ],
+        "time": [{ "type": "Round", "value": 1 }],
+        "condition": [
+          { "category": "End Phase", "value": "Before End Phase" },
+          { "category": "Normal Attack", "value": "After Normal Attack" },
+          { "category": "Max", "value": 3 }
+        ]
+      }
+    ]
   }
 ]

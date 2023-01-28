@@ -1,34 +1,34 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePreview } from "@/hooks";
+import { usePreview, useSupport } from "@/hooks";
 import { ICard, PlayerPosition } from "@/models";
 import { SupportType } from "@/models/support";
 
 import styles from "./index.module.css";
 
-export const SupportCountItem = () => {
+export const SupportCountItem = (props: { value: number }) => {
   return (
     <div className={styles.SupportCountIcon}>
-      <div className={styles.SupportText}>2</div>
+      <div className={styles.SupportText}>{props.value}</div>
       <img src={`${PUBLIC_PATH}/images/count-number-card-icon.png`} alt="" />
     </div>
   );
 };
 
-export const SupportClockItem = () => {
+export const SupportClockItem = (props: { value: number }) => {
   return (
     <div className={styles.SupportClockIcon}>
-      <div className={styles.SupportText}>0</div>
+      <div className={styles.SupportText}>{props.value}</div>
       <img src={`${PUBLIC_PATH}/images/support-clock-card-icon.png`} alt="" />
     </div>
   );
 };
 
-export const SupportHealItem = () => {
+export const SupportHealItem = (props: { value: number }) => {
   return (
     <div className={styles.SupportHealIcon}>
-      <div className={styles.SupportText}>0</div>
+      <div className={styles.SupportText}>{props.value}</div>
       <img src={`${PUBLIC_PATH}/images/heal-icon.png`} alt="" />
     </div>
   );
@@ -37,9 +37,7 @@ export const SupportHealItem = () => {
 export const SupportItem = (props: { card: ICard }) => {
   const { onPreview } = usePreview();
   const { card } = props;
-  const isLocation = card.subType.includes(SupportType.Location);
-  const isItem = card.subType.includes(SupportType.Item);
-  const isCompanion = card.subType.includes(SupportType.Companion);
+  const { getHeal, getIcon, getUsage } = useSupport(card);
   return (
     <div
       aria-hidden="true"
@@ -51,9 +49,9 @@ export const SupportItem = (props: { card: ICard }) => {
       <div className={styles.SupportItem}>
         <img src={`${PUBLIC_PATH}/cards/${props.card.imgID}.png`} alt="" />
       </div>
-      {(isCompanion || isItem) && <SupportClockItem />}
-      {isLocation && <SupportCountItem />}
-      <SupportHealItem />
+      {getIcon() > 0 && <SupportClockItem value={getIcon()} />}
+      {getUsage() > 0 && <SupportCountItem value={getUsage()} />}
+      {getHeal() > 0 && <SupportHealItem value={getHeal()} />}
     </div>
   );
 };

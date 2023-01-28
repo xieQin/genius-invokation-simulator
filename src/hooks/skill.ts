@@ -119,7 +119,8 @@ export const useSkill = (pos: PlayerPosition) => {
     const activeSkill = activeSkills[enemy];
     const skill =
       players[enemy].characters[activeCharacters[enemy]].skills[activeSkill];
-    if (idx === activeCharacters[pos]) return skill.effect[0].value;
+    if (idx === activeCharacters[pos] && skill.effect.length > 0)
+      return skill.effect[0].value;
     return skill.effect[1]?.value || 0;
   };
 

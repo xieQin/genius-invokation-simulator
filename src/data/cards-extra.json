@@ -3,22 +3,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ganyu"
+        "type": "character",
+        "value": 1,
+        "subType": "Ganyu"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ganyu"
+        "type": "character",
+        "value": 1,
+        "subType": "Ganyu"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "value": "Frostflake Arrow"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostflake Arrow",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -40,7 +42,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -64,22 +66,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diona"
+        "type": "character",
+        "value": 1,
+        "subType": "Diona"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diona"
+        "type": "character",
+        "value": 1,
+        "subType": "Diona"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Icy Paws"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Icy Paws",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -101,7 +105,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -121,22 +125,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kaeya"
+        "type": "character",
+        "value": 1,
+        "subType": "Kaeya"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kaeya"
+        "type": "character",
+        "value": 1,
+        "subType": "Kaeya"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Frostgnaw"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostgnaw",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -152,7 +158,7 @@
         "time": [
           {
             "type": "Round",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -172,22 +178,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Chongyun"
+        "type": "character",
+        "value": 1,
+        "subType": "Chongyun"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Chongyun"
+        "type": "character",
+        "value": 1,
+        "subType": "Chongyun"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Chonghua's Layered Frost"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Chonghua's Layered Frost",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -203,7 +211,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -223,16 +231,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kamisato Ayaka"
+        "type": "character",
+        "value": 1,
+        "subType": "Kamisato Ayaka"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Kamisato Ayaka"
+        "type": "character",
+        "value": 1,
+        "subType": "Kamisato Ayaka"
       }
     ],
     "cardEffect": [],
@@ -249,7 +257,7 @@
         "time": [
           {
             "type": "Round",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": []
@@ -272,22 +280,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Barbara"
+        "type": "character",
+        "value": 1,
+        "subType": "Barbara"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Barbara"
+        "type": "character",
+        "value": 1,
+        "subType": "Barbara"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Let the Show Begin♪"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Let the Show Begin♪",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -303,7 +313,7 @@
         "time": [
           {
             "type": "Round",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": []
@@ -314,22 +324,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xingqiu"
+        "type": "character",
+        "value": 1,
+        "subType": "Xingqiu"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xingqiu"
+        "type": "character",
+        "value": 1,
+        "subType": "Xingqiu"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Fatal Rainscreen"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fatal Rainscree",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -345,7 +357,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": []
@@ -356,16 +368,16 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mona"
+        "type": "character",
+        "value": 1,
+        "subType": "Mona"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mona"
+        "type": "character",
+        "value": 1,
+        "subType": "Mona"
       }
     ],
     "cardEffect": [],
@@ -382,7 +394,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -402,22 +414,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diluc"
+        "type": "character",
+        "value": 1,
+        "subType": "Diluc"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Diluc"
+        "type": "character",
+        "value": 1,
+        "subType": "Diluc"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Searing Onslaught"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Searing Onslaught",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -426,22 +440,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xiangling"
+        "type": "character",
+        "value": 1,
+        "subType": "Xiangling"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Xiangling"
+        "type": "character",
+        "value": 1,
+        "subType": "Xiangling"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Guoba Attack"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Guoba Attack",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -450,22 +466,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Bennett"
+        "type": "character",
+        "value": 1,
+        "subType": "Bennett"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Bennett"
+        "type": "character",
+        "value": 1,
+        "subType": "Bennett"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Fantastic Voyage"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fantastic Voyage",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -474,22 +492,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Yoimiya"
+        "type": "character",
+        "value": 1,
+        "subType": "Yoimiya"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Yoimiya"
+        "type": "character",
+        "value": 1,
+        "subType": "Yoimiya"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Niwabi Fire-Dance"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Niwabi Fire-Dance",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -505,7 +525,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -521,22 +541,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fischl"
+        "type": "character",
+        "value": 1,
+        "subType": "Fischl"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fischl"
+        "type": "character",
+        "value": 1,
+        "subType": "Fischl"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Nightrider"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Nightrider",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -552,7 +574,7 @@
         "time": [
           {
             "type": "Infinite",
-            "time": 1
+            "value": 1
           }
         ],
         "condition": [
@@ -568,22 +590,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Razor"
+        "type": "character",
+        "value": 1,
+        "subType": "Razor"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Razor"
+        "type": "character",
+        "value": 1,
+        "subType": "Razor"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Claw and Thunder"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Claw and Thunder",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -592,22 +616,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Keqing"
+        "type": "character",
+        "value": 1,
+        "subType": "Keqing"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Keqing"
+        "type": "character",
+        "value": 1,
+        "subType": "Keqing"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Stellar Restoration"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Stellar Restoration",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -616,22 +642,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Cyno"
+        "type": "character",
+        "value": 1,
+        "subType": "Cyno"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Cyno"
+        "type": "character",
+        "value": 1,
+        "subType": "Cyno"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Secret Rite: Chasmic Soulfarer"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Secret Rite: Chasmic Soulfarer",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -640,22 +668,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Sucrose"
+        "type": "character",
+        "value": 1,
+        "subType": "Sucrose"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Sucrose"
+        "type": "character",
+        "value": 1,
+        "subType": "Sucrose"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Forbidden Creation - Isomer 75 / Type II"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Forbidden Creation - Isomer 75 / Type II",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -664,22 +694,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jean"
+        "type": "character",
+        "value": 1,
+        "subType": "Jean"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jean"
+        "type": "character",
+        "value": 1,
+        "subType": "Jean"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Dandelion Breeze"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Dandelion Breeze",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -688,22 +720,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ningguang"
+        "type": "character",
+        "value": 1,
+        "subType": "Ningguang"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Ningguang"
+        "type": "character",
+        "value": 1,
+        "subType": "Ningguang"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Jade Screen"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Jade Screen",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -712,22 +746,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Noelle"
+        "type": "character",
+        "value": 1,
+        "subType": "Noelle"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Noelle"
+        "type": "character",
+        "value": 1,
+        "subType": "Noelle"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Breastplate"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Breastplate",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -736,22 +772,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Collei"
+        "type": "character",
+        "value": 1,
+        "subType": "Collei"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Collei"
+        "type": "character",
+        "value": 1,
+        "subType": "Collei"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Floral Brush"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Floral Brush",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -760,22 +798,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Rhodeia of Loch"
+        "type": "character",
+        "value": 1,
+        "subType": "Rhodeia of Loch"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Rhodeia of Loch"
+        "type": "character",
+        "value": 1,
+        "subType": "Rhodeia of Loch"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Tide and Torrent"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Tide and Torren",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -784,22 +824,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mirror Maiden"
+        "type": "character",
+        "value": 1,
+        "subType": "Mirror Maiden"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Mirror Maiden"
+        "type": "character",
+        "value": 1,
+        "subType": "Mirror Maiden"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Influx Blast"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Influx Blast",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -808,22 +850,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fatui Pyro Agent"
+        "type": "character",
+        "value": 1,
+        "subType": "Fatui Pyro Agent"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Fatui Pyro Agent"
+        "type": "character",
+        "value": 1,
+        "subType": "Fatui Pyro Agent"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Prowl"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Prowl",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -832,22 +876,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Maguu Kenki"
+        "type": "character",
+        "value": 1,
+        "subType": "Maguu Kenki"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Maguu Kenki"
+        "type": "character",
+        "value": 1,
+        "subType": "Maguu Kenki"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Blustering Blade"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Blustering Blade",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -856,22 +902,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Stonehide Lawachurl"
+        "type": "character",
+        "value": 1,
+        "subType": "Stonehide Lawachurl"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Stonehide Lawachurl"
+        "type": "character",
+        "value": 1,
+        "subType": "Stonehide Lawachurl"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Upa Shato"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Upa Shato",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -880,22 +928,24 @@
     "cardTarget": [],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jadeplume Terrorshroom"
+        "type": "character",
+        "value": 1,
+        "subType": "Jadeplume Terrorshroom"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Jadeplume Terrorshroom"
+        "type": "character",
+        "value": 1,
+        "subType": "Jadeplume Terrorshroom"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Volatile Spore Cloud"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Volatile Spore Cloud",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -904,22 +954,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Klee"
+        "type": "character",
+        "value": 1,
+        "subType": "Klee"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Klee"
+        "type": "character",
+        "value": 1,
+        "subType": "Klee"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Jumpy Dumpty"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Jumpy Dumpty",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -928,22 +980,24 @@
     "cardTarget": ["Select"],
     "deckLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Beidou"
+        "type": "character",
+        "value": 1,
+        "subType": "Beidou"
       }
     ],
     "combatLimit": [
       {
-        "limitType": "character",
-        "limitNumber": 1,
-        "limit": "Beidou"
+        "type": "character",
+        "value": 1,
+        "subType": "Beidou"
       }
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Tidecaller"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Tidecaller",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -963,10 +1017,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -986,10 +1042,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1001,10 +1059,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1029,10 +1089,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1044,10 +1106,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1072,10 +1136,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1095,10 +1161,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1110,10 +1178,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1138,10 +1208,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1153,10 +1225,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1181,10 +1255,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1204,10 +1280,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1219,10 +1297,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1247,10 +1327,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1262,10 +1344,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "HP",
@@ -1290,10 +1374,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1313,10 +1399,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1328,10 +1416,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Max",
@@ -1360,10 +1450,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1375,10 +1467,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1403,10 +1497,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1426,10 +1522,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1441,10 +1539,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1469,10 +1569,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1484,10 +1586,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "time": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill",
@@ -1502,542 +1606,2879 @@
     ]
   },
   "Adventurer's Bandana": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   },
   "Lucky Dog's Silver Circlet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Skill",
+            "value": "After Elemental Skill"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          }
+        ]
+      }
+    ]
   },
   "Traveling Doctor's Handkerchief": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          }
+        ]
+      }
+    ]
   },
   "Gambler's Earrings": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Opponent",
+            "value": "Die"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Instructor's Cap": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   },
   "Exile's Circlet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "StandBy"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Broken Rime's Echo": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Blizzard Strayer": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Cryo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wine-Stained Tricorne": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Heart of Depth": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Hydro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Witch's Scorching Hat": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Crimson Witch of Flames": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Pyro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Thunder Summoner's Crown": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Thundering Fury": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Viridescent Venerer's Diadem": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Viridescent Venerer": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Anemo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Mask of Solitude Basalt": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Archaic Petra": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Geo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Laurel Coronet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Deepwood Memories": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Liyue Harbor Wharf": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Knights of Favonius Library": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "ReRoll",
+        "subType": "ReRoll Any",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "ReRoll",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Jade Chamber": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Same",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Dawn Winery": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Change Cost",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wangshu Inn": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "StandBy"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "StandBy"
+          }
+        ]
+      }
+    ]
   },
   "Favonius Cathedral": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Paimon": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action Phase"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Katheryne": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Timaeus": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Icon",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Artifact"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wagner": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Icon",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Weapon"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Chef Mao": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Any",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Food"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Tubby": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Support",
+            "value": -2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Support"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Timmie": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Liben": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Collect",
+            "subType": "Unused Die",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action Phase"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action Phase"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Chang the Ninth": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Physical"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Ellin": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "After Cast Skill More"
+          },
+          {
+            "category": "Max",
+            "value": 99
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Iron Tongue Tian": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Liu Su": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Parametric Transformer": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Different",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "After Elemental Damage"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "NRE": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Draw Card",
+        "subType": "Food",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "Food",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Food"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Ice": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Cryo"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Cryo",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Shattering Ice": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Cryo"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "All",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Damage"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Waters": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Hydro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Hydro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Soothing Water": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Hydro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Active"
+      },
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 1,
+        "target": "StandBy"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Woven Flames": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Pyro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Pyro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Fervent Flames": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Pyro"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Pyro Related Damage"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Thunder": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Electro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Electro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: High Voltage": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Electro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Woven Winds": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Anemo"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Anemo",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Impetuous Winds": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Anemo"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Omni",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Change Phase",
+        "subType": "Fast Action",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Woven Stone": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Geo"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Geo",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Enduring Rock": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Geo"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Shield",
+            "subType": "",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Geo Related Damage"
+          },
+          {
+            "category": "Shield",
+            "value": "Exist Shield"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Weeds": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Dendro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Dendro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Sprawling Greenery": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "element",
+        "value": 2,
+        "subType": "Dendro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Shield",
+        "subType": "Burning Flame",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Dendro Core",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Shield",
+        "subType": "Catalyzing Field",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "The Bestest Travel Companion!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Covert Die",
+        "subType": "Omni",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Changing Shifts": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": {
+          "type": "Change Phase",
+          "subType": "Change Cost",
+          "value": -1,
+          "target": "Active"
+        },
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          }
+        ]
+      }
+    ]
   },
   "Toss-Up": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "ReRoll",
+        "subType": "Any",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Strategize": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Draw Card",
+        "subType": "",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "I Haven't Lost Yet!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
+    "combatLimit": [
+      {
+        "type": "character",
+        "subType": "Character Defeated",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Omni",
+        "value": 1,
+        "target": "Active"
+      },
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Leave It to Me!": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "When the Crane Returned": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Switch Character",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "After Cast Skill"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Starsigns": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Calx's Arts": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Energy",
+        "subType": "Shift",
+        "value": 1,
+        "target": "StandBy"
+      },
+      {
+        "type": "Energy",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Master of Weaponry": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Weapon",
+        "subType": "Shift",
+        "value": 1,
+        "target": "Select"
+      },
+      {
+        "type": "Weapon",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Blessing of the Divine Relic's Installation": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Artifact",
+        "subType": "Shift",
+        "value": 1,
+        "target": "Select"
+      },
+      {
+        "type": "Artifact",
+        "subType": "Add",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Quick Knit": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Usage",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Send Off": {
-    "cardTarget": [],
+    "cardTarget": ["Opponent"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Destroy",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Guardian's Oath": {
-    "cardTarget": [],
+    "cardTarget": ["Opponent"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Destroy",
+        "value": 4,
+        "target": "All"
+      }
+    ],
     "cardModify": []
   },
   "Abyssal Summons": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "type": "Region",
+        "subType": "Monster",
+        "value": 2
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Summon",
+        "subType": "Hilichurl",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Jueyun Guoba": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
   },
   "Adeptus' Temptation": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          }
+        ]
+      }
+    ]
   },
   "Lotus Flower Crisp": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "",
+            "value": -3,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Defense",
+            "value": "After Received Damage"
+          }
+        ]
+      }
+    ]
   },
   "Northern Smoked Chicken": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
-    "combatLimit": [],
+    "combatLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          }
+        ]
+      }
+    ]
   },
   "Sweet Madame": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 1,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Mondstadt Hash Brown": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Select"
+      }
+    ],
     "cardModify": []
   },
   "Mushroom Pizza": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Select"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 1,
+            "target": "Select"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          }
+        ]
+      }
+    ]
   },
   "Minty Meat Rolls": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Select"],
+    "deckLimit": [
+      {
+        "type": "Food",
+        "subType": "",
+        "value": 1
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Unaligned",
+            "value": -1,
+            "target": "Select"
+          }
+        ],
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "Before End Phase"
+          },
+          {
+            "category": "Normal Attack",
+            "value": "After Normal Attack"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   }
 }
