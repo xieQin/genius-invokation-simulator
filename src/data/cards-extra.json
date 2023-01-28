@@ -2398,46 +2398,217 @@
     ]
   },
   "Liyue Harbor Wharf": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 2
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Knights of Favonius Library": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "category": "ReRoll",
+        "value": "reroll any"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "ReRoll",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Jade Chamber": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Same",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Dawn Winery": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Change Cost",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wangshu Inn": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "StandBy"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End"
+          },
+          {
+            "category": "Target",
+            "value": "StandBy"
+          }
+        ]
+      }
+    ]
   },
   "Favonius Cathedral": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Heal",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Paimon": {
     "cardTarget": [],

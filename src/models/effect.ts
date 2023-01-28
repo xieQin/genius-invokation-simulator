@@ -7,6 +7,7 @@ export enum EffectType {
   Talent = "Talent",
   CastSkill = "Cast Skill",
   PlayCard = "Play Card",
+  DrawCard = "Draw Card",
   Attack = "Attack",
   Defense = "Defense",
   Cost = "Cost",
@@ -21,6 +22,7 @@ export enum EffectType {
   Energy = "Energy",
   DieCost = "Die Cost",
   FixDie = "Fix Die",
+  ReRoll = "ReRoll",
 }
 
 export enum EffectSubType {

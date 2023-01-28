@@ -1,5 +1,5 @@
 import { Character } from "./character";
-import { EffectTarget, IEffect } from "./effect";
+import { EffectTarget, EffectType, IEffect } from "./effect";
 import { GIElement } from "./element";
 import {
   EqiupmentWeaponType,
@@ -60,7 +60,7 @@ export interface CardTime {
 }
 
 export interface CardEffect {
-  category: CardEffectType;
+  category: EffectType;
   value: string | number;
 }
 
