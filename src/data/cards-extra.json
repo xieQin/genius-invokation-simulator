@@ -3190,18 +3190,97 @@
     ]
   },
   "Parametric Transformer": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Different",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "All"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "After Elemental Damage"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "NRE": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
+    "cardEffect": [
+      {
+        "category": "Draw Card",
+        "value": "Food"
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "Food",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Food"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Ice": {
     "cardTarget": [],
