@@ -20,10 +20,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -54,10 +56,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -82,10 +86,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -116,10 +122,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -150,10 +158,12 @@
             "value": -1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -178,10 +188,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -206,10 +218,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -234,10 +248,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -268,10 +284,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -296,10 +314,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -324,10 +344,12 @@
             "value": 2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -352,10 +374,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 3
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 3
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -386,10 +410,12 @@
             "value": -2
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -414,10 +440,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -442,10 +470,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -470,10 +500,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -498,10 +530,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -526,10 +560,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -554,10 +590,12 @@
             "value": 1
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",

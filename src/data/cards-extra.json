@@ -1017,10 +1017,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1040,10 +1042,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1055,10 +1059,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1083,10 +1089,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1098,10 +1106,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1126,10 +1136,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1149,10 +1161,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1164,10 +1178,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1192,10 +1208,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1207,10 +1225,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1235,10 +1255,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1258,10 +1280,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1273,10 +1297,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1301,10 +1327,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1316,10 +1344,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "HP",
@@ -1344,10 +1374,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1367,10 +1399,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1382,10 +1416,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Max",
@@ -1414,10 +1450,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1429,10 +1467,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1457,10 +1497,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       }
     ]
@@ -1480,10 +1522,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1495,10 +1539,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1523,10 +1569,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": []
       },
       {
@@ -1538,10 +1586,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill",
@@ -1570,10 +1620,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -1602,10 +1654,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Skill",
@@ -1634,10 +1688,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Burst",
@@ -1666,10 +1722,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Opponent",
@@ -1698,10 +1756,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Reaction",
@@ -1730,10 +1790,12 @@
             "target": "StandBy"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Burst",
@@ -1766,10 +1828,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -1802,10 +1866,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -1830,10 +1896,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -1866,10 +1934,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -1902,10 +1972,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -1930,10 +2002,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -1966,10 +2040,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2002,10 +2078,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2030,10 +2108,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2066,10 +2146,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2102,10 +2184,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2130,10 +2214,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2166,10 +2252,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2202,10 +2290,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2230,10 +2320,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2266,10 +2358,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2302,10 +2396,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2330,10 +2426,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2366,10 +2464,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2402,10 +2502,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill or Equip Talent",
@@ -2430,10 +2532,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2466,10 +2570,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2509,10 +2615,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2545,10 +2653,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Roll Phase",
@@ -2581,10 +2691,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Change Phase",
@@ -2617,10 +2729,12 @@
             "target": "StandBy"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2649,10 +2763,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2681,10 +2797,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Action Phase",
@@ -2717,10 +2835,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Change Phase",
@@ -2760,10 +2880,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2784,10 +2906,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Play Card",
@@ -2824,10 +2948,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2848,10 +2974,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Play Card",
@@ -2881,10 +3009,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Play Card",
@@ -2914,10 +3044,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Play Card",
@@ -2947,10 +3079,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -2972,10 +3106,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Icon",
@@ -3000,10 +3136,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Icon",
@@ -3036,10 +3174,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -3064,10 +3204,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Action Phase",
@@ -3092,10 +3234,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Action Phase",
@@ -3128,10 +3272,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Damage",
@@ -3164,10 +3310,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill",
@@ -3200,10 +3348,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 2
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -3232,10 +3382,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 2
+          }
+        ],
         "condition": [
           {
             "category": "Change Phase",
@@ -3264,10 +3416,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Icon",
@@ -3288,10 +3442,12 @@
             "target": "All"
           }
         ],
-        "time": {
-          "type": "Infinite",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Infinite",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Damage",
@@ -3327,10 +3483,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Play Card",
@@ -3385,10 +3543,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Damage",
@@ -3493,10 +3653,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Damage",
@@ -3641,10 +3803,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Damage",
@@ -3722,10 +3886,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Reaction",
@@ -3766,10 +3932,12 @@
           "value": -1,
           "target": "Active"
         },
-        "time": {
-          "type": "Next",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Change Phase",
@@ -3849,10 +4017,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Next",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Change Phase",
@@ -3881,10 +4051,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Next",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Cast Skill",
@@ -4055,10 +4227,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -4089,10 +4263,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Elemental Burst",
@@ -4123,10 +4299,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Next",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Next",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Defense",
@@ -4157,10 +4335,12 @@
             "target": "Active"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "Normal Attack",
@@ -4238,10 +4418,12 @@
             "target": "Select"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
@@ -4276,10 +4458,12 @@
             "target": "Select"
           }
         ],
-        "time": {
-          "type": "Round",
-          "value": 1
-        },
+        "time": [
+          {
+            "type": "Round",
+            "value": 1
+          }
+        ],
         "condition": [
           {
             "category": "End Phase",
