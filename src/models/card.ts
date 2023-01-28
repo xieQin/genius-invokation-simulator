@@ -73,9 +73,17 @@ export enum CardConditionType {
   NormalAttack = "Normal Attack",
   ElementalSkill = "Elemental Skill",
   ElementalBurst = "Elemental Burst",
+  ElementalReaction = "Elemental Reaction",
+  EquipTalent = "Equip Talent",
+  StartPhase = "Start Phase",
+  EndPhase = "End Phase",
+  RollPhase = "Roll Phase",
+  ChangePhase = "Change Phase",
+  CombatPhase = "Combat Phase",
   HP = "HP",
   Max = "Max",
   Region = "Region",
+  Opponent = "Opponent",
 }
 
 export interface CardModifyCondition {

@@ -18,6 +18,9 @@ export enum EffectType {
   Active = "Active",
   Any = "Any",
   Die = "Die",
+  Energy = "Energy",
+  DieCost = "Die Cost",
+  FixDie = "Fix Die",
 }
 
 export enum EffectSubType {
@@ -29,10 +32,12 @@ export enum EffectSubType {
   Pyro = "Pyro",
   Anemo = "Anemo",
   Hydro = "Hydro",
+  Same = "Same",
+  Omni = "Omni",
   Physical = "Physical",
   ChangeCost = "Change Cost",
+  Add = "Add",
   All = "All",
-  Same = "Same",
   Attack = "Attack",
 }
 
@@ -52,6 +57,7 @@ export enum EffectTarget {
   All = "All",
   Active = "Active",
   Select = "Select",
+  StandBy = "StandBy",
 }
 
 export const EffectColorType = {

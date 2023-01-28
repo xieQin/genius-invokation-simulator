@@ -1598,123 +1598,804 @@
     ]
   },
   "Gambler's Earrings": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Opponent",
+            "value": "Die"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Instructor's Cap": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Same",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Reaction",
+            "value": "After Elemental Reaction"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          }
+        ]
+      }
+    ]
   },
   "Exile's Circlet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "StandBy"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Elemental Burst",
+            "value": "After Elemental Burst"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Broken Rime's Echo": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Blizzard Strayer": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Cryo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Cryo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wine-Stained Tricorne": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Heart of Depth": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Hydro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Hydro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Witch's Scorching Hat": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Crimson Witch of Flames": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Pyro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Pyro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Thunder Summoner's Crown": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Thundering Fury": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Electro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Electro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Viridescent Venerer's Diadem": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Viridescent Venerer": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Anemo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Anemo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Mask of Solitude Basalt": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Archaic Petra": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Geo",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Geo",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Laurel Coronet": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Deepwood Memories": {
-    "cardTarget": [],
+    "cardTarget": ["Select"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Dendro",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill or Equip Talent",
+            "value": "After Cast Skill or Equip Talent"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Fix Die",
+            "subType": "Dendro",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Roll Phase",
+            "value": "After Roll"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Liyue Harbor Wharf": {
     "cardTarget": [],
