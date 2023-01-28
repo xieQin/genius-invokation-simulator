@@ -10,8 +10,8 @@ import {
   SkillSubType,
 } from "@/models";
 
-import GIData from "./cards_20221205_en-us.json";
 import I18n from "./cards_20221205_i18n.json";
+import GIData from "./cards_en-us.json";
 import CardsExtra from "./cards-extra.json";
 import CharactersExtra from "./character-extra.json";
 import SkillExtra from "./skill-extra.json";
@@ -130,7 +130,7 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-// transCharacters();
+transCharacters();
 transCards();
 // transI18n();
 
