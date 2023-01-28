@@ -24,6 +24,8 @@ export enum EffectType {
   DieCost = "Die Cost",
   FixDie = "Fix Die",
   ReRoll = "ReRoll",
+  Icon = "Icon",
+  Collect = "Collect",
 }
 
 export enum EffectSubType {
@@ -37,12 +39,16 @@ export enum EffectSubType {
   Hydro = "Hydro",
   Same = "Same",
   Omni = "Omni",
+  Any = "Any",
   Physical = "Physical",
+  Piercing = "Piercing",
   ChangeCost = "Change Cost",
   FastAction = "Fast Action",
   Add = "Add",
   All = "All",
   Attack = "Attack",
+  Equip = "Equip",
+  UnusedDie = "Unused Die",
 }
 
 export const TransEffectSubTypeToGIElement = {

@@ -85,6 +85,9 @@ export enum CardConditionType {
   Max = "Max",
   Region = "Region",
   Opponent = "Opponent",
+  PlayCard = "Play Card",
+  Icon = "Icon",
+  Damage = "Damage",
 }
 
 export interface CardModifyCondition {

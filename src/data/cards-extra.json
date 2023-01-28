@@ -2419,7 +2419,7 @@
         "condition": [
           {
             "category": "End Phase",
-            "value": "After End"
+            "value": "After End Phase"
           },
           {
             "category": "Max",
@@ -2568,7 +2568,7 @@
         "condition": [
           {
             "category": "End Phase",
-            "value": "After End"
+            "value": "After End Phase"
           },
           {
             "category": "Target",
@@ -2600,7 +2600,7 @@
         "condition": [
           {
             "category": "End Phase",
-            "value": "After End"
+            "value": "After End Phase"
           },
           {
             "category": "Target",
@@ -2632,7 +2632,7 @@
         "condition": [
           {
             "category": "Action Phase",
-            "value": "Before Action"
+            "value": "Before Action Phase"
           },
           {
             "category": "Max",
@@ -2686,13 +2686,488 @@
     "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
+    "cardEffect": [
+      {
+        "category": "Icon",
+        "value": 2
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Artifact"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Wagner": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [
+      {
+        "category": "Icon",
+        "value": 2
+      }
+    ],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Equip",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Weapon"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Chef Mao": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
     "cardEffect": [],
     "cardModify": [
       {
         "effect": [
           {
-            "type": "Change Phase",
-            "subType": "Fast Action",
+            "type": "Die",
+            "subType": "Any",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Food"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Tubby": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "Support",
+            "value": -2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Play Card",
+            "value": "After Play Card: Support"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Timmie": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Icon",
+            "value": 3
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Liben": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Collect",
+            "subType": "Unused Die",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Draw Card",
+            "subType": "",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action Phase"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      },
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action Phase"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Chang the Ninth": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Icon",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Infinite",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Physical"
+          },
+          {
+            "category": "Max",
+            "value": 3
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Ellin": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die Cost",
+            "subType": "",
+            "value": -1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Cast Skill",
+            "value": "After Cast Skill More"
+          },
+          {
+            "category": "Max",
+            "value": 99
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Iron Tongue Tian": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 2
+        },
+        "condition": [
+          {
+            "category": "End Phase",
+            "value": "After End Phase"
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
+  },
+  "Liu Su": {
+    "cardTarget": ["Active"],
+    "deckLimit": [],
+    "combatLimit": [],
+    "cardEffect": [],
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Energy",
+            "subType": "Add",
             "value": 1,
             "target": "Active"
           }
@@ -2707,79 +3182,12 @@
             "value": "After Switch Character"
           },
           {
-            "category": "Max",
-            "value": 2
-          },
-          {
             "category": "Target",
             "value": "Active"
           }
         ]
       }
     ]
-  },
-  "Wagner": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Chef Mao": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Tubby": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Timmie": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Liben": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Chang the Ninth": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Ellin": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Iron Tongue Tian": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
-  },
-  "Liu Su": {
-    "cardTarget": [],
-    "deckLimit": [],
-    "combatLimit": [],
-    "cardEffect": [],
-    "cardModify": []
   },
   "Parametric Transformer": {
     "cardTarget": [],
