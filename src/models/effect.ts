@@ -49,6 +49,8 @@ export enum EffectSubType {
   Attack = "Attack",
   Equip = "Equip",
   UnusedDie = "Unused Die",
+  Food = "Food",
+  Support = "Support",
 }
 
 export const TransEffectSubTypeToGIElement = {

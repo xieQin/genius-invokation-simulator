@@ -23,7 +23,7 @@ export interface ICard {
   cardTarget: EffectTarget;
   deckLimit: CardLimit[];
   combatLimit: CardLimit[];
-  cardEffect: CardEffect[];
+  cardEffect: IEffect[];
   cardModify: CardModify[];
 }
 
@@ -31,21 +31,6 @@ export interface CardLimit {
   limitType: "character" | "element" | "region" | "weapon";
   limitNumber: number;
   limit: Character | GIElement | GIRegion | EqiupmentWeaponType;
-}
-
-export enum CardEffectType {
-  CastSkill = "Cast Skill",
-  PlayCard = "Play Card",
-  Attack = "Attack",
-  Defense = "Defense",
-  Cost = "Cost",
-  StartPhase = "Start Phase",
-  EndPhase = "End Phase",
-  RollPhase = "Roll Phase",
-  ChangePhase = "Change Phase",
-  CombatPhase = "Combat Phase",
-  Active = "Active",
-  Any = "Any",
 }
 
 export enum CardTimeType {
@@ -57,11 +42,6 @@ export enum CardTimeType {
 export interface CardTime {
   type: CardTimeType;
   time: number;
-}
-
-export interface CardEffect {
-  category: EffectType;
-  value: string | number;
 }
 
 export enum CardConditionType {

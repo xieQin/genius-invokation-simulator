@@ -17,8 +17,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "value": "Frostflake Arrow"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostflake Arrow",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -78,8 +80,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Icy Paws"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Icy Paws",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -135,8 +139,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Frostgnaw"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Frostgnaw",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -186,8 +192,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Chonghua's Layered Frost"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Chonghua's Layered Frost",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -286,8 +294,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Let the Show Begin♪"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Let the Show Begin♪",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -328,8 +338,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Fatal Rainscreen"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fatal Rainscree",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -416,8 +428,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Searing Onslaught"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Searing Onslaught",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -440,8 +454,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Guoba Attack"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Guoba Attack",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -464,8 +480,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Fantastic Voyage"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Fantastic Voyage",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -488,8 +506,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Niwabi Fire-Dance"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Niwabi Fire-Dance",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -535,8 +555,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Nightrider"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Nightrider",
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -582,8 +604,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Claw and Thunder"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Claw and Thunder",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -606,8 +630,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Stellar Restoration"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Stellar Restoration",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -630,8 +656,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Secret Rite: Chasmic Soulfarer"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Secret Rite: Chasmic Soulfarer",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -654,8 +682,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Forbidden Creation - Isomer 75 / Type II"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Forbidden Creation - Isomer 75 / Type II",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -678,8 +708,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Dandelion Breeze"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Dandelion Breeze",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -702,8 +734,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Jade Screen"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Jade Screen",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -726,8 +760,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Breastplate"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Breastplate",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -750,8 +786,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Floral Brush"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Floral Brush",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -774,8 +812,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Tide and Torrent"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Tide and Torren",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -798,8 +838,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Influx Blast"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Influx Blast",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -822,8 +864,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Prowl"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Prowl",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -846,8 +890,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Blustering Blade"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Blustering Blade",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -870,8 +916,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Upa Shato"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Upa Shato",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -894,8 +942,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Volatile Spore Cloud"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Volatile Spore Cloud",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -918,8 +968,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Jumpy Dumpty"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Jumpy Dumpty",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -942,8 +994,10 @@
     ],
     "cardEffect": [
       {
-        "category": "Cast Skill",
-        "effect": "Tidecaller"
+        "type": "Cast Skill",
+        "subType": "",
+        "value": "Tidecaller",
+        "target": "Active"
       }
     ],
     "cardModify": []
@@ -2439,8 +2493,10 @@
     "combatLimit": [],
     "cardEffect": [
       {
-        "category": "ReRoll",
-        "value": "reroll any"
+        "type": "ReRoll",
+        "subType": "reroll any",
+        "value": 1,
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -2688,8 +2744,10 @@
     "combatLimit": [],
     "cardEffect": [
       {
-        "category": "Icon",
-        "value": 2
+        "type": "Icon",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -2750,8 +2808,10 @@
     "combatLimit": [],
     "cardEffect": [
       {
-        "category": "Icon",
-        "value": 2
+        "type": "Icon",
+        "subType": "Add",
+        "value": 2,
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -3251,8 +3311,10 @@
     "combatLimit": [],
     "cardEffect": [
       {
-        "category": "Draw Card",
-        "value": "Food"
+        "type": "Draw Card",
+        "subType": "Food",
+        "value": 1,
+        "target": "Active"
       }
     ],
     "cardModify": [
@@ -3283,50 +3345,184 @@
     ]
   },
   "Elemental Resonance: Woven Ice": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Cryo"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Cryo",
+        "value": 2,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Shattering Ice": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Cryo"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "All",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Damage"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Waters": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Hydro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Hydro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Soothing Water": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Hydro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 2,
+        "target": "Active"
+      },
+      {
+        "type": "Heal",
+        "subType": "",
+        "value": 1,
+        "target": "StandBy"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Woven Flames": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Pyro"
+      }
+    ],
     "combatLimit": [],
-    "cardEffect": [],
+    "cardEffect": [
+      {
+        "type": "Die",
+        "subType": "Pyro",
+        "value": 1,
+        "target": "Active"
+      }
+    ],
     "cardModify": []
   },
   "Elemental Resonance: Fervent Flames": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Pyro"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Damage",
+            "subType": "Pyro",
+            "value": 3,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Damage",
+            "value": "Next Pyro Related Damage"
+          },
+          {
+            "category": "Max",
+            "value": 1
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Elemental Resonance: Woven Thunder": {
-    "cardTarget": [],
-    "deckLimit": [],
+    "cardTarget": ["Active"],
+    "deckLimit": [
+      {
+        "limitType": "element",
+        "limitNumber": 2,
+        "limit": "Electro"
+      }
+    ],
     "combatLimit": [],
     "cardEffect": [],
     "cardModify": []
