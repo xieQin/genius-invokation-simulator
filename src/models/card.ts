@@ -76,6 +76,7 @@ export enum CardConditionType {
   ElementalReaction = "Elemental Reaction",
   EquipTalent = "Equip Talent",
   StartPhase = "Start Phase",
+  ActionPhase = "Action Phase",
   EndPhase = "End Phase",
   RollPhase = "Roll Phase",
   ChangePhase = "Change Phase",

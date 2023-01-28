@@ -2611,25 +2611,112 @@
     ]
   },
   "Paimon": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Die",
+            "subType": "Omni",
+            "value": 2,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Action Phase",
+            "value": "Before Action"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Katheryne": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Timaeus": {
-    "cardTarget": [],
+    "cardTarget": ["Active"],
     "deckLimit": [],
     "combatLimit": [],
     "cardEffect": [],
-    "cardModify": []
+    "cardModify": [
+      {
+        "effect": [
+          {
+            "type": "Change Phase",
+            "subType": "Fast Action",
+            "value": 1,
+            "target": "Active"
+          }
+        ],
+        "time": {
+          "type": "Round",
+          "time": 1
+        },
+        "condition": [
+          {
+            "category": "Change Phase",
+            "value": "After Switch Character"
+          },
+          {
+            "category": "Max",
+            "value": 2
+          },
+          {
+            "category": "Target",
+            "value": "Active"
+          }
+        ]
+      }
+    ]
   },
   "Wagner": {
     "cardTarget": [],
