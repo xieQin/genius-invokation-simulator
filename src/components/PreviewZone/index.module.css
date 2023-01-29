@@ -67,15 +67,15 @@
   font-size: 18px;
   color: #aaa8a2;
 }
-.PrevewItemSkillSection {
+.PreviewItemSkillSection {
   display: flex;
   flex-direction: column;
 }
-.PrevewItemSkillSection:hover .PreviewItemSkillDetail {
+.PreviewItemSkillSection:hover .PreviewItemSkillDetail {
   display: block;
 }
 
-.PrevewItemSkill {
+.PreviewItemSkill {
   display: flex;
   border: 3px solid grey;
   border-radius: 8px;

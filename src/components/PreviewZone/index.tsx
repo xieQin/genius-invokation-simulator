@@ -6,15 +6,21 @@ import {
   ICard,
   ICharacter,
   ISkill,
+  ISummon,
   Phase,
   PlayerPosition,
   PreviewStatus,
 } from "@/models";
 import { useGameStore } from "@/stores";
-import { isCardType, isCharacterType, isSkillType } from "@/utils";
+import {
+  isCardType,
+  isCharacterType,
+  isSkillType,
+  isSummonType,
+} from "@/utils";
 
 import { CharacterItem } from "../CharacterZone";
-import { HandCardCost, HandCardItem } from "../HandCardZone";
+import { CardImgItem, HandCardCost, HandCardItem } from "../HandCardZone";
 import { SkillPayItems } from "../SkillZone";
 import styles from "./index.module.css";
 
@@ -43,6 +49,8 @@ export default function PreviewZone() {
             <PreviewSkill preview={preview as ISkill} />
           </div>
         </div>
+      ) : isSummonType(preview) ? (
+        <PreviewSummon preview={preview as ISummon} />
       ) : (
         <></>
       )}
@@ -55,8 +63,8 @@ export const PreviewSkill = (props: { preview: ISkill }) => {
   const { preview } = props;
   const skill = preview;
   return (
-    <div key={skill.name} className={styles.PrevewItemSkillSection}>
-      <div className={styles.PrevewItemSkill}>
+    <div key={skill.name} className={styles.PreviewItemSkillSection}>
+      <div className={styles.PreviewItemSkill}>
         <div className={styles.PreviewItemSkillImg}>
           <img src={`${PUBLIC_PATH}/skills/${skill.imgID}.png`} alt="" />
         </div>
@@ -182,6 +190,28 @@ export const PreviewCard = (props: { preview: ICard; noImg?: boolean }) => {
           <HandCardCost cost={preview.cost} />
         </div>
         <div className={styles.PreviewItemType}>{preview.mainType} Card</div>
+        <div
+          className={styles.PreviewItemContent}
+          style={{ whiteSpace: "pre-wrap" }}
+          dangerouslySetInnerHTML={{
+            __html: t(preview.content).replace(/\\n*/g, "<br/>"),
+          }}
+        ></div>
+      </div>
+    </div>
+  );
+};
+
+export const PreviewSummon = (props: { preview: ISummon }) => {
+  const { t } = useTranslation();
+  const { preview } = props;
+  return (
+    <div className={styles.PreviewSection}>
+      <div className={styles.PreviewCard}>
+        <CardImgItem img={`${PUBLIC_PATH}/summons/${preview.imgID}.png`} />
+      </div>
+      <div className={styles.PreviewZoneItem}>
+        <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         <div
           className={styles.PreviewItemContent}
           style={{ whiteSpace: "pre-wrap" }}

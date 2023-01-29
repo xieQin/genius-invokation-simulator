@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { useSkill, useSummons } from "@/hooks";
+import { usePreview, useSkill, useSummons } from "@/hooks";
 import { GIElement, PlayerPosition } from "@/models";
 import { ISummon } from "@/models/summons";
 
@@ -35,10 +35,20 @@ export const SummonDamageItem = (props: {
 export const SummonItem = (props: {
   summon: ISummon;
   style?: CSSProperties;
+  pos: PlayerPosition;
 }) => {
   const { getElemental, getUsage } = useSummons(props.summon);
+  const { onPreview } = usePreview();
   return (
-    <div className={styles.SummonsItemLayout} style={props.style}>
+    <div
+      className={styles.SummonsItemLayout}
+      style={props.style}
+      aria-hidden="true"
+      onClick={() => {
+        if (props.pos === PlayerPosition.Opponent) return;
+        onPreview(props.summon);
+      }}
+    >
       <div className={styles.SummonsItem}>
         <img src={`${PUBLIC_PATH}/summons/${props.summon.imgID}.png`} alt="" />
       </div>
@@ -64,11 +74,16 @@ export default function SummonsZone(props: {
     <div className={styles.SummonsZone} {...props}>
       <div className={styles.SummonsList}>
         {summons.map((card, index) => (
-          <SummonItem key={index} summon={card} />
+          <SummonItem key={index} summon={card} pos={pos} />
         ))}
         {previewSummons.length > 0 &&
           previewSummons.map((summon, index) => (
-            <SummonItem key={index} summon={summon} style={{ zIndex: 22 }} />
+            <SummonItem
+              key={index}
+              summon={summon}
+              style={{ zIndex: 22 }}
+              pos={pos}
+            />
           ))}
       </div>
     </div>
