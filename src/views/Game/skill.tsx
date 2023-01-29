@@ -38,6 +38,13 @@ export default function SkillPhase() {
 
   const onCancel = () => {
     setGameStates("phase", Phase.Combat);
+    setGameStates(
+      "activeSkills",
+      Object.assign([], activeSkills, [
+        -1,
+        activeSkills[PlayerPosition.Opponent],
+      ])
+    );
   };
 
   return (
