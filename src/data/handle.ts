@@ -183,7 +183,6 @@ export const formatSkillExtras = () => {
     JSON.stringify(Object.fromEntries(res))
   );
 };
-
 // formatSkillExtras();
 
 const defaultCardsExtra = {

@@ -2,6 +2,7 @@ import { CardModify } from "./card";
 
 export interface ISummon {
   id: number;
+  imgID: string;
   name: string;
   content: string;
   cardModify: CardModify[];
