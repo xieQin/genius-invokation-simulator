@@ -131,7 +131,7 @@ export const transI18n = () => {
 };
 
 transCharacters();
-transCards();
+// transCards();
 // transI18n();
 
 const defaultSkillExtra = {
@@ -183,7 +183,6 @@ export const formatSkillExtras = () => {
     JSON.stringify(Object.fromEntries(res))
   );
 };
-
 // formatSkillExtras();
 
 const defaultCardsExtra = {

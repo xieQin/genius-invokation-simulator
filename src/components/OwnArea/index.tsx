@@ -41,11 +41,7 @@ export default function OwnArea() {
         style={{ top: "580px" }}
       />
       <CharacterZone {...characterProps} />
-      <SummonsZone
-        summons={summons}
-        player={position}
-        style={{ top: "580px" }}
-      />
+      <SummonsZone summons={summons} pos={position} style={{ top: "580px" }} />
       <HandCardZone pos={position} cards={cards} />
       <CardStackZone />
     </div>

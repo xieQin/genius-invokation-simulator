@@ -1,5 +1,5 @@
 import { IEffect } from "./effect";
-import { SummonsID } from "./summons";
+import { ISummon } from "./summons";
 
 export interface ICost {
   costNum: number;
@@ -14,7 +14,7 @@ export interface ISkill {
   costs: ICost[];
   img: string;
   imgID: string;
-  summons: SummonsID[];
+  summons: ISummon[];
   effect: IEffect[];
   shield: string[];
 }

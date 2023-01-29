@@ -6,6 +6,7 @@ import {
   ICost,
   IPlayer,
   ISkill,
+  ISummon,
   PlayerPosition,
 } from "@/models";
 import { GIDice, GIDiceID } from "@/models/die";
@@ -106,6 +107,10 @@ export const isSkillType = (data: unknown) => {
   return (data as ISkill)?.costs;
 };
 
+export const isSummonType = (data: unknown) => {
+  return (data as ISummon)?.cardModify;
+};
+
 export const InitPlayer = (name: string, position: PlayerPosition) => {
   const { cardStack } = InitCardStack();
   const { characters } = InitCharacters();
@@ -147,7 +152,8 @@ export const InitCharacters = () => {
 };
 
 export const InitCardStack = () => {
-  const initCardStack = () => getRandom<ICard>(30, CardData as ICard[]);
+  const initCardStack = () =>
+    getRandom<ICard>(30, CardData as unknown as ICard[]);
   const cardStack = initCardStack();
 
   return {
@@ -162,7 +168,7 @@ export const DraftHandCard = (num = 2, cardStack: ICard[]) => {
 };
 
 export const getCardByName = (name: string): ICard => {
-  return CardData.filter(card => card.name === name)[0] as ICard;
+  return CardData.filter(card => card.name === name)[0] as unknown as ICard;
 };
 
 export const getCharacterByName = (name: string): ICharacter => {

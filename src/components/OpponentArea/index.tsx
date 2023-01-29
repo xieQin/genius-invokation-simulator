@@ -30,11 +30,7 @@ export default function OpponentArea() {
         player={position}
       />
       <CharacterZone {...characterProps} />
-      <SummonsZone
-        style={{ top: "180px" }}
-        summons={summons}
-        player={position}
-      />
+      <SummonsZone style={{ top: "180px" }} summons={summons} pos={position} />
       <CardStackZone style={{ top: "160px" }} />
       <HandCardZone
         cards={cards}

@@ -27,6 +27,18 @@ export const HandCardCost = (props: { cost: ICost[] }) => {
   );
 };
 
+export const CardImgItem = (props: { img: string }) => {
+  return (
+    <div className={styles.HandCardLayout}>
+      <div
+        className={`${styles.HandCard} ${styles.HandCardBorder} ${styles.HandCardFront}`}
+      >
+        <img src={props.img} alt="" />
+      </div>
+    </div>
+  );
+};
+
 export const HandCardItem = (props: CardItemProps) => {
   const { pos, card } = props;
   const { onPreview } = usePreview();
