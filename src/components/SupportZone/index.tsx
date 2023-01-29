@@ -3,7 +3,6 @@ import { CSSProperties } from "react";
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview, useSupport } from "@/hooks";
 import { ICard, PlayerPosition } from "@/models";
-import { SupportType } from "@/models/support";
 
 import styles from "./index.module.css";
 

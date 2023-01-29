@@ -131,7 +131,7 @@ export const transI18n = () => {
 };
 
 transCharacters();
-transCards();
+// transCards();
 // transI18n();
 
 const defaultSkillExtra = {

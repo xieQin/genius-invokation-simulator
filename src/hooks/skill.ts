@@ -101,6 +101,15 @@ export const useSkill = (pos: PlayerPosition) => {
     return false;
   };
 
+  const shouldPreviewSummons = () => {
+    if (pos !== current) return [];
+    const activeSkill = activeSkills[pos];
+    if (activeSkill < 0) return [];
+    const skill =
+      players[pos].characters[activeCharacters[pos]].skills[activeSkill];
+    return skill.summons;
+  };
+
   const isSkillValid = (costs: ICost[] = []) => {
     return pos === current && isCostDiceValid(costs, dices);
   };
@@ -145,6 +154,7 @@ export const useSkill = (pos: PlayerPosition) => {
     isEnergyValid,
     onCastSkill,
     shouldTargetHighlight,
+    shouldPreviewSummons,
     calDamage,
     getSkillAnimation,
   };

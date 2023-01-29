@@ -1,6 +1,7 @@
 import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
+import { useSkill } from "@/hooks";
 import { GIElement, PlayerPosition } from "@/models";
 import { SummonsID } from "@/models/summons";
 
@@ -28,9 +29,9 @@ export const SummonDamageItem = (props: {
   );
 };
 
-export const SummonItem = (props: { card: string }) => {
+export const SummonItem = (props: { card: string; style?: CSSProperties }) => {
   return (
-    <div className={styles.SummonsItemLayout}>
+    <div className={styles.SummonsItemLayout} style={props.style}>
       <div className={styles.SummonsItem}>
         <img src={`${PUBLIC_PATH}/summons/${props.card}.png`} alt="" />
       </div>
@@ -43,9 +44,11 @@ export const SummonItem = (props: { card: string }) => {
 export default function SummonsZone(props: {
   style?: CSSProperties;
   summons: SummonsID[];
-  player: PlayerPosition;
+  pos: PlayerPosition;
 }) {
-  const { summons } = props;
+  const { summons, pos } = props;
+  const { shouldPreviewSummons } = useSkill(pos);
+  const previewSummons = shouldPreviewSummons();
 
   return (
     <div className={styles.SummonsZone} {...props}>
@@ -53,6 +56,10 @@ export default function SummonsZone(props: {
         {summons.map((card, index) => (
           <SummonItem key={index} card={card} />
         ))}
+        {previewSummons.length > 0 &&
+          previewSummons.map((summon, index) => (
+            <SummonItem key={index} card={summon} style={{ zIndex: 22 }} />
+          ))}
       </div>
     </div>
   );
