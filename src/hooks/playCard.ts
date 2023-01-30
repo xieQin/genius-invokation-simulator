@@ -1,11 +1,15 @@
 import {
   CardMainType,
+  EffectType,
   EquipmentMainType,
+  EventType,
+  GIDiceID,
   ICard,
   Phase,
   PlayerPosition,
 } from "@/models";
 import { useGameStore } from "@/stores";
+import { dicesToMap, diceToNumber, sortDice } from "@/utils";
 
 export const usePlayCard = () => {
   const {
@@ -17,6 +21,8 @@ export const usePlayCard = () => {
     showMessage,
     selectedCharacters,
     updatePlayer,
+    dices,
+    updateDices,
   } = useGameStore();
   // const player: IPlayer = pos === PlayerPosition.Own ? own : opponent;
 
@@ -27,9 +33,29 @@ export const usePlayCard = () => {
       addSupport(card, pos);
     }
     if (card.mainType === CardMainType.Event) {
+      if (card.subType.includes(EventType.ElementalResonance)) {
+        const effects = card.cardEffect;
+        const pos = PlayerPosition.Own;
+        const dice = dices[pos];
+        const diceMap = dicesToMap(diceToNumber(dice));
+        effects.forEach(e => {
+          if (e.type === EffectType.Die) {
+            const dieType = e.subType as GIDiceID;
+            const dieOrigin = diceMap.get(dieType);
+            if (dieOrigin === undefined) {
+              diceMap.set(dieType, e.value);
+            } else {
+              diceMap.set(dieType, dieOrigin + e.value);
+            }
+          }
+        });
+        const sortedDice = sortDice(diceMap);
+        updateDices(sortedDice, pos);
+      }
       console.log(card, "Event Card");
     }
     if (card.mainType === CardMainType.Equipment) {
+      if (selectedCharacters[pos] < 0) return;
       const type = card.subType[0];
       const player = Object.assign({}, players[pos]);
       if (type === EquipmentMainType.Weapon) {
