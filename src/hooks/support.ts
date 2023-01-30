@@ -7,7 +7,7 @@ export const useSupport = (card: ICard) => {
     card.cardModify.forEach(modify => {
       if (modify.time.length > 0) {
         modify.time.forEach(t => {
-          if (t.type === CardTimeType.Round) {
+          if (t.type === CardTimeType.Round && t.value > 1) {
             usage = t.value;
           }
         });

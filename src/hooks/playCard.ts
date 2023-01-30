@@ -22,7 +22,7 @@ export const usePlayCard = () => {
     selectedCharacters,
     updatePlayer,
     dices,
-    setGameStates,
+    updateDices,
   } = useGameStore();
   // const player: IPlayer = pos === PlayerPosition.Own ? own : opponent;
 
@@ -50,14 +50,12 @@ export const usePlayCard = () => {
           }
         });
         const sortedDice = sortDice(diceMap);
-        setGameStates(
-          "dices",
-          Object.assign([], [sortedDice, dice[PlayerPosition.Opponent]])
-        );
+        updateDices(sortedDice, pos);
       }
       console.log(card, "Event Card");
     }
     if (card.mainType === CardMainType.Equipment) {
+      if (selectedCharacters[pos] < 0) return;
       const type = card.subType[0];
       const player = Object.assign({}, players[pos]);
       if (type === EquipmentMainType.Weapon) {
