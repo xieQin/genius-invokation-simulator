@@ -7,7 +7,7 @@ import {
   EquipmentMainType,
   IEquipment,
 } from "./equipment";
-import { EventID, IEvent } from "./event";
+import { EventID, EventType, IEvent } from "./event";
 import { GIRegion } from "./region";
 import { ICost } from "./skill";
 import { ISupport, SupportID, SupportType } from "./support";
@@ -99,4 +99,8 @@ export enum CardMainType {
   Equipment = "Equipment",
 }
 
-export type CardSubType = EquipmentMainType | EqiupmentWeaponType | SupportType;
+export type CardSubType =
+  | EquipmentMainType
+  | EqiupmentWeaponType
+  | SupportType
+  | EventType;

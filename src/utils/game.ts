@@ -59,7 +59,7 @@ export const dicesToMap = (dices: number[]): Map<GIDiceID, number> => {
   return diceMap;
 };
 
-export const sortDice = (diceMap: Map<GIDiceID, number>) => {
+export const sortDice = (diceMap: Map<GIDiceID, number>): GIDiceID[] => {
   const res: GIDiceID[] = [];
   const omniDice = diceMap.get("Omni") || 0;
   if (omniDice > 0) {
