@@ -1,13 +1,13 @@
 import { ICard } from "./card";
 import { ICharacter } from "./character";
-import { SummonsID } from "./summons";
+import { ISummon } from "./summons";
 
 export interface IPlayer {
   name: string;
   position: PlayerPosition;
   status: string | null;
   characters: ICharacter[];
-  summons: SummonsID[];
+  summons: ISummon[];
   supports: ICard[];
   cards: ICard[];
   cardStack: ICard[];

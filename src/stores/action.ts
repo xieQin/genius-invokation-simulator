@@ -4,8 +4,8 @@ import {
   GIElement,
   ICard,
   IPlayer,
+  ISummon,
   PlayerPosition,
-  SummonsID,
 } from "@/models";
 
 import { GameState } from "./initialState";
@@ -27,7 +27,7 @@ export interface GameAction {
   draftHandCard: (num: number, pos: PlayerPosition) => ICard[];
   addSupport: (cards: ICard, pos: PlayerPosition) => void;
   showMessage: (message: string, callback?: () => void) => void;
-  addSummon: (summon: SummonsID[], pos: PlayerPosition) => void;
+  addSummon: (summon: ISummon[], pos: PlayerPosition) => void;
   updateEnergy: (energy: number, pos: PlayerPosition) => void;
   updateHp: (hp: number, pos: PlayerPosition, target: EffectTarget) => void;
   updateElementStatus: (
