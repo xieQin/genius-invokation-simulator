@@ -88,6 +88,7 @@ export const isCostDiceValid = (costs: ICost[], dices: GIDiceID[]) => {
     const diceNum = cost[1];
     const omni = dicesMap.get("Omni") ?? 0;
     const _diceType = dicesMap.get(diceType) ?? 0;
+    if (diceType === "Energy") continue;
     if (omni >= diceNum) continue;
     if (diceType === "Void" && dicesMap.size < diceNum) return false;
     if (diceType !== "Void" && diceNum > omni + _diceType) return false;
