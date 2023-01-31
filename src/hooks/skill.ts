@@ -7,11 +7,10 @@ import {
   Phase,
   PlayerPosition,
   SkillCombatType,
-  SummonsID,
   TransEffectSubTypeToGIElement,
 } from "@/models";
 import { useGameStore } from "@/stores";
-import { isCostDiceValid, NameIDTrans } from "@/utils";
+import { isCostDiceValid } from "@/utils";
 
 export const useSkill = (pos: PlayerPosition) => {
   const {
@@ -42,7 +41,7 @@ export const useSkill = (pos: PlayerPosition) => {
     ]);
     if (skill.summons.length > 0) {
       const summons = skill.summons;
-      addSummon(summons.map(s => NameIDTrans(s)) as SummonsID[], pos);
+      addSummon(summons, pos);
     }
     // todo handle skill shield
     if (skill.shield.length > 0) {
