@@ -1,10 +1,26 @@
 import { useTimeout } from "@/hooks";
+import { PlayerPosition } from "@/models";
+import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
 export const NoticeText = (props: { message: React.ReactNode | string }) => {
   const { message } = props;
-  return <>{message && <div className={styles.Notice}>{message}</div>}</>;
+  const { current } = useGameStore();
+  return (
+    <>
+      {message && (
+        <div
+          className={[
+            styles.Notice,
+            current === PlayerPosition.Opponent ? styles.Opponent : "",
+          ].join(" ")}
+        >
+          {message}
+        </div>
+      )}
+    </>
+  );
 };
 
 export default function Notice(props: {
@@ -17,5 +33,5 @@ export default function Notice(props: {
     callback && callback();
   }, timeout);
 
-  return <>{message && <div className={styles.Notice}>{message}</div>}</>;
+  return <>{message && <NoticeText message={message} />}</>;
 }

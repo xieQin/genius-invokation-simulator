@@ -6,7 +6,7 @@ import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";
 
-export default function Round(props: { callback: () => void }) {
+export default function Round(props: { callback?: () => void }) {
   const { round, current } = useGameStore();
   const [show, setShow] = useState(true);
   const { callback } = props;
