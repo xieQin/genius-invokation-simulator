@@ -19,3 +19,12 @@
   );
   z-index: 13;
 }
+.Opponent {
+  background: #3b3ef56e;
+  background: linear-gradient(
+    to right,
+    rgba(61, 43, 228, 0.1) 0%,
+    rgba(38, 102, 240, 0.6) 50%,
+    rgba(61, 43, 228, 0.1) 100%
+  );
+}
