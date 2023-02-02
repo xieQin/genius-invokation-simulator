@@ -146,6 +146,7 @@ export const InitCharacters = () => {
             weapon: null,
             artifact: null,
             talent: null,
+            food: null,
           },
         })
       ) as ICharacter[],

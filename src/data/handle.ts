@@ -59,6 +59,7 @@ export const transCharacters = () => {
           weapon: null,
           artifact: null,
           talent: null,
+          food: null,
         },
         profile: null,
         elementStatus: [],
@@ -135,8 +136,8 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-// transCharacters();
-transCards();
+transCharacters();
+// transCards();
 // transI18n();
 
 const defaultSkillExtra = {

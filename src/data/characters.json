@@ -150,7 +150,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -275,7 +280,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -371,7 +381,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -467,7 +482,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -603,7 +623,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -723,7 +748,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -819,7 +849,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -961,7 +996,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1057,7 +1097,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1169,7 +1214,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1265,7 +1315,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1354,7 +1409,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1450,7 +1510,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1575,7 +1640,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1671,7 +1741,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1773,7 +1848,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1886,7 +1966,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -1999,7 +2084,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2118,7 +2208,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2238,7 +2333,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2334,7 +2434,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2430,7 +2535,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2549,7 +2659,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2606,80 +2721,7 @@
           { "damage": 0, "damageType": "", "target": "Background" }
         ],
         "shield": [],
-        "summons": [
-          {
-            "id": 122010,
-            "imgID": "OceanidMimicFerret",
-            "name": "Oceanid Mimic Ferret",
-            "content": "Ferret</span>: Deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 2 Uses.",
-            "cardModify": [
-              {
-                "effect": [
-                  {
-                    "type": "Damage",
-                    "subType": "Hydro",
-                    "target": "Opponent",
-                    "value": 2
-                  }
-                ],
-                "time": [{ "type": "Round", "value": 2 }],
-                "condition": [
-                  { "category": "End Phase", "value": "After End Phase" }
-                ]
-              }
-            ]
-          },
-          {
-            "id": 122011,
-            "imgID": "OceanidMimicRaptor",
-            "name": "Oceanid Mimic Raptor",
-            "content": "Raptor</span>: Deal 1 <span style=\"color: #80C0FFFF;\">Hydro DMG</span> at the End Phase. 3 Uses.",
-            "cardModify": [
-              {
-                "effect": [
-                  {
-                    "type": "Damage",
-                    "subType": "Hydro",
-                    "target": "Opponent",
-                    "value": 1
-                  }
-                ],
-                "time": [{ "type": "Round", "value": 3 }],
-                "condition": [
-                  { "category": "End Phase", "value": "After End Phase" }
-                ]
-              }
-            ]
-          },
-          {
-            "id": 122012,
-            "imgID": "OceanidMimicFrog",
-            "name": "Oceanid Mimic Frog",
-            "content": "Frog</span>: Can block 2 DMG. Once this effect is depleted, deal 2 <span style=\"color: #80C0FFFF;\">Hydro DMG</span>.",
-            "cardModify": [
-              {
-                "effect": [
-                  {
-                    "type": "Damage",
-                    "subType": "Hydro",
-                    "target": "Opponent",
-                    "value": 2
-                  },
-                  {
-                    "type": "Defense",
-                    "subType": "All",
-                    "target": "Active",
-                    "value": -2
-                  }
-                ],
-                "time": [{ "type": "Round", "value": 1 }],
-                "condition": [
-                  { "category": "End Phase", "value": "After End Phase" }
-                ]
-              }
-            ]
-          }
-        ],
+        "summons": [null],
         "heal": [{ "heal": 0, "target": "All" }],
         "effect": []
       },
@@ -2801,7 +2843,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -2897,7 +2944,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -3010,7 +3062,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -3176,7 +3233,12 @@
         ]
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
@@ -3289,7 +3351,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 8,
@@ -3402,7 +3469,12 @@
         "effect": []
       }
     ],
-    "equipments": { "weapon": null, "artifact": null, "talent": null },
+    "equipments": {
+      "weapon": null,
+      "artifact": null,
+      "talent": null,
+      "food": null
+    },
     "profile": null,
     "elementStatus": [],
     "hp": 10,
