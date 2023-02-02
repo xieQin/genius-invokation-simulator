@@ -152,6 +152,13 @@
   background-image: url(/images/cryo-icon.png);
   background-size: cover;
 }
+.HandCardPay.Energy {
+  background-image: url(/images/energy-icon.png);
+  background-size: cover;
+}
+.Energy {
+  top: 40px;
+}
 
 .DraftHandCardZone {
   position: absolute;

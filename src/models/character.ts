@@ -38,6 +38,7 @@ export interface ICharacterEquipment {
   weapon: ICard | null;
   artifact: ICard | null;
   talent: ICard | null;
+  food: ICard | null;
 }
 
 export enum Character {

@@ -19,11 +19,19 @@ export interface CardItemProps {
   pos: PlayerPosition;
 }
 
-export const HandCardCost = (props: { cost: ICost[] }) => {
+export const HandCardCost = (props: { costs: ICost[] }) => {
+  const { costs } = props;
   return (
-    <div className={`${styles.HandCardPay} ${styles[props.cost[0].costType]}`}>
-      {props.cost[0].costNum}
-    </div>
+    <>
+      {costs.map((cost, i) => (
+        <div
+          key={i}
+          className={`${styles.HandCardPay} ${styles[cost.costType]}`}
+        >
+          {cost.costNum}
+        </div>
+      ))}
+    </>
   );
 };
 
@@ -58,7 +66,7 @@ export const HandCardItem = (props: CardItemProps) => {
             : styles.HandCardBack
         }`}
       >
-        <HandCardCost cost={card.cost} />
+        <HandCardCost costs={card.cost} />
         <img src={`${PUBLIC_PATH}/cards/${card.imgID}.png`} alt="" />
       </div>
       <div

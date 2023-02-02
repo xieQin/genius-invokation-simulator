@@ -5,10 +5,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Ganyu</span>, equip this card.\\nAfter Ganyu equips this card, immediately use <span style='color: #FFD780FF'>Frostflake Arrow</span> once.\\nWhen your Ganyu, who has this card equipped, uses <span style='color: #FFFFFFFF'>Frostflake Arrow</span>: <span style='color: #99FFFFFF'>Cryo DMG</span> dealt by this Skill +1 if this Skill has been used before during this match, and it now deals 3 <span style='color: #FFFFFFFF'>Piercing DMG</span> to all opposing characters on standby instead.\\n(You must have Ganyu in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 5, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 5, "costType": "Cryo" }],
     "img": "/characters/UndividedHeart.png",
     "imgID": "UndividedHeart",
     "cardTarget": ["Select"],
@@ -53,10 +50,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Diona</span>, equip this card.\\nAfter Diona equips this card, immediately use <span style='color: #FFD780FF'>Icy Paws</span> once.\\nWhen your Diona, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Cat-Claw Shield</span>, its <span style='color: #FFFFFFFF'>Shield</span> points +1.\\n(You must have Diona in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Cryo" }],
     "img": "/characters/ShakenNotPurred.png",
     "imgID": "ShakenNotPurred",
     "cardTarget": ["Select"],
@@ -100,10 +94,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Kaeya</span>, equip this card.\\nAfter Kaeya equips this card, immediately use <span style='color: #FFD780FF'>Frostgnaw</span> once.\\nAfter your Kaeya, who has this card equipped, uses <span style='color: #FFFFFFFF'>Frostgnaw</span>, he heals himself for 2 HP. (Once per Round)\\n(You must have Kaeya in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Cryo" }],
     "img": "/characters/ColdBloodedStrike.png",
     "imgID": "ColdBloodedStrike",
     "cardTarget": ["Select"],
@@ -141,10 +132,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Chongyun</span>, equip this card.\\nAfter Chongyun equips this card, immediately use <span style='color: #FFD780FF'>Chonghua's Layered Frost</span> once.\\nWhen your Chongyun, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Chonghua Frost Field</span>, it will have the following effects: Starting <span style='color: #FFFFFFFF'>Duration (Rounds)</span> +1, will cause your Sword, Claymore, and Polearm-wielding characters' <span style='color: #FFFFFFFF'>Normal Attacks</span> to deal +1 DMG.\\n(You must have Chongyun in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Cryo" }],
     "img": "/characters/SteadyBreathing.png",
     "imgID": "SteadyBreathing",
     "cardTarget": ["Select"],
@@ -177,10 +165,7 @@
     "content": "The <span style='color: #FFFFFFFF'>Cryo Elemental Infusion</span> created by your <span style='color: #FFFFFFFF'>Kamisato Ayaka</span>, who has this card equipped, allows the character to which it is attached to deal +1 <span style='color: #99FFFFFF'><span style='color: #99FFFFFF'>Cryo DMG</span></span>.\\nWhen you switch to Kamisato Ayaka, who has this card equipped: Spend 1 less Elemental Die. (Once per Round)\\n(You must have Kamisato Ayaka in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent"],
-    "cost": [
-      { "costNum": 2, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Cryo" }],
     "img": "/characters/KantenSenmyouBlessing.png",
     "imgID": "KantenSenmyouBlessing",
     "cardTarget": ["Select"],
@@ -224,10 +209,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Barbara</span>, equip this card.\\nAfter Barbara equips this card, immediately use <span style='color: #FFD780FF'>Let the Show Begin♪</span> once.\\nWhen your Barbara, who has this card equipped, is on the field, <span style='color: #FFFFFFFF'>Melody Loop</span> will allow you to spend 1 less Elemental Die the next time you use \"Switch Character.\" (Once per round)\\n(You must have Barbara in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Hydro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Hydro" }],
     "img": "/characters/GloriousSeason.png",
     "imgID": "GloriousSeason",
     "cardTarget": ["Select"],
@@ -262,10 +244,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Xingqiu</span>, equip this card.\\nAfter Xingqiu equips this card, immediately use <span style='color: #FFD780FF'>Fatal Rainscreen</span> once.\\nWhen your Xingqiu, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Rain Sword</span>, its starting <span style='color: #FFFFFFFF'>Usage(s)</span> +1.\\n(You must have Xingqiu in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Hydro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Hydro" }],
     "img": "/characters/TheScentRemained.png",
     "imgID": "TheScentRemained",
     "cardTarget": ["Select"],
@@ -329,10 +308,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Diluc</span>, equip this card.\\nAfter Diluc equips this card, immediately use <span style='color: #FFD780FF'>Searing Onslaught</span> once.\\nWhen your Diluc, who has this card equipped, uses <span style='color: #FFFFFFFF'>Searing Onslaught</span> for the second time in one Round, spend 1 less <span style='color: #FF9999FF'>Pyro Die</span>.\\n(You must have Diluc in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Pyro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Pyro" }],
     "img": "/characters/FlowingFlame.png",
     "imgID": "FlowingFlame",
     "cardTarget": ["Select"],
@@ -354,10 +330,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Xiangling</span>, equip this card.\\nAfter Xiangling equips this card, immediately use <span style='color: #FFD780FF'>Guoba Attack</span> once.\\nWhen your Xiangling, who has this card equipped, uses <span style='color: #FFFFFFFF'>Guoba Attack</span>, she will also deal 1 <span style='color: #FF9999FF'>Pyro DMG</span>.\\n(You must have Xiangling in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Pyro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Pyro" }],
     "img": "/characters/Crossfire.png",
     "imgID": "Crossfire",
     "cardTarget": ["Select"],
@@ -406,10 +379,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Yoimiya</span>, equip this card.\\nAfter Yoimiya equips this card, immediately use <span style='color: #FFD780FF'>Niwabi Fire-Dance</span> once.\\nAfter your Yoimiya, who has this card equipped, triggers <span style='color: #FFFFFFFF'>Niwabi Enshou</span>: Deal 1 additional <span style='color: #FF9999FF'>Pyro DMG</span>.\\n(You must have Yoimiya in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 2, "costType": "Pyro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Pyro" }],
     "img": "/characters/NaganoharaMeteorSwarm.png",
     "imgID": "NaganoharaMeteorSwarm",
     "cardTarget": ["Select"],
@@ -444,10 +414,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Fischl</span>, equip this card.\\nAfter Fischl equips this card, immediately use <span style='color: #FFD780FF'>Nightrider</span> once.\\nWhen your Fischl, who has this card equipped, creates an <span style='color: #FFFFFFFF'>Oz</span>, and after Fischl uses a <span style='color: #FFFFFFFF'>Normal Attack</span>: Deal 2 <span style='color: #FFACFFFF'>Electro DMG</span>. (Consumes <span style='color: #FFFFFFFF'>Usage(s)</span>)\\n(You must have Fischl in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Electro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Electro" }],
     "img": "/characters/StellarPredator.png",
     "imgID": "StellarPredator",
     "cardTarget": ["Select"],
@@ -484,10 +451,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Razor</span>, equip this card.\\nAfter Razor equips this card, immediately use <span style='color: #FFD780FF'>Claw and Thunder</span> once.\\nAfter your Razor, who has this card equipped, <span style='color: #FFFFFFFF'>uses Claw and Thunder</span>: 1 of your Electro characters gains 1 Energy. (Active Character prioritized)\\n(You must have Razor in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Electro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Electro" }],
     "img": "/characters/Awakening.png",
     "imgID": "Awakening",
     "cardTarget": ["Select"],
@@ -509,10 +473,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Keqing</span>, equip this card.\\nAfter Keqing equips this card, immediately use <span style='color: #FFD780FF'>Stellar Restoration</span> once.\\nWhen your Keqing, who has this card equipped, creates an <span style='color: #FFFFFFFF'>Electro Elemental Infusion</span>, it will have the following effects:\\nStarting <span style='color: #FFFFFFFF'>Duration (Rounds)</span> +1, <span style='color: #FFACFFFF'>Electro DMG</span> dealt by the attached character +1.\\n(You must have Keqing in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Electro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Electro" }],
     "img": "/characters/ThunderingPenance.png",
     "imgID": "ThunderingPenance",
     "cardTarget": ["Select"],
@@ -534,10 +495,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Cyno</span>, equip this card.\\nAfter Cyno equips this card, immediately use <span style='color: #FFD780FF'>Secret Rite: Chasmic Soulfarer</span> once.\\nWhen your Cyno, who has this card equipped, uses <span style='color: #FFFFFFFF'>Secret Rite: Chasmic Soulfarer</span> with 3 or 5 levels of <span style='color: #FFFFFFFF'>Pactsworn Pathclearer</span>'s Indwelling effect, deal +1 additional DMG.\\n(You must have Cyno in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Electro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Electro" }],
     "img": "/characters/FeatherfallJudgment.png",
     "imgID": "FeatherfallJudgment",
     "cardTarget": ["Select"],
@@ -609,10 +567,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Ningguang</span>, equip this card.\\nAfter Ningguang equips this card, immediately use <span style='color: #FFD780FF'>Jade Screen</span> once.\\nWhen your Ningguang, who has this card equipped, is on the field, <span style='color: #FFFFFFFF'>Jade Screen</span> will cause you to deal +1 <span style='color: #FFE699FF'><span style='color: #FFE699FF'>Geo DMG</span></span>.\\n(You must have Ningguang in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Geo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Geo" }],
     "img": "/characters/StrategicReserve.png",
     "imgID": "StrategicReserve",
     "cardTarget": ["Select"],
@@ -636,10 +591,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Noelle</span>, equip this card.\\nAfter Noelle equips this card, immediately use <span style='color: #FFD780FF'>Breastplate</span> once.\\nWhen your Noelle, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Full Plate</span>, it will heal all your characters for 1 HP after Noelle uses a <span style='color: #FFFFFFFF'>Normal Attack</span>. (Once per Round)\\n(You must have Noelle in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Geo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Geo" }],
     "img": "/characters/IGotYourBack.png",
     "imgID": "IGotYourBack",
     "cardTarget": ["Select"],
@@ -661,10 +613,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Collei</span>, equip this card.\\nAfter Collei equips this card, immediately use <span style='color: #FFD780FF'>Floral Brush</span> once.\\nAfter your Collei, who has this card equipped, <span style='color: #FFFFFFFF'>uses Floral Brush</span>, during this Round, when your characters' Skills trigger <span style='color: #7EC236FF'>Dendro-Related Reactions</span>: Deal 1 <span style='color: #7EC236FF'>Dendro DMG</span>. (Once per Round)\\n(You must have Collei in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Dendro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Dendro" }],
     "img": "/characters/FloralSidewinder.png",
     "imgID": "FloralSidewinder",
     "cardTarget": ["Select"],
@@ -715,10 +664,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Mirror Maiden</span>, equip this card.\\nAfter Mirror Maiden equips this card, immediately use <span style='color: #FFD780FF'>Influx Blast</span> once.\\nWhen your Mirror Maiden, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Refraction</span>, it will have the following effects:\\nStarting <span style='color: #FFFFFFFF'>Duration (Rounds)</span> +1, will increase the Elemental Dice Cost of switching from the character to which this is attached to another character by 1.\\n(You must have Mirror Maiden in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 4, "costType": "Hydro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Hydro" }],
     "img": "/characters/MirrorCage.png",
     "imgID": "MirrorCage",
     "cardTarget": ["Select"],
@@ -744,10 +690,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Fatui Pyro Agent</span>, equip this card.\\nAfter Fatui Pyro Agent equips this card, immediately use <span style='color: #FFD780FF'>Prowl</span> once.\\nWhen your Fatui Pyro Agent, who has this card equipped, creates a <span style='color: #FFFFFFFF'>Stealth</span>, it will have the following effects:\\nStarting <span style='color: #FFFFFFFF'>Usage(s)</span> +1, the <span style='color: #FFFFFFFF'>Physical DMG</span> the attached character deals will be converted to <span style='color: #FF9999FF'>Pyro DMG</span>.\\n(You must have Fatui Pyro Agent in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Pyro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Pyro" }],
     "img": "/characters/PaidinFull.png",
     "imgID": "PaidinFull",
     "cardTarget": ["Select"],
@@ -773,10 +716,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Maguu Kenki</span>, equip this card.\\nAfter Maguu Kenki equips this card, immediately use <span style='color: #FFD780FF'>Blustering Blade</span> once.\\nAfter your Maguu Kenki, who has this card equipped, uses <span style='color: #FFFFFFFF'>Blustering Blade</span>, you will switch to your next character. You will switch to your previous character when your Maguu Kenki, who has this card equipped, uses <span style='color: #FFFFFFFF'>Frosty Assault</span>.\\n(You must have Maguu Kenki in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Anemo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Anemo" }],
     "img": "/characters/TranscendentAutomaton.png",
     "imgID": "TranscendentAutomaton",
     "cardTarget": ["Select"],
@@ -831,10 +771,7 @@
     "content": "<span style='color: #FFFFFFFF'>Combat Action</span>: When your active character is <span style='color: #FFFFFFFF'>Jadeplume Terrorshroom</span>, equip this card.\\nAfter Jadeplume Terrorshroom equips this card, immediately use <span style='color: #FFD780FF'>Volatile Spore Cloud</span> once.\\nYour Jadeplume Terrorshroom, who has this card equipped, can accumulate 1 more stack of Radical Vitality.\\n(You must have Jadeplume Terrorshroom in your deck to add this card to your deck.)",
     "mainType": "Equipment",
     "subType": ["Talent", "Combat Action"],
-    "cost": [
-      { "costNum": 3, "costType": "Dendro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Dendro" }],
     "img": "/characters/ProliferatingSpores.png",
     "imgID": "ProliferatingSpores",
     "cardTarget": [],
@@ -860,10 +797,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n(<span style='color: #FFFFFFFF'>Only Catalyst Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Catalyst"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/MagicGuide.png",
     "imgID": "MagicGuide",
     "cardTarget": ["Select"],
@@ -886,10 +820,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>After the character uses an Elemental Skill:</span> Create 1 Elemental Die of the same Elemental Type as this character. (Once per Round)\\n(<span style='color: #FFFFFFFF'>Only Catalyst Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Catalyst"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SacrificialFragments.png",
     "imgID": "SacrificialFragments",
     "cardTarget": ["Select"],
@@ -921,10 +852,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>Once per Round:</span> This character's Normal Attacks deal +1 additional DMG.\\n(<span style='color: #FFFFFFFF'>Only Catalyst Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Catalyst"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SkywardAtlas.png",
     "imgID": "SkywardAtlas",
     "cardTarget": ["Select"],
@@ -956,10 +884,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n(<span style='color: #FFFFFFFF'>Only Bow Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Bow"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/RavenBow.png",
     "imgID": "RavenBow",
     "cardTarget": ["Select"],
@@ -982,10 +907,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>After the character uses an Elemental Skill:</span> Create 1 Elemental Die of the same Elemental Type as this character. (Once per Round)\\n(<span style='color: #FFFFFFFF'>Only Bow Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Bow"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SacrificialBow.png",
     "imgID": "SacrificialBow",
     "cardTarget": ["Select"],
@@ -1017,10 +939,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>Once per Round:</span> This character's Normal Attacks deal +1 additional DMG.\\n(<span style='color: #FFFFFFFF'>Only Bow Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Bow"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SkywardHarp.png",
     "imgID": "SkywardHarp",
     "cardTarget": ["Select"],
@@ -1052,10 +971,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n(<span style='color: #FFFFFFFF'>Only Claymore Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Claymore"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/WhiteIronGreatsword.png",
     "imgID": "WhiteIronGreatsword",
     "cardTarget": ["Select"],
@@ -1078,10 +994,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>After the character uses an Elemental Skill:</span> Create 1 Elemental Die of the same Elemental Type as this character. (Once per Round)\\n(<span style='color: #FFFFFFFF'>Only Claymore Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Claymore"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SacrificialGreatsword.png",
     "imgID": "SacrificialGreatsword",
     "cardTarget": ["Select"],
@@ -1113,10 +1026,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\nDeal +2 additional DMG if the target's remaining HP is equal to or less than 6.\\n(<span style='color: #FFFFFFFF'>Only Claymore Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Claymore"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/WolfsGravestone.png",
     "imgID": "WolfsGravestone",
     "cardTarget": ["Select"],
@@ -1146,10 +1056,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n(<span style='color: #FFFFFFFF'>Only Polearm Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Polearm"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/WhiteTassel.png",
     "imgID": "WhiteTassel",
     "cardTarget": ["Select"],
@@ -1172,10 +1079,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\nWhen played: For each party member from Liyue, grant <span style='color: #FFFFFFFF'>1 <span style='color: #FFFFFFFF'>Shield</span> point</span> to the character to which this is attached. (Max 3 points)\\n(<span style='color: #FFFFFFFF'>Only Polearm Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Polearm"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/LithicSpear.png",
     "imgID": "LithicSpear",
     "cardTarget": ["Select"],
@@ -1208,10 +1112,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>Once per Round:</span> This character's Normal Attacks deal +1 additional DMG.\\n(<span style='color: #FFFFFFFF'>Only Polearm Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Polearm"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SkywardSpine.png",
     "imgID": "SkywardSpine",
     "cardTarget": ["Select"],
@@ -1243,10 +1144,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n(<span style='color: #FFFFFFFF'>Only Sword Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Sword"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/TravelersHandySword.png",
     "imgID": "TravelersHandySword",
     "cardTarget": ["Select"],
@@ -1269,10 +1167,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>After the character uses an Elemental Skill:</span> Create 1 Elemental Die of the same Elemental Type as this character. (Once per Round)\\n(<span style='color: #FFFFFFFF'>Only Sword Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Sword"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/SacrificialSword.png",
     "imgID": "SacrificialSword",
     "cardTarget": ["Select"],
@@ -1304,10 +1199,7 @@
     "content": "<span style='color: #FFFFFFFF'>The character deals +1 DMG</span>.\\n<span style='color: #FFFFFFFF'>After the opposing character uses a Skill:</span> If the character with this attached is the active character, heal this character for 1 HP. (Max twice per Round)\\n(<span style='color: #FFFFFFFF'>Only Sword Characters</span> can equip this. A character can equip a maximum of 1 Weapon)",
     "mainType": "Equipment",
     "subType": ["Weapon", "Sword"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/AquilaFavonia.png",
     "imgID": "AquilaFavonia",
     "cardTarget": ["Select"],
@@ -1340,10 +1232,7 @@
     "content": "<span style='color: #FFFFFFFF'>After a character uses a Normal Attack:</span> Heal self for 1 HP. (Max 3 times per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/AdventurersBandana.png",
     "imgID": "AdventurersBandana",
     "cardTarget": ["Select"],
@@ -1369,10 +1258,7 @@
     "content": "<span style='color: #FFFFFFFF'>After the character uses an Elemental Skill:</span> Heal self for 2 HP. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/LuckyDogsSilverCirclet.png",
     "imgID": "LuckyDogsSilverCirclet",
     "cardTarget": ["Select"],
@@ -1398,10 +1284,7 @@
     "content": "<span style='color: #FFFFFFFF'>After a character uses an Elemental Burst:</span> Heal all your characters for 1 HP. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/TravelingDoctorsHandkerchief.png",
     "imgID": "TravelingDoctorsHandkerchief",
     "cardTarget": ["Select"],
@@ -1427,10 +1310,7 @@
     "content": "<span style='color: #FFFFFFFF'>After an opposing character is defeated:</span> If the character this card is attached to is the active character, create <span style='color: #FFFFFFFF'>Omni Element</span> ×2.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/GamblersEarrings.png",
     "imgID": "GamblersEarrings",
     "cardTarget": ["Select"],
@@ -1456,10 +1336,7 @@
     "content": "<span style='color: #FFFFFFFF'>After a character triggers an Elemental Reaction:</span> Create 1 Elemental Die that matches this Character's Elemental Type. (Max 3 times per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/InstructorsCap.png",
     "imgID": "InstructorsCap",
     "cardTarget": ["Select"],
@@ -1488,10 +1365,7 @@
     "content": "<span style='color: #FFFFFFFF'>After a character uses an Elemental Burst:</span> All your characters on standby gain 1 <span style='color: #FFFFFFFF'>Energy</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/ExilesCirclet.png",
     "imgID": "ExilesCirclet",
     "cardTarget": ["Select"],
@@ -1523,10 +1397,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #99FFFFFF'>Cryo Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/BrokenRimesEcho.png",
     "imgID": "BrokenRimesEcho",
     "cardTarget": ["Select"],
@@ -1561,10 +1432,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #99FFFFFF'>Cryo Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #99FFFFFF'>Cryo Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/BlizzardStrayer.png",
     "imgID": "BlizzardStrayer",
     "cardTarget": ["Select"],
@@ -1615,10 +1483,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #80C0FFFF'>Hydro Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/WineStainedTricorne.png",
     "imgID": "WineStainedTricorne",
     "cardTarget": ["Select"],
@@ -1653,10 +1518,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #80C0FFFF'>Hydro Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #80C0FFFF'>Hydro Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/HeartofDepth.png",
     "imgID": "HeartofDepth",
     "cardTarget": ["Select"],
@@ -1707,10 +1569,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FF9999FF'>Pyro Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/WitchsScorchingHat.png",
     "imgID": "WitchsScorchingHat",
     "cardTarget": ["Select"],
@@ -1745,10 +1604,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FF9999FF'>Pyro Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #FF9999FF'>Pyro Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/CrimsonWitchofFlames.png",
     "imgID": "CrimsonWitchofFlames",
     "cardTarget": ["Select"],
@@ -1799,10 +1655,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FFACFFFF'>Electro Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/ThunderSummonersCrown.png",
     "imgID": "ThunderSummonersCrown",
     "cardTarget": ["Select"],
@@ -1837,10 +1690,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FFACFFFF'>Electro Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #FFACFFFF'>Electro Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/ThunderingFury.png",
     "imgID": "ThunderingFury",
     "cardTarget": ["Select"],
@@ -1891,10 +1741,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #80FFD7FF'>Anemo Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/ViridescentVenerersDiadem.png",
     "imgID": "ViridescentVenerersDiadem",
     "cardTarget": ["Select"],
@@ -1929,10 +1776,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #80FFD7FF'>Anemo Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #80FFD7FF'>Anemo Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/ViridescentVenerer.png",
     "imgID": "ViridescentVenerer",
     "cardTarget": ["Select"],
@@ -1983,10 +1827,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FFE699FF'>Geo Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/MaskofSolitudeBasalt.png",
     "imgID": "MaskofSolitudeBasalt",
     "cardTarget": ["Select"],
@@ -2021,10 +1862,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #FFE699FF'>Geo Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #FFE699FF'>Geo Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/ArchaicPetra.png",
     "imgID": "ArchaicPetra",
     "cardTarget": ["Select"],
@@ -2075,10 +1913,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #99FF88FF'>Dendro Die</span>. (Once per Round)\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/LaurelCoronet.png",
     "imgID": "LaurelCoronet",
     "cardTarget": ["Select"],
@@ -2113,10 +1948,7 @@
     "content": "<span style='color: #FFFFFFFF'>When a character uses a Skill or equips a Talent:</span> Spend 1 less <span style='color: #99FF88FF'>Dendro Die</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to be <span style='color: #99FF88FF'>Dendro Dice</span>.\\n(A character can equip a maximum of 1 Artifact)",
     "mainType": "Equipment",
     "subType": ["Artifact"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/DeepwoodMemories.png",
     "imgID": "DeepwoodMemories",
     "cardTarget": ["Select"],
@@ -2167,10 +1999,7 @@
     "content": "<span style='color: #FFFFFFFF'>End Phase:</span> Draw 2 cards.\\n<span style='color: #FFFFFFFF'>Usage(s)</span>: 2",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/LiyueHarborWharf.png",
     "imgID": "LiyueHarborWharf",
     "cardTarget": ["Active"],
@@ -2197,10 +2026,7 @@
     "content": "<span style='color: #FFFFFFFF'>When played:</span> Select any Elemental Dice to reroll.\\n<span style='color: #FFFFFFFF'>Roll Phase:</span> Gain another chance to reroll.",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/KnightsofFavoniusLibrary.png",
     "imgID": "KnightsofFavoniusLibrary",
     "cardTarget": ["Active"],
@@ -2234,10 +2060,7 @@
     "content": "<span style='color: #FFFFFFFF'>Roll Phase:</span> 2 of the starting Elemental Dice you roll are always guaranteed to match the Elemental Type of your active character.",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/JadeChamber.png",
     "imgID": "JadeChamber",
     "cardTarget": ["Active"],
@@ -2269,10 +2092,7 @@
     "content": "<span style='color: #FFFFFFFF'>When you perform \"Switch Character\":</span> Spend 1 less Elemental Die. (Once per Round)",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/DawnWinery.png",
     "imgID": "DawnWinery",
     "cardTarget": ["Active"],
@@ -2304,10 +2124,7 @@
     "content": "<span style='color: #FFFFFFFF'>End Phase:</span> Heal the most injured character on standby for 2 HP.\\n<span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Usage(s)</span>: 2</span>",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/WangshuInn.png",
     "imgID": "WangshuInn",
     "cardTarget": ["Active"],
@@ -2333,10 +2150,7 @@
     "content": "<span style='color: #FFFFFFFF'>End Phase:</span> Heal your active character for 2 HP.\\n<span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Usage(s)</span>: 2</span>",
     "mainType": "Support",
     "subType": ["Location"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/FavoniusCathedral.png",
     "imgID": "FavoniusCathedral",
     "cardTarget": ["Active"],
@@ -2362,10 +2176,7 @@
     "content": "<span style='color: #FFFFFFFF'>When Action Phase begins:</span> Create <span style='color: #FFFFFFFF'>Omni Element</span> ×2.\\n<span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Usage(s)</span>: 2</span>",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 3, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 3, "costType": "Same" }],
     "img": "/characters/Paimon.png",
     "imgID": "Paimon",
     "cardTarget": ["Active"],
@@ -2392,10 +2203,7 @@
     "content": "<span style='color: #FFFFFFFF'>When you perform \"Switch Character\":</span> This switch is considered a <span style='color: #FFFFFFFF'>Fast Action</span> instead of a <span style='color: #FFFFFFFF'>Combat Action</span>. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/Katheryne.png",
     "imgID": "Katheryne",
     "cardTarget": ["Active"],
@@ -2427,10 +2235,7 @@
     "content": "Comes with 2 Transmutation Materials when played.\\n<span style='color: #FFFFFFFF'>End Phase:</span> Gain 1 Transmutation Material.\\n<span style='color: #FFFFFFFF'>When playing an Artifact Card:</span> If possible, spend Transmutation Materials equal to the total cost of the Artifact and equip this Artifact for free. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/Timaeus.png",
     "imgID": "Timaeus",
     "cardTarget": ["Active"],
@@ -2473,10 +2278,7 @@
     "content": "Comes with 2 Forging Billets when played.\\n<span style='color: #FFFFFFFF'>End Phase:</span> Gain 1 Forging Billet.\\n<span style='color: #FFFFFFFF'>When playing a Weapon Card:</span> If possible, spend Forging Billets equal to the total cost of the Weapon and equip this Weapon for free. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/Wagner.png",
     "imgID": "Wagner",
     "cardTarget": ["Active"],
@@ -2519,10 +2321,7 @@
     "content": "<span style='color: #FFFFFFFF'>After playing a Food Event Card:</span> Create 1 random Elemental Die. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/ChefMao.png",
     "imgID": "ChefMao",
     "cardTarget": ["Active"],
@@ -2548,10 +2347,7 @@
     "content": "<span style='color: #FFFFFFFF'>When playing a Location Support Card:</span> Spend 2 less Elemental Dice. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/Tubby.png",
     "imgID": "Tubby",
     "cardTarget": ["Active"],
@@ -2582,10 +2378,7 @@
     "content": "<span style='color: #FFFFFFFF'>Triggers automatically once per Round:</span> This card gains <span style='color: #FFFFFFFF'>1 Pigeon</span>.\\nWhen this card gains <span style='color: #FFFFFFFF'>3 Pigeons</span>, discard this card, then draw 1 card and create <span style='color: #FFFFFFFF'>Omni Element</span> ×1.",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/Timmie.png",
     "imgID": "Timmie",
     "cardTarget": ["Active"],
@@ -2633,10 +2426,7 @@
     "content": "<span style='color: #FFFFFFFF'>End Phase:</span> Collect your unused Elemental Dice (Max 1 of each Elemental Type).\\n<span style='color: #FFFFFFFF'>When Action Phase begins:</span> If this card has collected 3 Elemental Dice, draw 2 cards and create <span style='color: #FFFFFFFF'>Omni Element</span> ×2, then discard this card.",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/Liben.png",
     "imgID": "Liben",
     "cardTarget": ["Active"],
@@ -2690,10 +2480,7 @@
     "content": "<span style='color: #FFFFFFFF'>When either side uses a Skill:</span> If <span style='color: #FFFFFFFF'>Physical DMG</span> or <span style='color: #FFFFFFFF'>Piercing DMG</span> was dealt, or an <span style='color: #FFFFFFFF'>Elemental Reaction</span> was triggered, this card gains <span style='color: #FFFFFFFF'>1 Inspiration</span>.\\nWhen this card gains <span style='color: #FFFFFFFF'>3 Inspiration</span>, discard this card, then draw 2 cards.",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ChangtheNinth.png",
     "imgID": "ChangtheNinth",
     "cardTarget": ["Active"],
@@ -2720,10 +2507,7 @@
     "content": "<span style='color: #FFFFFFFF'>When you use a Skill that has already been used in this Round:</span> Spend 1 less Elemental Die. (Once per Round)",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/Ellin.png",
     "imgID": "Ellin",
     "cardTarget": ["Active"],
@@ -2750,10 +2534,7 @@
     "content": "<span style='color: #FFFFFFFF'>End Phase:</span> One of your characters without maximum Energy gains 1 <span style='color: #FFFFFFFF'>Energy</span>. (Active Character prioritized)\\n<span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Usage(s)</span>: 2</span>",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/IronTongueTian.png",
     "imgID": "IronTongueTian",
     "cardTarget": ["Active"],
@@ -2779,10 +2560,7 @@
     "content": "<span style='color: #FFFFFFFF'>After you switch characters:</span> If the character you switched to does not have <span style='color: #FFFFFFFF'>Energy</span>, they will gain 1 <span style='color: #FFFFFFFF'>Energy</span>. (Once per Round)\\n<span style='color: #FFFFFFFF'><span style='color: #FFFFFFFF'>Usage(s)</span>: 2</span>",
     "mainType": "Support",
     "subType": ["Companion"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/LiuSu.png",
     "imgID": "LiuSu",
     "cardTarget": ["Active"],
@@ -2808,10 +2586,7 @@
     "content": "<span style='color: #FFFFFFFF'>When either side uses a Skill:</span> If Elemental DMG was dealt, this card gains <span style='color: #FFFFFFFF'>1 Qualitative Progress</span>.\\nWhen this card gains <span style='color: #FFFFFFFF'>3 Qualitative Progress</span>, discard this card, then create 3 different Basic Elemental Dice.",
     "mainType": "Support",
     "subType": ["Item"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/ParametricTransformer.png",
     "imgID": "ParametricTransformer",
     "cardTarget": ["Active"],
@@ -2852,10 +2627,7 @@
     "content": "<span style='color: #FFFFFFFF'>When played:</span> Draw 1 Food Event Card from your deck.\\n<span style='color: #FFFFFFFF'>When you play a Food Event Card:</span> Draw 1 Food Event Card from your deck. (Once per Round)",
     "mainType": "Support",
     "subType": ["Item"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/NRE.png",
     "imgID": "NRE",
     "cardTarget": ["Active"],
@@ -2888,10 +2660,7 @@
     "content": "Create 1 <span style='color: #99FFFFFF'>Cryo Die</span>.\\n(You must have at least 2 <span style='color: #99FFFFFF'>Cryo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenIce.png",
     "imgID": "ElementalResonanceWovenIce",
     "cardTarget": ["Active"],
@@ -2908,10 +2677,7 @@
     "content": "During this Round, your current active character will deal +2 DMG for the next instance.\\n(You must have at least 2 <span style='color: #99FFFFFF'>Cryo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Cryo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Cryo" }],
     "img": "/characters/ElementalResonanceShatteringIce.png",
     "imgID": "ElementalResonanceShatteringIce",
     "cardTarget": ["Active"],
@@ -2938,10 +2704,7 @@
     "content": "Create 1 <span style='color: #80C0FFFF'>Hydro Die</span>.\\n(You must have at least 2 <span style='color: #80C0FFFF'>Hydro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenWaters.png",
     "imgID": "ElementalResonanceWovenWaters",
     "cardTarget": ["Active"],
@@ -2958,10 +2721,7 @@
     "content": "Heal your active character for 2 HP and all your characters on standby for 1 HP.\\n(You must have at least 2 <span style='color: #80C0FFFF'>Hydro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Hydro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Hydro" }],
     "img": "/characters/ElementalResonanceSoothingWater.png",
     "imgID": "ElementalResonanceSoothingWater",
     "cardTarget": ["Active"],
@@ -2979,10 +2739,7 @@
     "content": "Create 1 <span style='color: #FF9999FF'>Pyro Die</span>.\\n(You must have at least 2 <span style='color: #FF9999FF'>Pyro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenFlames.png",
     "imgID": "ElementalResonanceWovenFlames",
     "cardTarget": ["Active"],
@@ -2999,10 +2756,7 @@
     "content": "During this round, the next instance of <span style='color: #FF9999FF'>Pyro-Related Reactions</span> your current active character triggers deals +3 DMG.\\n(You must have at least 2 <span style='color: #FF9999FF'>Pyro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Pyro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Pyro" }],
     "img": "/characters/ElementalResonanceFerventFlames.png",
     "imgID": "ElementalResonanceFerventFlames",
     "cardTarget": ["Active"],
@@ -3034,10 +2788,7 @@
     "content": "Create 1 <span style='color: #FFACFFFF'>Electro Die</span>.\\n(You must have at least 2 <span style='color: #FFACFFFF'>Electro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenThunder.png",
     "imgID": "ElementalResonanceWovenThunder",
     "cardTarget": ["Active"],
@@ -3054,10 +2805,7 @@
     "content": "One of your characters without maximum Energy gains 1 <span style='color: #FFFFFFFF'>Energy</span>. (Active Character prioritized)\\n(You must have at least 2 <span style='color: #FFACFFFF'>Electro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Electro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Electro" }],
     "img": "/characters/ElementalResonanceHighVoltage.png",
     "imgID": "ElementalResonanceHighVoltage",
     "cardTarget": ["Active"],
@@ -3074,10 +2822,7 @@
     "content": "Create 1 <span style='color: #80FFD7FF'>Anemo Die</span>.\\n(You must have at least 2 <span style='color: #80FFD7FF'>Anemo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenWinds.png",
     "imgID": "ElementalResonanceWovenWinds",
     "cardTarget": ["Active"],
@@ -3094,10 +2839,7 @@
     "content": "Switch to the target character and create <span style='color: #FFFFFFFF'>Omni Element</span> ×1.\\n(You must have at least 2 <span style='color: #80FFD7FF'>Anemo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Anemo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Anemo" }],
     "img": "/characters/ElementalResonanceImpetuousWinds.png",
     "imgID": "ElementalResonanceImpetuousWinds",
     "cardTarget": ["Active"],
@@ -3120,10 +2862,7 @@
     "content": "Create 1 <span style='color: #FFE699FF'>Geo Die</span>.\\n(You must have at least 2 <span style='color: #FFE699FF'>Geo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenStone.png",
     "imgID": "ElementalResonanceWovenStone",
     "cardTarget": ["Active"],
@@ -3140,10 +2879,7 @@
     "content": "During this round, after your character deals <span style='color: #FFE699FF'>Geo DMG</span> next time: Should there be any Combat Status on your side that provides <span style='color: #FFFFFFFF'>Shield</span>, grant one such Status with 3 <span style='color: #FFFFFFFF'>Shield</span> points. \\n(You must have at least 2 <span style='color: #FFE699FF'>Geo</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Geo" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Geo" }],
     "img": "/characters/ElementalResonanceEnduringRock.png",
     "imgID": "ElementalResonanceEnduringRock",
     "cardTarget": ["Active"],
@@ -3170,10 +2906,7 @@
     "content": "Create 1 <span style='color: #99FF88FF'>Dendro Die</span>.\\n(You must have at least 2 <span style='color: #99FF88FF'>Dendro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ElementalResonanceWovenWeeds.png",
     "imgID": "ElementalResonanceWovenWeeds",
     "cardTarget": ["Active"],
@@ -3190,10 +2923,7 @@
     "content": "During this round, the next Elemental Reaction your active character triggers deals +2 DMG.\\nYour <span style='color: #FFFFFFFF'>Burning Flame, Dendro Core, and Catalyzing Field</span> gain +1 <span style='color: #FFFFFFFF'>Usage(s)</span>.\\n(You must have at least 2 <span style='color: #99FF88FF'>Dendro</span> characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Elemental Resonance"],
-    "cost": [
-      { "costNum": 1, "costType": "Dendro" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Dendro" }],
     "img": "/characters/ElementalResonanceSprawlingGreenery.png",
     "imgID": "ElementalResonanceSprawlingGreenery",
     "cardTarget": ["Active"],
@@ -3246,10 +2976,7 @@
     "content": "Convert the Elemental Dice spent to <span style='color: #FFFFFFFF'>Omni Element</span> ×2.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/TheBestestTravelCompanion.png",
     "imgID": "TheBestestTravelCompanion",
     "cardTarget": ["Active"],
@@ -3271,10 +2998,7 @@
     "content": "<span style='color: #FFFFFFFF'>The next time you perform \"Switch Character\":</span> Spend 1 less Elemental Die.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/ChangingShifts.png",
     "imgID": "ChangingShifts",
     "cardTarget": ["Active"],
@@ -3302,10 +3026,7 @@
     "content": "Select any Elemental Die to <span style='color: #FFFFFFFF'>reroll</span>. Can reroll 2 times.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/TossUp.png",
     "imgID": "TossUp",
     "cardTarget": ["Active"],
@@ -3322,10 +3043,7 @@
     "content": "Draw 2 cards.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/Strategize.png",
     "imgID": "Strategize",
     "cardTarget": ["Active"],
@@ -3342,10 +3060,7 @@
     "content": "Only playable if one of your characters is defeated this Round:\\nCreate <span style='color: #FFFFFFFF'>Omni Element</span> ×1 and your current active character gains 1 <span style='color: #FFFFFFFF'>Energy</span>.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/IHaventLostYet.png",
     "imgID": "IHaventLostYet",
     "cardTarget": ["Active"],
@@ -3370,10 +3085,7 @@
     "content": "<span style='color: #FFFFFFFF'>The next time you perform \"Switch Character\":</span> This switch will be considered a <span style='color: #FFFFFFFF'>Fast Action</span> instead of a <span style='color: #FFFFFFFF'>Combat Action</span>.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/LeaveIttoMe.png",
     "imgID": "LeaveIttoMe",
     "cardTarget": ["Active"],
@@ -3404,10 +3116,7 @@
     "content": "<span style='color: #FFFFFFFF'>The next time you use a Skill:</span> Switch your next character in to be the active character.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/WhentheCraneReturned.png",
     "imgID": "WhentheCraneReturned",
     "cardTarget": ["Active"],
@@ -3438,10 +3147,7 @@
     "content": "Your current Active Character <span style='color: #FFFFFFFF'>gains 1 <span style='color: #FFFFFFFF'>Energy</span></span>.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/Starsigns.png",
     "imgID": "Starsigns",
     "cardTarget": ["Active"],
@@ -3458,10 +3164,7 @@
     "content": "Shift 1 <span style='color: #FFFFFFFF'>Energy</span> from at most 2 of your characters on standby to your active character.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/CalxsArts.png",
     "imgID": "CalxsArts",
     "cardTarget": ["Active"],
@@ -3479,10 +3182,7 @@
     "content": "Shift 1 Weapon Equipment Card that has been equipped to one of your characters to another one of your characters of the same Weapon Type.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/MasterofWeaponry.png",
     "imgID": "MasterofWeaponry",
     "cardTarget": ["Active"],
@@ -3500,10 +3200,7 @@
     "content": "Shift 1 Artifact Equipment Card that has been equipped to one of your characters to another one of your characters.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/BlessingoftheDivineRelicsInstallation.png",
     "imgID": "BlessingoftheDivineRelicsInstallation",
     "cardTarget": ["Active"],
@@ -3526,10 +3223,7 @@
     "content": "Choose one Summon on your side and grant it +1 <span style='color: #FFFFFFFF'>Usage(s)</span>.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/QuickKnit.png",
     "imgID": "QuickKnit",
     "cardTarget": ["Active"],
@@ -3546,10 +3240,7 @@
     "content": "Choose one Summon on the opposing side and destroy it.",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/SendOff.png",
     "imgID": "SendOff",
     "cardTarget": ["Opponent"],
@@ -3566,10 +3257,7 @@
     "content": "Destroy all Summons. (Affects both you and your opponent!)",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 4, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 4, "costType": "Same" }],
     "img": "/characters/GuardiansOath.png",
     "imgID": "GuardiansOath",
     "cardTarget": ["Opponent"],
@@ -3586,10 +3274,7 @@
     "content": "Summon 1 <span style='color: #FFFFFFFF'>Random Hilichurl Summon</span>!\\n(You must have at least 2 Monster characters in your deck to add this card to your deck.)",
     "mainType": "Event",
     "subType": ["Event"],
-    "cost": [
-      { "costNum": 2, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Same" }],
     "img": "/characters/AbyssalSummons.png",
     "imgID": "AbyssalSummons",
     "cardTarget": ["Active"],
@@ -3611,10 +3296,7 @@
     "content": "During this Round, the target character's next <span style='color: #FFFFFFFF'>Normal Attack</span> deals +1 DMG.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/JueyunGuoba.png",
     "imgID": "JueyunGuoba",
     "cardTarget": ["Select"],
@@ -3639,10 +3321,7 @@
     "content": "During this Round, the target character's next <span style='color: #FFFFFFFF'>Elemental Burst</span> deals +3 DMG.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 2, "costType": "Void" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 2, "costType": "Void" }],
     "img": "/characters/AdeptusTemptation.png",
     "imgID": "AdeptusTemptation",
     "cardTarget": ["Select"],
@@ -3667,10 +3346,7 @@
     "content": "During this Round, the target character takes -3 DMG the next time.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/LotusFlowerCrisp.png",
     "imgID": "LotusFlowerCrisp",
     "cardTarget": ["Select"],
@@ -3695,10 +3371,7 @@
     "content": "During this Round, the target character's next <span style='color: #FFFFFFFF'>Normal Attack</span> costs 1 less <span style='color: #FFFFFFFF'>Unaligned Element</span>.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/NorthernSmokedChicken.png",
     "imgID": "NorthernSmokedChicken",
     "cardTarget": ["Select"],
@@ -3728,10 +3401,7 @@
     "content": "Heal the target character for 1 HP.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 0, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 0, "costType": "Same" }],
     "img": "/characters/SweetMadame.png",
     "imgID": "SweetMadame",
     "cardTarget": ["Select"],
@@ -3748,10 +3418,7 @@
     "content": "Heal the target character for 2 HP.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/MondstadtHashBrown.png",
     "imgID": "MondstadtHashBrown",
     "cardTarget": ["Select"],
@@ -3768,10 +3435,7 @@
     "content": "Heal the target character for 1 HP. For the next two Rounds, heal this character for 1 HP again at the End Phase.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/MushroomPizza.png",
     "imgID": "MushroomPizza",
     "cardTarget": ["Select"],
@@ -3799,10 +3463,7 @@
     "content": "Before this Round ends, the target character's <span style='color: #FFFFFFFF'>Normal Attacks</span> cost 1 less <span style='color: #FFFFFFFF'>Unaligned Element</span>.\\n(A character can consume at most 1 Food per Round)",
     "mainType": "Event",
     "subType": ["Food"],
-    "cost": [
-      { "costNum": 1, "costType": "" },
-      { "costNum": 0, "costType": "" }
-    ],
+    "cost": [{ "costNum": 1, "costType": "Same" }],
     "img": "/characters/MintyMeatRolls.png",
     "imgID": "MintyMeatRolls",
     "cardTarget": ["Select"],

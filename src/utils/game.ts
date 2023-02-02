@@ -88,6 +88,13 @@ export const isCostDiceValid = (costs: ICost[], dices: GIDiceID[]) => {
     const diceNum = cost[1];
     const omni = dicesMap.get("Omni") ?? 0;
     const _diceType = dicesMap.get(diceType) ?? 0;
+    if (diceType === "Same") {
+      if (omni === 0 && dicesMap.size > 1) return false;
+      if (omni > 0 && dicesMap.size > 2) return false;
+      const _d = dices.filter(d => d !== "Omni")[0];
+      if (diceNum > omni + (dicesMap.get(_d) ?? 0)) return false;
+      continue;
+    }
     if (diceType === "Energy") continue;
     if (omni >= diceNum) continue;
     if (diceType === "Void" && dicesMap.size < diceNum) return false;
@@ -139,6 +146,7 @@ export const InitCharacters = () => {
             weapon: null,
             artifact: null,
             talent: null,
+            food: null,
           },
         })
       ) as ICharacter[],

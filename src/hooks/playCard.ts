@@ -52,7 +52,11 @@ export const usePlayCard = () => {
         const sortedDice = sortDice(diceMap);
         updateDices(sortedDice, pos);
       }
-      console.log(card, "Event Card");
+      if (card.subType.includes(EventType.Food)) {
+        const player = Object.assign({}, players[pos]);
+        player.characters[selectedCharacters[pos]].equipments.food = card;
+        updatePlayer(player, pos);
+      }
     }
     if (card.mainType === CardMainType.Equipment) {
       if (selectedCharacters[pos] < 0) return;
@@ -88,6 +92,7 @@ export const usePlayCard = () => {
   const isCardValid = (card: ICard, pos: PlayerPosition) => {
     const character = players[pos].characters[selectedCharacters[pos]];
     if (card.mainType === CardMainType.Equipment) {
+      if (selectedCharacters[pos] < 0) return false;
       const type = card.subType[0];
       if (type === EquipmentMainType.Weapon) {
         const subType = card.subType[1];
@@ -102,14 +107,20 @@ export const usePlayCard = () => {
         return false;
       }
     }
+    if (card.subType.includes(EventType.Food)) {
+      if (selectedCharacters[pos] < 0) return false;
+    }
     return true;
   };
 
   const shouldCharacterHighlight = (pos: PlayerPosition) =>
     pos === PlayerPosition.Own &&
     phase === Phase.PlayCard &&
-    players[PlayerPosition.Own].cards[activeCards[pos]]?.mainType ===
-      CardMainType.Equipment;
+    (players[PlayerPosition.Own].cards[activeCards[pos]]?.mainType ===
+      CardMainType.Equipment ||
+      players[PlayerPosition.Own].cards[activeCards[pos]]?.subType.includes(
+        EventType.Food
+      ));
 
   return {
     getMessage,

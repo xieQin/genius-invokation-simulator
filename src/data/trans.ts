@@ -42,6 +42,7 @@ export type costType =
 
 export const CostTypeTrans = (c: costType) => {
   const CostType = {
+    "": "Same",
     "1": "Energy",
     "10": "Void",
     "11": "Cryo",
@@ -52,7 +53,7 @@ export const CostTypeTrans = (c: costType) => {
     "16": "Dendro",
     "17": "Anemo",
   };
-  return CostType[c] || "";
+  return CostType[c] || "Same";
 };
 
 export type elementType =
