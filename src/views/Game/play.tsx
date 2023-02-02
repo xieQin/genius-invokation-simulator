@@ -13,7 +13,6 @@ export default function PlayCardPhase() {
     getPlayer,
     dices: playDices,
     setGameStates,
-    selectedCharacters,
   } = useGameStore();
   const pos = PlayerPosition.Own;
   const dices = playDices[pos];
@@ -25,11 +24,7 @@ export default function PlayCardPhase() {
   const message = getMessage(card);
 
   const onConfirm = () => {
-    if (
-      isCardValid(card, PlayerPosition.Own) &&
-      isCostValid(card.cost) &&
-      selectedCharacters[pos] >= 0
-    ) {
+    if (isCardValid(card, PlayerPosition.Own) && isCostValid(card.cost)) {
       costDices();
       onPlayCard(card, PlayerPosition.Own);
       setGameStates("phase", Phase.Combat);

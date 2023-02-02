@@ -88,6 +88,7 @@ export const usePlayCard = () => {
   const isCardValid = (card: ICard, pos: PlayerPosition) => {
     const character = players[pos].characters[selectedCharacters[pos]];
     if (card.mainType === CardMainType.Equipment) {
+      if (selectedCharacters[pos] < 0) return false;
       const type = card.subType[0];
       if (type === EquipmentMainType.Weapon) {
         const subType = card.subType[1];
