@@ -187,7 +187,7 @@ export const PreviewCard = (props: { preview: ICard; noImg?: boolean }) => {
       <div className={styles.PreviewZoneItem}>
         <div className={styles.PreviewItemName}>{t(preview.name)}</div>
         <div className={styles.PreviewItemCost}>
-          <HandCardCost cost={preview.cost} />
+          <HandCardCost costs={preview.cost} />
         </div>
         <div className={styles.PreviewItemType}>{preview.mainType} Card</div>
         <div

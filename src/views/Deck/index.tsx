@@ -56,7 +56,7 @@ export const DeckItem = (props: { name: string; type: CardType }) => {
         )}
         {isCardType(item) && (
           <div className={styles.DeckItemCost}>
-            <HandCardCost cost={(item as ICard).cost} />
+            <HandCardCost costs={(item as ICard).cost} />
           </div>
         )}
         <img

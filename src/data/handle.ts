@@ -94,11 +94,16 @@ export const transCards = () => {
             costNum: Number(card.cost_num1),
             costType: CostTypeTrans(card.cost_type1_icon as costType),
           },
-          {
-            costNum: Number(card.cost_num2),
-            costType: CostTypeTrans(card.cost_type2_icon as costType),
-          },
-        ],
+        ].concat(
+          card.cost_num2 === "" && card.cost_type2_icon === ""
+            ? []
+            : [
+                {
+                  costNum: Number(card.cost_num2),
+                  costType: CostTypeTrans(card.cost_type2_icon as costType),
+                },
+              ]
+        ),
         img: `${PUBLIC_PATH}/characters/${NameIDTrans(card.name)}.png`,
         imgID: NameIDTrans(card.name),
         ...CardsExtra[card.name as keyof typeof CardsExtra],
@@ -130,8 +135,8 @@ export const transI18n = () => {
   writeFileSync("./src/data/i18n.json", JSON.stringify(i18n));
 };
 
-transCharacters();
-// transCards();
+// transCharacters();
+transCards();
 // transI18n();
 
 const defaultSkillExtra = {
