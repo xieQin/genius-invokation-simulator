@@ -131,6 +131,9 @@
   width: 60px;
   margin-left: 10px;
 }
+.PreviewEquipmentSection {
+  flex: 1;
+}
 .PreviewEquipment {
   display: flex;
   border: 3px solid grey;
