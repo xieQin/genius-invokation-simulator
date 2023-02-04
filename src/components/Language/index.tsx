@@ -57,8 +57,11 @@ export const LangList = [
   },
 ];
 
-export const LangToLabel = (lng: string) =>
-  LangList.filter(l => l.lng === lng)[0].label;
+export const LangToLabel = (lng: string) => {
+  console.log(lng);
+  const _l = LangList.filter(l => l.lng === lng);
+  return _l.length > 0 ? _l[0].label : "English";
+};
 
 export default function Language() {
   const { i18n } = useTranslation();
