@@ -8,6 +8,14 @@ export const LangList = [
     label: "English",
   },
   {
+    lng: "zh-cn",
+    label: "中文（简体）",
+  },
+  {
+    lng: "zh-tw",
+    label: "中文（繁體）",
+  },
+  {
     lng: "zh-CN",
     label: "中文（简体）",
   },
@@ -58,9 +66,8 @@ export const LangList = [
 ];
 
 export const LangToLabel = (lng: string) => {
-  console.log(lng);
   const _l = LangList.filter(l => l.lng === lng);
-  return _l.length > 0 ? _l[0].label : "English";
+  return _l.length > 0 ? _l[0].label : "中文（简体）";
 };
 
 export default function Language() {
