@@ -1,12 +1,10 @@
-import { lazy } from "react";
 import { Navigate, RouteObject } from "react-router-dom";
 
 import Layout from "@/layouts";
+import DeckPage from "@/views/Deck";
+import GamePage from "@/views/Game";
+import HomePage from "@/views/Home";
 import SettingsPage from "@/views/Settings";
-
-const HomePage = lazy(() => import("@/views/Home"));
-const GamePage = lazy(() => import("@/views/Game"));
-const DeckPage = lazy(() => import("@/views/Deck"));
 
 export const useRoutesConfig = () => {
   const routes: RouteObject[] = [

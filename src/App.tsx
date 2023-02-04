@@ -1,8 +1,8 @@
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
+import { BrowserRouter, Routes } from "react-router-dom";
 import setupIndexedDB from "use-indexeddb";
 
 import { idbConfig } from "./configs/indexdb";
-import GamePage from "./views/Game";
 
 export default function App() {
   useEffect(() => {
@@ -11,11 +11,10 @@ export default function App() {
       .catch(e => console.error("db error / unsupported", e));
   });
   return (
-    <GamePage />
-    // <BrowserRouter>
-    //   <Suspense>
-    //     <Routes />
-    //   </Suspense>
-    // </BrowserRouter>
+    <BrowserRouter>
+      <Suspense>
+        <Routes />
+      </Suspense>
+    </BrowserRouter>
   );
 }
