@@ -13,12 +13,16 @@ local env: add .env file
 
 ```
 VITE_PUBLIC_PATH = ""
+VITE_RELOAD_SW = "true"
+VITE_APP_BUILD_DATE = {replaced dyanmicaly}
 ```
 
 production env: add .env.production file
 
 ```
-VITE_PUBLIC_PATH = {YOUR_PUBLIC_PATH}
+VITE_PUBLIC_PATH = ""
+VITE_RELOAD_SW = "true"
+VITE_APP_BUILD_DATE = {replaced dyanmicaly}
 ```
 
 ## Usage
