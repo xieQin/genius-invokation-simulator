@@ -10,9 +10,9 @@ console.log(pwaInfo);
 
 function ReloadPrompt() {
   // replaced dynamically
-  const buildDate = new Date().toISOString();
+  const buildDate = import.meta.env.VITE_APP_BUILD_DATE;
   // replaced dyanmicaly
-  const reloadSW = "__RELOAD_SW__";
+  const reloadSW = import.meta.env.VITE_RELOAD_SW;
 
   const {
     offlineReady: [offlineReady, setOfflineReady],
@@ -22,13 +22,13 @@ function ReloadPrompt() {
     onRegisteredSW(swUrl, r) {
       // eslint-disable-next-line no-console
       console.log(`Service Worker at: ${swUrl}`);
-      if (reloadSW === "__RELOAD_SW__") {
+      if (reloadSW === "true") {
         r &&
           setInterval(() => {
             // eslint-disable-next-line no-console
             console.log("Checking for sw update");
             r.update();
-          }, 20000 /* 20s for testing purposes */);
+          }, 10000);
       } else {
         // eslint-disable-next-line prefer-template,no-console
         console.log("SW Registered: " + r);
