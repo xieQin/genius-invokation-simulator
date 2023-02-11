@@ -6,7 +6,7 @@ import Notice from "@/components/Notice";
 import PreviewZone from "@/components/PreviewZone";
 import SettingZone from "@/components/SettingZone";
 import { useAutoScale, usePreview, useTimeout } from "@/hooks";
-import { Phase } from "@/models/phase";
+import { Phase } from "@/models";
 import { useGameStore } from "@/stores";
 import isMobile from "@/utils/is-mobile";
 

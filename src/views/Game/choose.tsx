@@ -2,7 +2,7 @@ import { useState } from "react";
 
 import ChooseZone, { SetActiveCharacterHint } from "@/components/ChooseZone";
 import Notice from "@/components/Notice";
-import { useChoosePhase } from "@/hooks/phase";
+import { useChoosePhase } from "@/hooks";
 import { PlayerPosition } from "@/models";
 
 export default function ChoosePhase() {

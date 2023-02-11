@@ -1,8 +1,7 @@
 import styles from "@/assets/styles/game.module.css";
 import { HandCardItem } from "@/components/HandCardZone";
 import { useTimeout } from "@/hooks";
-import { ICard, PlayerPosition } from "@/models";
-import { Phase } from "@/models/phase";
+import { ICard, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export default function DraftCardPhase() {

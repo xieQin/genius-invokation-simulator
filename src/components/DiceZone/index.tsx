@@ -1,7 +1,5 @@
 import { PUBLIC_PATH } from "@/configs";
-import { PlayerPosition } from "@/models";
-import { GIDiceID } from "@/models/die";
-import { Phase } from "@/models/phase";
+import { GIDiceID, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";

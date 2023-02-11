@@ -1,6 +1,8 @@
 import CardData from "@/data/cards.json";
 import CharacterData from "@/data/characters.json";
 import {
+  GIDice,
+  GIDiceID,
   ICard,
   ICharacter,
   ICost,
@@ -9,7 +11,6 @@ import {
   ISummon,
   PlayerPosition,
 } from "@/models";
-import { GIDice, GIDiceID } from "@/models/die";
 
 export function getRandom<T>(num: number, data: T[], repeat = true): T[] {
   const res: T[] = [];

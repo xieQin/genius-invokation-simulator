@@ -1,8 +1,7 @@
 import { FC, useState } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
-import { usePlayCard, usePreview, useSkill } from "@/hooks";
-import { useChoosePhase } from "@/hooks/phase";
+import { useChoosePhase, usePlayCard, usePreview, useSkill } from "@/hooks";
 import { Action, ICharacter, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 

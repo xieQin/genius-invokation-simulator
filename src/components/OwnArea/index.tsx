@@ -1,6 +1,5 @@
 import areaStyles from "@/assets/styles/area.module.css";
-import { PlayerPosition } from "@/models";
-import { SummonsID } from "@/models/summons";
+import { ISummon, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import CardStackZone from "../CardStackZone";
@@ -29,7 +28,7 @@ export default function OwnArea() {
     select,
     setSelect,
   };
-  const summons: SummonsID[] = own.summons;
+  const summons: ISummon[] = own.summons;
 
   return (
     <div className={`${areaStyles.PlayerArea} ${styles.Own}`}>

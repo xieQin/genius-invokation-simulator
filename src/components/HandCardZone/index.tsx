@@ -2,8 +2,7 @@ import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview, useStartPhase } from "@/hooks";
-import { ICard, ICost, PlayerPosition } from "@/models";
-import { Phase } from "@/models/phase";
+import { ICard, ICost, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 import styles from "./index.module.css";

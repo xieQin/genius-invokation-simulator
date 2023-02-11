@@ -1,8 +1,7 @@
 import styles from "@/assets/styles/game.module.css";
 import { PUBLIC_PATH } from "@/configs";
 import { useRollPhase } from "@/hooks";
-import { PlayerPosition } from "@/models";
-import { GIDiceID } from "@/models/die";
+import { GIDiceID, PlayerPosition } from "@/models";
 
 export default function RollPhase() {
   const {
