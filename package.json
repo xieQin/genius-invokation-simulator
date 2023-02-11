@@ -1,17 +1,17 @@
 {
   "name": "invokation",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": {
     "name": "xieQin",
     "url": "https://github.com/xieQin/invokation"
   },
   "types": "index.d.ts",
   "scripts": {
-    "build": "cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true vite build",
+    "build": "cross-env DEBUG=vite-plugin-pwa:* BASE_URL=/ SOURCE_MAP=true RELOAD_SW=true SW=true vite build",
     "commit": "git-cz",
     "data": "node --loader ts-node/esm ./src/data/handle.ts",
     "data:assets": "node --loader ts-node/esm ./src/data/assets.ts",
-    "dev": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DEV=true vite --force",
+    "dev": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DEV=true RELOAD_SW=true vite --force",
     "dev-claims": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DEV=true CLAIMS=true SW=true vite --force",
     "dev-claims-destroy": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DESTROY=true SW_DEV=true CLAIMS=true SW=true vite --force",
     "dev-destroy": "rimraf dev-dist && cross-env DEBUG=vite-plugin-pwa:* SW_DESTROY=true SW_DEV=true vite --force",
