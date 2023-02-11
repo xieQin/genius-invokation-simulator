@@ -1,7 +1,6 @@
 import { useState } from "react";
 
-import { ICost, PlayerPosition } from "@/models";
-import { GIDiceID } from "@/models/die";
+import { GIDiceID, ICost, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 import { isCostDiceValid } from "@/utils";
 

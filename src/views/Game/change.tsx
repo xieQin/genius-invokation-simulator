@@ -1,9 +1,7 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
-import { useAi, useChoosePhase, useRound } from "@/hooks";
-import { useCostDice } from "@/hooks/dice";
-import { ICost, PlayerPosition } from "@/models";
-import { Phase } from "@/models/phase";
+import { useAi, useChoosePhase, useCostDice, useRound } from "@/hooks";
+import { ICost, Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export default function ChangeCharacterPhase() {

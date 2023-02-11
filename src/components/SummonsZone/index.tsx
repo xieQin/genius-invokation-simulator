@@ -2,8 +2,7 @@ import { CSSProperties } from "react";
 
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview, useSkill, useSummons } from "@/hooks";
-import { GIElement, PlayerPosition } from "@/models";
-import { ISummon } from "@/models/summons";
+import { GIElement, ISummon, PlayerPosition } from "@/models";
 
 import styles from "./index.module.css";
 

@@ -1,10 +1,8 @@
 import { CostDiceZone } from "@/components/DiceZone";
 import GameLayer from "@/components/GameLayer";
 import { NoticeText } from "@/components/Notice";
-import { useCostDice } from "@/hooks/dice";
-import { usePlayCard } from "@/hooks/playCard";
-import { PlayerPosition } from "@/models";
-import { Phase } from "@/models/phase";
+import { useCostDice, usePlayCard } from "@/hooks";
+import { Phase, PlayerPosition } from "@/models";
 import { useGameStore } from "@/stores";
 
 export default function PlayCardPhase() {

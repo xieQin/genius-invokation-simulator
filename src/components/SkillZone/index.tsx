@@ -1,7 +1,12 @@
 import { PUBLIC_PATH } from "@/configs";
 import { usePreview, useSkill } from "@/hooks";
-import { ICost, ISkill, PlayerPosition, SkillPassiveType } from "@/models";
-import { Phase } from "@/models/phase";
+import {
+  ICost,
+  ISkill,
+  Phase,
+  PlayerPosition,
+  SkillPassiveType,
+} from "@/models";
 import { useGameStore } from "@/stores";
 
 import { ChooseBtn, ChooseZoneLayer } from "../ChooseZone";
