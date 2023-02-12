@@ -155,10 +155,22 @@ export const useRollPhase = (pos: PlayerPosition) => {
     showMessage,
     updateDices,
     actions,
+    players,
+    activeCharacters,
   } = useGameStore();
   const isRollValid = shouldHideDeck() && phase === Phase.Roll;
   const isRerollValid = actions[pos] !== Action.ConfirmRerollDice;
   const rerolls = rerollDices[pos];
+  const player = players[pos];
+  const elements = player.characters.map(c => c.element);
+  const elementSorted = Array.from(
+    new Set(
+      [elements[activeCharacters[pos]], ...elements].filter(
+        e => e !== undefined
+      )
+    )
+  );
+  console.log(elementSorted);
 
   const shouldReroll = (idx: number) => rerolls.includes(idx);
 
@@ -166,7 +178,7 @@ export const useRollPhase = (pos: PlayerPosition) => {
     const l = localStorage.getItem("cacheDices");
     let cacheDices = l === null ? [] : l.split(",");
     if (!cacheDices || l === null) {
-      cacheDices = rollDice(8);
+      cacheDices = rollDice(8, elementSorted);
       localStorage.setItem("cacheDices", cacheDices.join(","));
     }
     return cacheDices;
@@ -191,7 +203,7 @@ export const useRollPhase = (pos: PlayerPosition) => {
     let targetDices = localStorage
       .getItem("cacheDices")
       ?.split(",") as GIDiceID[];
-    targetDices = reRollDice(targetDices, rerolls);
+    targetDices = reRollDice(targetDices, rerolls, elementSorted);
     // todo fix dice render
     localStorage.setItem("cacheDices", targetDices.join(","));
     updateDices(targetDices, pos);
@@ -202,7 +214,7 @@ export const useRollPhase = (pos: PlayerPosition) => {
     if (rerolls.length === 0) {
       localStorage.removeItem("cacheDices");
       setGameStates("phase", Phase.Combat);
-      setGameStates("dices", [dices, rollDice(8)]);
+      setGameStates("dices", [dices, rollDice(8, elementSorted)]);
       toggleDeckStatus();
       showMessage("Action Phase", () => {
         showMessage("");
