@@ -6,7 +6,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import styles from "./index.module.css";
 
 // eslint-disable-next-line no-console
-console.log(pwaInfo);
+// console.log(pwaInfo);
 
 function ReloadPrompt() {
   // replaced dynamically

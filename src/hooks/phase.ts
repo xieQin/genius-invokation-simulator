@@ -170,7 +170,6 @@ export const useRollPhase = (pos: PlayerPosition) => {
       )
     )
   );
-  console.log(elementSorted);
 
   const shouldReroll = (idx: number) => rerolls.includes(idx);
 
