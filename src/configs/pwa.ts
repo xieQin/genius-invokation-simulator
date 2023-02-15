@@ -25,6 +25,7 @@ export const PWAConfig: Partial<VitePWAOptions> = {
 
 export const replaceOptions: Partial<RollupReplaceOptions> = {
   __DATE__: new Date().toISOString(),
+  preventAssignment: true,
 };
 const claims = process.env.CLAIMS === "true";
 const reload = process.env.RELOAD_SW === "true";
