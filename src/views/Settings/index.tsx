@@ -30,7 +30,7 @@ export default function SettingsPage() {
       {isLoading && <div>Loading...</div>}
       {isFetching && <div>Fetching...</div>}
       {isError && <div>Error</div>}
-      {data && <div>{data}</div>}
+      {data && <>{data}</>}
       <button
         onClick={() => {
           // 同 swr，可以通过改变 key 重新获取数据
