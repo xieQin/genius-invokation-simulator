@@ -48,7 +48,7 @@ yarn build
 - [x] Round Flow
   - [x] Roll Phase
   - [x] Action Phase
-  - [ ] End Phase
+  - [x] End Phase
 - [ ] Elemental Reactions
   - [x] Rules
   - [ ] Effects
